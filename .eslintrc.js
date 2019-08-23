@@ -34,7 +34,7 @@ module.exports = {
         ],
         "import/no-cycle": "warn",
         "no-console": "error",
-        "no-use-before-define": ["error", { functions: false, classes: true, variables: true }],
+        "no-use-before-define": ["error", {functions: false, classes: true, variables: true}],
         "no-restricted-syntax": "warn",
         // Should be enabled in the future
         "camelcase": "off",
@@ -59,4 +59,4 @@ module.exports = {
             }
         }
     }
-}
+};

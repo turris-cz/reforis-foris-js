@@ -45,4 +45,6 @@ coverage.xml
 
 /js/styleguide/
 .gitignore
-src/
+
+dist/
+foris-*.tgz

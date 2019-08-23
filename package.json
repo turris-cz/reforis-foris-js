@@ -1,5 +1,7 @@
 {
   "name": "foris",
+  "version": "0.0.1",
+  "description": "Set of components and utils for Foris and its plugins.",
   "author": "CZ.NIC, z.s.p.o.",
   "repository": {
     "type": "git",
@@ -10,18 +12,20 @@
     "reforis"
   ],
   "license": "GPL-3.0",
-  "version": "0.0.1",
-  "description": "Set of components and utils for Foris and its plugins.",
-  "main": "./dist/foris.js",
+  "main": "./dist/index.js",
   "dependencies": {
     "axios": "^0.19.0",
     "immutability-helper": "^3.0.1",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0-alpha.0",
     "react-datetime": "^2.16.3",
-    "react-dom": "^16.9.0-alpha.0",
     "react-router": "^5.0.1",
-    "react-uid": "^2.2.0"
+    "react-uid": "^2.2.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -36,7 +40,6 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-react-transform": "^3.0.0",
     "babel-polyfill": "^6.26.0",
-    "css-loader": "^3.0.0",
     "eslint": "^5.16.0",
     "eslint-config-react-app": "^4.0.1",
     "eslint-plugin-flowtype": "^2.50.3",
@@ -44,22 +47,24 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
-    "file-loader": "^4.0.0",
     "jest": "^24.8.0",
     "jest-mock-axios": "^3.0.0",
+    "moment": "^2.24.0",
     "moment-timezone": "^0.5.25",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-styleguidist": "^9.1.11",
-    "snapshot-diff": "^0.5.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.4"
+    "snapshot-diff": "^0.5.1"
   },
   "scripts": {
-    "watch": "webpack --watch --mode=development --env.lighttpd",
-    "build": "webpack --mode=production --env.lighttpd",
+    "build": "babel ./src --out-dir ./dist -s inline",
+    "prepare": "rm -rf ./dist && npm run build",
     "lint": "eslint src",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

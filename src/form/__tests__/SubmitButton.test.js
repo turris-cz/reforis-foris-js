@@ -5,22 +5,25 @@
  * See /LICENSE for more information.
  */
 
-import React from 'react';
-import {render} from 'customTestRender';
+import React from "react";
+import { render } from "customTestRender";
 
-import {STATES, SubmitButton} from '../components/SubmitButton';
+import SubmitButton, { STATES } from "../components/SubmitButton";
 
-describe('<SubmitButton/>', () => {
-    it('Render ready', () => {
-        const {container} = render(<SubmitButton state={STATES.READY}/>);
-        expect(container).toMatchSnapshot();
+describe("<SubmitButton/>", () => {
+    it("Render ready", () => {
+        const { container } = render(<SubmitButton state={STATES.READY}/>);
+        expect(container)
+            .toMatchSnapshot();
     });
-    it('Render saving', () => {
-        const {container} = render(<SubmitButton state={STATES.SAVING}/>);
-        expect(container).toMatchSnapshot();
+    it("Render saving", () => {
+        const { container } = render(<SubmitButton state={STATES.SAVING}/>);
+        expect(container)
+            .toMatchSnapshot();
     });
-    it('Render load', () => {
-        const {container} = render(<SubmitButton state={STATES.LOAD}/>);
-        expect(container).toMatchSnapshot();
+    it("Render load", () => {
+        const { container } = render(<SubmitButton state={STATES.LOAD}/>);
+        expect(container)
+            .toMatchSnapshot();
     });
 });

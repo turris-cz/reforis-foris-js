@@ -7,7 +7,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { useUID } from "react-uid";
+import { useUID } from "react-uid/dist/es5/index";
 
 import { formFieldsSize } from "./constants";
 
@@ -27,7 +27,7 @@ CheckBox.defaultProps = {
     disabled: false,
 };
 
-export function CheckBox({
+export default function CheckBox({
     label, helpText, useDefaultSize, disabled, ...props
 }) {
     const uid = useUID();

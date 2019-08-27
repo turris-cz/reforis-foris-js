@@ -9,7 +9,7 @@ import { useCallback, useEffect, useReducer } from "react";
 import update from "immutability-helper";
 
 import { useAPIGet } from "api/hooks";
-import { useWSForisModule } from "webSockets/hooks";
+import useWSForisModule from "webSockets/hooks";
 
 
 const FORM_ACTIONS = {
@@ -18,7 +18,6 @@ const FORM_ACTIONS = {
 };
 
 export function useForm(validator, prepData) {
-
     const [state, dispatch] = useReducer(formReducer, {
         data: null,
         initialData: null,
@@ -82,7 +81,7 @@ function getChangedValue(target) {
         value = target.checked;
     } else if (target.type === "number") {
         const parsedValue = parseInt(value);
-        value = isNaN(parsedValue) ? value : parsedValue;
+        value = Number.isNaN(parsedValue) ? value : parsedValue;
     }
     return value;
 }

@@ -7,14 +7,15 @@
 
 import { useEffect, useState } from "react";
 
-export function useWSForisModule(ws, module, action = "update_settings") {
+export default function useWSForisModule(ws, module, action = "update_settings") {
     const [data, setData] = useState(null);
 
     useEffect(() => {
         if (ws && module) {
-            ws.subscribe(module).bind(module, action, (msg) => {
-                setData(msg.data);
-            });
+            ws.subscribe(module)
+                .bind(module, action, (msg) => {
+                    setData(msg.data);
+                });
         }
     }, [action, module, ws]);
 

@@ -8,7 +8,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Button } from "bootstrap/Button";
+import Button from "bootstrap/Button";
 
 export const STATES = {
     READY: 1,

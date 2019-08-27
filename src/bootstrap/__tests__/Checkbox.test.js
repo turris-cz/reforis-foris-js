@@ -9,7 +9,7 @@ import React from 'react';
 
 import {render} from 'customTestRender';
 
-import {CheckBox} from '../Checkbox'
+import CheckBox from '../Checkbox'
 
 describe('<Checkbox/>', () => {
     it('Render checkbox', () => {

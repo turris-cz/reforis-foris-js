@@ -9,8 +9,8 @@ import React from 'react';
 
 import {act, fireEvent, render, waitForElement} from 'customTestRender';
 import mockAxios from 'jest-mock-axios';
+import ForisForm from "../components/ForisForm";
 
-import {ForisForm} from '../components/ForisForm';
 
 // It's possible to unittest each hooks via react-hooks-testing-library.
 // But it's better and easier to test it by test components which uses this hooks.
@@ -76,39 +76,39 @@ describe('useForm hook.', () => {
         expect(Child.mock.calls[1][0].formErrors).toMatchObject({field: 'Error'});
     });
 
-    // it('Update text value.', () => {
-    //     fireEvent.change(input, {target: {value: 'newValue', type: 'text'}})
-    //     expect(input.value).toBe('newValue');
-    // });
-    //
-    // it('Update text value.', () => {
-    //     fireEvent.change(input, {target: {value: 123, type: 'number'}})
-    //     expect(input.value).toBe('123');
-    // });
-    //
-    // it('Update checkbox value.', () => {
-    //     fireEvent.change(input, {target: {checked: true, type: 'checkbox'}})
-    //     expect(input.checked).toBe(true);
-    // });
-    //
-    // it('Fetch data.', () => {
-    //     expect(mockAxios.get).toHaveBeenCalledWith('/api/wan', expect.anything());
-    //     expect(mockPrepData).toHaveBeenCalledTimes(1);
-    //     expect(Child.mock.calls[0][0].formData).toMatchObject({field: 'preparedData'});
-    // });
-    //
-    // it('Submit.', () => {
-    //     expect(mockAxios.get).toHaveBeenCalledTimes(1);
-    //     expect(mockPrepDataToSubmit).toHaveBeenCalledTimes(0);
-    //
-    //     fireEvent.submit(form);
-    //
-    //     expect(mockPrepDataToSubmit).toHaveBeenCalledTimes(1);
-    //     expect(mockAxios.post).toHaveBeenCalledTimes(1);
-    //     expect(mockAxios.post).toHaveBeenCalledWith(
-    //         '/api/wan',
-    //         {'field': 'preparedDataToSubmit'},
-    //         expect.anything(),
-    //     );
-    // });
+    it('Update text value.', () => {
+        fireEvent.change(input, {target: {value: 'newValue', type: 'text'}})
+        expect(input.value).toBe('newValue');
+    });
+
+    it('Update text value.', () => {
+        fireEvent.change(input, {target: {value: 123, type: 'number'}})
+        expect(input.value).toBe('123');
+    });
+
+    it('Update checkbox value.', () => {
+        fireEvent.change(input, {target: {checked: true, type: 'checkbox'}})
+        expect(input.checked).toBe(true);
+    });
+
+    it('Fetch data.', () => {
+        expect(mockAxios.get).toHaveBeenCalledWith('testEndpoint', expect.anything());
+        expect(mockPrepData).toHaveBeenCalledTimes(1);
+        expect(Child.mock.calls[0][0].formData).toMatchObject({field: 'preparedData'});
+    });
+
+    it('Submit.', () => {
+        expect(mockAxios.get).toHaveBeenCalledTimes(1);
+        expect(mockPrepDataToSubmit).toHaveBeenCalledTimes(0);
+
+        fireEvent.submit(form);
+
+        expect(mockPrepDataToSubmit).toHaveBeenCalledTimes(1);
+        expect(mockAxios.post).toHaveBeenCalledTimes(1);
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            'testEndpoint',
+            {'field': 'preparedDataToSubmit'},
+            expect.anything(),
+        );
+    });
 });

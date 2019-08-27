@@ -9,7 +9,7 @@ import React from 'react';
 
 import {render} from 'customTestRender';
 
-import {Button} from '../Button'
+import Button from '../Button'
 
 describe('<Button />', () => {
     it('Render button correctly', () => {

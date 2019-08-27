@@ -5,13 +5,13 @@
  * See /LICENSE for more information.
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import {Input} from './Input';
+import Input from "./Input";
 
 
-export const TextInput = ({...props}) => <Input type="text" {...props}/>;
+const TextInput = ({ ...props }) => <Input type="text" {...props} />;
 
 
 TextInput.propTypes = {
@@ -22,3 +22,5 @@ TextInput.propTypes = {
     /** Help text message. */
     helpText: PropTypes.string,
 };
+
+export default TextInput;

@@ -53,9 +53,8 @@ module.exports = {
     },
     "settings": {
         "import/resolver": {
-            "webpack": {
-                "env": {"lighttpd": true},
-                "config": path.resolve(__dirname, "webpack.config.js")
+            "node": {
+                "paths": ["src"]
             }
         }
     }

@@ -5,7 +5,9 @@
  * See /LICENSE for more information.
  */
 
-import { ForisUrls } from "forisUrls";
+/* eslint no-console: "off" */
+
+import { ForisURLs } from "forisUrls";
 
 const PROTOCOL = window.location.protocol === "http:" ? "ws" : "wss";
 
@@ -15,13 +17,13 @@ const URL = process.env.LIGHTTPD
 
 const WAITING_FOR_CONNECTION_TIMEOUT = 500;
 
-export class WebSockets {
+export default class WebSockets {
     constructor() {
         this.ws = new WebSocket(URL);
         this.ws.onerror = (e) => {
-            if (window.location.pathname !== ForisUrls.login) {
+            if (window.location.pathname !== ForisURLs.login) {
                 console.error("WS: Error observed, you aren't logged probably.");
-                window.location.replace(ForisUrls.login);
+                window.location.replace(ForisURLs.login);
             }
             console.log(`WS: Error: ${e}`);
         };

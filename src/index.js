@@ -22,10 +22,8 @@ export {ForisForm} from "form/components/ForisForm";
 export {SubmitButton, STATES as SUBMIT_BUTTON_STATES} from "form/components/SubmitButton";
 export {useForisModule, useForm} from "form/hooks";
 
-// // Test Utils
-export {render} from "testUtils/customTestRender";
+// Test Utils
 export {mockedWS} from "testUtils/mockWS";
-export {setupGlobals} from "testUtils/setupGlobals";
 
 
 // WebSockets

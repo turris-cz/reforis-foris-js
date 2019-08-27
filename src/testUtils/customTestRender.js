@@ -10,6 +10,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {UIDReset} from 'react-uid';
+import {StaticRouter} from 'react-router';
 import {render} from '@testing-library/react'
 
 Wrapper.propTypes = {
@@ -20,9 +21,11 @@ Wrapper.propTypes = {
 };
 
 function Wrapper({children}) {
-    return <UIDReset>
-        {children}
-    </UIDReset>
+    return <StaticRouter>
+        <UIDReset>
+            {children}
+        </UIDReset>
+    </StaticRouter>
 }
 
 const customTestRender = (ui, options) => render(ui, {wrapper: Wrapper, ...options});

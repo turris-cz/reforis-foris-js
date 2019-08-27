@@ -9,12 +9,12 @@ import React from 'react';
 
 import {render} from 'customTestRender';
 
-import Checkbox from '../Checkbox'
+import {CheckBox} from '../Checkbox'
 
 describe('<Checkbox/>', () => {
     it('Render checkbox', () => {
         const {container} = render(
-            <Checkbox
+            <CheckBox
                 label="Test label"
                 checked
                 helpText="Some help text"
@@ -26,7 +26,7 @@ describe('<Checkbox/>', () => {
 
     it('Render uncheked checkbox', () => {
         const {container} = render(
-            <Checkbox
+            <CheckBox
                 label="Test label"
                 helpText="Some help text"
             />

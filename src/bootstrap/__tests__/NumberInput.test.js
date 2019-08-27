@@ -9,7 +9,7 @@ import React from 'react';
 
 import {render} from 'customTestRender';
 
-import NumberInput from '../NumberInput';
+import {NumberInput} from '../NumberInput';
 
 
 describe('<NumberInput/>', () => {

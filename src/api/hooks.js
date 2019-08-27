@@ -8,7 +8,7 @@
 import axios from "axios";
 import { useCallback, useReducer } from "react";
 
-import { ForisUrls } from "forisUrls";
+import { ForisURLs } from "forisUrls";
 
 
 const POST_HEADERS = {
@@ -57,7 +57,7 @@ const APIGetReducer = (state, action) => {
             data: action.payload,
         };
     case API_ACTIONS.FAILURE:
-        if (action.status === 403) window.location.assign(ForisUrls.login);
+        if (action.status === 403) window.location.assign(ForisURLs.login);
         return {
             ...state,
             isLoading: false,
@@ -69,18 +69,12 @@ const APIGetReducer = (state, action) => {
     }
 };
 
-/**
- * This function adds one to its input.
- * @returns {number} that number, plus one.
- * @param url
- */
 export function useAPIGet(url) {
     const [state, dispatch] = useReducer(APIGetReducer, {
         isLoading: false,
         isError: false,
         data: null,
     });
-
     const get = useCallback(async () => {
         dispatch({ type: API_ACTIONS.INIT });
         try {
@@ -118,7 +112,7 @@ const APIPostReducer = (state, action) => {
             data: action.payload,
         };
     case API_ACTIONS.FAILURE:
-        if (action.status === 403) window.location.assign(ForisUrls.login);
+        if (action.status === 403) window.location.assign(ForisURLs.login);
         return {
             ...state,
             isSending: false,

@@ -9,7 +9,7 @@ import React from 'react';
 
 import {render} from 'customTestRender';
 
-import TextInput from '../TextInput';
+import {TextInput} from '../TextInput';
 
 describe('<TextInput/>', () => {
     it('Render text input', () => {

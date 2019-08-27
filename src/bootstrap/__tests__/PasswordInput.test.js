@@ -9,7 +9,7 @@ import React from 'react';
 
 import {render} from 'customTestRender';
 
-import PasswordInput from '../PasswordInput';
+import {PasswordInput} from '../PasswordInput';
 
 describe('<PasswordInput/>', () => {
     it('Render password input', () => {

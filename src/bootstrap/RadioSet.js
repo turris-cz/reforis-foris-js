@@ -7,7 +7,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {useUID} from 'react-uid/dist/es5/index';
+import {useUID} from 'react-uid';
 
 import {formFieldsSize} from './constants';
 
@@ -30,7 +30,7 @@ RadioSet.propTypes = {
     helpText: PropTypes.string,
 };
 
-export default function RadioSet({name, label, choices, value, helpText, ...props}) {
+export function RadioSet({name, label, choices, value, helpText, ...props}) {
     const uid = useUID();
     const radios = choices.map((choice, key) =>
         <Radio

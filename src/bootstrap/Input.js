@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import {useUID} from 'react-uid/dist/es5/index';
+import {useUID} from 'react-uid';
 import {formFieldsSize} from './constants';
 import PropTypes from 'prop-types';
 
@@ -23,7 +23,7 @@ Input.propTypes = {
 }
 
 /** Base bootstrap input component. */
-export default function Input({type, label, helpText, error, className, children, ...props}) {
+export function Input({type, label, helpText, error, className, children, ...props}) {
     const uid = useUID();
     const inputClassName = `form-control ${className ? className : ''} ${(error ? 'is-invalid' : '')}`.trim();
     return <div className={formFieldsSize}>

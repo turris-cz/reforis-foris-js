@@ -22,7 +22,7 @@ Alert.propTypes = {
     onDismiss: PropTypes.func
 };
 
-export default function Alert({type, message, onDismiss, children}) {
+export function Alert({type, message, onDismiss, children}) {
     return <div className={`alert alert-dismissible alert-${type}`}>
         {onDismiss ? <button type="button" className="close" onClick={onDismiss}>&times;</button> : false}
         {message}

@@ -7,7 +7,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {useUID} from 'react-uid/dist/es5/index';
+import {useUID} from 'react-uid';
 
 
 Select.propTypes = {
@@ -24,7 +24,7 @@ Select.propTypes = {
     helpText: PropTypes.string,
 };
 
-export default function Select({label, choices, helpText, ...props}) {
+export function Select({label, choices, helpText, ...props}) {
     const uid = useUID();
 
     const options = Object.keys(choices).map(

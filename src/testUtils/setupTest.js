@@ -5,33 +5,28 @@
  * See /LICENSE for more information.
  */
 
+import mockAxios from 'jest-mock-axios';
+import moment from 'moment-timezone';
 
-export function setUpTest() {
-    const mockAxios = require('jest-mock-axios');
-    const moment = require('moment-timezone');
+// Setup axios cleanup
+global.afterEach(() => {
+    mockAxios.reset();
+});
 
-    // Setup axios cleanup
-    global.afterEach(() => {
-        mockAxios.reset();
-    });
+// Mock babel (gettext)
+global._ = str => str;
+global.babel = {format: (str) => str};
+global.ForisTranslations = {};
 
-    // Mock babel (gettext)
-    window._ = str => str;
-    window.babel = {format: (str) => str};
-    window.ForisTranslations = {};
+// Mock scrollIntoView
+global.HTMLElement.prototype.scrollIntoView = () => {
+};
 
-    // Mock scrollIntoView
-    window.HTMLElement.prototype.scrollIntoView = () => {
-    };
+jest.doMock('moment', () => {
+    moment.tz.setDefault('UTC');
+    return moment;
+});
 
-    jest.doMock('moment', () => {
-        moment.tz.setDefault('UTC');
-        return moment;
-    });
+Date.now = jest.fn(() => new Date(Date.UTC(2019, 1, 1, 12, 13, 14)).valueOf());
 
-    Date.now = jest.fn(() => new Date(Date.UTC(2019, 1, 1, 12, 13, 14)).valueOf());
-}
-
-
-
-
+jest.doMock("utils/vfs_fonts", () => ({}));

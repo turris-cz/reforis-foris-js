@@ -7,7 +7,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function useWSForisModule(ws, module, action = "update_settings") {
+export function useWSForisModule(ws, module, action = "update_settings") {
     const [data, setData] = useState(null);
 
     useEffect(() => {

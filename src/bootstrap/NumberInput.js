@@ -6,21 +6,22 @@
  */
 
 import React from 'react';
+
+import {Input} from './Input';
 import PropTypes from 'prop-types';
 
-import Input from './Input';
+export const NumberInput = ({...props}) => <Input type="number" {...props}/>;
 
-
-const TextInput = ({...props}) => <Input type="text" {...props}/>;
-
-
-TextInput.propTypes = {
+NumberInput.propTypes = {
     /** Field label. */
     label: PropTypes.string.isRequired,
-    /** Error text. */
+    /** Error message. */
     error: PropTypes.string,
     /** Help text message. */
     helpText: PropTypes.string,
+    /** Number value. */
+    value: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+    ]),
 };
-
-export default TextInput;

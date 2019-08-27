@@ -9,7 +9,7 @@ import React from 'react';
 
 import {render} from 'customTestRender';
 
-import RadioSet from '../components/RadioSet';
+import RadioSet from '../RadioSet';
 
 const TEST_CHOICES = [
     {label: 'label', value: 'value'},

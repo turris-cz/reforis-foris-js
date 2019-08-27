@@ -7,7 +7,8 @@
 
 import React, {useEffect, useRef} from 'react';
 import PropTypes from 'prop-types';
-import Portal from 'utils/Portal';
+
+import {Portal} from 'utils/Portal';
 
 Modal.propTypes = {
     /** Is modal shown value */

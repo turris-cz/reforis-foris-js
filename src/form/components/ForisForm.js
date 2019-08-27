@@ -9,11 +9,11 @@ import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import {Prompt} from 'react-router';
 
-import Spinner from 'bootstrap/components/Spinner';
-import {useAPIPost} from 'api';
+import {Spinner} from 'bootstrap/Spinner';
+import {useAPIPost} from 'api/hooks';
 
 import {useForisModule, useForm} from '../hooks';
-import SubmitButton, {STATES as SUBMIT_BUTTON_STATES} from './SubmitButton';
+import {STATES as SUBMIT_BUTTON_STATES, SubmitButton} from './SubmitButton';
 import {FailAlert, SuccessAlert} from './alerts';
 
 ForisForm.propTypes = {
@@ -57,17 +57,17 @@ ForisForm.defaultProps = {
 };
 
 /** Serves as HOC for all foris forms components. */
-export default function ForisForm({
-                                      ws,
-                                      forisConfig,
-                                      prepData,
-                                      prepDataToSubmit,
-                                      postCallback,
-                                      validator,
-                                      disabled,
-                                      onSubmitOverridden,
-                                      children
-                                  }) {
+export function ForisForm({
+                              ws,
+                              forisConfig,
+                              prepData,
+                              prepDataToSubmit,
+                              postCallback,
+                              validator,
+                              disabled,
+                              onSubmitOverridden,
+                              children
+                          }) {
     const [formState, onFormChangeHandler, resetFormData] = useForm(validator, prepData);
 
     const [forisModuleState] = useForisModule(ws, forisConfig);

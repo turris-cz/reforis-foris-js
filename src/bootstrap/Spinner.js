@@ -23,7 +23,7 @@ Spinner.defaultProps = {
     fullScreen: false,
 };
 
-export default function Spinner({fullScreen, children, className, ...props}) {
+export function Spinner({fullScreen, children, className, ...props}) {
     if (!fullScreen) {
         return <div className={'spinner-wrapper ' + (className ? className : '')} {...props}>
             <SpinnerElement>{children}</SpinnerElement>

@@ -7,23 +7,18 @@
 
 import React from 'react';
 
-import Input from './Input';
+import {Input} from './Input';
 import PropTypes from 'prop-types';
 
-const NumberInput = ({...props}) => <Input type="number" {...props}/>;
+export const EmailInput = ({...props}) => <Input type="email" {...props}/>;
 
-NumberInput.propTypes = {
+EmailInput.propTypes = {
     /** Field label. */
     label: PropTypes.string.isRequired,
     /** Error message. */
     error: PropTypes.string,
     /** Help text message. */
     helpText: PropTypes.string,
-    /** Number value. */
-    value: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-    ]),
+    /** Email value. */
+    value: PropTypes.string,
 };
-
-export default NumberInput;

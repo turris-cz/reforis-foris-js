@@ -6,8 +6,9 @@
  */
 
 import axios from "axios";
-import {useCallback, useReducer} from "react";
-import {ForisURLs} from './constants';
+import { useCallback, useReducer } from "react";
+
+import { ForisUrls } from "forisUrls";
 
 
 const POST_HEADERS = {
@@ -42,29 +43,29 @@ const API_ACTIONS = {
 
 const APIGetReducer = (state, action) => {
     switch (action.type) {
-        case API_ACTIONS.INIT:
-            return {
-                ...state,
-                isLoading: true,
-                isError: false,
-            };
-        case API_ACTIONS.SUCCESS:
-            return {
-                ...state,
-                isLoading: false,
-                isError: false,
-                data: action.payload,
-            };
-        case API_ACTIONS.FAILURE:
-            if (action.status === 403) window.location.assign(ForisURLs.login);
-            return {
-                ...state,
-                isLoading: false,
-                isError: true,
-                data: action.payload,
-            };
-        default:
-            throw new Error();
+    case API_ACTIONS.INIT:
+        return {
+            ...state,
+            isLoading: true,
+            isError: false,
+        };
+    case API_ACTIONS.SUCCESS:
+        return {
+            ...state,
+            isLoading: false,
+            isError: false,
+            data: action.payload,
+        };
+    case API_ACTIONS.FAILURE:
+        if (action.status === 403) window.location.assign(ForisUrls.login);
+        return {
+            ...state,
+            isLoading: false,
+            isError: true,
+            data: action.payload,
+        };
+    default:
+        throw new Error();
     }
 };
 
@@ -81,12 +82,12 @@ export function useAPIGet(url) {
     });
 
     const get = useCallback(async () => {
-        dispatch({type: API_ACTIONS.INIT});
+        dispatch({ type: API_ACTIONS.INIT });
         try {
             const result = await axios.get(url, {
                 timeout: TIMEOUT,
             });
-            dispatch({type: API_ACTIONS.SUCCESS, payload: result.data});
+            dispatch({ type: API_ACTIONS.SUCCESS, payload: result.data });
         } catch (error) {
             dispatch({
                 type: API_ACTIONS.FAILURE,
@@ -101,32 +102,32 @@ export function useAPIGet(url) {
 
 const APIPostReducer = (state, action) => {
     switch (action.type) {
-        case API_ACTIONS.INIT:
-            return {
-                ...state,
-                isSending: true,
-                isError: false,
-                isSuccess: false,
-            };
-        case API_ACTIONS.SUCCESS:
-            return {
-                ...state,
-                isSending: false,
-                isError: false,
-                isSuccess: true,
-                data: action.payload,
-            };
-        case API_ACTIONS.FAILURE:
-            if (action.status === 403) window.location.assign(ForisURLs.login);
-            return {
-                ...state,
-                isSending: false,
-                isError: true,
-                isSuccess: false,
-                data: action.payload,
-            };
-        default:
-            throw new Error();
+    case API_ACTIONS.INIT:
+        return {
+            ...state,
+            isSending: true,
+            isError: false,
+            isSuccess: false,
+        };
+    case API_ACTIONS.SUCCESS:
+        return {
+            ...state,
+            isSending: false,
+            isError: false,
+            isSuccess: true,
+            data: action.payload,
+        };
+    case API_ACTIONS.FAILURE:
+        if (action.status === 403) window.location.assign(ForisUrls.login);
+        return {
+            ...state,
+            isSending: false,
+            isError: true,
+            isSuccess: false,
+            data: action.payload,
+        };
+    default:
+        throw new Error();
     }
 };
 
@@ -139,13 +140,13 @@ export function useAPIPost(url) {
     });
 
     const post = async (data) => {
-        dispatch({type: API_ACTIONS.INIT});
+        dispatch({ type: API_ACTIONS.INIT });
         try {
             const result = await axios.post(url, data, {
                 timeout: TIMEOUT,
                 headers: POST_HEADERS,
             });
-            dispatch({type: API_ACTIONS.SUCCESS, payload: result.data});
+            dispatch({ type: API_ACTIONS.SUCCESS, payload: result.data });
         } catch (error) {
             dispatch({
                 type: API_ACTIONS.FAILURE,

@@ -29,7 +29,7 @@ Button.propTypes = {
     ]).isRequired
 };
 
-export default function Button({className, loading, forisFormSize, children, ...props}) {
+export function Button({className, loading, forisFormSize, children, ...props}) {
     className = className ? 'btn ' + className : 'btn btn-primary ';
     if (forisFormSize)
         className += SIZE_CLASS + SIZE_CLASS_SM;

@@ -7,7 +7,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {useUID} from 'react-uid/dist/es5/index';
+import {useUID} from 'react-uid';
 
 import {formFieldsSize} from './constants';
 
@@ -27,7 +27,7 @@ CheckBox.defaultProps = {
     disabled: false
 };
 
-export default function CheckBox({label, helpText, useDefaultSize, disabled, ...props}) {
+export function CheckBox({label, helpText, useDefaultSize, disabled, ...props}) {
     const uid = useUID();
     return <div className={useDefaultSize ? formFieldsSize : ""} style={{marginBottom: '1rem'}}>
         <div className='custom-control custom-checkbox' style={{marginBottom: '0'}}>

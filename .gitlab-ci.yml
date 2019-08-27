@@ -1,0 +1,26 @@
+image: node:8-alpine
+
+stages:
+  - test
+  - build
+
+before_script:
+  - npm install
+
+test:
+  stage: test
+  script:
+    - npm test
+
+lint:
+  stage: test
+  script:
+    - npm run lint
+
+build:
+  stage: build
+  script:
+    - npm pack
+  artifacts:
+    paths:
+      - foris-*.tgz

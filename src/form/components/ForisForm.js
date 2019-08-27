@@ -99,7 +99,7 @@ export default function ForisForm({
 
     const [alertIsDismissed, setAlertIsDismissed] = useState(false);
 
-    if (!formState.data) return <Spinner className="row justify-content-center"/>;
+    if (!formState.data) return <Spinner className="row justify-content-center" />;
 
     const formIsDisabled = disabled || forisModuleState.isLoading || postState.isSending;
     const submitButtonIsDisabled = disabled || !!formState.errors;
@@ -126,15 +126,15 @@ export default function ForisForm({
     let alert = null;
     if (!alertIsDismissed) {
         if (postState.isSuccess) {
-            alert = <SuccessAlert onDismiss={() => setAlertIsDismissed(true)}/>;
+            alert = <SuccessAlert onDismiss={() => setAlertIsDismissed(true)} />;
         } else if (postState.isError) {
-            alert = <FailAlert onDismiss={() => setAlertIsDismissed(true)}/>;
+            alert = <FailAlert onDismiss={() => setAlertIsDismissed(true)} />;
         }
     }
 
     return (
         <>
-            <Prompt message={getMessageOnLeavingPage}/>
+            <Prompt message={getMessageOnLeavingPage} />
             {alert}
             <form onSubmit={onSubmit}>
                 {childrenWithFormProps}

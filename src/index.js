@@ -1,19 +1,40 @@
+import * as Alert from "bootstrap/Alert";
+import * as Button from "bootstrap/Button";
+import * as CheckBox from "bootstrap/Checkbox";
+import * as formFieldsSize from "bootstrap/constants";
+import * as DataTimeInput from "bootstrap/DataTimeInput";
+import * as EmailInput from "bootstrap/EmailInput";
+import * as Input from "bootstrap/Input";
+import * as NumberInput from "bootstrap/NumberInput";
+import * as PasswordInput from "bootstrap/PasswordInput";
+import * as RadioSet from "bootstrap/RadioSet";
+import * as Select from "bootstrap/Select";
+import * as TextInput from "bootstrap/TextInput";
+
+import * as useWSForisModule from "webSockets/hooks";
+import * as WebSockets from "webSockets/WebSockets";
+import * as Portal from "utils/Portal";
+
+import ForisForm from "form/components/ForisForm";
+
 // API
 export { useAPIGet, useAPIPost } from "./api/hooks";
 
 // Bootstrap
-export * as Alert from "bootstrap/Alert";
-export * as Button from "bootstrap/Button";
-export * as CheckBox from "bootstrap/Checkbox";
-export * as formFieldsSize from "bootstrap/constants";
-export * as DataTimeInput from "bootstrap/DataTimeInput";
-export * as EmailInput from "bootstrap/EmailInput";
-export * as Input from "bootstrap/Input";
-export * as NumberInput from "bootstrap/NumberInput";
-export * as PasswordInput from "bootstrap/PasswordInput";
-export * as RadioSet from "bootstrap/RadioSet";
-export * as Select from "bootstrap/Select";
-export * as TextInput from "bootstrap/TextInput";
+export {
+    Alert,
+    Button,
+    CheckBox,
+    formFieldsSize,
+    DataTimeInput,
+    EmailInput,
+    Input,
+    NumberInput,
+    PasswordInput,
+    RadioSet,
+    Select,
+    TextInput,
+};
 export {
     Spinner,
     SpinnerElement,
@@ -27,7 +48,7 @@ export {
 
 
 // Form
-export ForisForm from "form/components/ForisForm";
+export { ForisForm };
 export { SubmitButton, STATES as SUBMIT_BUTTON_STATES } from "form/components/SubmitButton";
 export { useForisModule, useForm } from "form/hooks";
 
@@ -35,19 +56,14 @@ export { useForisModule, useForm } from "form/hooks";
 // Test Utils
 export { mockedWS } from "testUtils/mockWS";
 
-
 // WebSockets
-export * as useWSForisModule from "webSockets/hooks";
-export * as WebSockets from "webSockets/WebSockets";
-
+export { useWSForisModule, WebSockets };
 
 // Utils
-export * as Portal from "utils/Portal";
-
+export { Portal };
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "./forisUrls";
-
 
 // Validation
 export {

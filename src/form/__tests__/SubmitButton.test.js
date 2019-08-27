@@ -8,7 +8,7 @@
 import React from "react";
 import { render } from "customTestRender";
 
-import SubmitButton, { STATES } from "../components/SubmitButton";
+import { STATES, SubmitButton } from "../components/SubmitButton";
 
 describe("<SubmitButton/>", () => {
     it("Render ready", () => {

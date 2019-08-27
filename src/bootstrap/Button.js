@@ -29,7 +29,7 @@ Button.propTypes = {
     ]).isRequired,
 };
 
-export default function Button({
+export function Button({
     className, loading, forisFormSize, children, ...props
 }) {
     className = className ? `btn ${className}` : "btn btn-primary ";

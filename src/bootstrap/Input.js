@@ -8,6 +8,7 @@
 import React from "react";
 import { useUID } from "react-uid/dist/es5/index";
 import PropTypes from "prop-types";
+
 import { formFieldsSize } from "./constants";
 
 Input.propTypes = {
@@ -23,7 +24,7 @@ Input.propTypes = {
 };
 
 /** Base bootstrap input component. */
-export default function Input({
+export function Input({
     type, label, helpText, error, className, children, ...props
 }) {
     const uid = useUID();

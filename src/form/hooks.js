@@ -9,7 +9,7 @@ import { useCallback, useEffect, useReducer } from "react";
 import update from "immutability-helper";
 
 import { useAPIGet } from "api/hooks";
-import useWSForisModule from "webSockets/hooks";
+import { useWSForisModule } from "webSockets/hooks";
 
 
 const FORM_ACTIONS = {

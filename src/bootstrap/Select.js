@@ -24,7 +24,7 @@ Select.propTypes = {
     helpText: PropTypes.string,
 };
 
-export default function Select({
+export function Select({
     label, choices, helpText, ...props
 }) {
     const uid = useUID();

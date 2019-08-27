@@ -57,7 +57,7 @@ ForisForm.defaultProps = {
 };
 
 /** Serves as HOC for all foris forms components. */
-export default function ForisForm({
+export function ForisForm({
     ws,
     forisConfig,
     prepData,

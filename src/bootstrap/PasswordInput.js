@@ -8,7 +8,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import Input from "./Input";
+import { Input } from "./Input";
 
 PasswordInput.propTypes = {
     /** Field label. */
@@ -23,7 +23,7 @@ PasswordInput.propTypes = {
     withEye: PropTypes.bool,
 };
 
-export default function PasswordInput({ withEye, ...props }) {
+export function PasswordInput({ withEye, ...props }) {
     const [isHidden, setHidden] = useState(true);
     return (
         <Input

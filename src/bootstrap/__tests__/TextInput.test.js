@@ -5,15 +5,15 @@
  * See /LICENSE for more information.
  */
 
-import React from 'react';
+import React from "react";
 
-import {render} from 'customTestRender';
+import { render } from "customTestRender";
 
-import TextInput from '../TextInput';
+import { TextInput } from "../TextInput";
 
-describe('<TextInput/>', () => {
-    it('Render text input', () => {
-        const {container} = render(
+describe("<TextInput/>", () => {
+    it("Render text input", () => {
+        const { container } = render(
             <TextInput
                 label="Test label"
                 helpText="Some help text"
@@ -22,6 +22,7 @@ describe('<TextInput/>', () => {
                 }}
             />
         );
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container.firstChild)
+            .toMatchSnapshot();
     });
 });

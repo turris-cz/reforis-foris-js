@@ -7,7 +7,7 @@
 
 import ReactDOM from "react-dom";
 
-export default function Portal({ containerId, children }) {
+export function Portal({ containerId, children }) {
     const container = document.getElementById(containerId);
     if (container) return ReactDOM.createPortal(children, container);
     return null;

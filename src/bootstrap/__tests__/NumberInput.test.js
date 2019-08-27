@@ -5,16 +5,16 @@
  * See /LICENSE for more information.
  */
 
-import React from 'react';
+import React from "react";
 
-import {render} from 'customTestRender';
+import { render } from "customTestRender";
 
-import NumberInput from '../NumberInput';
+import { NumberInput } from "../NumberInput";
 
 
-describe('<NumberInput/>', () => {
-    it('Render number input', () => {
-        const {container} = render(
+describe("<NumberInput/>", () => {
+    it("Render number input", () => {
+        const { container } = render(
             <NumberInput
                 label="Test label"
                 helpText="Some help text"
@@ -23,6 +23,7 @@ describe('<NumberInput/>', () => {
                 }}
             />
         );
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container.firstChild)
+            .toMatchSnapshot();
     });
 });

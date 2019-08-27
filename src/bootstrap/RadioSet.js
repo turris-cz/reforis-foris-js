@@ -30,7 +30,7 @@ RadioSet.propTypes = {
     helpText: PropTypes.string,
 };
 
-export default function RadioSet({
+export function RadioSet({
     name, label, choices, value, helpText, ...props
 }) {
     const uid = useUID();

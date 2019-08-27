@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import Datetime from "react-datetime/DateTime";
 import moment from "moment/moment";
 
-import Input from "./Input";
+import { Input } from "./Input";
 
 DataTimeInput.propTypes = {
     /** Field label. */
@@ -35,7 +35,7 @@ DataTimeInput.propTypes = {
 const DEFAULT_DATE_FORMAT = "YYYY-MM-DD";
 const DEFAULT_TIME_FORMAT = "HH:mm:ss";
 
-export default function DataTimeInput({
+export function DataTimeInput({
     value, onChange, isValidDate, dateFormat, timeFormat, children, ...props
 }) {
     function renderInput(datetimeProps) {

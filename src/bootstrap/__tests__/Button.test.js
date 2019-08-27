@@ -5,25 +5,28 @@
  * See /LICENSE for more information.
  */
 
-import React from 'react';
+import React from "react";
 
-import {render} from 'customTestRender';
+import { render } from "customTestRender";
 
-import Button from '../Button'
+import { Button } from "../Button";
 
-describe('<Button />', () => {
-    it('Render button correctly', () => {
-        const {container} = render(<Button>Test Button</Button>);
-        expect(container.firstChild).toMatchSnapshot()
+describe("<Button />", () => {
+    it("Render button correctly", () => {
+        const { container } = render(<Button>Test Button</Button>);
+        expect(container.firstChild)
+            .toMatchSnapshot();
     });
 
-    it('Render button with custom classes', () => {
-        const {container} = render(<Button className="one two three">Test Button</Button>)
-        expect(container.firstChild).toMatchSnapshot()
+    it("Render button with custom classes", () => {
+        const { container } = render(<Button className="one two three">Test Button</Button>);
+        expect(container.firstChild)
+            .toMatchSnapshot();
     });
 
-    it('Render button with spinner', () => {
-        const {container} = render(<Button loading={true}>Test Button</Button>)
-        expect(container.firstChild).toMatchSnapshot()
+    it("Render button with spinner", () => {
+        const { container } = render(<Button loading={true}>Test Button</Button>);
+        expect(container.firstChild)
+            .toMatchSnapshot();
     });
 });

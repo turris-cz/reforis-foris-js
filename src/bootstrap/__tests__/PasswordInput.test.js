@@ -5,15 +5,15 @@
  * See /LICENSE for more information.
  */
 
-import React from 'react';
+import React from "react";
 
-import {render} from 'customTestRender';
+import { render } from "customTestRender";
 
-import PasswordInput from '../PasswordInput';
+import { PasswordInput } from "../PasswordInput";
 
-describe('<PasswordInput/>', () => {
-    it('Render password input', () => {
-        const {container} = render(
+describe("<PasswordInput/>", () => {
+    it("Render password input", () => {
+        const { container } = render(
             <PasswordInput
                 label="Test label"
                 helpText="Some help text"
@@ -22,6 +22,7 @@ describe('<PasswordInput/>', () => {
                 }}
             />
         );
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container.firstChild)
+            .toMatchSnapshot();
     });
 });

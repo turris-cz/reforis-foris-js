@@ -17,7 +17,7 @@ const URL = process.env.LIGHTTPD
 
 const WAITING_FOR_CONNECTION_TIMEOUT = 500;
 
-export default class WebSockets {
+export class WebSockets {
     constructor() {
         this.ws = new WebSocket(URL);
         this.ws.onerror = (e) => {

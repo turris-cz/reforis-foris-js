@@ -27,7 +27,7 @@ CheckBox.defaultProps = {
     disabled: false,
 };
 
-export default function CheckBox({
+export function CheckBox({
     label, helpText, useDefaultSize, disabled, ...props
 }) {
     const uid = useUID();

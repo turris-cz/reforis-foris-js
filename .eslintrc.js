@@ -27,14 +27,19 @@ module.exports = {
         "react/prop-types": "warn",
         "react/no-array-index-key": "warn",
         "react/button-has-type": "warn",
+        "import/prefer-default-export": "off",
         "import/no-unresolved": [
             "error",
             // Ignore imports used only in tests
-            {ignore: ["mockWS", "customTestRender"]}
+            { ignore: ["mockWS", "customTestRender"] }
         ],
         "import/no-cycle": "warn",
         "no-console": "error",
-        "no-use-before-define": ["error", {functions: false, classes: true, variables: true}],
+        "no-use-before-define": ["error", {
+            functions: false,
+            classes: true,
+            variables: true
+        }],
         "no-restricted-syntax": "warn",
         // Should be enabled in the future
         "camelcase": "off",

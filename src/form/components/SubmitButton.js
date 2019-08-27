@@ -8,7 +8,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Button from "bootstrap/Button";
+import { Button } from "bootstrap/Button";
 
 export const STATES = {
     READY: 1,
@@ -18,7 +18,8 @@ export const STATES = {
 
 SubmitButton.propTypes = {
     disabled: PropTypes.bool,
-    state: PropTypes.oneOf(Object.keys(STATES).map((key) => STATES[key])),
+    state: PropTypes.oneOf(Object.keys(STATES)
+        .map((key) => STATES[key])),
 };
 
 export function SubmitButton({ disabled, state, ...props }) {

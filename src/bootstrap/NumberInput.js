@@ -8,9 +8,9 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-import Input from "./Input";
+import { Input } from "./Input";
 
-const NumberInput = ({ ...props }) => <Input type="number" {...props} />;
+export const NumberInput = ({ ...props }) => <Input type="number" {...props} />;
 
 NumberInput.propTypes = {
     /** Field label. */
@@ -25,5 +25,3 @@ NumberInput.propTypes = {
         PropTypes.number,
     ]),
 };
-
-export default NumberInput;

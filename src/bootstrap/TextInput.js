@@ -8,10 +8,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Input from "./Input";
+import { Input } from "./Input";
 
 
-const TextInput = ({ ...props }) => <Input type="text" {...props} />;
+export const TextInput = ({ ...props }) => <Input type="text" {...props} />;
 
 
 TextInput.propTypes = {
@@ -22,5 +22,3 @@ TextInput.propTypes = {
     /** Help text message. */
     helpText: PropTypes.string,
 };
-
-export default TextInput;

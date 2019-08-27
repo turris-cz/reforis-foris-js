@@ -5,32 +5,35 @@
  * See /LICENSE for more information.
  */
 
-import React from 'react';
+import React from "react";
 
-import {render} from 'customTestRender';
+import { render } from "customTestRender";
 
-import CheckBox from '../Checkbox'
+import { CheckBox } from "../Checkbox";
 
-describe('<Checkbox/>', () => {
-    it('Render checkbox', () => {
-        const {container} = render(
+describe("<Checkbox/>", () => {
+    it("Render checkbox", () => {
+        const { container } = render(
             <CheckBox
                 label="Test label"
                 checked
                 helpText="Some help text"
-                onChange={()=>{}}
+                onChange={() => {
+                }}
             />
         );
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container.firstChild)
+            .toMatchSnapshot();
     });
 
-    it('Render uncheked checkbox', () => {
-        const {container} = render(
+    it("Render uncheked checkbox", () => {
+        const { container } = render(
             <CheckBox
                 label="Test label"
                 helpText="Some help text"
             />
         );
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container.firstChild)
+            .toMatchSnapshot();
     });
 });

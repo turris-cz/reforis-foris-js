@@ -22,7 +22,7 @@ Alert.propTypes = {
     onDismiss: PropTypes.func,
 };
 
-export default function Alert({
+export function Alert({
     type, message, onDismiss, children,
 }) {
     return (

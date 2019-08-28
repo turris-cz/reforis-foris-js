@@ -4,7 +4,7 @@ export { useAPIGet, useAPIPost } from "./api/hooks";
 // Bootstrap
 export { Alert } from "bootstrap/Alert";
 export { Button } from "bootstrap/Button";
-export { CheckBox } from "bootstrap/Checkbox";
+export { CheckBox } from "bootstrap/CheckBox";
 export { formFieldsSize } from "bootstrap/constants";
 export { DataTimeInput } from "bootstrap/DataTimeInput";
 export { EmailInput } from "bootstrap/EmailInput";

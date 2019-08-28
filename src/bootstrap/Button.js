@@ -39,7 +39,7 @@ export function Button({
         ? <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" /> : null;
 
     return (
-        <button className={className} {...props}>
+        <button type="button" className={className} {...props}>
             {span}
             {" "}
             {span ? " " : null}

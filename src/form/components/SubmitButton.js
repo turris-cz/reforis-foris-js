@@ -40,6 +40,7 @@ export function SubmitButton({ disabled, state, ...props }) {
 
     return (
         <Button
+            type="submit"
             loading={loadingSubmitButton}
             disabled={disableSubmitButton}
             forisFormSize

@@ -6,5 +6,12 @@ module.exports = {
     plugins: [
         "@babel/plugin-transform-runtime",
         "@babel/plugin-syntax-export-default-from",
+        ["module-resolver", {
+            root: ["./src"],
+            alias: {
+                test: "./test",
+                underscore: "lodash",
+            },
+        }],
     ],
 };

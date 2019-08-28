@@ -44,7 +44,7 @@ export { WebSockets } from "webSockets/WebSockets";
 export { Portal } from "utils/Portal";
 
 // Foris URL
-export { ForisURLs, REFORIS_URL_PREFIX } from "./forisUrls";
+export { ForisURLs, REFORIS_URL_PREFIX } from "forisUrls";
 
 // Validation
 export {

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubmitButton/> Render load 1`] = `
+<div>
+  <button
+    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+    disabled=""
+    type="submit"
+  >
+    <span
+      aria-hidden="true"
+      class="spinner-border spinner-border-sm"
+      role="status"
+    />
+     
+     
+     
+    Load settings
+  </button>
+</div>
+`;
+
+exports[`<SubmitButton/> Render ready 1`] = `
+<div>
+  <button
+    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+    type="submit"
+  >
+     
+     
+    Save
+  </button>
+</div>
+`;
+
+exports[`<SubmitButton/> Render saving 1`] = `
+<div>
+  <button
+    class="btn btn-primary  offset-lg-8 col-lg-3 col-sm-12"
+    disabled=""
+    type="submit"
+  >
+    <span
+      aria-hidden="true"
+      class="spinner-border spinner-border-sm"
+      role="status"
+    />
+     
+     
+     
+    Updating
+  </button>
+</div>
+`;

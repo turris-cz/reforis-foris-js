@@ -1,0 +1,71 @@
+{
+  "name": "foris",
+  "version": "0.0.6",
+  "description": "Set of components and utils for Foris and its plugins.",
+  "author": "CZ.NIC, z.s.p.o.",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.labs.nic.cz/turris/reforis/forisjs.git"
+  },
+  "keywords": [
+    "foris",
+    "reforis"
+  ],
+  "license": "GPL-3.0",
+  "main": "./dist/index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "immutability-helper": "^3.0.1",
+    "prop-types": "^15.7.2",
+    "react-datetime": "^2.16.3",
+    "react-router": "^5.0.1",
+    "react-uid": "^2.2.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-syntax-export-default-from": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@testing-library/react": "^8.0.1",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "jest": "^24.8.0",
+    "jest-mock-axios": "^3.0.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-styleguidist": "^9.1.11",
+    "snapshot-diff": "^0.5.1"
+  },
+  "scripts": {
+    "build": "rm -rf dist; babel src --out-dir dist --ignore '**/__tests__' --source-maps inline",
+    "prepare": "rm -rf ./dist && npm run build",
+    "lint": "eslint src",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors"
+  },
+  "files": [
+    "dist/**",
+    "translations"
+  ]
+}

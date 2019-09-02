@@ -26,15 +26,10 @@ export {
     ModalHeader,
 } from "bootstrap/Modal";
 
-
 // Form
 export { ForisForm } from "form/components/ForisForm";
 export { SubmitButton, STATES as SUBMIT_BUTTON_STATES } from "form/components/SubmitButton";
 export { useForisModule, useForm } from "form/hooks";
-
-
-// Test Utils
-export { mockedWS } from "testUtils/mockWS";
 
 // WebSockets
 export { useWSForisModule } from "webSockets/hooks";

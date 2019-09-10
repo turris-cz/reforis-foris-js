@@ -11,7 +11,7 @@ import { useCallback, useReducer } from "react";
 import { ForisURLs } from "forisUrls";
 
 
-const POST_HEADERS = {
+const HEADERS = {
     Accept: "application/json",
     "Content-Type": "application/json",
     "X-CSRFToken": getCookie("_csrf_token"),
@@ -138,7 +138,7 @@ export function useAPIPost(url) {
         try {
             const result = await axios.post(url, data, {
                 timeout: TIMEOUT,
-                headers: POST_HEADERS,
+                headers: HEADERS,
             });
             dispatch({ type: API_ACTIONS.SUCCESS, payload: result.data });
         } catch (error) {
@@ -150,4 +150,64 @@ export function useAPIPost(url) {
         }
     };
     return [state, post];
+}
+
+const APIDeleteReducer = (state, action) => {
+    switch (action.type) {
+    case API_ACTIONS.INIT:
+        return {
+            ...state,
+            isSending: true,
+            isError: false,
+            isSuccess: false,
+        };
+    case API_ACTIONS.SUCCESS:
+        return {
+            ...state,
+            isSending: false,
+            isError: false,
+            isSuccess: true,
+        };
+    case API_ACTIONS.FAILURE:
+        if (action.status === 403) {
+            window.location.assign(ForisURLs.login);
+        }
+        return {
+            ...state,
+            isSending: false,
+            isError: true,
+            isSuccess: false,
+            data: action.payload,
+        };
+    default:
+        throw new Error();
+    }
+};
+
+export function useAPIDelete(url) {
+    const [state, dispatch] = useReducer(APIDeleteReducer, {
+        isSending: false,
+        isError: false,
+        isSuccess: false,
+        data: null,
+    });
+
+    const requestDelete = useCallback(async () => {
+        dispatch({ type: API_ACTIONS.INIT });
+        try {
+            await axios.delete(url, {
+                timeout: TIMEOUT,
+                headers: HEADERS,
+            });
+            dispatch({ type: API_ACTIONS.SUCCESS });
+        } catch (error) {
+            dispatch({
+                type: API_ACTIONS.FAILURE,
+                payload: error.response.data,
+                status: error.response.status,
+            });
+        }
+    }, [url]);
+
+    return [state, requestDelete];
 }

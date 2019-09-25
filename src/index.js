@@ -1,5 +1,8 @@
 // API
-export { useAPIGet, useAPIPost, useAPIDelete } from "./api/hooks";
+export { useAPIGet } from "api/get";
+export { useAPIPost } from "api/post";
+export { useAPIDelete } from "api/delete";
+export { useAPIPatch } from "api/patch";
 
 // Bootstrap
 export { Alert } from "bootstrap/Alert";

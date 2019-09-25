@@ -11,7 +11,7 @@ const [email, setEmail] = useState('Wrong email');
         value={email}
         label="Some label" 
         helpText="Read the small text!"
-        onChange={target => setEmail(target.value)}
+        onChange={e => setEmail(e.target.value)}
     />
     <button type="submit">Try to submit</button>
 </form>

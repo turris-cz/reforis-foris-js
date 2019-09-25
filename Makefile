@@ -1,4 +1,4 @@
-.PHONY: all install-js watch-js build-js publish-beta lint-js test-js create-messages update-messages clean
+.PHONY: all install-js watch-js build-js publish-beta lint-js test-js create-messages update-messages docs clean
 
 all:
 	@echo "make install-js"
@@ -17,6 +17,10 @@ all:
 	@echo "    Create locale messages (.pot)."
 	@echo "make update-messages"
 	@echo "    Update locale messages from .pot file."
+	@echo "make docs"
+	@echo "    Build project documentation."
+	@echo "make docs-watch"
+	@echo "    Start styleguidist server."
 	@echo "make clean"
 	@echo "    Remove python artifacts and virtualenv."
 
@@ -41,6 +45,11 @@ create-messages:
 	pybabel extract -F babel.cfg -o ./translations/forisjs.pot .
 update-messages:
 	pybabel update -i translations/forisjs.pot -d translations
+
+docs:
+	npm run-script docs
+docs-watch:
+	npm run-script docs:watch
 
 clean:
 	rm -rf node_modules dist

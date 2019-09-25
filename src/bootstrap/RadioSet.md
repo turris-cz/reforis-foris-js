@@ -17,7 +17,7 @@ const [value, setValue] = useState(CHOICES[0].value);
         value={value}
         name='some-radio'
         choices={CHOICES}
-        onChange={event=>setValue(event.target.value)}
+        onChange={e => setValue(e.target.value)}
     />
     <p>Selected value: {value}</p>
 </>

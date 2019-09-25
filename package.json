@@ -60,6 +60,7 @@
   "scripts": {
     "watch": "babel src --verbose --watch --out-dir dist --ignore '**/__tests__' --source-maps inline",
     "build": "rm -rf dist; babel src --out-dir dist --ignore '**/__tests__' --source-maps inline",
+    "build:watch": "babel src --verbose --watch --out-dir dist --ignore '**/__tests__' --source-maps inline",
     "prepare": "rm -rf ./dist && npm run build",
     "lint": "eslint src",
     "test": "jest",

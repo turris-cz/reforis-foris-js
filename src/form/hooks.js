@@ -8,7 +8,7 @@
 import { useCallback, useEffect, useReducer } from "react";
 import update from "immutability-helper";
 
-import { useAPIGet } from "api/hooks";
+import { useAPIGet } from "api/get";
 import { useWSForisModule } from "webSockets/hooks";
 
 

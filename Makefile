@@ -31,10 +31,10 @@ build-js:
 publish-beta:
 	npm publish --tag beta
 
-lint-js:
+lint:
 	npm run lint
 
-test-js:
+test:
 	npm test
 
 create-messages:

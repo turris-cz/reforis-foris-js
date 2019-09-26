@@ -5,9 +5,6 @@
  * See /LICENSE for more information.
  */
 
-const path = require("path");
-
-
 module.exports = {
     title: "Foris JS docs",
     sections: [
@@ -51,9 +48,6 @@ module.exports = {
             ],
         },
     },
-    require: [
-        path.join(__dirname, "css/custom.css"),
-    ],
     webpackConfig: {
         module: {
             rules: [

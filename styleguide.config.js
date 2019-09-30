@@ -5,6 +5,8 @@
  * See /LICENSE for more information.
  */
 
+const path = require("path");
+
 module.exports = {
     title: "Foris JS docs",
     sections: [
@@ -33,20 +35,11 @@ module.exports = {
             ],
         },
     ],
-    template: {
-        head: {
-            links: [
-                {
-                    rel: "stylesheet",
-                    href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
-                },
-                {
-                    rel: "stylesheet",
-                    href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css",
-                },
-            ],
-        },
-    },
+    require: [
+        "babel-polyfill",
+        path.join(__dirname, "node_modules/bootstrap/dist/css/bootstrap.min.css"),
+        path.join(__dirname, "node_modules/@fortawesome/fontawesome-free/css/all.min.css"),
+    ],
     webpackConfig: {
         module: {
             rules: [

@@ -14,7 +14,6 @@ module.exports = {
         },
         {
             name: "Foris forms",
-            content: "docs/forms.md",
             components: [
                 "src/form/components/ForisForm.js",
                 "src/form/components/alerts.js",

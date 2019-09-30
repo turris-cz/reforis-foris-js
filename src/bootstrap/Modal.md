@@ -3,7 +3,7 @@ Bootstrap modal component.
 it's required to have an element `<div id={"modal-container"}/>` somewhere on the page since modals are rendered in portals.
 
 ```js
-    <div id={"modal-container"}/>
+    <div id="modal-container"/>
 ```
 
 I have no idea why example doesn't work here but you can investigate HTML code and Foris project.

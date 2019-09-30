@@ -12,6 +12,6 @@ const [value, setValue] = useState('secret');
     value={value}
     label="Some password" 
     helpText="Read the small text!"
-    onChange={e => setValue(e.target.value)}
+    onChange={event =>setValue(event.target.value)}
 />
 ```

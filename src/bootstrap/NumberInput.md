@@ -12,6 +12,6 @@ const [value, setValue] = useState(42);
     helpText="Read the small text!"
     min='33'
     max='54'
-    onChange={e => setValue(e.target.value)}
+    onChange={event =>setValue(event.target.value)}
 />
 ```

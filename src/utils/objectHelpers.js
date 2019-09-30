@@ -18,3 +18,11 @@ export function withoutUndefinedKeys(instance) {
         {},
     );
 }
+
+/** Return copy of passed object that has only desired keys. */
+export function onlySpecifiedKeys(object, desiredKeys) {
+    return desiredKeys.reduce(
+        (accumulator, key) => { accumulator[key] = object[key]; return accumulator; },
+        {},
+    );
+}

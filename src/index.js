@@ -40,7 +40,7 @@ export { WebSockets } from "webSockets/WebSockets";
 
 // Utils
 export { Portal } from "utils/Portal";
-export { undefinedIfEmpty, withoutUndefinedKeys } from "utils/objectHelpers";
+export { undefinedIfEmpty, withoutUndefinedKeys, onlySpecifiedKeys } from "utils/objectHelpers";
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "forisUrls";

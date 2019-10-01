@@ -28,7 +28,7 @@ install-js: package.json
 	npm install --save-dev
 
 watch-js:
-	npm run watch
+	npm run build:watch
 build-js:
 	npm run build
 

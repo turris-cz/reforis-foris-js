@@ -9,7 +9,7 @@ import { useReducer, useCallback } from "react";
 import axios from "axios";
 
 import {
-    API_ACTIONS, TIMEOUT, HEADERS, APIReducer,
+    API_ACTIONS, TIMEOUT, HEADERS, APIReducer, getErrorMessage,
 } from "./utils";
 
 export function useAPIDelete(url) {
@@ -31,7 +31,7 @@ export function useAPIDelete(url) {
         } catch (error) {
             dispatch({
                 type: API_ACTIONS.FAILURE,
-                payload: error.response.data,
+                payload: getErrorMessage(error),
                 status: error.response.status,
             });
         }

@@ -67,3 +67,11 @@ export function APIReducer(state, action) {
         throw new Error();
     }
 }
+
+export function getErrorMessage(error) {
+    let payload = "An unknown error occurred";
+    if (error.response.headers["content-type"] === "application/json") {
+        payload = error.response.data;
+    }
+    return payload;
+}

@@ -9,7 +9,7 @@ import { useReducer } from "react";
 import axios from "axios";
 
 import {
-    API_ACTIONS, TIMEOUT, HEADERS, APIReducer,
+    API_ACTIONS, TIMEOUT, HEADERS, APIReducer, getErrorMessage,
 } from "./utils";
 
 export function useAPIPost(url) {
@@ -29,14 +29,10 @@ export function useAPIPost(url) {
             });
             dispatch({ type: API_ACTIONS.SUCCESS, payload: result.data });
         } catch (error) {
-            let payload = "An unknown error occurred";
-            if (error.response.headers["content-type"] === "application/json") {
-                payload = error.response.data;
-            }
             dispatch({
                 type: API_ACTIONS.FAILURE,
+                payload: getErrorMessage(error),
                 status: error.response.status,
-                payload,
             });
         }
     };

@@ -1,4 +1,4 @@
-.PHONY: all install-js watch-js build-js publish-beta lint-js test-js create-messages update-messages docs clean
+.PHONY: all install-js watch-js build-js lint-js test-js create-messages update-messages docs clean
 
 all:
 	@echo "make install-js"
@@ -7,8 +7,6 @@ all:
 	@echo "    Compile JS in watch mode."
 	@echo "make build-js"
 	@echo "    Compile JS."
-	@echo "make publish-beta"
-	@echo "    Publish package with 'beta' tag"
 	@echo "make lint-js"
 	@echo "    Run linter"
 	@echo "make test-js"
@@ -31,9 +29,6 @@ watch-js:
 	npm run build:watch
 build-js:
 	npm run build
-
-publish-beta:
-	npm publish --tag beta
 
 lint:
 	npm run lint

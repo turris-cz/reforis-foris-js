@@ -43,8 +43,8 @@ coverage.xml
 ## Translations
 *.mo
 
-/js/styleguide/
 .gitignore
 
 dist/
 foris-*.tgz
+styleguide/

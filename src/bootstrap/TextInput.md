@@ -10,6 +10,6 @@ const [value, setValue] = useState('Bla bla');
     value={value}
     label="Some text" 
     helpText="Read the small text!"
-    onChange={event => setValue(event.target.value)}
+    onChange={event =>setValue(event.target.value)}
 />
 ```

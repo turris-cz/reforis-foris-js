@@ -6,8 +6,9 @@
  */
 
 import React from "react";
-
 import PropTypes from "prop-types";
+
+import { useConditionalTimeout } from "utils/hooks";
 import { Input } from "./Input";
 import "./NumberInput.css";
 
@@ -33,15 +34,25 @@ NumberInput.defaultProps = {
     value: 0,
 };
 
-export function NumberInput({ onChange, inlineText, ...props }) {
+export function NumberInput({
+    onChange, inlineText, value, ...props
+}) {
+    function updateValue(initialValue, difference) {
+        onChange({ target: { value: initialValue + difference } });
+    }
+
+    const enableIncrease = useConditionalTimeout({ callback: updateValue }, value, 1);
+    const enableDecrease = useConditionalTimeout({ callback: updateValue }, value, -1);
+
     return (
-        <Input type="number" onChange={onChange} {...props}>
+        <Input type="number" onChange={onChange} value={value} {...props}>
             <div className="input-group-append">
                 {inlineText && <p className="input-group-text">{inlineText}</p>}
                 <button
                     type="button"
                     className="btn btn-outline-secondary"
-                    onClick={() => onChange({ target: { value: props.value + 1 } })}
+                    onMouseDown={() => enableIncrease(true)}
+                    onMouseUp={() => enableIncrease(false)}
                     aria-label="Increase"
                 >
                     <i className="fas fa-plus" />
@@ -49,7 +60,8 @@ export function NumberInput({ onChange, inlineText, ...props }) {
                 <button
                     type="button"
                     className="btn btn-outline-secondary"
-                    onClick={() => onChange({ target: { value: props.value - 1 } })}
+                    onMouseDown={() => enableDecrease(true)}
+                    onMouseUp={() => enableDecrease(false)}
                     aria-label="Decrease"
                 >
                     <i className="fas fa-minus" />

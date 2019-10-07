@@ -11,6 +11,6 @@ const [value, setValue] = useState(false);
     value={value}
     label="Some label" 
     helpText="Read the small text!"
-    onChange={value => setValue(value)}
+    onChange={event =>setValue(event.target.value)}
 />
 ```

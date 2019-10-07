@@ -3,6 +3,7 @@ image: node:8-alpine
 stages:
   - test
   - build
+  - publish
 
 before_script:
   - npm install
@@ -24,3 +25,19 @@ build:
   artifacts:
     paths:
       - foris-*.tgz
+
+publish_beta:
+  stage: publish
+  only:
+    refs:
+      - dev
+  script:
+    - sh scripts/publish.sh beta
+
+publish_latest:
+  stage: publish
+  only:
+    refs:
+      - master
+  script:
+    - sh scripts/publish.sh latest

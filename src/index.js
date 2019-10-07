@@ -1,5 +1,15 @@
+/*
+ * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 // API
-export { useAPIGet, useAPIPost } from "./api/hooks";
+export { useAPIGet } from "api/get";
+export { useAPIPost } from "api/post";
+export { useAPIDelete } from "api/delete";
+export { useAPIPatch } from "api/patch";
 
 // Bootstrap
 export { Alert } from "bootstrap/Alert";
@@ -37,6 +47,7 @@ export { WebSockets } from "webSockets/WebSockets";
 
 // Utils
 export { Portal } from "utils/Portal";
+export { undefinedIfEmpty, withoutUndefinedKeys, onlySpecifiedKeys } from "utils/objectHelpers";
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "forisUrls";
@@ -51,3 +62,6 @@ export {
     validateMAC,
     validateMultipleEmails,
 } from "validations";
+
+// Alert context
+export { AlertContext, AlertContextProvider } from "alertContext/AlertContext";

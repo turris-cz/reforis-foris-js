@@ -24,4 +24,8 @@ module.exports = {
     globals: {
         TZ: "utc",
     },
+    transform: {
+        "^.+\\.js$": "babel-jest",
+        "^.+\\.css$": "jest-transform-css",
+    },
 };

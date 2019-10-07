@@ -7,23 +7,39 @@
 
 import React from "react";
 
-import { render } from "customTestRender";
+import { render, fireEvent, getByLabelText, wait } from "customTestRender";
 
 import { NumberInput } from "../NumberInput";
 
-
 describe("<NumberInput/>", () => {
-    it("Render number input", () => {
+    const onChangeMock = jest.fn();
+    let componentContainer;
+
+    beforeEach(() => {
         const { container } = render(
             <NumberInput
                 label="Test label"
                 helpText="Some help text"
-                value={1123}
-                onChange={() => {
-                }}
+                value={1}
+                onChange={onChangeMock}
             />
         );
-        expect(container.firstChild)
-            .toMatchSnapshot();
+        componentContainer = container;
+    });
+
+    it("Render number input", () => {
+        expect(componentContainer.firstChild).toMatchSnapshot();
+    });
+
+    it("Increase number with button", async () => {
+        const increaseButton = getByLabelText(componentContainer, "Increase");
+        fireEvent.mouseDown(increaseButton);
+        await wait(() => expect(onChangeMock).toHaveBeenCalledWith({"target": {"value": 2}}));
+    });
+
+    it("Decrease number with button", async () => {
+        const decreaseButton = getByLabelText(componentContainer, "Decrease");
+        fireEvent.mouseDown(decreaseButton);
+        await wait(() => expect(onChangeMock).toHaveBeenCalledWith({"target": {"value": 0}}));
     });
 });

@@ -2,31 +2,27 @@
 
 exports[`<TextInput/> Render text input 1`] = `
 <div
-  class="col-sm-12 offset-lg-1 col-lg-10"
+  class="form-group col-sm-12 offset-lg-1 col-lg-10"
 >
-  <div
-    class="form-group"
+  <label
+    for="1"
   >
-    <label
-      for="1"
-    >
-      Test label
-    </label>
-    <div
-      class="input-group"
-    >
-      <input
-        class="form-control"
-        id="1"
-        type="text"
-        value="Some text"
-      />
-    </div>
-    <small
-      class="form-text text-muted"
-    >
-      Some help text
-    </small>
+    Test label
+  </label>
+  <div
+    class="input-group"
+  >
+    <input
+      class="form-control"
+      id="1"
+      type="text"
+      value="Some text"
+    />
   </div>
+  <small
+    class="form-text text-muted"
+  >
+    Some help text
+  </small>
 </div>
 `;

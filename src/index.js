@@ -15,15 +15,16 @@ export { useAPIPatch } from "api/patch";
 export { Alert } from "bootstrap/Alert";
 export { Button } from "bootstrap/Button";
 export { CheckBox } from "bootstrap/CheckBox";
-export { formFieldsSize } from "bootstrap/constants";
 export { DataTimeInput } from "bootstrap/DataTimeInput";
 export { EmailInput } from "bootstrap/EmailInput";
+export { FileInput } from "bootstrap/FileInput";
 export { Input } from "bootstrap/Input";
 export { NumberInput } from "bootstrap/NumberInput";
 export { PasswordInput } from "bootstrap/PasswordInput";
 export { RadioSet } from "bootstrap/RadioSet";
 export { Select } from "bootstrap/Select";
 export { TextInput } from "bootstrap/TextInput";
+export { formFieldsSize } from "bootstrap/constants";
 
 export {
     Spinner,

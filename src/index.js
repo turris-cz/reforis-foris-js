@@ -15,6 +15,7 @@ export { useAPIPatch } from "api/patch";
 export { Alert } from "bootstrap/Alert";
 export { Button } from "bootstrap/Button";
 export { CheckBox } from "bootstrap/CheckBox";
+export { DownloadButton } from "bootstrap/DownloadButton";
 export { DataTimeInput } from "bootstrap/DataTimeInput";
 export { EmailInput } from "bootstrap/EmailInput";
 export { FileInput } from "bootstrap/FileInput";

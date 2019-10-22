@@ -17,7 +17,7 @@ const FORM_ACTIONS = {
     resetData: 2,
 };
 
-export function useForm(validator, prepData) {
+export function useForm(validator, dataPreprocessor) {
     const [state, dispatch] = useReducer(formReducer, {
         data: null,
         initialData: null,
@@ -28,10 +28,10 @@ export function useForm(validator, prepData) {
         dispatch({
             type: FORM_ACTIONS.resetData,
             data,
-            prepData,
+            dataPreprocessor,
             validator,
         });
-    }, [prepData, validator]);
+    }, [dataPreprocessor, validator]);
 
     const onFormChangeHandler = useCallback((updateRule) => (event) => {
         dispatch({
@@ -41,6 +41,7 @@ export function useForm(validator, prepData) {
             validator,
         });
     }, [validator]);
+
     return [
         state,
         onFormChangeHandler,
@@ -61,12 +62,15 @@ function formReducer(state, action) {
         };
     }
     case FORM_ACTIONS.resetData: {
-        if (!action.data) return { ...state, initialData: state.data };
-        const prepData = action.prepData ? action.prepData(action.data) : action.data;
+        if (!action.data) {
+            return { ...state, initialData: state.data };
+        }
+
+        const data = action.dataPreprocessor ? action.dataPreprocessor(action.data) : action.data;
         return {
-            data: prepData,
-            initialData: prepData,
-            errors: action.data ? action.validator(prepData) : undefined,
+            data,
+            initialData: data,
+            errors: action.data ? action.validator(data) : undefined,
         };
     }
     default: {
@@ -82,6 +86,9 @@ function getChangedValue(target) {
     } else if (target.type === "number") {
         const parsedValue = parseInt(value);
         value = Number.isNaN(parsedValue) ? value : parsedValue;
+    } else if (target.type === "file") {
+        // Return first file (we don't need multiple yet)
+        [value] = target.files;
     }
     return value;
 }

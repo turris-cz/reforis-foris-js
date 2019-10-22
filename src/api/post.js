@@ -12,7 +12,7 @@ import {
     API_ACTIONS, TIMEOUT, HEADERS, APIReducer, getErrorMessage,
 } from "./utils";
 
-export function useAPIPost(url) {
+export function useAPIPost(url, contentType) {
     const [state, dispatch] = useReducer(APIReducer, {
         isSending: false,
         isError: false,
@@ -20,12 +20,17 @@ export function useAPIPost(url) {
         data: null,
     });
 
+    const headers = { ...HEADERS };
+    if (contentType) {
+        headers["Content-Type"] = contentType;
+    }
+
     const post = async (data) => {
         dispatch({ type: API_ACTIONS.INIT });
         try {
             const result = await axios.post(url, data, {
                 timeout: TIMEOUT,
-                headers: HEADERS,
+                headers,
             });
             dispatch({ type: API_ACTIONS.SUCCESS, payload: result.data });
         } catch (error) {

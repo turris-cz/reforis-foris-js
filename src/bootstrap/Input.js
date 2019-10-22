@@ -6,7 +6,7 @@
  */
 
 import React from "react";
-import { useUID } from "react-uid/dist/es5/index";
+import { useUID } from "react-uid";
 import PropTypes from "prop-types";
 
 import { formFieldsSize } from "./constants";
@@ -21,31 +21,31 @@ Input.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
     ]),
+    labelClassName: PropTypes.string,
+    groupClassName: PropTypes.string,
 };
 
 /** Base bootstrap input component. */
 export function Input({
-    type, label, helpText, error, className, children, ...props
+    type, label, helpText, error, className, children, labelClassName, groupClassName, ...props
 }) {
     const uid = useUID();
     const inputClassName = `form-control ${className || ""} ${(error ? "is-invalid" : "")}`.trim();
     return (
-        <div className={formFieldsSize}>
-            <div className="form-group">
-                <label htmlFor={uid}>{label}</label>
-                <div className="input-group">
-                    <input
-                        className={inputClassName}
-                        type={type}
-                        id={uid}
+        <div className={`form-group ${formFieldsSize}`}>
+            <label className={labelClassName} htmlFor={uid}>{label}</label>
+            <div className={`input-group ${groupClassName || ""}`.trim()}>
+                <input
+                    className={inputClassName}
+                    type={type}
+                    id={uid}
 
-                        {...props}
-                    />
-                    {children}
-                </div>
-                {error ? <div className="invalid-feedback">{error}</div> : null}
-                {helpText ? <small className="form-text text-muted">{helpText}</small> : null}
+                    {...props}
+                />
+                {children}
             </div>
+            {error ? <div className="invalid-feedback">{error}</div> : null}
+            {helpText ? <small className="form-text text-muted">{helpText}</small> : null}
         </div>
     );
 }

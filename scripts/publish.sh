@@ -6,11 +6,12 @@ then
     exit 1
 else
     # Need to replace "_" with "_" as GitLab CI won't accept secret vars with "-"
-    echo "//registry.npmjs.org/:_authToken=$(echo $NPM_TOKEN | tr _ -)" > .npmrc
+    echo "//registry.npmjs.org/:_authToken=$(echo "$NPM_TOKEN" | tr _ -)" > .npmrc
     echo "unsafe-perm = true" >> ~/.npmrc
     if test "$1" = "beta"
     then
-        npm version prerelease --preid=$CI_COMMIT_SHORT_SHA --git-tag-version false
+        BETA_VERSION=$(npx -c 'echo "$npm_package_version"')-beta.$CI_COMMIT_SHORT_SHA
+        npm version "$BETA_VERSION" --git-tag-version false
         npm publish --tag beta
     elif test "$1" = "latest"
     then

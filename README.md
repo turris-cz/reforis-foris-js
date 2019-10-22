@@ -6,7 +6,7 @@
 
 Each commit to `dev` branch will result in publishing a new version of library
 tagged `beta`. Versions names are based on commit SHA, e.g. 
-`foris@0.1.0-d9073aa4.0`.
+`foris@0.1.0-beta.d9073aa4`.
 
 ### Preparing a release
 

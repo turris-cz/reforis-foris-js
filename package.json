@@ -1,6 +1,6 @@
 {
   "name": "foris",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Set of components and utils for Foris and its plugins.",
   "author": "CZ.NIC, z.s.p.o.",
   "repository": {
@@ -73,7 +73,6 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",
-    "test:update-snapshots": "jest -u",
     "docs": "npx styleguidist build ",
     "docs:watch": "styleguidist server"
   },

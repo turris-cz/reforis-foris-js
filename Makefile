@@ -35,6 +35,8 @@ lint:
 
 test:
 	npm test
+test-js-update-snapshots:
+	npm test -- -u
 
 create-messages:
 	pybabel extract -F babel.cfg -o ./translations/forisjs.pot .

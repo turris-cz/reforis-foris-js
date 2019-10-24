@@ -3,12 +3,10 @@
 exports[`<RadioSet/> Render radio set 1`] = `
 <div
   class="form-group col-sm-12 offset-lg-1 col-lg-10"
-  style="margin-bottom: 1rem;"
 >
   <label
-    class="col-12"
+    class="d-block"
     for="1"
-    style="padding-left: 0px;"
   >
     Radios set label
   </label>

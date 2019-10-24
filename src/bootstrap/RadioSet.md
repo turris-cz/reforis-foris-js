@@ -2,6 +2,8 @@ Set of radio Bootstrap component input with label and predefined sizes and struc
 
 All additional `props` are passed to the `<input type="number">` HTML component.
 
+Unless `helpText` is set for one of the options they are displayed inline.
+
 ```js
 import {useState} from 'react';
 const CHOICES=[

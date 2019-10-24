@@ -32,8 +32,8 @@ export function CheckBox({
 }) {
     const uid = useUID();
     return (
-        <div className={useDefaultSize ? formFieldsSize : ""} style={{ marginBottom: "1rem" }}>
-            <div className="custom-control custom-checkbox" style={{ marginBottom: "0" }}>
+        <div className={`form-group ${useDefaultSize ? formFieldsSize : ""}`.trim()}>
+            <div className="custom-control custom-checkbox ">
                 <input
                     className="custom-control-input"
                     type="checkbox"
@@ -42,9 +42,9 @@ export function CheckBox({
 
                     {...props}
                 />
-                <label className="custom-control-label" htmlFor={uid} style={helpText ? { marginBottom: "0" } : null}>{label}</label>
+                <label className="custom-control-label" htmlFor={uid}>{label}</label>
+                {helpText && <small className="form-text text-muted">{helpText}</small>}
             </div>
-            {helpText ? <small className="form-text text-muted">{helpText}</small> : null}
         </div>
     );
 }

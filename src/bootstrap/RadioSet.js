@@ -52,16 +52,10 @@ export function RadioSet({
     });
 
     return (
-        <div className={`form-group ${formFieldsSize}`} style={{ marginBottom: "1rem" }}>
-            {label
-                ? (
-                    <label className="col-12" htmlFor={uid} style={{ paddingLeft: "0" }}>
-                        {label}
-                    </label>
-                )
-                : null}
+        <div className={`form-group ${formFieldsSize}`}>
+            {label && <label htmlFor={uid} className="d-block">{label}</label>}
             {radios}
-            {helpText ? <small className="form-text text-muted">{helpText}</small> : null}
+            {helpText && <small className="form-text text-muted">{helpText}</small>}
         </div>
     );
 }
@@ -77,7 +71,7 @@ function Radio({
 }) {
     return (
         <>
-            <div className="custom-control custom-radio custom-control-inline">
+            <div className={`custom-control custom-radio ${!helpText ? "custom-control-inline" : ""}`.trim()}>
                 <input
                     id={id}
                     className="custom-control-input"
@@ -86,8 +80,8 @@ function Radio({
                     {...props}
                 />
                 <label className="custom-control-label" htmlFor={id}>{label}</label>
+                {helpText && <small className="form-text text-muted mt-0 mb-3">{helpText}</small>}
             </div>
-            {helpText ? <small className="form-text text-muted">{helpText}</small> : null}
         </>
     );
 }

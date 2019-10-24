@@ -2,12 +2,10 @@
 
 exports[`<Checkbox/> Render checkbox 1`] = `
 <div
-  class="col-sm-12 offset-lg-1 col-lg-10"
-  style="margin-bottom: 1rem;"
+  class="form-group col-sm-12 offset-lg-1 col-lg-10"
 >
   <div
-    class="custom-control custom-checkbox"
-    style="margin-bottom: 0px;"
+    class="custom-control custom-checkbox "
   >
     <input
       checked=""
@@ -18,27 +16,24 @@ exports[`<Checkbox/> Render checkbox 1`] = `
     <label
       class="custom-control-label"
       for="1"
-      style="margin-bottom: 0px;"
     >
       Test label
     </label>
+    <small
+      class="form-text text-muted"
+    >
+      Some help text
+    </small>
   </div>
-  <small
-    class="form-text text-muted"
-  >
-    Some help text
-  </small>
 </div>
 `;
 
 exports[`<Checkbox/> Render uncheked checkbox 1`] = `
 <div
-  class="col-sm-12 offset-lg-1 col-lg-10"
-  style="margin-bottom: 1rem;"
+  class="form-group col-sm-12 offset-lg-1 col-lg-10"
 >
   <div
-    class="custom-control custom-checkbox"
-    style="margin-bottom: 0px;"
+    class="custom-control custom-checkbox "
   >
     <input
       class="custom-control-input"
@@ -48,15 +43,14 @@ exports[`<Checkbox/> Render uncheked checkbox 1`] = `
     <label
       class="custom-control-label"
       for="1"
-      style="margin-bottom: 0px;"
     >
       Test label
     </label>
+    <small
+      class="form-text text-muted"
+    >
+      Some help text
+    </small>
   </div>
-  <small
-    class="form-text text-muted"
-  >
-    Some help text
-  </small>
 </div>
 `;

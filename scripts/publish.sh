@@ -5,7 +5,7 @@ then
     echo "\$NPM_TOKEN is not set"
     exit 1
 else
-    # Need to replace "_" with "_" as GitLab CI won't accept secret vars with "-"
+    # Need to replace "_" with "-" as GitLab CI won't accept secret vars with "-"
     echo "//registry.npmjs.org/:_authToken=$(echo "$NPM_TOKEN" | tr _ -)" > .npmrc
     echo "unsafe-perm = true" >> ~/.npmrc
     if test "$1" = "beta"

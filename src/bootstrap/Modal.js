@@ -41,7 +41,7 @@ export function Modal({ shown, setShown, children }) {
     return (
         <Portal containerId="modal-container">
             <div className={`modal fade ${shown ? "show" : ""}`} role="dialog">
-                <div ref={dialogRef} className="modal-dialog" role="document">
+                <div ref={dialogRef} className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                         {children}
                     </div>

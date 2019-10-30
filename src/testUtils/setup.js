@@ -15,12 +15,15 @@ global.afterEach(() => {
 
 // Mock babel (gettext)
 global._ = str => str;
+global.ngettext = str => str;
 global.babel = {format: (str) => str};
 global.ForisTranslations = {};
 
+// Mock web sockets
+window.WebSocket = jest.fn();
+
 // Mock scrollIntoView
-global.HTMLElement.prototype.scrollIntoView = () => {
-};
+global.HTMLElement.prototype.scrollIntoView = () => {};
 
 jest.doMock('moment', () => {
     moment.tz.setDefault('UTC');

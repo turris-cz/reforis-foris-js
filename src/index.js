@@ -12,7 +12,7 @@ export { useAPIDelete } from "api/delete";
 export { useAPIPatch } from "api/patch";
 
 // Bootstrap
-export { Alert } from "bootstrap/Alert";
+export { Alert, ALERT_TYPES } from "bootstrap/Alert";
 export { Button } from "bootstrap/Button";
 export { CheckBox } from "bootstrap/CheckBox";
 export { DownloadButton } from "bootstrap/DownloadButton";
@@ -66,4 +66,8 @@ export {
 } from "validations";
 
 // Alert context
-export { AlertContext, AlertContextProvider } from "alertContext/AlertContext";
+export { AlertContext, AlertContextProvider, useAlert } from "alertContext/AlertContext";
+
+// Testing utilities
+export { mockJSONError } from "testUtils/network";
+export { mockSetAlert, mockDismissAlert } from "testUtils/alertContextMock";

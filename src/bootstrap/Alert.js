@@ -8,11 +8,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "./Alert.css";
+
+export const ALERT_TYPES = Object.freeze({
+    PRIMARY: "primary",
+    SECONDARY: "secondary",
+    SUCCESS: "success",
+    DANGER: "danger",
+    WARNING: "warning",
+    INFO: "info",
+    LIGHT: "light",
+    DARK: "dark",
+});
+
 Alert.propTypes = {
     /** Type of the alert it adds as `alert-${type}` class. */
-    type: PropTypes.string.isRequired,
-    /** Alert message. */
-    message: PropTypes.string,
+    type: PropTypes.oneOf(Object.values(ALERT_TYPES)),
     /** Alert content. */
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
@@ -20,15 +31,21 @@ Alert.propTypes = {
     ]),
     /** onDismiss handler. */
     onDismiss: PropTypes.func,
+    /** Floating alerts stay on top of the page */
+    floating: PropTypes.bool,
+};
+
+Alert.defaultProps = {
+    type: ALERT_TYPES.DANGER,
+    floating: false,
 };
 
 export function Alert({
-    type, message, onDismiss, children,
+    type, onDismiss, floating, children,
 }) {
     return (
-        <div className={`alert alert-dismissible alert-${type}`}>
+        <div className={`alert alert-dismissible alert-${type} ${floating ? "fixed-top floating-alert" : ""}`.trim()}>
             {onDismiss ? <button type="button" className="close" onClick={onDismiss}>&times;</button> : false}
-            {message}
             {children}
         </div>
     );

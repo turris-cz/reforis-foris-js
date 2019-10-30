@@ -1,0 +1,17 @@
+.floating-alert {
+    /* Display alert above other components */
+    z-index: 2000;
+}
+
+@media(max-width: 768px) {
+    .floating-alert {
+        margin: 0.5rem;
+    }
+}
+
+@media(min-width: 769px) {
+    .floating-alert {
+        width: 75%;
+        margin: 0.5rem auto;
+    }
+}

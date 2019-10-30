@@ -14,4 +14,12 @@ module.exports = {
             },
         }],
     ],
+    env: {
+        development: {
+            ignore: ["**/__tests__", "./scripts"],
+        },
+        test: {
+            ignore: ["./scripts"],
+        },
+    },
 };

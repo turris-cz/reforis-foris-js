@@ -6,25 +6,26 @@ stages:
   - publish
 
 before_script:
+  - apk add make
   - npm install
 
 test:
   stage: test
   script:
-    - npm test
+    - make test
 
 lint:
   stage: test
   script:
-    - npm run lint
+    - make lint
 
 build:
   stage: build
   script:
-    - npm pack
+    - make pack
   artifacts:
     paths:
-      - foris-*.tgz
+      - dist/foris-*.tgz
 
 publish_beta:
   stage: publish
@@ -32,7 +33,7 @@ publish_beta:
     refs:
       - dev
   script:
-    - sh scripts/publish.sh beta
+    - make publish-beta
 
 publish_latest:
   stage: publish
@@ -40,4 +41,4 @@ publish_latest:
     refs:
       - master
   script:
-    - sh scripts/publish.sh latest
+    - make publish-latest

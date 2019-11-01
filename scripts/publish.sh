@@ -5,6 +5,7 @@ then
     echo "\$NPM_TOKEN is not set"
     exit 1
 else
+    cd dist
     # Need to replace "_" with "-" as GitLab CI won't accept secret vars with "-"
     echo "//registry.npmjs.org/:_authToken=$(echo "$NPM_TOKEN" | tr _ -)" > .npmrc
     echo "unsafe-perm = true" >> ~/.npmrc
@@ -12,10 +13,10 @@ else
     then
         BETA_VERSION=$(npx -c 'echo "$npm_package_version"')-beta.$CI_COMMIT_SHORT_SHA
         npm version "$BETA_VERSION" --git-tag-version false
-        cd dist && npm publish --tag beta
+        npm publish --tag beta
     elif test "$1" = "latest"
     then
-        cd dist && npm publish
+        npm publish
     else
         echo "Usage: publish.sh [ beta | latest ]"
         exit 1

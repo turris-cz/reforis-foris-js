@@ -13,7 +13,7 @@ import { StaticRouter } from "react-router";
 import { render } from "@testing-library/react";
 import PropTypes from "prop-types";
 
-import { AlertContextMock } from "alertContextMock";
+import { AlertContextMock } from "./alertContextMock";
 
 Wrapper.propTypes = {
     children: PropTypes.oneOfType([

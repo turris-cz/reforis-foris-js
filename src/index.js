@@ -67,7 +67,3 @@ export {
 
 // Alert context
 export { AlertContext, AlertContextProvider, useAlert } from "alertContext/AlertContext";
-
-// Testing utilities
-export { mockJSONError } from "testUtils/network";
-export { mockSetAlert, mockDismissAlert } from "testUtils/alertContextMock";

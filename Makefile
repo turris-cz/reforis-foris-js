@@ -1,4 +1,4 @@
-.PHONY: all install-js watch-js build-js lint-js test-js create-messages update-messages docs clean
+.PHONY: all install-js watch-js build-js collect-files pack publish-beta publish-latest lint test test-js-update-snapshots create-messages update-messages docs docs-watch clean
 
 all:
 	@echo "make install-js"
@@ -29,6 +29,15 @@ watch-js:
 	npm run build:watch
 build-js:
 	npm run build
+
+collect-files:
+	sh scripts/collect_files.sh
+pack: collect-files
+	cd dist && npm pack
+publish-beta: collect-files
+	sh scripts/publish.sh beta
+publish-latest: collect-files
+	sh scripts/publish.sh latest
 
 lint:
 	npm run lint

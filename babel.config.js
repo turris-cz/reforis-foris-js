@@ -16,10 +16,10 @@ module.exports = {
     ],
     env: {
         development: {
-            ignore: ["**/__tests__", "./scripts"],
+            ignore: ["**/__tests__/**", "**/__mocks__/**"],
         },
         test: {
-            ignore: ["./scripts"],
+            ignore: [],
         },
     },
 };

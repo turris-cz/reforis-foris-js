@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import { Spinner } from "bootstrap/Spinner";
-import { useAPIPost } from "api/post";
+import { useAPIPost } from "api/hooks";
 
 import { Prompt } from "react-router";
 import { useForisModule, useForm } from "../hooks";

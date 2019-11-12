@@ -9,6 +9,7 @@ import React, { useState, useContext, useCallback } from "react";
 import PropTypes from "prop-types";
 
 import { Alert, ALERT_TYPES } from "bootstrap/Alert";
+import { Portal } from "utils/Portal";
 
 const AlertContext = React.createContext();
 
@@ -31,9 +32,11 @@ function AlertContextProvider({ children }) {
     return (
         <>
             {alert && (
-                <Alert type={alert.type} onDismiss={dismissAlert} floating>
-                    {alert.message}
-                </Alert>
+                <Portal containerId="alert-container">
+                    <Alert type={alert.type} onDismiss={dismissAlert}>
+                        {alert.message}
+                    </Alert>
+                </Portal>
             )}
             <AlertContext.Provider value={[setAlertWrapper, dismissAlert]}>
                 { children }

@@ -12,8 +12,10 @@ import { useAlert, AlertContextProvider } from "../AlertContext";
 
 function AlertTest() {
     const [setAlert, dismissAlert] = useAlert();
+    // alert-container serves as an output for Portal which renders Alert
     return (
         <>
+            <div id="alert-container" />
             <button onClick={() => setAlert("Alert content")}>Set alert</button>
             <button onClick={dismissAlert}>Dismiss alert</button>
         </>

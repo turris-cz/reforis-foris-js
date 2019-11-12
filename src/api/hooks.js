@@ -42,7 +42,7 @@ function createAPIHook(method) {
                 dispatch({
                     type: API_ACTIONS.FAILURE,
                     payload: getErrorMessage(error),
-                    status: error.response.status,
+                    status: error.response && error.response.status,
                 });
             }
         }, [url, contentType]);

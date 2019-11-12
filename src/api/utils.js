@@ -53,9 +53,12 @@ function getCookie(name) {
 }
 
 export function getErrorMessage(error) {
-    let payload = "An unknown error occurred";
-    if (error.response.headers["content-type"] === "application/json") {
+    let payload = _("An unknown error occurred.");
+    if (error.response && error.response.headers["content-type"] === "application/json") {
         payload = error.response.data;
+    }
+    if (error.code === "ECONNABORTED") {
+        payload = _("Timeout error occurred.");
     }
     return payload;
 }

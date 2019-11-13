@@ -5,11 +5,11 @@
  * See /LICENSE for more information.
  */
 
-import { useReducer, useCallback } from "react";
+import { useCallback, useReducer } from "react";
 
 import { ForisURLs } from "forisUrls";
 import {
-    API_STATE, API_ACTIONS, API_METHODS, TIMEOUT, HEADERS, getErrorMessage,
+    API_ACTIONS, API_METHODS, API_STATE, getErrorPayload, HEADERS, TIMEOUT,
 } from "./utils";
 
 const DATA_METHODS = ["POST", "PATCH", "PUT"];
@@ -30,19 +30,25 @@ function createAPIHook(method) {
             dispatch({ type: API_ACTIONS.INIT });
             try {
                 const request = API_METHODS[method];
-                const config = { timeout: TIMEOUT, headers };
+                const config = {
+                    timeout: TIMEOUT,
+                    headers,
+                };
                 let result;
                 if (DATA_METHODS.includes(method)) {
                     result = await request(url, data, config);
                 } else {
                     result = await request(url, config);
                 }
-                dispatch({ type: API_ACTIONS.SUCCESS, payload: result.data });
+                dispatch({
+                    type: API_ACTIONS.SUCCESS,
+                    payload: result.data,
+                });
             } catch (error) {
                 dispatch({
                     type: API_ACTIONS.FAILURE,
-                    payload: getErrorMessage(error),
-                    status: error.response.status,
+                    status: error.response && error.response.status,
+                    payload: getErrorPayload(error),
                 });
             }
         }, [url, contentType]);

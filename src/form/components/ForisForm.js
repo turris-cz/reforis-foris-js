@@ -87,9 +87,9 @@ export function ForisForm({
             postCallback();
             setAlert(_("Settings saved successfully"), ALERT_TYPES.SUCCESS);
         } else if (postState.state === API_STATE.ERROR) {
-            setAlert(_("Cannot save settings"));
+            setAlert(postState.data);
         }
-    }, [postCallback, postState.state, setAlert]);
+    }, [postCallback, postState.state, postState.data, setAlert]);
 
     if (forisModuleState.state === API_STATE.ERROR) {
         return <ErrorMessage />;

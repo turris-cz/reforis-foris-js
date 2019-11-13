@@ -52,13 +52,27 @@ function getCookie(name) {
     return cookieValue;
 }
 
-export function getErrorMessage(error) {
-    let payload = _("An unknown error occurred.");
-    if (error.response && error.response.headers["content-type"] === "application/json") {
-        payload = error.response.data;
+export function getErrorPayload(error) {
+    if (error.response) {
+        if (error.response.status === 403) {
+            return _("The session is expired. Please log in again.");
+        }
+        return getJSONErrorMessage(error);
     }
     if (error.code === "ECONNABORTED") {
-        payload = _("Timeout error occurred.");
+        return _("Timeout error occurred.");
     }
-    return payload;
+    if (error.request) {
+        return _("No response received.");
+    }
+    /* eslint no-console: "off" */
+    console.error(error);
+    return _("An unknown error occurred. Check the console for more info.");
+}
+
+export function getJSONErrorMessage(error) {
+    if (error.response.headers["content-type"] === "application/json") {
+        return error.response.data;
+    }
+    return _("An unknown API error occurred.");
 }

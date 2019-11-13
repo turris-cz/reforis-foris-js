@@ -12,7 +12,6 @@ import { Input } from "./Input";
 
 export const EmailInput = ({ ...props }) => <Input type="email" {...props} />;
 
-
 EmailInput.propTypes = {
     /** Field label. */
     label: PropTypes.string.isRequired,

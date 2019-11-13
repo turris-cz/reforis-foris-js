@@ -11,7 +11,6 @@ import { useUID } from "react-uid";
 
 import { formFieldsSize } from "./constants";
 
-
 RadioSet.propTypes = {
     /** Name attribute of the input HTML tag. */
     name: PropTypes.string.isRequired,

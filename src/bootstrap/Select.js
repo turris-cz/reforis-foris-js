@@ -9,7 +9,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useUID } from "react-uid";
 
-
 Select.propTypes = {
     /** Select field Label. */
     label: PropTypes.string.isRequired,

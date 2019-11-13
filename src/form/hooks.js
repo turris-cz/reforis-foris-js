@@ -48,7 +48,6 @@ export function useForm(validator, dataPreprocessor) {
     ];
 }
 
-
 function formReducer(state, action) {
     switch (action.type) {
     case FORM_ACTIONS.updateValue: {

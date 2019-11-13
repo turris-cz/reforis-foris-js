@@ -29,7 +29,6 @@ const REs = {
     MultipleEmails: /^([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+ *)( *, *[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+ *)*$/,
 };
 
-
 const createValidator = (fieldType) => (value) => {
     if (value && value !== "") return REs[fieldType].test(value) ? undefined : ERROR_MESSAGES[fieldType];
 };

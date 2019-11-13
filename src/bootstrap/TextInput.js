@@ -10,9 +10,7 @@ import PropTypes from "prop-types";
 
 import { Input } from "./Input";
 
-
 export const TextInput = ({ ...props }) => <Input type="text" {...props} />;
-
 
 TextInput.propTypes = {
     /** Field label. */

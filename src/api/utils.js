@@ -5,7 +5,36 @@
  * See /LICENSE for more information.
  */
 
-import { ForisURLs } from "forisUrls";
+import axios from "axios";
+
+export const HEADERS = {
+    Accept: "application/json",
+    "Content-Type": "application/json",
+    "X-CSRFToken": getCookie("_csrf_token"),
+};
+
+export const TIMEOUT = 5000;
+
+export const API_ACTIONS = {
+    INIT: 1,
+    SUCCESS: 2,
+    FAILURE: 3,
+};
+
+export const API_STATE = {
+    INIT: "init",
+    SENDING: "sending",
+    SUCCESS: "success",
+    ERROR: "error",
+};
+
+export const API_METHODS = {
+    GET: axios.get,
+    POST: axios.post,
+    PATCH: axios.patch,
+    PUT: axios.put,
+    DELETE: axios.delete,
+};
 
 function getCookie(name) {
     let cookieValue = null;
@@ -23,55 +52,27 @@ function getCookie(name) {
     return cookieValue;
 }
 
-export const HEADERS = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    "X-CSRFToken": getCookie("_csrf_token"),
-};
-
-export const TIMEOUT = 5000;
-
-export const API_ACTIONS = {
-    INIT: 1,
-    SUCCESS: 2,
-    FAILURE: 3,
-};
-
-export function APIReducer(state, action) {
-    switch (action.type) {
-    case API_ACTIONS.INIT:
-        return {
-            ...state,
-            isSending: true,
-            isError: false,
-            isSuccess: false,
-        };
-    case API_ACTIONS.SUCCESS:
-        return {
-            ...state,
-            isSending: false,
-            isError: false,
-            isSuccess: true,
-            data: action.payload,
-        };
-    case API_ACTIONS.FAILURE:
-        if (action.status === 403) window.location.assign(ForisURLs.login);
-        return {
-            ...state,
-            isSending: false,
-            isError: true,
-            isSuccess: false,
-            data: action.payload,
-        };
-    default:
-        throw new Error();
+export function getErrorPayload(error) {
+    if (error.response) {
+        if (error.response.status === 403) {
+            return _("The session is expired. Please log in again.");
+        }
+        return getJSONErrorMessage(error);
     }
+    if (error.code === "ECONNABORTED") {
+        return _("Timeout error occurred.");
+    }
+    if (error.request) {
+        return _("No response received.");
+    }
+    /* eslint no-console: "off" */
+    console.error(error);
+    return _("An unknown error occurred. Check the console for more info.");
 }
 
-export function getErrorMessage(error) {
-    let payload = "An unknown error occurred";
+export function getJSONErrorMessage(error) {
     if (error.response.headers["content-type"] === "application/json") {
-        payload = error.response.data;
+        return error.response.data;
     }
-    return payload;
+    return _("An unknown API error occurred.");
 }

@@ -7,31 +7,37 @@
 
 /* eslint import/export: "off" */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import {UIDReset} from 'react-uid';
-import {StaticRouter} from 'react-router';
-import {render} from '@testing-library/react'
+import React from "react";
+import { UIDReset } from "react-uid";
+import { StaticRouter } from "react-router";
+import { render } from "@testing-library/react";
+import PropTypes from "prop-types";
+
+import { AlertContextMock } from "./alertContextMock";
 
 Wrapper.propTypes = {
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
-        PropTypes.node
-    ])
+        PropTypes.node,
+    ]),
 };
 
-function Wrapper({children}) {
-    return <StaticRouter>
-        <UIDReset>
-            {children}
-        </UIDReset>
-    </StaticRouter>
+function Wrapper({ children }) {
+    return (
+        <AlertContextMock>
+            <StaticRouter>
+                <UIDReset>
+                    {children}
+                </UIDReset>
+            </StaticRouter>
+        </AlertContextMock>
+    );
 }
 
-const customTestRender = (ui, options) => render(ui, {wrapper: Wrapper, ...options});
+const customTestRender = (ui, options) => render(ui, { wrapper: Wrapper, ...options });
 
 // re-export everything
-export * from '@testing-library/react'
+export * from "@testing-library/react";
 
 // override render method
-export {customTestRender as render}
+export { customTestRender as render };

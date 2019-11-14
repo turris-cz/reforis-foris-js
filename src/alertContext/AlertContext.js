@@ -5,10 +5,11 @@
  * See /LICENSE for more information.
  */
 
-import React, { useState } from "react";
+import React, { useState, useContext, useCallback } from "react";
 import PropTypes from "prop-types";
 
-import { Alert } from "bootstrap/Alert";
+import { Alert, ALERT_TYPES } from "bootstrap/Alert";
+import { Portal } from "utils/Portal";
 
 const AlertContext = React.createContext();
 
@@ -22,14 +23,30 @@ AlertContextProvider.propTypes = {
 function AlertContextProvider({ children }) {
     const [alert, setAlert] = useState(null);
 
+    const setAlertWrapper = useCallback((message, type = ALERT_TYPES.DANGER) => {
+        setAlert({ message, type });
+    }, [setAlert]);
+
+    const dismissAlert = useCallback(() => setAlert(null), [setAlert]);
+
     return (
         <>
-            {alert && <Alert type="danger" message={alert} onDismiss={() => setAlert(null)} />}
-            <AlertContext.Provider value={setAlert}>
+            {alert && (
+                <Portal containerId="alert-container">
+                    <Alert type={alert.type} onDismiss={dismissAlert}>
+                        {alert.message}
+                    </Alert>
+                </Portal>
+            )}
+            <AlertContext.Provider value={[setAlertWrapper, dismissAlert]}>
                 { children }
             </AlertContext.Provider>
         </>
     );
 }
 
-export { AlertContext, AlertContextProvider };
+function useAlert() {
+    return useContext(AlertContext);
+}
+
+export { AlertContext, AlertContextProvider, useAlert };

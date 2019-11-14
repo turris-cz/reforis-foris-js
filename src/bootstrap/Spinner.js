@@ -28,7 +28,7 @@ export function Spinner({
 }) {
     if (!fullScreen) {
         return (
-            <div className={`spinner-wrapper ${className || ""}`} {...props}>
+            <div className={`spinner-wrapper ${className || "my-3 text-center"}`} {...props}>
                 <SpinnerElement>{children}</SpinnerElement>
             </div>
         );

@@ -8,11 +8,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+export const ALERT_TYPES = Object.freeze({
+    PRIMARY: "primary",
+    SECONDARY: "secondary",
+    SUCCESS: "success",
+    DANGER: "danger",
+    WARNING: "warning",
+    INFO: "info",
+    LIGHT: "light",
+    DARK: "dark",
+});
+
 Alert.propTypes = {
     /** Type of the alert it adds as `alert-${type}` class. */
-    type: PropTypes.string.isRequired,
-    /** Alert message. */
-    message: PropTypes.string,
+    type: PropTypes.oneOf(Object.values(ALERT_TYPES)),
     /** Alert content. */
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
@@ -22,13 +31,16 @@ Alert.propTypes = {
     onDismiss: PropTypes.func,
 };
 
+Alert.defaultProps = {
+    type: ALERT_TYPES.DANGER,
+};
+
 export function Alert({
-    type, message, onDismiss, children,
+    type, onDismiss, children,
 }) {
     return (
         <div className={`alert alert-dismissible alert-${type}`}>
             {onDismiss ? <button type="button" className="close" onClick={onDismiss}>&times;</button> : false}
-            {message}
             {children}
         </div>
     );

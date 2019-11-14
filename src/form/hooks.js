@@ -8,9 +8,8 @@
 import { useCallback, useEffect, useReducer } from "react";
 import update from "immutability-helper";
 
-import { useAPIGet } from "api/get";
+import { useAPIGet } from "api/hooks";
 import { useWSForisModule } from "webSockets/hooks";
-
 
 const FORM_ACTIONS = {
     updateValue: 1,
@@ -48,7 +47,6 @@ export function useForm(validator, dataPreprocessor) {
         onFormReload,
     ];
 }
-
 
 function formReducer(state, action) {
     switch (action.type) {

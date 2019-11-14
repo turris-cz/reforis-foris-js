@@ -1,4 +1,8 @@
-.PHONY: all install-js watch-js build-js lint-js test-js create-messages update-messages docs clean
+.PHONY: all install-js watch-js build-js collect-files pack publish-beta publish-latest lint test test-js-update-snapshots create-messages update-messages docs docs-watch clean
+
+DEV_PYTHON=python3.7
+VENV_NAME?=venv
+VENV_BIN=$(shell pwd)/$(VENV_NAME)/bin
 
 all:
 	@echo "make install-js"
@@ -22,6 +26,12 @@ all:
 	@echo "make clean"
 	@echo "    Remove python artifacts and virtualenv."
 
+venv: $(VENV_NAME)/bin/activate
+$(VENV_NAME)/bin/activate:
+	test -d $(VENV_NAME) || $(DEV_PYTHON) -m virtualenv -p $(DEV_PYTHON) $(VENV_NAME)
+	$(VENV_BIN)/$(DEV_PYTHON) -m pip install -r requirements.txt
+	touch $(VENV_NAME)/bin/activate
+
 install-js: package.json
 	npm install --save-dev
 
@@ -29,6 +39,15 @@ watch-js:
 	npm run build:watch
 build-js:
 	npm run build
+
+collect-files:
+	sh scripts/collect_files.sh
+pack: collect-files
+	cd dist && npm pack
+publish-beta: collect-files
+	sh scripts/publish.sh beta
+publish-latest: collect-files
+	sh scripts/publish.sh latest
 
 lint:
 	npm run lint
@@ -38,10 +57,10 @@ test:
 test-js-update-snapshots:
 	npm test -- -u
 
-create-messages:
-	pybabel extract -F babel.cfg -o ./translations/forisjs.pot .
-update-messages:
-	pybabel update -i translations/forisjs.pot -d translations
+create-messages: venv
+	$(VENV_BIN)/pybabel extract -F babel.cfg -o ./translations/forisjs.pot .
+update-messages: venv
+	$(VENV_BIN)/pybabel update -i ./translations/forisjs.pot -d ./translations -D forisjs
 
 docs:
 	npm run-script docs

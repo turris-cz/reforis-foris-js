@@ -6,13 +6,13 @@
  */
 
 // API
-export { useAPIGet } from "api/get";
-export { useAPIPost } from "api/post";
-export { useAPIDelete } from "api/delete";
-export { useAPIPatch } from "api/patch";
+export {
+    useAPIGet, useAPIPost, useAPIPatch, useAPIPut, useAPIDelete,
+} from "api/hooks";
+export { API_STATE } from "api/utils";
 
 // Bootstrap
-export { Alert } from "bootstrap/Alert";
+export { Alert, ALERT_TYPES } from "bootstrap/Alert";
 export { Button } from "bootstrap/Button";
 export { CheckBox } from "bootstrap/CheckBox";
 export { DownloadButton } from "bootstrap/DownloadButton";
@@ -50,6 +50,10 @@ export { WebSockets } from "webSockets/WebSockets";
 // Utils
 export { Portal } from "utils/Portal";
 export { undefinedIfEmpty, withoutUndefinedKeys, onlySpecifiedKeys } from "utils/objectHelpers";
+export {
+    withEither, withSpinner, withSending, withSpinnerOnSending, withError, withErrorMessage,
+} from "utils/conditionalHOCs";
+export { ErrorMessage } from "utils/ErrorMessage";
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "forisUrls";
@@ -66,4 +70,4 @@ export {
 } from "validations";
 
 // Alert context
-export { AlertContext, AlertContextProvider } from "alertContext/AlertContext";
+export { AlertContext, AlertContextProvider, useAlert } from "alertContext/AlertContext";

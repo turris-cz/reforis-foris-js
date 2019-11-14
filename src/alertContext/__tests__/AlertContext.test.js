@@ -5,14 +5,21 @@
  * See /LICENSE for more information.
  */
 
-import React, { useContext } from "react";
+import React from "react";
 import { render, getByText, queryByText, fireEvent } from "customTestRender";
 
-import { AlertContext, AlertContextProvider } from "../AlertContext";
+import { useAlert, AlertContextProvider } from "../AlertContext";
 
 function AlertTest() {
-    const setAlert = useContext(AlertContext);
-    return <button onClick={() => setAlert("Alert content")}>Set alert</button>;
+    const [setAlert, dismissAlert] = useAlert();
+    // alert-container serves as an output for Portal which renders Alert
+    return (
+        <>
+            <div id="alert-container" />
+            <button onClick={() => setAlert("Alert content")}>Set alert</button>
+            <button onClick={dismissAlert}>Dismiss alert</button>
+        </>
+    );
 };
 
 describe("AlertContext", () => {
@@ -36,12 +43,22 @@ describe("AlertContext", () => {
         expect(componentContainer).toMatchSnapshot();
     });
 
-    it("should dismiss alert", () => {
+    it("should dismiss alert with alert button", () => {
         fireEvent.click(getByText(componentContainer, "Set alert"));
         // Alert is present
         expect(getByText(componentContainer, "Alert content")).toBeDefined();
 
         fireEvent.click(componentContainer.querySelector(".close"));
+        // Alert is gone
+        expect(queryByText(componentContainer, "Alert content")).toBeNull();
+    });
+
+    it("should dismiss alert with external button", () => {
+        fireEvent.click(getByText(componentContainer, "Set alert"));
+        // Alert is present
+        expect(getByText(componentContainer, "Alert content")).toBeDefined();
+
+        fireEvent.click(getByText(componentContainer, "Dismiss alert"));
         // Alert is gone
         expect(queryByText(componentContainer, "Alert content")).toBeNull();
     });

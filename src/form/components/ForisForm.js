@@ -5,16 +5,19 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
 import { Spinner } from "bootstrap/Spinner";
-import { useAPIPost } from "api/post";
+import { useAPIPost } from "api/hooks";
 
 import { Prompt } from "react-router";
+import { API_STATE } from "api/utils";
+import { ErrorMessage } from "utils/ErrorMessage";
+import { useAlert } from "alertContext/AlertContext";
+import { ALERT_TYPES } from "bootstrap/Alert";
 import { useForisModule, useForm } from "../hooks";
 import { STATES as SUBMIT_BUTTON_STATES, SubmitButton } from "./SubmitButton";
-import { FailAlert, SuccessAlert } from "./alerts";
 
 ForisForm.propTypes = {
     /** WebSocket object see `scr/common/WebSockets.js`. */
@@ -69,22 +72,34 @@ export function ForisForm({
     children,
 }) {
     const [formState, onFormChangeHandler, resetFormData] = useForm(validator, prepData);
+    const [setAlert] = useAlert();
 
     const [forisModuleState] = useForisModule(ws, forisConfig);
     useEffect(() => {
-        if (forisModuleState.data) {
+        if (forisModuleState.state === API_STATE.SUCCESS) {
             resetFormData(forisModuleState.data);
         }
-    }, [forisModuleState.data, resetFormData, prepData]);
+    }, [forisModuleState, resetFormData, prepData]);
 
     const [postState, post] = useAPIPost(forisConfig.endpoint);
     useEffect(() => {
-        if (postState.isSuccess) postCallback();
-    }, [postCallback, postState.isSuccess]);
+        if (postState.state === API_STATE.SUCCESS) {
+            postCallback();
+            setAlert(_("Settings saved successfully"), ALERT_TYPES.SUCCESS);
+        } else if (postState.state === API_STATE.ERROR) {
+            setAlert(postState.data);
+        }
+    }, [postCallback, postState.state, postState.data, setAlert]);
 
+    if (forisModuleState.state === API_STATE.ERROR) {
+        return <ErrorMessage />;
+    }
+    if (!formState.data) {
+        return <Spinner />;
+    }
 
-    function onSubmitHandler(e) {
-        e.preventDefault();
+    function onSubmitHandler(event) {
+        event.preventDefault();
         resetFormData();
         const copiedFormData = JSON.parse(JSON.stringify(formState.data));
         const preparedData = prepDataToSubmit(copiedFormData);
@@ -92,16 +107,18 @@ export function ForisForm({
     }
 
     function getSubmitButtonState() {
-        if (postState.isSending) return SUBMIT_BUTTON_STATES.SAVING;
-        if (forisModuleState.isLoading) return SUBMIT_BUTTON_STATES.LOAD;
+        if (postState.state === API_STATE.SENDING) {
+            return SUBMIT_BUTTON_STATES.SAVING;
+        }
+        if (forisModuleState.state === API_STATE.SENDING) {
+            return SUBMIT_BUTTON_STATES.LOAD;
+        }
         return SUBMIT_BUTTON_STATES.READY;
     }
 
-    const [alertIsDismissed, setAlertIsDismissed] = useState(false);
-
-    if (!formState.data) return <Spinner className="row justify-content-center" />;
-
-    const formIsDisabled = disabled || forisModuleState.isLoading || postState.isSending;
+    const formIsDisabled = (disabled
+        || forisModuleState.state === API_STATE.SENDING
+        || postState.state === API_STATE.SENDING);
     const submitButtonIsDisabled = disabled || !!formState.errors;
 
     const childrenWithFormProps = React.Children.map(
@@ -123,19 +140,9 @@ export function ForisForm({
         return _("Changes you made may not be saved. Are you sure you want to leave?");
     }
 
-    let alert = null;
-    if (!alertIsDismissed) {
-        if (postState.isSuccess) {
-            alert = <SuccessAlert onDismiss={() => setAlertIsDismissed(true)} />;
-        } else if (postState.isError) {
-            alert = <FailAlert onDismiss={() => setAlertIsDismissed(true)} />;
-        }
-    }
-
     return (
         <>
             <Prompt message={getMessageOnLeavingPage} />
-            {alert}
             <form onSubmit={onSubmit}>
                 {childrenWithFormProps}
                 <SubmitButton

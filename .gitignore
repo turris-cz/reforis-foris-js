@@ -4,6 +4,9 @@
 logs
 *.log
 
+# Python
+venv/
+
 # NodeJS
 ## Logs
 npm-debug.log*

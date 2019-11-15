@@ -7,7 +7,12 @@
 
 // API
 export {
-    useAPIGet, useAPIPost, useAPIPatch, useAPIPut, useAPIDelete,
+    useAPIGet,
+    useAPIPost,
+    useAPIPatch,
+    useAPIPut,
+    useAPIDelete,
+    useAPIPolling,
 } from "api/hooks";
 export { API_STATE } from "api/utils";
 

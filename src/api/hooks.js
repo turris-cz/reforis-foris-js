@@ -5,10 +5,14 @@
  * See /LICENSE for more information.
  */
 
-import { useCallback, useEffect, useReducer, useState, } from "react";
+import {
+    useCallback, useEffect, useReducer, useState,
+} from "react";
 
 import { ForisURLs } from "forisUrls";
-import { API_ACTIONS, API_METHODS, API_STATE, getErrorPayload, HEADERS, TIMEOUT, } from "./utils";
+import {
+    API_ACTIONS, API_METHODS, API_STATE, getErrorPayload, HEADERS, TIMEOUT,
+} from "./utils";
 
 const DATA_METHODS = ["POST", "PATCH", "PUT"];
 
@@ -89,7 +93,7 @@ export {
     useAPIGet, useAPIPost, useAPIPatch, useAPIPut, useAPIDelete,
 };
 
-export function useAPIPolling(endpoint, delay = 1000) { // delay ms
+export function useAPIPolling(endpoint, delay = 1000, until) { // delay ms
     const [state, setState] = useState({ state: API_STATE.INIT });
     const [getState, get] = useAPIGet(endpoint);
 
@@ -100,11 +104,11 @@ export function useAPIPolling(endpoint, delay = 1000) { // delay ms
     }, [getState]);
 
     useEffect(() => {
-        if (delay !== null) {
+        if (until) {
             const interval = setInterval(get, delay);
             return () => clearInterval(interval);
         }
-    }, [delay, get]);
+    }, [until, delay, get]);
 
     return [state];
 }

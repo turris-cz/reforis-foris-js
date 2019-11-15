@@ -24,18 +24,18 @@ Spinner.defaultProps = {
 };
 
 export function Spinner({
-    fullScreen, children, className, ...props
+    fullScreen, children, className,
 }) {
     if (!fullScreen) {
         return (
-            <div className={`spinner-wrapper ${className || "my-3 text-center"}`} {...props}>
+            <div className={`spinner-wrapper ${className || "my-3 text-center"}`}>
                 <SpinnerElement>{children}</SpinnerElement>
             </div>
         );
     }
 
     return (
-        <div className="spinner-fs-wrapper" {...props}>
+        <div className="spinner-fs-wrapper">
             <div className="spinner-fs-background">
                 <SpinnerElement>{children}</SpinnerElement>
             </div>

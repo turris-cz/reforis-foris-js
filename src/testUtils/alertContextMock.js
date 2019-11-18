@@ -7,10 +7,10 @@
 
 import React from "react";
 
-import { AlertContext } from "../alertContext/AlertContext";
-
 const mockSetAlert = jest.fn();
 const mockDismissAlert = jest.fn();
+
+window.AlertContext = React.createContext();
 
 function AlertContextMock({ children }) {
     return (

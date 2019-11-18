@@ -11,8 +11,6 @@ import PropTypes from "prop-types";
 import { Alert, ALERT_TYPES } from "bootstrap/Alert";
 import { Portal } from "utils/Portal";
 
-const AlertContext = React.createContext();
-
 AlertContextProvider.propTypes = {
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
@@ -21,6 +19,7 @@ AlertContextProvider.propTypes = {
 };
 
 function AlertContextProvider({ children }) {
+    const { AlertContext } = window;
     const [alert, setAlert] = useState(null);
 
     const setAlertWrapper = useCallback((message, type = ALERT_TYPES.DANGER) => {
@@ -46,7 +45,8 @@ function AlertContextProvider({ children }) {
 }
 
 function useAlert() {
+    const { AlertContext } = window;
     return useContext(AlertContext);
 }
 
-export { AlertContext, AlertContextProvider, useAlert };
+export { AlertContextProvider, useAlert };

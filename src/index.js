@@ -75,4 +75,4 @@ export {
 } from "validations";
 
 // Alert context
-export { AlertContext, AlertContextProvider, useAlert } from "alertContext/AlertContext";
+export { AlertContextProvider, useAlert } from "alertContext/AlertContext";

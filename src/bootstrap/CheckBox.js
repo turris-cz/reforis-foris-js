@@ -42,8 +42,10 @@ export function CheckBox({
 
                     {...props}
                 />
-                <label className="custom-control-label" htmlFor={uid}>{label}</label>
-                {helpText && <small className="form-text text-muted">{helpText}</small>}
+                <label className="custom-control-label" htmlFor={uid}>
+                    {label}
+                    {helpText && <small className="form-text text-muted">{helpText}</small>}
+                </label>
             </div>
         </div>
     );

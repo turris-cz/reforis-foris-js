@@ -18,12 +18,12 @@ exports[`<Checkbox/> Render checkbox 1`] = `
       for="1"
     >
       Test label
+      <small
+        class="form-text text-muted"
+      >
+        Some help text
+      </small>
     </label>
-    <small
-      class="form-text text-muted"
-    >
-      Some help text
-    </small>
   </div>
 </div>
 `;
@@ -45,12 +45,12 @@ exports[`<Checkbox/> Render uncheked checkbox 1`] = `
       for="1"
     >
       Test label
+      <small
+        class="form-text text-muted"
+      >
+        Some help text
+      </small>
     </label>
-    <small
-      class="form-text text-muted"
-    >
-      Some help text
-    </small>
   </div>
 </div>
 `;

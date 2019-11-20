@@ -14,7 +14,7 @@ import { ErrorMessage } from "./ErrorMessage";
 function withEither(conditionalFn, Either) {
     return (Component) => (props) => {
         if (conditionalFn(props)) {
-            return <Either />;
+            return <Either {...props} />;
         }
         return <Component {...props} />;
     };

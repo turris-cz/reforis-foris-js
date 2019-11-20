@@ -7,7 +7,12 @@
 
 // API
 export {
-    useAPIGet, useAPIPost, useAPIPatch, useAPIPut, useAPIDelete,
+    useAPIGet,
+    useAPIPost,
+    useAPIPatch,
+    useAPIPut,
+    useAPIDelete,
+    useAPIPolling,
 } from "api/hooks";
 export { API_STATE } from "api/utils";
 
@@ -70,4 +75,4 @@ export {
 } from "validations";
 
 // Alert context
-export { AlertContext, AlertContextProvider, useAlert } from "alertContext/AlertContext";
+export { AlertContextProvider, useAlert } from "alertContext/AlertContext";

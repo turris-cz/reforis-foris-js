@@ -5,7 +5,9 @@
  * See /LICENSE for more information.
  */
 
-import { useCallback, useReducer } from "react";
+import {
+    useCallback, useEffect, useReducer, useState,
+} from "react";
 
 import { ForisURLs } from "forisUrls";
 import {
@@ -90,3 +92,23 @@ const useAPIDelete = createAPIHook("DELETE");
 export {
     useAPIGet, useAPIPost, useAPIPatch, useAPIPut, useAPIDelete,
 };
+
+export function useAPIPolling(endpoint, delay = 1000, until) { // delay ms
+    const [state, setState] = useState({ state: API_STATE.INIT });
+    const [getResponse, get] = useAPIGet(endpoint);
+
+    useEffect(() => {
+        if (getResponse.state !== API_STATE.INIT) {
+            setState(getResponse);
+        }
+    }, [getResponse]);
+
+    useEffect(() => {
+        if (until) {
+            const interval = setInterval(get, delay);
+            return () => clearInterval(interval);
+        }
+    }, [until, delay, get]);
+
+    return [state];
+}

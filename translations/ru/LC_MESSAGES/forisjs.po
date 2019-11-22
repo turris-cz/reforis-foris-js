@@ -8,92 +8,97 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-11-14 11:13+0100\n"
-"PO-Revision-Date: 2019-08-28 17:56+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2019-11-23 17:04+0000\n"
+"Last-Translator: Bogdan Bodnar <bogdan@bodnar.dev>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-js/"
+"ru/>\n"
 "Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.10-dev\n"
 "Generated-By: Babel 2.7.0\n"
 
 #: src/validations.js:13
 msgid "This is not a valid IPv4 address."
-msgstr ""
+msgstr "Это некорректный IPv4-адрес."
 
 #: src/validations.js:14
 msgid "This is not a valid IPv6 address."
-msgstr ""
+msgstr "Это некорректный IPv6-адрес."
 
 #: src/validations.js:15
 msgid "This is not a valid IPv6 prefix."
-msgstr ""
+msgstr "Это некорректный префикс IPv6."
 
 #: src/validations.js:16
 msgid "This is not a valid domain name."
-msgstr ""
+msgstr "Некорректное доменное имя."
 
 #: src/validations.js:17
 msgid "This is not a valid DUID."
-msgstr ""
+msgstr "Это некорректный DUID."
 
 #: src/validations.js:18
 msgid "This is not a valid MAC address."
-msgstr ""
+msgstr "Это некорректный MAC-адрес."
 
 #: src/validations.js:19
 msgid "Doesn't contain a list of emails separated by commas."
-msgstr ""
+msgstr "Не содержит список email адресов разделённых запятой."
 
 #: src/api/utils.js:58
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "Ваша сессия закончилась. Пожалуйста, залогинитесь заново."
 
 #: src/api/utils.js:63
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Произошла ошибка ожидания ответа сервера."
 
 #: src/api/utils.js:66
 msgid "No response received."
-msgstr ""
+msgstr "Ответ не получен."
 
 #: src/api/utils.js:70
 msgid "An unknown error occurred. Check the console for more info."
 msgstr ""
+"Произошла неизвестная ошибка. Проверьте консоль браузера, чтобы узнать "
+"детали."
 
 #: src/api/utils.js:77
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "Неизвестная ошибка программного интерфейса приложения."
 
 #: src/form/components/ForisForm.js:88
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Настройки были успешно сохранены"
 
 #: src/form/components/ForisForm.js:140
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
+"В случае выхода ваши изменения будут утеряны. Вы действительно хотите "
+"покинуть эту страницу?"
 
 #: src/form/components/SubmitButton.js:32
 msgid "Updating"
-msgstr ""
+msgstr "Обновление"
 
 #: src/form/components/SubmitButton.js:35
 msgid "Load settings"
-msgstr ""
+msgstr "Загрузка настроек"
 
 #: src/form/components/SubmitButton.js:38
 msgid "Save"
-msgstr ""
+msgstr "Сохранить"
 
 #: src/utils/ErrorMessage.js:13
 msgid "An error occurred while fetching data."
-msgstr ""
+msgstr "Во время получения данных произошла ошибка."
 
 #~ msgid "Settings were successfully saved."
 #~ msgstr ""
 
 #~ msgid "Settings update was failed."
 #~ msgstr ""
-

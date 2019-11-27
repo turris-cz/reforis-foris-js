@@ -5,7 +5,8 @@
  * See /LICENSE for more information.
  */
 
-export const REFORIS_URL_PREFIX = process.env.LIGHTTPD ? "/reforis" : "";
+export const REFORIS_URL_PREFIX = "/reforis";
+export const REFORIS_API_URL_PREFIX = `${REFORIS_URL_PREFIX}/api`;
 
 export const ForisURLs = {
     login: `${REFORIS_URL_PREFIX}/login`,
@@ -24,5 +25,5 @@ export const ForisURLs = {
     luci: "/cgi-bin/luci",
 
     // API
-    reboot: `${REFORIS_URL_PREFIX}/api/reboot`,
+    reboot: `${REFORIS_API_URL_PREFIX}/reboot`,
 };

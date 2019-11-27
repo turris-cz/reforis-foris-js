@@ -43,6 +43,9 @@ export {
     ModalHeader,
 } from "bootstrap/Modal";
 
+// Common
+export { RebootButton } from "common/RebootButton";
+
 // Form
 export { ForisForm } from "form/components/ForisForm";
 export { SubmitButton, STATES as SUBMIT_BUTTON_STATES } from "form/components/SubmitButton";

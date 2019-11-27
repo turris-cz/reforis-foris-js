@@ -11,6 +11,7 @@ export const ForisURLs = {
     login: `${REFORIS_URL_PREFIX}/login`,
     static: `${REFORIS_URL_PREFIX}/static/reforis`,
     wifi: `${REFORIS_URL_PREFIX}/network-settings/wifi`,
+
     packageManagement: {
         updateSettings: `${REFORIS_URL_PREFIX}/package-management/update-settings`,
         updates: `${REFORIS_URL_PREFIX}/package-management/updates`,
@@ -21,4 +22,7 @@ export const ForisURLs = {
     notificationsSettings: "/administration/notifications-settings",
 
     luci: "/cgi-bin/luci",
+
+    // API
+    reboot: `${REFORIS_URL_PREFIX}/api/reboot`,
 };

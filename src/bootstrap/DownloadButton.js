@@ -10,12 +10,25 @@ import PropTypes from "prop-types";
 
 DownloadButton.propTypes = {
     href: PropTypes.string.isRequired,
+    className: PropTypes.string,
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
     ]),
 };
 
-export function DownloadButton({ href, children }) {
-    return <a href={href} className="btn btn-primary" download>{children}</a>;
+DownloadButton.defaultProps = {
+    className: "btn-primary",
+};
+
+export function DownloadButton({ href, className, children }) {
+    return (
+        <a
+            href={href}
+            className={`btn ${className}`.trim()}
+            download
+        >
+            {children}
+        </a>
+    );
 }

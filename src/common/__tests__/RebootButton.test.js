@@ -49,7 +49,7 @@ describe("<RebootButton/>", () => {
         fireEvent.click(getByText(componentContainer, "Confirm reboot"));
         mockJSONError();
         await wait(() => expect(mockSetAlert)
-            .toBeCalledWith("Reboot triggering was failed."));
+            .toBeCalledWith("Reboot request failed."));
     });
 
 });

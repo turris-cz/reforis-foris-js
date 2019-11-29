@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RebootButton/> Render modal. 1`] = `
+<div>
+  <div
+    id="modal-container"
+  >
+    <div
+      class="modal fade show"
+      role="dialog"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+      >
+        <div
+          class="modal-content"
+        >
+          <div
+            class="modal-header"
+          >
+            <h5
+              class="modal-title"
+            >
+              Reboot confirmation
+            </h5>
+            <button
+              class="close"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+              >
+                ×
+              </span>
+            </button>
+          </div>
+          <div
+            class="modal-body"
+          >
+            <p>
+              Are you sure you want to restart the router?
+            </p>
+          </div>
+          <div
+            class="modal-footer"
+          >
+            <button
+              class="btn btn-primary "
+              type="button"
+            >
+               
+               
+              Cancel
+            </button>
+            <button
+              class="btn btn-danger"
+              type="button"
+            >
+               
+               
+              Confirm reboot
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="btn btn-danger"
+    type="button"
+  >
+     
+     
+    Reboot
+  </button>
+</div>
+`;
+
+exports[`<RebootButton/> Render. 1`] = `
+<div>
+  <div
+    id="modal-container"
+  />
+  <button
+    class="btn btn-danger"
+    type="button"
+  >
+     
+     
+    Reboot
+  </button>
+</div>
+`;

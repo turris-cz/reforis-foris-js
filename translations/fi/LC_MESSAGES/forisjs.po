@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-11-14 11:13+0100\n"
+"POT-Creation-Date: 2019-11-29 16:27+0100\n"
 "PO-Revision-Date: 2019-08-28 17:54+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fi\n"
@@ -66,6 +66,30 @@ msgstr ""
 msgid "An unknown API error occurred."
 msgstr ""
 
+#: src/common/RebootButton.js:33
+msgid "Reboot request failed."
+msgstr ""
+
+#: src/common/RebootButton.js:54
+msgid "Reboot"
+msgstr ""
+
+#: src/common/RebootButton.js:69
+msgid "Reboot confirmation"
+msgstr ""
+
+#: src/common/RebootButton.js:70
+msgid "Are you sure you want to restart the router?"
+msgstr ""
+
+#: src/common/RebootButton.js:72
+msgid "Cancel"
+msgstr ""
+
+#: src/common/RebootButton.js:73
+msgid "Confirm reboot"
+msgstr ""
+
 #: src/form/components/ForisForm.js:88
 msgid "Settings saved successfully"
 msgstr ""
@@ -94,5 +118,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Settings update was failed."
+#~ msgstr ""
+
+#~ msgid "Warning!"
+#~ msgstr ""
+
+#~ msgid "Reboot triggering was failed."
+#~ msgstr ""
+
+#~ msgid "Reboot triggering failed."
+#~ msgstr ""
+
+#~ msgid "Reboot requestq failed."
 #~ msgstr ""
 

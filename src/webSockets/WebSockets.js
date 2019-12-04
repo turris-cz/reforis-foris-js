@@ -61,9 +61,36 @@ export class WebSockets {
         return this;
     }
 
-    subscribe(params) {
+    subscribe(module) {
         this.waitForConnection(() => {
-            this.send("subscribe", params);
+            this.send("subscribe", module);
+        });
+        return this;
+    }
+
+    unbind(module, action, callback) {
+        const callbacks = this.callbacks[module][action];
+
+        const index = callbacks.indexOf(callback);
+        if (index !== -1) {
+            callbacks.splice(index, 1);
+        }
+
+        if (callbacks.length === 0) {
+            delete this.callbacks[module][action];
+        }
+
+        if (Object.keys(this.callbacks[module]).length === 0) {
+            this.unsubscribe(module);
+        }
+
+        return this;
+    }
+
+    unsubscribe(module) {
+        this.waitForConnection(() => {
+            this.send("unsubscribe", module);
+            delete this.callbacks[module];
         });
         return this;
     }
@@ -82,15 +109,15 @@ export class WebSockets {
         let chain;
         try {
             chain = this.callbacks[json.module][json.action];
-        } catch (e) {
-            if (e instanceof TypeError) {
-                console.log(`Callback for this message wasn't found:${e.data}`);
-            } else throw e;
+        } catch (error) {
+            if (error instanceof TypeError) {
+                console.log(`Callback for this message wasn't found:${error.data}`);
+            } else throw error;
         }
 
         if (typeof chain === "undefined") return;
 
-        for (let i = 0; i < chain.length; i++) chain[i](json);
+        chain.forEach((callback) => callback(json));
     }
 
     close() {

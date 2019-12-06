@@ -26,16 +26,13 @@ exports[`conditional HOCs withSpinner should render spinner 1`] = `
     class="spinner-wrapper my-3 text-center"
   >
     <div
-      class="spinner-border "
+      class="spinner-border"
       role="status"
     >
       <span
         class="sr-only"
       />
     </div>
-    <div
-      class="spinner-text"
-    />
   </div>
 </div>
 `;
@@ -46,16 +43,13 @@ exports[`conditional HOCs withSpinnerOnSending should render spinner 1`] = `
     class="spinner-wrapper my-3 text-center"
   >
     <div
-      class="spinner-border "
+      class="spinner-border"
       role="status"
     >
       <span
         class="sr-only"
       />
     </div>
-    <div
-      class="spinner-text"
-    />
   </div>
 </div>
 `;

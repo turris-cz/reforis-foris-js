@@ -20,14 +20,16 @@ import { useForisModule, useForm } from "../hooks";
 import { STATES as SUBMIT_BUTTON_STATES, SubmitButton } from "./SubmitButton";
 
 ForisForm.propTypes = {
-    /** WebSocket object see `scr/common/WebSockets.js`. */
+    /** Optional WebSocket object. See `scr/common/WebSockets.js`.
+     * `forisConfig.wsModule` should be specified when it's passed.
+     *  */
     ws: PropTypes.object,
     /** Foris configuration object. See usage in main components. */
     forisConfig: PropTypes.shape({
         /** reForis Flask aplication API endpoint from `src/common/API.js`. */
         endpoint: PropTypes.string.isRequired,
         /** `foris-controller` module name to be used via WebSockets.
-         *  If it's not passed then WebSockets aren't used
+         *  It can be use only with `ws` prop.
          * */
         wsModule: PropTypes.string,
         /** `foris-controller` action name to be used via WebSockets.
@@ -49,6 +51,17 @@ ForisForm.propTypes = {
     children: PropTypes.node.isRequired,
     /** Optional override of form submit callback */
     onSubmitOverridden: PropTypes.func,
+
+    // eslint-disable-next-line react/no-unused-prop-types
+    customWSProp(props) {
+        const wsModuleIsSpecified = !!(props.forisConfig && props.forisConfig.wsModule);
+        if (props.ws && !wsModuleIsSpecified) {
+            return new Error("forisConfig.wsModule should be specified when ws object is passed.");
+        }
+        if (!props.ws && wsModuleIsSpecified) {
+            return new Error("forisConfig.wsModule is specified without passing ws object.");
+        }
+    },
 };
 
 ForisForm.defaultProps = {

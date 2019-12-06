@@ -11,12 +11,21 @@ export function useWSForisModule(ws, module, action = "update_settings") {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        if (ws && module) {
-            ws.subscribe(module)
-                .bind(module, action, (msg) => {
-                    setData(msg.data);
-                });
+        // Sometimes we want to disable this hook if WS is not passed. We can't make conditional
+        // hooks, but we can disable it here. It's used especially in ForisForm when a module
+        // doesn't present any WS endpoint.
+        if (!ws) return;
+
+        function callback(msg) {
+            setData(msg.data);
         }
+
+        ws.subscribe(module)
+            .bind(module, action, callback);
+
+        return () => {
+            ws.unbind(module, action, callback);
+        };
     }, [action, module, ws]);
 
     return [data];

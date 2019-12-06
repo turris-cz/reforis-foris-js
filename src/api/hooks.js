@@ -17,13 +17,13 @@ import {
 const DATA_METHODS = ["POST", "PATCH", "PUT"];
 
 function createAPIHook(method) {
-    return (url, contentType) => {
+    return (urlRoot, contentType) => {
         const [state, dispatch] = useReducer(APIReducer, {
             state: API_STATE.INIT,
             data: null,
         });
 
-        const sendRequest = useCallback(async (data) => {
+        const sendRequest = useCallback(async ({ data, suffix } = {}) => {
             const headers = { ...HEADERS };
             if (contentType) {
                 headers["Content-Type"] = contentType;
@@ -31,17 +31,23 @@ function createAPIHook(method) {
 
             dispatch({ type: API_ACTIONS.INIT });
             try {
+                // Prepare request
                 const request = API_METHODS[method];
                 const config = {
                     timeout: TIMEOUT,
                     headers,
                 };
+                const url = suffix ? `${urlRoot}/${suffix}` : urlRoot;
+
+                // Make request
                 let result;
                 if (DATA_METHODS.includes(method)) {
                     result = await request(url, data, config);
                 } else {
                     result = await request(url, config);
                 }
+
+                // Process request result
                 dispatch({
                     type: API_ACTIONS.SUCCESS,
                     payload: result.data,
@@ -53,7 +59,7 @@ function createAPIHook(method) {
                     payload: getErrorPayload(error),
                 });
             }
-        }, [url, contentType]);
+        }, [urlRoot, contentType]);
         return [state, sendRequest];
     };
 }

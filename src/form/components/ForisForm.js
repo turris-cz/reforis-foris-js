@@ -103,7 +103,7 @@ export function ForisForm({
         resetFormData();
         const copiedFormData = JSON.parse(JSON.stringify(formState.data));
         const preparedData = prepDataToSubmit(copiedFormData);
-        post(preparedData);
+        post({ data: preparedData });
     }
 
     function getSubmitButtonState() {

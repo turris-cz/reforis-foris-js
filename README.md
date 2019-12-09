@@ -1,4 +1,5 @@
 # foris-js
+Set of utils and common React elements for reForis.
 
 ## Publishing package
 

@@ -5,7 +5,7 @@
   "author": "CZ.NIC, z.s.p.o.",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.labs.nic.cz/turris/reforis/forisjs.git"
+    "url": "https://gitlab.labs.nic.cz/turris/reforis/foris-js.git"
   },
   "keywords": [
     "foris",

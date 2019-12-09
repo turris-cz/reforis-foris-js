@@ -2,7 +2,7 @@
 
 # Collect files
 npm run build
-cp package.json dist
+cp package.json README.md dist
 cp -rf translations dist
 # Remove unwanted files
 rm -rf dist/**/__tests__

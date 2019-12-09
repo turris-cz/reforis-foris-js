@@ -46,6 +46,8 @@ export function Spinner({
 SpinnerElement.propTypes = {
     /** Spinner's size */
     small: PropTypes.bool,
+    /** Additional className */
+    className: PropTypes.string,
     /** Children components */
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
@@ -53,13 +55,16 @@ SpinnerElement.propTypes = {
     ]),
 };
 
-export function SpinnerElement({ small, children }) {
+export function SpinnerElement({ small, className, children }) {
     return (
         <>
-            <div className={`spinner-border ${small ? "spinner-border-sm" : ""}`} role="status">
+            <div
+                className={`spinner-border ${small ? "spinner-border-sm" : ""} ${className || ""}`.trim()}
+                role="status"
+            >
                 <span className="sr-only" />
             </div>
-            <div className="spinner-text">{children}</div>
+            {children && <div className="spinner-text">{children}</div>}
         </>
     );
 }

@@ -10,6 +10,7 @@ import React from 'react';
 import { act, fireEvent, render, waitForElement } from 'customTestRender';
 import mockAxios from 'jest-mock-axios';
 import { ForisForm } from "../components/ForisForm";
+import { WebSockets } from "webSockets/WebSockets";
 
 
 // It's possible to unittest each hooks via react-hooks-testing-library.
@@ -30,7 +31,6 @@ describe('useForm hook.', () => {
     let mockValidator;
     let mockPrepData;
     let mockPrepDataToSubmit;
-    let mockWebSockets;
     let input;
     let form;
     const Child = jest.fn(props => <TestForm {...props}/>);
@@ -41,7 +41,7 @@ describe('useForm hook.', () => {
         mockValidator = jest.fn(data => data.field === 'invalidValue' ? {field: 'Error'} : {});
         const {getByTestId, container} = render(
             <ForisForm
-                ws={mockWebSockets}
+                ws={new WebSockets()}
                 // Just some module which exists...
                 forisConfig={{
                     endpoint: 'testEndpoint',

@@ -62,6 +62,7 @@ export {
     withEither, withSpinner, withSending, withSpinnerOnSending, withError, withErrorMessage,
 } from "utils/conditionalHOCs";
 export { ErrorMessage } from "utils/ErrorMessage";
+export { useClickOutside } from "utils/hooks";
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "forisUrls";

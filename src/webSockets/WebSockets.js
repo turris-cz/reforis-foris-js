@@ -25,18 +25,18 @@ export class WebSockets {
                 console.error("WS: Error observed, you aren't logged probably.");
                 window.location.replace(ForisURLs.login);
             }
-            console.log(`WS: Error: ${e}`);
+            console.error(`WS: Error: ${e}`);
         };
         this.ws.onmessage = (e) => {
-            console.log(`WS: Received Message: ${e.data}`);
+            console.debug(`WS: Received Message: ${e.data}`);
             const data = JSON.parse(e.data);
             this.dispatch(data);
         };
         this.ws.onopen = () => {
-            console.log("WS: Connection open.");
+            console.debug("WS: Connection open.");
         };
         this.ws.onclose = () => {
-            console.log("WS: Connection closed.");
+            console.debug("WS: Connection closed.");
         };
 
         // callbacks[module][action]
@@ -111,7 +111,7 @@ export class WebSockets {
             chain = this.callbacks[json.module][json.action];
         } catch (error) {
             if (error instanceof TypeError) {
-                console.log(`Callback for this message wasn't found:${error.data}`);
+                console.warn(`Callback for this message wasn't found:${error.data}`);
             } else throw error;
         }
 

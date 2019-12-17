@@ -65,7 +65,7 @@ Radio.propTypes = {
     helpText: PropTypes.string,
 };
 
-function Radio({
+export function Radio({
     label, id, helpText, ...props
 }) {
     return (

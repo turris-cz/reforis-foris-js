@@ -5,10 +5,11 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 
 import { Portal } from "utils/Portal";
+import { useClickOutside } from "utils/hooks";
 
 Modal.propTypes = {
     /** Is modal shown value */
@@ -26,16 +27,7 @@ Modal.propTypes = {
 export function Modal({ shown, setShown, children }) {
     const dialogRef = useRef();
 
-    useEffect(() => {
-        function handleClickOutsideDialog(e) {
-            if (!dialogRef.current.contains(e.target)) setShown(false);
-        }
-
-        document.addEventListener("mousedown", handleClickOutsideDialog);
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutsideDialog);
-        };
-    }, [setShown]);
+    useClickOutside(dialogRef, () => setShown(false));
 
     return (
         <Portal containerId="modal-container">

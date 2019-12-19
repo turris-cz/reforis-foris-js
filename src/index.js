@@ -27,7 +27,7 @@ export { FileInput } from "bootstrap/FileInput";
 export { Input } from "bootstrap/Input";
 export { NumberInput } from "bootstrap/NumberInput";
 export { PasswordInput } from "bootstrap/PasswordInput";
-export { RadioSet } from "bootstrap/RadioSet";
+export { Radio, RadioSet } from "bootstrap/RadioSet";
 export { Select } from "bootstrap/Select";
 export { TextInput } from "bootstrap/TextInput";
 export { formFieldsSize } from "bootstrap/constants";
@@ -62,6 +62,7 @@ export {
     withEither, withSpinner, withSending, withSpinnerOnSending, withError, withErrorMessage,
 } from "utils/conditionalHOCs";
 export { ErrorMessage } from "utils/ErrorMessage";
+export { useClickOutside } from "utils/hooks";
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "forisUrls";

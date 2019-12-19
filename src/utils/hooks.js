@@ -18,3 +18,19 @@ export function useConditionalTimeout({ callback, timeout = 125 }, ...callbackAr
     }, [condition, callback, timeout, callbackArgs]);
     return setCondition;
 }
+
+/** Execute callback when user clicks outside specified element. */
+export function useClickOutside(element, callback) {
+    function handleClickOutside(event) {
+        if (element.current && !element.current.contains(event.target)) {
+            callback(event);
+        }
+    }
+
+    useEffect(() => {
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    });
+}

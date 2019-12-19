@@ -1,11 +1,11 @@
 {
   "name": "foris",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Set of components and utils for Foris and its plugins.",
   "author": "CZ.NIC, z.s.p.o.",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.labs.nic.cz/turris/reforis/forisjs.git"
+    "url": "https://gitlab.labs.nic.cz/turris/reforis/foris-js.git"
   },
   "keywords": [
     "foris",

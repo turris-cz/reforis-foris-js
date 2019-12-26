@@ -7,8 +7,8 @@
 
 import React from "react";
 
-import { Spinner } from "bootstrap/Spinner";
-import { API_STATE } from "api/utils";
+import { Spinner } from "../bootstrap/Spinner";
+import { API_STATE } from "../api/utils";
 import { ErrorMessage } from "./ErrorMessage";
 
 function withEither(conditionalFn, Either) {

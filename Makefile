@@ -35,11 +35,6 @@ $(VENV_NAME)/bin/activate:
 install-js: package.json
 	npm install --save-dev
 
-watch-js:
-	npm run build:watch
-build-js:
-	npm run build
-
 collect-files:
 	sh scripts/collect_files.sh
 pack: collect-files

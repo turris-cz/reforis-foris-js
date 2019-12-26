@@ -1,8 +1,9 @@
 #!/bin/sh
 
 # Collect files
-npm run build
-cp package.json README.md dist
+mkdir -p dist
+cp -rf ./src/* dist
+cp package.json package-lock.json README.md dist
 cp -rf translations dist
 # Remove unwanted files
 rm -rf dist/**/__tests__

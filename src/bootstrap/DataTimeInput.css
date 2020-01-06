@@ -1,0 +1,4 @@
+/* Override defaults from "react-datetime" - display picker above input */
+.rdtPicker {
+    bottom: 0;
+}

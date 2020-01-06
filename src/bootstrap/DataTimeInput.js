@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import Datetime from "react-datetime/DateTime";
 import moment from "moment/moment";
 import "react-datetime/css/react-datetime.css";
+import "./DataTimeInput.css";
 
 import { Input } from "./Input";
 

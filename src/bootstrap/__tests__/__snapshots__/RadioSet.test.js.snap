@@ -2,7 +2,7 @@
 
 exports[`<RadioSet/> Render radio set 1`] = `
 <div
-  class="form-group col-sm-12 offset-lg-1 col-lg-10"
+  class="form-group"
 >
   <label
     class="d-block"

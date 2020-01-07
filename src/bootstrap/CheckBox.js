@@ -9,30 +9,25 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useUID } from "react-uid";
 
-import { formFieldsSize } from "./constants";
-
 CheckBox.propTypes = {
     /** Label message */
     label: PropTypes.string.isRequired,
     /** Help text message */
     helpText: PropTypes.string,
-    /** Apply default size (full-width) */
-    useDefaultSize: PropTypes.bool,
     /** Control if checkbox is clickable */
     disabled: PropTypes.bool,
 };
 
 CheckBox.defaultProps = {
-    useDefaultSize: true,
     disabled: false,
 };
 
 export function CheckBox({
-    label, helpText, useDefaultSize, disabled, ...props
+    label, helpText, disabled, ...props
 }) {
     const uid = useUID();
     return (
-        <div className={`form-group ${useDefaultSize ? formFieldsSize : ""}`.trim()}>
+        <div className="form-group">
             <div className="custom-control custom-checkbox ">
                 <input
                     className="custom-control-input"

@@ -7,15 +7,14 @@
 
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-
-import { Spinner } from "bootstrap/Spinner";
-import { useAPIPost } from "api/hooks";
-
 import { Prompt } from "react-router";
-import { API_STATE } from "api/utils";
-import { ErrorMessage } from "utils/ErrorMessage";
-import { useAlert } from "alertContext/AlertContext";
-import { ALERT_TYPES } from "bootstrap/Alert";
+
+import { useAPIPost } from "../../api/hooks";
+import { API_STATE } from "../../api/utils";
+import { ErrorMessage } from "../../utils/ErrorMessage";
+import { useAlert } from "../../alertContext/AlertContext";
+import { Spinner } from "../../bootstrap/Spinner";
+import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { useForisModule, useForm } from "../hooks";
 import { STATES as SUBMIT_BUTTON_STATES, SubmitButton } from "./SubmitButton";
 

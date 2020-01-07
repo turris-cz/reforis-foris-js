@@ -9,7 +9,7 @@ import {
     useCallback, useEffect, useReducer, useState,
 } from "react";
 
-import { ForisURLs } from "forisUrls";
+import { ForisURLs } from "../forisUrls";
 import {
     API_ACTIONS, API_METHODS, API_STATE, getErrorPayload, HEADERS, TIMEOUT,
 } from "./utils";

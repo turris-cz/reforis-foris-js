@@ -8,8 +8,8 @@
 import React, { useRef } from "react";
 import PropTypes from "prop-types";
 
-import { Portal } from "utils/Portal";
-import { useClickOutside } from "utils/hooks";
+import { Portal } from "../utils/Portal";
+import { useClickOutside } from "../utils/hooks";
 
 Modal.propTypes = {
     /** Is modal shown value */

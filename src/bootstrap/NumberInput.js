@@ -8,7 +8,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { useConditionalTimeout } from "utils/hooks";
+import { useConditionalTimeout } from "../utils/hooks";
 import { Input } from "./Input";
 import "./NumberInput.css";
 

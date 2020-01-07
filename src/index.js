@@ -13,59 +13,59 @@ export {
     useAPIPut,
     useAPIDelete,
     useAPIPolling,
-} from "api/hooks";
-export { API_STATE } from "api/utils";
+} from "./api/hooks";
+export { API_STATE } from "./api/utils";
 
 // Bootstrap
-export { Alert, ALERT_TYPES } from "bootstrap/Alert";
-export { Button } from "bootstrap/Button";
-export { CheckBox } from "bootstrap/CheckBox";
-export { DownloadButton } from "bootstrap/DownloadButton";
-export { DataTimeInput } from "bootstrap/DataTimeInput";
-export { EmailInput } from "bootstrap/EmailInput";
-export { FileInput } from "bootstrap/FileInput";
-export { Input } from "bootstrap/Input";
-export { NumberInput } from "bootstrap/NumberInput";
-export { PasswordInput } from "bootstrap/PasswordInput";
-export { Radio, RadioSet } from "bootstrap/RadioSet";
-export { Select } from "bootstrap/Select";
-export { TextInput } from "bootstrap/TextInput";
-export { formFieldsSize } from "bootstrap/constants";
+export { Alert, ALERT_TYPES } from "./bootstrap/Alert";
+export { Button } from "./bootstrap/Button";
+export { CheckBox } from "./bootstrap/CheckBox";
+export { DownloadButton } from "./bootstrap/DownloadButton";
+export { DataTimeInput } from "./bootstrap/DataTimeInput";
+export { EmailInput } from "./bootstrap/EmailInput";
+export { FileInput } from "./bootstrap/FileInput";
+export { Input } from "./bootstrap/Input";
+export { NumberInput } from "./bootstrap/NumberInput";
+export { PasswordInput } from "./bootstrap/PasswordInput";
+export { Radio, RadioSet } from "./bootstrap/RadioSet";
+export { Select } from "./bootstrap/Select";
+export { TextInput } from "./bootstrap/TextInput";
+export { formFieldsSize } from "./bootstrap/constants";
 
 export {
     Spinner,
     SpinnerElement,
-} from "bootstrap/Spinner";
+} from "./bootstrap/Spinner";
 export {
     Modal,
     ModalBody,
     ModalFooter,
     ModalHeader,
-} from "bootstrap/Modal";
+} from "./bootstrap/Modal";
 
 // Common
-export { RebootButton } from "common/RebootButton";
+export { RebootButton } from "./common/RebootButton";
 
 // Form
-export { ForisForm } from "form/components/ForisForm";
-export { SubmitButton, STATES as SUBMIT_BUTTON_STATES } from "form/components/SubmitButton";
-export { useForisModule, useForm } from "form/hooks";
+export { ForisForm } from "./form/components/ForisForm";
+export { SubmitButton, STATES as SUBMIT_BUTTON_STATES } from "./form/components/SubmitButton";
+export { useForisModule, useForm } from "./form/hooks";
 
 // WebSockets
-export { useWSForisModule } from "webSockets/hooks";
-export { WebSockets } from "webSockets/WebSockets";
+export { useWSForisModule } from "./webSockets/hooks";
+export { WebSockets } from "./webSockets/WebSockets";
 
 // Utils
-export { Portal } from "utils/Portal";
-export { undefinedIfEmpty, withoutUndefinedKeys, onlySpecifiedKeys } from "utils/objectHelpers";
+export { Portal } from "./utils/Portal";
+export { undefinedIfEmpty, withoutUndefinedKeys, onlySpecifiedKeys } from "./utils/objectHelpers";
 export {
     withEither, withSpinner, withSending, withSpinnerOnSending, withError, withErrorMessage,
-} from "utils/conditionalHOCs";
-export { ErrorMessage } from "utils/ErrorMessage";
-export { useClickOutside } from "utils/hooks";
+} from "./utils/conditionalHOCs";
+export { ErrorMessage } from "./utils/ErrorMessage";
+export { useClickOutside } from "./utils/hooks";
 
 // Foris URL
-export { ForisURLs, REFORIS_URL_PREFIX } from "forisUrls";
+export { ForisURLs, REFORIS_URL_PREFIX } from "./forisUrls";
 
 // Validation
 export {
@@ -76,7 +76,7 @@ export {
     validateDUID,
     validateMAC,
     validateMultipleEmails,
-} from "validations";
+} from "./validations";
 
 // Alert context
-export { AlertContextProvider, useAlert } from "alertContext/AlertContext";
+export { AlertContextProvider, useAlert } from "./alertContext/AlertContext";

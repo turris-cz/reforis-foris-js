@@ -2,7 +2,7 @@
 
 # Collect files
 mkdir -p dist
-cp -rf ./src dist
+cp -rf ./src/* dist
 cp package.json package-lock.json README.md dist
 cp -rf translations dist
 # Remove unwanted files

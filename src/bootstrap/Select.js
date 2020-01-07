@@ -33,7 +33,7 @@ export function Select({
     );
 
     return (
-        <div className="form-group col-sm-12 offset-lg-1 col-lg-10">
+        <div className="form-group">
             <label htmlFor={uid}>{label}</label>
             <select
                 className="custom-select"

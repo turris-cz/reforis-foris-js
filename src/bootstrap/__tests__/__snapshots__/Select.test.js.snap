@@ -3,7 +3,7 @@
 exports[`<Select/> Test with snapshot. 1`] = `
 <div>
   <div
-    class="form-group col-sm-12 offset-lg-1 col-lg-10"
+    class="form-group"
   >
     <label
       for="1"

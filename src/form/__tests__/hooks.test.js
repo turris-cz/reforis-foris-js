@@ -59,7 +59,7 @@ describe('useForm hook.', () => {
         input = await waitForElement(() =>
             getByTestId('test-input')
         );
-        form = container.firstChild
+        form = container.firstChild.firstChild;
     });
 
     it('Validation on changing.', () => {

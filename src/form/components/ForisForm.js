@@ -9,12 +9,14 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { Prompt } from "react-router";
 
-import { useAPIPost } from "../../api/hooks";
+import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { API_STATE } from "../../api/utils";
 import { ErrorMessage } from "../../utils/ErrorMessage";
-import { useAlert } from "../../alertContext/AlertContext";
+import { formFieldsSize } from "../../bootstrap/constants";
 import { Spinner } from "../../bootstrap/Spinner";
-import { ALERT_TYPES } from "../../bootstrap/Alert";
+import { useAlert } from "../../alertContext/AlertContext";
+import { useAPIPost } from "../../api/hooks";
+
 import { useForisModule, useForm } from "../hooks";
 import { STATES as SUBMIT_BUTTON_STATES, SubmitButton } from "./SubmitButton";
 
@@ -153,15 +155,17 @@ export function ForisForm({
     }
 
     return (
-        <>
+        <div className={formFieldsSize}>
             <Prompt message={getMessageOnLeavingPage} />
             <form onSubmit={onSubmit}>
                 {childrenWithFormProps}
-                <SubmitButton
-                    state={getSubmitButtonState()}
-                    disabled={submitButtonIsDisabled}
-                />
+                <div className="text-right">
+                    <SubmitButton
+                        state={getSubmitButtonState()}
+                        disabled={submitButtonIsDisabled}
+                    />
+                </div>
             </form>
-        </>
+        </div>
     );
 }

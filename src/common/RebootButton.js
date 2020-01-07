@@ -8,15 +8,15 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-import { useAPIPost } from "api/hooks";
-import { API_STATE } from "api/utils";
-import { ForisURLs } from "forisUrls";
+import { useAPIPost } from "../api/hooks";
+import { API_STATE } from "../api/utils";
+import { ForisURLs } from "../forisUrls";
 
-import { Button } from "bootstrap/Button";
+import { Button } from "../bootstrap/Button";
 import {
     Modal, ModalHeader, ModalBody, ModalFooter,
-} from "bootstrap/Modal";
-import { useAlert } from "alertContext/AlertContext";
+} from "../bootstrap/Modal";
+import { useAlert } from "../alertContext/AlertContext";
 
 RebootButton.propTypes = {
     forisFormSize: PropTypes.bool,

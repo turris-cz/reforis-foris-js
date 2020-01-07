@@ -8,11 +8,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const OFFSET = 8;
-const SIZE = 3;
-const SIZE_CLASS = ` offset-lg-${OFFSET} col-lg-${SIZE}`;
-const SIZE_CLASS_SM = " col-sm-12";
-
 Button.propTypes = {
     /** Additional class name. */
     className: PropTypes.string,
@@ -32,14 +27,16 @@ Button.propTypes = {
 export function Button({
     className, loading, forisFormSize, children, ...props
 }) {
-    className = className ? `btn ${className}` : "btn btn-primary ";
-    if (forisFormSize) className += SIZE_CLASS + SIZE_CLASS_SM;
+    let buttonClass = className ? `btn ${className}` : "btn btn-primary ";
+    if (forisFormSize) {
+        buttonClass = `${buttonClass} col-sm-12 col-lg-3`;
+    }
 
     const span = loading
         ? <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" /> : null;
 
     return (
-        <button type="button" className={className} {...props}>
+        <button type="button" className={buttonClass} {...props}>
             {span}
             {" "}
             {span ? " " : null}

@@ -9,8 +9,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useUID } from "react-uid";
 
-import { formFieldsSize } from "./constants";
-
 RadioSet.propTypes = {
     /** Name attribute of the input HTML tag. */
     name: PropTypes.string.isRequired,
@@ -51,7 +49,7 @@ export function RadioSet({
     });
 
     return (
-        <div className={`form-group ${formFieldsSize}`}>
+        <div className="form-group">
             {label && <label htmlFor={uid} className="d-block">{label}</label>}
             {radios}
             {helpText && <small className="form-text text-muted">{helpText}</small>}

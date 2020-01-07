@@ -7,7 +7,7 @@
 
 /* eslint no-console: "off" */
 
-import { ForisURLs } from "forisUrls";
+import { ForisURLs } from "../forisUrls";
 
 const PROTOCOL = window.location.protocol === "http:" ? "ws" : "wss";
 

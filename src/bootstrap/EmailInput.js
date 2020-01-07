@@ -6,8 +6,8 @@
  */
 
 import React from "react";
-
 import PropTypes from "prop-types";
+
 import { Input } from "./Input";
 
 export const EmailInput = ({ ...props }) => <Input type="email" {...props} />;

@@ -9,8 +9,6 @@ import React from "react";
 import { useUID } from "react-uid";
 import PropTypes from "prop-types";
 
-import { formFieldsSize } from "./constants";
-
 Input.propTypes = {
     type: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
@@ -32,7 +30,7 @@ export function Input({
     const uid = useUID();
     const inputClassName = `form-control ${className || ""} ${(error ? "is-invalid" : "")}`.trim();
     return (
-        <div className={`form-group ${formFieldsSize}`}>
+        <div className="form-group">
             <label className={labelClassName} htmlFor={uid}>{label}</label>
             <div className={`input-group ${groupClassName || ""}`.trim()}>
                 <input

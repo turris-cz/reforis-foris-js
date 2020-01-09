@@ -20,7 +20,7 @@ describe("<Checkbox/>", () => {
                 helpText="Some help text"
                 onChange={() => {
                 }}
-            />
+            />,
         );
         expect(container.firstChild)
             .toMatchSnapshot();
@@ -31,7 +31,7 @@ describe("<Checkbox/>", () => {
             <CheckBox
                 label="Test label"
                 helpText="Some help text"
-            />
+            />,
         );
         expect(container.firstChild)
             .toMatchSnapshot();

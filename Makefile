@@ -46,6 +46,8 @@ publish-latest: collect-files
 
 lint:
 	npm run lint
+lint-js-fix:
+	npm run lint:fix
 
 test:
 	npm test

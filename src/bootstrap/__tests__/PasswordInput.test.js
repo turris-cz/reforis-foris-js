@@ -20,7 +20,7 @@ describe("<PasswordInput/>", () => {
                 value="Some password"
                 onChange={() => {
                 }}
-            />
+            />,
         );
         expect(container.firstChild)
             .toMatchSnapshot();

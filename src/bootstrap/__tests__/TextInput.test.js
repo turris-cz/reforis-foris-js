@@ -20,7 +20,7 @@ describe("<TextInput/>", () => {
                 value="Some text"
                 onChange={() => {
                 }}
-            />
+            />,
         );
         expect(container.firstChild)
             .toMatchSnapshot();

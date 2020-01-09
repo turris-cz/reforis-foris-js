@@ -14,30 +14,30 @@ import { RadioSet } from "../RadioSet";
 const TEST_CHOICES = [
     {
         label: "label",
-        value: "value"
+        value: "value",
     },
     {
         label: "another label",
-        value: "another value"
+        value: "another value",
     },
     {
         label: "another one  label",
-        value: "another on value"
-    }
+        value: "another on value",
+    },
 ];
 
 describe("<RadioSet/>", () => {
     it("Render radio set", () => {
         const { container } = render(
             <RadioSet
-                name={"test_name"}
-                label='Radios set label'
-                value='value'
+                name="test_name"
+                label="Radios set label"
+                value="value"
                 choices={TEST_CHOICES}
-                helpText={"Some help text"}
+                helpText="Some help text"
                 onChange={() => {
                 }}
-            />
+            />,
         );
         expect(container.firstChild)
             .toMatchSnapshot();

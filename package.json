@@ -1,6 +1,6 @@
 {
   "name": "foris",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Set of components and utils for Foris and its plugins.",
   "author": "CZ.NIC, z.s.p.o.",
   "repository": {
@@ -12,7 +12,7 @@
     "reforis"
   ],
   "license": "GPL-3.0",
-  "main": "./index.js",
+  "main": "./src/index.js",
   "dependencies": {
     "axios": "^0.19.0",
     "jest-transform-css": "^2.0.0",
@@ -25,6 +25,8 @@
   },
   "peerDependencies": {
     "immutability-helper": "3.0.1",
+    "pdfmake": "^0.1.63",
+    "qrcode.react": "^0.9.3",
     "react": "16.9.0",
     "react-dom": "16.9.0"
   },
@@ -54,6 +56,8 @@
     "jest-mock-axios": "^3.0.0",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.25",
+    "pdfmake": "^0.1.63",
+    "qrcode.react": "^0.9.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-styleguidist": "^10.3.2",
@@ -63,6 +67,7 @@
   },
   "scripts": {
     "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",

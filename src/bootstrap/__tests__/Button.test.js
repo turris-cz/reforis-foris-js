@@ -25,7 +25,7 @@ describe("<Button />", () => {
     });
 
     it("Render button with spinner", () => {
-        const { container } = render(<Button loading={true}>Test Button</Button>);
+        const { container } = render(<Button loading>Test Button</Button>);
         expect(container.firstChild)
             .toMatchSnapshot();
     });

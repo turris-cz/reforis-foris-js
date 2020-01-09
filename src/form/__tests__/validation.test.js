@@ -11,7 +11,7 @@ import {
     validateIPv4Address,
     validateIPv6Address,
     validateIPv6Prefix,
-    validateMAC
+    validateMAC,
 } from "validations";
 
 describe("Validation functions", () => {
@@ -50,7 +50,6 @@ describe("Validation functions", () => {
             .toBe(undefined);
         expect(validateIPv6Address("::"))
             .toBe(undefined);
-
     });
     it("validateIPv6Address invalid", () => {
         expect(validateIPv6Address("invalid"))
@@ -85,7 +84,6 @@ describe("Validation functions", () => {
             .toBe(undefined);
     });
 
-
     it("validateDomain valid", () => {
         expect(validateDomain("example.com"))
             .toBe(undefined);
@@ -108,7 +106,6 @@ describe("Validation functions", () => {
             .toBe(undefined);
         expect(validateDUID("ABCDEF12AB"))
             .toBe(undefined);
-
     });
     it("validateDUID invalid", () => {
         expect(validateDUID("gggggggg"))

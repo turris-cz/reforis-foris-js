@@ -45,6 +45,7 @@ export {
 
 // Common
 export { RebootButton } from "./common/RebootButton";
+export { WiFiSettings } from "./common/WiFiSettings/WiFiSettings";
 
 // Form
 export { ForisForm } from "./form/components/ForisForm";

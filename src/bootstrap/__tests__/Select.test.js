@@ -7,29 +7,31 @@
 
 import React from "react";
 
-import { fireEvent, getByDisplayValue, getByText, render } from "customTestRender";
+import {
+    fireEvent, getByDisplayValue, getByText, render,
+} from "customTestRender";
 
 import { Select } from "../Select";
 
 const TEST_CHOICES = {
-    "1": "one",
-    "2": "two",
-    "3": "three",
+    1: "one",
+    2: "two",
+    3: "three",
 };
 
 describe("<Select/>", () => {
-    var selectContainer;
+    let selectContainer;
     const onChangeHandler = jest.fn();
     beforeEach(() => {
         const { container } = render(
             <Select
-                label='Test label'
-                value='1'
+                label="Test label"
+                value="1"
                 choices={TEST_CHOICES}
-                helpText='Help text'
+                helpText="Help text"
 
                 onChange={onChangeHandler}
-            />
+            />,
         );
         selectContainer = container;
     });

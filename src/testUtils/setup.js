@@ -5,8 +5,8 @@
  * See /LICENSE for more information.
  */
 
-import mockAxios from 'jest-mock-axios';
-import moment from 'moment-timezone';
+import mockAxios from "jest-mock-axios";
+import moment from "moment-timezone";
 
 // Setup axios cleanup
 global.afterEach(() => {
@@ -14,9 +14,9 @@ global.afterEach(() => {
 });
 
 // Mock babel (gettext)
-global._ = str => str;
-global.ngettext = str => str;
-global.babel = {format: (str) => str};
+global._ = (str) => str;
+global.ngettext = (str) => str;
+global.babel = { format: (str) => str };
 global.ForisTranslations = {};
 
 // Mock web sockets
@@ -25,9 +25,9 @@ window.WebSocket = jest.fn();
 // Mock scrollIntoView
 global.HTMLElement.prototype.scrollIntoView = () => {};
 
-jest.doMock('moment', () => {
-    moment.tz.setDefault('UTC');
+// Mock timezone utilities
+jest.doMock("moment", () => {
+    moment.tz.setDefault("UTC");
     return moment;
 });
-
 Date.now = jest.fn(() => new Date(Date.UTC(2019, 1, 1, 12, 13, 14)).valueOf());

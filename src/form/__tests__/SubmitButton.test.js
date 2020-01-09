@@ -12,17 +12,17 @@ import { STATES, SubmitButton } from "../components/SubmitButton";
 
 describe("<SubmitButton/>", () => {
     it("Render ready", () => {
-        const { container } = render(<SubmitButton state={STATES.READY}/>);
+        const { container } = render(<SubmitButton state={STATES.READY} />);
         expect(container)
             .toMatchSnapshot();
     });
     it("Render saving", () => {
-        const { container } = render(<SubmitButton state={STATES.SAVING}/>);
+        const { container } = render(<SubmitButton state={STATES.SAVING} />);
         expect(container)
             .toMatchSnapshot();
     });
     it("Render load", () => {
-        const { container } = render(<SubmitButton state={STATES.LOAD}/>);
+        const { container } = render(<SubmitButton state={STATES.LOAD} />);
         expect(container)
             .toMatchSnapshot();
     });

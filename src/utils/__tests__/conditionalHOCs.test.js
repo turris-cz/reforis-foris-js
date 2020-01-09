@@ -7,10 +7,10 @@
 
 import React from "react";
 import { render } from "customTestRender";
+import { API_STATE } from "api/utils";
 import {
     withEither, withSpinner, withSending, withSpinnerOnSending, withError, withErrorMessage,
 } from "../conditionalHOCs";
-import { API_STATE } from "api/utils";
 
 describe("conditional HOCs", () => {
     const First = () => <p>First</p>;

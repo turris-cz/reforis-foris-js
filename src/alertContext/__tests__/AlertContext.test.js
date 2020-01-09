@@ -6,7 +6,9 @@
  */
 
 import React from "react";
-import { render, getByText, queryByText, fireEvent } from "customTestRender";
+import {
+    render, getByText, queryByText, fireEvent,
+} from "customTestRender";
 
 import { useAlert, AlertContextProvider } from "../AlertContext";
 
@@ -20,7 +22,7 @@ function AlertTest() {
             <button onClick={dismissAlert}>Dismiss alert</button>
         </>
     );
-};
+}
 
 describe("AlertContext", () => {
     let componentContainer;
@@ -29,7 +31,7 @@ describe("AlertContext", () => {
         const { container } = render(
             <AlertContextProvider>
                 <AlertTest />
-            </AlertContextProvider>
+            </AlertContextProvider>,
         );
         componentContainer = container;
     });

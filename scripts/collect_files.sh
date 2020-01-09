@@ -9,5 +9,5 @@ sed -i 's/\/src//g' dist/package.json # remove ./src from main js file path
 cp -rf translations dist
 
 # Remove unwanted files
-rm -rf dist/**/__tests__
+find dist -type d -name __tests__ -exec rm -r {} +
 rm -rf dist/__mocks__

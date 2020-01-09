@@ -7,7 +7,9 @@
 
 import React from "react";
 
-import { fireEvent, getByText, queryByText, render, wait } from "customTestRender";
+import {
+    fireEvent, getByText, queryByText, render, wait,
+} from "customTestRender";
 import mockAxios from "jest-mock-axios";
 import { mockJSONError } from "testUtils/network";
 import { mockSetAlert } from "testUtils/alertContextMock";
@@ -18,8 +20,8 @@ describe("<RebootButton/>", () => {
     let componentContainer;
     beforeEach(() => {
         const { container } = render(<>
-            <div id="modal-container"/>
-            <RebootButton/>
+            <div id="modal-container" />
+            <RebootButton />
         </>);
         componentContainer = container;
     });
@@ -51,5 +53,4 @@ describe("<RebootButton/>", () => {
         await wait(() => expect(mockSetAlert)
             .toBeCalledWith("Reboot request failed."));
     });
-
 });

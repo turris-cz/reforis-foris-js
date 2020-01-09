@@ -15,7 +15,7 @@ window.AlertContext = React.createContext();
 function AlertContextMock({ children }) {
     return (
         <AlertContext.Provider value={[mockSetAlert, mockDismissAlert]}>
-                { children }
+            { children }
         </AlertContext.Provider>
     );
 }

@@ -15,7 +15,7 @@ module.exports = {
     clearMocks: true,
     collectCoverageFrom: ["src/**/*.{js,jsx}"],
     coverageDirectory: "coverage",
-    testPathIgnorePatterns: ["/node_modules/", "/__fixtures__/"],
+    testPathIgnorePatterns: ["/node_modules/", "/__fixtures__/", "/dist/"],
     verbose: false,
     setupFilesAfterEnv: [
         "@testing-library/react/cleanup-after-each",
@@ -28,4 +28,7 @@ module.exports = {
         "^.+\\.js$": "babel-jest",
         "^.+\\.css$": "jest-transform-css",
     },
+    transformIgnorePatterns: [
+        "node_modules/(?!(react-datetime)/)",
+    ],
 };

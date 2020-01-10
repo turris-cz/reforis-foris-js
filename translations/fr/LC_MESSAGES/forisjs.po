@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-11-14 11:13+0100\n"
-"PO-Revision-Date: 2019-12-28 14:55+0000\n"
+"PO-Revision-Date: 2020-01-11 21:21+0000\n"
 "Last-Translator: Éfrit <Efrit@posteo.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/foris-js/"
 "fr/>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 3.10.1\n"
 "Generated-By: Babel 2.7.0\n"
 
 #: src/validations.js:13
 msgid "This is not a valid IPv4 address."
-msgstr "Ce n'est pas une adresse IPv4 valide."
+msgstr "Ce n’est pas une adresse IPv4 valide."
 
 #: src/validations.js:14
 msgid "This is not a valid IPv6 address."
@@ -30,11 +30,11 @@ msgstr "Ce n’est pas une adresse IPv6 valide."
 
 #: src/validations.js:15
 msgid "This is not a valid IPv6 prefix."
-msgstr "Ce n'est pas un préfixe IPv6 valide."
+msgstr "Ce n’est pas un préfixe IPv6 valide."
 
 #: src/validations.js:16
 msgid "This is not a valid domain name."
-msgstr "Ceci n’est pas un nom de domaine valide."
+msgstr "Ce n’est pas un nom de domaine valide."
 
 #: src/validations.js:17
 msgid "This is not a valid DUID."
@@ -47,42 +47,47 @@ msgstr "Ce n’est pas une adresse MAC valide."
 #: src/validations.js:19
 msgid "Doesn't contain a list of emails separated by commas."
 msgstr ""
+"Ne contient pas une liste d’adresses électroniques séparées par des virgules."
 
 #: src/api/utils.js:58
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "Cette session a expiré. Veuillez vous reconnecter."
 
 #: src/api/utils.js:63
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Le délai a expiré."
 
 #: src/api/utils.js:66
 msgid "No response received."
-msgstr ""
+msgstr "Aucun réponse reçue."
 
 #: src/api/utils.js:70
 msgid "An unknown error occurred. Check the console for more info."
 msgstr ""
+"Une erreur inconnue s’est produite. Vérifiez la console pour plus "
+"d’informations."
 
 #: src/api/utils.js:77
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "Une erreur d’API inconnue s’est produite."
 
 #: src/form/components/ForisForm.js:88
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Paramètres enregistrés avec succès"
 
 #: src/form/components/ForisForm.js:140
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
+"Il se peut que vos modifications ne soient pas enregistrées. Êtes-vous sûr "
+"de vouloir quitter ?"
 
 #: src/form/components/SubmitButton.js:32
 msgid "Updating"
-msgstr ""
+msgstr "Mise à jour en cours"
 
 #: src/form/components/SubmitButton.js:35
 msgid "Load settings"
-msgstr ""
+msgstr "Charger les paramètres"
 
 #: src/form/components/SubmitButton.js:38
 msgid "Save"
@@ -90,7 +95,7 @@ msgstr "Enregistrer"
 
 #: src/utils/ErrorMessage.js:13
 msgid "An error occurred while fetching data."
-msgstr ""
+msgstr "Une erreur s’est produite lors du chargement des données."
 
 #~ msgid "Settings were successfully saved."
 #~ msgstr ""

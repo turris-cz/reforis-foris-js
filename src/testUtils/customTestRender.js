@@ -9,7 +9,7 @@
 
 import React from "react";
 import { UIDReset } from "react-uid";
-import { StaticRouter } from "react-router";
+import { StaticRouter } from "react-router-dom";
 import { render } from "@testing-library/react";
 import PropTypes from "prop-types";
 

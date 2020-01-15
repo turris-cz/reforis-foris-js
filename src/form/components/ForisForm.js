@@ -7,7 +7,7 @@
 
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import { Prompt } from "react-router";
+import { Prompt } from "react-router-dom";
 
 import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { API_STATE } from "../../api/utils";

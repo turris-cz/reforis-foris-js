@@ -7,7 +7,7 @@
 
 import { useEffect, useState } from "react";
 
-export function useWSForisModule(ws, module, action = "update_settings") {
+export function useWSForisModule(ws, module, action = "update_settings", controllerID) {
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -16,8 +16,12 @@ export function useWSForisModule(ws, module, action = "update_settings") {
         // doesn't present any WS endpoint.
         if (!ws) return;
 
-        function callback(msg) {
-            setData(msg.data);
+        function callback(message) {
+            // Accept only messages addressed to device with passed controller ID.
+            if (controllerID !== undefined && controllerID !== message.controller_id) {
+                return;
+            }
+            setData(message.data);
         }
 
         ws.subscribe(module)
@@ -26,7 +30,7 @@ export function useWSForisModule(ws, module, action = "update_settings") {
         return () => {
             ws.unbind(module, action, callback);
         };
-    }, [action, module, ws]);
+    }, [action, module, ws, controllerID]);
 
     return [data];
 }

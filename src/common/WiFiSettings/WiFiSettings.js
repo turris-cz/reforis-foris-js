@@ -17,10 +17,11 @@ WiFiSettings.propTypes = {
     endpoint: PropTypes.string.isRequired,
     resetEndpoint: PropTypes.string.isRequired,
     hasGuestNetwork: PropTypes.bool,
+    hasPrompt: PropTypes.bool,
 };
 
 export function WiFiSettings({
-    ws, endpoint, resetEndpoint, hasGuestNetwork,
+    ws, endpoint, resetEndpoint, hasGuestNetwork, hasPrompt,
 }) {
     return (
         <>
@@ -33,6 +34,7 @@ export function WiFiSettings({
                 prepData={prepData}
                 prepDataToSubmit={prepDataToSubmit}
                 validator={validator}
+                hasPrompt={hasPrompt}
             >
                 <WiFiForm hasGuestNetwork={hasGuestNetwork} />
             </ForisForm>

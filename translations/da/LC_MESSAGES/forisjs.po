@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-11-29 16:27+0100\n"
-"PO-Revision-Date: 2019-08-28 17:54+0200\n"
+"POT-Creation-Date: 2020-01-13 13:09+0100\n"
+"PO-Revision-Date: 2019-02-19 13:34+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: da\n"
 "Language-Team: da <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
+"Generated-By: Babel 2.8.0\n"
 
 #: src/validations.js:13
 msgid "This is not a valid IPv4 address."
@@ -90,11 +90,144 @@ msgstr ""
 msgid "Confirm reboot"
 msgstr ""
 
-#: src/form/components/ForisForm.js:88
+#: src/common/WiFiSettings/ResetWiFiSettings.js:40
+msgid "An error occurred during resetting Wi-Fi settings."
+msgstr ""
+
+#: src/common/WiFiSettings/ResetWiFiSettings.js:42
+msgid "Wi-Fi settings are set to defaults."
+msgstr ""
+
+#: src/common/WiFiSettings/ResetWiFiSettings.js:53
+#: src/common/WiFiSettings/ResetWiFiSettings.js:69
+msgid "Reset Wi-Fi Settings"
+msgstr ""
+
+#: src/common/WiFiSettings/ResetWiFiSettings.js:55
+msgid ""
+"\n"
+"If a number of wireless cards doesn't match, you may try to reset the Wi-"
+"Fi settings. Note that this will remove the\n"
+"current Wi-Fi configuration and restore the default values.\n"
+"        "
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:82
+msgid "Wi-Fi ${deviceID + 1}"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:84
+msgid "Enable"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:215
+msgid "auto"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiGuestForm.js:37
+msgid "Enable Guest Wifi"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiGuestForm.js:77
+msgid "Password"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiQRCode.js:60
+msgid "Wi-Fi QR Code"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiQRCode.js:80
+msgid "Download PDF"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiSettings.js:73
+#: src/common/WiFiSettings/WiFiSettings.js:81
+msgid "SSID can't be longer than 32 symbols"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiSettings.js:74
+#: src/common/WiFiSettings/WiFiSettings.js:82
+msgid "SSID can't be empty"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiSettings.js:76
+#: src/common/WiFiSettings/WiFiSettings.js:84
+msgid "Password must contain at least 8 symbols"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:9
+msgid "Disabled"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:10
+msgid "802.11n - 20 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:11
+msgid "802.11n - 40 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:12
+msgid "802.11ac - 20 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:13
+msgid "802.11ac - 40 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:14
+msgid "802.11ac - 80 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:21
+msgid ""
+"\n"
+"        WPA2 pre-shared key, that is required to connect to the network.\n"
+"    "
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:24
+msgid "If set, network is not visible when scanning for available networks."
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:25
+msgid ""
+"\n"
+"        The 2.4 GHz band is more widely supported by clients, but tends "
+"to have more interference. The 5 GHz band is a\n"
+"        newer standard and may not be supported by all your devices. It "
+"usually has less interference, but the signal\n"
+"        does not carry so well indoors."
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:29
+msgid ""
+"\n"
+"        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
+"40 MHz wide channels can yield higher\n"
+"        throughput but can cause more interference in the network. If you"
+" don't know what to choose, use the default\n"
+"        option with 20 MHz wide channel.\n"
+"    "
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:34
+msgid ""
+"\n"
+"        Enables Wi-Fi for guests, which is separated from LAN network. "
+"Devices connected to this network are allowed to\n"
+"        access the internet, but aren't allowed to access other devices "
+"and the configuration interface of the router.\n"
+"        Parameters of the guest network can be set in the Guest network "
+"tab.\n"
+"        "
+msgstr ""
+
+#: src/form/components/ForisForm.js:102
 msgid "Settings saved successfully"
 msgstr ""
 
-#: src/form/components/ForisForm.js:140
+#: src/form/components/ForisForm.js:154
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
 
@@ -113,22 +246,4 @@ msgstr ""
 #: src/utils/ErrorMessage.js:13
 msgid "An error occurred while fetching data."
 msgstr ""
-
-#~ msgid "Settings were successfully saved."
-#~ msgstr ""
-
-#~ msgid "Settings update was failed."
-#~ msgstr ""
-
-#~ msgid "Warning!"
-#~ msgstr ""
-
-#~ msgid "Reboot triggering was failed."
-#~ msgstr ""
-
-#~ msgid "Reboot triggering failed."
-#~ msgstr ""
-
-#~ msgid "Reboot requestq failed."
-#~ msgstr ""
 

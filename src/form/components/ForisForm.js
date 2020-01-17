@@ -7,7 +7,7 @@
 
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import { Prompt } from "react-router";
+import { Prompt } from "react-router-dom";
 
 import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { API_STATE } from "../../api/utils";
@@ -73,7 +73,12 @@ ForisForm.defaultProps = {
     disabled: false,
 };
 
-/** Serves as HOC for all foris forms components. */
+/** Serves as HOC for all foris forms components.
+ *
+ * As `<Prompt />` from `react-router-dom` is used in this component then it required to
+ * use exposed `ReactRouterDOM` object from `react-router-dom` library which is exposed by reForis.
+ * See README for more information.
+ * */
 export function ForisForm({
     ws,
     forisConfig,

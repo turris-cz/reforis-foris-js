@@ -48,8 +48,6 @@ ForisForm.propTypes = {
     validator: PropTypes.func.isRequired,
     /** Disables form */
     disabled: PropTypes.bool,
-    /** If true user will be prompted before leaving the page containing form. */
-    hasPrompt: PropTypes.bool,
     /** reForis form components. */
     children: PropTypes.node.isRequired,
     /** Optional override of form submit callback */
@@ -73,7 +71,6 @@ ForisForm.defaultProps = {
     postCallback: () => undefined,
     validator: () => undefined,
     disabled: false,
-    hasPrompt: true,
 };
 
 /** Serves as HOC for all foris forms components. */
@@ -85,7 +82,6 @@ export function ForisForm({
     postCallback,
     validator,
     disabled,
-    hasPrompt,
     onSubmitOverridden,
     children,
 }) {
@@ -160,7 +156,7 @@ export function ForisForm({
 
     return (
         <div className={formFieldsSize}>
-            {hasPrompt && <Prompt message={getMessageOnLeavingPage} />}
+            <Prompt message={getMessageOnLeavingPage} />
             <form onSubmit={onSubmit}>
                 {childrenWithFormProps}
                 <div className="text-right">

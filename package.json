@@ -20,14 +20,14 @@
     "pdfmake": "^0.1.63",
     "qrcode.react": "^0.9.3",
     "react-datetime": "^2.16.3",
-    "react-router": "^5.1.2",
     "react-uid": "^2.2.0"
   },
   "peerDependencies": {
     "bootstrap": "4.4.1",
     "prop-types": "15.7.2",
     "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react-dom": "16.9.0",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
@@ -47,6 +47,7 @@
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",
+    "react-router-dom": "^5.1.2",
     "react-styleguidist": "^10.4.2",
     "snapshot-diff": "^0.5.1"
   },

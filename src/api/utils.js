@@ -13,7 +13,7 @@ export const HEADERS = {
     "X-CSRFToken": getCookie("_csrf_token"),
 };
 
-export const TIMEOUT = 5000;
+export const TIMEOUT = 30500;
 
 export const API_ACTIONS = {
     INIT: 1,

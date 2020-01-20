@@ -39,9 +39,10 @@ describe("<WiFiSettings/>", () => {
     it("should handle error", async () => {
         const webSockets = new WebSockets();
         const { getByText } = render(<WiFiSettings ws={webSockets} ws={webSockets} endpoint={endpoint} resetEndpoint="foo" />);
-        mockJSONError();
+        const errorMessage = "An API error occurred.";
+        mockJSONError(errorMessage);
         await wait(() => {
-            expect(getByText("An error occurred while fetching data.")).toBeTruthy();
+            expect(getByText(errorMessage)).toBeTruthy();
         });
     });
 

@@ -27,7 +27,6 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
         const module = "wifi";
         ws.subscribe(module)
             .bind(module, "reset", () => {
-                setIsLoading(true);
                 // eslint-disable-next-line no-restricted-globals
                 setTimeout(() => location.reload(), 1000);
             });
@@ -45,6 +44,7 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
 
     function onReset() {
         dismissAlert();
+        setIsLoading(true);
         postReset();
     }
 

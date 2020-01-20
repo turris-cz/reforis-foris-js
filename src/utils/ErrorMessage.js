@@ -6,11 +6,18 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 
-export function ErrorMessage() {
+ErrorMessage.propTypes = {
+    message: PropTypes.string,
+};
+
+ErrorMessage.defaultProps = {
+    message: _("An error occurred while fetching data."),
+};
+
+export function ErrorMessage({ message }) {
     return (
-        <p className="text-center text-danger">
-            {_("An error occurred while fetching data.")}
-        </p>
+        <p className="text-center text-danger">{message}</p>
     );
 }

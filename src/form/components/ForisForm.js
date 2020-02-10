@@ -39,19 +39,21 @@ ForisForm.propTypes = {
         wsAction: PropTypes.string,
     }).isRequired,
     /** Function to prepare data recived from the API before using in forms. */
-    prepData: PropTypes.func.isRequired,
+    prepData: PropTypes.func,
     /** Function to prepare data from form before submitting. */
-    prepDataToSubmit: PropTypes.func.isRequired,
+    prepDataToSubmit: PropTypes.func,
     /** Function to handle response to POST request. */
-    postCallback: PropTypes.func.isRequired,
+    postCallback: PropTypes.func,
     /** Validate data and provide validation object. Then validation errors passed to children. */
-    validator: PropTypes.func.isRequired,
+    validator: PropTypes.func,
     /** Disables form */
     disabled: PropTypes.bool,
-    /** reForis form components. */
-    children: PropTypes.node.isRequired,
     /** Optional override of form submit callback */
     onSubmitOverridden: PropTypes.func,
+    /** Optional override of form submit callback */
+    formReference: PropTypes.object,
+    /** reForis form components. */
+    children: PropTypes.node.isRequired,
 
     // eslint-disable-next-line react/no-unused-prop-types
     customWSProp(props) {
@@ -88,6 +90,7 @@ export function ForisForm({
     validator,
     disabled,
     onSubmitOverridden,
+    formReference,
     children,
 }) {
     const [formState, onFormChangeHandler, resetFormData] = useForm(validator, prepData);
@@ -163,7 +166,7 @@ export function ForisForm({
     return (
         <div className={formFieldsSize}>
             <Prompt message={getMessageOnLeavingPage} />
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} ref={formReference}>
                 {childrenWithFormProps}
                 <div className="text-right">
                     <SubmitButton

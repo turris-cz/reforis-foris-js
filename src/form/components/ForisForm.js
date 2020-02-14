@@ -27,7 +27,7 @@ ForisForm.propTypes = {
     ws: PropTypes.object,
     /** Foris configuration object. See usage in main components. */
     forisConfig: PropTypes.shape({
-        /** reForis Flask aplication API endpoint from `src/common/API.js`. */
+        /** reForis Flask application API endpoint from `src/common/API.js`. */
         endpoint: PropTypes.string.isRequired,
         /** `foris-controller` module name to be used via WebSockets.
          *  It can be use only with `ws` prop.
@@ -38,7 +38,7 @@ ForisForm.propTypes = {
          * */
         wsAction: PropTypes.string,
     }).isRequired,
-    /** Function to prepare data recived from the API before using in forms. */
+    /** Function to prepare data received from the API before using in forms. */
     prepData: PropTypes.func,
     /** Function to prepare data from form before submitting. */
     prepDataToSubmit: PropTypes.func,
@@ -50,7 +50,9 @@ ForisForm.propTypes = {
     disabled: PropTypes.bool,
     /** Optional override of form submit callback */
     onSubmitOverridden: PropTypes.func,
-    /** Optional override of form submit callback */
+    /** Reference to actual form element (useful for programmatically submitting it).
+     * Pass the output of useRef hook to this prop.
+    */
     formReference: PropTypes.object,
     /** reForis form components. */
     children: PropTypes.node.isRequired,

@@ -8,6 +8,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "./Spinner.css";
+
 Spinner.propTypes = {
     /** Children components put into `div` with "spinner-text" class. */
     children: PropTypes.oneOfType([

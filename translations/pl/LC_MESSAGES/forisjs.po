@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-13 13:09+0100\n"
+"POT-Creation-Date: 2020-01-20 16:26+0100\n"
 "PO-Revision-Date: 2019-08-28 17:56+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pl\n"
@@ -92,11 +92,11 @@ msgstr ""
 msgid "Confirm reboot"
 msgstr ""
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:40
+#: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:42
+#: src/common/WiFiSettings/ResetWiFiSettings.js:41
 msgid "Wi-Fi settings are set to defaults."
 msgstr ""
 
@@ -225,11 +225,11 @@ msgid ""
 "        "
 msgstr ""
 
-#: src/form/components/ForisForm.js:102
+#: src/form/components/ForisForm.js:107
 msgid "Settings saved successfully"
 msgstr ""
 
-#: src/form/components/ForisForm.js:154
+#: src/form/components/ForisForm.js:160
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
 
@@ -245,7 +245,7 @@ msgstr ""
 msgid "Save"
 msgstr "Zapisz"
 
-#: src/utils/ErrorMessage.js:13
+#: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
 msgstr ""
 

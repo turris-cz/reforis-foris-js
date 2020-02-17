@@ -11,7 +11,6 @@ import { Prompt } from "react-router-dom";
 
 import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { API_STATE } from "../../api/utils";
-import { ErrorMessage } from "../../utils/ErrorMessage";
 import { formFieldsSize } from "../../bootstrap/constants";
 import { Spinner } from "../../bootstrap/Spinner";
 import { useAlert } from "../../alertContext/AlertContext";
@@ -19,6 +18,7 @@ import { useAPIPost } from "../../api/hooks";
 
 import { useForisModule, useForm } from "../hooks";
 import { STATES as SUBMIT_BUTTON_STATES, SubmitButton } from "./SubmitButton";
+import { ErrorMessage } from "../../utils/ErrorMessage";
 
 ForisForm.propTypes = {
     /** Optional WebSocket object. See `scr/common/WebSockets.js`.
@@ -27,7 +27,7 @@ ForisForm.propTypes = {
     ws: PropTypes.object,
     /** Foris configuration object. See usage in main components. */
     forisConfig: PropTypes.shape({
-        /** reForis Flask aplication API endpoint from `src/common/API.js`. */
+        /** reForis Flask application API endpoint from `src/common/API.js`. */
         endpoint: PropTypes.string.isRequired,
         /** `foris-controller` module name to be used via WebSockets.
          *  It can be use only with `ws` prop.
@@ -38,20 +38,24 @@ ForisForm.propTypes = {
          * */
         wsAction: PropTypes.string,
     }).isRequired,
-    /** Function to prepare data recived from the API before using in forms. */
-    prepData: PropTypes.func.isRequired,
+    /** Function to prepare data received from the API before using in forms. */
+    prepData: PropTypes.func,
     /** Function to prepare data from form before submitting. */
-    prepDataToSubmit: PropTypes.func.isRequired,
+    prepDataToSubmit: PropTypes.func,
     /** Function to handle response to POST request. */
-    postCallback: PropTypes.func.isRequired,
+    postCallback: PropTypes.func,
     /** Validate data and provide validation object. Then validation errors passed to children. */
-    validator: PropTypes.func.isRequired,
+    validator: PropTypes.func,
     /** Disables form */
     disabled: PropTypes.bool,
-    /** reForis form components. */
-    children: PropTypes.node.isRequired,
     /** Optional override of form submit callback */
     onSubmitOverridden: PropTypes.func,
+    /** Reference to actual form element (useful for programmatically submitting it).
+     * Pass the output of useRef hook to this prop.
+    */
+    formReference: PropTypes.object,
+    /** reForis form components. */
+    children: PropTypes.node.isRequired,
 
     // eslint-disable-next-line react/no-unused-prop-types
     customWSProp(props) {
@@ -88,10 +92,11 @@ export function ForisForm({
     validator,
     disabled,
     onSubmitOverridden,
+    formReference,
     children,
 }) {
     const [formState, onFormChangeHandler, resetFormData] = useForm(validator, prepData);
-    const [setAlert] = useAlert();
+    const [setAlert, dismissAlert] = useAlert();
 
     const [forisModuleState] = useForisModule(ws, forisConfig);
     useEffect(() => {
@@ -111,7 +116,7 @@ export function ForisForm({
     }, [postCallback, postState.state, postState.data, setAlert]);
 
     if (forisModuleState.state === API_STATE.ERROR) {
-        return <ErrorMessage />;
+        return <ErrorMessage message={forisModuleState.data} />;
     }
     if (!formState.data) {
         return <Spinner />;
@@ -120,6 +125,7 @@ export function ForisForm({
     function onSubmitHandler(event) {
         event.preventDefault();
         resetFormData();
+        dismissAlert();
         const copiedFormData = JSON.parse(JSON.stringify(formState.data));
         const preparedData = prepDataToSubmit(copiedFormData);
         post({ data: preparedData });
@@ -162,7 +168,7 @@ export function ForisForm({
     return (
         <div className={formFieldsSize}>
             <Prompt message={getMessageOnLeavingPage} />
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} ref={formReference}>
                 {childrenWithFormProps}
                 <div className="text-right">
                     <SubmitButton

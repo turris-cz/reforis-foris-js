@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 
 import { Portal } from "../utils/Portal";
 import { useClickOutside } from "../utils/hooks";
+import "./Modal.css";
 
 Modal.propTypes = {
     /** Is modal shown value */

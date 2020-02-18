@@ -53,10 +53,11 @@ function createAPIHook(method) {
                     payload: result.data,
                 });
             } catch (error) {
+                const errorPayload = getErrorPayload(error);
                 dispatch({
                     type: API_ACTIONS.FAILURE,
                     status: error.response && error.response.status,
-                    payload: getErrorPayload(error),
+                    payload: errorPayload,
                 });
             }
         }, [urlRoot, contentType]);
@@ -80,6 +81,12 @@ function APIReducer(state, action) {
         if (action.status === 403) {
             window.location.assign(ForisURLs.login);
         }
+
+        // Not an API error - should be rethrown.
+        if (action.payload && action.payload.stack && action.payload.message) {
+            throw (action.payload);
+        }
+
         return {
             state: API_STATE.ERROR,
             data: action.payload,

@@ -65,9 +65,8 @@ export function getErrorPayload(error) {
     if (error.request) {
         return _("No response received.");
     }
-    /* eslint no-console: "off" */
-    console.error(error);
-    return _("An unknown error occurred. Check the console for more info.");
+    // Return original error because it's not directly related to API request/response.
+    return error;
 }
 
 export function getJSONErrorMessage(error) {

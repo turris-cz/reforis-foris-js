@@ -246,4 +246,3 @@ msgstr "Spara"
 #: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
 msgstr ""
-

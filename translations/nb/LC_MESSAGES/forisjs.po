@@ -28,6 +28,7 @@ msgid "This is not a valid IPv6 address."
 msgstr "Dette er ikke en gyldig IPv6-adresse."
 
 #: src/validations.js:15
+#, fuzzy
 msgid "This is not a valid IPv6 prefix."
 msgstr "Dette er ikke et gyldig IPv6-prefiks."
 
@@ -49,23 +50,24 @@ msgstr "Inneholder ikke en kommainndelt liste med e-postadresser."
 
 #: src/api/utils.js:58
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "Økten har utløpt. Logg inn igjen."
 
 #: src/api/utils.js:63
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Tidsavbrudd inntraff."
 
 #: src/api/utils.js:66
 msgid "No response received."
-msgstr ""
+msgstr "Fikk ikke svar."
 
 #: src/api/utils.js:70
 msgid "An unknown error occurred. Check the console for more info."
-msgstr ""
+msgstr "Ukjent feil. Sjekk konsollen for mer info."
 
 #: src/api/utils.js:77
+#, fuzzy
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "Ukjent API-feil."
 
 #: src/common/RebootButton.js:33
 #, fuzzy
@@ -252,13 +254,14 @@ msgstr ""
 
 #: src/form/components/ForisForm.js:107
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Innstillinger lagret"
 
 #: src/form/components/ForisForm.js:160
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
-msgstr ""
+msgstr "Endringer du har gjort vil ikke bli lagret. Er du sikker?"
 
 #: src/form/components/SubmitButton.js:32
+#, fuzzy
 msgid "Updating"
 msgstr "Oppdaterer"
 
@@ -272,5 +275,4 @@ msgstr "Lagre"
 
 #: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
-msgstr ""
-
+msgstr "Kunne ikke hente data."

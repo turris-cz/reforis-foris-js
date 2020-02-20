@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/api/utils.js:66
 msgid "No response received."
-msgstr ""
+msgstr "Keine Antwort erhalten."
 
 #: src/api/utils.js:70
 msgid "An unknown error occurred. Check the console for more info."
@@ -65,7 +65,7 @@ msgstr ""
 
 #: src/api/utils.js:77
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "Ein unbekannter API-Fehler ist aufgetreten."
 
 #: src/common/RebootButton.js:33
 #, fuzzy
@@ -255,7 +255,7 @@ msgstr ""
 
 #: src/form/components/ForisForm.js:107
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Einstellungen erfolgreich gespeichert"
 
 #: src/form/components/ForisForm.js:160
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
@@ -276,4 +276,3 @@ msgstr "Speichern"
 #: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
 msgstr ""
-

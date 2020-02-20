@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-20 16:26+0100\n"
+"POT-Creation-Date: 2020-02-20 17:28+0100\n"
 "PO-Revision-Date: 2019-10-14 11:04+0000\n"
 "Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language: fr\n"
@@ -61,13 +61,7 @@ msgstr "Le délai a expiré."
 msgid "No response received."
 msgstr "Aucun réponse reçue."
 
-#: src/api/utils.js:70
-msgid "An unknown error occurred. Check the console for more info."
-msgstr ""
-"Une erreur inconnue s’est produite. Vérifiez la console pour plus "
-"d’informations."
-
-#: src/api/utils.js:77
+#: src/api/utils.js:76
 msgid "An unknown API error occurred."
 msgstr "Une erreur d’API inconnue s’est produite."
 
@@ -229,15 +223,15 @@ msgid ""
 "        "
 msgstr ""
 
-#: src/form/components/ForisForm.js:107
+#: src/form/components/ForisForm.js:112
 msgid "Settings saved successfully"
 msgstr "Paramètres enregistrés avec succès"
 
-#: src/form/components/ForisForm.js:160
+#: src/form/components/ForisForm.js:165
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
-"Il se peut que vos modifications ne soient pas enregistrées. Êtes-vous sûr "
-"de vouloir quitter ?"
+"Il se peut que vos modifications ne soient pas enregistrées. Êtes-vous "
+"sûr de vouloir quitter ?"
 
 #: src/form/components/SubmitButton.js:32
 msgid "Updating"
@@ -254,3 +248,10 @@ msgstr "Enregistrer"
 #: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
 msgstr "Une erreur s’est produite lors du chargement des données."
+
+#~ msgid "An unknown error occurred. Check the console for more info."
+#~ msgstr ""
+#~ "Une erreur inconnue s’est produite. "
+#~ "Vérifiez la console pour plus "
+#~ "d’informations."
+

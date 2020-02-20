@@ -17,7 +17,7 @@ global.afterEach(() => {
 global._ = (str) => str;
 global.ngettext = (str) => str;
 global.babel = { format: (str) => str };
-global.ForisTranslations = {};
+global.ForisTranslations = { locale: "en" };
 
 // Mock web sockets
 window.WebSocket = jest.fn();

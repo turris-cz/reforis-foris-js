@@ -64,6 +64,7 @@ export {
 } from "./utils/conditionalHOCs";
 export { ErrorMessage } from "./utils/ErrorMessage";
 export { useClickOutside } from "./utils/hooks";
+export { toLocaleDateString } from "./utils/datetime";
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "./forisUrls";

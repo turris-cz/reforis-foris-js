@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-20 16:26+0100\n"
+"POT-Creation-Date: 2020-02-20 17:28+0100\n"
 "PO-Revision-Date: 2019-09-29 15:56+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language: cs\n"
@@ -59,11 +59,7 @@ msgstr "Došlo k chybě kvůli překročení časového limitu."
 msgid "No response received."
 msgstr "Neobdržena žádná odezva."
 
-#: src/api/utils.js:70
-msgid "An unknown error occurred. Check the console for more info."
-msgstr "Došlo k neznámé chybě. Další informace naleznete v konzoli."
-
-#: src/api/utils.js:77
+#: src/api/utils.js:76
 msgid "An unknown API error occurred."
 msgstr "Došlo k neznámé chybě v aplikačním programovém rozhraní."
 
@@ -251,11 +247,11 @@ msgstr ""
 "hosty“.\n"
 "        "
 
-#: src/form/components/ForisForm.js:107
+#: src/form/components/ForisForm.js:112
 msgid "Settings saved successfully"
 msgstr "Nastavení úspěšně uložena"
 
-#: src/form/components/ForisForm.js:160
+#: src/form/components/ForisForm.js:165
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
 "Změny, které byly provedeny, nebyly uloženy. Jste si jistý, že chcete "
@@ -276,4 +272,7 @@ msgstr "Uložit"
 #: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
 msgstr "Došlo k chybě při získávání dat."
+
+#~ msgid "An unknown error occurred. Check the console for more info."
+#~ msgstr "Došlo k neznámé chybě. Další informace naleznete v konzoli."
 

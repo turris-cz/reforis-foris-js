@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-20 16:26+0100\n"
+"POT-Creation-Date: 2020-02-20 17:28+0100\n"
 "PO-Revision-Date: 2019-09-02 07:21+0000\n"
 "Last-Translator: Ulrich Günther <mail@ulrich-guenther.at>\n"
 "Language: de\n"
@@ -57,15 +57,11 @@ msgstr ""
 
 #: src/api/utils.js:66
 msgid "No response received."
-msgstr ""
+msgstr "Keine Antwort erhalten."
 
-#: src/api/utils.js:70
-msgid "An unknown error occurred. Check the console for more info."
-msgstr ""
-
-#: src/api/utils.js:77
+#: src/api/utils.js:76
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "Ein unbekannter API-Fehler ist aufgetreten."
 
 #: src/common/RebootButton.js:33
 #, fuzzy
@@ -253,11 +249,11 @@ msgstr ""
 "Gastnetzwerk eingestellt werden.\n"
 "        "
 
-#: src/form/components/ForisForm.js:107
+#: src/form/components/ForisForm.js:112
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Einstellungen erfolgreich gespeichert"
 
-#: src/form/components/ForisForm.js:160
+#: src/form/components/ForisForm.js:165
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
 
@@ -276,4 +272,7 @@ msgstr "Speichern"
 #: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
 msgstr ""
+
+#~ msgid "An unknown error occurred. Check the console for more info."
+#~ msgstr ""
 

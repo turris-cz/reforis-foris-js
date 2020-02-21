@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-20 16:26+0100\n"
+"POT-Creation-Date: 2020-02-20 17:28+0100\n"
 "PO-Revision-Date: 2019-09-30 13:00+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
 "Language: ru\n"
@@ -50,23 +50,19 @@ msgstr "Не содержит списка электронных адресов
 
 #: src/api/utils.js:58
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "Ваша сессия закончилась. Пожалуйста, залогинитесь заново."
 
 #: src/api/utils.js:63
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Произошла ошибка ожидания ответа сервера."
 
 #: src/api/utils.js:66
 msgid "No response received."
-msgstr ""
+msgstr "Ответ не получен."
 
-#: src/api/utils.js:70
-msgid "An unknown error occurred. Check the console for more info."
-msgstr ""
-
-#: src/api/utils.js:77
+#: src/api/utils.js:76
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "Неизвестная ошибка программного интерфейса приложения."
 
 #: src/common/RebootButton.js:33
 #, fuzzy
@@ -250,13 +246,15 @@ msgstr ""
 "Гостевая сеть.\n"
 "        "
 
-#: src/form/components/ForisForm.js:107
+#: src/form/components/ForisForm.js:112
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Настройки были успешно сохранены"
 
-#: src/form/components/ForisForm.js:160
+#: src/form/components/ForisForm.js:165
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
+"В случае выхода ваши изменения будут утеряны. Вы действительно хотите "
+"покинуть эту страницу?"
 
 #: src/form/components/SubmitButton.js:32
 msgid "Updating"
@@ -272,5 +270,10 @@ msgstr "Сохранить"
 
 #: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
-msgstr ""
+msgstr "Во время получения данных произошла ошибка."
+
+#~ msgid "An unknown error occurred. Check the console for more info."
+#~ msgstr ""
+#~ "Произошла неизвестная ошибка. Проверьте "
+#~ "консоль браузера, чтобы узнать детали."
 

@@ -17,7 +17,12 @@ RadioSet.propTypes = {
     /** Choices . */
     choices: PropTypes.arrayOf(PropTypes.shape({
         /** Choice lable . */
-        label: PropTypes.string.isRequired,
+        label: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.element,
+            PropTypes.node,
+            PropTypes.arrayOf(PropTypes.node),
+        ]).isRequired,
         /** Choice value . */
         value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     })).isRequired,
@@ -58,7 +63,12 @@ export function RadioSet({
 }
 
 Radio.propTypes = {
-    label: PropTypes.string.isRequired,
+    label: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.element,
+        PropTypes.node,
+        PropTypes.arrayOf(PropTypes.node),
+    ]).isRequired,
     id: PropTypes.string.isRequired,
     helpText: PropTypes.string,
 };

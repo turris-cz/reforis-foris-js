@@ -10,6 +10,8 @@ export const REFORIS_API_URL_PREFIX = `${REFORIS_URL_PREFIX}/api`;
 
 export const ForisURLs = {
     login: `${REFORIS_URL_PREFIX}/login`,
+    logout: `${REFORIS_URL_PREFIX}/logout`,
+
     static: `${REFORIS_URL_PREFIX}/static/reforis`,
     wifi: `${REFORIS_URL_PREFIX}/network-settings/wifi`,
 

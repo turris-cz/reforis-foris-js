@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 
 import { useAPIPost } from "../api/hooks";
 import { API_STATE } from "../api/utils";
-import { ForisURLs } from "../forisUrls";
+import { ForisURLs } from "../utils/forisUrls";
 
 import { Button } from "../bootstrap/Button";
 import {

@@ -67,7 +67,7 @@ export { useClickOutside } from "./utils/hooks";
 export { toLocaleDateString } from "./utils/datetime";
 
 // Foris URL
-export { ForisURLs, REFORIS_URL_PREFIX } from "./forisUrls";
+export { ForisURLs, REFORIS_URL_PREFIX } from "./utils/forisUrls";
 
 // Validation
 export {
@@ -78,7 +78,7 @@ export {
     validateDUID,
     validateMAC,
     validateMultipleEmails,
-} from "./validations";
+} from "./utils/validations";
 
 // Alert context
 export { AlertContextProvider, useAlert } from "./alertContext/AlertContext";

@@ -12,7 +12,7 @@ import {
     validateIPv6Address,
     validateIPv6Prefix,
     validateMAC,
-} from "validations";
+} from "utils/validations";
 
 describe("Validation functions", () => {
     it("validateIPv4Address valid", () => {

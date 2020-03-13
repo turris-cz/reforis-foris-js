@@ -1,6 +1,6 @@
 {
   "name": "foris",
-  "version": "4.3.1",
+  "version": "4.4.0",
   "description": "Set of components and utils for Foris and its plugins.",
   "author": "CZ.NIC, z.s.p.o.",
   "repository": {
@@ -41,7 +41,7 @@
     "babel-polyfill": "^6.26.0",
     "eslint": "^6.8.0",
     "eslint-config-reforis": "^1.0.0",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "jest-mock-axios": "^3.2.0",
     "moment-timezone": "^0.5.27",
     "prop-types": "15.7.2",

@@ -48,7 +48,7 @@
     "react-dom": "16.9.0",
     "react-router-dom": "^5.1.2",
     "react-styleguidist": "^10.4.2",
-    "snapshot-diff": "^0.5.1"
+    "snapshot-diff": "^0.7.0"
   },
   "scripts": {
     "lint": "eslint src",

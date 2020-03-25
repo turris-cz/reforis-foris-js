@@ -5,22 +5,36 @@
  * See /LICENSE for more information.
  */
 
-import pdfMake from "pdfmake";
-
 export function createAndDownloadPdf(SSID, password) {
     const docDefinition = {
         content: [
             {
-                text: "Wi-Fi", style: "header", fontSize: 55, alignment: "center",
+                text: "Wi-Fi",
+                style: "header",
+                fontSize: 55,
+                alignment: "center",
             },
             {
-                qr: toQRCodeContent(SSID, password), fit: "350", margin: [0, 80], alignment: "center",
+                qr: toQRCodeContent(SSID, password),
+                fit: "350",
+                margin: [0, 80],
+                alignment: "center",
             },
-            { text: `SSID: ${SSID}`, fontSize: 25, alignment: "center" },
-            { text: `Password: ${password}`, fontSize: 25, alignment: "center" },
+            {
+                text: `SSID: ${SSID}`,
+                fontSize: 25,
+                alignment: "center",
+            },
+            {
+                text: `Password: ${password}`,
+                fontSize: 25,
+                alignment: "center",
+            },
         ],
     };
-    pdfMake.createPdf(docDefinition).download("wifi.pdf");
+
+    // pdfmake is exposed by reForis main application. Thus we can use it from globals.
+    window.pdfMake.createPdf(docDefinition).download("wifi.pdf");
 }
 
 export function toQRCodeContent(SSID, password) {

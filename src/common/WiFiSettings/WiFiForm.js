@@ -36,7 +36,7 @@ WiFiForm.defaultProps = {
 };
 
 export default function WiFiForm({
-    formData, formErrors, setFormValue, hasGuestNetwork, ...props
+    formData, formErrors, setFormValue, hasGuestNetwork, disabled,
 }) {
     return formData.devices.map((device) => (
         <DeviceForm
@@ -45,8 +45,7 @@ export default function WiFiForm({
             formErrors={(formErrors || [])[device.id]}
             setFormValue={setFormValue}
             hasGuestNetwork={hasGuestNetwork}
-
-            {...props}
+            disabled={disabled}
         />
     ));
 }

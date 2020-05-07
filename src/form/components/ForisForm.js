@@ -149,6 +149,7 @@ export function ForisForm({
     const childrenWithFormProps = React.Children.map(
         children,
         (child) => React.cloneElement(child, {
+            initialData: formState.initialData,
             formData: formState.data,
             formErrors: formState.errors,
             setFormValue: onFormChangeHandler,

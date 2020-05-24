@@ -7,9 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-02-20 17:28+0100\n"
-"PO-Revision-Date: 2019-10-29 06:53+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"POT-Creation-Date: 2019-11-14 11:13+0100\n"
+"PO-Revision-Date: 2020-05-25 13:41+0000\n"
+"Last-Translator: Eduardo Cuthbert <elguber@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/foris-js/"
+"es/>\n"
 "Language: es\n"
 "Language-Team: Spanish "
 "<https://hosted.weblate.org/projects/turris/reforis/es/>\n"
@@ -17,136 +19,58 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1-dev\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: src/validations.js:13
 msgid "This is not a valid IPv4 address."
-msgstr ""
+msgstr "Esto no es una direcciòn IPv4 vàlida."
 
 #: src/validations.js:14
 msgid "This is not a valid IPv6 address."
-msgstr ""
+msgstr "Esto no es una direcciòn IPv6 vàlida."
 
 #: src/validations.js:15
 msgid "This is not a valid IPv6 prefix."
-msgstr ""
+msgstr "Esto no es un prefijo IPv6 vàlido."
 
 #: src/validations.js:16
 msgid "This is not a valid domain name."
-msgstr ""
+msgstr "Esto no es un nombre de dominio vàlido."
 
 #: src/validations.js:17
 msgid "This is not a valid DUID."
-msgstr ""
+msgstr "Este no es un DUID vàlido."
 
 #: src/validations.js:18
 msgid "This is not a valid MAC address."
-msgstr ""
+msgstr "Esta no es una direcciòn MAC vàlida."
 
 #: src/validations.js:19
 msgid "Doesn't contain a list of emails separated by commas."
-msgstr ""
+msgstr "No contiene una lista de E-mails separados por comas."
 
 #: src/api/utils.js:58
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "La sesiòn ha expirado. Por favor, authentìquese otra vez."
 
 #: src/api/utils.js:63
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Error de tiempo de espera ocurrido."
 
 #: src/api/utils.js:66
 msgid "No response received."
-msgstr ""
+msgstr "Respuesta no recivida."
 
 #: src/api/utils.js:76
 msgid "An unknown API error occurred."
 msgstr ""
+"Un error desconocido ha ocurrido. Compruebe la consola para mas informaciòn."
 
-#: src/common/RebootButton.js:33
-#, fuzzy
-msgid "Reboot request failed."
-msgstr "Se necesita reiniciar"
-
-#: src/common/RebootButton.js:54
-msgid "Reboot"
-msgstr "Reiniciar"
-
-#: src/common/RebootButton.js:69
-msgid "Reboot confirmation"
-msgstr ""
-
-#: src/common/RebootButton.js:70
-msgid "Are you sure you want to restart the router?"
-msgstr "¿Confirma que quiere reiniciar el enrutador?"
-
-#: src/common/RebootButton.js:72
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/common/RebootButton.js:73
-msgid "Confirm reboot"
-msgstr "Confirmar reinicio"
-
-#: src/common/WiFiSettings/ResetWiFiSettings.js:39
-msgid "An error occurred during resetting Wi-Fi settings."
-msgstr ""
-
-#: src/common/WiFiSettings/ResetWiFiSettings.js:41
-msgid "Wi-Fi settings are set to defaults."
-msgstr ""
-
-#: src/common/WiFiSettings/ResetWiFiSettings.js:53
-#: src/common/WiFiSettings/ResetWiFiSettings.js:69
-msgid "Reset Wi-Fi Settings"
-msgstr ""
-
-#: src/common/WiFiSettings/ResetWiFiSettings.js:55
-msgid ""
-"\n"
-"If a number of wireless cards doesn't match, you may try to reset the Wi-"
-"Fi settings. Note that this will remove the\n"
-"current Wi-Fi configuration and restore the default values.\n"
-"        "
-msgstr ""
-
-#: src/common/WiFiSettings/WiFiForm.js:82
-msgid "Wi-Fi ${deviceID + 1}"
-msgstr ""
-
-#: src/common/WiFiSettings/WiFiForm.js:84
-msgid "Enable"
-msgstr "Activar"
-
-#: src/common/WiFiSettings/WiFiForm.js:215
-msgid "auto"
-msgstr ""
-
-#: src/common/WiFiSettings/WiFiGuestForm.js:37
-msgid "Enable Guest Wifi"
-msgstr ""
-
-#: src/common/WiFiSettings/WiFiGuestForm.js:77
-msgid "Password"
-msgstr "Contraseña"
-
-#: src/common/WiFiSettings/WiFiQRCode.js:60
-msgid "Wi-Fi QR Code"
-msgstr ""
-
-#: src/common/WiFiSettings/WiFiQRCode.js:80
-msgid "Download PDF"
-msgstr ""
-
-#: src/common/WiFiSettings/WiFiSettings.js:73
-#: src/common/WiFiSettings/WiFiSettings.js:81
-msgid "SSID can't be longer than 32 symbols"
-msgstr ""
-
-#: src/common/WiFiSettings/WiFiSettings.js:74
-#: src/common/WiFiSettings/WiFiSettings.js:82
-msgid "SSID can't be empty"
-msgstr ""
+#: src/api/utils.js:77
+msgid "An unknown API error occurred."
+msgstr "Ocurriò un error desconocido de API ."
 
 #: src/common/WiFiSettings/WiFiSettings.js:76
 #: src/common/WiFiSettings/WiFiSettings.js:84
@@ -223,30 +147,26 @@ msgstr ""
 
 #: src/form/components/ForisForm.js:112
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Configuraciòn salvada satisfactoriamente"
 
 #: src/form/components/ForisForm.js:165
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
-msgstr ""
+msgstr "Los cambios hechos podrìan no salvarse. Està seguro que quiere salir?"
 
 #: src/form/components/SubmitButton.js:32
 #, fuzzy
 msgid "Updating"
-msgstr "Actualizaciones"
+msgstr "Actualizando"
 
 #: src/form/components/SubmitButton.js:35
 #, fuzzy
 msgid "Load settings"
-msgstr "Configuración de LAN"
+msgstr "Cargando configuraciòn"
 
 #: src/form/components/SubmitButton.js:38
 msgid "Save"
-msgstr ""
+msgstr "Salvar"
 
 #: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
-msgstr ""
-
-#~ msgid "An unknown error occurred. Check the console for more info."
-#~ msgstr ""
-
+msgstr "Error ocurrido mientras se recuperaban los datos."

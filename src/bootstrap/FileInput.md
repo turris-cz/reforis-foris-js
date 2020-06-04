@@ -3,13 +3,39 @@ Bootstrap component for file input. Includes label and has predefined sizes and 
 All additional `props` are passed to the `<input type="file">` HTML component.
 
 ```js
-import {useState} from 'react';
+import { useState } from 'react';
+
 const [files, setFiles] = useState([]);
 
-<FileInput
-    files={files}
-    label="Some file"
-    helpText="Will be uploaded"
-    onChange={event =>setFiles(event.target.files)}
-/>
+// Note that files is not an array but FileList.
+const label = files.length === 1 ? files[0].name : "Choose file";
+
+<form className="col">
+    <FileInput
+        files={files}
+        label={label}
+        helpText="Will be uploaded"
+        onChange={event=>setFiles(event.target.files)}
+    />
+</form>
+```
+
+### FileInput with multiple files
+```js
+import { useState } from 'react';
+
+const [files, setFiles] = useState([]);
+
+// Note that files is not an array but FileList.
+const label = files.length > 0 ? Array.from(files).map(file=>file.name).join(", ") : "Choose files";
+
+<form className="col">
+    <FileInput
+        files={files}
+        label={label}
+        helpText="Will be uploaded"
+        onChange={event=>setFiles(event.target.files)}
+        multiple
+    />
+</form>
 ```

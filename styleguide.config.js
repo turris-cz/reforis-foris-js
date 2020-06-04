@@ -15,11 +15,23 @@ module.exports = {
             content: "docs/intro.md",
         },
         {
+            name: "Development (Linking)",
+            content: "docs/development.md",
+        },
+        {
             name: "Foris forms",
             components: [
                 "src/form/components/ForisForm.js",
                 "src/form/components/alerts.js",
                 "src/form/components/SubmitButton.js",
+            ],
+            exampleMode: "expand",
+            usageMode: "expand",
+        },
+        {
+            name: "Alert Context",
+            components: [
+                "src/alertContext/AlertContext.js",
             ],
             exampleMode: "expand",
             usageMode: "expand",
@@ -37,6 +49,7 @@ module.exports = {
     ],
     require: [
         "babel-polyfill",
+        path.join(__dirname, "src/testUtils/mockGlobals"),
         path.join(__dirname, "node_modules/bootstrap/dist/css/bootstrap.min.css"),
         path.join(__dirname, "node_modules/@fortawesome/fontawesome-free/css/all.min.css"),
     ],

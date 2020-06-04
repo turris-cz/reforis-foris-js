@@ -6,8 +6,6 @@ it's required to have an element `<div id={"modal-container"}/>` somewhere on th
     <div id="modal-container"/>
 ```
 
-I have no idea why example doesn't work here but you can investigate HTML code and Foris project.
-
 ```js
 import {ModalHeader, ModalBody, ModalFooter} from './Modal';
 

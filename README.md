@@ -33,3 +33,12 @@ externals: {
 }
 ```
 
+### Docs
+Build or watch docs to get more info about library:
+```bash
+make docs
+```
+or
+```bash
+make docs-watch
+```

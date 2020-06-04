@@ -19,6 +19,8 @@ FileInput.propTypes = {
     helpText: PropTypes.string,
     /** Email value. */
     value: PropTypes.string,
+    /** Allow selecting multiple files. */
+    multiple: PropTypes.bool,
 };
 
 export function FileInput({ ...props }) {

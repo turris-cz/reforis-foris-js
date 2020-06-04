@@ -7,17 +7,12 @@
 
 import mockAxios from "jest-mock-axios";
 import moment from "moment-timezone";
+import "./mockGlobals";
 
 // Setup axios cleanup
 global.afterEach(() => {
     mockAxios.reset();
 });
-
-// Mock babel (gettext)
-global._ = (str) => str;
-global.ngettext = (str) => str;
-global.babel = { format: (str) => str };
-global.ForisTranslations = { locale: "en" };
 
 // Mock web sockets
 window.WebSocket = jest.fn();

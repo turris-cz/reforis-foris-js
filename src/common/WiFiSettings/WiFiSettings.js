@@ -89,5 +89,5 @@ function validator(formData) {
             return errors;
         },
     );
-    return JSON.stringify(formErrors) === "[{},{}]" ? null : formErrors;
+    return JSON.stringify(formErrors).match(/\[[{},?]+\]/) ? null : formErrors;
 }

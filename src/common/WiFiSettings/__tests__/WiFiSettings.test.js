@@ -13,8 +13,8 @@ import { fireEvent, render, wait } from "customTestRender";
 import { WebSockets } from "webSockets/WebSockets";
 import { mockJSONError } from "testUtils/network";
 
-import { wifiSettingsFixture } from "./__fixtures__/wifiSettings";
-import { WiFiSettings } from "../WiFiSettings";
+import { wifiSettingsFixture, oneDevice, twoDevices, threeDevices } from "./__fixtures__/wifiSettings";
+import { WiFiSettings, validator } from "../WiFiSettings";
 
 describe("<WiFiSettings/>", () => {
     let firstRender;
@@ -158,5 +158,19 @@ describe("<WiFiSettings/>", () => {
             ],
         };
         expect(mockAxios.post).toHaveBeenCalledWith(endpoint, data, expect.anything());
+    });
+
+    it("Validator function using regex for one device", () => {    
+        expect(validator(oneDevice)).toEqual(null);      
+    });
+
+    it("Validator function using regex for two devices", () => {
+        const twoDevicesFormErrors = [{SSID: "SSID can't be empty"}, {}];    
+        expect(validator(twoDevices)).toEqual(twoDevicesFormErrors);
+    });
+
+    it("Validator function using regex for three devices", () => {
+        const threeDevicesFormErrors = [{}, {}, {password: "Password must contain at least 8 symbols"}];    
+        expect(validator(threeDevices)).toEqual(threeDevicesFormErrors);
     });
 });

@@ -64,7 +64,7 @@ function prepDataToSubmit(formData) {
     return formData;
 }
 
-function validator(formData) {
+export function validator(formData) {
     const formErrors = formData.devices.map(
         (device) => {
             if (!device.enabled) return {};

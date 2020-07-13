@@ -64,7 +64,7 @@ function prepDataToSubmit(formData) {
     return formData;
 }
 
-function validator(formData) {
+export function validator(formData) {
     const formErrors = formData.devices.map(
         (device) => {
             if (!device.enabled) return {};
@@ -89,5 +89,5 @@ function validator(formData) {
             return errors;
         },
     );
-    return JSON.stringify(formErrors) === "[{},{}]" ? null : formErrors;
+    return JSON.stringify(formErrors).match(/\[[{},?]+\]/) ? null : formErrors;
 }

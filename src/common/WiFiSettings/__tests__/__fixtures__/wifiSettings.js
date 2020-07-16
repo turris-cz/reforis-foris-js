@@ -316,3 +316,85 @@ export function wifiSettingsFixture() {
         ],
     };
 }
+const oneDevice = {
+    devices: [
+        {
+            SSID: "Turris1",
+            channel: 60,
+            enabled: true,
+            guest_wifi: { enabled: false },
+            hidden: false,
+            htmode: "HT40",
+            hwmode: "11a",
+            id: 0,
+            password: "TestPass"
+        }
+    ]
+};
+
+const twoDevices = {
+    devices: [
+        {
+            SSID: "",
+            channel: 60,
+            enabled: true,
+            guest_wifi: { enabled: false },
+            hidden: false,
+            htmode: "HT40",
+            hwmode: "11a",
+            id: 0,
+            password: "TestPass"
+        },
+        {
+            SSID: "Turris2",
+            channel: 60,
+            enabled: true,
+            guest_wifi: { enabled: false },
+            hidden: false,
+            htmode: "HT40",
+            hwmode: "11a",
+            id: 0,
+            password: "TestPass"
+        }
+    ]
+};
+
+const threeDevices = {
+    devices: [
+        {
+            SSID: "Turris1",
+            channel: 60,
+            enabled: true,
+            guest_wifi: { enabled: false },
+            hidden: false,
+            htmode: "HT40",
+            hwmode: "11a",
+            id: 0,
+            password: "TestPass"
+        },
+        {
+            SSID: "Turris2",
+            channel: 60,
+            enabled: false,
+            guest_wifi: { enabled: false },
+            hidden: false,
+            htmode: "HT40",
+            hwmode: "11a",
+            id: 0,
+            password: "TestPass"
+        },
+        {
+            SSID: "Turris3",
+            channel: 60,
+            enabled: true,
+            guest_wifi: { enabled: false },
+            hidden: false,
+            htmode: "HT40",
+            hwmode: "11a",
+            id: 0,
+            password: ""
+        }
+    ]
+};
+
+export {oneDevice, twoDevices, threeDevices};

@@ -38,12 +38,12 @@ WiFiForm.defaultProps = {
 export default function WiFiForm({
     formData, formErrors, setFormValue, hasGuestNetwork, disabled,
 }) {
-    return formData.devices.map((device, idx) => (
+    return formData.devices.map((device, index) => (
         <DeviceForm
             key={device.id}
             formData={device}
-            deviceNumber={idx}
-            formErrors={(formErrors || [])[idx]}
+            deviceIndex={index}
+            formErrors={(formErrors || [])[index]}
             setFormValue={setFormValue}
             hasGuestNetwork={hasGuestNetwork}
             disabled={disabled}
@@ -66,7 +66,7 @@ DeviceForm.propTypes = {
     formErrors: PropTypes.object.isRequired,
     setFormValue: PropTypes.func.isRequired,
     hasGuestNetwork: PropTypes.bool,
-    deviceNumber: PropTypes.number,
+    deviceIndex: PropTypes.number,
 };
 
 DeviceForm.defaultProps = {
@@ -75,7 +75,7 @@ DeviceForm.defaultProps = {
 };
 
 function DeviceForm({
-    formData, formErrors, setFormValue, hasGuestNetwork, deviceNumber, ...props
+    formData, formErrors, setFormValue, hasGuestNetwork, deviceIndex, ...props
 }) {
     const deviceID = formData.id;
     return (
@@ -86,7 +86,7 @@ function DeviceForm({
                 checked={formData.enabled}
 
                 onChange={setFormValue(
-                    (value) => ({ devices: { [deviceNumber]: { enabled: { $set: value } } } }),
+                    (value) => ({ devices: { [deviceIndex]: { enabled: { $set: value } } } }),
                 )}
 
                 {...props}
@@ -102,7 +102,7 @@ function DeviceForm({
                             onChange={setFormValue(
                                 (value) => ({
                                     devices: {
-                                        [deviceNumber]: {
+                                        [deviceIndex]: {
                                             SSID: { $set: value },
                                         },
                                     },
@@ -129,7 +129,7 @@ function DeviceForm({
 
                             onChange={setFormValue(
                                 (value) => (
-                                    { devices: { [deviceNumber]: { password: { $set: value } } } }
+                                    { devices: { [deviceIndex]: { password: { $set: value } } } }
                                 ),
                             )}
 
@@ -143,7 +143,7 @@ function DeviceForm({
 
                             onChange={setFormValue(
                                 (value) => (
-                                    { devices: { [deviceNumber]: { hidden: { $set: value } } } }
+                                    { devices: { [deviceIndex]: { hidden: { $set: value } } } }
                                 ),
                             )}
 
@@ -160,7 +160,7 @@ function DeviceForm({
                             onChange={setFormValue(
                                 (value) => ({
                                     devices: {
-                                        [deviceNumber]: {
+                                        [deviceIndex]: {
                                             hwmode: { $set: value },
                                             channel: { $set: "0" },
                                         },
@@ -179,7 +179,7 @@ function DeviceForm({
 
                             onChange={setFormValue(
                                 (value) => (
-                                    { devices: { [deviceNumber]: { htmode: { $set: value } } } }
+                                    { devices: { [deviceIndex]: { htmode: { $set: value } } } }
                                 ),
                             )}
 
@@ -193,7 +193,7 @@ function DeviceForm({
 
                             onChange={setFormValue(
                                 (value) => (
-                                    { devices: { [deviceNumber]: { channel: { $set: value } } } }
+                                    { devices: { [deviceIndex]: { channel: { $set: value } } } }
                                 ),
                             )}
 
@@ -202,7 +202,7 @@ function DeviceForm({
 
                         {hasGuestNetwork && (
                             <WifiGuestForm
-                                formData={{ id: deviceNumber, ...formData.guest_wifi }}
+                                formData={{ id: deviceIndex, ...formData.guest_wifi }}
                                 formErrors={formErrors.guest_wifi || {}}
 
                                 setFormValue={setFormValue}

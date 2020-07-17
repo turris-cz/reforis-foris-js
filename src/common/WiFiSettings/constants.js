@@ -12,6 +12,7 @@ export const HTMODES = {
     VHT20: _("802.11ac - 20 MHz wide channel"),
     VHT40: _("802.11ac - 40 MHz wide channel"),
     VHT80: _("802.11ac - 80 MHz wide channel"),
+    VHT160: _("802.11ac - 160 MHz wide channel"),
 };
 export const HWMODES = {
     "11g": "2.4",

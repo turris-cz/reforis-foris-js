@@ -28,10 +28,11 @@ export function Select({
 }) {
     const uid = useUID();
 
-    const options = Object.keys(choices).map(
+    const options = Object.keys(choices).sort(
+        (a, b) => a - b || a.toString().localeCompare(b.toString()),
+    ).map(
         (key) => <option key={key} value={key}>{choices[key]}</option>,
     );
-
     return (
         <div className="form-group">
             <label htmlFor={uid}>{label}</label>

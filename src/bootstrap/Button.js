@@ -29,7 +29,7 @@ export function Button({
 }) {
     let buttonClass = className ? `btn ${className}` : "btn btn-primary ";
     if (forisFormSize) {
-        buttonClass = `${buttonClass} col-sm-12 col-lg-3`;
+        buttonClass = `${buttonClass} col-sm-12 col-md-3 col-lg-2`;
     }
 
     const span = loading

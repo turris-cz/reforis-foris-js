@@ -21,7 +21,8 @@ export const ForisURLs = {
     },
 
     // Notifications links are used with <Link/> inside Router, thus url subdir is not required.
-    notifications: "/notifications",
+    overview: "/overview",
+    notifications: "/overview#notifications",
     notificationsSettings: "/administration/notifications-settings",
 
     luci: "/cgi-bin/luci",

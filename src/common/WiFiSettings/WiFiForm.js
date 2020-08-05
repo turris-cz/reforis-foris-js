@@ -80,7 +80,7 @@ function DeviceForm({
     const deviceID = formData.id;
     return (
         <>
-            <h3>{_(`Wi-Fi ${deviceID + 1}`)}</h3>
+            <h2>{_(`Wi-Fi ${deviceID + 1}`)}</h2>
             <CheckBox
                 label={_("Enable")}
                 checked={formData.enabled}

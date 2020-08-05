@@ -50,7 +50,7 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
 
     return (
         <>
-            <h4>{_("Reset Wi-Fi Settings")}</h4>
+            <h2>{_("Reset Wi-Fi Settings")}</h2>
             <p>
                 {_(`
 If a number of wireless cards doesn't match, you may try to reset the Wi-Fi settings. Note that this will remove the

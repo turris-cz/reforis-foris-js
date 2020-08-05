@@ -25,6 +25,9 @@ export const ForisURLs = {
     notifications: "/overview#notifications",
     notificationsSettings: "/administration/notifications-settings",
 
+    approveUpdates: "/package-management/updates",
+    languages: "/package-management/languages",
+    rebootPage: "/reforis/administration/reboot",
     luci: "/cgi-bin/luci",
 
     // API

@@ -18,10 +18,6 @@ import {
 } from "../bootstrap/Modal";
 import { useAlert } from "../alertContext/AlertContext";
 
-RebootButton.propTypes = {
-    forisFormSize: PropTypes.bool,
-};
-
 export function RebootButton(props) {
     const [triggered, setTriggered] = useState(false);
     const [modalShown, setModalShown] = useState(false);

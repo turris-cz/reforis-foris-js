@@ -13,7 +13,7 @@ import { useAlert } from "../../alertContext/AlertContext";
 import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { useAPIPost } from "../../api/hooks";
 import { API_STATE } from "../../api/utils";
-import { formFieldsSize } from "../../bootstrap/constants";
+import { buttonFormFieldSize } from "../../bootstrap/constants";
 
 ResetWiFiSettings.propTypes = {
     ws: PropTypes.object.isRequired,
@@ -57,7 +57,7 @@ If a number of wireless cards doesn't match, you may try to reset the Wi-Fi sett
 current Wi-Fi configuration and restore the default values.
         `)}
             </p>
-            <div className={`${formFieldsSize} text-right`}>
+            <div className={`${buttonFormFieldSize} text-right`}>
                 <Button
                     className="btn-warning"
                     forisFormSize

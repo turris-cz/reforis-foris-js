@@ -13,7 +13,12 @@ import { fireEvent, render, wait } from "customTestRender";
 import { WebSockets } from "webSockets/WebSockets";
 import { mockJSONError } from "testUtils/network";
 
-import { wifiSettingsFixture, oneDevice, twoDevices, threeDevices } from "./__fixtures__/wifiSettings";
+import {
+    wifiSettingsFixture,
+    oneDevice,
+    twoDevices,
+    threeDevices,
+} from "./__fixtures__/wifiSettings";
 import { WiFiSettings, validator } from "../WiFiSettings";
 
 describe("<WiFiSettings/>", () => {
@@ -26,7 +31,13 @@ describe("<WiFiSettings/>", () => {
 
     beforeEach(async () => {
         const webSockets = new WebSockets();
-        const renderRes = render(<WiFiSettings ws={webSockets} endpoint={endpoint} resetEndpoint="foo" />);
+        const renderRes = render(
+            <WiFiSettings
+                ws={webSockets}
+                endpoint={endpoint}
+                resetEndpoint="foo"
+            />
+        );
         asFragment = renderRes.asFragment;
         getAllByText = renderRes.getAllByText;
         getAllByLabelText = renderRes.getAllByLabelText;
@@ -38,7 +49,14 @@ describe("<WiFiSettings/>", () => {
 
     it("should handle error", async () => {
         const webSockets = new WebSockets();
-        const { getByText } = render(<WiFiSettings ws={webSockets} ws={webSockets} endpoint={endpoint} resetEndpoint="foo" />);
+        const { getByText } = render(
+            <WiFiSettings
+                ws={webSockets}
+                ws={webSockets}
+                endpoint={endpoint}
+                resetEndpoint="foo"
+            />
+        );
         const errorMessage = "An API error occurred.";
         mockJSONError(errorMessage);
         await wait(() => {
@@ -51,21 +69,21 @@ describe("<WiFiSettings/>", () => {
     });
 
     it("Snapshot one module enabled.", () => {
-        fireEvent.click(getAllByText("Enable")[0]);
+        fireEvent.click(getByText("Wi-Fi 1"));
         expect(diffSnapshot(firstRender, asFragment())).toMatchSnapshot();
     });
 
     it("Snapshot 2.4 GHz", () => {
-        fireEvent.click(getAllByText("Enable")[0]);
+        fireEvent.click(getByText("Wi-Fi 1"));
         const enabledRender = asFragment();
         fireEvent.click(getAllByText("2.4")[0]);
         expect(diffSnapshot(enabledRender, asFragment())).toMatchSnapshot();
     });
 
     it("Snapshot guest network.", () => {
-        fireEvent.click(getAllByText("Enable")[0]);
+        fireEvent.click(getByText("Wi-Fi 1"));
         const enabledRender = asFragment();
-        fireEvent.click(getAllByText("Enable Guest Wifi")[0]);
+        fireEvent.click(getAllByText("Enable Guest Wi-Fi")[0]);
         expect(diffSnapshot(enabledRender, asFragment())).toMatchSnapshot();
     });
 
@@ -78,11 +96,15 @@ describe("<WiFiSettings/>", () => {
                 { enabled: false, id: 1 },
             ],
         };
-        expect(mockAxios.post).toHaveBeenCalledWith(endpoint, data, expect.anything());
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            endpoint,
+            data,
+            expect.anything()
+        );
     });
 
     it("Post form: one module enabled.", () => {
-        fireEvent.click(getAllByText("Enable")[0]);
+        fireEvent.click(getByText("Wi-Fi 1"));
 
         fireEvent.click(getByText("Save"));
         expect(mockAxios.post).toBeCalled();
@@ -102,11 +124,15 @@ describe("<WiFiSettings/>", () => {
                 { enabled: false, id: 1 },
             ],
         };
-        expect(mockAxios.post).toHaveBeenCalledWith(endpoint, data, expect.anything());
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            endpoint,
+            data,
+            expect.anything()
+        );
     });
 
     it("Post form: 2.4 GHz", () => {
-        fireEvent.click(getAllByText("Enable")[0]);
+        fireEvent.click(getByText("Wi-Fi 1"));
         fireEvent.click(getAllByText("2.4")[0]);
 
         fireEvent.click(getByText("Save"));
@@ -127,13 +153,19 @@ describe("<WiFiSettings/>", () => {
                 { enabled: false, id: 1 },
             ],
         };
-        expect(mockAxios.post).toHaveBeenCalledWith(endpoint, data, expect.anything());
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            endpoint,
+            data,
+            expect.anything()
+        );
     });
 
     it("Post form: guest network.", () => {
-        fireEvent.click(getAllByText("Enable")[0]);
-        fireEvent.click(getAllByText("Enable Guest Wifi")[0]);
-        fireEvent.change(getAllByLabelText("Password")[1], { target: { value: "test_password" } });
+        fireEvent.click(getByText("Wi-Fi 1"));
+        fireEvent.click(getAllByText("Enable Guest Wi-Fi")[0]);
+        fireEvent.change(getAllByLabelText("Password")[1], {
+            target: { value: "test_password" },
+        });
 
         fireEvent.click(getByText("Save"));
         expect(mockAxios.post).toBeCalled();
@@ -157,20 +189,28 @@ describe("<WiFiSettings/>", () => {
                 { enabled: false, id: 1 },
             ],
         };
-        expect(mockAxios.post).toHaveBeenCalledWith(endpoint, data, expect.anything());
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            endpoint,
+            data,
+            expect.anything()
+        );
     });
 
-    it("Validator function using regex for one device", () => {    
-        expect(validator(oneDevice)).toEqual(null);      
+    it("Validator function using regex for one device", () => {
+        expect(validator(oneDevice)).toEqual(null);
     });
 
     it("Validator function using regex for two devices", () => {
-        const twoDevicesFormErrors = [{SSID: "SSID can't be empty"}, {}];    
+        const twoDevicesFormErrors = [{ SSID: "SSID can't be empty" }, {}];
         expect(validator(twoDevices)).toEqual(twoDevicesFormErrors);
     });
 
     it("Validator function using regex for three devices", () => {
-        const threeDevicesFormErrors = [{}, {}, {password: "Password must contain at least 8 symbols"}];    
+        const threeDevicesFormErrors = [
+            {},
+            {},
+            { password: "Password must contain at least 8 symbols" },
+        ];
         expect(validator(threeDevices)).toEqual(threeDevicesFormErrors);
     });
 });

@@ -31,17 +31,10 @@ export { Radio, RadioSet } from "./bootstrap/RadioSet";
 export { Select } from "./bootstrap/Select";
 export { TextInput } from "./bootstrap/TextInput";
 export { formFieldsSize, buttonFormFieldSize } from "./bootstrap/constants";
+export { Switch } from "./bootstrap/Switch";
 
-export {
-    Spinner,
-    SpinnerElement,
-} from "./bootstrap/Spinner";
-export {
-    Modal,
-    ModalBody,
-    ModalFooter,
-    ModalHeader,
-} from "./bootstrap/Modal";
+export { Spinner, SpinnerElement } from "./bootstrap/Spinner";
+export { Modal, ModalBody, ModalFooter, ModalHeader } from "./bootstrap/Modal";
 
 // Common
 export { RebootButton } from "./common/RebootButton";
@@ -49,7 +42,10 @@ export { WiFiSettings } from "./common/WiFiSettings/WiFiSettings";
 
 // Form
 export { ForisForm } from "./form/components/ForisForm";
-export { SubmitButton, STATES as SUBMIT_BUTTON_STATES } from "./form/components/SubmitButton";
+export {
+    SubmitButton,
+    STATES as SUBMIT_BUTTON_STATES,
+} from "./form/components/SubmitButton";
 export { useForisModule, useForm } from "./form/hooks";
 
 // WebSockets
@@ -58,9 +54,18 @@ export { WebSockets } from "./webSockets/WebSockets";
 
 // Utils
 export { Portal } from "./utils/Portal";
-export { undefinedIfEmpty, withoutUndefinedKeys, onlySpecifiedKeys } from "./utils/objectHelpers";
 export {
-    withEither, withSpinner, withSending, withSpinnerOnSending, withError, withErrorMessage,
+    undefinedIfEmpty,
+    withoutUndefinedKeys,
+    onlySpecifiedKeys,
+} from "./utils/objectHelpers";
+export {
+    withEither,
+    withSpinner,
+    withSending,
+    withSpinnerOnSending,
+    withError,
+    withErrorMessage,
 } from "./utils/conditionalHOCs";
 export { ErrorMessage } from "./utils/ErrorMessage";
 export { useClickOutside } from "./utils/hooks";

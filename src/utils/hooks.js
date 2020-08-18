@@ -8,11 +8,17 @@
 import { useState, useEffect } from "react";
 
 /** Execute callback when condition is set to true. */
-export function useConditionalTimeout({ callback, timeout = 125 }, ...callbackArgs) {
+export function useConditionalTimeout(
+    { callback, timeout = 125 },
+    ...callbackArgs
+) {
     const [condition, setCondition] = useState(false);
     useEffect(() => {
         if (condition) {
-            const interval = setTimeout(() => callback(...callbackArgs), timeout);
+            const interval = setTimeout(
+                () => callback(...callbackArgs),
+                timeout
+            );
             return () => setTimeout(interval);
         }
     }, [condition, callback, timeout, callbackArgs]);

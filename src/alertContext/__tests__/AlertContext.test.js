@@ -6,9 +6,7 @@
  */
 
 import React from "react";
-import {
-    render, getByText, queryByText, fireEvent,
-} from "customTestRender";
+import { render, getByText, queryByText, fireEvent } from "customTestRender";
 
 import { useAlert, AlertContextProvider } from "../AlertContext";
 
@@ -31,7 +29,7 @@ describe("AlertContext", () => {
         const { container } = render(
             <AlertContextProvider>
                 <AlertTest />
-            </AlertContextProvider>,
+            </AlertContextProvider>
         );
         componentContainer = container;
     });

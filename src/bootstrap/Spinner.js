@@ -25,12 +25,12 @@ Spinner.defaultProps = {
     fullScreen: false,
 };
 
-export function Spinner({
-    fullScreen, children, className,
-}) {
+export function Spinner({ fullScreen, children, className }) {
     if (!fullScreen) {
         return (
-            <div className={`spinner-wrapper ${className || "my-3 text-center"}`}>
+            <div
+                className={`spinner-wrapper ${className || "my-3 text-center"}`}
+            >
                 <SpinnerElement>{children}</SpinnerElement>
             </div>
         );
@@ -61,7 +61,9 @@ export function SpinnerElement({ small, className, children }) {
     return (
         <>
             <div
-                className={`spinner-border ${small ? "spinner-border-sm" : ""} ${className || ""}`.trim()}
+                className={`spinner-border ${
+                    small ? "spinner-border-sm" : ""
+                } ${className || ""}`.trim()}
                 role="status"
             >
                 <span className="sr-only" />

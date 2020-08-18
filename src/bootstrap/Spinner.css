@@ -5,7 +5,7 @@
 }
 
 .spinner-fs-background {
-    background-color: rgba(2, 2, 2, .5);
+    background-color: rgba(2, 2, 2, 0.5);
     color: rgb(230, 230, 230);
     position: fixed;
     width: 100%;

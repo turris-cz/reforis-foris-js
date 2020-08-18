@@ -26,15 +26,14 @@ function Wrapper({ children }) {
     return (
         <AlertContextMock>
             <StaticRouter>
-                <UIDReset>
-                    {children}
-                </UIDReset>
+                <UIDReset>{children}</UIDReset>
             </StaticRouter>
         </AlertContextMock>
     );
 }
 
-const customTestRender = (ui, options) => render(ui, { wrapper: Wrapper, ...options });
+const customTestRender = (ui, options) =>
+    render(ui, { wrapper: Wrapper, ...options });
 
 // re-export everything
 export * from "@testing-library/react";

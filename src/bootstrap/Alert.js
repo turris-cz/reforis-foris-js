@@ -35,12 +35,16 @@ Alert.defaultProps = {
     type: ALERT_TYPES.DANGER,
 };
 
-export function Alert({
-    type, onDismiss, children,
-}) {
+export function Alert({ type, onDismiss, children }) {
     return (
         <div className={`alert alert-dismissible alert-${type}`}>
-            {onDismiss ? <button type="button" className="close" onClick={onDismiss}>&times;</button> : false}
+            {onDismiss ? (
+                <button type="button" className="close" onClick={onDismiss}>
+                    &times;
+                </button>
+            ) : (
+                false
+            )}
             {children}
         </div>
     );

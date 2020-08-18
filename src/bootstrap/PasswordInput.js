@@ -31,22 +31,24 @@ export function PasswordInput({ withEye, ...props }) {
             autoComplete={isHidden ? "new-password" : null}
             {...props}
         >
-            {withEye
-                ? (
-                    <div className="input-group-append">
-                        <button
-                            type="button"
-                            className="input-group-text"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                setHidden((shouldBeHidden) => !shouldBeHidden);
-                            }}
-                        >
-                            <i className={`fa ${isHidden ? "fa-eye" : "fa-eye-slash"}`} />
-                        </button>
-                    </div>
-                )
-                : null}
+            {withEye ? (
+                <div className="input-group-append">
+                    <button
+                        type="button"
+                        className="input-group-text"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            setHidden((shouldBeHidden) => !shouldBeHidden);
+                        }}
+                    >
+                        <i
+                            className={`fa ${
+                                isHidden ? "fa-eye" : "fa-eye-slash"
+                            }`}
+                        />
+                    </button>
+                </div>
+            ) : null}
         </Input>
     );
 }

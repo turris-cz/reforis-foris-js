@@ -13,8 +13,6 @@ exports[`<SubmitButton/> Render load 1`] = `
       role="status"
     />
      
-     
-     
     Load settings
   </button>
 </div>
@@ -26,8 +24,6 @@ exports[`<SubmitButton/> Render ready 1`] = `
     class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
     type="submit"
   >
-     
-     
     Save
   </button>
 </div>
@@ -45,8 +41,6 @@ exports[`<SubmitButton/> Render saving 1`] = `
       class="spinner-border spinner-border-sm"
       role="status"
     />
-     
-     
      
     Updating
   </button>

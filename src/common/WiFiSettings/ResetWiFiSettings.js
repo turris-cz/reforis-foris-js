@@ -25,11 +25,10 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
 
     useEffect(() => {
         const module = "wifi";
-        ws.subscribe(module)
-            .bind(module, "reset", () => {
-                // eslint-disable-next-line no-restricted-globals
-                setTimeout(() => location.reload(), 1000);
-            });
+        ws.subscribe(module).bind(module, "reset", () => {
+            // eslint-disable-next-line no-restricted-globals
+            setTimeout(() => location.reload(), 1000);
+        });
     }, [ws]);
 
     const [postResetResponse, postReset] = useAPIPost(endpoint);
@@ -38,7 +37,10 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
         if (postResetResponse.state === API_STATE.ERROR) {
             setAlert(_("An error occurred during resetting Wi-Fi settings."));
         } else if (postResetResponse.state === API_STATE.SUCCESS) {
-            setAlert(_("Wi-Fi settings are set to defaults."), ALERT_TYPES.SUCCESS);
+            setAlert(
+                _("Wi-Fi settings are set to defaults."),
+                ALERT_TYPES.SUCCESS
+            );
         }
     }, [postResetResponse, setAlert]);
 
@@ -63,7 +65,6 @@ current Wi-Fi configuration and restore the default values.
                     forisFormSize
                     loading={isLoading}
                     disabled={isLoading}
-
                     onClick={onReset}
                 >
                     {_("Reset Wi-Fi Settings")}

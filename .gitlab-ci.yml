@@ -1,44 +1,44 @@
 image: node:8-alpine
 
 stages:
-  - test
-  - build
-  - publish
+    - test
+    - build
+    - publish
 
 before_script:
-  - apk add make
-  - npm install
+    - apk add make
+    - npm install
 
 test:
-  stage: test
-  script:
-    - make test
+    stage: test
+    script:
+        - make test
 
 lint:
-  stage: test
-  script:
-    - make lint
+    stage: test
+    script:
+        - make lint
 
 build:
-  stage: build
-  script:
-    - make pack
-  artifacts:
-    paths:
-      - dist/foris-*.tgz
+    stage: build
+    script:
+        - make pack
+    artifacts:
+        paths:
+            - dist/foris-*.tgz
 
 publish_beta:
-  stage: publish
-  only:
-    refs:
-      - dev
-  script:
-    - make publish-beta
+    stage: publish
+    only:
+        refs:
+            - dev
+    script:
+        - make publish-beta
 
 publish_latest:
-  stage: publish
-  only:
-    refs:
-      - master
-  script:
-    - make publish-latest
+    stage: publish
+    only:
+        refs:
+            - master
+    script:
+        - make publish-latest

@@ -16,29 +16,33 @@ Switch.propTypes = {
         PropTypes.node,
         PropTypes.arrayOf(PropTypes.node),
     ]).isRequired,
-    id: PropTypes.string.isRequired,
     helpText: PropTypes.string,
-    switchHeading: PropTypes.string,
+    switchHeading: PropTypes.bool,
 };
 
-export function Switch({
-    label, id, helpText, switchHeading, ...props
-}) {
+export function Switch({ label, helpText, switchHeading, ...props }) {
     const uid = useUID();
     return (
         <div className="form-group">
-            <div className={`custom-control custom-switch ${!helpText ? "custom-control-inline" : ""} ${switchHeading ? "switch-heading" : ""}`.trim()}>
+            <div
+                className={`custom-control custom-switch ${
+                    !helpText ? "custom-control-inline" : ""
+                } ${switchHeading ? "switch-heading" : ""}`.trim()}
+            >
                 <input
                     type="checkbox"
                     className="custom-control-input"
                     id={uid}
-
                     {...props}
                 />
                 <label className="custom-control-label" htmlFor={uid}>
                     {label}
                 </label>
-                {helpText && <small className="form-text text-muted mt-0 mb-3">{helpText}</small>}
+                {helpText && (
+                    <small className="form-text text-muted mt-0 mb-3">
+                        {helpText}
+                    </small>
+                )}
             </div>
         </div>
     );

@@ -22,9 +22,7 @@ CheckBox.defaultProps = {
     disabled: false,
 };
 
-export function CheckBox({
-    label, helpText, disabled, ...props
-}) {
+export function CheckBox({ label, helpText, disabled, ...props }) {
     const uid = useUID();
     return (
         <div className="form-group">
@@ -34,12 +32,15 @@ export function CheckBox({
                     type="checkbox"
                     id={uid}
                     disabled={disabled}
-
                     {...props}
                 />
                 <label className="custom-control-label" htmlFor={uid}>
                     {label}
-                    {helpText && <small className="form-text text-muted">{helpText}</small>}
+                    {helpText && (
+                        <small className="form-text text-muted">
+                            {helpText}
+                        </small>
+                    )}
                 </label>
             </div>
         </div>

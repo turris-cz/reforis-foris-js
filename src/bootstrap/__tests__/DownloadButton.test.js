@@ -13,7 +13,11 @@ import { DownloadButton } from "../DownloadButton";
 
 describe("<DownloadButton />", () => {
     it("should have download attribute", () => {
-        const { container } = render(<DownloadButton href="http://example.com">Test Button</DownloadButton>);
+        const { container } = render(
+            <DownloadButton href="http://example.com">
+                Test Button
+            </DownloadButton>
+        );
         expect(container.firstChild.getAttribute("download")).not.toBeNull();
     });
 });

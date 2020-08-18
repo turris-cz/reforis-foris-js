@@ -15,35 +15,30 @@ Select.propTypes = {
     /** Choices if form of {value : "Label",...}. */
     choices: PropTypes.object.isRequired,
     /** Current value. */
-    value: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-    ]).isRequired,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     /** Help text message. */
     helpText: PropTypes.string,
 };
 
-export function Select({
-    label, choices, helpText, ...props
-}) {
+export function Select({ label, choices, helpText, ...props }) {
     const uid = useUID();
 
-    const options = Object.keys(choices).sort(
-        (a, b) => a - b || a.toString().localeCompare(b.toString()),
-    ).map(
-        (key) => <option key={key} value={key}>{choices[key]}</option>,
-    );
+    const options = Object.keys(choices)
+        .sort((a, b) => a - b || a.toString().localeCompare(b.toString()))
+        .map((key) => (
+            <option key={key} value={key}>
+                {choices[key]}
+            </option>
+        ));
     return (
         <div className="form-group">
             <label htmlFor={uid}>{label}</label>
-            <select
-                className="custom-select"
-                id={uid}
-                {...props}
-            >
+            <select className="custom-select" id={uid} {...props}>
                 {options}
             </select>
-            {helpText ? <small className="form-text text-muted">{helpText}</small> : null}
+            {helpText ? (
+                <small className="form-text text-muted">{helpText}</small>
+            ) : null}
         </div>
     );
 }

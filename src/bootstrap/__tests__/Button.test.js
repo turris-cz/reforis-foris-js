@@ -14,19 +14,18 @@ import { Button } from "../Button";
 describe("<Button />", () => {
     it("Render button correctly", () => {
         const { container } = render(<Button>Test Button</Button>);
-        expect(container.firstChild)
-            .toMatchSnapshot();
+        expect(container.firstChild).toMatchSnapshot();
     });
 
     it("Render button with custom classes", () => {
-        const { container } = render(<Button className="one two three">Test Button</Button>);
-        expect(container.firstChild)
-            .toMatchSnapshot();
+        const { container } = render(
+            <Button className="one two three">Test Button</Button>
+        );
+        expect(container.firstChild).toMatchSnapshot();
     });
 
     it("Render button with spinner", () => {
         const { container } = render(<Button loading>Test Button</Button>);
-        expect(container.firstChild)
-            .toMatchSnapshot();
+        expect(container.firstChild).toMatchSnapshot();
     });
 });

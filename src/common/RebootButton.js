@@ -13,9 +13,7 @@ import { API_STATE } from "../api/utils";
 import { ForisURLs } from "../utils/forisUrls";
 
 import { Button } from "../bootstrap/Button";
-import {
-    Modal, ModalHeader, ModalBody, ModalFooter,
-} from "../bootstrap/Modal";
+import { Modal, ModalHeader, ModalBody, ModalFooter } from "../bootstrap/Modal";
 import { useAlert } from "../alertContext/AlertContext";
 
 export function RebootButton(props) {
@@ -38,13 +36,16 @@ export function RebootButton(props) {
 
     return (
         <>
-            <RebootModal shown={modalShown} setShown={setModalShown} onReboot={rebootHandler} />
+            <RebootModal
+                shown={modalShown}
+                setShown={setModalShown}
+                onReboot={rebootHandler}
+            />
             <Button
                 className="btn-danger"
                 loading={triggered}
                 disabled={triggered}
                 onClick={() => setModalShown(true)}
-
                 {...props}
             >
                 {_("Reboot")}
@@ -63,10 +64,14 @@ function RebootModal({ shown, setShown, onReboot }) {
     return (
         <Modal shown={shown} setShown={setShown}>
             <ModalHeader setShown={setShown} title={_("Reboot confirmation")} />
-            <ModalBody><p>{_("Are you sure you want to restart the router?")}</p></ModalBody>
+            <ModalBody>
+                <p>{_("Are you sure you want to restart the router?")}</p>
+            </ModalBody>
             <ModalFooter>
                 <Button onClick={() => setShown(false)}>{_("Cancel")}</Button>
-                <Button className="btn-danger" onClick={onReboot}>{_("Confirm reboot")}</Button>
+                <Button className="btn-danger" onClick={onReboot}>
+                    {_("Confirm reboot")}
+                </Button>
             </ModalFooter>
         </Modal>
     );

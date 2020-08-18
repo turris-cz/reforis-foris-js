@@ -18,11 +18,9 @@ describe("<TextInput/>", () => {
                 label="Test label"
                 helpText="Some help text"
                 value="Some text"
-                onChange={() => {
-                }}
-            />,
+                onChange={() => {}}
+            />
         );
-        expect(container.firstChild)
-            .toMatchSnapshot();
+        expect(container.firstChild).toMatchSnapshot();
     });
 });

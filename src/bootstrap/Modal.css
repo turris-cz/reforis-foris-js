@@ -10,6 +10,6 @@
 .modal.show {
     display: block;
     animation-name: modalFade;
-    animation-duration: .3s;
+    animation-duration: 0.3s;
     background: rgba(0, 0, 0, 0.2);
 }

@@ -7,7 +7,12 @@
 
 import { useEffect, useState } from "react";
 
-export function useWSForisModule(ws, module, action = "update_settings", controllerID) {
+export function useWSForisModule(
+    ws,
+    module,
+    action = "update_settings",
+    controllerID
+) {
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -18,14 +23,16 @@ export function useWSForisModule(ws, module, action = "update_settings", control
 
         function callback(message) {
             // Accept only messages addressed to device with passed controller ID.
-            if (controllerID !== undefined && controllerID !== message.controller_id) {
+            if (
+                controllerID !== undefined &&
+                controllerID !== message.controller_id
+            ) {
                 return;
             }
             setData(message.data);
         }
 
-        ws.subscribe(module)
-            .bind(module, action, callback);
+        ws.subscribe(module).bind(module, action, callback);
 
         return () => {
             ws.unbind(module, action, callback);

@@ -18,11 +18,9 @@ describe("<PasswordInput/>", () => {
                 label="Test label"
                 helpText="Some help text"
                 value="Some password"
-                onChange={() => {
-                }}
-            />,
+                onChange={() => {}}
+            />
         );
-        expect(container.firstChild)
-            .toMatchSnapshot();
+        expect(container.firstChild).toMatchSnapshot();
     });
 });

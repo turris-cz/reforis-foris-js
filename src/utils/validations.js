@@ -30,7 +30,10 @@ const REs = {
 };
 
 const createValidator = (fieldType) => (value) => {
-    if (value && value !== "") return REs[fieldType].test(value) ? undefined : ERROR_MESSAGES[fieldType];
+    if (value && value !== "")
+        return REs[fieldType].test(value)
+            ? undefined
+            : ERROR_MESSAGES[fieldType];
 };
 
 const validateIPv4Address = createValidator("IPv4");

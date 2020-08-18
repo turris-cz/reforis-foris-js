@@ -22,9 +22,12 @@ function AlertContextProvider({ children }) {
     const { AlertContext } = window;
     const [alert, setAlert] = useState(null);
 
-    const setAlertWrapper = useCallback((message, type = ALERT_TYPES.DANGER) => {
-        setAlert({ message, type });
-    }, [setAlert]);
+    const setAlertWrapper = useCallback(
+        (message, type = ALERT_TYPES.DANGER) => {
+            setAlert({ message, type });
+        },
+        [setAlert]
+    );
 
     const dismissAlert = useCallback(() => setAlert(null), [setAlert]);
 
@@ -38,7 +41,7 @@ function AlertContextProvider({ children }) {
                 </Portal>
             )}
             <AlertContext.Provider value={[setAlertWrapper, dismissAlert]}>
-                { children }
+                {children}
             </AlertContext.Provider>
         </>
     );

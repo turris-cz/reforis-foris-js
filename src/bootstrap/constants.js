@@ -8,4 +8,4 @@
 /** Bootstrap column size for form fields */
 // eslint-disable-next-line import/prefer-default-export
 export const formFieldsSize = "card p-4 col-sm-12 col-lg-12 p-0 mb-3";
-export const buttonFormFieldSize = "col-sm-12 col-lg-12 p-0 mb-3";
+export const buttonFormFieldsSize = "col-sm-12 col-lg-12 p-0 mb-3";

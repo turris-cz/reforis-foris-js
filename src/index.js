@@ -30,7 +30,7 @@ export { PasswordInput } from "./bootstrap/PasswordInput";
 export { Radio, RadioSet } from "./bootstrap/RadioSet";
 export { Select } from "./bootstrap/Select";
 export { TextInput } from "./bootstrap/TextInput";
-export { formFieldsSize, buttonFormFieldSize } from "./bootstrap/constants";
+export { formFieldsSize, buttonFormFieldsSize } from "./bootstrap/constants";
 export { Switch } from "./bootstrap/Switch";
 
 export { Spinner, SpinnerElement } from "./bootstrap/Spinner";

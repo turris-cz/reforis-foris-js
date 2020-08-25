@@ -1,15 +1,16 @@
-Set of radio Bootstrap component input with label and predefined sizes and structure for using in foris forms.
+Set of radio Bootstrap component input with label and predefined sizes and
+structure for using in foris forms.
 
 All additional `props` are passed to the `<input type="number">` HTML component.
 
 Unless `helpText` is set for one of the options they are displayed inline.
 
 ```js
-import {useState} from 'react';
-const CHOICES=[
-    {value:'one',label:'1'},
-    {value:'two',label:'2'},
-    {value:'three',label:'3'},
+import { useState } from "react";
+const CHOICES = [
+    { value: "one", label: "1" },
+    { value: "two", label: "2" },
+    { value: "three", label: "3" },
 ];
 const [value, setValue] = useState(CHOICES[0].value);
 
@@ -17,10 +18,10 @@ const [value, setValue] = useState(CHOICES[0].value);
     {/*Yeah, it gets event, not value!*/}
     <RadioSet
         value={value}
-        name='some-radio'
+        name="some-radio"
         choices={CHOICES}
-        onChange={event =>setValue(event.target.value)}
+        onChange={(event) => setValue(event.target.value)}
     />
     <p>Selected value: {value}</p>
-</>
+</>;
 ```

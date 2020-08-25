@@ -8,5 +8,7 @@
 import mockAxios from "jest-mock-axios";
 
 export function mockJSONError(data) {
-    mockAxios.mockError({ response: { data, headers: { "content-type": "application/json" } } });
+    mockAxios.mockError({
+        response: { data, headers: { "content-type": "application/json" } },
+    });
 }

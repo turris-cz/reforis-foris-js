@@ -38,14 +38,17 @@ const DEFAULT_DATE_FORMAT = "YYYY-MM-DD";
 const DEFAULT_TIME_FORMAT = "HH:mm:ss";
 
 export function DataTimeInput({
-    value, onChange, isValidDate, dateFormat, timeFormat, children, ...props
+    value,
+    onChange,
+    isValidDate,
+    dateFormat,
+    timeFormat,
+    children,
+    ...props
 }) {
     function renderInput(datetimeProps) {
         return (
-            <Input
-                {...props}
-                {...datetimeProps}
-            >
+            <Input {...props} {...datetimeProps}>
                 {children}
             </Input>
         );
@@ -54,8 +57,12 @@ export function DataTimeInput({
     return (
         <Datetime
             locale={ForisTranslations.locale}
-            dateFormat={dateFormat !== undefined ? dateFormat : DEFAULT_DATE_FORMAT}
-            timeFormat={timeFormat !== undefined ? timeFormat : DEFAULT_TIME_FORMAT}
+            dateFormat={
+                dateFormat !== undefined ? dateFormat : DEFAULT_DATE_FORMAT
+            }
+            timeFormat={
+                timeFormat !== undefined ? timeFormat : DEFAULT_TIME_FORMAT
+            }
             value={value}
             onChange={onChange}
             isValidDate={isValidDate}

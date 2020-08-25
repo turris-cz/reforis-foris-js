@@ -23,57 +23,61 @@ export function useForm(validator, dataPreprocessor) {
         errors: {},
     });
 
-    const onFormReload = useCallback((data) => {
-        dispatch({
-            type: FORM_ACTIONS.resetData,
-            data,
-            dataPreprocessor,
-            validator,
-        });
-    }, [dataPreprocessor, validator]);
+    const onFormReload = useCallback(
+        (data) => {
+            dispatch({
+                type: FORM_ACTIONS.resetData,
+                data,
+                dataPreprocessor,
+                validator,
+            });
+        },
+        [dataPreprocessor, validator]
+    );
 
-    const onFormChangeHandler = useCallback((updateRule) => (event) => {
-        dispatch({
-            type: FORM_ACTIONS.updateValue,
-            value: getChangedValue(event.target),
-            updateRule,
-            validator,
-        });
-    }, [validator]);
+    const onFormChangeHandler = useCallback(
+        (updateRule) => (event) => {
+            dispatch({
+                type: FORM_ACTIONS.updateValue,
+                value: getChangedValue(event.target),
+                updateRule,
+                validator,
+            });
+        },
+        [validator]
+    );
 
-    return [
-        state,
-        onFormChangeHandler,
-        onFormReload,
-    ];
+    return [state, onFormChangeHandler, onFormReload];
 }
 
 function formReducer(state, action) {
     switch (action.type) {
-    case FORM_ACTIONS.updateValue: {
-        const newData = update(state.data, action.updateRule(action.value));
-        const errors = action.validator(newData);
-        return {
-            ...state,
-            data: newData,
-            errors,
-        };
-    }
-    case FORM_ACTIONS.resetData: {
-        if (!action.data) {
-            return { ...state, initialData: state.data };
+        case FORM_ACTIONS.updateValue: {
+            const newData = update(state.data, action.updateRule(action.value));
+            const errors = action.validator(newData);
+            return {
+                ...state,
+                data: newData,
+                errors,
+            };
         }
+        case FORM_ACTIONS.resetData: {
+            if (!action.data) {
+                return { ...state, initialData: state.data };
+            }
 
-        const data = action.dataPreprocessor ? action.dataPreprocessor(action.data) : action.data;
-        return {
-            data,
-            initialData: data,
-            errors: action.data ? action.validator(data) : undefined,
-        };
-    }
-    default: {
-        throw new Error();
-    }
+            const data = action.dataPreprocessor
+                ? action.dataPreprocessor(action.data)
+                : action.data;
+            return {
+                data,
+                initialData: data,
+                errors: action.data ? action.validator(data) : undefined,
+            };
+        }
+        default: {
+            throw new Error();
+        }
     }
 }
 

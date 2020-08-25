@@ -22,7 +22,9 @@ export class WebSockets {
         this.ws = new WebSocket(URL);
         this.ws.onerror = (e) => {
             if (window.location.pathname !== ForisURLs.login) {
-                console.error("WS: Error observed, you aren't logged probably.");
+                console.error(
+                    "WS: Error observed, you aren't logged probably."
+                );
                 window.location.replace(ForisURLs.login);
             }
             console.error(`WS: Error: ${e}`);
@@ -111,7 +113,9 @@ export class WebSockets {
             chain = this.callbacks[json.module][json.action];
         } catch (error) {
             if (error instanceof TypeError) {
-                console.warn(`Callback for this message wasn't found:${error.data}`);
+                console.warn(
+                    `Callback for this message wasn't found:${error.data}`
+                );
             } else throw error;
         }
 

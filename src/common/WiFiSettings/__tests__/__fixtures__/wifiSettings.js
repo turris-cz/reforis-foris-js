@@ -292,11 +292,7 @@ export function wifiSettingsFixture() {
                                 radar: false,
                             },
                         ],
-                        available_htmodes: [
-                            "NOHT",
-                            "HT20",
-                            "HT40",
-                        ],
+                        available_htmodes: ["NOHT", "HT20", "HT40"],
                         hwmode: "11g",
                     },
                 ],
@@ -327,9 +323,9 @@ const oneDevice = {
             htmode: "HT40",
             hwmode: "11a",
             id: 0,
-            password: "TestPass"
-        }
-    ]
+            password: "TestPass",
+        },
+    ],
 };
 
 const twoDevices = {
@@ -343,7 +339,7 @@ const twoDevices = {
             htmode: "HT40",
             hwmode: "11a",
             id: 0,
-            password: "TestPass"
+            password: "TestPass",
         },
         {
             SSID: "Turris2",
@@ -354,9 +350,9 @@ const twoDevices = {
             htmode: "HT40",
             hwmode: "11a",
             id: 0,
-            password: "TestPass"
-        }
-    ]
+            password: "TestPass",
+        },
+    ],
 };
 
 const threeDevices = {
@@ -370,7 +366,7 @@ const threeDevices = {
             htmode: "HT40",
             hwmode: "11a",
             id: 0,
-            password: "TestPass"
+            password: "TestPass",
         },
         {
             SSID: "Turris2",
@@ -381,7 +377,7 @@ const threeDevices = {
             htmode: "HT40",
             hwmode: "11a",
             id: 0,
-            password: "TestPass"
+            password: "TestPass",
         },
         {
             SSID: "Turris3",
@@ -392,9 +388,9 @@ const threeDevices = {
             htmode: "HT40",
             hwmode: "11a",
             id: 0,
-            password: ""
-        }
-    ]
+            password: "",
+        },
+    ],
 };
 
-export {oneDevice, twoDevices, threeDevices};
+export { oneDevice, twoDevices, threeDevices };

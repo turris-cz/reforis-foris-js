@@ -20,10 +20,7 @@ NumberInput.propTypes = {
     /** Help text message. */
     helpText: PropTypes.string,
     /** Number value. */
-    value: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-    ]),
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     /** Function called when value changes. */
     onChange: PropTypes.func.isRequired,
     /** Additional description dispaled to the right of input value. */
@@ -34,15 +31,21 @@ NumberInput.defaultProps = {
     value: 0,
 };
 
-export function NumberInput({
-    onChange, inlineText, value, ...props
-}) {
+export function NumberInput({ onChange, inlineText, value, ...props }) {
     function updateValue(initialValue, difference) {
         onChange({ target: { value: initialValue + difference } });
     }
 
-    const enableIncrease = useConditionalTimeout({ callback: updateValue }, value, 1);
-    const enableDecrease = useConditionalTimeout({ callback: updateValue }, value, -1);
+    const enableIncrease = useConditionalTimeout(
+        { callback: updateValue },
+        value,
+        1
+    );
+    const enableDecrease = useConditionalTimeout(
+        { callback: updateValue },
+        value,
+        -1
+    );
 
     return (
         <Input type="number" onChange={onChange} value={value} {...props}>

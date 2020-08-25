@@ -26,9 +26,7 @@ Modal.propTypes = {
     ]).isRequired,
 };
 
-export function Modal({
-    shown, setShown, scrollable, children,
-}) {
+export function Modal({ shown, setShown, scrollable, children }) {
     const dialogRef = useRef();
 
     useClickOutside(dialogRef, () => setShown(false));
@@ -38,12 +36,12 @@ export function Modal({
             <div className={`modal fade ${shown ? "show" : ""}`} role="dialog">
                 <div
                     ref={dialogRef}
-                    className={`modal-dialog modal-dialog-centered${scrollable ? " modal-dialog-scrollable" : ""}`}
+                    className={`modal-dialog modal-dialog-centered${
+                        scrollable ? " modal-dialog-scrollable" : ""
+                    }`}
                     role="document"
                 >
-                    <div className="modal-content">
-                        {children}
-                    </div>
+                    <div className="modal-content">{children}</div>
                 </div>
             </div>
         </Portal>
@@ -59,7 +57,11 @@ export function ModalHeader({ setShown, title }) {
     return (
         <div className="modal-header">
             <h5 className="modal-title">{title}</h5>
-            <button type="button" className="close" onClick={() => setShown(false)}>
+            <button
+                type="button"
+                className="close"
+                onClick={() => setShown(false)}
+            >
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
@@ -85,9 +87,5 @@ ModalFooter.propTypes = {
 };
 
 export function ModalFooter({ children }) {
-    return (
-        <div className="modal-footer">
-            {children}
-        </div>
-    );
+    return <div className="modal-footer">{children}</div>;
 }

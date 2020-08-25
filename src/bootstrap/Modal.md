@@ -1,31 +1,36 @@
 Bootstrap modal component.
 
-it's required to have an element `<div id={"modal-container"}/>` somewhere on the page since modals are rendered in portals.
+it's required to have an element `<div id={"modal-container"}/>` somewhere on
+the page since modals are rendered in portals.
 
 ```js
-    <div id="modal-container"/>
+<div id="modal-container" />
 ```
 
 ```js
-import {ModalHeader, ModalBody, ModalFooter} from './Modal';
+import { ModalHeader, ModalBody, ModalFooter } from "./Modal";
 
-import {useState} from 'react';
+import { useState } from "react";
 const [shown, setShown] = useState(false);
 
 <>
     <Modal setShown={setShown} shown={shown}>
-        <ModalHeader setShown={setShown} title='Warning!'/>
-        <ModalBody><p>Bla bla bla...</p></ModalBody>
+        <ModalHeader setShown={setShown} title="Warning!" />
+        <ModalBody>
+            <p>Bla bla bla...</p>
+        </ModalBody>
         <ModalFooter>
-            <button 
-                className='btn btn-secondary' 
+            <button
+                className="btn btn-secondary"
                 onClick={() => setShown(false)}
-            >Skip it</button>
+            >
+                Skip it
+            </button>
         </ModalFooter>
     </Modal>
-    
-    <button className='btn btn-secondary' onClick={()=>setShown(true)}>
+
+    <button className="btn btn-secondary" onClick={() => setShown(true)}>
         Show modal
     </button>
-</>
+</>;
 ```

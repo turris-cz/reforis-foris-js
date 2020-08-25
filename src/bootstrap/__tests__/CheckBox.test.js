@@ -18,22 +18,16 @@ describe("<Checkbox/>", () => {
                 label="Test label"
                 checked
                 helpText="Some help text"
-                onChange={() => {
-                }}
-            />,
+                onChange={() => {}}
+            />
         );
-        expect(container.firstChild)
-            .toMatchSnapshot();
+        expect(container.firstChild).toMatchSnapshot();
     });
 
     it("Render uncheked checkbox", () => {
         const { container } = render(
-            <CheckBox
-                label="Test label"
-                helpText="Some help text"
-            />,
+            <CheckBox label="Test label" helpText="Some help text" />
         );
-        expect(container.firstChild)
-            .toMatchSnapshot();
+        expect(container.firstChild).toMatchSnapshot();
     });
 });

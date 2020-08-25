@@ -25,22 +25,29 @@ Button.propTypes = {
 };
 
 export function Button({
-    className, loading, forisFormSize, children, ...props
+    className,
+    loading,
+    forisFormSize,
+    children,
+    ...props
 }) {
     let buttonClass = className ? `btn ${className}` : "btn btn-primary ";
     if (forisFormSize) {
-        buttonClass = `${buttonClass} col-sm-12 col-lg-3`;
+        buttonClass = `${buttonClass} col-sm-12 col-md-3 col-lg-2`;
     }
 
-    const span = loading
-        ? <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" /> : null;
+    const span = loading ? (
+        <span
+            className="spinner-border spinner-border-sm"
+            role="status"
+            aria-hidden="true"
+        />
+    ) : null;
 
     return (
         <button type="button" className={buttonClass} {...props}>
             {span}
-            {" "}
             {span ? " " : null}
-            {" "}
             {children}
         </button>
     );

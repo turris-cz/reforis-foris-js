@@ -13,7 +13,7 @@ import { useAlert } from "../../alertContext/AlertContext";
 import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { useAPIPost } from "../../api/hooks";
 import { API_STATE } from "../../api/utils";
-import { formFieldsSize } from "../../bootstrap/constants";
+import { buttonFormFieldsSize } from "../../bootstrap/constants";
 
 ResetWiFiSettings.propTypes = {
     ws: PropTypes.object.isRequired,
@@ -25,11 +25,10 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
 
     useEffect(() => {
         const module = "wifi";
-        ws.subscribe(module)
-            .bind(module, "reset", () => {
-                // eslint-disable-next-line no-restricted-globals
-                setTimeout(() => location.reload(), 1000);
-            });
+        ws.subscribe(module).bind(module, "reset", () => {
+            // eslint-disable-next-line no-restricted-globals
+            setTimeout(() => location.reload(), 1000);
+        });
     }, [ws]);
 
     const [postResetResponse, postReset] = useAPIPost(endpoint);
@@ -38,7 +37,10 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
         if (postResetResponse.state === API_STATE.ERROR) {
             setAlert(_("An error occurred during resetting Wi-Fi settings."));
         } else if (postResetResponse.state === API_STATE.SUCCESS) {
-            setAlert(_("Wi-Fi settings are set to defaults."), ALERT_TYPES.SUCCESS);
+            setAlert(
+                _("Wi-Fi settings are set to defaults."),
+                ALERT_TYPES.SUCCESS
+            );
         }
     }, [postResetResponse, setAlert]);
 
@@ -50,20 +52,19 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
 
     return (
         <>
-            <h4>{_("Reset Wi-Fi Settings")}</h4>
+            <h2>{_("Reset Wi-Fi Settings")}</h2>
             <p>
                 {_(`
 If a number of wireless cards doesn't match, you may try to reset the Wi-Fi settings. Note that this will remove the
 current Wi-Fi configuration and restore the default values.
         `)}
             </p>
-            <div className={`${formFieldsSize} text-right`}>
+            <div className={`${buttonFormFieldsSize} text-right`}>
                 <Button
                     className="btn-warning"
                     forisFormSize
                     loading={isLoading}
                     disabled={isLoading}
-
                     onClick={onReset}
                 >
                     {_("Reset Wi-Fi Settings")}

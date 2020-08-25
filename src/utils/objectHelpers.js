@@ -15,21 +15,18 @@ export function undefinedIfEmpty(instance) {
 
 /** Return object without keys that have undefined value. */
 export function withoutUndefinedKeys(instance) {
-    return Object.keys(instance).reduce(
-        (accumulator, key) => {
-            if (instance[key] !== undefined) {
-                accumulator[key] = instance[key];
-            }
-            return accumulator;
-        },
-        {},
-    );
+    return Object.keys(instance).reduce((accumulator, key) => {
+        if (instance[key] !== undefined) {
+            accumulator[key] = instance[key];
+        }
+        return accumulator;
+    }, {});
 }
 
 /** Return copy of passed object that has only desired keys. */
 export function onlySpecifiedKeys(object, desiredKeys) {
-    return desiredKeys.reduce(
-        (accumulator, key) => { accumulator[key] = object[key]; return accumulator; },
-        {},
-    );
+    return desiredKeys.reduce((accumulator, key) => {
+        accumulator[key] = object[key];
+        return accumulator;
+    }, {});
 }

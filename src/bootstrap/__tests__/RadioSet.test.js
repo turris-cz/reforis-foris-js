@@ -35,11 +35,9 @@ describe("<RadioSet/>", () => {
                 value="value"
                 choices={TEST_CHOICES}
                 helpText="Some help text"
-                onChange={() => {
-                }}
-            />,
+                onChange={() => {}}
+            />
         );
-        expect(container.firstChild)
-            .toMatchSnapshot();
+        expect(container.firstChild).toMatchSnapshot();
     });
 });

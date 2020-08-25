@@ -27,7 +27,5 @@ module.exports = {
     globals: {
         TZ: "utc",
     },
-    transformIgnorePatterns: [
-        "node_modules/(?!(react-datetime)/)",
-    ],
+    transformIgnorePatterns: ["node_modules/(?!(react-datetime)/)"],
 };

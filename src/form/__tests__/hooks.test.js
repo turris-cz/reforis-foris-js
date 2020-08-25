@@ -7,9 +7,7 @@
 
 import React from "react";
 
-import {
-    act, fireEvent, render, waitForElement,
-} from "customTestRender";
+import { act, fireEvent, render, waitForElement } from "customTestRender";
 import mockAxios from "jest-mock-axios";
 import { WebSockets } from "webSockets/WebSockets";
 import { ForisForm } from "../components/ForisForm";
@@ -38,8 +36,12 @@ describe("useForm hook.", () => {
 
     beforeEach(async () => {
         mockPrepData = jest.fn(() => ({ field: "preparedData" }));
-        mockPrepDataToSubmit = jest.fn(() => ({ field: "preparedDataToSubmit" }));
-        mockValidator = jest.fn((data) => (data.field === "invalidValue" ? { field: "Error" } : {}));
+        mockPrepDataToSubmit = jest.fn(() => ({
+            field: "preparedDataToSubmit",
+        }));
+        mockValidator = jest.fn((data) =>
+            data.field === "invalidValue" ? { field: "Error" } : {}
+        );
         const { getByTestId, container } = render(
             <ForisForm
                 ws={new WebSockets()}
@@ -53,7 +55,7 @@ describe("useForm hook.", () => {
                 validator={mockValidator}
             >
                 <Child />
-            </ForisForm>,
+            </ForisForm>
         );
         mockAxios.mockResponse({ field: "fetchedData" });
 
@@ -67,16 +69,22 @@ describe("useForm hook.", () => {
         expect(Child.mock.calls[0][0].formErrors).toMatchObject({});
 
         act(() => {
-            fireEvent.change(input, { target: { value: "invalidValue", type: "text" } });
+            fireEvent.change(input, {
+                target: { value: "invalidValue", type: "text" },
+            });
         });
 
         expect(Child).toHaveBeenCalledTimes(2);
         expect(mockValidator).toHaveBeenCalledTimes(2);
-        expect(Child.mock.calls[1][0].formErrors).toMatchObject({ field: "Error" });
+        expect(Child.mock.calls[1][0].formErrors).toMatchObject({
+            field: "Error",
+        });
     });
 
     it("Update text value.", () => {
-        fireEvent.change(input, { target: { value: "newValue", type: "text" } });
+        fireEvent.change(input, {
+            target: { value: "newValue", type: "text" },
+        });
         expect(input.value).toBe("newValue");
     });
 
@@ -86,14 +94,21 @@ describe("useForm hook.", () => {
     });
 
     it("Update checkbox value.", () => {
-        fireEvent.change(input, { target: { checked: true, type: "checkbox" } });
+        fireEvent.change(input, {
+            target: { checked: true, type: "checkbox" },
+        });
         expect(input.checked).toBe(true);
     });
 
     it("Fetch data.", () => {
-        expect(mockAxios.get).toHaveBeenCalledWith("testEndpoint", expect.anything());
+        expect(mockAxios.get).toHaveBeenCalledWith(
+            "testEndpoint",
+            expect.anything()
+        );
         expect(mockPrepData).toHaveBeenCalledTimes(1);
-        expect(Child.mock.calls[0][0].formData).toMatchObject({ field: "preparedData" });
+        expect(Child.mock.calls[0][0].formData).toMatchObject({
+            field: "preparedData",
+        });
     });
 
     it("Submit.", () => {
@@ -107,7 +122,7 @@ describe("useForm hook.", () => {
         expect(mockAxios.post).toHaveBeenCalledWith(
             "testEndpoint",
             { field: "preparedDataToSubmit" },
-            expect.anything(),
+            expect.anything()
         );
     });
 });

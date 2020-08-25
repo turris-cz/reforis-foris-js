@@ -7,7 +7,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-
+import { Switch } from "../../bootstrap/Switch";
 import { CheckBox } from "../../bootstrap/CheckBox";
 import { PasswordInput } from "../../bootstrap/PasswordInput";
 import { RadioSet } from "../../bootstrap/RadioSet";
@@ -18,25 +18,25 @@ import WifiGuestForm from "./WiFiGuestForm";
 import { HELP_TEXTS, HTMODES, HWMODES } from "./constants";
 
 WiFiForm.propTypes = {
-    formData: PropTypes.shape(
-        { devices: PropTypes.arrayOf(PropTypes.object) },
-    ).isRequired,
-    formErrors: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.array,
-    ]),
+    formData: PropTypes.shape({ devices: PropTypes.arrayOf(PropTypes.object) })
+        .isRequired,
+    formErrors: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     setFormValue: PropTypes.func.isRequired,
     hasGuestNetwork: PropTypes.bool,
 };
 
 WiFiForm.defaultProps = {
     formData: { devices: [] },
-    setFormValue: () => { },
+    setFormValue: () => {},
     hasGuestNetwork: true,
 };
 
 export default function WiFiForm({
-    formData, formErrors, setFormValue, hasGuestNetwork, disabled,
+    formData,
+    formErrors,
+    setFormValue,
+    hasGuestNetwork,
+    disabled,
 }) {
     return formData.devices.map((device, index) => (
         <DeviceForm
@@ -47,6 +47,7 @@ export default function WiFiForm({
             setFormValue={setFormValue}
             hasGuestNetwork={hasGuestNetwork}
             disabled={disabled}
+            divider={index + 1 !== formData.devices.length}
         />
     ));
 }
@@ -67,6 +68,7 @@ DeviceForm.propTypes = {
     setFormValue: PropTypes.func.isRequired,
     hasGuestNetwork: PropTypes.bool,
     deviceIndex: PropTypes.number,
+    divider: PropTypes.bool,
 };
 
 DeviceForm.defaultProps = {
@@ -75,144 +77,135 @@ DeviceForm.defaultProps = {
 };
 
 function DeviceForm({
-    formData, formErrors, setFormValue, hasGuestNetwork, deviceIndex, ...props
+    formData,
+    formErrors,
+    setFormValue,
+    hasGuestNetwork,
+    deviceIndex,
+    divider,
+    ...props
 }) {
     const deviceID = formData.id;
     return (
         <>
-            <h3>{_(`Wi-Fi ${deviceID + 1}`)}</h3>
-            <CheckBox
-                label={_("Enable")}
+            <Switch
+                label={<h2>{_(`Wi-Fi ${deviceID + 1}`)}</h2>}
                 checked={formData.enabled}
-
-                onChange={setFormValue(
-                    (value) => ({ devices: { [deviceIndex]: { enabled: { $set: value } } } }),
-                )}
-
+                onChange={setFormValue((value) => ({
+                    devices: {
+                        [deviceIndex]: { enabled: { $set: value } },
+                    },
+                }))}
+                switchHeading
                 {...props}
             />
-            {formData.enabled
-                ? (
-                    <>
-                        <TextInput
-                            label="SSID"
-                            value={formData.SSID}
-                            error={formErrors.SSID || null}
-                            required
-                            onChange={setFormValue(
-                                (value) => ({
-                                    devices: {
-                                        [deviceIndex]: {
-                                            SSID: { $set: value },
-                                        },
-                                    },
-                                }),
-                            )}
-
-                            {...props}
-                        >
-                            <div className="input-group-append">
-                                <WiFiQRCode
-                                    SSID={formData.SSID}
-                                    password={formData.password}
-                                />
-                            </div>
-                        </TextInput>
-
-                        <PasswordInput
-                            withEye
-                            label="Password"
-                            value={formData.password}
-                            error={formErrors.password}
-                            helpText={HELP_TEXTS.password}
-                            required
-
-                            onChange={setFormValue(
-                                (value) => (
-                                    { devices: { [deviceIndex]: { password: { $set: value } } } }
-                                ),
-                            )}
-
-                            {...props}
-                        />
-
-                        <CheckBox
-                            label="Hide SSID"
-                            helpText={HELP_TEXTS.hidden}
-                            checked={formData.hidden}
-
-                            onChange={setFormValue(
-                                (value) => (
-                                    { devices: { [deviceIndex]: { hidden: { $set: value } } } }
-                                ),
-                            )}
-
-                            {...props}
-                        />
-
-                        <RadioSet
-                            name={`hwmode-${deviceID}`}
-                            label="GHz"
-                            choices={getHwmodeChoices(formData)}
-                            value={formData.hwmode}
-                            helpText={HELP_TEXTS.hwmode}
-
-                            onChange={setFormValue(
-                                (value) => ({
-                                    devices: {
-                                        [deviceIndex]: {
-                                            hwmode: { $set: value },
-                                            channel: { $set: "0" },
-                                        },
-                                    },
-                                }),
-                            )}
-
-                            {...props}
-                        />
-
-                        <Select
-                            label="802.11n/ac mode"
-                            choices={getHtmodeChoices(formData)}
-                            value={formData.htmode}
-                            helpText={HELP_TEXTS.htmode}
-
-                            onChange={setFormValue(
-                                (value) => (
-                                    { devices: { [deviceIndex]: { htmode: { $set: value } } } }
-                                ),
-                            )}
-
-                            {...props}
-                        />
-
-                        <Select
-                            label="Channel"
-                            choices={getChannelChoices(formData)}
-                            value={formData.channel}
-
-                            onChange={setFormValue(
-                                (value) => (
-                                    { devices: { [deviceIndex]: { channel: { $set: value } } } }
-                                ),
-                            )}
-
-                            {...props}
-                        />
-
-                        {hasGuestNetwork && (
-                            <WifiGuestForm
-                                formData={{ id: deviceIndex, ...formData.guest_wifi }}
-                                formErrors={formErrors.guest_wifi || {}}
-
-                                setFormValue={setFormValue}
-
-                                {...props}
+            {formData.enabled ? (
+                <>
+                    <TextInput
+                        label="SSID"
+                        value={formData.SSID}
+                        error={formErrors.SSID || null}
+                        required
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [deviceIndex]: {
+                                    SSID: { $set: value },
+                                },
+                            },
+                        }))}
+                        {...props}
+                    >
+                        <div className="input-group-append">
+                            <WiFiQRCode
+                                SSID={formData.SSID}
+                                password={formData.password}
                             />
-                        )}
-                    </>
-                )
-                : null}
+                        </div>
+                    </TextInput>
+
+                    <PasswordInput
+                        withEye
+                        label="Password"
+                        value={formData.password}
+                        error={formErrors.password}
+                        helpText={HELP_TEXTS.password}
+                        required
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [deviceIndex]: { password: { $set: value } },
+                            },
+                        }))}
+                        {...props}
+                    />
+
+                    <CheckBox
+                        label="Hide SSID"
+                        helpText={HELP_TEXTS.hidden}
+                        checked={formData.hidden}
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [deviceIndex]: { hidden: { $set: value } },
+                            },
+                        }))}
+                        {...props}
+                    />
+
+                    <RadioSet
+                        name={`hwmode-${deviceID}`}
+                        label="GHz"
+                        choices={getHwmodeChoices(formData)}
+                        value={formData.hwmode}
+                        helpText={HELP_TEXTS.hwmode}
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [deviceIndex]: {
+                                    hwmode: { $set: value },
+                                    channel: { $set: "0" },
+                                },
+                            },
+                        }))}
+                        {...props}
+                    />
+
+                    <Select
+                        label="802.11n/ac mode"
+                        choices={getHtmodeChoices(formData)}
+                        value={formData.htmode}
+                        helpText={HELP_TEXTS.htmode}
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [deviceIndex]: { htmode: { $set: value } },
+                            },
+                        }))}
+                        {...props}
+                    />
+
+                    <Select
+                        label="Channel"
+                        choices={getChannelChoices(formData)}
+                        value={formData.channel}
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [deviceIndex]: { channel: { $set: value } },
+                            },
+                        }))}
+                        {...props}
+                    />
+
+                    {hasGuestNetwork && (
+                        <WifiGuestForm
+                            formData={{
+                                id: deviceIndex,
+                                ...formData.guest_wifi,
+                            }}
+                            formErrors={formErrors.guest_wifi || {}}
+                            setFormValue={setFormValue}
+                            {...props}
+                        />
+                    )}
+                </>
+            ) : null}
+            {divider ? <hr /> : null}
         </>
     );
 }
@@ -228,7 +221,9 @@ function getChannelChoices(device) {
         availableBand.available_channels.forEach((availableChannel) => {
             channelChoices[availableChannel.number.toString()] = `
                         ${availableChannel.number}
-                        (${availableChannel.frequency} MHz ${availableChannel.radar ? " ,DFS" : ""})
+                        (${availableChannel.frequency} MHz ${
+                availableChannel.radar ? " ,DFS" : ""
+            })
                     `;
         });
     });

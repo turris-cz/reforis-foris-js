@@ -30,9 +30,7 @@ module.exports = {
         },
         {
             name: "Alert Context",
-            components: [
-                "src/alertContext/AlertContext.js",
-            ],
+            components: ["src/alertContext/AlertContext.js"],
             exampleMode: "expand",
             usageMode: "expand",
         },
@@ -42,16 +40,20 @@ module.exports = {
             components: "src/bootstrap/*.js",
             exampleMode: "expand",
             usageMode: "expand",
-            ignore: [
-                "src/bootstrap/constants.js",
-            ],
+            ignore: ["src/bootstrap/constants.js"],
         },
     ],
     require: [
         "babel-polyfill",
         path.join(__dirname, "src/testUtils/mockGlobals"),
-        path.join(__dirname, "node_modules/bootstrap/dist/css/bootstrap.min.css"),
-        path.join(__dirname, "node_modules/@fortawesome/fontawesome-free/css/all.min.css"),
+        path.join(
+            __dirname,
+            "node_modules/bootstrap/dist/css/bootstrap.min.css"
+        ),
+        path.join(
+            __dirname,
+            "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        ),
     ],
     webpackConfig: {
         module: {
@@ -60,10 +62,12 @@ module.exports = {
                     test: /\.js$/,
                     exclude: /node_modules/,
                     loader: "babel-loader",
-                }, {
+                },
+                {
                     test: /\.css$/,
                     use: ["style-loader", "css-loader"],
-                }, {
+                },
+                {
                     test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf|svg)$/,
                     loader: "file-loader",
                 },

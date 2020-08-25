@@ -11,5 +11,7 @@ Can be used without parameters:
 Using loading spinner:
 
 ```jsx
-<Button loading disabled>Loading...</Button>
+<Button loading disabled>
+    Loading...
+</Button>
 ```

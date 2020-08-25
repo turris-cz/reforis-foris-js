@@ -5,7 +5,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 - First value
 + Second value
 
-@@ -246,207 +246,95 @@
+@@ -245,207 +245,95 @@
               value=\\"0\\"
             >
               auto
@@ -251,17 +251,14 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
 <DocumentFragment>
   <div
-    class="col-sm-12 offset-lg-1 col-lg-10 p-0 mb-3"
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-3"
   >
     <form>
-      <h3>
-        Wi-Fi 1
-      </h3>
       <div
         class="form-group"
       >
         <div
-          class="custom-control custom-checkbox "
+          class="custom-control custom-switch custom-control-inline switch-heading"
         >
           <input
             class="custom-control-input"
@@ -272,18 +269,18 @@ exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
             class="custom-control-label"
             for="1"
           >
-            Enable
+            <h2>
+              Wi-Fi 1
+            </h2>
           </label>
         </div>
       </div>
-      <h3>
-        Wi-Fi 2
-      </h3>
+      <hr />
       <div
         class="form-group"
       >
         <div
-          class="custom-control custom-checkbox "
+          class="custom-control custom-switch custom-control-inline switch-heading"
         >
           <input
             class="custom-control-input"
@@ -294,7 +291,9 @@ exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
             class="custom-control-label"
             for="2"
           >
-            Enable
+            <h2>
+              Wi-Fi 2
+            </h2>
           </label>
         </div>
       </div>
@@ -302,17 +301,17 @@ exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
         class="text-right"
       >
         <button
-          class="btn btn-primary  col-sm-12 col-lg-3"
+          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
           type="submit"
         >
-            Save
+          Save
         </button>
       </div>
     </form>
   </div>
-  <h4>
+  <h2>
     Reset Wi-Fi Settings
-  </h4>
+  </h2>
   <p>
     
 If a number of wireless cards doesn't match, you may try to reset the Wi-Fi settings. Note that this will remove the
@@ -320,13 +319,13 @@ current Wi-Fi configuration and restore the default values.
         
   </p>
   <div
-    class="col-sm-12 offset-lg-1 col-lg-10 p-0 mb-3 text-right"
+    class="col-sm-12 col-lg-12 p-0 mb-3 text-right"
   >
     <button
-      class="btn btn-warning col-sm-12 col-lg-3"
+      class="btn btn-warning col-sm-12 col-md-3 col-lg-2"
       type="button"
     >
-        Reset Wi-Fi Settings
+      Reset Wi-Fi Settings
     </button>
   </div>
 </DocumentFragment>
@@ -337,10 +336,10 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 - First value
 + Second value
 
-@@ -475,10 +475,89 @@
+@@ -474,10 +474,89 @@
+          Parameters of the guest network can be set in the Guest network tab.
           
-              </small>
-            </label>
+            </small>
           </div>
         </div>
 +       <div
@@ -422,21 +421,21 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +     
 +         </small>
 +       </div>
-        <h3>
-          Wi-Fi 2
-        </h3>
+        <hr />
         <div
           class=\\"form-group\\"
-@@ -502,10 +581,11 @@
+        >
+          <div
+@@ -501,10 +580,11 @@
         <div
           class=\\"text-right\\"
         >
           <button
-            class=\\"btn btn-primary  col-sm-12 col-lg-3\\"
+            class=\\"btn btn-primary  col-sm-12 col-md-3 col-lg-2\\"
 +           disabled=\\"\\"
             type=\\"submit\\"
           >
-              Save
+            Save
           </button>
         </div>"
 `;
@@ -446,9 +445,9 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 - First value
 + Second value
 
-@@ -23,10 +23,462 @@
-            >
-              Enable
+@@ -22,10 +22,462 @@
+                Wi-Fi 1
+              </h2>
             </label>
           </div>
         </div>
@@ -880,7 +879,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +         class=\\"form-group\\"
 +       >
 +         <div
-+           class=\\"custom-control custom-checkbox \\"
++           class=\\"custom-control custom-switch\\"
 +         >
 +           <input
 +             class=\\"custom-control-input\\"
@@ -891,22 +890,22 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +             class=\\"custom-control-label\\"
 +             for=\\"10\\"
 +           >
-+             Enable Guest Wifi
-+             <small
-+               class=\\"form-text text-muted\\"
-+             >
-+               
++             Enable Guest Wi-Fi
++           </label>
++           <small
++             class=\\"form-text text-muted mt-0 mb-3\\"
++           >
++             
 +         Enables Wi-Fi for guests, which is separated from LAN network. Devices connected to this network are allowed to
 +         access the internet, but aren't allowed to access other devices and the configuration interface of the router.
 +         Parameters of the guest network can be set in the Guest network tab.
 +         
-+             </small>
-+           </label>
++           </small>
 +         </div>
 +       </div>
-        <h3>
-          Wi-Fi 2
-        </h3>
+        <hr />
         <div
-          class=\\"form-group\\""
+          class=\\"form-group\\"
+        >
+          <div"
 `;

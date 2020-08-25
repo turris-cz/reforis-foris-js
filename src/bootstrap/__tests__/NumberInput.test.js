@@ -7,9 +7,7 @@
 
 import React from "react";
 
-import {
-    render, fireEvent, getByLabelText, wait,
-} from "customTestRender";
+import { render, fireEvent, getByLabelText, wait } from "customTestRender";
 
 import { NumberInput } from "../NumberInput";
 
@@ -24,7 +22,7 @@ describe("<NumberInput/>", () => {
                 helpText="Some help text"
                 value={1}
                 onChange={onChangeMock}
-            />,
+            />
         );
         componentContainer = container;
     });
@@ -36,12 +34,16 @@ describe("<NumberInput/>", () => {
     it("Increase number with button", async () => {
         const increaseButton = getByLabelText(componentContainer, "Increase");
         fireEvent.mouseDown(increaseButton);
-        await wait(() => expect(onChangeMock).toHaveBeenCalledWith({ target: { value: 2 } }));
+        await wait(() =>
+            expect(onChangeMock).toHaveBeenCalledWith({ target: { value: 2 } })
+        );
     });
 
     it("Decrease number with button", async () => {
         const decreaseButton = getByLabelText(componentContainer, "Decrease");
         fireEvent.mouseDown(decreaseButton);
-        await wait(() => expect(onChangeMock).toHaveBeenCalledWith({ target: { value: 0 } }));
+        await wait(() =>
+            expect(onChangeMock).toHaveBeenCalledWith({ target: { value: 0 } })
+        );
     });
 });

@@ -18,8 +18,7 @@ export const STATES = {
 
 SubmitButton.propTypes = {
     disabled: PropTypes.bool,
-    state: PropTypes.oneOf(Object.keys(STATES)
-        .map((key) => STATES[key])),
+    state: PropTypes.oneOf(Object.keys(STATES).map((key) => STATES[key])),
 };
 
 export function SubmitButton({ disabled, state, ...props }) {
@@ -28,14 +27,14 @@ export function SubmitButton({ disabled, state, ...props }) {
 
     let labelSubmitButton;
     switch (state) {
-    case STATES.SAVING:
-        labelSubmitButton = _("Updating");
-        break;
-    case STATES.LOAD:
-        labelSubmitButton = _("Load settings");
-        break;
-    default:
-        labelSubmitButton = _("Save");
+        case STATES.SAVING:
+            labelSubmitButton = _("Updating");
+            break;
+        case STATES.LOAD:
+            labelSubmitButton = _("Load settings");
+            break;
+        default:
+            labelSubmitButton = _("Save");
     }
 
     return (
@@ -44,7 +43,6 @@ export function SubmitButton({ disabled, state, ...props }) {
             loading={loadingSubmitButton}
             disabled={disableSubmitButton}
             forisFormSize
-
             {...props}
         >
             {labelSubmitButton}

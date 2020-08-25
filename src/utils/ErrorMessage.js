@@ -17,7 +17,5 @@ ErrorMessage.defaultProps = {
 };
 
 export function ErrorMessage({ message }) {
-    return (
-        <p className="text-center text-danger">{message}</p>
-    );
+    return <p className="text-center text-danger">{message}</p>;
 }

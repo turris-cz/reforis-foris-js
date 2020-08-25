@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Switch/> Render switch 1`] = `
+<div
+  class="form-group"
+>
+  <div
+    class="custom-control custom-switch"
+  >
+    <input
+      checked=""
+      class="custom-control-input"
+      id="1"
+      type="checkbox"
+    />
+    <label
+      class="custom-control-label"
+      for="1"
+    >
+      Test label
+    </label>
+    <small
+      class="form-text text-muted mt-0 mb-3"
+    >
+      Some help text
+    </small>
+  </div>
+</div>
+`;
+
+exports[`<Switch/> Render uncheked switch 1`] = `
+<div
+  class="form-group"
+>
+  <div
+    class="custom-control custom-switch"
+  >
+    <input
+      class="custom-control-input"
+      id="1"
+      type="checkbox"
+    />
+    <label
+      class="custom-control-label"
+      for="1"
+    >
+      Test label
+    </label>
+    <small
+      class="form-text text-muted mt-0 mb-3"
+    >
+      Some help text
+    </small>
+  </div>
+</div>
+`;

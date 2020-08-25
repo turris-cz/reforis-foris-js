@@ -24,8 +24,8 @@ function withEither(conditionalFn, Either) {
 
 function isSending(props) {
     if (Array.isArray(props.apiState)) {
-        return props.apiState.some(
-            (state) => [API_STATE.INIT, API_STATE.SENDING].includes(state),
+        return props.apiState.some((state) =>
+            [API_STATE.INIT, API_STATE.SENDING].includes(state)
         );
     }
     return [API_STATE.INIT, API_STATE.SENDING].includes(props.apiState);
@@ -38,15 +38,18 @@ const withSpinnerOnSending = withSpinner(isSending);
 // Error handling
 
 const withError = (conditionalFn) => withEither(conditionalFn, ErrorMessage);
-const withErrorMessage = withError(
-    (props) => {
-        if (Array.isArray(props.apiState)) {
-            return props.apiState.includes(API_STATE.ERROR);
-        }
-        return props.apiState === API_STATE.ERROR;
-    },
-);
+const withErrorMessage = withError((props) => {
+    if (Array.isArray(props.apiState)) {
+        return props.apiState.includes(API_STATE.ERROR);
+    }
+    return props.apiState === API_STATE.ERROR;
+});
 
 export {
-    withEither, withSpinner, withSending, withSpinnerOnSending, withError, withErrorMessage,
+    withEither,
+    withSpinner,
+    withSending,
+    withSpinnerOnSending,
+    withError,
+    withErrorMessage,
 };

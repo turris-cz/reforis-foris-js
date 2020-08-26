@@ -52,19 +52,25 @@ ForisForm.propTypes = {
     onSubmitOverridden: PropTypes.func,
     /** Reference to actual form element (useful for programmatically submitting it).
      * Pass the output of useRef hook to this prop.
-    */
+     */
     formReference: PropTypes.object,
     /** reForis form components. */
     children: PropTypes.node.isRequired,
 
     // eslint-disable-next-line react/no-unused-prop-types
     customWSProp(props) {
-        const wsModuleIsSpecified = !!(props.forisConfig && props.forisConfig.wsModule);
+        const wsModuleIsSpecified = !!(
+            props.forisConfig && props.forisConfig.wsModule
+        );
         if (props.ws && !wsModuleIsSpecified) {
-            return new Error("forisConfig.wsModule should be specified when ws object is passed.");
+            return new Error(
+                "forisConfig.wsModule should be specified when ws object is passed."
+            );
         }
         if (!props.ws && wsModuleIsSpecified) {
-            return new Error("forisConfig.wsModule is specified without passing ws object.");
+            return new Error(
+                "forisConfig.wsModule is specified without passing ws object."
+            );
         }
     },
 };
@@ -95,7 +101,10 @@ export function ForisForm({
     formReference,
     children,
 }) {
-    const [formState, onFormChangeHandler, resetFormData] = useForm(validator, prepData);
+    const [formState, onFormChangeHandler, resetFormData] = useForm(
+        validator,
+        prepData
+    );
     const [setAlert, dismissAlert] = useAlert();
 
     const [forisModuleState] = useForisModule(ws, forisConfig);
@@ -141,29 +150,39 @@ export function ForisForm({
         return SUBMIT_BUTTON_STATES.READY;
     }
 
-    const formIsDisabled = (disabled
-        || forisModuleState.state === API_STATE.SENDING
-        || postState.state === API_STATE.SENDING);
+    const formIsDisabled =
+        disabled ||
+        forisModuleState.state === API_STATE.SENDING ||
+        postState.state === API_STATE.SENDING;
     const submitButtonIsDisabled = disabled || !!formState.errors;
 
-    const childrenWithFormProps = React.Children.map(
-        children,
-        (child) => React.cloneElement(child, {
+    const childrenWithFormProps = React.Children.map(children, (child) =>
+        React.cloneElement(child, {
             initialData: formState.initialData,
             formData: formState.data,
             formErrors: formState.errors,
             setFormValue: onFormChangeHandler,
             disabled: formIsDisabled,
-        }),
+        })
     );
 
     const onSubmit = onSubmitOverridden
-        ? onSubmitOverridden(formState.data, onFormChangeHandler, onSubmitHandler)
+        ? onSubmitOverridden(
+              formState.data,
+              onFormChangeHandler,
+              onSubmitHandler
+          )
         : onSubmitHandler;
 
     function getMessageOnLeavingPage() {
-        if (JSON.stringify(formState.data) === JSON.stringify(formState.initialData)) return true;
-        return _("Changes you made may not be saved. Are you sure you want to leave?");
+        if (
+            JSON.stringify(formState.data) ===
+            JSON.stringify(formState.initialData)
+        )
+            return true;
+        return _(
+            "Changes you made may not be saved. Are you sure you want to leave?"
+        );
     }
 
     return (

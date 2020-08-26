@@ -22,7 +22,9 @@ export const HELP_TEXTS = {
     password: _(`
         WPA2 pre-shared key, that is required to connect to the network.
     `),
-    hidden: _("If set, network is not visible when scanning for available networks."),
+    hidden: _(
+        "If set, network is not visible when scanning for available networks."
+    ),
     hwmode: _(`
         The 2.4 GHz band is more widely supported by clients, but tends to have more interference. The 5 GHz band is a
         newer standard and may not be supported by all your devices. It usually has less interference, but the signal

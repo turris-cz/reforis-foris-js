@@ -8,7 +8,11 @@
 import React from "react";
 
 import {
-    fireEvent, getByText, queryByText, render, wait,
+    fireEvent,
+    getByText,
+    queryByText,
+    render,
+    wait,
 } from "customTestRender";
 import mockAxios from "jest-mock-axios";
 import { mockJSONError } from "testUtils/network";
@@ -19,38 +23,41 @@ import { RebootButton } from "../RebootButton";
 describe("<RebootButton/>", () => {
     let componentContainer;
     beforeEach(() => {
-        const { container } = render(<>
-            <div id="modal-container" />
-            <RebootButton />
-        </>);
+        const { container } = render(
+            <>
+                <div id="modal-container" />
+                <RebootButton />
+            </>
+        );
         componentContainer = container;
     });
 
     it("Render.", () => {
-        expect(componentContainer)
-            .toMatchSnapshot();
+        expect(componentContainer).toMatchSnapshot();
     });
 
     it("Render modal.", () => {
-        expect(queryByText(componentContainer, "Confirm reboot"))
-            .toBeNull();
+        expect(queryByText(componentContainer, "Confirm reboot")).toBeNull();
         fireEvent.click(getByText(componentContainer, "Reboot"));
-        expect(componentContainer)
-            .toMatchSnapshot();
+        expect(componentContainer).toMatchSnapshot();
     });
 
     it("Confirm reboot.", () => {
         fireEvent.click(getByText(componentContainer, "Reboot"));
         fireEvent.click(getByText(componentContainer, "Confirm reboot"));
-        expect(mockAxios.post)
-            .toHaveBeenCalledWith("/reforis/api/reboot", undefined, expect.anything());
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            "/reforis/api/reboot",
+            undefined,
+            expect.anything()
+        );
     });
 
     it("Hold error.", async () => {
         fireEvent.click(getByText(componentContainer, "Reboot"));
         fireEvent.click(getByText(componentContainer, "Confirm reboot"));
         mockJSONError();
-        await wait(() => expect(mockSetAlert)
-            .toBeCalledWith("Reboot request failed."));
+        await wait(() =>
+            expect(mockSetAlert).toBeCalledWith("Reboot request failed.")
+        );
     });
 });

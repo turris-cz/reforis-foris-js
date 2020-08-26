@@ -15,26 +15,27 @@ RadioSet.propTypes = {
     /** RadioSet label . */
     label: PropTypes.string,
     /** Choices . */
-    choices: PropTypes.arrayOf(PropTypes.shape({
-        /** Choice lable . */
-        label: PropTypes.oneOfType([
-            PropTypes.string,
-            PropTypes.element,
-            PropTypes.node,
-            PropTypes.arrayOf(PropTypes.node),
-        ]).isRequired,
-        /** Choice value . */
-        value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-    })).isRequired,
+    choices: PropTypes.arrayOf(
+        PropTypes.shape({
+            /** Choice lable . */
+            label: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.element,
+                PropTypes.node,
+                PropTypes.arrayOf(PropTypes.node),
+            ]).isRequired,
+            /** Choice value . */
+            value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+                .isRequired,
+        })
+    ).isRequired,
     /** Initial value . */
     value: PropTypes.string,
     /** Help text message . */
     helpText: PropTypes.string,
 };
 
-export function RadioSet({
-    name, label, choices, value, helpText, ...props
-}) {
+export function RadioSet({ name, label, choices, value, helpText, ...props }) {
     const uid = useUID();
     const radios = choices.map((choice, key) => {
         const id = `${name}-${key}`;
@@ -47,7 +48,6 @@ export function RadioSet({
                 value={choice.value}
                 helpText={choice.helpText}
                 checked={choice.value === value}
-
                 {...props}
             />
         );
@@ -55,9 +55,15 @@ export function RadioSet({
 
     return (
         <div className="form-group">
-            {label && <label htmlFor={uid} className="d-block">{label}</label>}
+            {label && (
+                <label htmlFor={uid} className="d-block">
+                    {label}
+                </label>
+            )}
             {radios}
-            {helpText && <small className="form-text text-muted">{helpText}</small>}
+            {helpText && (
+                <small className="form-text text-muted">{helpText}</small>
+            )}
         </div>
     );
 }
@@ -73,21 +79,28 @@ Radio.propTypes = {
     helpText: PropTypes.string,
 };
 
-export function Radio({
-    label, id, helpText, ...props
-}) {
+export function Radio({ label, id, helpText, ...props }) {
     return (
         <>
-            <div className={`custom-control custom-radio ${!helpText ? "custom-control-inline" : ""}`.trim()}>
+            <div
+                className={`custom-control custom-radio ${
+                    !helpText ? "custom-control-inline" : ""
+                }`.trim()}
+            >
                 <input
                     id={id}
                     className="custom-control-input"
                     type="radio"
-
                     {...props}
                 />
-                <label className="custom-control-label" htmlFor={id}>{label}</label>
-                {helpText && <small className="form-text text-muted mt-0 mb-3">{helpText}</small>}
+                <label className="custom-control-label" htmlFor={id}>
+                    {label}
+                </label>
+                {helpText && (
+                    <small className="form-text text-muted mt-0 mb-3">
+                        {helpText}
+                    </small>
+                )}
             </div>
         </>
     );

@@ -8,7 +8,10 @@
 import React from "react";
 
 import {
-    fireEvent, getByDisplayValue, getByText, render,
+    fireEvent,
+    getByDisplayValue,
+    getByText,
+    render,
 } from "customTestRender";
 
 import { Select } from "../Select";
@@ -29,29 +32,24 @@ describe("<Select/>", () => {
                 value="1"
                 choices={TEST_CHOICES}
                 helpText="Help text"
-
                 onChange={onChangeHandler}
-            />,
+            />
         );
         selectContainer = container;
     });
 
     it("Test with snapshot.", () => {
-        expect(selectContainer)
-            .toMatchSnapshot();
+        expect(selectContainer).toMatchSnapshot();
     });
 
     it("Test onChange handling.", () => {
         const select = getByDisplayValue(selectContainer, "one");
-        expect(select.value)
-            .toBe("1");
+        expect(select.value).toBe("1");
         fireEvent.change(select, { target: { value: "2" } });
 
         const option = getByText(selectContainer, "two");
-        expect(onChangeHandler)
-            .toBeCalled();
+        expect(onChangeHandler).toBeCalled();
 
-        expect(option.value)
-            .toBe("2");
+        expect(option.value).toBe("2");
     });
 });

@@ -9,7 +9,12 @@ import React from "react";
 import { render } from "customTestRender";
 import { API_STATE } from "api/utils";
 import {
-    withEither, withSpinner, withSending, withSpinnerOnSending, withError, withErrorMessage,
+    withEither,
+    withSpinner,
+    withSending,
+    withSpinnerOnSending,
+    withError,
+    withErrorMessage,
 } from "../conditionalHOCs";
 
 describe("conditional HOCs", () => {
@@ -52,14 +57,18 @@ describe("conditional HOCs", () => {
         it("should render First component", () => {
             const withAlternative = withSending(Alternative);
             const FirstWithConditional = withAlternative(First);
-            const { getByText } = render(<FirstWithConditional apiState={API_STATE.SUCCESS} />);
+            const { getByText } = render(
+                <FirstWithConditional apiState={API_STATE.SUCCESS} />
+            );
             expect(getByText("First")).toBeDefined();
         });
 
         it("should render Alternative component", () => {
             const withAlternative = withSending(Alternative);
             const FirstWithConditional = withAlternative(First);
-            const { getByText } = render(<FirstWithConditional apiState={API_STATE.SENDING} />);
+            const { getByText } = render(
+                <FirstWithConditional apiState={API_STATE.SENDING} />
+            );
             expect(getByText("Alternative")).toBeDefined();
         });
     });
@@ -67,13 +76,17 @@ describe("conditional HOCs", () => {
     describe("withSpinnerOnSending", () => {
         it("should render First component", () => {
             const FirstWithConditional = withSpinnerOnSending(First);
-            const { getByText } = render(<FirstWithConditional apiState={API_STATE.SUCCESS} />);
+            const { getByText } = render(
+                <FirstWithConditional apiState={API_STATE.SUCCESS} />
+            );
             expect(getByText("First")).toBeDefined();
         });
 
         it("should render spinner", () => {
             const FirstWithConditional = withSpinnerOnSending(First);
-            const { container } = render(<FirstWithConditional apiState={API_STATE.SENDING} />);
+            const { container } = render(
+                <FirstWithConditional apiState={API_STATE.SENDING} />
+            );
             expect(container).toMatchSnapshot();
         });
     });
@@ -97,13 +110,17 @@ describe("conditional HOCs", () => {
     describe("withErrorMessage", () => {
         it("should render First component", () => {
             const FirstWithConditional = withErrorMessage(First);
-            const { getByText } = render(<FirstWithConditional apiState={API_STATE.SUCCESS} />);
+            const { getByText } = render(
+                <FirstWithConditional apiState={API_STATE.SUCCESS} />
+            );
             expect(getByText("First")).toBeDefined();
         });
 
         it("should render error message", () => {
             const FirstWithConditional = withErrorMessage(First);
-            const { container } = render(<FirstWithConditional apiState={API_STATE.ERROR} />);
+            const { container } = render(
+                <FirstWithConditional apiState={API_STATE.ERROR} />
+            );
             expect(container).toMatchSnapshot();
         });
     });

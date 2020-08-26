@@ -5,8 +5,6 @@ exports[`<Button /> Render button correctly 1`] = `
   class="btn btn-primary "
   type="button"
 >
-   
-   
   Test Button
 </button>
 `;
@@ -16,8 +14,6 @@ exports[`<Button /> Render button with custom classes 1`] = `
   class="btn one two three"
   type="button"
 >
-   
-   
   Test Button
 </button>
 `;
@@ -32,8 +28,6 @@ exports[`<Button /> Render button with spinner 1`] = `
     class="spinner-border spinner-border-sm"
     role="status"
   />
-   
-   
    
   Test Button
 </button>

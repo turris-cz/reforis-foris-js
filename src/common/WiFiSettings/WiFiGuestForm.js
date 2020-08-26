@@ -8,8 +8,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { CheckBox } from "../../bootstrap/CheckBox";
 import { TextInput } from "../../bootstrap/TextInput";
+import { Switch } from "../../bootstrap/Switch";
 import { PasswordInput } from "../../bootstrap/PasswordInput";
 import WiFiQRCode from "./WiFiQRCode";
 import { HELP_TEXTS } from "./constants";
@@ -26,75 +26,72 @@ WifiGuestForm.propTypes = {
         password: PropTypes.string,
     }),
     setFormValue: PropTypes.func.isRequired,
+    deviceIndex: PropTypes.string,
 };
 
 export default function WifiGuestForm({
-    formData, formErrors, setFormValue, ...props
+    formData,
+    formErrors,
+    setFormValue,
+    deviceIndex,
+    ...props
 }) {
     return (
         <>
-            <CheckBox
-                label={_("Enable Guest Wifi")}
+            <Switch
+                label={_("Enable Guest Wi-Fi")}
                 checked={formData.enabled}
                 helpText={HELP_TEXTS.guest_wifi_enabled}
-
-                onChange={setFormValue(
-                    (value) => (
-                        { devices: { [formData.id]: { guest_wifi: { enabled: { $set: value } } } } }
-                    ),
-                )}
-
+                onChange={setFormValue((value) => ({
+                    devices: {
+                        [formData.id]: {
+                            guest_wifi: { enabled: { $set: value } },
+                        },
+                    },
+                }))}
                 {...props}
             />
-            {formData.enabled
-                ? (
-                    <>
-                        <TextInput
-                            label="SSID"
-                            value={formData.SSID}
-                            error={formErrors.SSID}
+            {formData.enabled ? (
+                <>
+                    <TextInput
+                        label="SSID"
+                        value={formData.SSID}
+                        error={formErrors.SSID}
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [formData.id]: {
+                                    guest_wifi: { SSID: { $set: value } },
+                                },
+                            },
+                        }))}
+                        {...props}
+                    >
+                        <div className="input-group-append">
+                            <WiFiQRCode
+                                SSID={formData.SSID}
+                                password={formData.password}
+                            />
+                        </div>
+                    </TextInput>
 
-                            onChange={setFormValue(
-                                (value) => ({
-                                    devices: {
-                                        [formData.id]: { guest_wifi: { SSID: { $set: value } } },
-                                    },
-                                }),
-                            )}
-
-                            {...props}
-                        >
-                            <div className="input-group-append">
-                                <WiFiQRCode
-                                    SSID={formData.SSID}
-                                    password={formData.password}
-                                />
-                            </div>
-                        </TextInput>
-
-                        <PasswordInput
-                            withEye
-                            label={_("Password")}
-                            value={formData.password}
-                            helpText={HELP_TEXTS.password}
-                            error={formErrors.password}
-                            required
-
-                            onChange={setFormValue(
-                                (value) => ({
-                                    devices: {
-                                        [formData.id]: {
-                                            guest_wifi: { password: { $set: value } },
-                                        },
-                                    },
-                                }),
-                            )}
-
-                            {...props}
-                        />
-                    </>
-                )
-                : null}
+                    <PasswordInput
+                        withEye
+                        label={_("Password")}
+                        value={formData.password}
+                        helpText={HELP_TEXTS.password}
+                        error={formErrors.password}
+                        required
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [formData.id]: {
+                                    guest_wifi: { password: { $set: value } },
+                                },
+                            },
+                        }))}
+                        {...props}
+                    />
+                </>
+            ) : null}
         </>
     );
 }

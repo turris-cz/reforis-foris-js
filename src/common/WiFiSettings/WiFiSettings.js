@@ -19,9 +19,7 @@ WiFiSettings.propTypes = {
     hasGuestNetwork: PropTypes.bool,
 };
 
-export function WiFiSettings({
-    ws, endpoint, resetEndpoint, hasGuestNetwork,
-}) {
+export function WiFiSettings({ ws, endpoint, resetEndpoint, hasGuestNetwork }) {
     return (
         <>
             <ForisForm
@@ -59,35 +57,41 @@ function prepDataToSubmit(formData) {
             return;
         }
 
-        if (!device.guest_wifi.enabled) formData.devices[idx].guest_wifi = { enabled: false };
+        if (!device.guest_wifi.enabled)
+            formData.devices[idx].guest_wifi = { enabled: false };
     });
     return formData;
 }
 
 export function validator(formData) {
-    const formErrors = formData.devices.map(
-        (device) => {
-            if (!device.enabled) return {};
+    const formErrors = formData.devices.map((device) => {
+        if (!device.enabled) return {};
 
-            const errors = {};
-            if (device.SSID.length > 32) errors.SSID = _("SSID can't be longer than 32 symbols");
-            if (device.SSID.length === 0) errors.SSID = _("SSID can't be empty");
+        const errors = {};
+        if (device.SSID.length > 32)
+            errors.SSID = _("SSID can't be longer than 32 symbols");
+        if (device.SSID.length === 0) errors.SSID = _("SSID can't be empty");
 
-            if (device.password.length < 8) errors.password = _("Password must contain at least 8 symbols");
+        if (device.password.length < 8)
+            errors.password = _("Password must contain at least 8 symbols");
 
-            if (!device.guest_wifi.enabled) return errors;
+        if (!device.guest_wifi.enabled) return errors;
 
-            const guest_wifi_errors = {};
-            if (device.guest_wifi.SSID.length > 32) guest_wifi_errors.SSID = _("SSID can't be longer than 32 symbols");
-            if (device.guest_wifi.SSID.length === 0) guest_wifi_errors.SSID = _("SSID can't be empty");
+        const guest_wifi_errors = {};
+        if (device.guest_wifi.SSID.length > 32)
+            guest_wifi_errors.SSID = _("SSID can't be longer than 32 symbols");
+        if (device.guest_wifi.SSID.length === 0)
+            guest_wifi_errors.SSID = _("SSID can't be empty");
 
-            if (device.guest_wifi.password.length < 8) guest_wifi_errors.password = _("Password must contain at least 8 symbols");
+        if (device.guest_wifi.password.length < 8)
+            guest_wifi_errors.password = _(
+                "Password must contain at least 8 symbols"
+            );
 
-            if (guest_wifi_errors.SSID || guest_wifi_errors.password) {
-                errors.guest_wifi = guest_wifi_errors;
-            }
-            return errors;
-        },
-    );
+        if (guest_wifi_errors.SSID || guest_wifi_errors.password) {
+            errors.guest_wifi = guest_wifi_errors;
+        }
+        return errors;
+    });
     return JSON.stringify(formErrors).match(/\[[{},?]+\]/) ? null : formErrors;
 }

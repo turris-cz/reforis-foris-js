@@ -25,25 +25,38 @@ Input.propTypes = {
 
 /** Base bootstrap input component. */
 export function Input({
-    type, label, helpText, error, className, children, labelClassName, groupClassName, ...props
+    type,
+    label,
+    helpText,
+    error,
+    className,
+    children,
+    labelClassName,
+    groupClassName,
+    ...props
 }) {
     const uid = useUID();
-    const inputClassName = `form-control ${className || ""} ${(error ? "is-invalid" : "")}`.trim();
+    const inputClassName = `form-control ${className || ""} ${
+        error ? "is-invalid" : ""
+    }`.trim();
     return (
         <div className="form-group">
-            <label className={labelClassName} htmlFor={uid}>{label}</label>
+            <label className={labelClassName} htmlFor={uid}>
+                {label}
+            </label>
             <div className={`input-group ${groupClassName || ""}`.trim()}>
                 <input
                     className={inputClassName}
                     type={type}
                     id={uid}
-
                     {...props}
                 />
                 {children}
             </div>
             {error ? <div className="invalid-feedback">{error}</div> : null}
-            {helpText ? <small className="form-text text-muted">{helpText}</small> : null}
+            {helpText ? (
+                <small className="form-text text-muted">{helpText}</small>
+            ) : null}
         </div>
     );
 }

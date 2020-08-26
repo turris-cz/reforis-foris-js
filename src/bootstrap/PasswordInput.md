@@ -1,17 +1,18 @@
-Password Bootstrap component input with label and predefined sizes and structure for using in foris forms.
-Can be used with "eye" button, see example.
+Password Bootstrap component input with label and predefined sizes and structure
+for using in foris forms. Can be used with "eye" button, see example.
 
-All additional `props` are passed to the `<input type="password">` HTML component.
+All additional `props` are passed to the `<input type="password">` HTML
+component.
 
 ```js
-import {useState} from 'react';
-const [value, setValue] = useState('secret');
+import { useState } from "react";
+const [value, setValue] = useState("secret");
 
 <PasswordInput
     withEye
     value={value}
-    label="Some password" 
+    label="Some password"
     helpText="Read the small text!"
-    onChange={event =>setValue(event.target.value)}
-/>
+    onChange={(event) => setValue(event.target.value)}
+/>;
 ```

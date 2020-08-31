@@ -23,7 +23,7 @@ Switch.propTypes = {
 export function Switch({ label, helpText, switchHeading, ...props }) {
     const uid = useUID();
     return (
-        <div className="form-group custom-switch">
+        <div className="form-group switch">
             <div
                 className={`custom-control custom-switch ${
                     !helpText ? "custom-control-inline" : ""

@@ -255,7 +255,7 @@ exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
   >
     <form>
       <div
-        class="form-group"
+        class="form-group switch"
       >
         <div
           class="custom-control custom-switch custom-control-inline switch-heading"
@@ -277,7 +277,7 @@ exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
       </div>
       <hr />
       <div
-        class="form-group"
+        class="form-group switch"
       >
         <div
           class="custom-control custom-switch custom-control-inline switch-heading"
@@ -423,7 +423,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +       </div>
         <hr />
         <div
-          class=\\"form-group\\"
+          class=\\"form-group switch\\"
         >
           <div
 @@ -501,10 +580,11 @@
@@ -560,7 +560,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           GHz
 +         </label>
 +         <div
-+           class=\\"custom-control custom-radio custom-control-inline\\"
++           class=\\"custom-control custom-radio\\"
 +         >
 +           <input
 +             class=\\"custom-control-input\\"
@@ -577,7 +577,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           </label>
 +         </div>
 +         <div
-+           class=\\"custom-control custom-radio custom-control-inline\\"
++           class=\\"custom-control custom-radio\\"
 +         >
 +           <input
 +             checked=\\"\\"
@@ -876,7 +876,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +         </select>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class=\\"form-group switch\\"
 +       >
 +         <div
 +           class=\\"custom-control custom-switch\\"
@@ -905,7 +905,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +       </div>
         <hr />
         <div
-          class=\\"form-group\\"
+          class=\\"form-group switch\\"
         >
           <div"
 `;

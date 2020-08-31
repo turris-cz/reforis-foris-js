@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -33,9 +33,18 @@ RadioSet.propTypes = {
     value: PropTypes.string,
     /** Help text message . */
     helpText: PropTypes.string,
+    inline: PropTypes.bool,
 };
 
-export function RadioSet({ name, label, choices, value, helpText, ...props }) {
+export function RadioSet({
+    name,
+    label,
+    choices,
+    value,
+    helpText,
+    inline,
+    ...props
+}) {
     const uid = useUID();
     const radios = choices.map((choice, key) => {
         const id = `${name}-${key}`;
@@ -48,6 +57,7 @@ export function RadioSet({ name, label, choices, value, helpText, ...props }) {
                 value={choice.value}
                 helpText={choice.helpText}
                 checked={choice.value === value}
+                inline={inline}
                 {...props}
             />
         );
@@ -76,15 +86,16 @@ Radio.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
     ]).isRequired,
     id: PropTypes.string.isRequired,
+    inline: PropTypes.bool,
     helpText: PropTypes.string,
 };
 
-export function Radio({ label, id, helpText, ...props }) {
+export function Radio({ label, id, helpText, inline, ...props }) {
     return (
         <>
             <div
                 className={`custom-control custom-radio ${
-                    !helpText ? "custom-control-inline" : ""
+                    inline ? "custom-control-inline" : ""
                 }`.trim()}
             >
                 <input

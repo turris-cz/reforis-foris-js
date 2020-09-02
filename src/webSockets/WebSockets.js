@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -12,7 +12,7 @@ import { ForisURLs } from "../utils/forisUrls";
 const PROTOCOL = window.location.protocol === "http:" ? "ws" : "wss";
 
 const URL = process.env.LIGHTTPD
-    ? `${PROTOCOL}://${window.location.hostname}/foris-ws`
+    ? `${PROTOCOL}://${window.location.host}/foris-ws`
     : `${PROTOCOL}://${window.location.hostname}:${9081}`;
 
 const WAITING_FOR_CONNECTION_TIMEOUT = 500;

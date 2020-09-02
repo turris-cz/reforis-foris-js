@@ -27,7 +27,7 @@ export const ForisURLs = {
 
     approveUpdates: "/package-management/updates",
     languages: "/package-management/languages",
-    rebootPage: "/reforis/administration/reboot",
+    rebootPage: "/administration/reboot",
     luci: "/cgi-bin/luci",
 
     // API

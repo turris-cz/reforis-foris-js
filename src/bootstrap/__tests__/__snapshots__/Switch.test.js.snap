@@ -2,7 +2,7 @@
 
 exports[`<Switch/> Render switch 1`] = `
 <div
-  class="form-group switch"
+  class="form-group "
 >
   <div
     class="custom-control custom-switch"
@@ -30,7 +30,7 @@ exports[`<Switch/> Render switch 1`] = `
 
 exports[`<Switch/> Render uncheked switch 1`] = `
 <div
-  class="form-group switch"
+  class="form-group "
 >
   <div
     class="custom-control custom-switch"

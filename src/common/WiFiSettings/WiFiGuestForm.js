@@ -57,6 +57,7 @@ export default function WifiGuestForm({
                         label="SSID"
                         value={formData.SSID}
                         error={formErrors.SSID}
+                        helpText={HELP_TEXTS.ssid}
                         onChange={setFormValue((value) => ({
                             devices: {
                                 [formData.id]: {

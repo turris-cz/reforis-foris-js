@@ -63,6 +63,12 @@ function prepDataToSubmit(formData) {
     return formData;
 }
 
+export function byteCount(string) {
+    const buffer = Buffer.from(string, "utf-8");
+    const count = buffer.byteLength;
+    return count;
+}
+
 export function validator(formData) {
     const formErrors = formData.devices.map((device) => {
         if (!device.enabled) return {};
@@ -71,6 +77,8 @@ export function validator(formData) {
         if (device.SSID.length > 32)
             errors.SSID = _("SSID can't be longer than 32 symbols");
         if (device.SSID.length === 0) errors.SSID = _("SSID can't be empty");
+        if (byteCount(device.SSID) > 32)
+            errors.SSID = _("SSID can't be longer than 32 bytes");
 
         if (device.password.length < 8)
             errors.password = _("Password must contain at least 8 symbols");
@@ -82,6 +90,8 @@ export function validator(formData) {
             guest_wifi_errors.SSID = _("SSID can't be longer than 32 symbols");
         if (device.guest_wifi.SSID.length === 0)
             guest_wifi_errors.SSID = _("SSID can't be empty");
+        if (byteCount(device.guest_wifi.SSID) > 32)
+            guest_wifi_errors.SSID = _("SSID can't be longer than 32 bytes");
 
         if (device.guest_wifi.password.length < 8)
             guest_wifi_errors.password = _(

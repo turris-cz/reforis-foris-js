@@ -5,7 +5,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 - First value
 + Second value
 
-@@ -245,207 +245,95 @@
+@@ -250,207 +250,95 @@
               value=\\"0\\"
             >
               auto
@@ -336,7 +336,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 - First value
 + Second value
 
-@@ -474,10 +474,89 @@
+@@ -479,10 +479,94 @@
           Parameters of the guest network can be set in the Guest network tab.
           
             </small>
@@ -375,6 +375,11 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +             </button>
 +           </div>
 +         </div>
++         <small
++           class=\\"form-text text-muted\\"
++         >
++           SSID which contains non-standard characters could cause problems on some devices.
++         </small>
 +       </div>
 +       <div
 +         class=\\"form-group\\"
@@ -426,7 +431,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
           class=\\"form-group switch\\"
         >
           <div
-@@ -501,10 +580,11 @@
+@@ -506,10 +590,11 @@
         <div
           class=\\"text-right\\"
         >
@@ -445,7 +450,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 - First value
 + Second value
 
-@@ -22,10 +22,462 @@
+@@ -22,10 +22,467 @@
                 Wi-Fi 1
               </h2>
             </label>
@@ -485,6 +490,11 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +             </button>
 +           </div>
 +         </div>
++         <small
++           class=\\"form-text text-muted\\"
++         >
++           SSID which contains non-standard characters could cause problems on some devices.
++         </small>
 +       </div>
 +       <div
 +         class=\\"form-group\\"

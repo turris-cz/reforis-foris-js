@@ -19,7 +19,7 @@ import {
     twoDevices,
     threeDevices,
 } from "./__fixtures__/wifiSettings";
-import { WiFiSettings, validator } from "../WiFiSettings";
+import { WiFiSettings, validator, byteCount } from "../WiFiSettings";
 
 describe("<WiFiSettings/>", () => {
     let firstRender;
@@ -212,5 +212,9 @@ describe("<WiFiSettings/>", () => {
             { password: "Password must contain at least 8 symbols" },
         ];
         expect(validator(threeDevices)).toEqual(threeDevicesFormErrors);
+    });
+
+    it("ByteCount function", () => {
+        expect(byteCount("abc")).toEqual(3);
     });
 });

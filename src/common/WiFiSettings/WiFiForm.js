@@ -105,6 +105,7 @@ function DeviceForm({
                         label="SSID"
                         value={formData.SSID}
                         error={formErrors.SSID || null}
+                        helpText={HELP_TEXTS.ssid}
                         required
                         onChange={setFormValue((value) => ({
                             devices: {

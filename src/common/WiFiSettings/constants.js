@@ -19,6 +19,9 @@ export const HWMODES = {
     "11a": "5",
 };
 export const HELP_TEXTS = {
+    ssid: _(
+        `SSID which contains non-standard characters could cause problems on some devices.`
+    ),
     password: _(`
         WPA2 pre-shared key, that is required to connect to the network.
     `),

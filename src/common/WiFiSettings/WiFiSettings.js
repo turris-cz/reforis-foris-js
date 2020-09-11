@@ -63,14 +63,10 @@ function prepDataToSubmit(formData) {
     return formData;
 }
 
-function diacriticValidation(string) {
-    for (let i = 0; i < string.length; i++) {
-        const charCode = string.charCodeAt(i);
-        if (charCode < 32 || charCode > 127) {
-            return false;
-        }
-    }
-    return true;
+export function byteCount(string) {
+    const buffer = Buffer.from(string, "utf-8");
+    const count = buffer.byteLength;
+    return count;
 }
 
 export function validator(formData) {
@@ -81,10 +77,8 @@ export function validator(formData) {
         if (device.SSID.length > 32)
             errors.SSID = _("SSID can't be longer than 32 symbols");
         if (device.SSID.length === 0) errors.SSID = _("SSID can't be empty");
-        if (!diacriticValidation(device.SSID))
-            errors.SSID = _(
-                "Your SSID contains non-standard characters. These are not forbidden, but could cause problems on some devices."
-            );
+        if (byteCount(device.SSID) > 32)
+            errors.SSID = _("SSID can't be longer than 32 bytes");
 
         if (device.password.length < 8)
             errors.password = _("Password must contain at least 8 symbols");
@@ -96,6 +90,8 @@ export function validator(formData) {
             guest_wifi_errors.SSID = _("SSID can't be longer than 32 symbols");
         if (device.guest_wifi.SSID.length === 0)
             guest_wifi_errors.SSID = _("SSID can't be empty");
+        if (byteCount(device.guest_wifi.SSID) > 32)
+            guest_wifi_errors.SSID = _("SSID can't be longer than 32 bytes");
 
         if (device.guest_wifi.password.length < 8)
             guest_wifi_errors.password = _(

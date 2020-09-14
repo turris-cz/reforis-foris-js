@@ -22,7 +22,7 @@ exports[`<RebootButton/> Render modal. 1`] = `
             <h5
               class="modal-title"
             >
-              Reboot confirmation
+              Warning!
             </h5>
             <button
               class="close"

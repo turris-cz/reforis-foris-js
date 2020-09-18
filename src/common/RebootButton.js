@@ -63,7 +63,7 @@ RebootModal.propTypes = {
 function RebootModal({ shown, setShown, onReboot }) {
     return (
         <Modal shown={shown} setShown={setShown}>
-            <ModalHeader setShown={setShown} title={_("Reboot confirmation")} />
+            <ModalHeader setShown={setShown} title={_("Warning!")} />
             <ModalBody>
                 <p>{_("Are you sure you want to restart the router?")}</p>
             </ModalBody>

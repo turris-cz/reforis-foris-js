@@ -37,7 +37,11 @@ Alert.defaultProps = {
 
 export function Alert({ type, onDismiss, children }) {
     return (
-        <div className={`alert alert-dismissible alert-${type}`}>
+        <div
+            className={`alert ${
+                onDismiss ? "alert-dismissible" : ""
+            } alert-${type}`}
+        >
             {onDismiss ? (
                 <button type="button" className="close" onClick={onDismiss}>
                     &times;

@@ -157,6 +157,7 @@ function DeviceForm({
                         choices={getHwmodeChoices(formData)}
                         value={formData.hwmode}
                         helpText={HELP_TEXTS.hwmode}
+                        inline
                         onChange={setFormValue((value) => ({
                             devices: {
                                 [deviceIndex]: {

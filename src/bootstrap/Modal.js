@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import { Portal } from "../utils/Portal";
@@ -30,6 +30,19 @@ export function Modal({ shown, setShown, scrollable, children }) {
     const dialogRef = useRef();
 
     useClickOutside(dialogRef, () => setShown(false));
+
+    useEffect(() => {
+        const handleEsc = (event) => {
+            if (event.keyCode === 27) {
+                setShown(false);
+            }
+        };
+        window.addEventListener("keydown", handleEsc);
+
+        return () => {
+            window.removeEventListener("keydown", handleEsc);
+        };
+    }, [setShown]);
 
     return (
         <Portal containerId="modal-container">

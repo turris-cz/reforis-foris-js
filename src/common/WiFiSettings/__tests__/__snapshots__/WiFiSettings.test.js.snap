@@ -570,7 +570,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           GHz
 +         </label>
 +         <div
-+           class=\\"custom-control custom-radio\\"
++           class=\\"custom-control custom-radio custom-control-inline\\"
 +         >
 +           <input
 +             class=\\"custom-control-input\\"
@@ -587,7 +587,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           </label>
 +         </div>
 +         <div
-+           class=\\"custom-control custom-radio\\"
++           class=\\"custom-control custom-radio custom-control-inline\\"
 +         >
 +           <input
 +             checked=\\"\\"

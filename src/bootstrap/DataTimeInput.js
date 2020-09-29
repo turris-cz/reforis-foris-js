@@ -7,7 +7,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import Datetime from "react-datetime/DateTime";
+import Datetime from "react-datetime";
 import moment from "moment/moment";
 import "react-datetime/css/react-datetime.css";
 import "./DataTimeInput.css";

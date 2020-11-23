@@ -18,6 +18,7 @@ Modal.propTypes = {
     /** Callback to manage modal visibility */
     setShown: PropTypes.func.isRequired,
     scrollable: PropTypes.bool,
+    size: PropTypes.string,
 
     /** Modal content use following: `ModalHeader`, `ModalBody`, `ModalFooter` */
     children: PropTypes.oneOfType([
@@ -26,8 +27,9 @@ Modal.propTypes = {
     ]).isRequired,
 };
 
-export function Modal({ shown, setShown, scrollable, children }) {
+export function Modal({ shown, setShown, scrollable, size, children }) {
     const dialogRef = useRef();
+    let modalSize = "modal-";
 
     useClickOutside(dialogRef, () => setShown(false));
 
@@ -44,14 +46,32 @@ export function Modal({ shown, setShown, scrollable, children }) {
         };
     }, [setShown]);
 
+    switch (size) {
+        case "sm":
+            modalSize += "sm";
+            break;
+        case "lg":
+            modalSize += "lg";
+            break;
+        case "xl":
+            modalSize += "xl";
+            break;
+        default:
+            modalSize = "";
+            break;
+    }
+
     return (
         <Portal containerId="modal-container">
-            <div className={`modal fade ${shown ? "show" : ""}`} role="dialog">
+            <div
+                className={`modal fade ${shown ? "show" : ""}`.trim()}
+                role="dialog"
+            >
                 <div
                     ref={dialogRef}
-                    className={`modal-dialog modal-dialog-centered${
-                        scrollable ? " modal-dialog-scrollable" : ""
-                    }`}
+                    className={`modal-dialog ${modalSize} modal-dialog-centered ${
+                        scrollable ? "modal-dialog-scrollable" : ""
+                    }`.trim()}
                     role="document"
                 >
                     <div className="modal-content">{children}</div>

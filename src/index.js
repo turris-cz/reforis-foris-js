@@ -39,7 +39,6 @@ export { Modal, ModalBody, ModalFooter, ModalHeader } from "./bootstrap/Modal";
 // Common
 export { RebootButton } from "./common/RebootButton";
 export { WiFiSettings } from "./common/WiFiSettings/WiFiSettings";
-
 // Form
 export { ForisForm } from "./form/components/ForisForm";
 export {
@@ -70,6 +69,7 @@ export {
 export { ErrorMessage } from "./utils/ErrorMessage";
 export { useClickOutside } from "./utils/hooks";
 export { toLocaleDateString } from "./utils/datetime";
+export { displayCard } from "./utils/displayCard";
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "./utils/forisUrls";

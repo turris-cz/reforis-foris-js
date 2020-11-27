@@ -20,6 +20,8 @@ export const ForisURLs = {
         updates: `${REFORIS_URL_PREFIX}/package-management/updates`,
     },
 
+    storage: `${REFORIS_URL_PREFIX}/storage`,
+
     // Notifications links are used with <Link/> inside Router, thus url subdir is not required.
     overview: "/overview",
     notifications: "/overview#notifications",

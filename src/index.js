@@ -70,6 +70,7 @@ export { ErrorMessage } from "./utils/ErrorMessage";
 export { useClickOutside } from "./utils/hooks";
 export { toLocaleDateString } from "./utils/datetime";
 export { displayCard } from "./utils/displayCard";
+export { isPluginInstalled } from "./utils/isPluginInstalled";
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "./utils/forisUrls";

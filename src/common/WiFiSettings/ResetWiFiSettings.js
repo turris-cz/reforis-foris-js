@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -13,7 +13,7 @@ import { useAlert } from "../../alertContext/AlertContext";
 import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { useAPIPost } from "../../api/hooks";
 import { API_STATE } from "../../api/utils";
-import { buttonFormFieldsSize } from "../../bootstrap/constants";
+import { formFieldsSize } from "../../bootstrap/constants";
 
 ResetWiFiSettings.propTypes = {
     ws: PropTypes.object.isRequired,
@@ -51,7 +51,7 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
     }
 
     return (
-        <>
+        <div className={formFieldsSize}>
             <h2>{_("Reset Wi-Fi Settings")}</h2>
             <p>
                 {_(`
@@ -59,7 +59,7 @@ If a number of wireless cards doesn't match, you may try to reset the Wi-Fi sett
 current Wi-Fi configuration and restore the default values.
         `)}
             </p>
-            <div className={`${buttonFormFieldsSize} text-right`}>
+            <div className="text-right">
                 <Button
                     className="btn-warning"
                     forisFormSize
@@ -70,6 +70,6 @@ current Wi-Fi configuration and restore the default values.
                     {_("Reset Wi-Fi Settings")}
                 </Button>
             </div>
-        </>
+        </div>
     );
 }

@@ -14,7 +14,7 @@
     "license": "GPL-3.0",
     "main": "./src/index.js",
     "dependencies": {
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "immutability-helper": "3.0.1",
         "moment": "^2.24.0",
         "qrcode.react": "^0.9.3",
@@ -29,7 +29,7 @@
         "react-router-dom": "^5.1.2"
     },
     "devDependencies": {
-        "@babel/cli": "^7.8.4",
+        "@babel/cli": "^7.12.10",
         "@babel/core": "^7.9.0",
         "@babel/plugin-transform-runtime": "^7.9.0",
         "@babel/preset-env": "^7.9.0",
@@ -53,10 +53,10 @@
         "react": "16.9.0",
         "react-dom": "16.9.0",
         "react-router-dom": "^5.1.2",
-        "react-styleguidist": "^10.6.2",
+        "react-styleguidist": "^11.1.5",
         "snapshot-diff": "^0.7.0",
         "style-loader": "^1.2.1",
-        "webpack": "^4.43.0"
+        "webpack": "^5.15.0"
     },
     "scripts": {
         "lint": "eslint src",

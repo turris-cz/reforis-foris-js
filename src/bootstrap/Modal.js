@@ -69,7 +69,7 @@ export function Modal({ shown, setShown, scrollable, size, children }) {
             >
                 <div
                     ref={dialogRef}
-                    className={`modal-dialog ${modalSize} modal-dialog-centered ${
+                    className={`${modalSize.trim()} modal-dialog modal-dialog-centered ${
                         scrollable ? "modal-dialog-scrollable" : ""
                     }`.trim()}
                     role="document"

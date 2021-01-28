@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-02-20 17:28+0100\n"
+"POT-Creation-Date: 2021-01-28 11:42+0100\n"
 "PO-Revision-Date: 2019-11-10 16:04+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language: nb\n"
@@ -17,72 +17,43 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
-#: src/validations.js:13
-msgid "This is not a valid IPv4 address."
-msgstr "Dette er ikke en gyldig IPv4-adresse."
-
-#: src/validations.js:14
-msgid "This is not a valid IPv6 address."
-msgstr "Dette er ikke en gyldig IPv6-adresse."
-
-#: src/validations.js:15
-#, fuzzy
-msgid "This is not a valid IPv6 prefix."
-msgstr "Dette er ikke et gyldig IPv6-prefiks."
-
-#: src/validations.js:16
-msgid "This is not a valid domain name."
-msgstr "Dette er ikke et gyldig domenenavn."
-
-#: src/validations.js:17
-msgid "This is not a valid DUID."
-msgstr "Dette er ikke en gyldig DUID."
-
-#: src/validations.js:18
-msgid "This is not a valid MAC address."
-msgstr "Dette er ikke en gyldig MAC-adresse."
-
-#: src/validations.js:19
-msgid "Doesn't contain a list of emails separated by commas."
-msgstr "Inneholder ikke en kommainndelt liste med e-postadresser."
-
-#: src/api/utils.js:58
+#: src/api/utils.js:60
 msgid "The session is expired. Please log in again."
 msgstr "Økten har utløpt. Logg inn igjen."
 
-#: src/api/utils.js:63
+#: src/api/utils.js:65
 msgid "Timeout error occurred."
 msgstr "Tidsavbrudd inntraff."
 
-#: src/api/utils.js:66
+#: src/api/utils.js:68
 msgid "No response received."
 msgstr "Fikk ikke svar."
 
-#: src/api/utils.js:76
+#: src/api/utils.js:78
 #, fuzzy
 msgid "An unknown API error occurred."
 msgstr "Ukjent API-feil."
 
-#: src/common/RebootButton.js:33
+#: src/common/RebootButton.js:27
 #, fuzzy
 msgid "Reboot request failed."
 msgstr "Omstart kreves"
 
-#: src/common/RebootButton.js:54
+#: src/common/RebootButton.js:51
 msgid "Reboot"
 msgstr "Start på ny"
 
-#: src/common/RebootButton.js:69
-msgid "Reboot confirmation"
+#: src/common/RebootButton.js:66
+msgid "Warning!"
 msgstr ""
 
-#: src/common/RebootButton.js:70
+#: src/common/RebootButton.js:68
 msgid "Are you sure you want to restart the router?"
 msgstr ""
 
-#: src/common/RebootButton.js:72
+#: src/common/RebootButton.js:71
 msgid "Cancel"
 msgstr ""
 
@@ -90,7 +61,7 @@ msgstr ""
 msgid "Confirm reboot"
 msgstr ""
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:39
+#: src/common/WiFiSettings/ResetWiFiSettings.js:38
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
 
@@ -98,12 +69,12 @@ msgstr ""
 msgid "Wi-Fi settings are set to defaults."
 msgstr ""
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:53
-#: src/common/WiFiSettings/ResetWiFiSettings.js:69
+#: src/common/WiFiSettings/ResetWiFiSettings.js:55
+#: src/common/WiFiSettings/ResetWiFiSettings.js:70
 msgid "Reset Wi-Fi Settings"
 msgstr ""
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:55
+#: src/common/WiFiSettings/ResetWiFiSettings.js:57
 msgid ""
 "\n"
 "If a number of wireless cards doesn't match, you may try to reset the Wi-"
@@ -112,46 +83,49 @@ msgid ""
 "        "
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:82
+#: src/common/WiFiSettings/WiFiForm.js:92
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:84
-msgid "Enable"
-msgstr "Skru på"
-
-#: src/common/WiFiSettings/WiFiForm.js:215
+#: src/common/WiFiSettings/WiFiForm.js:217
 msgid "auto"
 msgstr "automatisk"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:37
-msgid "Enable Guest Wifi"
+#: src/common/WiFiSettings/WiFiGuestForm.js:42
+#, fuzzy
+msgid "Enable Guest Wi-Fi"
 msgstr "Skru på gjestetrådløsnett"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:77
+#: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr "Passord"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:60
+#: src/common/WiFiSettings/WiFiQRCode.js:71
 msgid "Wi-Fi QR Code"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:80
+#: src/common/WiFiSettings/WiFiQRCode.js:91
 msgid "Download PDF"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiSettings.js:73
-#: src/common/WiFiSettings/WiFiSettings.js:81
+#: src/common/WiFiSettings/WiFiSettings.js:78
+#: src/common/WiFiSettings/WiFiSettings.js:90
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID kan ikke være lengre enn 32 symboler"
 
-#: src/common/WiFiSettings/WiFiSettings.js:74
-#: src/common/WiFiSettings/WiFiSettings.js:82
+#: src/common/WiFiSettings/WiFiSettings.js:79
+#: src/common/WiFiSettings/WiFiSettings.js:92
 msgid "SSID can't be empty"
 msgstr "SSID kan ikke stå tomt."
 
-#: src/common/WiFiSettings/WiFiSettings.js:76
+#: src/common/WiFiSettings/WiFiSettings.js:81
+#: src/common/WiFiSettings/WiFiSettings.js:94
+#, fuzzy
+msgid "SSID can't be longer than 32 bytes"
+msgstr "SSID kan ikke være lengre enn 32 symboler"
+
 #: src/common/WiFiSettings/WiFiSettings.js:84
+#: src/common/WiFiSettings/WiFiSettings.js:97
 msgid "Password must contain at least 8 symbols"
 msgstr "Passordet må inneholde minst 8 tegn"
 
@@ -179,7 +153,18 @@ msgstr "802.11ac - 40 MHz vid kanal"
 msgid "802.11ac - 80 MHz wide channel"
 msgstr "802.11ac - 80 MHz vid kanal"
 
-#: src/common/WiFiSettings/constants.js:21
+#: src/common/WiFiSettings/constants.js:15
+#, fuzzy
+msgid "802.11ac - 160 MHz wide channel"
+msgstr "802.11ac - 80 MHz vid kanal"
+
+#: src/common/WiFiSettings/constants.js:22
+msgid ""
+"SSID which contains non-standard characters could cause problems on some "
+"devices."
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:25
 msgid ""
 "\n"
 "        WPA2 pre-shared key, that is required to connect to the network.\n"
@@ -190,11 +175,11 @@ msgstr ""
 "nettverket).\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:24
+#: src/common/WiFiSettings/constants.js:28
 msgid "If set, network is not visible when scanning for available networks."
 msgstr "Skjuler nettverket fra nettverkslister."
 
-#: src/common/WiFiSettings/constants.js:25
+#: src/common/WiFiSettings/constants.js:31
 msgid ""
 "\n"
 "        The 2.4 GHz band is more widely supported by clients, but tends "
@@ -210,7 +195,7 @@ msgstr ""
 "vanligvis mindre forstyrrelse, men signalet\n"
 "        er mer utsatt for hindringer innendørs."
 
-#: src/common/WiFiSettings/constants.js:29
+#: src/common/WiFiSettings/constants.js:35
 msgid ""
 "\n"
 "        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
@@ -228,7 +213,7 @@ msgstr ""
 "        forvalget på 20 MHz brede kanaler.\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:34
+#: src/common/WiFiSettings/constants.js:40
 msgid ""
 "\n"
 "        Enables Wi-Fi for guests, which is separated from LAN network. "
@@ -248,24 +233,24 @@ msgstr ""
 "\n"
 "        "
 
-#: src/form/components/ForisForm.js:112
+#: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
 msgstr "Innstillinger lagret"
 
-#: src/form/components/ForisForm.js:165
+#: src/form/components/ForisForm.js:183
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr "Endringer du har gjort vil ikke bli lagret. Er du sikker?"
 
-#: src/form/components/SubmitButton.js:32
+#: src/form/components/SubmitButton.js:31
 #, fuzzy
 msgid "Updating"
 msgstr "Oppdaterer"
 
-#: src/form/components/SubmitButton.js:35
+#: src/form/components/SubmitButton.js:34
 msgid "Load settings"
 msgstr "Last inn innstillinger"
 
-#: src/form/components/SubmitButton.js:38
+#: src/form/components/SubmitButton.js:37
 msgid "Save"
 msgstr "Lagre"
 
@@ -273,6 +258,41 @@ msgstr "Lagre"
 msgid "An error occurred while fetching data."
 msgstr "Kunne ikke hente data."
 
+#: src/utils/validations.js:13
+msgid "This is not a valid IPv4 address."
+msgstr "Dette er ikke en gyldig IPv4-adresse."
+
+#: src/utils/validations.js:14
+msgid "This is not a valid IPv6 address."
+msgstr "Dette er ikke en gyldig IPv6-adresse."
+
+#: src/utils/validations.js:15
+#, fuzzy
+msgid "This is not a valid IPv6 prefix."
+msgstr "Dette er ikke et gyldig IPv6-prefiks."
+
+#: src/utils/validations.js:16
+msgid "This is not a valid domain name."
+msgstr "Dette er ikke et gyldig domenenavn."
+
+#: src/utils/validations.js:17
+msgid "This is not a valid DUID."
+msgstr "Dette er ikke en gyldig DUID."
+
+#: src/utils/validations.js:18
+msgid "This is not a valid MAC address."
+msgstr "Dette er ikke en gyldig MAC-adresse."
+
+#: src/utils/validations.js:19
+msgid "Doesn't contain a list of emails separated by commas."
+msgstr "Inneholder ikke en kommainndelt liste med e-postadresser."
+
 #~ msgid "An unknown error occurred. Check the console for more info."
 #~ msgstr "Ukjent feil. Sjekk konsollen for mer info."
+
+#~ msgid "Reboot confirmation"
+#~ msgstr ""
+
+#~ msgid "Enable"
+#~ msgstr "Skru på"
 

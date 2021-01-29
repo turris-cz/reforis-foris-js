@@ -1,6 +1,6 @@
 .PHONY: all install-js watch-js build-js collect-files pack publish-beta publish-latest lint test test-js-update-snapshots create-messages update-messages docs docs-watch clean
 
-DEV_PYTHON=python3.7
+DEV_PYTHON=python3
 VENV_NAME?=venv
 VENV_BIN=$(shell pwd)/$(VENV_NAME)/bin
 

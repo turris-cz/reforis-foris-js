@@ -82,6 +82,7 @@ msgid ""
 "current Wi-Fi configuration and restore the default values.\n"
 "        "
 msgstr ""
+"Un error desconocido ha ocurrido. Compruebe la consola para mas informaciòn."
 
 #: src/common/WiFiSettings/WiFiForm.js:92
 msgid "Wi-Fi ${deviceID + 1}"

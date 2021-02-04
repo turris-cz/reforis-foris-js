@@ -266,4 +266,3 @@ msgstr "Nie zawiera listy e-maili oddzielonych przecinkami."
 
 #~ msgid "Enable Guest Wifi"
 #~ msgstr ""
-

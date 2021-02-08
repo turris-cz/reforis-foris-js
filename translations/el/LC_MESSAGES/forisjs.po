@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-01-28 11:42+0100\n"
-"PO-Revision-Date: 2021-02-05 23:41+0000\n"
+"PO-Revision-Date: 2021-02-09 16:50+0000\n"
 "Last-Translator: Michalis <michalisntovas@yahoo.gr>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/turris/foris-js/el/"
 ">\n"
@@ -54,7 +54,7 @@ msgstr "Είστε βέβαιοι ότι θέλετε να κάνετε επαν
 
 #: src/common/RebootButton.js:71
 msgid "Cancel"
-msgstr "Ακύρωση"
+msgstr "Άκυρο"
 
 #: src/common/RebootButton.js:73
 msgid "Confirm reboot"

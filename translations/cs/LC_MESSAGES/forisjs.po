@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-01-28 11:42+0100\n"
-"PO-Revision-Date: 2021-02-09 16:50+0000\n"
+"PO-Revision-Date: 2021-02-14 15:50+0000\n"
 "Last-Translator: Martin Novák <testxxx1@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/cs/"
 ">\n"
@@ -58,7 +58,7 @@ msgstr ""
 
 #: src/common/RebootButton.js:73
 msgid "Confirm reboot"
-msgstr ""
+msgstr "Potvrdit restart"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:38
 msgid "An error occurred during resetting Wi-Fi settings."
@@ -84,7 +84,7 @@ msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:92
 msgid "Wi-Fi ${deviceID + 1}"
-msgstr ""
+msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:217
 msgid "auto"
@@ -119,9 +119,8 @@ msgstr "SSID je třeba vyplnit"
 
 #: src/common/WiFiSettings/WiFiSettings.js:81
 #: src/common/WiFiSettings/WiFiSettings.js:94
-#, fuzzy
 msgid "SSID can't be longer than 32 bytes"
-msgstr "SSID nemůže být delší než 32 znaků"
+msgstr "SSID nemůže být delší než 32 bajtů"
 
 #: src/common/WiFiSettings/WiFiSettings.js:84
 #: src/common/WiFiSettings/WiFiSettings.js:97

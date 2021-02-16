@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-01-28 11:42+0100\n"
-"PO-Revision-Date: 2021-02-14 15:50+0000\n"
-"Last-Translator: Martin Novák <testxxx1@gmail.com>\n"
+"PO-Revision-Date: 2021-02-17 14:50+0000\n"
+"Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/cs/"
 ">\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.5\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:60
@@ -54,7 +54,7 @@ msgstr "Opravdu chcete router restartovat?"
 
 #: src/common/RebootButton.js:71
 msgid "Cancel"
-msgstr ""
+msgstr "Storno"
 
 #: src/common/RebootButton.js:73
 msgid "Confirm reboot"
@@ -62,16 +62,16 @@ msgstr "Potvrdit restart"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:38
 msgid "An error occurred during resetting Wi-Fi settings."
-msgstr ""
+msgstr "Při resetu nastavení Wi-Fi došlo k chybě."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:41
 msgid "Wi-Fi settings are set to defaults."
-msgstr ""
+msgstr "Nastavení Wi-Fi jsou uvedena do výchozího stavu."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:55
 #: src/common/WiFiSettings/ResetWiFiSettings.js:70
 msgid "Reset Wi-Fi Settings"
-msgstr ""
+msgstr "Resetovat nastavení Wi-Fi"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:57
 msgid ""
@@ -81,6 +81,11 @@ msgid ""
 "current Wi-Fi configuration and restore the default values.\n"
 "        "
 msgstr ""
+"\n"
+"Pokud počet karet pro Wi-Fi neodpovídá skutečnosti, můžete zkusit resetovat "
+"nastavení Wi-Fi. Nezapomeňte ale, že\n"
+"se tím odstraní aktuální konfigurace a vrátí se výchozí hodnoty.\n"
+"        "
 
 #: src/common/WiFiSettings/WiFiForm.js:92
 msgid "Wi-Fi ${deviceID + 1}"
@@ -91,9 +96,8 @@ msgid "auto"
 msgstr "automaticky"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
-#, fuzzy
 msgid "Enable Guest Wi-Fi"
-msgstr "Zapnout WiFi pro hosty"
+msgstr "Zapnout Wi-Fi pro hosty"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
@@ -160,6 +164,8 @@ msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
+"SSID obsahující nestandardní znaky může na některých zařízení způsobovat "
+"problémy."
 
 #: src/common/WiFiSettings/constants.js:25
 msgid ""

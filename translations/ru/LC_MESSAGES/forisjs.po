@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-01-28 11:42+0100\n"
-"PO-Revision-Date: 2021-02-14 15:50+0000\n"
-"Last-Translator: Artem <KovalevArtem.ru@gmail.com>\n"
+"PO-Revision-Date: 2021-02-19 05:50+0000\n"
+"Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-js/"
 "ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.5\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:60
@@ -38,9 +38,8 @@ msgid "An unknown API error occurred."
 msgstr "Неизвестная ошибка программного интерфейса приложения."
 
 #: src/common/RebootButton.js:27
-#, fuzzy
 msgid "Reboot request failed."
-msgstr "Требуется перезагрузка"
+msgstr "Запрос на перезагрузку не выполнен."
 
 #: src/common/RebootButton.js:51
 msgid "Reboot"

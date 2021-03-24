@@ -126,7 +126,7 @@ function DeviceForm({
 
                     <PasswordInput
                         withEye
-                        label="Password"
+                        label={_("Password")}
                         value={formData.password}
                         error={formErrors.password}
                         helpText={HELP_TEXTS.password}
@@ -140,7 +140,7 @@ function DeviceForm({
                     />
 
                     <CheckBox
-                        label="Hide SSID"
+                        label={_("Hide SSID")}
                         helpText={HELP_TEXTS.hidden}
                         checked={formData.hidden}
                         onChange={setFormValue((value) => ({
@@ -170,7 +170,7 @@ function DeviceForm({
                     />
 
                     <Select
-                        label="802.11n/ac mode"
+                        label={_("802.11n/ac mode")}
                         choices={getHtmodeChoices(formData)}
                         value={formData.htmode}
                         helpText={HELP_TEXTS.htmode}
@@ -183,7 +183,7 @@ function DeviceForm({
                     />
 
                     <Select
-                        label="Channel"
+                        label={_("Channel")}
                         choices={getChannelChoices(formData)}
                         value={formData.channel}
                         onChange={setFormValue((value) => ({

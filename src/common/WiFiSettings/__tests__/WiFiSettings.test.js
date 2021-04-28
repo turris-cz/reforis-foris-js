@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -116,7 +116,7 @@ describe("<WiFiSettings/>", () => {
                     enabled: true,
                     guest_wifi: { enabled: false },
                     hidden: false,
-                    htmode: "HT40",
+                    htmode: "HT80",
                     hwmode: "11a",
                     id: 0,
                     password: "TestPass",
@@ -145,7 +145,7 @@ describe("<WiFiSettings/>", () => {
                     enabled: true,
                     guest_wifi: { enabled: false },
                     hidden: false,
-                    htmode: "HT40",
+                    htmode: "HT20",
                     hwmode: "11g",
                     id: 0,
                     password: "TestPass",
@@ -181,7 +181,7 @@ describe("<WiFiSettings/>", () => {
                         password: "test_password",
                     },
                     hidden: false,
-                    htmode: "HT40",
+                    htmode: "HT80",
                     hwmode: "11a",
                     id: 0,
                     password: "TestPass",

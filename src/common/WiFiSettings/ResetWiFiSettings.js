@@ -20,7 +20,7 @@ ResetWiFiSettings.propTypes = {
     endpoint: PropTypes.string.isRequired,
 };
 
-export default function ResetWiFiSettings({ ws, endpoint }) {
+export function ResetWiFiSettings({ ws, endpoint }) {
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
@@ -54,14 +54,13 @@ export default function ResetWiFiSettings({ ws, endpoint }) {
         <div className={formFieldsSize}>
             <h2>{_("Reset Wi-Fi Settings")}</h2>
             <p>
-                {_(`
-If a number of wireless cards doesn't match, you may try to reset the Wi-Fi settings. Note that this will remove the
-current Wi-Fi configuration and restore the default values.
-        `)}
+                {_(`If a number of wireless cards doesn't match, you may try \
+to reset the Wi-Fi settings. Note that this will remove the current Wi-Fi \
+configuration and restore the default values.`)}
             </p>
             <div className="text-right">
                 <Button
-                    className="btn-warning"
+                    className="btn-primary"
                     forisFormSize
                     loading={isLoading}
                     disabled={isLoading}

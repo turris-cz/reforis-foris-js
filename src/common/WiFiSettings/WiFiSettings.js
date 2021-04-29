@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 
 import { ForisForm } from "../../form/components/ForisForm";
 import WiFiForm from "./WiFiForm";
-import ResetWiFiSettings from "./ResetWiFiSettings";
+import { ResetWiFiSettings } from "./ResetWiFiSettings";
 
 WiFiSettings.propTypes = {
     ws: PropTypes.object.isRequired,

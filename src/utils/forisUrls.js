@@ -30,7 +30,7 @@ export const ForisURLs = {
 
     approveUpdates: "/package-management/updates",
     languages: "/package-management/languages",
-    rebootPage: "/administration/reboot",
+    maintenance: "/administration/maintenance",
     luci: "/cgi-bin/luci",
 
     // API

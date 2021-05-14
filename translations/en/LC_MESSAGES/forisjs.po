@@ -37,11 +37,11 @@ msgstr ""
 
 #: src/common/RebootButton.js:27
 msgid "Reboot request failed."
-msgstr "Reboot is required"
+msgstr ""
 
 #: src/common/RebootButton.js:51
 msgid "Reboot"
-msgstr "Reboot"
+msgstr ""
 
 #: src/common/RebootButton.js:66
 msgid "Warning!"
@@ -87,16 +87,15 @@ msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:217
 msgid "auto"
-msgstr "auto"
+msgstr ""
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
-#, fuzzy
 msgid "Enable Guest Wi-Fi"
-msgstr "Enable Guest Wifi"
+msgstr ""
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
-msgstr "Password"
+msgstr ""
 
 #: src/common/WiFiSettings/WiFiQRCode.js:71
 msgid "Wi-Fi QR Code"
@@ -109,52 +108,50 @@ msgstr ""
 #: src/common/WiFiSettings/WiFiSettings.js:78
 #: src/common/WiFiSettings/WiFiSettings.js:90
 msgid "SSID can't be longer than 32 symbols"
-msgstr "SSID can't be longer than 32 symbols"
+msgstr ""
 
 #: src/common/WiFiSettings/WiFiSettings.js:79
 #: src/common/WiFiSettings/WiFiSettings.js:92
 msgid "SSID can't be empty"
-msgstr "SSID can't be empty"
+msgstr ""
 
 #: src/common/WiFiSettings/WiFiSettings.js:81
 #: src/common/WiFiSettings/WiFiSettings.js:94
-#, fuzzy
 msgid "SSID can't be longer than 32 bytes"
-msgstr "SSID can't be longer than 32 symbols"
+msgstr ""
 
 #: src/common/WiFiSettings/WiFiSettings.js:84
 #: src/common/WiFiSettings/WiFiSettings.js:97
 msgid "Password must contain at least 8 symbols"
-msgstr "Password must contain at least 8 symbols"
+msgstr ""
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
-msgstr "Disabled"
+msgstr ""
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"
-msgstr "802.11n - 20 MHz wide channel"
+msgstr ""
 
 #: src/common/WiFiSettings/constants.js:11
 msgid "802.11n - 40 MHz wide channel"
-msgstr "802.11n - 40 MHz wide channel"
+msgstr ""
 
 #: src/common/WiFiSettings/constants.js:12
 msgid "802.11ac - 20 MHz wide channel"
-msgstr "802.11ac - 20 MHz wide channel"
+msgstr ""
 
 #: src/common/WiFiSettings/constants.js:13
 msgid "802.11ac - 40 MHz wide channel"
-msgstr "802.11ac - 40 MHz wide channel"
+msgstr ""
 
 #: src/common/WiFiSettings/constants.js:14
 msgid "802.11ac - 80 MHz wide channel"
-msgstr "802.11ac - 80 MHz wide channel"
+msgstr ""
 
 #: src/common/WiFiSettings/constants.js:15
-#, fuzzy
 msgid "802.11ac - 160 MHz wide channel"
-msgstr "802.11ac - 80 MHz wide channel"
+msgstr ""
 
 #: src/common/WiFiSettings/constants.js:22
 msgid ""
@@ -168,13 +165,10 @@ msgid ""
 "        WPA2 pre-shared key, that is required to connect to the network.\n"
 "    "
 msgstr ""
-"\n"
-"        WPA2 pre-shared key, that is required to connect to the network.\n"
-"    "
 
 #: src/common/WiFiSettings/constants.js:28
 msgid "If set, network is not visible when scanning for available networks."
-msgstr "If set, network is not visible when scanning for available networks."
+msgstr ""
 
 #: src/common/WiFiSettings/constants.js:31
 msgid ""
@@ -185,12 +179,6 @@ msgid ""
 "usually has less interference, but the signal\n"
 "        does not carry so well indoors."
 msgstr ""
-"\n"
-"        The 2.4 GHz band is more widely supported by clients, but tends "
-"to have more interference. The 5 GHz band is a\n"
-"        newer standard and may not be supported by all your devices. It "
-"usually has less interference, but the signal\n"
-"        does not carry so well indoors."
 
 #: src/common/WiFiSettings/constants.js:35
 msgid ""
@@ -202,13 +190,6 @@ msgid ""
 "        option with 20 MHz wide channel.\n"
 "    "
 msgstr ""
-"\n"
-"        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
-"40 MHz wide channels can yield higher\n"
-"        throughput but can cause more interference in the network. If you"
-" don't know what to choose, use the default\n"
-"        option with 20 MHz wide channel.\n"
-"    "
 
 #: src/common/WiFiSettings/constants.js:40
 msgid ""
@@ -221,14 +202,6 @@ msgid ""
 "tab.\n"
 "        "
 msgstr ""
-"\n"
-"        Enables Wi-Fi for guests, which is separated from LAN network. "
-"Devices connected to this network are allowed to\n"
-"        access the internet, but aren't allowed to access other devices "
-"and the configuration interface of the router.\n"
-"        Parameters of the guest network can be set in the Guest network "
-"tab.\n"
-"        "
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -240,15 +213,15 @@ msgstr ""
 
 #: src/form/components/SubmitButton.js:31
 msgid "Updating"
-msgstr "Updating"
+msgstr ""
 
 #: src/form/components/SubmitButton.js:34
 msgid "Load settings"
-msgstr "Load settings"
+msgstr ""
 
 #: src/form/components/SubmitButton.js:37
 msgid "Save"
-msgstr "Save"
+msgstr ""
 
 #: src/utils/ErrorMessage.js:16
 msgid "An error occurred while fetching data."
@@ -256,31 +229,31 @@ msgstr ""
 
 #: src/utils/validations.js:13
 msgid "This is not a valid IPv4 address."
-msgstr "This is not a valid IPv4 address."
+msgstr ""
 
 #: src/utils/validations.js:14
 msgid "This is not a valid IPv6 address."
-msgstr "This is not a valid IPv6 address."
+msgstr ""
 
 #: src/utils/validations.js:15
 msgid "This is not a valid IPv6 prefix."
-msgstr "This is not a valid IPv6 prefix."
+msgstr ""
 
 #: src/utils/validations.js:16
 msgid "This is not a valid domain name."
-msgstr "This is not a valid domain name."
+msgstr ""
 
 #: src/utils/validations.js:17
 msgid "This is not a valid DUID."
-msgstr "This is not a valid DUID."
+msgstr ""
 
 #: src/utils/validations.js:18
 msgid "This is not a valid MAC address."
-msgstr "This is not a valid MAC address."
+msgstr ""
 
 #: src/utils/validations.js:19
 msgid "Doesn't contain a list of emails separated by commas."
-msgstr "Doesn't contain a list of emails separated by commas."
+msgstr ""
 
 #~ msgid "An unknown error occurred. Check the console for more info."
 #~ msgstr ""
@@ -289,5 +262,5 @@ msgstr "Doesn't contain a list of emails separated by commas."
 #~ msgstr ""
 
 #~ msgid "Enable"
-#~ msgstr "Enable"
+#~ msgstr ""
 

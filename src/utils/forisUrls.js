@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -18,6 +18,7 @@ export const ForisURLs = {
     packageManagement: {
         updateSettings: `${REFORIS_URL_PREFIX}/package-management/update-settings`,
         updates: `${REFORIS_URL_PREFIX}/package-management/updates`,
+        packages: `${REFORIS_URL_PREFIX}/package-management/packages`,
     },
 
     storage: `${REFORIS_URL_PREFIX}/storage`,
@@ -29,7 +30,7 @@ export const ForisURLs = {
 
     approveUpdates: "/package-management/updates",
     languages: "/package-management/languages",
-    rebootPage: "/administration/reboot",
+    maintenance: "/administration/maintenance",
     luci: "/cgi-bin/luci",
 
     // API

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -126,7 +126,7 @@ function DeviceForm({
 
                     <PasswordInput
                         withEye
-                        label="Password"
+                        label={_("Password")}
                         value={formData.password}
                         error={formErrors.password}
                         helpText={HELP_TEXTS.password}
@@ -140,7 +140,7 @@ function DeviceForm({
                     />
 
                     <CheckBox
-                        label="Hide SSID"
+                        label={_("Hide SSID")}
                         helpText={HELP_TEXTS.hidden}
                         checked={formData.hidden}
                         onChange={setFormValue((value) => ({
@@ -163,6 +163,10 @@ function DeviceForm({
                                 [deviceIndex]: {
                                     hwmode: { $set: value },
                                     channel: { $set: "0" },
+                                    htmode: {
+                                        $set:
+                                            value === "11a" ? "VHT80" : "HT20",
+                                    },
                                 },
                             },
                         }))}
@@ -170,7 +174,7 @@ function DeviceForm({
                     />
 
                     <Select
-                        label="802.11n/ac mode"
+                        label={_("802.11n/ac mode")}
                         choices={getHtmodeChoices(formData)}
                         value={formData.htmode}
                         helpText={HELP_TEXTS.htmode}
@@ -183,7 +187,7 @@ function DeviceForm({
                     />
 
                     <Select
-                        label="Channel"
+                        label={_("Channel")}
                         choices={getChannelChoices(formData)}
                         value={formData.channel}
                         onChange={setFormValue((value) => ({

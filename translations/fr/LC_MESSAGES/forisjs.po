@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-01-28 11:42+0100\n"
-"PO-Revision-Date: 2019-10-14 11:04+0000\n"
-"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
+"PO-Revision-Date: 2021-02-09 16:50+0000\n"
+"Last-Translator: Yuraï Slovaque <assistance@simplix.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/foris-js/"
+"fr/>\n"
 "Language: fr\n"
-"Language-Team: French "
-"<https://hosted.weblate.org/projects/turris/reforis/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:60
@@ -36,29 +37,28 @@ msgid "An unknown API error occurred."
 msgstr "Une erreur d’API inconnue s’est produite."
 
 #: src/common/RebootButton.js:27
-#, fuzzy
 msgid "Reboot request failed."
-msgstr "Un redémarrage est nécessaire"
+msgstr "La demande de redémarrage a échoué."
 
 #: src/common/RebootButton.js:51
 msgid "Reboot"
-msgstr ""
+msgstr "Redémarrer"
 
 #: src/common/RebootButton.js:66
 msgid "Warning!"
-msgstr ""
+msgstr "Attention !"
 
 #: src/common/RebootButton.js:68
 msgid "Are you sure you want to restart the router?"
-msgstr ""
+msgstr "Voulez-vous vraiment redémarrer le routeur ?"
 
 #: src/common/RebootButton.js:71
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: src/common/RebootButton.js:73
 msgid "Confirm reboot"
-msgstr ""
+msgstr "Confirmer le redémarrage"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:38
 msgid "An error occurred during resetting Wi-Fi settings."
@@ -91,7 +91,6 @@ msgid "auto"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
-#, fuzzy
 msgid "Enable Guest Wi-Fi"
 msgstr "Activer le mode Wi-Fi invité"
 
@@ -272,4 +271,3 @@ msgstr ""
 
 #~ msgid "Enable"
 #~ msgstr "Activer"
-

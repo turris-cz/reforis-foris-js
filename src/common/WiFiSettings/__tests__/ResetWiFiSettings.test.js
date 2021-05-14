@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -14,7 +14,7 @@ import { mockJSONError } from "testUtils/network";
 import { mockSetAlert } from "testUtils/alertContextMock";
 import { ALERT_TYPES } from "../../../bootstrap/Alert";
 
-import ResetWiFiSettings from "../ResetWiFiSettings";
+import { ResetWiFiSettings } from "../ResetWiFiSettings";
 
 describe("<ResetWiFiSettings/>", () => {
     const webSockets = new WebSockets();

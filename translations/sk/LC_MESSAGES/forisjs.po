@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-01-28 11:42+0100\n"
-"PO-Revision-Date: 2021-06-15 19:34+0000\n"
+"PO-Revision-Date: 2021-06-16 11:42+0000\n"
 "Last-Translator: Atec <nil.maho@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-js/"
 "sk/>\n"
@@ -30,7 +30,7 @@ msgstr "Nastala chyba z dôvodu prekročenia časového limitu."
 
 #: src/api/utils.js:68
 msgid "No response received."
-msgstr "Nenastala žiadna odozva."
+msgstr "Nedošlo k žiadnej odozve."
 
 #: src/api/utils.js:78
 msgid "An unknown API error occurred."
@@ -82,10 +82,9 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"Ak počet Wi-Fi karet nezodpovedá skutočnosti, môžete skúsiť resetovať "
+"Ak počet Wi-Fi karet nezodpovedá skutočnosti, pokúste sa resetovať "
 "nastavenia Wi-Fi. Nezabudnite však,\n"
-"že tým dôjde k odstráneniu aktuálnej konfigurácie a obnovia sa východiskové "
-"hodnoty.\n"
+"že sa tým odstráni aktuálna konfigurácia a obnovia sa východiskové hodnoty.\n"
 "        "
 
 #: src/common/WiFiSettings/WiFiForm.js:92
@@ -115,12 +114,12 @@ msgstr "Stiahnuť PDF"
 #: src/common/WiFiSettings/WiFiSettings.js:78
 #: src/common/WiFiSettings/WiFiSettings.js:90
 msgid "SSID can't be longer than 32 symbols"
-msgstr "SSID nemôže obsahovať viac ako 32 znakov"
+msgstr "SSID nemôže mať viac ako 32 znakov"
 
 #: src/common/WiFiSettings/WiFiSettings.js:79
 #: src/common/WiFiSettings/WiFiSettings.js:92
 msgid "SSID can't be empty"
-msgstr "SSID musí byť vyplnené"
+msgstr "SSID nesmie byť prázdne"
 
 #: src/common/WiFiSettings/WiFiSettings.js:81
 #: src/common/WiFiSettings/WiFiSettings.js:94
@@ -134,7 +133,7 @@ msgstr "Heslo musí obsahovať aspoň 8 znakov"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
-msgstr "Vypnuté"
+msgstr "Zakázané"
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"
@@ -181,8 +180,8 @@ msgstr ""
 #: src/common/WiFiSettings/constants.js:28
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
-"Pri zapnutí tejto voľby sa sieť nebude pri vyhľadávaní dostupných sietí "
-"zariadeniam zobrazovať."
+"Pri zapnutí tejto voľby sa sieť zariadeniam pri vyhľadávaní dostupných sietí "
+"nezobrazí."
 
 #: src/common/WiFiSettings/constants.js:31
 msgid ""
@@ -213,7 +212,7 @@ msgstr ""
 "\n"
 "        Týmto sa zmení režim prevádzky 802.11n/ac. 802.11n s kanálom širokým "
 "40 MHz môže poskytnúť vyššiu\n"
-"        priepustnosť, ale tiež spôsobiť vyššie rušenie v sieti. Ak si nie "
+"        priepustnosť, ale tiež spôsobovať vyššie rušenie v sieti. Ak si nie "
 "ste istí, použite východiskovú voľbu\n"
 "        s kanálom širokým 20 MHz.\n"
 "    "
@@ -232,8 +231,8 @@ msgstr ""
 "\n"
 "        Zapnutie Wi-Fi pre hostí, ktorá je oddelená od miestnej siete (LAN). "
 "Zariadenia pripojené do tejto siete majú povolený\n"
-"        prístup na internet, ale zakázané pripojenie k iným zariadeniam a k "
-"rozhraniu nastavení routera.\n"
+"        prístup na internet, ale zakázané pripojenie k iným zariadeniam a ku "
+"konfiguračnému rozhraniu routera.\n"
 "        Parametre siete pre hostí je možné nastaviť na záložke „Sieť pre "
 "hostí“.\n"
 "        "

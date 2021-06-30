@@ -21,7 +21,9 @@ export const ForisURLs = {
         packages: `${REFORIS_URL_PREFIX}/package-management/packages`,
     },
 
+    // Plugins
     storage: `${REFORIS_URL_PREFIX}/storage`,
+    sentinelAgreement: `${REFORIS_URL_PREFIX}/sentinel/agreement`,
 
     // Notifications links are used with <Link/> inside Router, thus url subdir is not required.
     overview: "/overview",

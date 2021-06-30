@@ -53,7 +53,7 @@
         "react": "16.9.0",
         "react-dom": "16.9.0",
         "react-router-dom": "^5.1.2",
-        "react-styleguidist": "^11.1.5",
+        "react-styleguidist": "^11.1.7",
         "snapshot-diff": "^0.7.0",
         "style-loader": "^1.2.1",
         "webpack": "^5.15.0"

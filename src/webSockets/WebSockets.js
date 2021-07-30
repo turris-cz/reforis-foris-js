@@ -21,13 +21,13 @@ export class WebSockets {
     constructor() {
         this.ws = new WebSocket(URL);
         this.ws.onerror = (e) => {
-            if (window.location.pathname !== ForisURLs.login) {
+            if (!window.initialData.logged) {
                 console.error(
                     "WS: Error observed, you aren't logged probably."
                 );
                 window.location.replace(ForisURLs.login);
             }
-            console.error(`WS: Error: ${e}`);
+            console.error("WS: Error:", e);
         };
         this.ws.onmessage = (e) => {
             console.debug(`WS: Received Message: ${e.data}`);

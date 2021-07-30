@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-01-28 11:42+0100\n"
+"POT-Creation-Date: 2021-07-30 16:58+0300\n"
 "PO-Revision-Date: 2021-01-07 01:26+0000\n"
 "Last-Translator: Zoli <boritek@gmail.com>\n"
 "Language: hu\n"
@@ -68,33 +68,37 @@ msgid "Wi-Fi settings are set to defaults."
 msgstr ""
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:55
-#: src/common/WiFiSettings/ResetWiFiSettings.js:70
+#: src/common/WiFiSettings/ResetWiFiSettings.js:69
 msgid "Reset Wi-Fi Settings"
-msgstr ""
-
-#: src/common/WiFiSettings/ResetWiFiSettings.js:57
-msgid ""
-"\n"
-"If a number of wireless cards doesn't match, you may try to reset the Wi-"
-"Fi settings. Note that this will remove the\n"
-"current Wi-Fi configuration and restore the default values.\n"
-"        "
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:92
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:217
+#: src/common/WiFiSettings/WiFiForm.js:129
+#: src/common/WiFiSettings/WiFiGuestForm.js:80
+msgid "Password"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:143
+msgid "Hide SSID"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:177
+msgid "802.11n/ac mode"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:190
+msgid "Channel"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:221
 msgid "auto"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
 msgid "Enable Guest Wi-Fi"
-msgstr ""
-
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
-msgid "Password"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiQRCode.js:71
@@ -259,4 +263,14 @@ msgstr "Nem tartalmaz vesszővel elválasztott e-mail listát."
 
 #~ msgid "An unknown error occurred. Check the console for more info."
 #~ msgstr "Ismeretlen hiba történt. További információ a konzolon talál."
+
+#~ msgid ""
+#~ "\n"
+#~ "If a number of wireless cards "
+#~ "doesn't match, you may try to "
+#~ "reset the Wi-Fi settings. Note "
+#~ "that this will remove the\n"
+#~ "current Wi-Fi configuration and restore the default values.\n"
+#~ "        "
+#~ msgstr ""
 

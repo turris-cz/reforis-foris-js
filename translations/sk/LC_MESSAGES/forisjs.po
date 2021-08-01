@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-07-30 16:58+0300\n"
-"PO-Revision-Date: 2021-06-16 11:42+0000\n"
-"Last-Translator: Atec <nil.maho@gmail.com>\n"
+"PO-Revision-Date: 2021-08-02 07:32+0000\n"
+"Last-Translator: Atec <dr.atec@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-js/"
+"sk/>\n"
 "Language: sk\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-"
-"js/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:60
@@ -83,16 +84,15 @@ msgstr "Heslo"
 
 #: src/common/WiFiSettings/WiFiForm.js:143
 msgid "Hide SSID"
-msgstr ""
+msgstr "Skryť SSID"
 
 #: src/common/WiFiSettings/WiFiForm.js:177
 msgid "802.11n/ac mode"
-msgstr ""
+msgstr "802.11 n/ac mód"
 
 #: src/common/WiFiSettings/WiFiForm.js:190
-#, fuzzy
 msgid "Channel"
-msgstr "Zrušiť"
+msgstr "Kanál"
 
 #: src/common/WiFiSettings/WiFiForm.js:221
 msgid "auto"
@@ -317,4 +317,3 @@ msgstr "Neobsahuje zoznam e-mailov oddelených čiarkami."
 #~ "že sa tým odstráni aktuálna konfigurácia"
 #~ " a obnovia sa východiskové hodnoty.\n"
 #~ "        "
-

@@ -1,13 +1,11 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 /* eslint no-console: "off" */
-
-import { ForisURLs } from "../utils/forisUrls";
 
 const PROTOCOL = window.location.protocol === "http:" ? "ws" : "wss";
 
@@ -21,12 +19,6 @@ export class WebSockets {
     constructor() {
         this.ws = new WebSocket(URL);
         this.ws.onerror = (e) => {
-            if (!window.initialData.logged) {
-                console.error(
-                    "WS: Error observed, you aren't logged probably."
-                );
-                window.location.replace(ForisURLs.login);
-            }
             console.error("WS: Error:", e);
         };
         this.ws.onmessage = (e) => {

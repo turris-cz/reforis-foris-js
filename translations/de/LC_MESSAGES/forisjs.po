@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-07-30 16:58+0300\n"
-"PO-Revision-Date: 2019-09-02 07:21+0000\n"
-"Last-Translator: Ulrich Günther <mail@ulrich-guenther.at>\n"
+"PO-Revision-Date: 2021-09-24 19:38+0000\n"
+"Last-Translator: CryptKid <CryptKiddie@chaospott.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/foris-js/"
+"de/>\n"
 "Language: de\n"
-"Language-Team: German "
-"<https://hosted.weblate.org/projects/turris/reforis/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:60
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "Die Sitzung ist abgelaufen. Bitte erneut anmelden."
 
 #: src/api/utils.js:65
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Eine Zeitüberschreitung ist aufgetreten."
 
 #: src/api/utils.js:68
 msgid "No response received."
@@ -36,9 +37,8 @@ msgid "An unknown API error occurred."
 msgstr "Ein unbekannter API-Fehler ist aufgetreten."
 
 #: src/common/RebootButton.js:27
-#, fuzzy
 msgid "Reboot request failed."
-msgstr "Neustart ist erforderlich"
+msgstr "Neustart-Einleitung fehlgeschlagen."
 
 #: src/common/RebootButton.js:51
 msgid "Reboot"
@@ -46,36 +46,37 @@ msgstr "Systemneustart"
 
 #: src/common/RebootButton.js:66
 msgid "Warning!"
-msgstr ""
+msgstr "Warnung!"
 
 #: src/common/RebootButton.js:68
 msgid "Are you sure you want to restart the router?"
-msgstr ""
+msgstr "Sind Sie sicher, dass Sie den Router neu starten wollen?"
 
 #: src/common/RebootButton.js:71
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #: src/common/RebootButton.js:73
 msgid "Confirm reboot"
-msgstr ""
+msgstr "Neustart bestätigen"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:38
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
+"Ein Fehler ist während der Zurücksetzung der WLAN-Einstellungen aufgetreten."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:41
 msgid "Wi-Fi settings are set to defaults."
-msgstr ""
+msgstr "WLAN-Einstellungen wurden auf Standard zurückgesetzt."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:55
 #: src/common/WiFiSettings/ResetWiFiSettings.js:69
 msgid "Reset Wi-Fi Settings"
-msgstr ""
+msgstr "WLAN-Einstellungen zurücksetzen"
 
 #: src/common/WiFiSettings/WiFiForm.js:92
 msgid "Wi-Fi ${deviceID + 1}"
-msgstr ""
+msgstr "WLAN ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:129
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
@@ -84,32 +85,31 @@ msgstr "Passwort"
 
 #: src/common/WiFiSettings/WiFiForm.js:143
 msgid "Hide SSID"
-msgstr ""
+msgstr "SSID verbergen"
 
 #: src/common/WiFiSettings/WiFiForm.js:177
 msgid "802.11n/ac mode"
-msgstr ""
+msgstr "802.11n/ac Modus"
 
 #: src/common/WiFiSettings/WiFiForm.js:190
 msgid "Channel"
-msgstr ""
+msgstr "Kanal"
 
 #: src/common/WiFiSettings/WiFiForm.js:221
 msgid "auto"
 msgstr "automatisch"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
-#, fuzzy
 msgid "Enable Guest Wi-Fi"
 msgstr "Gast-WLAN aktivieren"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:71
 msgid "Wi-Fi QR Code"
-msgstr ""
+msgstr "WLAN QR-Code"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:91
 msgid "Download PDF"
-msgstr ""
+msgstr "PDF herunterladen"
 
 #: src/common/WiFiSettings/WiFiSettings.js:78
 #: src/common/WiFiSettings/WiFiSettings.js:90
@@ -123,7 +123,6 @@ msgstr "SSID darf nicht leer sein"
 
 #: src/common/WiFiSettings/WiFiSettings.js:81
 #: src/common/WiFiSettings/WiFiSettings.js:94
-#, fuzzy
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID darf nicht länger als 32 Symbole sein"
 
@@ -309,4 +308,3 @@ msgstr "Enthält keine Liste von E-Mails, die durch Kommas getrennt sind."
 #~ "current Wi-Fi configuration and restore the default values.\n"
 #~ "        "
 #~ msgstr ""
-

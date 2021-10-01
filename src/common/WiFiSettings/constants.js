@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -17,6 +17,11 @@ export const HTMODES = {
 export const HWMODES = {
     "11g": "2.4",
     "11a": "5",
+};
+export const ENCRYPTIONMODES = {
+    WPA3: _("WPA3 only"),
+    "WPA2/3": _("WPA3 with WPA2 as fallback (default)"),
+    WPA2: _("WPA2 only"),
 };
 export const HELP_TEXTS = {
     ssid: _(
@@ -42,4 +47,7 @@ export const HELP_TEXTS = {
         access the internet, but aren't allowed to access other devices and the configuration interface of the router.
         Parameters of the guest network can be set in the Guest network tab.
         `),
+    wpa3: _(
+        "The WPA3 standard is the new most secure encryption method that is suggested to be used with any device that supports it. The older devices without WPA3 support require older WPA2. If you experience issues with connecting older devices, try to enable WPA2."
+    ),
 };

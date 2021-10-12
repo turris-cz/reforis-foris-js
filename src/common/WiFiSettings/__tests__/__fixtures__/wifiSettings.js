@@ -230,6 +230,7 @@ export function wifiSettingsFixture() {
                 hwmode: "11a",
                 id: 0,
                 password: "TestPass",
+                encryption: "WPA3",
             },
             {
                 SSID: "Turris",
@@ -308,6 +309,7 @@ export function wifiSettingsFixture() {
                 hwmode: "11g",
                 id: 1,
                 password: "TestPass",
+                encryption: "WPA3",
             },
         ],
     };
@@ -324,6 +326,7 @@ const oneDevice = {
             hwmode: "11a",
             id: 0,
             password: "TestPass",
+            encryption: "WPA3",
         },
     ],
 };
@@ -340,6 +343,7 @@ const twoDevices = {
             hwmode: "11a",
             id: 0,
             password: "TestPass",
+            encryption: "WPA3",
         },
         {
             SSID: "Turris2",
@@ -351,6 +355,7 @@ const twoDevices = {
             hwmode: "11a",
             id: 1,
             password: "TestPass",
+            encryption: "WPA3",
         },
     ],
 };
@@ -367,6 +372,7 @@ const threeDevices = {
             hwmode: "11a",
             id: 0,
             password: "TestPass",
+            encryption: "WPA3",
         },
         {
             SSID: "Turris2",
@@ -378,6 +384,7 @@ const threeDevices = {
             hwmode: "11a",
             id: 1,
             password: "TestPass",
+            encryption: "WPA3",
         },
         {
             SSID: "Turris3",
@@ -389,6 +396,7 @@ const threeDevices = {
             hwmode: "11a",
             id: 2,
             password: "",
+            encryption: "WPA3",
         },
     ],
 };

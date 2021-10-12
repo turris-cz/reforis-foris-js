@@ -337,7 +337,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 - First value
 + Second value
 
-@@ -479,10 +479,94 @@
+@@ -513,10 +513,94 @@
           Parameters of the guest network can be set in the Guest network tab.
           
             </small>
@@ -347,7 +347,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +         class=\\"form-group\\"
 +       >
 +         <label
-+           for=\\"20\\"
++           for=\\"22\\"
 +         >
 +           SSID
 +         </label>
@@ -356,7 +356,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +         >
 +           <input
 +             class=\\"form-control\\"
-+             id=\\"20\\"
++             id=\\"22\\"
 +             type=\\"text\\"
 +             value=\\"TestGuestSSID\\"
 +           />
@@ -386,7 +386,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +         class=\\"form-group\\"
 +       >
 +         <label
-+           for=\\"21\\"
++           for=\\"23\\"
 +         >
 +           Password
 +         </label>
@@ -396,7 +396,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +           <input
 +             autocomplete=\\"new-password\\"
 +             class=\\"form-control  is-invalid\\"
-+             id=\\"21\\"
++             id=\\"23\\"
 +             required=\\"\\"
 +             type=\\"password\\"
 +             value=\\"\\"
@@ -432,7 +432,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
           class=\\"form-group switch\\"
         >
           <div
-@@ -506,10 +590,11 @@
+@@ -540,10 +624,11 @@
         <div
           class=\\"text-right\\"
         >
@@ -451,7 +451,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 - First value
 + Second value
 
-@@ -22,10 +22,467 @@
+@@ -22,10 +22,501 @@
                 Wi-Fi 1
               </h2>
             </label>
@@ -889,17 +889,51 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +       <div
 +         class=\\"form-group\\"
 +       >
++         <label
++           for=\\"10\\"
++         >
++           Encryption
++         </label>
++         <select
++           class=\\"custom-select\\"
++           id=\\"10\\"
++         >
++           <option
++             value=\\"WPA3\\"
++           >
++             WPA3 only
++           </option>
++           <option
++             value=\\"WPA2/3\\"
++           >
++             WPA3 with WPA2 as fallback (default)
++           </option>
++           <option
++             value=\\"WPA2\\"
++           >
++             WPA2 only
++           </option>
++         </select>
++         <small
++           class=\\"form-text text-muted\\"
++         >
++           The WPA3 standard is the new most secure encryption method that is suggested to be used with any device that supports it. The older devices without WPA3 support require older WPA2. If you experience issues with connecting older devices, try to enable WPA2.
++         </small>
++       </div>
++       <div
++         class=\\"form-group\\"
++       >
 +         <div
 +           class=\\"custom-control custom-switch\\"
 +         >
 +           <input
 +             class=\\"custom-control-input\\"
-+             id=\\"10\\"
++             id=\\"11\\"
 +             type=\\"checkbox\\"
 +           />
 +           <label
 +             class=\\"custom-control-label\\"
-+             for=\\"10\\"
++             for=\\"11\\"
 +           >
 +             Enable Guest Wi-Fi
 +           </label>

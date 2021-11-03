@@ -15,7 +15,7 @@ import { Select } from "../../bootstrap/Select";
 import { TextInput } from "../../bootstrap/TextInput";
 import WiFiQRCode from "./WiFiQRCode";
 import WifiGuestForm from "./WiFiGuestForm";
-import { HELP_TEXTS, HTMODES, HWMODES } from "./constants";
+import { HELP_TEXTS, HTMODES, HWMODES, ENCRYPTIONMODES } from "./constants";
 
 WiFiForm.propTypes = {
     formData: PropTypes.shape({ devices: PropTypes.arrayOf(PropTypes.object) })
@@ -63,6 +63,7 @@ DeviceForm.propTypes = {
         htmode: PropTypes.string.isRequired,
         channel: PropTypes.string.isRequired,
         guest_wifi: PropTypes.object.isRequired,
+        encryption: PropTypes.string.isRequired,
     }),
     formErrors: PropTypes.object.isRequired,
     setFormValue: PropTypes.func.isRequired,
@@ -198,6 +199,20 @@ function DeviceForm({
                         {...props}
                     />
 
+                    <Select
+                        label={_("Encryption")}
+                        choices={getEncryptionChoices(formData)}
+                        helpText={HELP_TEXTS.wpa3}
+                        value={formData.encryption}
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [deviceIndex]: { encryption: { $set: value } },
+                            },
+                        }))}
+                        customOrder
+                        {...props}
+                    />
+
                     {hasGuestNetwork && (
                         <WifiGuestForm
                             formData={{
@@ -255,4 +270,11 @@ function getHwmodeChoices(device) {
         label: HWMODES[availableBand.hwmode],
         value: availableBand.hwmode,
     }));
+}
+
+function getEncryptionChoices(device) {
+    if (device.encryption === "custom") {
+        ENCRYPTIONMODES.custom = _("Custom");
+    }
+    return ENCRYPTIONMODES;
 }

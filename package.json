@@ -1,6 +1,6 @@
 {
     "name": "foris",
-    "version": "5.1.14",
+    "version": "5.1.15",
     "description": "Set of components and utils for Foris and its plugins.",
     "author": "CZ.NIC, z.s.p.o.",
     "repository": {
@@ -58,6 +58,9 @@
         "style-loader": "^1.2.1",
         "webpack": "^5.15.0"
     },
+    "resolutions": {
+        "immer": "9.0.6"
+    },
     "scripts": {
         "lint": "eslint src",
         "lint:fix": "eslint --fix src",
@@ -65,6 +68,7 @@
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage --colors",
         "docs": "npx styleguidist build ",
-        "docs:watch": "styleguidist server"
+        "docs:watch": "styleguidist server",
+        "preinstall": "npx npm-force-resolutions"
     }
 }

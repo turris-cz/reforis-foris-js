@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-07-30 16:58+0300\n"
-"PO-Revision-Date: 2021-11-19 11:51+0000\n"
+"PO-Revision-Date: 2021-11-20 12:50+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
 "foris-js/nb_NO/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.9.1\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:60
@@ -92,7 +92,7 @@ msgstr "Skjul SSID"
 
 #: src/common/WiFiSettings/WiFiForm.js:177
 msgid "802.11n/ac mode"
-msgstr ""
+msgstr "802.11n/ac mode"
 
 #: src/common/WiFiSettings/WiFiForm.js:190
 msgid "Channel"

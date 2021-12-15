@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-30 16:58+0300\n"
-"PO-Revision-Date: 2021-02-19 05:50+0000\n"
+"POT-Creation-Date: 2021-12-15 19:17+0300\n"
+"PO-Revision-Date: 2021-08-03 11:35+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
 "Language: ru\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-"
@@ -20,19 +20,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: src/api/utils.js:60
+#: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
 msgstr "Ваша сессия закончилась. Пожалуйста, залогинитесь заново."
 
-#: src/api/utils.js:65
+#: src/api/utils.js:66
 msgid "Timeout error occurred."
 msgstr "Произошла ошибка ожидания ответа сервера."
 
-#: src/api/utils.js:68
+#: src/api/utils.js:69
 msgid "No response received."
 msgstr "Ответ не получен."
 
-#: src/api/utils.js:78
+#: src/api/utils.js:79
 msgid "An unknown API error occurred."
 msgstr "Неизвестная ошибка программного интерфейса приложения."
 
@@ -73,30 +73,38 @@ msgstr "Настройки Wi-Fi установлены по умолчанию.
 msgid "Reset Wi-Fi Settings"
 msgstr "Сбросить настройки Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiForm.js:92
+#: src/common/WiFiSettings/WiFiForm.js:93
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
-#: src/common/WiFiSettings/WiFiForm.js:129
+#: src/common/WiFiSettings/WiFiForm.js:130
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr "Пароль"
 
-#: src/common/WiFiSettings/WiFiForm.js:143
+#: src/common/WiFiSettings/WiFiForm.js:144
 msgid "Hide SSID"
-msgstr ""
+msgstr "Скрыть SSID"
 
-#: src/common/WiFiSettings/WiFiForm.js:177
+#: src/common/WiFiSettings/WiFiForm.js:178
 msgid "802.11n/ac mode"
+msgstr "Режим 802.11n/ac"
+
+#: src/common/WiFiSettings/WiFiForm.js:191
+msgid "Channel"
+msgstr "Канал"
+
+#: src/common/WiFiSettings/WiFiForm.js:203
+msgid "Encryption"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:190
-#, fuzzy
-msgid "Channel"
-msgstr "Отмена"
-
-#: src/common/WiFiSettings/WiFiForm.js:221
+#: src/common/WiFiSettings/WiFiForm.js:236
 msgid "auto"
+msgstr "авто"
+
+#: src/common/WiFiSettings/WiFiForm.js:277
+#, fuzzy
+msgid "Custom"
 msgstr "авто"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
@@ -160,6 +168,18 @@ msgid "802.11ac - 160 MHz wide channel"
 msgstr "802.11ac - ширина канала в 160 МГц"
 
 #: src/common/WiFiSettings/constants.js:22
+msgid "WPA3 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:23
+msgid "WPA3 with WPA2 as fallback (default)"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:24
+msgid "WPA2 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:27
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
@@ -167,7 +187,7 @@ msgstr ""
 "SSID, содержащий нестандартные символы, может вызвать проблемы на "
 "некоторых устройствах."
 
-#: src/common/WiFiSettings/constants.js:25
+#: src/common/WiFiSettings/constants.js:30
 msgid ""
 "\n"
 "        WPA2 pre-shared key, that is required to connect to the network.\n"
@@ -178,13 +198,13 @@ msgstr ""
 "сети.\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:28
+#: src/common/WiFiSettings/constants.js:33
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 "Если установлено, сеть не будет отображаться при сканировании доступных "
 "сетей."
 
-#: src/common/WiFiSettings/constants.js:31
+#: src/common/WiFiSettings/constants.js:36
 msgid ""
 "\n"
 "        The 2.4 GHz band is more widely supported by clients, but tends "
@@ -199,7 +219,7 @@ msgstr ""
 "поддерживаться не всеми вашими устройствами. Он обычно имеет меньше "
 "помех, но сигнал не очень хорошо распространяется в помещении."
 
-#: src/common/WiFiSettings/constants.js:35
+#: src/common/WiFiSettings/constants.js:40
 msgid ""
 "\n"
 "        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
@@ -216,7 +236,7 @@ msgstr ""
 "что выбрать, используйте опцию по умолчанию с каналом шириной 20 МГц.\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:40
+#: src/common/WiFiSettings/constants.js:45
 msgid ""
 "\n"
 "        Enables Wi-Fi for guests, which is separated from LAN network. "
@@ -234,6 +254,14 @@ msgstr ""
 "маршрутизатора. Параметры гостевой сети можно настроить на вкладке "
 "Гостевая сеть.\n"
 "        "
+
+#: src/common/WiFiSettings/constants.js:50
+msgid ""
+"The WPA3 standard is the new most secure encryption method that is "
+"suggested to be used with any device that supports it. The older devices "
+"without WPA3 support require older WPA2. If you experience issues with "
+"connecting older devices, try to enable WPA2."
+msgstr ""
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"

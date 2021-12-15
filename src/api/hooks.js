@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -7,7 +7,6 @@
 
 import { useCallback, useEffect, useReducer, useState } from "react";
 
-import { ForisURLs } from "../utils/forisUrls";
 import {
     API_ACTIONS,
     API_METHODS,
@@ -84,8 +83,8 @@ function APIReducer(state, action) {
                 data: action.payload,
             };
         case API_ACTIONS.FAILURE:
-            if (action.status === 403) {
-                window.location.assign(ForisURLs.login);
+            if (action.status === 401) {
+                window.location.reload();
             }
 
             // Not an API error - should be rethrown.

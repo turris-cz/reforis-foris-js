@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-30 16:58+0300\n"
+"POT-Creation-Date: 2021-12-15 19:17+0300\n"
 "PO-Revision-Date: 2019-02-19 13:34+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: it\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: src/api/utils.js:60
+#: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
 msgstr ""
 
-#: src/api/utils.js:65
+#: src/api/utils.js:66
 msgid "Timeout error occurred."
 msgstr ""
 
-#: src/api/utils.js:68
+#: src/api/utils.js:69
 msgid "No response received."
 msgstr ""
 
-#: src/api/utils.js:78
+#: src/api/utils.js:79
 msgid "An unknown API error occurred."
 msgstr ""
 
@@ -71,29 +71,37 @@ msgstr ""
 msgid "Reset Wi-Fi Settings"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:92
+#: src/common/WiFiSettings/WiFiForm.js:93
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:129
+#: src/common/WiFiSettings/WiFiForm.js:130
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:143
+#: src/common/WiFiSettings/WiFiForm.js:144
 msgid "Hide SSID"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:177
+#: src/common/WiFiSettings/WiFiForm.js:178
 msgid "802.11n/ac mode"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:190
+#: src/common/WiFiSettings/WiFiForm.js:191
 msgid "Channel"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:221
+#: src/common/WiFiSettings/WiFiForm.js:203
+msgid "Encryption"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:236
 msgid "auto"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:277
+msgid "Custom"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
@@ -157,23 +165,35 @@ msgid "802.11ac - 160 MHz wide channel"
 msgstr ""
 
 #: src/common/WiFiSettings/constants.js:22
+msgid "WPA3 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:23
+msgid "WPA3 with WPA2 as fallback (default)"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:24
+msgid "WPA2 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:27
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:25
+#: src/common/WiFiSettings/constants.js:30
 msgid ""
 "\n"
 "        WPA2 pre-shared key, that is required to connect to the network.\n"
 "    "
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:28
+#: src/common/WiFiSettings/constants.js:33
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:31
+#: src/common/WiFiSettings/constants.js:36
 msgid ""
 "\n"
 "        The 2.4 GHz band is more widely supported by clients, but tends "
@@ -183,7 +203,7 @@ msgid ""
 "        does not carry so well indoors."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:35
+#: src/common/WiFiSettings/constants.js:40
 msgid ""
 "\n"
 "        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
@@ -194,7 +214,7 @@ msgid ""
 "    "
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:40
+#: src/common/WiFiSettings/constants.js:45
 msgid ""
 "\n"
 "        Enables Wi-Fi for guests, which is separated from LAN network. "
@@ -204,6 +224,14 @@ msgid ""
 "        Parameters of the guest network can be set in the Guest network "
 "tab.\n"
 "        "
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:50
+msgid ""
+"The WPA3 standard is the new most secure encryption method that is "
+"suggested to be used with any device that supports it. The older devices "
+"without WPA3 support require older WPA2. If you experience issues with "
+"connecting older devices, try to enable WPA2."
 msgstr ""
 
 #: src/form/components/ForisForm.js:121

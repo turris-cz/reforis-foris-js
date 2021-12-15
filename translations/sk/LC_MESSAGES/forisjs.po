@@ -7,32 +7,31 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-30 16:58+0300\n"
+"POT-Creation-Date: 2021-12-15 19:17+0300\n"
 "PO-Revision-Date: 2021-09-22 16:38+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-js/"
-"sk/>\n"
 "Language: sk\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-"
+"js/sk/>\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: src/api/utils.js:60
+#: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
 msgstr "Platnosť relácie vypršala. Prihláste sa znovu, prosím."
 
-#: src/api/utils.js:65
+#: src/api/utils.js:66
 msgid "Timeout error occurred."
 msgstr "Nastala chyba z dôvodu prekročenia časového limitu."
 
-#: src/api/utils.js:68
+#: src/api/utils.js:69
 msgid "No response received."
 msgstr "Nedošlo k žiadnej odozve."
 
-#: src/api/utils.js:78
+#: src/api/utils.js:79
 msgid "An unknown API error occurred."
 msgstr "Nastala neznáma chyba v aplikačnom programovom rozhraní."
 
@@ -73,29 +72,38 @@ msgstr "Nastavenia Wi-Fi sa zmenili do východiskového stavu."
 msgid "Reset Wi-Fi Settings"
 msgstr "Resetovať nastavenia Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiForm.js:92
+#: src/common/WiFiSettings/WiFiForm.js:93
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
-#: src/common/WiFiSettings/WiFiForm.js:129
+#: src/common/WiFiSettings/WiFiForm.js:130
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr "Heslo"
 
-#: src/common/WiFiSettings/WiFiForm.js:143
+#: src/common/WiFiSettings/WiFiForm.js:144
 msgid "Hide SSID"
 msgstr "Skryť SSID"
 
-#: src/common/WiFiSettings/WiFiForm.js:177
+#: src/common/WiFiSettings/WiFiForm.js:178
 msgid "802.11n/ac mode"
 msgstr "802.11 n/ac mód"
 
-#: src/common/WiFiSettings/WiFiForm.js:190
+#: src/common/WiFiSettings/WiFiForm.js:191
 msgid "Channel"
 msgstr "Kanál"
 
-#: src/common/WiFiSettings/WiFiForm.js:221
+#: src/common/WiFiSettings/WiFiForm.js:203
+msgid "Encryption"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:236
 msgid "auto"
+msgstr "automaticky"
+
+#: src/common/WiFiSettings/WiFiForm.js:277
+#, fuzzy
+msgid "Custom"
 msgstr "automaticky"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
@@ -159,6 +167,18 @@ msgid "802.11ac - 160 MHz wide channel"
 msgstr "802.11ac – šírka kanála 160 MHz"
 
 #: src/common/WiFiSettings/constants.js:22
+msgid "WPA3 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:23
+msgid "WPA3 with WPA2 as fallback (default)"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:24
+msgid "WPA2 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:27
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
@@ -166,7 +186,7 @@ msgstr ""
 "SSID s neštandardnými znakmi môže na niektorých zariadeniach spôsobovať "
 "problémy."
 
-#: src/common/WiFiSettings/constants.js:25
+#: src/common/WiFiSettings/constants.js:30
 msgid ""
 "\n"
 "        WPA2 pre-shared key, that is required to connect to the network.\n"
@@ -177,13 +197,13 @@ msgstr ""
 "sieti.\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:28
+#: src/common/WiFiSettings/constants.js:33
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 "Pri zapnutí tejto voľby sa sieť zariadeniam pri vyhľadávaní dostupných "
 "sietí nezobrazí."
 
-#: src/common/WiFiSettings/constants.js:31
+#: src/common/WiFiSettings/constants.js:36
 msgid ""
 "\n"
 "        The 2.4 GHz band is more widely supported by clients, but tends "
@@ -199,7 +219,7 @@ msgstr ""
 "vaše zariadenia.\n"
 "        Rušenie je obvykle nižšie, ale signál sa vnútri budov šíri horšie."
 
-#: src/common/WiFiSettings/constants.js:35
+#: src/common/WiFiSettings/constants.js:40
 msgid ""
 "\n"
 "        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
@@ -210,14 +230,14 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Týmto sa zmení režim prevádzky 802.11n/ac. 802.11n so šírkou kanála "
-"40 MHz môže poskytnúť vyššiu\n"
-"        priepustnosť, ale tiež spôsobovať vyššie rušenie v sieti. Ak si nie "
-"ste istí, použite východiskovú voľbu\n"
+"        Týmto sa zmení režim prevádzky 802.11n/ac. 802.11n so šírkou "
+"kanála 40 MHz môže poskytnúť vyššiu\n"
+"        priepustnosť, ale tiež spôsobovať vyššie rušenie v sieti. Ak si "
+"nie ste istí, použite východiskovú voľbu\n"
 "        so šírkou kanála 20 MHz.\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:40
+#: src/common/WiFiSettings/constants.js:45
 msgid ""
 "\n"
 "        Enables Wi-Fi for guests, which is separated from LAN network. "
@@ -236,6 +256,14 @@ msgstr ""
 "        Parametre siete pre hostí je možné nastaviť na záložke „Sieť pre "
 "hostí“.\n"
 "        "
+
+#: src/common/WiFiSettings/constants.js:50
+msgid ""
+"The WPA3 standard is the new most secure encryption method that is "
+"suggested to be used with any device that supports it. The older devices "
+"without WPA3 support require older WPA2. If you experience issues with "
+"connecting older devices, try to enable WPA2."
+msgstr ""
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -317,3 +345,4 @@ msgstr "Neobsahuje zoznam e-mailov oddelených čiarkami."
 #~ "že sa tým odstráni aktuálna konfigurácia"
 #~ " a obnovia sa východiskové hodnoty.\n"
 #~ "        "
+

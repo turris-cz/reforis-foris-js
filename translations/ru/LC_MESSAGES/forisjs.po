@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-12-15 19:17+0300\n"
-"PO-Revision-Date: 2021-08-03 11:35+0000\n"
+"PO-Revision-Date: 2021-12-18 00:07+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-js/"
+"ru/>\n"
 "Language: ru\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-"
-"js/ru/>\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.10\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:61
@@ -96,16 +97,15 @@ msgstr "Канал"
 
 #: src/common/WiFiSettings/WiFiForm.js:203
 msgid "Encryption"
-msgstr ""
+msgstr "Шифрование"
 
 #: src/common/WiFiSettings/WiFiForm.js:236
 msgid "auto"
 msgstr "авто"
 
 #: src/common/WiFiSettings/WiFiForm.js:277
-#, fuzzy
 msgid "Custom"
-msgstr "авто"
+msgstr "Ручная настройка"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
 msgid "Enable Guest Wi-Fi"
@@ -169,15 +169,15 @@ msgstr "802.11ac - ширина канала в 160 МГц"
 
 #: src/common/WiFiSettings/constants.js:22
 msgid "WPA3 only"
-msgstr ""
+msgstr "Только WPA3"
 
 #: src/common/WiFiSettings/constants.js:23
 msgid "WPA3 with WPA2 as fallback (default)"
-msgstr ""
+msgstr "WPA3 с WPA2 в качестве резервного (по умолчанию)"
 
 #: src/common/WiFiSettings/constants.js:24
 msgid "WPA2 only"
-msgstr ""
+msgstr "Только WPA2"
 
 #: src/common/WiFiSettings/constants.js:27
 msgid ""
@@ -231,9 +231,9 @@ msgid ""
 msgstr ""
 "\n"
 "        Измените это, чтобы настроить режим работы 802.11n/ac. 802.11n с "
-"каналами шириной 40 МГц может обеспечить более высокую пропускную "
-"способность, но может вызывать больше помех в сети. Если вы не знаете, "
-"что выбрать, используйте опцию по умолчанию с каналом шириной 20 МГц.\n"
+"каналами шириной 40 МГц обеспечивает более высокую пропускную способность, "
+"но может вызывать больше помех в сети. Если вы не знаете, что выбрать, "
+"используйте опцию по умолчанию с каналом шириной 20 МГц.\n"
 "    "
 
 #: src/common/WiFiSettings/constants.js:45
@@ -262,6 +262,10 @@ msgid ""
 "without WPA3 support require older WPA2. If you experience issues with "
 "connecting older devices, try to enable WPA2."
 msgstr ""
+"Стандарт WPA3 - это новый наиболее безопасный метод шифрования, который "
+"предлагается использовать с любым устройством, которое его поддерживает. "
+"Старые устройства без поддержки WPA3 требуют старого WPA2. Если у вас "
+"возникли проблемы с подключением старых устройств, попробуйте включить WPA2."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -345,4 +349,3 @@ msgstr "Не содержит списка электронных адресов
 #~ "конфигурации Wi-Fi и восстановлению "
 #~ "значений по умолчанию.\n"
 #~ "        "
-

@@ -1,0 +1,286 @@
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-12-15 19:17+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: src/api/utils.js:61
+msgid "The session is expired. Please log in again."
+msgstr ""
+
+#: src/api/utils.js:66
+msgid "Timeout error occurred."
+msgstr ""
+
+#: src/api/utils.js:69
+msgid "No response received."
+msgstr ""
+
+#: src/api/utils.js:79
+msgid "An unknown API error occurred."
+msgstr ""
+
+#: src/common/RebootButton.js:27
+msgid "Reboot request failed."
+msgstr ""
+
+#: src/common/RebootButton.js:51
+msgid "Reboot"
+msgstr ""
+
+#: src/common/RebootButton.js:66
+msgid "Warning!"
+msgstr ""
+
+#: src/common/RebootButton.js:68
+msgid "Are you sure you want to restart the router?"
+msgstr ""
+
+#: src/common/RebootButton.js:71
+msgid "Cancel"
+msgstr ""
+
+#: src/common/RebootButton.js:73
+msgid "Confirm reboot"
+msgstr ""
+
+#: src/common/WiFiSettings/ResetWiFiSettings.js:38
+msgid "An error occurred during resetting Wi-Fi settings."
+msgstr ""
+
+#: src/common/WiFiSettings/ResetWiFiSettings.js:41
+msgid "Wi-Fi settings are set to defaults."
+msgstr ""
+
+#: src/common/WiFiSettings/ResetWiFiSettings.js:55
+#: src/common/WiFiSettings/ResetWiFiSettings.js:69
+msgid "Reset Wi-Fi Settings"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:93
+msgid "Wi-Fi ${deviceID + 1}"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:130
+#: src/common/WiFiSettings/WiFiGuestForm.js:80
+msgid "Password"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:144
+msgid "Hide SSID"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:178
+msgid "802.11n/ac mode"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:191
+msgid "Channel"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:203
+msgid "Encryption"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:236
+msgid "auto"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:277
+msgid "Custom"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiGuestForm.js:42
+msgid "Enable Guest Wi-Fi"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiQRCode.js:71
+msgid "Wi-Fi QR Code"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiQRCode.js:91
+msgid "Download PDF"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiSettings.js:78
+#: src/common/WiFiSettings/WiFiSettings.js:90
+msgid "SSID can't be longer than 32 symbols"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiSettings.js:79
+#: src/common/WiFiSettings/WiFiSettings.js:92
+msgid "SSID can't be empty"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiSettings.js:81
+#: src/common/WiFiSettings/WiFiSettings.js:94
+msgid "SSID can't be longer than 32 bytes"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiSettings.js:84
+#: src/common/WiFiSettings/WiFiSettings.js:97
+msgid "Password must contain at least 8 symbols"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:9
+msgid "Disabled"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:10
+msgid "802.11n - 20 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:11
+msgid "802.11n - 40 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:12
+msgid "802.11ac - 20 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:13
+msgid "802.11ac - 40 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:14
+msgid "802.11ac - 80 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:15
+msgid "802.11ac - 160 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:22
+msgid "WPA3 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:23
+msgid "WPA3 with WPA2 as fallback (default)"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:24
+msgid "WPA2 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:27
+msgid ""
+"SSID which contains non-standard characters could cause problems on some "
+"devices."
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:30
+msgid ""
+"\n"
+"        WPA2 pre-shared key, that is required to connect to the network.\n"
+"    "
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:33
+msgid "If set, network is not visible when scanning for available networks."
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:36
+msgid ""
+"\n"
+"        The 2.4 GHz band is more widely supported by clients, but tends "
+"to have more interference. The 5 GHz band is a\n"
+"        newer standard and may not be supported by all your devices. It "
+"usually has less interference, but the signal\n"
+"        does not carry so well indoors."
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:40
+msgid ""
+"\n"
+"        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
+"40 MHz wide channels can yield higher\n"
+"        throughput but can cause more interference in the network. If you"
+" don't know what to choose, use the default\n"
+"        option with 20 MHz wide channel.\n"
+"    "
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:45
+msgid ""
+"\n"
+"        Enables Wi-Fi for guests, which is separated from LAN network. "
+"Devices connected to this network are allowed to\n"
+"        access the internet, but aren't allowed to access other devices "
+"and the configuration interface of the router.\n"
+"        Parameters of the guest network can be set in the Guest network "
+"tab.\n"
+"        "
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:50
+msgid ""
+"The WPA3 standard is the new most secure encryption method that is "
+"suggested to be used with any device that supports it. The older devices "
+"without WPA3 support require older WPA2. If you experience issues with "
+"connecting older devices, try to enable WPA2."
+msgstr ""
+
+#: src/form/components/ForisForm.js:121
+msgid "Settings saved successfully"
+msgstr ""
+
+#: src/form/components/ForisForm.js:183
+msgid "Changes you made may not be saved. Are you sure you want to leave?"
+msgstr ""
+
+#: src/form/components/SubmitButton.js:31
+msgid "Updating"
+msgstr ""
+
+#: src/form/components/SubmitButton.js:34
+msgid "Load settings"
+msgstr ""
+
+#: src/form/components/SubmitButton.js:37
+msgid "Save"
+msgstr ""
+
+#: src/utils/ErrorMessage.js:16
+msgid "An error occurred while fetching data."
+msgstr ""
+
+#: src/utils/validations.js:13
+msgid "This is not a valid IPv4 address."
+msgstr ""
+
+#: src/utils/validations.js:14
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: src/utils/validations.js:15
+msgid "This is not a valid IPv6 prefix."
+msgstr ""
+
+#: src/utils/validations.js:16
+msgid "This is not a valid domain name."
+msgstr ""
+
+#: src/utils/validations.js:17
+msgid "This is not a valid DUID."
+msgstr ""
+
+#: src/utils/validations.js:18
+msgid "This is not a valid MAC address."
+msgstr ""
+
+#: src/utils/validations.js:19
+msgid "Doesn't contain a list of emails separated by commas."
+msgstr ""

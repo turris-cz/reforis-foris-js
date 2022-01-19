@@ -82,6 +82,10 @@ export function validator(formData) {
 
         if (device.password.length < 8)
             errors.password = _("Password must contain at least 8 symbols");
+        if (device.password.length >= 64)
+            errors.password = _(
+                "Password must not contain more than 63 symbols"
+            );
 
         if (!device.guest_wifi.enabled) return errors;
 
@@ -96,6 +100,10 @@ export function validator(formData) {
         if (device.guest_wifi.password.length < 8)
             guest_wifi_errors.password = _(
                 "Password must contain at least 8 symbols"
+            );
+        if (device.guest_wifi.password.length >= 64)
+            guest_wifi_errors.password = _(
+                "Password must not contain more than 63 symbols"
             );
 
         if (guest_wifi_errors.SSID || guest_wifi_errors.password) {

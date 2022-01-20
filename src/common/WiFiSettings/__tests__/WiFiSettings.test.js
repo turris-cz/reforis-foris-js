@@ -26,6 +26,7 @@ describe("<WiFiSettings/>", () => {
     let getAllByText;
     let getAllByLabelText;
     let getByText;
+    let getByLabelText;
     let asFragment;
     const endpoint = "/reforis/api/wifi";
 
@@ -41,6 +42,7 @@ describe("<WiFiSettings/>", () => {
         asFragment = renderRes.asFragment;
         getAllByText = renderRes.getAllByText;
         getAllByLabelText = renderRes.getAllByLabelText;
+        getByLabelText = renderRes.getByLabelText;
         getByText = renderRes.getByText;
         mockAxios.mockResponse({ data: wifiSettingsFixture() });
         await wait(() => renderRes.getByText("Wi-Fi 1"));
@@ -51,7 +53,6 @@ describe("<WiFiSettings/>", () => {
         const webSockets = new WebSockets();
         const { getByText } = render(
             <WiFiSettings
-                ws={webSockets}
                 ws={webSockets}
                 endpoint={endpoint}
                 resetEndpoint="foo"
@@ -219,5 +220,25 @@ describe("<WiFiSettings/>", () => {
 
     it("ByteCount function", () => {
         expect(byteCount("abc")).toEqual(3);
+    });
+
+    it("Should validate password length", () => {
+        const shortErrorFeedback = /Password must contain/i;
+        const longErrorFeedback = /Password must not contain/i;
+
+        fireEvent.click(getByText("Wi-Fi 1"));
+
+        const passwordInput = getByLabelText("Password");
+
+        const changePassword = (value) =>
+            fireEvent.change(passwordInput, { target: { value } });
+
+        changePassword("12");
+        expect(getByText(shortErrorFeedback)).toBeDefined();
+
+        changePassword(
+            "longpasswordlongpasswordlongpasswordlongpasswordlongpasswordlong"
+        );
+        expect(getByText(longErrorFeedback)).toBeDefined();
     });
 });

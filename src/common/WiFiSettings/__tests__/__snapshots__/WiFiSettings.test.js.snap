@@ -394,7 +394,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +           class=\\"input-group\\"
 +         >
 +           <input
-+             autocomplete=\\"new-password\\"
++             autocomplete=\\"current-password\\"
 +             class=\\"form-control  is-invalid\\"
 +             id=\\"23\\"
 +             required=\\"\\"
@@ -509,7 +509,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           class=\\"input-group\\"
 +         >
 +           <input
-+             autocomplete=\\"new-password\\"
++             autocomplete=\\"current-password\\"
 +             class=\\"form-control\\"
 +             id=\\"5\\"
 +             required=\\"\\"

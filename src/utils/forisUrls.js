@@ -36,5 +36,6 @@ export const ForisURLs = {
     luci: "/cgi-bin/luci",
 
     // API
+    about: `${REFORIS_API_URL_PREFIX}/about`,
     reboot: `${REFORIS_API_URL_PREFIX}/reboot`,
 };

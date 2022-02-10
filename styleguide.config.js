@@ -52,6 +52,12 @@ module.exports = {
         },
 
         {
+            name: "Customization Context",
+            components: ["src/customizationContext/CustomizationContext.js"],
+            exampleMode: "expand",
+            usageMode: "expand",
+        },
+        {
             name: "Bootstrap components",
             description: "Set of bootstrap components.",
             components: "src/bootstrap/*.js",

@@ -21,9 +21,14 @@ DownloadButton.defaultProps = {
     className: "btn-primary",
 };
 
-export function DownloadButton({ href, className, children }) {
+export function DownloadButton({ href, className, children, ...props }) {
     return (
-        <a href={href} className={`btn ${className}`.trim()} download>
+        <a
+            href={href}
+            className={`btn ${className}`.trim()}
+            {...props}
+            download
+        >
             {children}
         </a>
     );

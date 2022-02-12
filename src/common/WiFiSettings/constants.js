@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -13,6 +13,10 @@ export const HTMODES = {
     VHT40: _("802.11ac - 40 MHz wide channel"),
     VHT80: _("802.11ac - 80 MHz wide channel"),
     VHT160: _("802.11ac - 160 MHz wide channel"),
+    HE20: _("802.11ax - 20 MHz wide channel"),
+    HE40: _("802.11ax - 40 MHz wide channel"),
+    HE80: _("802.11ax - 80 MHz wide channel"),
+    HE160: _("802.11ax - 160 MHz wide channel"),
 };
 export const HWMODES = {
     "11g": "2.4",

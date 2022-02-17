@@ -209,7 +209,6 @@ function DeviceForm({
                                 [deviceIndex]: { encryption: { $set: value } },
                             },
                         }))}
-                        customOrder
                         {...props}
                     />
 

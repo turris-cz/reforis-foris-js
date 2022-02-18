@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -21,14 +21,17 @@ PasswordInput.propTypes = {
     helpText: PropTypes.string,
     /** Use show/hide password button. */
     withEye: PropTypes.bool,
+    /** Use new-password in autocomplete attribute. */
+    newPass: PropTypes.bool,
 };
 
-export function PasswordInput({ withEye, ...props }) {
+export function PasswordInput({ withEye, newPass, ...props }) {
     const [isHidden, setHidden] = useState(true);
+
     return (
         <Input
             type={withEye && !isHidden ? "text" : "password"}
-            autoComplete={isHidden ? "new-password" : null}
+            autoComplete={newPass ? "new-password" : "current-password"}
             {...props}
         >
             {withEye ? (

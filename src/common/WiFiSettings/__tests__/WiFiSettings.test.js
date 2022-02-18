@@ -147,7 +147,7 @@ describe("<WiFiSettings/>", () => {
                     enabled: true,
                     guest_wifi: { enabled: false },
                     hidden: false,
-                    htmode: "HT20",
+                    htmode: "VHT80",
                     hwmode: "11g",
                     id: 0,
                     password: "TestPass",

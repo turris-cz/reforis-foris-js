@@ -82,6 +82,7 @@ export {
     validateIPv6Address,
     validateIPv6Prefix,
     validateDomain,
+    validateHostname,
     validateDUID,
     validateMAC,
     validateMultipleEmails,

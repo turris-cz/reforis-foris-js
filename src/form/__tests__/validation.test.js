@@ -1,16 +1,17 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import {
-    validateDomain,
-    validateDUID,
     validateIPv4Address,
     validateIPv6Address,
     validateIPv6Prefix,
+    validateDomain,
+    validateHostname,
+    validateDUID,
     validateMAC,
 } from "utils/validations";
 
@@ -66,6 +67,15 @@ describe("Validation functions", () => {
     it("validateDomain invalid", () => {
         expect(validateDomain("test/")).not.toBe(undefined);
         expect(validateDomain(".")).not.toBe(undefined);
+    });
+
+    it("validateHostname valid", () => {
+        expect(validateHostname("new-android")).toBe(undefined);
+        expect(validateHostname("local")).toBe(undefined);
+    });
+    it("validateHostname invalid", () => {
+        expect(validateHostname("-android")).not.toBe(undefined);
+        expect(validateHostname("local.")).not.toBe(undefined);
     });
 
     it("validateDUID valid", () => {

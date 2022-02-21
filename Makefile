@@ -1,4 +1,15 @@
+# Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+#
+# This is free software, licensed under the GNU General Public License v3.
+# See /LICENSE for more information.
+
 .PHONY: all install-js watch-js build-js collect-files pack publish-beta publish-latest lint test test-js-update-snapshots create-messages update-messages docs docs-watch clean
+
+PROJECT="Foris JS"
+# Retrieve Foris JS version from package.json 
+VERSION= $(shell sed -En "s/.*version['\"]: ['\"](.+)['\"].*/\1/p" package.json)
+COPYRIGHT_HOLDER="CZ.NIC, z.s.p.o. (https://www.nic.cz/)"
+MSGID_BUGS_ADDRESS="tech.support@turris.cz"
 
 DEV_PYTHON=python3
 VENV_NAME?=venv
@@ -55,9 +66,9 @@ test-js-update-snapshots:
 	npm test -- -u
 
 create-messages: venv
-	$(VENV_BIN)/pybabel extract -F babel.cfg -o ./translations/forisjs.pot .
+	$(VENV_BIN)/pybabel extract -F babel.cfg -o ./translations/forisjs.pot . --project=$(PROJECT) --version=$(VERSION) --copyright-holder=$(COPYRIGHT_HOLDER) --msgid-bugs-address=$(MSGID_BUGS_ADDRESS)
 update-messages: venv
-	$(VENV_BIN)/pybabel update -i ./translations/forisjs.pot -d ./translations -D forisjs
+	$(VENV_BIN)/pybabel update -i ./translations/forisjs.pot -d ./translations -D forisjs --update-header-comment
 
 docs:
 	npm run-script docs

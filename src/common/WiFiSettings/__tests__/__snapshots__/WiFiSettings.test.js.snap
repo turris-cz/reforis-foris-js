@@ -627,6 +627,11 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           id=\\"8\\"
 +         >
 +           <option
++             value=\\"NOHT\\"
++           >
++             Disabled
++           </option>
++           <option
 +             value=\\"HT20\\"
 +           >
 +             802.11n - 20 MHz wide channel
@@ -635,11 +640,6 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +             value=\\"HT40\\"
 +           >
 +             802.11n - 40 MHz wide channel
-+           </option>
-+           <option
-+             value=\\"NOHT\\"
-+           >
-+             Disabled
 +           </option>
 +           <option
 +             value=\\"VHT20\\"

@@ -64,6 +64,7 @@ DeviceForm.propTypes = {
         channel: PropTypes.string.isRequired,
         guest_wifi: PropTypes.object.isRequired,
         encryption: PropTypes.string.isRequired,
+        available_bands: PropTypes.array.isRequired,
     }),
     formErrors: PropTypes.object.isRequired,
     setFormValue: PropTypes.func.isRequired,
@@ -87,6 +88,7 @@ function DeviceForm({
     ...props
 }) {
     const deviceID = formData.id;
+    const bnds = formData.available_bands;
     return (
         <>
             <Switch
@@ -159,18 +161,24 @@ function DeviceForm({
                         value={formData.hwmode}
                         helpText={HELP_TEXTS.hwmode}
                         inline
-                        onChange={setFormValue((value) => ({
-                            devices: {
-                                [deviceIndex]: {
-                                    hwmode: { $set: value },
-                                    channel: { $set: "0" },
-                                    htmode: {
-                                        $set:
-                                            value === "11a" ? "VHT80" : "HT20",
+                        onChange={setFormValue((value) => {
+                            // Get the last item in an array of available HT modes
+                            const [best2] = bnds[0].available_htmodes.slice(-1);
+                            const [best5] = bnds[1].available_htmodes.slice(-1);
+                            return {
+                                devices: {
+                                    [deviceIndex]: {
+                                        hwmode: { $set: value },
+                                        channel: { $set: "0" },
+                                        htmode: {
+                                            $set:
+                                                // Set HT mode depending on checked frequency
+                                                value === "11a" ? best5 : best2,
+                                        },
                                     },
                                 },
-                            },
-                        }))}
+                            };
+                        })}
                         {...props}
                     />
 
@@ -209,7 +217,6 @@ function DeviceForm({
                                 [deviceIndex]: { encryption: { $set: value } },
                             },
                         }))}
-                        customOrder
                         {...props}
                     />
 

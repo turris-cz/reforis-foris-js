@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -18,20 +18,14 @@ Select.propTypes = {
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     /** Help text message. */
     helpText: PropTypes.string,
-    /** Turns on/off alphabetical ordering of the Select options. */
-    customOrder: PropTypes.bool,
 };
 
-export function Select({ label, choices, helpText, customOrder, ...props }) {
+export function Select({ label, choices, helpText, ...props }) {
     const uid = useUID();
 
-    const keys = Object.keys(choices);
-    if (!customOrder) {
-        keys.sort((a, b) => a - b || a.toString().localeCompare(b.toString()));
-    }
-    const options = keys.map((key) => (
-        <option key={key} value={key}>
-            {choices[key]}
+    const options = Object.keys(choices).map((choice) => (
+        <option key={choice} value={choice}>
+            {choices[choice]}
         </option>
     ));
 

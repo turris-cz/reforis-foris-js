@@ -90,6 +90,10 @@ lint-js-fix:
 test:
 	npm test
 
+.PHONY: test-js-watch
+test-js-watch:
+	cd $(JS_DIR); npm test -- --watch
+
 .PHONY: test-js-update-snapshots
 test-js-update-snapshots:
 	npm test -- -u

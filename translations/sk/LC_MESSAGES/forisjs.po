@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-12-15 19:17+0300\n"
-"PO-Revision-Date: 2021-09-22 16:38+0000\n"
+"PO-Revision-Date: 2021-12-18 00:07+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-js/"
+"sk/>\n"
 "Language: sk\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-"
-"js/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.10\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:61
@@ -95,16 +96,15 @@ msgstr "Kanál"
 
 #: src/common/WiFiSettings/WiFiForm.js:203
 msgid "Encryption"
-msgstr ""
+msgstr "Šifrovanie"
 
 #: src/common/WiFiSettings/WiFiForm.js:236
 msgid "auto"
 msgstr "automaticky"
 
 #: src/common/WiFiSettings/WiFiForm.js:277
-#, fuzzy
 msgid "Custom"
-msgstr "automaticky"
+msgstr "Vlastné"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
 msgid "Enable Guest Wi-Fi"
@@ -168,15 +168,15 @@ msgstr "802.11ac – šírka kanála 160 MHz"
 
 #: src/common/WiFiSettings/constants.js:22
 msgid "WPA3 only"
-msgstr ""
+msgstr "Len WPA3"
 
 #: src/common/WiFiSettings/constants.js:23
 msgid "WPA3 with WPA2 as fallback (default)"
-msgstr ""
+msgstr "WPA3 s WPA2 ako náhradným riešením (predvolené)"
 
 #: src/common/WiFiSettings/constants.js:24
 msgid "WPA2 only"
-msgstr ""
+msgstr "Len WPA2"
 
 #: src/common/WiFiSettings/constants.js:27
 msgid ""
@@ -264,6 +264,10 @@ msgid ""
 "without WPA3 support require older WPA2. If you experience issues with "
 "connecting older devices, try to enable WPA2."
 msgstr ""
+"Štandard WPA3 je nová najbezpečnejšia metóda šifrovania, ktorú sa odporúča "
+"používať s každým zariadením, ktoré ju podporuje. Staršie zariadenia bez "
+"podpory WPA3 vyžadujú staršie WPA2. Ak sa vyskytnú problémy s pripojením "
+"starších zariadení, skúste povoliť WPA2."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -345,4 +349,3 @@ msgstr "Neobsahuje zoznam e-mailov oddelených čiarkami."
 #~ "že sa tým odstráni aktuálna konfigurácia"
 #~ " a obnovia sa východiskové hodnoty.\n"
 #~ "        "
-

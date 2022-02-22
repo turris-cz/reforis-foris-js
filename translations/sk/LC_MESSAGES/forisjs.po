@@ -1,23 +1,22 @@
-# Slovak translations for PROJECT.
-# Copyright (C) 2019 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# Slovak translations for Foris JS.
+# Copyright (C) 2022 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# This file is distributed under the same license as the Foris JS project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-12-15 19:17+0300\n"
+"POT-Creation-Date: 2022-02-22 16:41+0100\n"
 "PO-Revision-Date: 2021-12-18 00:07+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-js/"
-"sk/>\n"
 "Language: sk\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-"
+"js/sk/>\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:61
@@ -73,36 +72,43 @@ msgstr "Nastavenia Wi-Fi sa zmenili do východiskového stavu."
 msgid "Reset Wi-Fi Settings"
 msgstr "Resetovať nastavenia Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiForm.js:93
+#: src/common/WiFiSettings/ResetWiFiSettings.js:57
+msgid ""
+"If a number of wireless cards doesn't match, you may try to reset the Wi-"
+"Fi settings. Note that this will remove the current Wi-Fi configuration "
+"and restore the default values."
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:95
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
-#: src/common/WiFiSettings/WiFiForm.js:130
+#: src/common/WiFiSettings/WiFiForm.js:132
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr "Heslo"
 
-#: src/common/WiFiSettings/WiFiForm.js:144
+#: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
 msgstr "Skryť SSID"
 
-#: src/common/WiFiSettings/WiFiForm.js:178
+#: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac mode"
 msgstr "802.11 n/ac mód"
 
-#: src/common/WiFiSettings/WiFiForm.js:191
+#: src/common/WiFiSettings/WiFiForm.js:199
 msgid "Channel"
 msgstr "Kanál"
 
-#: src/common/WiFiSettings/WiFiForm.js:203
+#: src/common/WiFiSettings/WiFiForm.js:211
 msgid "Encryption"
 msgstr "Šifrovanie"
 
-#: src/common/WiFiSettings/WiFiForm.js:236
+#: src/common/WiFiSettings/WiFiForm.js:243
 msgid "auto"
 msgstr "automaticky"
 
-#: src/common/WiFiSettings/WiFiForm.js:277
+#: src/common/WiFiSettings/WiFiForm.js:284
 msgid "Custom"
 msgstr "Vlastné"
 
@@ -119,23 +125,29 @@ msgid "Download PDF"
 msgstr "Stiahnuť PDF"
 
 #: src/common/WiFiSettings/WiFiSettings.js:78
-#: src/common/WiFiSettings/WiFiSettings.js:90
+#: src/common/WiFiSettings/WiFiSettings.js:94
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID nemôže mať viac ako 32 znakov"
 
 #: src/common/WiFiSettings/WiFiSettings.js:79
-#: src/common/WiFiSettings/WiFiSettings.js:92
+#: src/common/WiFiSettings/WiFiSettings.js:96
 msgid "SSID can't be empty"
 msgstr "SSID nesmie byť prázdne"
 
 #: src/common/WiFiSettings/WiFiSettings.js:81
-#: src/common/WiFiSettings/WiFiSettings.js:94
+#: src/common/WiFiSettings/WiFiSettings.js:98
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID nesmie byť dlhšie ako 32 byteov"
 
 #: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:97
+#: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "Password must contain at least 8 symbols"
+msgstr "Heslo musí obsahovať aspoň 8 znakov"
+
+#: src/common/WiFiSettings/WiFiSettings.js:86
+#: src/common/WiFiSettings/WiFiSettings.js:105
+#, fuzzy
+msgid "Password must not contain more than 63 symbols"
 msgstr "Heslo musí obsahovať aspoň 8 znakov"
 
 #: src/common/WiFiSettings/constants.js:9
@@ -166,19 +178,39 @@ msgstr "802.11ac – šírka kanála 80 MHz"
 msgid "802.11ac - 160 MHz wide channel"
 msgstr "802.11ac – šírka kanála 160 MHz"
 
-#: src/common/WiFiSettings/constants.js:22
+#: src/common/WiFiSettings/constants.js:16
+#, fuzzy
+msgid "802.11ax - 20 MHz wide channel"
+msgstr "802.11ac – šírka kanála 20 MHz"
+
+#: src/common/WiFiSettings/constants.js:17
+#, fuzzy
+msgid "802.11ax - 40 MHz wide channel"
+msgstr "802.11ac – šírka kanála 40 MHz"
+
+#: src/common/WiFiSettings/constants.js:18
+#, fuzzy
+msgid "802.11ax - 80 MHz wide channel"
+msgstr "802.11ac – šírka kanála 80 MHz"
+
+#: src/common/WiFiSettings/constants.js:19
+#, fuzzy
+msgid "802.11ax - 160 MHz wide channel"
+msgstr "802.11ac – šírka kanála 160 MHz"
+
+#: src/common/WiFiSettings/constants.js:26
 msgid "WPA3 only"
 msgstr "Len WPA3"
 
-#: src/common/WiFiSettings/constants.js:23
+#: src/common/WiFiSettings/constants.js:27
 msgid "WPA3 with WPA2 as fallback (default)"
 msgstr "WPA3 s WPA2 ako náhradným riešením (predvolené)"
 
-#: src/common/WiFiSettings/constants.js:24
+#: src/common/WiFiSettings/constants.js:28
 msgid "WPA2 only"
 msgstr "Len WPA2"
 
-#: src/common/WiFiSettings/constants.js:27
+#: src/common/WiFiSettings/constants.js:31
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
@@ -186,31 +218,28 @@ msgstr ""
 "SSID s neštandardnými znakmi môže na niektorých zariadeniach spôsobovať "
 "problémy."
 
-#: src/common/WiFiSettings/constants.js:30
-msgid ""
-"\n"
-"        WPA2 pre-shared key, that is required to connect to the network.\n"
-"    "
+#: src/common/WiFiSettings/constants.js:34
+#, fuzzy
+msgid "WPA2 pre-shared key, that is required to connect to the network."
 msgstr ""
 "\n"
 "        WPA2 vopred zdieľaný kľúč, ktorý sa vyžaduje na pripojenie k "
 "sieti.\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:33
+#: src/common/WiFiSettings/constants.js:37
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 "Pri zapnutí tejto voľby sa sieť zariadeniam pri vyhľadávaní dostupných "
 "sietí nezobrazí."
 
-#: src/common/WiFiSettings/constants.js:36
+#: src/common/WiFiSettings/constants.js:40
+#, fuzzy
 msgid ""
-"\n"
-"        The 2.4 GHz band is more widely supported by clients, but tends "
-"to have more interference. The 5 GHz band is a\n"
-"        newer standard and may not be supported by all your devices. It "
-"usually has less interference, but the signal\n"
-"        does not carry so well indoors."
+"The 2.4 GHz band is more widely supported by clients, but tends to have "
+"more interference. The 5 GHz band is a newer standard and may not be "
+"supported by all your devices. It usually has less interference, but the "
+"signal does not carry so well indoors."
 msgstr ""
 "\n"
 "        Pásmo 2,4 GHz podporujú klientské zariadenia najčastejšie, ale "
@@ -219,15 +248,13 @@ msgstr ""
 "vaše zariadenia.\n"
 "        Rušenie je obvykle nižšie, ale signál sa vnútri budov šíri horšie."
 
-#: src/common/WiFiSettings/constants.js:40
+#: src/common/WiFiSettings/constants.js:43
+#, fuzzy
 msgid ""
-"\n"
-"        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
-"40 MHz wide channels can yield higher\n"
-"        throughput but can cause more interference in the network. If you"
-" don't know what to choose, use the default\n"
-"        option with 20 MHz wide channel.\n"
-"    "
+"Change this to adjust 802.11n/ac mode of operation. 802.11n with 40 MHz "
+"wide channels can yield higher throughput but can cause more interference"
+" in the network. If you don't know what to choose, use the default option"
+" with 20 MHz wide channel."
 msgstr ""
 "\n"
 "        Týmto sa zmení režim prevádzky 802.11n/ac. 802.11n so šírkou "
@@ -237,16 +264,14 @@ msgstr ""
 "        so šírkou kanála 20 MHz.\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:45
+#: src/common/WiFiSettings/constants.js:46
+#, fuzzy
 msgid ""
-"\n"
-"        Enables Wi-Fi for guests, which is separated from LAN network. "
-"Devices connected to this network are allowed to\n"
-"        access the internet, but aren't allowed to access other devices "
-"and the configuration interface of the router.\n"
-"        Parameters of the guest network can be set in the Guest network "
-"tab.\n"
-"        "
+"Enables Wi-Fi for guests, which is separated from LAN network. Devices "
+"connected to this network are allowed to access the internet, but aren't "
+"allowed to access other devices and the configuration interface of the "
+"router. Parameters of the guest network can be set in the Guest network "
+"tab."
 msgstr ""
 "\n"
 "        Zapnutie Wi-Fi pre hostí, ktorá je oddelená od miestnej siete "
@@ -257,17 +282,17 @@ msgstr ""
 "hostí“.\n"
 "        "
 
-#: src/common/WiFiSettings/constants.js:50
+#: src/common/WiFiSettings/constants.js:49
 msgid ""
 "The WPA3 standard is the new most secure encryption method that is "
 "suggested to be used with any device that supports it. The older devices "
 "without WPA3 support require older WPA2. If you experience issues with "
 "connecting older devices, try to enable WPA2."
 msgstr ""
-"Štandard WPA3 je nová najbezpečnejšia metóda šifrovania, ktorú sa odporúča "
-"používať s každým zariadením, ktoré ju podporuje. Staršie zariadenia bez "
-"podpory WPA3 vyžadujú staršie WPA2. Ak sa vyskytnú problémy s pripojením "
-"starších zariadení, skúste povoliť WPA2."
+"Štandard WPA3 je nová najbezpečnejšia metóda šifrovania, ktorú sa "
+"odporúča používať s každým zariadením, ktoré ju podporuje. Staršie "
+"zariadenia bez podpory WPA3 vyžadujú staršie WPA2. Ak sa vyskytnú "
+"problémy s pripojením starších zariadení, skúste povoliť WPA2."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -310,14 +335,19 @@ msgid "This is not a valid domain name."
 msgstr "Toto nie je platné doménové meno."
 
 #: src/utils/validations.js:17
+#, fuzzy
+msgid "This is not a valid hostname."
+msgstr "Toto nie je platné doménové meno."
+
+#: src/utils/validations.js:18
 msgid "This is not a valid DUID."
 msgstr "Toto nie je platné DUID."
 
-#: src/utils/validations.js:18
+#: src/utils/validations.js:19
 msgid "This is not a valid MAC address."
 msgstr "Toto nie je platná MAC adresa."
 
-#: src/utils/validations.js:19
+#: src/utils/validations.js:20
 msgid "Doesn't contain a list of emails separated by commas."
 msgstr "Neobsahuje zoznam e-mailov oddelených čiarkami."
 
@@ -349,3 +379,4 @@ msgstr "Neobsahuje zoznam e-mailov oddelených čiarkami."
 #~ "že sa tým odstráni aktuálna konfigurácia"
 #~ " a obnovia sa východiskové hodnoty.\n"
 #~ "        "
+

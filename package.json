@@ -1,7 +1,7 @@
 {
     "name": "foris",
     "version": "5.4.1",
-    "description": "Set of components and utils for Foris and its plugins.",
+    "description": "Foris JS library is a set of components and utils for reForis application and plugins.",
     "author": "CZ.NIC, z.s.p.o.",
     "repository": {
         "type": "git",

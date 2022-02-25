@@ -61,6 +61,9 @@ module.exports = {
             sectionDepth: 0,
         },
     ],
+    template: {
+        favicon: "/docs/components/logo.svg",
+    },
     require: [
         "babel-polyfill",
         path.join(__dirname, "src/testUtils/mockGlobals"),
@@ -73,6 +76,9 @@ module.exports = {
             "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
         ),
     ],
+    styleguideComponents: {
+        LogoRenderer: path.join(__dirname, "docs/components/Logo"),
+    },
     webpackConfig: {
         module: {
             rules: [

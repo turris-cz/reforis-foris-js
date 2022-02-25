@@ -11,8 +11,8 @@ module.exports = {
     title: "Foris JS docs",
     sections: [
         {
-            name: "Foris JS",
-            content: "docs/intro.md",
+            name: "Introduction",
+            content: "docs/introduction.md",
         },
         {
             name: "Development (Linking)",

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -54,9 +54,9 @@ export function ResetWiFiSettings({ ws, endpoint }) {
         <div className={formFieldsSize}>
             <h2>{_("Reset Wi-Fi Settings")}</h2>
             <p>
-                {_(`If a number of wireless cards doesn't match, you may try \
-to reset the Wi-Fi settings. Note that this will remove the current Wi-Fi \
-configuration and restore the default values.`)}
+                {_(
+                    "If a number of wireless cards doesn't match, you may try to reset the Wi-Fi settings. Note that this will remove the current Wi-Fi configuration and restore the default values."
+                )}
             </p>
             <div className="text-right">
                 <Button

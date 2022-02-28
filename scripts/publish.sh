@@ -6,8 +6,7 @@ then
     exit 1
 else
     cd dist
-    # Need to replace "_" with "-" as GitLab CI won't accept secret vars with "-"
-    echo "//registry.npmjs.org/:_authToken=$(echo "$NPM_TOKEN" | tr _ -)" > .npmrc
+    echo "//registry.npmjs.org/:_authToken=$(echo "$NPM_TOKEN")" > .npmrc
     echo "unsafe-perm = true" >> ~/.npmrc
     if test "$1" = "beta"
     then

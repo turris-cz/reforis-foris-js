@@ -29,28 +29,23 @@ export const ENCRYPTIONMODES = {
 };
 export const HELP_TEXTS = {
     ssid: _(
-        `SSID which contains non-standard characters could cause problems on some devices.`
+        "SSID which contains non-standard characters could cause problems on some devices."
     ),
-    password: _(`
-        WPA2 pre-shared key, that is required to connect to the network.
-    `),
+    password: _(
+        "WPA2 pre-shared key, that is required to connect to the network."
+    ),
     hidden: _(
         "If set, network is not visible when scanning for available networks."
     ),
-    hwmode: _(`
-        The 2.4 GHz band is more widely supported by clients, but tends to have more interference. The 5 GHz band is a
-        newer standard and may not be supported by all your devices. It usually has less interference, but the signal
-        does not carry so well indoors.`),
-    htmode: _(`
-        Change this to adjust 802.11n/ac mode of operation. 802.11n with 40 MHz wide channels can yield higher
-        throughput but can cause more interference in the network. If you don't know what to choose, use the default
-        option with 20 MHz wide channel.
-    `),
-    guest_wifi_enabled: _(`
-        Enables Wi-Fi for guests, which is separated from LAN network. Devices connected to this network are allowed to
-        access the internet, but aren't allowed to access other devices and the configuration interface of the router.
-        Parameters of the guest network can be set in the Guest network tab.
-        `),
+    hwmode: _(
+        "The 2.4 GHz band is more widely supported by clients, but tends to have more interference. The 5 GHz band is a newer standard and may not be supported by all your devices. It usually has less interference, but the signal does not carry so well indoors."
+    ),
+    htmode: _(
+        "Change this to adjust 802.11n/ac mode of operation. 802.11n with 40 MHz wide channels can yield higher throughput but can cause more interference in the network. If you don't know what to choose, use the default option with 20 MHz wide channel."
+    ),
+    guest_wifi_enabled: _(
+        "Enables Wi-Fi for guests, which is separated from LAN network. Devices connected to this network are allowed to access the internet, but aren't allowed to access other devices and the configuration interface of the router. Parameters of the guest network can be set in the Guest network tab."
+    ),
     wpa3: _(
         "The WPA3 standard is the new most secure encryption method that is suggested to be used with any device that supports it. The older devices without WPA3 support require older WPA2. If you experience issues with connecting older devices, try to enable WPA2."
     ),

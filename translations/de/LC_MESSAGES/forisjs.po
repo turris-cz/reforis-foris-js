@@ -1,44 +1,43 @@
-# German translations for PROJECT.
-# Copyright (C) 2019 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# German translations for Foris JS.
+# Copyright (C) 2022 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# This file is distributed under the same license as the Foris JS project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-30 16:58+0300\n"
-"PO-Revision-Date: 2019-09-02 07:21+0000\n"
-"Last-Translator: Ulrich Günther <mail@ulrich-guenther.at>\n"
+"POT-Creation-Date: 2022-02-22 16:41+0100\n"
+"PO-Revision-Date: 2021-09-24 19:38+0000\n"
+"Last-Translator: CryptKid <CryptKiddie@chaospott.de>\n"
 "Language: de\n"
-"Language-Team: German "
-"<https://hosted.weblate.org/projects/turris/reforis/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/foris-"
+"js/de/>\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: src/api/utils.js:60
+#: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "Die Sitzung ist abgelaufen. Bitte erneut anmelden."
 
-#: src/api/utils.js:65
+#: src/api/utils.js:66
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Eine Zeitüberschreitung ist aufgetreten."
 
-#: src/api/utils.js:68
+#: src/api/utils.js:69
 msgid "No response received."
 msgstr "Keine Antwort erhalten."
 
-#: src/api/utils.js:78
+#: src/api/utils.js:79
 msgid "An unknown API error occurred."
 msgstr "Ein unbekannter API-Fehler ist aufgetreten."
 
 #: src/common/RebootButton.js:27
-#, fuzzy
 msgid "Reboot request failed."
-msgstr "Neustart ist erforderlich"
+msgstr "Neustart-Einleitung fehlgeschlagen."
 
 #: src/common/RebootButton.js:51
 msgid "Reboot"
@@ -46,90 +45,112 @@ msgstr "Systemneustart"
 
 #: src/common/RebootButton.js:66
 msgid "Warning!"
-msgstr ""
+msgstr "Warnung!"
 
 #: src/common/RebootButton.js:68
 msgid "Are you sure you want to restart the router?"
-msgstr ""
+msgstr "Sind Sie sicher, dass Sie den Router neu starten wollen?"
 
 #: src/common/RebootButton.js:71
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #: src/common/RebootButton.js:73
 msgid "Confirm reboot"
-msgstr ""
+msgstr "Neustart bestätigen"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:38
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
+"Ein Fehler ist während der Zurücksetzung der WLAN-Einstellungen "
+"aufgetreten."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:41
 msgid "Wi-Fi settings are set to defaults."
-msgstr ""
+msgstr "WLAN-Einstellungen wurden auf Standard zurückgesetzt."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:55
 #: src/common/WiFiSettings/ResetWiFiSettings.js:69
 msgid "Reset Wi-Fi Settings"
+msgstr "WLAN-Einstellungen zurücksetzen"
+
+#: src/common/WiFiSettings/ResetWiFiSettings.js:57
+msgid ""
+"If a number of wireless cards doesn't match, you may try to reset the Wi-"
+"Fi settings. Note that this will remove the current Wi-Fi configuration "
+"and restore the default values."
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:92
+#: src/common/WiFiSettings/WiFiForm.js:95
 msgid "Wi-Fi ${deviceID + 1}"
-msgstr ""
+msgstr "WLAN ${deviceID + 1}"
 
-#: src/common/WiFiSettings/WiFiForm.js:129
+#: src/common/WiFiSettings/WiFiForm.js:132
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr "Passwort"
 
-#: src/common/WiFiSettings/WiFiForm.js:143
+#: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
-msgstr ""
+msgstr "SSID verbergen"
 
-#: src/common/WiFiSettings/WiFiForm.js:177
+#: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac mode"
-msgstr ""
+msgstr "802.11n/ac Modus"
 
-#: src/common/WiFiSettings/WiFiForm.js:190
+#: src/common/WiFiSettings/WiFiForm.js:199
 msgid "Channel"
+msgstr "Kanal"
+
+#: src/common/WiFiSettings/WiFiForm.js:211
+msgid "Encryption"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:221
+#: src/common/WiFiSettings/WiFiForm.js:243
 msgid "auto"
 msgstr "automatisch"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:42
+#: src/common/WiFiSettings/WiFiForm.js:284
 #, fuzzy
+msgid "Custom"
+msgstr "automatisch"
+
+#: src/common/WiFiSettings/WiFiGuestForm.js:42
 msgid "Enable Guest Wi-Fi"
 msgstr "Gast-WLAN aktivieren"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:71
 msgid "Wi-Fi QR Code"
-msgstr ""
+msgstr "WLAN QR-Code"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:91
 msgid "Download PDF"
-msgstr ""
+msgstr "PDF herunterladen"
 
 #: src/common/WiFiSettings/WiFiSettings.js:78
-#: src/common/WiFiSettings/WiFiSettings.js:90
+#: src/common/WiFiSettings/WiFiSettings.js:94
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID darf nicht länger als 32 Symbole sein"
 
 #: src/common/WiFiSettings/WiFiSettings.js:79
-#: src/common/WiFiSettings/WiFiSettings.js:92
+#: src/common/WiFiSettings/WiFiSettings.js:96
 msgid "SSID can't be empty"
 msgstr "SSID darf nicht leer sein"
 
 #: src/common/WiFiSettings/WiFiSettings.js:81
-#: src/common/WiFiSettings/WiFiSettings.js:94
-#, fuzzy
+#: src/common/WiFiSettings/WiFiSettings.js:98
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID darf nicht länger als 32 Symbole sein"
 
 #: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:97
+#: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "Password must contain at least 8 symbols"
+msgstr "Das Passwort muss mindestens 8 Zeichen enthalten"
+
+#: src/common/WiFiSettings/WiFiSettings.js:86
+#: src/common/WiFiSettings/WiFiSettings.js:105
+#, fuzzy
+msgid "Password must not contain more than 63 symbols"
 msgstr "Das Passwort muss mindestens 8 Zeichen enthalten"
 
 #: src/common/WiFiSettings/constants.js:9
@@ -161,37 +182,66 @@ msgstr "802.11ac - 80 MHz breiter Kanal"
 msgid "802.11ac - 160 MHz wide channel"
 msgstr "802.11ac - 80 MHz breiter Kanal"
 
-#: src/common/WiFiSettings/constants.js:22
+#: src/common/WiFiSettings/constants.js:16
+#, fuzzy
+msgid "802.11ax - 20 MHz wide channel"
+msgstr "802.11ac - 20 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:17
+#, fuzzy
+msgid "802.11ax - 40 MHz wide channel"
+msgstr "802.11ac - 40 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:18
+#, fuzzy
+msgid "802.11ax - 80 MHz wide channel"
+msgstr "802.11ac - 80 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:19
+#, fuzzy
+msgid "802.11ax - 160 MHz wide channel"
+msgstr "802.11ac - 80 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:26
+msgid "WPA3 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:27
+msgid "WPA3 with WPA2 as fallback (default)"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:28
+msgid "WPA2 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:31
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:25
-msgid ""
-"\n"
-"        WPA2 pre-shared key, that is required to connect to the network.\n"
-"    "
+#: src/common/WiFiSettings/constants.js:34
+#, fuzzy
+msgid "WPA2 pre-shared key, that is required to connect to the network."
 msgstr ""
 "\n"
 "        WPA2 Pre-Shared Key, der für die Verbindung mit dem Netzwerk "
 "benötigt wird.\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:28
+#: src/common/WiFiSettings/constants.js:37
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 "Falls aktiviert, wird das Netzwerk nicht in der Liste der verfügbaren "
 "drahtlosen Netzwerke angezeigt."
 
-#: src/common/WiFiSettings/constants.js:31
+#: src/common/WiFiSettings/constants.js:40
+#, fuzzy
 msgid ""
-"\n"
-"        The 2.4 GHz band is more widely supported by clients, but tends "
-"to have more interference. The 5 GHz band is a\n"
-"        newer standard and may not be supported by all your devices. It "
-"usually has less interference, but the signal\n"
-"        does not carry so well indoors."
+"The 2.4 GHz band is more widely supported by clients, but tends to have "
+"more interference. The 5 GHz band is a newer standard and may not be "
+"supported by all your devices. It usually has less interference, but the "
+"signal does not carry so well indoors."
 msgstr ""
 "\n"
 "        Das 2,4 GHz-Band wird stärker von Clients unterstützt, hat aber "
@@ -200,15 +250,13 @@ msgstr ""
 "unterstützt. Es hat in der Regel weniger Interferenzen, aber das Signal\n"
 "        trägt nicht so gut drinnen."
 
-#: src/common/WiFiSettings/constants.js:35
+#: src/common/WiFiSettings/constants.js:43
+#, fuzzy
 msgid ""
-"\n"
-"        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
-"40 MHz wide channels can yield higher\n"
-"        throughput but can cause more interference in the network. If you"
-" don't know what to choose, use the default\n"
-"        option with 20 MHz wide channel.\n"
-"    "
+"Change this to adjust 802.11n/ac mode of operation. 802.11n with 40 MHz "
+"wide channels can yield higher throughput but can cause more interference"
+" in the network. If you don't know what to choose, use the default option"
+" with 20 MHz wide channel."
 msgstr ""
 "\n"
 "        Ändern Sie diese Option, um den Betriebsmodus 802.11n/ac "
@@ -219,16 +267,14 @@ msgstr ""
 "        Option mit 20 MHz breitem Kanal.\n"
 "    "
 
-#: src/common/WiFiSettings/constants.js:40
+#: src/common/WiFiSettings/constants.js:46
+#, fuzzy
 msgid ""
-"\n"
-"        Enables Wi-Fi for guests, which is separated from LAN network. "
-"Devices connected to this network are allowed to\n"
-"        access the internet, but aren't allowed to access other devices "
-"and the configuration interface of the router.\n"
-"        Parameters of the guest network can be set in the Guest network "
-"tab.\n"
-"        "
+"Enables Wi-Fi for guests, which is separated from LAN network. Devices "
+"connected to this network are allowed to access the internet, but aren't "
+"allowed to access other devices and the configuration interface of the "
+"router. Parameters of the guest network can be set in the Guest network "
+"tab."
 msgstr ""
 "\n"
 "        Ermöglicht Wi-Fi für Gäste, das vom LAN-Netzwerk getrennt ist. "
@@ -238,6 +284,14 @@ msgstr ""
 "        Die Parameter des Gastnetzwerks können in der Registerkarte "
 "Gastnetzwerk eingestellt werden.\n"
 "        "
+
+#: src/common/WiFiSettings/constants.js:49
+msgid ""
+"The WPA3 standard is the new most secure encryption method that is "
+"suggested to be used with any device that supports it. The older devices "
+"without WPA3 support require older WPA2. If you experience issues with "
+"connecting older devices, try to enable WPA2."
+msgstr ""
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -280,14 +334,19 @@ msgid "This is not a valid domain name."
 msgstr "Dies ist kein gültiger Domainname."
 
 #: src/utils/validations.js:17
+#, fuzzy
+msgid "This is not a valid hostname."
+msgstr "Dies ist kein gültiger Domainname."
+
+#: src/utils/validations.js:18
 msgid "This is not a valid DUID."
 msgstr "Dies ist keine gültige DUID."
 
-#: src/utils/validations.js:18
+#: src/utils/validations.js:19
 msgid "This is not a valid MAC address."
 msgstr "Dies ist keine gültige MAC-Adresse."
 
-#: src/utils/validations.js:19
+#: src/utils/validations.js:20
 msgid "Doesn't contain a list of emails separated by commas."
 msgstr "Enthält keine Liste von E-Mails, die durch Kommas getrennt sind."
 

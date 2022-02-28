@@ -1,13 +1,13 @@
-# Romanian translations for PROJECT.
-# Copyright (C) 2019 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# Romanian translations for Foris JS.
+# Copyright (C) 2022 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# This file is distributed under the same license as the Foris JS project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-30 16:58+0300\n"
+"POT-Creation-Date: 2022-02-22 16:41+0100\n"
 "PO-Revision-Date: 2019-02-19 13:35+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ro\n"
@@ -19,19 +19,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: src/api/utils.js:60
+#: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
 msgstr ""
 
-#: src/api/utils.js:65
+#: src/api/utils.js:66
 msgid "Timeout error occurred."
 msgstr ""
 
-#: src/api/utils.js:68
+#: src/api/utils.js:69
 msgid "No response received."
 msgstr ""
 
-#: src/api/utils.js:78
+#: src/api/utils.js:79
 msgid "An unknown API error occurred."
 msgstr ""
 
@@ -72,29 +72,44 @@ msgstr ""
 msgid "Reset Wi-Fi Settings"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:92
+#: src/common/WiFiSettings/ResetWiFiSettings.js:57
+msgid ""
+"If a number of wireless cards doesn't match, you may try to reset the Wi-"
+"Fi settings. Note that this will remove the current Wi-Fi configuration "
+"and restore the default values."
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:95
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:129
+#: src/common/WiFiSettings/WiFiForm.js:132
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:143
+#: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:177
+#: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac mode"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:190
+#: src/common/WiFiSettings/WiFiForm.js:199
 msgid "Channel"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:221
+#: src/common/WiFiSettings/WiFiForm.js:211
+msgid "Encryption"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:243
 msgid "auto"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:284
+msgid "Custom"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
@@ -110,23 +125,28 @@ msgid "Download PDF"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiSettings.js:78
-#: src/common/WiFiSettings/WiFiSettings.js:90
+#: src/common/WiFiSettings/WiFiSettings.js:94
 msgid "SSID can't be longer than 32 symbols"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiSettings.js:79
-#: src/common/WiFiSettings/WiFiSettings.js:92
+#: src/common/WiFiSettings/WiFiSettings.js:96
 msgid "SSID can't be empty"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiSettings.js:81
-#: src/common/WiFiSettings/WiFiSettings.js:94
+#: src/common/WiFiSettings/WiFiSettings.js:98
 msgid "SSID can't be longer than 32 bytes"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:97
+#: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "Password must contain at least 8 symbols"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiSettings.js:86
+#: src/common/WiFiSettings/WiFiSettings.js:105
+msgid "Password must not contain more than 63 symbols"
 msgstr ""
 
 #: src/common/WiFiSettings/constants.js:9
@@ -157,54 +177,79 @@ msgstr ""
 msgid "802.11ac - 160 MHz wide channel"
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:22
+#: src/common/WiFiSettings/constants.js:16
+msgid "802.11ax - 20 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:17
+msgid "802.11ax - 40 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:18
+msgid "802.11ax - 80 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:19
+msgid "802.11ax - 160 MHz wide channel"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:26
+msgid "WPA3 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:27
+msgid "WPA3 with WPA2 as fallback (default)"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:28
+msgid "WPA2 only"
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:31
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:25
-msgid ""
-"\n"
-"        WPA2 pre-shared key, that is required to connect to the network.\n"
-"    "
+#: src/common/WiFiSettings/constants.js:34
+msgid "WPA2 pre-shared key, that is required to connect to the network."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:28
+#: src/common/WiFiSettings/constants.js:37
 msgid "If set, network is not visible when scanning for available networks."
-msgstr ""
-
-#: src/common/WiFiSettings/constants.js:31
-msgid ""
-"\n"
-"        The 2.4 GHz band is more widely supported by clients, but tends "
-"to have more interference. The 5 GHz band is a\n"
-"        newer standard and may not be supported by all your devices. It "
-"usually has less interference, but the signal\n"
-"        does not carry so well indoors."
-msgstr ""
-
-#: src/common/WiFiSettings/constants.js:35
-msgid ""
-"\n"
-"        Change this to adjust 802.11n/ac mode of operation. 802.11n with "
-"40 MHz wide channels can yield higher\n"
-"        throughput but can cause more interference in the network. If you"
-" don't know what to choose, use the default\n"
-"        option with 20 MHz wide channel.\n"
-"    "
 msgstr ""
 
 #: src/common/WiFiSettings/constants.js:40
 msgid ""
-"\n"
-"        Enables Wi-Fi for guests, which is separated from LAN network. "
-"Devices connected to this network are allowed to\n"
-"        access the internet, but aren't allowed to access other devices "
-"and the configuration interface of the router.\n"
-"        Parameters of the guest network can be set in the Guest network "
-"tab.\n"
-"        "
+"The 2.4 GHz band is more widely supported by clients, but tends to have "
+"more interference. The 5 GHz band is a newer standard and may not be "
+"supported by all your devices. It usually has less interference, but the "
+"signal does not carry so well indoors."
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:43
+msgid ""
+"Change this to adjust 802.11n/ac mode of operation. 802.11n with 40 MHz "
+"wide channels can yield higher throughput but can cause more interference"
+" in the network. If you don't know what to choose, use the default option"
+" with 20 MHz wide channel."
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:46
+msgid ""
+"Enables Wi-Fi for guests, which is separated from LAN network. Devices "
+"connected to this network are allowed to access the internet, but aren't "
+"allowed to access other devices and the configuration interface of the "
+"router. Parameters of the guest network can be set in the Guest network "
+"tab."
+msgstr ""
+
+#: src/common/WiFiSettings/constants.js:49
+msgid ""
+"The WPA3 standard is the new most secure encryption method that is "
+"suggested to be used with any device that supports it. The older devices "
+"without WPA3 support require older WPA2. If you experience issues with "
+"connecting older devices, try to enable WPA2."
 msgstr ""
 
 #: src/form/components/ForisForm.js:121
@@ -248,14 +293,18 @@ msgid "This is not a valid domain name."
 msgstr ""
 
 #: src/utils/validations.js:17
-msgid "This is not a valid DUID."
+msgid "This is not a valid hostname."
 msgstr ""
 
 #: src/utils/validations.js:18
-msgid "This is not a valid MAC address."
+msgid "This is not a valid DUID."
 msgstr ""
 
 #: src/utils/validations.js:19
+msgid "This is not a valid MAC address."
+msgstr ""
+
+#: src/utils/validations.js:20
 msgid "Doesn't contain a list of emails separated by commas."
 msgstr ""
 
@@ -278,6 +327,57 @@ msgstr ""
 #~ "reset the Wi-Fi settings. Note "
 #~ "that this will remove the\n"
 #~ "current Wi-Fi configuration and restore the default values.\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "        WPA2 pre-shared key, that "
+#~ "is required to connect to the "
+#~ "network.\n"
+#~ "    "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "        The 2.4 GHz band is more"
+#~ " widely supported by clients, but "
+#~ "tends to have more interference. The "
+#~ "5 GHz band is a\n"
+#~ "        newer standard and may not "
+#~ "be supported by all your devices. "
+#~ "It usually has less interference, but"
+#~ " the signal\n"
+#~ "        does not carry so well indoors."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "        Change this to adjust 802.11n/ac"
+#~ " mode of operation. 802.11n with 40"
+#~ " MHz wide channels can yield higher"
+#~ "\n"
+#~ "        throughput but can cause more"
+#~ " interference in the network. If you"
+#~ " don't know what to choose, use "
+#~ "the default\n"
+#~ "        option with 20 MHz wide channel.\n"
+#~ "    "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "        Enables Wi-Fi for guests, "
+#~ "which is separated from LAN network. "
+#~ "Devices connected to this network are"
+#~ " allowed to\n"
+#~ "        access the internet, but aren't"
+#~ " allowed to access other devices and"
+#~ " the configuration interface of the "
+#~ "router.\n"
+#~ "        Parameters of the guest network"
+#~ " can be set in the Guest "
+#~ "network tab.\n"
 #~ "        "
 #~ msgstr ""
 

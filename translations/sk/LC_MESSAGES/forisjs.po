@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-02-22 16:41+0100\n"
-"PO-Revision-Date: 2022-03-10 23:09+0000\n"
+"PO-Revision-Date: 2022-03-17 17:58+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-js/"
 "sk/>\n"
@@ -30,15 +30,15 @@ msgstr "Nastala chyba z dôvodu prekročenia časového limitu."
 
 #: src/api/utils.js:69
 msgid "No response received."
-msgstr "Nedošlo k žiadnej odozve."
+msgstr "Nenastala žiadna odozva."
 
 #: src/api/utils.js:79
 msgid "An unknown API error occurred."
-msgstr "Nastala neznáma chyba v aplikačnom programovom rozhraní."
+msgstr "Nastala neznáma chyba v API."
 
 #: src/common/RebootButton.js:27
 msgid "Reboot request failed."
-msgstr "Žiadosť o reštart neúspešná."
+msgstr "Požiadavka na reštart neúspešná."
 
 #: src/common/RebootButton.js:51
 msgid "Reboot"
@@ -118,7 +118,7 @@ msgstr "Vlastné"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:42
 msgid "Enable Guest Wi-Fi"
-msgstr "Zapnúť Wi-Fi pre hostí"
+msgstr "Povoliť Wi-Fi pre hostí"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:71
 msgid "Wi-Fi QR Code"
@@ -131,7 +131,7 @@ msgstr "Stiahnuť PDF"
 #: src/common/WiFiSettings/WiFiSettings.js:78
 #: src/common/WiFiSettings/WiFiSettings.js:94
 msgid "SSID can't be longer than 32 symbols"
-msgstr "SSID nemôže mať viac ako 32 znakov"
+msgstr "SSID nemôže obsahovať viac ako 32 znakov"
 
 #: src/common/WiFiSettings/WiFiSettings.js:79
 #: src/common/WiFiSettings/WiFiSettings.js:96
@@ -199,7 +199,7 @@ msgstr "802.11ax – šírka kanála 160 MHz"
 
 #: src/common/WiFiSettings/constants.js:26
 msgid "WPA3 only"
-msgstr "Len WPA3"
+msgstr "len WPA3"
 
 #: src/common/WiFiSettings/constants.js:27
 msgid "WPA3 with WPA2 as fallback (default)"
@@ -234,7 +234,7 @@ msgid ""
 "supported by all your devices. It usually has less interference, but the "
 "signal does not carry so well indoors."
 msgstr ""
-"Pásmo 2,4 GHz je klientmi podporované častejšie, ale je viac zaťažené "
+"Pásmo 2,4 GHz je klientmi podporované najčastejšie, ale je viac zaťažené "
 "rušením. Pásmo 5 GHz je novší štandard a nemusia ho podporovať všetky "
 "zariadenia. Zvyčajne je rušením postihnuté menej, ale signál sa vnútri budov "
 "šíri horšie."
@@ -271,10 +271,10 @@ msgid ""
 "without WPA3 support require older WPA2. If you experience issues with "
 "connecting older devices, try to enable WPA2."
 msgstr ""
-"Štandard WPA3 je nová najbezpečnejšia metóda šifrovania, ktorú sa "
-"odporúča používať s každým zariadením, ktoré ju podporuje. Staršie "
-"zariadenia bez podpory WPA3 vyžadujú staršie WPA2. Ak sa vyskytnú "
-"problémy s pripojením starších zariadení, skúste povoliť WPA2."
+"Štandard WPA3 je nová, najbezpečnejšia metóda šifrovania a odporúča sa "
+"používať ju s každým zariadením, ktoré ju podporuje. Staršie zariadenia bez "
+"podpory WPA3 vyžadujú staršie WPA2. Ak sa vyskytnú problémy s pripojením "
+"starších zariadení, skúste povoliť WPA2."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -318,7 +318,7 @@ msgstr "Toto nie je platné doménové meno."
 
 #: src/utils/validations.js:17
 msgid "This is not a valid hostname."
-msgstr "Toto nie je platné doménové meno."
+msgstr "Toto nie je platné meno hostiteľa."
 
 #: src/utils/validations.js:18
 msgid "This is not a valid DUID."

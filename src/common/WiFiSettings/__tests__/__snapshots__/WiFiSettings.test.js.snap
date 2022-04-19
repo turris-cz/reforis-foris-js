@@ -613,7 +613,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +         <label
 +           for=\\"8\\"
 +         >
-+           802.11n/ac mode
++           802.11n/ac/ax mode
 +         </label>
 +         <select
 +           class=\\"custom-select\\"
@@ -653,7 +653,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +         <small
 +           class=\\"form-text text-muted\\"
 +         >
-+           Change this to adjust 802.11n/ac mode of operation. 802.11n with 40 MHz wide channels can yield higher throughput but can cause more interference in the network. If you don't know what to choose, use the default option with 20 MHz wide channel.
++           Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 MHz wide channels can yield higher throughput but can cause more interference in the network. If you don't know what to choose, use the default option with 20 MHz wide channel.
 +         </small>
 +       </div>
 +       <div

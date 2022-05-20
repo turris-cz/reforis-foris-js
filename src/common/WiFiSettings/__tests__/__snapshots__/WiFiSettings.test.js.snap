@@ -422,7 +422,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +         <small
 +           class=\\"form-text text-muted\\"
 +         >
-+           WPA2 pre-shared key, that is required to connect to the network.
++           WPA2/3 pre-shared key, that is required to connect to the network.
 +         </small>
 +       </div>
         <hr />
@@ -530,7 +530,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +         <small
 +           class=\\"form-text text-muted\\"
 +         >
-+           WPA2 pre-shared key, that is required to connect to the network.
++           WPA2/3 pre-shared key, that is required to connect to the network.
 +         </small>
 +       </div>
 +       <div

@@ -32,7 +32,7 @@ export const HELP_TEXTS = {
         "SSID which contains non-standard characters could cause problems on some devices."
     ),
     password: _(
-        "WPA2 pre-shared key, that is required to connect to the network."
+        "WPA2/3 pre-shared key, that is required to connect to the network."
     ),
     hidden: _(
         "If set, network is not visible when scanning for available networks."

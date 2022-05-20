@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-02-22 16:41+0100\n"
+"POT-Creation-Date: 2022-05-20 15:42+0200\n"
 "PO-Revision-Date: 2022-03-12 06:58+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-js/"
-"ru/>\n"
 "Language: ru\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-"
+"js/ru/>\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12-dev\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: src/api/utils.js:61
@@ -36,6 +35,14 @@ msgstr "Ответ не получен."
 #: src/api/utils.js:79
 msgid "An unknown API error occurred."
 msgstr "Неизвестная ошибка программного интерфейса приложения."
+
+#: src/bootstrap/CopyInput.js:55
+msgid "Copied!"
+msgstr ""
+
+#: src/bootstrap/CopyInput.js:55
+msgid "Copy"
+msgstr ""
 
 #: src/common/RebootButton.js:27
 msgid "Reboot request failed."
@@ -98,7 +105,8 @@ msgid "Hide SSID"
 msgstr "Скрыть SSID"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
-msgid "802.11n/ac mode"
+#, fuzzy
+msgid "802.11n/ac/ax mode"
 msgstr "Режим 802.11n/ac"
 
 #: src/common/WiFiSettings/WiFiForm.js:199
@@ -219,7 +227,8 @@ msgstr ""
 "некоторых устройствах."
 
 #: src/common/WiFiSettings/constants.js:34
-msgid "WPA2 pre-shared key, that is required to connect to the network."
+#, fuzzy
+msgid "WPA2/3 pre-shared key, that is required to connect to the network."
 msgstr "Общий ключ WPA2, необходимый для подключения к сети."
 
 #: src/common/WiFiSettings/constants.js:37
@@ -241,16 +250,17 @@ msgstr ""
 "помещении сигнал проходит не так хорошо."
 
 #: src/common/WiFiSettings/constants.js:43
+#, fuzzy
 msgid ""
-"Change this to adjust 802.11n/ac mode of operation. 802.11n with 40 MHz "
-"wide channels can yield higher throughput but can cause more interference"
-" in the network. If you don't know what to choose, use the default option"
-" with 20 MHz wide channel."
+"Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 "
+"MHz wide channels can yield higher throughput but can cause more "
+"interference in the network. If you don't know what to choose, use the "
+"default option with 20 MHz wide channel."
 msgstr ""
-"Измените это, чтобы настроить режим работы 802.11n/ac. 802.11n с каналами "
-"шириной 40 МГц обеспечивает более высокую пропускную способность, но может "
-"вызывать больше помех в сети. Если вы не знаете, что выбрать, используйте "
-"опцию по умолчанию с каналом шириной 20 МГц."
+"Измените это, чтобы настроить режим работы 802.11n/ac. 802.11n с каналами"
+" шириной 40 МГц обеспечивает более высокую пропускную способность, но "
+"может вызывать больше помех в сети. Если вы не знаете, что выбрать, "
+"используйте опцию по умолчанию с каналом шириной 20 МГц."
 
 #: src/common/WiFiSettings/constants.js:46
 msgid ""
@@ -260,10 +270,10 @@ msgid ""
 "router. Parameters of the guest network can be set in the Guest network "
 "tab."
 msgstr ""
-"Включает Wi-Fi для гостей, который отделен от локальной сети. Устройства, "
-"подключенные к этой сети, могут доступ в Интернет, но им не разрешен доступ "
-"к другим устройствам и интерфейсу конфигурации маршрутизатора. Параметры "
-"гостевой сети можно настроить на вкладке Гостевая сеть."
+"Включает Wi-Fi для гостей, который отделен от локальной сети. Устройства,"
+" подключенные к этой сети, могут доступ в Интернет, но им не разрешен "
+"доступ к другим устройствам и интерфейсу конфигурации маршрутизатора. "
+"Параметры гостевой сети можно настроить на вкладке Гостевая сеть."
 
 #: src/common/WiFiSettings/constants.js:49
 msgid ""
@@ -364,3 +374,4 @@ msgstr "Не содержит списка электронных адресов
 #~ "конфигурации Wi-Fi и восстановлению "
 #~ "значений по умолчанию.\n"
 #~ "        "
+

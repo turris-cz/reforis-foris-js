@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-02-22 16:41+0100\n"
+"POT-Creation-Date: 2022-05-20 15:42+0200\n"
 "PO-Revision-Date: 2019-02-19 13:34+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fi\n"
@@ -32,6 +32,14 @@ msgstr ""
 
 #: src/api/utils.js:79
 msgid "An unknown API error occurred."
+msgstr ""
+
+#: src/bootstrap/CopyInput.js:55
+msgid "Copied!"
+msgstr ""
+
+#: src/bootstrap/CopyInput.js:55
+msgid "Copy"
 msgstr ""
 
 #: src/common/RebootButton.js:27
@@ -92,7 +100,7 @@ msgid "Hide SSID"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:186
-msgid "802.11n/ac mode"
+msgid "802.11n/ac/ax mode"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:199
@@ -211,7 +219,7 @@ msgid ""
 msgstr ""
 
 #: src/common/WiFiSettings/constants.js:34
-msgid "WPA2 pre-shared key, that is required to connect to the network."
+msgid "WPA2/3 pre-shared key, that is required to connect to the network."
 msgstr ""
 
 #: src/common/WiFiSettings/constants.js:37
@@ -228,10 +236,10 @@ msgstr ""
 
 #: src/common/WiFiSettings/constants.js:43
 msgid ""
-"Change this to adjust 802.11n/ac mode of operation. 802.11n with 40 MHz "
-"wide channels can yield higher throughput but can cause more interference"
-" in the network. If you don't know what to choose, use the default option"
-" with 20 MHz wide channel."
+"Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 "
+"MHz wide channels can yield higher throughput but can cause more "
+"interference in the network. If you don't know what to choose, use the "
+"default option with 20 MHz wide channel."
 msgstr ""
 
 #: src/common/WiFiSettings/constants.js:46
@@ -378,5 +386,22 @@ msgstr ""
 #~ " can be set in the Guest "
 #~ "network tab.\n"
 #~ "        "
+#~ msgstr ""
+
+#~ msgid "802.11n/ac mode"
+#~ msgstr ""
+
+#~ msgid "WPA2 pre-shared key, that is required to connect to the network."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Change this to adjust 802.11n/ac mode"
+#~ " of operation. 802.11n with 40 MHz"
+#~ " wide channels can yield higher "
+#~ "throughput but can cause more "
+#~ "interference in the network. If you "
+#~ "don't know what to choose, use the"
+#~ " default option with 20 MHz wide "
+#~ "channel."
 #~ msgstr ""
 

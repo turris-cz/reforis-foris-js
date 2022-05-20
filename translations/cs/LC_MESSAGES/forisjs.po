@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-02-22 16:41+0100\n"
-"PO-Revision-Date: 2021-08-18 15:36+0000\n"
-"Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
+"POT-Creation-Date: 2022-05-20 15:42+0200\n"
+"PO-Revision-Date: 2022-03-15 22:41+0000\n"
+"Last-Translator: Koli <lukas.koluch@gmail.com>\n"
 "Language: cs\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-"
 "js/cs/>\n"
@@ -34,6 +34,14 @@ msgstr "Neobdržena žádná odezva."
 #: src/api/utils.js:79
 msgid "An unknown API error occurred."
 msgstr "Došlo k neznámé chybě v aplikačním programovém rozhraní."
+
+#: src/bootstrap/CopyInput.js:55
+msgid "Copied!"
+msgstr ""
+
+#: src/bootstrap/CopyInput.js:55
+msgid "Copy"
+msgstr ""
 
 #: src/common/RebootButton.js:27
 msgid "Reboot request failed."
@@ -93,7 +101,8 @@ msgid "Hide SSID"
 msgstr "Skrýt SSID"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
-msgid "802.11n/ac mode"
+#, fuzzy
+msgid "802.11n/ac/ax mode"
 msgstr "Režim 802.11n/ac"
 
 #: src/common/WiFiSettings/WiFiForm.js:199
@@ -102,7 +111,7 @@ msgstr "Kanál"
 
 #: src/common/WiFiSettings/WiFiForm.js:211
 msgid "Encryption"
-msgstr ""
+msgstr "Šifrování"
 
 #: src/common/WiFiSettings/WiFiForm.js:243
 msgid "auto"
@@ -201,7 +210,7 @@ msgstr "802.11ac – kanál šíře 160 MHz"
 
 #: src/common/WiFiSettings/constants.js:26
 msgid "WPA3 only"
-msgstr ""
+msgstr "pouze WPA3"
 
 #: src/common/WiFiSettings/constants.js:27
 msgid "WPA3 with WPA2 as fallback (default)"
@@ -209,7 +218,7 @@ msgstr ""
 
 #: src/common/WiFiSettings/constants.js:28
 msgid "WPA2 only"
-msgstr ""
+msgstr "pouze WPA2"
 
 #: src/common/WiFiSettings/constants.js:31
 msgid ""
@@ -221,7 +230,7 @@ msgstr ""
 
 #: src/common/WiFiSettings/constants.js:34
 #, fuzzy
-msgid "WPA2 pre-shared key, that is required to connect to the network."
+msgid "WPA2/3 pre-shared key, that is required to connect to the network."
 msgstr ""
 "\n"
 "        WPA2 předsdílený klíč, který je vyžadován pro připojení se k "
@@ -252,10 +261,10 @@ msgstr ""
 #: src/common/WiFiSettings/constants.js:43
 #, fuzzy
 msgid ""
-"Change this to adjust 802.11n/ac mode of operation. 802.11n with 40 MHz "
-"wide channels can yield higher throughput but can cause more interference"
-" in the network. If you don't know what to choose, use the default option"
-" with 20 MHz wide channel."
+"Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 "
+"MHz wide channels can yield higher throughput but can cause more "
+"interference in the network. If you don't know what to choose, use the "
+"default option with 20 MHz wide channel."
 msgstr ""
 "\n"
 "        Změna tohoto upraví režim fungování 802.11n/ac. 802.11n s kanály "

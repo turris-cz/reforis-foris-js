@@ -183,7 +183,7 @@ function DeviceForm({
                     />
 
                     <Select
-                        label={_("802.11n/ac mode")}
+                        label={_("802.11n/ac/ax mode")}
                         choices={getHtmodeChoices(formData)}
                         value={formData.htmode}
                         helpText={HELP_TEXTS.htmode}

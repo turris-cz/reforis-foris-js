@@ -20,6 +20,7 @@ export { API_STATE } from "./api/utils";
 export { Alert, ALERT_TYPES } from "./bootstrap/Alert";
 export { Button } from "./bootstrap/Button";
 export { CheckBox } from "./bootstrap/CheckBox";
+export { CopyInput } from "./bootstrap/CopyInput";
 export { DownloadButton } from "./bootstrap/DownloadButton";
 export { DataTimeInput } from "./bootstrap/DataTimeInput";
 export { EmailInput } from "./bootstrap/EmailInput";

@@ -59,6 +59,10 @@ function prepDataToSubmit(formData) {
 
         if (!device.guest_wifi.enabled)
             formData.devices[idx].guest_wifi = { enabled: false };
+
+        if (device.encryption === "WPA2") {
+            delete formData.devices[idx].ieee80211w_disabled;
+        }
     });
     return formData;
 }

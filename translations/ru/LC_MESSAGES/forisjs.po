@@ -7,19 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-05-20 15:42+0200\n"
+"POT-Creation-Date: 2022-12-02 15:54+0100\n"
 "PO-Revision-Date: 2022-05-28 09:19+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-js/"
-"ru/>\n"
 "Language: ru\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-"
+"js/ru/>\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13-dev\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -117,11 +116,21 @@ msgstr "Канал"
 msgid "Encryption"
 msgstr "Шифрование"
 
-#: src/common/WiFiSettings/WiFiForm.js:243
+#: src/common/WiFiSettings/WiFiForm.js:226
+msgid "Disable Management Frame Protection"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:227
+msgid ""
+"In case you have trouble connecting to WiFi Access Point, try disabling "
+"Management Frame Protection."
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
 msgstr "авто"
 
-#: src/common/WiFiSettings/WiFiForm.js:284
+#: src/common/WiFiSettings/WiFiForm.js:303
 msgid "Custom"
 msgstr "Ручная настройка"
 
@@ -137,28 +146,28 @@ msgstr "QR-код Wi-Fi"
 msgid "Download PDF"
 msgstr "Скачать PDF"
 
-#: src/common/WiFiSettings/WiFiSettings.js:78
-#: src/common/WiFiSettings/WiFiSettings.js:94
+#: src/common/WiFiSettings/WiFiSettings.js:82
+#: src/common/WiFiSettings/WiFiSettings.js:98
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID не может быть длиннее 32 символов"
 
-#: src/common/WiFiSettings/WiFiSettings.js:79
-#: src/common/WiFiSettings/WiFiSettings.js:96
+#: src/common/WiFiSettings/WiFiSettings.js:83
+#: src/common/WiFiSettings/WiFiSettings.js:100
 msgid "SSID can't be empty"
 msgstr "SSID не может быть пустым"
 
-#: src/common/WiFiSettings/WiFiSettings.js:81
-#: src/common/WiFiSettings/WiFiSettings.js:98
+#: src/common/WiFiSettings/WiFiSettings.js:85
+#: src/common/WiFiSettings/WiFiSettings.js:102
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID не может быть длиннее 32 байт"
 
-#: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:101
+#: src/common/WiFiSettings/WiFiSettings.js:88
+#: src/common/WiFiSettings/WiFiSettings.js:105
 msgid "Password must contain at least 8 symbols"
 msgstr "Пароль должен содержать не менее 8 символов"
 
-#: src/common/WiFiSettings/WiFiSettings.js:86
-#: src/common/WiFiSettings/WiFiSettings.js:105
+#: src/common/WiFiSettings/WiFiSettings.js:90
+#: src/common/WiFiSettings/WiFiSettings.js:109
 msgid "Password must not contain more than 63 symbols"
 msgstr "Пароль не должен содержать более 63 символов"
 
@@ -255,10 +264,10 @@ msgid ""
 "interference in the network. If you don't know what to choose, use the "
 "default option with 20 MHz wide channel."
 msgstr ""
-"Измените это, чтобы настроить режим работы 802.11n/ac/ax. 802.11n с каналами "
-"шириной 40 МГц обеспечивает более высокую пропускную способность, но может "
-"вызывать больше помех в сети. Если вы не знаете, что выбрать, используйте "
-"опцию по умолчанию с каналом шириной 20 МГц."
+"Измените это, чтобы настроить режим работы 802.11n/ac/ax. 802.11n с "
+"каналами шириной 40 МГц обеспечивает более высокую пропускную "
+"способность, но может вызывать больше помех в сети. Если вы не знаете, "
+"что выбрать, используйте опцию по умолчанию с каналом шириной 20 МГц."
 
 #: src/common/WiFiSettings/constants.js:46
 msgid ""
@@ -372,3 +381,4 @@ msgstr "Не содержит списка электронных адресов
 #~ "конфигурации Wi-Fi и восстановлению "
 #~ "значений по умолчанию.\n"
 #~ "        "
+

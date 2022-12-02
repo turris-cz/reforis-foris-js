@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-05-20 15:42+0200\n"
+"POT-Creation-Date: 2022-12-02 15:54+0100\n"
 "PO-Revision-Date: 2021-09-24 19:38+0000\n"
 "Last-Translator: CryptKid <CryptKiddie@chaospott.de>\n"
 "Language: de\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/foris-"
 "js/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -115,11 +115,21 @@ msgstr "Kanal"
 msgid "Encryption"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:243
+#: src/common/WiFiSettings/WiFiForm.js:226
+msgid "Disable Management Frame Protection"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:227
+msgid ""
+"In case you have trouble connecting to WiFi Access Point, try disabling "
+"Management Frame Protection."
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
 msgstr "automatisch"
 
-#: src/common/WiFiSettings/WiFiForm.js:284
+#: src/common/WiFiSettings/WiFiForm.js:303
 #, fuzzy
 msgid "Custom"
 msgstr "automatisch"
@@ -136,28 +146,28 @@ msgstr "WLAN QR-Code"
 msgid "Download PDF"
 msgstr "PDF herunterladen"
 
-#: src/common/WiFiSettings/WiFiSettings.js:78
-#: src/common/WiFiSettings/WiFiSettings.js:94
+#: src/common/WiFiSettings/WiFiSettings.js:82
+#: src/common/WiFiSettings/WiFiSettings.js:98
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID darf nicht länger als 32 Symbole sein"
 
-#: src/common/WiFiSettings/WiFiSettings.js:79
-#: src/common/WiFiSettings/WiFiSettings.js:96
+#: src/common/WiFiSettings/WiFiSettings.js:83
+#: src/common/WiFiSettings/WiFiSettings.js:100
 msgid "SSID can't be empty"
 msgstr "SSID darf nicht leer sein"
 
-#: src/common/WiFiSettings/WiFiSettings.js:81
-#: src/common/WiFiSettings/WiFiSettings.js:98
+#: src/common/WiFiSettings/WiFiSettings.js:85
+#: src/common/WiFiSettings/WiFiSettings.js:102
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID darf nicht länger als 32 Symbole sein"
 
-#: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:101
+#: src/common/WiFiSettings/WiFiSettings.js:88
+#: src/common/WiFiSettings/WiFiSettings.js:105
 msgid "Password must contain at least 8 symbols"
 msgstr "Das Passwort muss mindestens 8 Zeichen enthalten"
 
-#: src/common/WiFiSettings/WiFiSettings.js:86
-#: src/common/WiFiSettings/WiFiSettings.js:105
+#: src/common/WiFiSettings/WiFiSettings.js:90
+#: src/common/WiFiSettings/WiFiSettings.js:109
 #, fuzzy
 msgid "Password must not contain more than 63 symbols"
 msgstr "Das Passwort muss mindestens 8 Zeichen enthalten"

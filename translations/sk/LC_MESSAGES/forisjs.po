@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-05-20 15:42+0200\n"
+"POT-Creation-Date: 2022-12-02 15:54+0100\n"
 "PO-Revision-Date: 2022-05-30 06:14+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-js/"
-"sk/>\n"
 "Language: sk\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-"
+"js/sk/>\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13-dev\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -116,11 +115,21 @@ msgstr "Kanál"
 msgid "Encryption"
 msgstr "Šifrovanie"
 
-#: src/common/WiFiSettings/WiFiForm.js:243
+#: src/common/WiFiSettings/WiFiForm.js:226
+msgid "Disable Management Frame Protection"
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:227
+msgid ""
+"In case you have trouble connecting to WiFi Access Point, try disabling "
+"Management Frame Protection."
+msgstr ""
+
+#: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
 msgstr "automaticky"
 
-#: src/common/WiFiSettings/WiFiForm.js:284
+#: src/common/WiFiSettings/WiFiForm.js:303
 msgid "Custom"
 msgstr "Vlastné"
 
@@ -136,28 +145,28 @@ msgstr "Wi-Fi QR kód"
 msgid "Download PDF"
 msgstr "Stiahnuť PDF"
 
-#: src/common/WiFiSettings/WiFiSettings.js:78
-#: src/common/WiFiSettings/WiFiSettings.js:94
+#: src/common/WiFiSettings/WiFiSettings.js:82
+#: src/common/WiFiSettings/WiFiSettings.js:98
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID nemôže obsahovať viac ako 32 znakov"
 
-#: src/common/WiFiSettings/WiFiSettings.js:79
-#: src/common/WiFiSettings/WiFiSettings.js:96
+#: src/common/WiFiSettings/WiFiSettings.js:83
+#: src/common/WiFiSettings/WiFiSettings.js:100
 msgid "SSID can't be empty"
 msgstr "SSID nesmie byť prázdne"
 
-#: src/common/WiFiSettings/WiFiSettings.js:81
-#: src/common/WiFiSettings/WiFiSettings.js:98
+#: src/common/WiFiSettings/WiFiSettings.js:85
+#: src/common/WiFiSettings/WiFiSettings.js:102
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID nesmie byť dlhšie ako 32 byteov"
 
-#: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:101
+#: src/common/WiFiSettings/WiFiSettings.js:88
+#: src/common/WiFiSettings/WiFiSettings.js:105
 msgid "Password must contain at least 8 symbols"
 msgstr "Heslo musí obsahovať aspoň 8 znakov"
 
-#: src/common/WiFiSettings/WiFiSettings.js:86
-#: src/common/WiFiSettings/WiFiSettings.js:105
+#: src/common/WiFiSettings/WiFiSettings.js:90
+#: src/common/WiFiSettings/WiFiSettings.js:109
 msgid "Password must not contain more than 63 symbols"
 msgstr "Heslo nesmie obsahovať viac ako 63 znakov"
 
@@ -254,10 +263,10 @@ msgid ""
 "interference in the network. If you don't know what to choose, use the "
 "default option with 20 MHz wide channel."
 msgstr ""
-"Zmenou tejto položky sa nastavuje režim prevádzky 802.11n/ac/ax. Štandard "
-"802.11n so šírkou kanálov 40 MHz môže priniesť vyššiu priepustnosť, ale môže "
-"spôsobiť väčšie rušenie. Ak si nie ste istí, použite predvolenú možnosť so "
-"šírkou kanála 20 MHz."
+"Zmenou tejto položky sa nastavuje režim prevádzky 802.11n/ac/ax. Štandard"
+" 802.11n so šírkou kanálov 40 MHz môže priniesť vyššiu priepustnosť, ale "
+"môže spôsobiť väčšie rušenie. Ak si nie ste istí, použite predvolenú "
+"možnosť so šírkou kanála 20 MHz."
 
 #: src/common/WiFiSettings/constants.js:46
 msgid ""
@@ -368,3 +377,4 @@ msgstr "Neobsahuje zoznam e-mailov oddelených čiarkami."
 #~ "že sa tým odstráni aktuálna konfigurácia"
 #~ " a obnovia sa východiskové hodnoty.\n"
 #~ "        "
+

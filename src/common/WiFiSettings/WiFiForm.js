@@ -8,7 +8,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Switch } from "../../bootstrap/Switch";
-import { CheckBox } from "../../bootstrap/CheckBox";
 import { PasswordInput } from "../../bootstrap/PasswordInput";
 import { RadioSet } from "../../bootstrap/RadioSet";
 import { Select } from "../../bootstrap/Select";
@@ -65,6 +64,7 @@ DeviceForm.propTypes = {
         guest_wifi: PropTypes.object.isRequired,
         encryption: PropTypes.string.isRequired,
         available_bands: PropTypes.array.isRequired,
+        ieee80211w_disabled: PropTypes.bool.isRequired,
     }),
     formErrors: PropTypes.object.isRequired,
     setFormValue: PropTypes.func.isRequired,
@@ -102,7 +102,7 @@ function DeviceForm({
                 switchHeading
                 {...props}
             />
-            {formData.enabled ? (
+            {formData.enabled && (
                 <>
                     <TextInput
                         label="SSID"
@@ -142,7 +142,7 @@ function DeviceForm({
                         {...props}
                     />
 
-                    <CheckBox
+                    <Switch
                         label={_("Hide SSID")}
                         helpText={HELP_TEXTS.hidden}
                         checked={formData.hidden}
@@ -220,6 +220,25 @@ function DeviceForm({
                         {...props}
                     />
 
+                    {(formData.encryption === "WPA3" ||
+                        formData.encryption === "WPA2/3") && (
+                        <Switch
+                            label={_("Disable Management Frame Protection")}
+                            helpText={_(
+                                "In case you have trouble connecting to WiFi Access Point, try disabling Management Frame Protection."
+                            )}
+                            checked={formData.ieee80211w_disabled}
+                            onChange={setFormValue((value) => ({
+                                devices: {
+                                    [deviceIndex]: {
+                                        ieee80211w_disabled: { $set: value },
+                                    },
+                                },
+                            }))}
+                            {...props}
+                        />
+                    )}
+
                     {hasGuestNetwork && (
                         <WifiGuestForm
                             formData={{
@@ -232,8 +251,8 @@ function DeviceForm({
                         />
                     )}
                 </>
-            ) : null}
-            {divider ? <hr /> : null}
+            )}
+            {divider && <hr />}
         </>
     );
 }

@@ -90,10 +90,13 @@ export {
 } from "./utils/validations";
 
 // Alert context
-export { AlertContextProvider, useAlert } from "./alertContext/AlertContext";
+export {
+    AlertContextProvider,
+    useAlert,
+} from "./context/alertContext/AlertContext";
 
 // Customization context
 export {
     CustomizationContextProvider,
     useCustomizationContext,
-} from "./customizationContext/CustomizationContext";
+} from "./context/customizationContext/CustomizationContext";

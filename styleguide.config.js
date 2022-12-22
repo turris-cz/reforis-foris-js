@@ -43,7 +43,7 @@ module.exports = {
                 },
                 {
                     name: "Alert Context",
-                    components: ["src/alertContext/AlertContext.js"],
+                    components: ["src/context/alertContext/AlertContext.js"],
                     exampleMode: "expand",
                     usageMode: "expand",
                 },
@@ -53,7 +53,9 @@ module.exports = {
 
         {
             name: "Customization Context",
-            components: ["src/customizationContext/CustomizationContext.js"],
+            components: [
+                "src/context/customizationContext/CustomizationContext.js",
+            ],
             exampleMode: "expand",
             usageMode: "expand",
         },

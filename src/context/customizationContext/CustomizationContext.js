@@ -8,10 +8,10 @@
 import React, { useContext, useEffect } from "react";
 import PropTypes from "prop-types";
 
-import { useAPIGet } from "../api/hooks";
-import { ForisURLs } from "../utils/forisUrls";
+import { useAPIGet } from "../../api/hooks";
+import { ForisURLs } from "../../utils/forisUrls";
 
-import { Spinner } from "../bootstrap/Spinner";
+import { Spinner } from "../../bootstrap/Spinner";
 
 CustomizationContextProvider.propTypes = {
     children: PropTypes.oneOfType([

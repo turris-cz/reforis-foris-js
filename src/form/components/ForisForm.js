@@ -13,7 +13,7 @@ import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { API_STATE } from "../../api/utils";
 import { formFieldsSize } from "../../bootstrap/constants";
 import { Spinner } from "../../bootstrap/Spinner";
-import { useAlert } from "../../alertContext/AlertContext";
+import { useAlert } from "../../context/alertContext/AlertContext";
 import { useAPIPost } from "../../api/hooks";
 
 import { useForisModule, useForm } from "../hooks";

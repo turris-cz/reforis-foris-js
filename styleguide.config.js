@@ -43,7 +43,7 @@ module.exports = {
                 },
                 {
                     name: "Alert Context",
-                    components: ["src/alertContext/AlertContext.js"],
+                    components: ["src/context/alertContext/AlertContext.js"],
                     exampleMode: "expand",
                     usageMode: "expand",
                 },
@@ -51,6 +51,14 @@ module.exports = {
             sectionDepth: 1,
         },
 
+        {
+            name: "Customization Context",
+            components: [
+                "src/context/customizationContext/CustomizationContext.js",
+            ],
+            exampleMode: "expand",
+            usageMode: "expand",
+        },
         {
             name: "Bootstrap components",
             description: "Set of bootstrap components.",

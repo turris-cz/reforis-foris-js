@@ -51,4 +51,3 @@ coverage.xml
 dist/
 foris-*.tgz
 styleguide/
-testUtils

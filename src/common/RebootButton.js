@@ -14,7 +14,7 @@ import { ForisURLs } from "../utils/forisUrls";
 
 import { Button } from "../bootstrap/Button";
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "../bootstrap/Modal";
-import { useAlert } from "../alertContext/AlertContext";
+import { useAlert } from "../context/alertContext/AlertContext";
 
 export function RebootButton(props) {
     const [triggered, setTriggered] = useState(false);

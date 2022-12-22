@@ -14,6 +14,7 @@ import { render } from "@testing-library/react";
 import PropTypes from "prop-types";
 
 import { AlertContextMock } from "./alertContextMock";
+import { CustomizationContextMock } from "./cutomizationContextMock";
 
 Wrapper.propTypes = {
     children: PropTypes.oneOfType([
@@ -25,9 +26,11 @@ Wrapper.propTypes = {
 function Wrapper({ children }) {
     return (
         <AlertContextMock>
-            <StaticRouter>
-                <UIDReset>{children}</UIDReset>
-            </StaticRouter>
+            <CustomizationContextMock>
+                <StaticRouter>
+                    <UIDReset>{children}</UIDReset>
+                </StaticRouter>
+            </CustomizationContextMock>
         </AlertContextMock>
     );
 }

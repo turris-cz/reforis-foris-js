@@ -25,13 +25,13 @@ Wrapper.propTypes = {
 
 function Wrapper({ children }) {
     return (
-        <AlertContextMock>
-            <CustomizationContextMock>
+        <CustomizationContextMock>
+            <AlertContextMock>
                 <StaticRouter>
                     <UIDReset>{children}</UIDReset>
                 </StaticRouter>
-            </CustomizationContextMock>
-        </AlertContextMock>
+            </AlertContextMock>
+        </CustomizationContextMock>
     );
 }
 

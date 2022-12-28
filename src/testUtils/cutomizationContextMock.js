@@ -9,12 +9,23 @@ import React from "react";
 
 window.CustomizationContext = React.createContext();
 
-const deviceDetails = {};
-const isCustomized = jest.fn();
+const deviceDetails = {
+    kernel: "5.x.x",
+    model: "Turris Omnia",
+    os_branch: {
+        mode: "branch",
+        value: "hbs",
+    },
+    os_version: "6.x.x",
+    reforis_version: "1.x.x",
+    serial: 123456789,
+};
+
+const isCustomized = false;
 
 function CustomizationContextMock({ children }) {
     return (
-        <CustomizationContext.Provider value={(deviceDetails, isCustomized)}>
+        <CustomizationContext.Provider value={{ deviceDetails, isCustomized }}>
             {children}
         </CustomizationContext.Provider>
     );

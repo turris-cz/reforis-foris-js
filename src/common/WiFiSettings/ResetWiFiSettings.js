@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import { Button } from "../../bootstrap/Button";
-import { useAlert } from "../../alertContext/AlertContext";
+import { useAlert } from "../../context/alertContext/AlertContext";
 import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { useAPIPost } from "../../api/hooks";
 import { API_STATE } from "../../api/utils";

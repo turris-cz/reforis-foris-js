@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomizationContext should render component without customization 1`] = `
+<div>
+  <p>
+    Description / component for original reForis (other devices)
+  </p>
+</div>
+`;
+
+exports[`CustomizationContext should render customized component 1`] = `
+<div>
+  <p>
+    Description / component for customized reForis (Shield)
+  </p>
+</div>
+`;

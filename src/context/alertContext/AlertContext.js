@@ -8,8 +8,8 @@
 import React, { useState, useContext, useCallback } from "react";
 import PropTypes from "prop-types";
 
-import { Alert, ALERT_TYPES } from "../bootstrap/Alert";
-import { Portal } from "../utils/Portal";
+import { Alert, ALERT_TYPES } from "../../bootstrap/Alert";
+import { Portal } from "../../utils/Portal";
 
 AlertContextProvider.propTypes = {
     children: PropTypes.oneOfType([

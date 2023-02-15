@@ -301,10 +301,12 @@ exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
         class="text-right"
       >
         <button
-          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
+          class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
           type="submit"
         >
-          Save
+          <span>
+            Save
+          </span>
         </button>
       </div>
     </form>
@@ -322,10 +324,12 @@ exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
       class="text-right"
     >
       <button
-        class="btn btn-primary col-sm-12 col-md-3 col-lg-2"
+        class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
         type="button"
       >
-        Reset Wi-Fi Settings
+        <span>
+          Reset Wi-Fi Settings
+        </span>
       </button>
     </div>
   </div>
@@ -435,13 +439,13 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
           class=\\"text-right\\"
         >
           <button
-            class=\\"btn btn-primary  col-sm-12 col-md-3 col-lg-2\\"
+            class=\\"btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center\\"
 +           disabled=\\"\\"
             type=\\"submit\\"
           >
-            Save
-          </button>
-        </div>"
+            <span>
+              Save
+            </span>"
 `;
 
 exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `

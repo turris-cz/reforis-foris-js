@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 15:54+0100\n"
-"PO-Revision-Date: 2023-09-26 11:59+0000\n"
+"PO-Revision-Date: 2023-11-23 16:03+0000\n"
 "Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/cs/"
 ">\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.2.1-rc\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: src/api/utils.js:61
@@ -79,7 +79,7 @@ msgstr "Nastavení Wi-Fi jsou uvedena do výchozího stavu."
 #: src/common/WiFiSettings/ResetWiFiSettings.js:55
 #: src/common/WiFiSettings/ResetWiFiSettings.js:69
 msgid "Reset Wi-Fi Settings"
-msgstr "Resetovat nastavení Wi-Fi"
+msgstr "Reset nastavení Wi-Fi"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:57
 msgid ""

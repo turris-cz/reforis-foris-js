@@ -31,3 +31,7 @@
 .spinner-fs-wrapper .spinner-text {
     margin: 1rem;
 }
+
+.spinner-border-sm {
+    min-width: 16px;
+}

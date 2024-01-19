@@ -46,16 +46,20 @@ exports[`<RebootButton/> Render modal. 1`] = `
             class="modal-footer"
           >
             <button
-              class="btn btn-primary "
+              class="btn btn-primary d-inline-flex justify-content-center align-items-center"
               type="button"
             >
-              Cancel
+              <span>
+                Cancel
+              </span>
             </button>
             <button
-              class="btn btn-danger"
+              class="btn btn-danger d-inline-flex justify-content-center align-items-center"
               type="button"
             >
-              Confirm reboot
+              <span>
+                Confirm reboot
+              </span>
             </button>
           </div>
         </div>
@@ -63,10 +67,12 @@ exports[`<RebootButton/> Render modal. 1`] = `
     </div>
   </div>
   <button
-    class="btn btn-danger"
+    class="btn btn-danger d-inline-flex justify-content-center align-items-center"
     type="button"
   >
-    Reboot
+    <span>
+      Reboot
+    </span>
   </button>
 </div>
 `;
@@ -77,10 +83,12 @@ exports[`<RebootButton/> Render. 1`] = `
     id="modal-container"
   />
   <button
-    class="btn btn-danger"
+    class="btn btn-danger d-inline-flex justify-content-center align-items-center"
     type="button"
   >
-    Reboot
+    <span>
+      Reboot
+    </span>
   </button>
 </div>
 `;

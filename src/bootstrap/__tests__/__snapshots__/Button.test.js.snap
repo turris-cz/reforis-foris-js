@@ -2,33 +2,38 @@
 
 exports[`<Button /> Render button correctly 1`] = `
 <button
-  class="btn btn-primary "
+  class="btn btn-primary d-inline-flex justify-content-center align-items-center"
   type="button"
 >
-  Test Button
+  <span>
+    Test Button
+  </span>
 </button>
 `;
 
 exports[`<Button /> Render button with custom classes 1`] = `
 <button
-  class="btn one two three"
+  class="btn one two three d-inline-flex justify-content-center align-items-center"
   type="button"
 >
-  Test Button
+  <span>
+    Test Button
+  </span>
 </button>
 `;
 
 exports[`<Button /> Render button with spinner 1`] = `
 <button
-  class="btn btn-primary "
+  class="btn btn-primary d-inline-flex justify-content-center align-items-center"
   type="button"
 >
   <span
     aria-hidden="true"
-    class="spinner-border spinner-border-sm"
+    class="spinner-border spinner-border-sm mr-1"
     role="status"
   />
-   
-  Test Button
+  <span>
+    Test Button
+  </span>
 </button>
 `;

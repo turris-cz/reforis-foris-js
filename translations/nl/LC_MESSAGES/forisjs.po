@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-12-02 15:54+0100\n"
-"PO-Revision-Date: 2020-11-29 19:29+0000\n"
-"Last-Translator: Johan van de Wetering <mail@jvdwetering.nl>\n"
+"PO-Revision-Date: 2024-01-04 21:08+0000\n"
+"Last-Translator: powerburner-nl <peter.mulder.1981@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/turris/foris-js/nl/"
+">\n"
 "Language: nl\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/turris/foris-"
-"js/nl/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: src/api/utils.js:61
@@ -54,19 +55,19 @@ msgstr "Opnieuw opstarten"
 
 #: src/common/RebootButton.js:66
 msgid "Warning!"
-msgstr ""
+msgstr "Waarschuwing!"
 
 #: src/common/RebootButton.js:68
 msgid "Are you sure you want to restart the router?"
-msgstr ""
+msgstr "Weet u zeker dat u de router opnieuw wilt opstarten?"
 
 #: src/common/RebootButton.js:71
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: src/common/RebootButton.js:73
 msgid "Confirm reboot"
-msgstr ""
+msgstr "Opnieuw opstarten bevestigen"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:38
 msgid "An error occurred during resetting Wi-Fi settings."
@@ -418,4 +419,3 @@ msgstr "Bevat geen lijst met e-mails gescheiden door komma's."
 #~ " default option with 20 MHz wide "
 #~ "channel."
 #~ msgstr ""
-

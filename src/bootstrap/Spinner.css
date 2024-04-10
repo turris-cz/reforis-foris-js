@@ -1,3 +1,11 @@
+.spinner-fs-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1101; /* increase z-index by 1 to ensure it's on top of spinner-fs-background */
+}
+
 .spinner-wrapper .spinner-border {
     width: 4rem;
     height: 4rem;
@@ -7,10 +15,8 @@
 .spinner-fs-background {
     background-color: rgba(2, 2, 2, 0.5);
     color: rgb(230, 230, 230);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
+    width: 100vw;
+    height: 100vh;
 
     display: flex;
     align-items: center;

@@ -23,7 +23,7 @@ NumberInput.propTypes = {
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     /** Function called when value changes. */
     onChange: PropTypes.func.isRequired,
-    /** Additional description dispaled to the right of input value. */
+    /** Additional description displayed to the right of input value. */
     inlineText: PropTypes.string,
 };
 
@@ -49,27 +49,27 @@ export function NumberInput({ onChange, inlineText, value, ...props }) {
 
     return (
         <Input type="number" onChange={onChange} value={value} {...props}>
-            <div className="input-group-append">
-                {inlineText && <p className="input-group-text">{inlineText}</p>}
-                <button
-                    type="button"
-                    className="btn btn-outline-secondary"
-                    onMouseDown={() => enableIncrease(true)}
-                    onMouseUp={() => enableIncrease(false)}
-                    aria-label="Increase"
-                >
-                    <i className="fas fa-plus" />
-                </button>
-                <button
-                    type="button"
-                    className="btn btn-outline-secondary"
-                    onMouseDown={() => enableDecrease(true)}
-                    onMouseUp={() => enableDecrease(false)}
-                    aria-label="Decrease"
-                >
-                    <i className="fas fa-minus" />
-                </button>
-            </div>
+            {inlineText && (
+                <span className="input-group-text">{inlineText}</span>
+            )}
+            <button
+                type="button"
+                className="btn btn-outline-secondary"
+                onMouseDown={() => enableIncrease(true)}
+                onMouseUp={() => enableIncrease(false)}
+                aria-label="Increase"
+            >
+                <i className="fas fa-plus" />
+            </button>
+            <button
+                type="button"
+                className="btn btn-outline-secondary"
+                onMouseDown={() => enableDecrease(true)}
+                onMouseUp={() => enableDecrease(false)}
+                aria-label="Decrease"
+            >
+                <i className="fas fa-minus" />
+            </button>
         </Input>
     );
 }

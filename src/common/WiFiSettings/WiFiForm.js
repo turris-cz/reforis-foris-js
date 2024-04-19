@@ -92,7 +92,7 @@ function DeviceForm({
     return (
         <>
             <Switch
-                label={<h2>{_(`Wi-Fi ${deviceID + 1}`)}</h2>}
+                label={<h2 className="mb-0">{_(`Wi-Fi ${deviceID + 1}`)}</h2>}
                 checked={formData.enabled}
                 onChange={setFormValue((value) => ({
                     devices: {
@@ -119,12 +119,10 @@ function DeviceForm({
                         }))}
                         {...props}
                     >
-                        <div className="input-group-append">
-                            <WiFiQRCode
-                                SSID={formData.SSID}
-                                password={formData.password}
-                            />
-                        </div>
+                        <WiFiQRCode
+                            SSID={formData.SSID}
+                            password={formData.password}
+                        />
                     </TextInput>
 
                     <PasswordInput

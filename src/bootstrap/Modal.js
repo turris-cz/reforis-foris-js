@@ -92,11 +92,10 @@ export function ModalHeader({ setShown, title }) {
             <h5 className="modal-title">{title}</h5>
             <button
                 type="button"
-                className="close"
+                className="btn-close"
                 onClick={() => setShown(false)}
-            >
-                <span aria-hidden="true">&times;</span>
-            </button>
+                aria-label={_("Close")}
+            />
         </div>
     );
 }

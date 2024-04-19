@@ -58,7 +58,7 @@ export function ResetWiFiSettings({ ws, endpoint }) {
                     "If a number of wireless cards doesn't match, you may try to reset the Wi-Fi settings. Note that this will remove the current Wi-Fi configuration and restore the default values."
                 )}
             </p>
-            <div className="text-right">
+            <div className="text-end">
                 <Button
                     className="btn-primary"
                     forisFormSize

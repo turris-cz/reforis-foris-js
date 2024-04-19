@@ -22,28 +22,30 @@ Switch.propTypes = {
 
 export function Switch({ label, helpText, switchHeading, ...props }) {
     const uid = useUID();
+
     return (
-        <div className={`form-group ${switchHeading ? "switch" : ""}`.trim()}>
-            <div
-                className={`custom-control custom-switch ${
-                    !helpText ? "custom-control-inline" : ""
-                } ${switchHeading ? "switch-heading" : ""}`.trim()}
-            >
-                <input
-                    type="checkbox"
-                    className="custom-control-input"
-                    id={uid}
-                    {...props}
-                />
-                <label className="custom-control-label" htmlFor={uid}>
-                    {label}
-                </label>
-                {helpText && (
-                    <small className="form-text text-muted mt-0 mb-3">
-                        {helpText}
-                    </small>
-                )}
-            </div>
+        <div
+            className={`form-check form-switch mb-3 ${
+                switchHeading ? "d-flex align-items-center" : null
+            }`.trim()}
+        >
+            <input
+                type="checkbox"
+                className={`form-check-input ${
+                    switchHeading ? "me-2" : ""
+                }`.trim()}
+                role="switch"
+                id={uid}
+                {...props}
+            />
+            <label className="form-check-label" htmlFor={uid}>
+                {label}
+            </label>
+            {helpText && (
+                <div className="form-text">
+                    <small>{helpText}</small>
+                </div>
+            )}
         </div>
     );
 }

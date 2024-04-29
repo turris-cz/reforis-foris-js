@@ -30,14 +30,18 @@ export function Select({ label, choices, helpText, ...props }) {
     ));
 
     return (
-        <div className="form-group">
-            <label htmlFor={uid}>{label}</label>
-            <select className="custom-select" id={uid} {...props}>
+        <div className="mb-3">
+            <label className="form-label" htmlFor={uid}>
+                {label}
+            </label>
+            <select className="form-select" id={uid} {...props}>
                 {options}
             </select>
-            {helpText ? (
-                <small className="form-text text-muted">{helpText}</small>
-            ) : null}
+            {helpText && (
+                <div className="form-text">
+                    <small>{helpText}</small>
+                </div>
+            )}
         </div>
     );
 }

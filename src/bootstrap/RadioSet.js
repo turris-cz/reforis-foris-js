@@ -17,7 +17,7 @@ RadioSet.propTypes = {
     /** Choices . */
     choices: PropTypes.arrayOf(
         PropTypes.shape({
-            /** Choice lable . */
+            /** Choice label . */
             label: PropTypes.oneOfType([
                 PropTypes.string,
                 PropTypes.element,
@@ -64,7 +64,7 @@ export function RadioSet({
     });
 
     return (
-        <div className="form-group">
+        <div className="mb-3">
             {label && (
                 <label htmlFor={uid} className="d-block">
                     {label}
@@ -72,7 +72,9 @@ export function RadioSet({
             )}
             {radios}
             {helpText && (
-                <small className="form-text text-muted">{helpText}</small>
+                <div className="form-text">
+                    <small>{helpText}</small>
+                </div>
             )}
         </div>
     );
@@ -94,24 +96,24 @@ export function Radio({ label, id, helpText, inline, ...props }) {
     return (
         <>
             <div
-                className={`custom-control custom-radio ${
-                    inline ? "custom-control-inline" : ""
+                className={`mb-2 ${
+                    inline ? "form-check form-check-inline" : ""
                 }`.trim()}
             >
                 <input
                     id={id}
-                    className="custom-control-input"
+                    className="form-check-input me-2"
                     type="radio"
                     {...props}
                 />
-                <label className="custom-control-label" htmlFor={id}>
+                <label className="form-check-label" htmlFor={id}>
                     {label}
+                    {helpText && (
+                        <div className="form-text">
+                            <small>{helpText}</small>
+                        </div>
+                    )}
                 </label>
-                {helpText && (
-                    <small className="form-text text-muted mt-0 mb-3">
-                        {helpText}
-                    </small>
-                )}
             </div>
         </>
     );

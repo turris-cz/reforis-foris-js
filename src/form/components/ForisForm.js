@@ -190,7 +190,7 @@ export function ForisForm({
             <Prompt message={getMessageOnLeavingPage} />
             <form onSubmit={onSubmit} ref={formReference}>
                 {childrenWithFormProps}
-                <div className="text-right">
+                <div className="text-end">
                     <SubmitButton
                         state={getSubmitButtonState()}
                         disabled={submitButtonIsDisabled}

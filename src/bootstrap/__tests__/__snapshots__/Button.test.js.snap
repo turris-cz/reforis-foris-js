@@ -29,7 +29,7 @@ exports[`<Button /> Render button with spinner 1`] = `
 >
   <span
     aria-hidden="true"
-    class="spinner-border spinner-border-sm mr-1"
+    class="spinner-border spinner-border-sm me-1"
     role="status"
   />
   <span>

@@ -1,11 +1,12 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { Tooltip } from "bootstrap/dist/js/bootstrap.bundle.min";
 
 /** Execute callback when condition is set to true. */
 export function useConditionalTimeout(
@@ -39,4 +40,23 @@ export function useClickOutside(element, callback) {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     });
+}
+
+/** useTooltip hook for Bootstrap tooltips. */
+export function useTooltip(description, placement = "top", trigger = "hover") {
+    const tooltipRef = useRef();
+
+    useEffect(() => {
+        const tooltip = new Tooltip(tooltipRef.current, {
+            title: description,
+            placement,
+            trigger,
+        });
+
+        return () => {
+            tooltip.dispose();
+        };
+    });
+
+    return tooltipRef;
 }

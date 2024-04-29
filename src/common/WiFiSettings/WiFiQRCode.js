@@ -87,7 +87,7 @@ function QRCodeModal({ shown, setShown, SSID, password }) {
                         createAndDownloadPdf(SSID, password);
                     }}
                 >
-                    <i className="fas fa-arrow-down mr-2" />
+                    <i className="fas fa-file-download me-2" />
                     {_("Download PDF")}
                 </Button>
             </ModalFooter>

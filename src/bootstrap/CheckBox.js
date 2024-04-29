@@ -24,25 +24,24 @@ CheckBox.defaultProps = {
 
 export function CheckBox({ label, helpText, disabled, ...props }) {
     const uid = useUID();
+
     return (
-        <div className="form-group">
-            <div className="custom-control custom-checkbox ">
-                <input
-                    className="custom-control-input"
-                    type="checkbox"
-                    id={uid}
-                    disabled={disabled}
-                    {...props}
-                />
-                <label className="custom-control-label" htmlFor={uid}>
-                    {label}
-                    {helpText && (
-                        <small className="form-text text-muted">
-                            {helpText}
-                        </small>
-                    )}
-                </label>
-            </div>
+        <div className="mb-3 form-check">
+            <input
+                className="form-check-input"
+                type="checkbox"
+                id={uid}
+                disabled={disabled}
+                {...props}
+            />
+            <label className="form-check-label" htmlFor={uid}>
+                {label}
+            </label>
+            {helpText && (
+                <div className="form-text">
+                    <small>{helpText}</small>
+                </div>
+            )}
         </div>
     );
 }

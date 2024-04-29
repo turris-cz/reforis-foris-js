@@ -2,55 +2,51 @@
 
 exports[`<Checkbox/> Render checkbox 1`] = `
 <div
-  class="form-group"
+  class="mb-3 form-check"
 >
-  <div
-    class="custom-control custom-checkbox "
+  <input
+    checked=""
+    class="form-check-input"
+    id="1"
+    type="checkbox"
+  />
+  <label
+    class="form-check-label"
+    for="1"
   >
-    <input
-      checked=""
-      class="custom-control-input"
-      id="1"
-      type="checkbox"
-    />
-    <label
-      class="custom-control-label"
-      for="1"
-    >
-      Test label
-      <small
-        class="form-text text-muted"
-      >
-        Some help text
-      </small>
-    </label>
+    Test label
+  </label>
+  <div
+    class="form-text"
+  >
+    <small>
+      Some help text
+    </small>
   </div>
 </div>
 `;
 
 exports[`<Checkbox/> Render uncheked checkbox 1`] = `
 <div
-  class="form-group"
+  class="mb-3 form-check"
 >
-  <div
-    class="custom-control custom-checkbox "
+  <input
+    class="form-check-input"
+    id="1"
+    type="checkbox"
+  />
+  <label
+    class="form-check-label"
+    for="1"
   >
-    <input
-      class="custom-control-input"
-      id="1"
-      type="checkbox"
-    />
-    <label
-      class="custom-control-label"
-      for="1"
-    >
-      Test label
-      <small
-        class="form-text text-muted"
-      >
-        Some help text
-      </small>
-    </label>
+    Test label
+  </label>
+  <div
+    class="form-text"
+  >
+    <small>
+      Some help text
+    </small>
   </div>
 </div>
 `;

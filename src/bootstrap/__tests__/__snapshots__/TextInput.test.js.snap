@@ -2,9 +2,10 @@
 
 exports[`<TextInput/> Render text input 1`] = `
 <div
-  class="form-group"
+  class="mb-3"
 >
   <label
+    class="form-label"
     for="1"
   >
     Test label
@@ -19,10 +20,12 @@ exports[`<TextInput/> Render text input 1`] = `
       value="Some text"
     />
   </div>
-  <small
-    class="form-text text-muted"
+  <div
+    class="form-text"
   >
-    Some help text
-  </small>
+    <small>
+      Some help text
+    </small>
+  </div>
 </div>
 `;

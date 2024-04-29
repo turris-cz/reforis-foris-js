@@ -3,7 +3,7 @@
 exports[`<SubmitButton/> Render load 1`] = `
 <div>
   <button
-    class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+    class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
     disabled=""
     type="submit"
   >
@@ -22,7 +22,7 @@ exports[`<SubmitButton/> Render load 1`] = `
 exports[`<SubmitButton/> Render ready 1`] = `
 <div>
   <button
-    class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+    class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
     type="submit"
   >
     <span>
@@ -35,7 +35,7 @@ exports[`<SubmitButton/> Render ready 1`] = `
 exports[`<SubmitButton/> Render saving 1`] = `
 <div>
   <button
-    class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+    class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
     disabled=""
     type="submit"
   >

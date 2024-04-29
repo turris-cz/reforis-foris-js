@@ -2,26 +2,25 @@
 
 exports[`<Switch/> Render switch 1`] = `
 <div
-  class="form-group"
+  class="form-check form-switch mb-3 null"
 >
-  <div
-    class="custom-control custom-switch"
+  <input
+    checked=""
+    class="form-check-input"
+    id="1"
+    role="switch"
+    type="checkbox"
+  />
+  <label
+    class="form-check-label"
+    for="1"
   >
-    <input
-      checked=""
-      class="custom-control-input"
-      id="1"
-      type="checkbox"
-    />
-    <label
-      class="custom-control-label"
-      for="1"
-    >
-      Test label
-    </label>
-    <small
-      class="form-text text-muted mt-0 mb-3"
-    >
+    Test label
+  </label>
+  <div
+    class="form-text"
+  >
+    <small>
       Some help text
     </small>
   </div>
@@ -30,25 +29,24 @@ exports[`<Switch/> Render switch 1`] = `
 
 exports[`<Switch/> Render uncheked switch 1`] = `
 <div
-  class="form-group"
+  class="form-check form-switch mb-3 null"
 >
-  <div
-    class="custom-control custom-switch"
+  <input
+    class="form-check-input"
+    id="1"
+    role="switch"
+    type="checkbox"
+  />
+  <label
+    class="form-check-label"
+    for="1"
   >
-    <input
-      class="custom-control-input"
-      id="1"
-      type="checkbox"
-    />
-    <label
-      class="custom-control-label"
-      for="1"
-    >
-      Test label
-    </label>
-    <small
-      class="form-text text-muted mt-0 mb-3"
-    >
+    Test label
+  </label>
+  <div
+    class="form-text"
+  >
+    <small>
       Some help text
     </small>
   </div>

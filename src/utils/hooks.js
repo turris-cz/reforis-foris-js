@@ -5,8 +5,7 @@
  * See /LICENSE for more information.
  */
 
-import { useState, useEffect, useRef } from "react";
-import { Tooltip } from "bootstrap/dist/js/bootstrap.bundle.min";
+import { useState, useEffect } from "react";
 
 /** Execute callback when condition is set to true. */
 export function useConditionalTimeout(
@@ -40,23 +39,4 @@ export function useClickOutside(element, callback) {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     });
-}
-
-/** useTooltip hook for Bootstrap tooltips. */
-export function useTooltip(description, placement = "top", trigger = "hover") {
-    const tooltipRef = useRef();
-
-    useEffect(() => {
-        const tooltip = new Tooltip(tooltipRef.current, {
-            title: description,
-            placement,
-            trigger,
-        });
-
-        return () => {
-            tooltip.dispose();
-        };
-    });
-
-    return tooltipRef;
 }

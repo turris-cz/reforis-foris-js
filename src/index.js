@@ -69,7 +69,7 @@ export {
     withErrorMessage,
 } from "./utils/conditionalHOCs";
 export { ErrorMessage } from "./utils/ErrorMessage";
-export { useClickOutside, useTooltip } from "./utils/hooks";
+export { useClickOutside } from "./utils/hooks";
 export { toLocaleDateString } from "./utils/datetime";
 export { displayCard } from "./utils/displayCard";
 export { isPluginInstalled } from "./utils/isPluginInstalled";

@@ -8,6 +8,22 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.0.0] - 2024-06-11
+
+### Added
+
+-   Added CHANGELOG.md
+-   Added JS_DIR variable to Makefile
+-   Added support for shared reForis ESLint configuration
+
+### Changed
+
+-   Updated dependencies in package.json
+-   Updated Spinner.css styles for better positioning and responsiveness
+-   Migrated to Bootstrap 5
+-   NPM audit fix
+-   Other small improvements
+
 ## [5.6.1] - 2024-01-19
 
 -   Added & updated Weblate translations
@@ -298,7 +314,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v5.6.1...master
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.0...master
+[6.0.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v5.6.1...v6.0.0
 [5.6.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v5.6.0...v5.6.1
 [5.6.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v5.5.0...v5.6.0
 [5.5.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v5.4.1...v5.5.0

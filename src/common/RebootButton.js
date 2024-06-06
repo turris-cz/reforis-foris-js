@@ -1,22 +1,22 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React, { useState, useEffect } from "react";
+
 import PropTypes from "prop-types";
 
 import { useAPIPost } from "../api/hooks";
 import { API_STATE } from "../api/utils";
-import { ForisURLs } from "../utils/forisUrls";
-
-import { Button } from "../bootstrap/Button";
+import Button from "../bootstrap/Button";
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "../bootstrap/Modal";
 import { useAlert } from "../context/alertContext/AlertContext";
+import { ForisURLs } from "../utils/forisUrls";
 
-export function RebootButton(props) {
+function RebootButton(props) {
     const [triggered, setTriggered] = useState(false);
     const [modalShown, setModalShown] = useState(false);
     const [triggerRebootStatus, triggerReboot] = useAPIPost(ForisURLs.reboot);
@@ -28,11 +28,11 @@ export function RebootButton(props) {
         }
     });
 
-    function rebootHandler() {
+    const rebootHandler = () => {
         setTriggered(true);
         triggerReboot();
         setModalShown(false);
-    }
+    };
 
     return (
         <>
@@ -76,3 +76,5 @@ function RebootModal({ shown, setShown, onReboot }) {
         </Modal>
     );
 }
+
+export default RebootButton;

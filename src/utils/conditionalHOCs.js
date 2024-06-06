@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -7,16 +7,23 @@
 
 import React from "react";
 
-import { Spinner } from "../bootstrap/Spinner";
+import ErrorMessage from "./ErrorMessage";
 import { API_STATE } from "../api/utils";
-import { ErrorMessage } from "./ErrorMessage";
+import { Spinner } from "../bootstrap/Spinner";
 
 function withEither(conditionalFn, Either) {
-    return (Component) => (props) => {
-        if (conditionalFn(props)) {
-            return <Either {...props} />;
+    return (Component) => {
+        function WithEither(props) {
+            if (conditionalFn(props)) {
+                return <Either {...props} />;
+            }
+            return <Component {...props} />;
         }
-        return <Component {...props} />;
+
+        // Setting displayName for better debugging
+        WithEither.displayName = `WithEither(${Component.displayName || Component.name || "Component"})`;
+
+        return WithEither;
     };
 }
 

@@ -10,14 +10,12 @@
 const PROTOCOL = window.location.protocol === "http:" ? "ws" : "wss";
 
 const URL = process.env.LIGHTTPD
-    ? `${PROTOCOL}://${window.location.host}/${
-          process.env.WSPATH || "foris-ws"
-      }`
+    ? `${PROTOCOL}://${window.location.host}/${process.env.WSPATH || "foris-ws"}`
     : `${PROTOCOL}://${window.location.hostname}:9081`;
 
 const WAITING_FOR_CONNECTION_TIMEOUT = 500;
 
-export class WebSockets {
+class WebSockets {
     constructor() {
         this.ws = new WebSocket(URL);
         this.ws.onerror = (e) => {
@@ -122,3 +120,5 @@ export class WebSockets {
         this.ws.close();
     }
 }
+
+export default WebSockets;

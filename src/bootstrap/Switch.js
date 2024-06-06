@@ -1,11 +1,12 @@
 /*
- * Copyright (c) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (c) 2020-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React from "react";
+
 import PropTypes from "prop-types";
 import { useUID } from "react-uid";
 
@@ -20,7 +21,7 @@ Switch.propTypes = {
     switchHeading: PropTypes.bool,
 };
 
-export function Switch({ label, helpText, switchHeading, ...props }) {
+function Switch({ label, helpText, switchHeading, ...props }) {
     const uid = useUID();
 
     return (
@@ -31,9 +32,7 @@ export function Switch({ label, helpText, switchHeading, ...props }) {
         >
             <input
                 type="checkbox"
-                className={`form-check-input ${
-                    switchHeading ? "me-2" : ""
-                }`.trim()}
+                className={`form-check-input ${switchHeading ? "me-2" : ""}`.trim()}
                 role="switch"
                 id={uid}
                 {...props}
@@ -49,3 +48,5 @@ export function Switch({ label, helpText, switchHeading, ...props }) {
         </div>
     );
 }
+
+export default Switch;

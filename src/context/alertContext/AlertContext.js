@@ -1,15 +1,16 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
-import React, { useState, useContext, useCallback } from "react";
+import React, { useState, useContext, useCallback, useMemo } from "react";
+
 import PropTypes from "prop-types";
 
-import { Alert, ALERT_TYPES } from "../../bootstrap/Alert";
-import { Portal } from "../../utils/Portal";
+import Alert, { ALERT_TYPES } from "../../bootstrap/Alert";
+import Portal from "../../utils/Portal";
 
 AlertContextProvider.propTypes = {
     children: PropTypes.oneOfType([
@@ -30,6 +31,10 @@ function AlertContextProvider({ children }) {
     );
 
     const dismissAlert = useCallback(() => setAlert(null), [setAlert]);
+    const contextValue = useMemo(
+        () => [setAlertWrapper, dismissAlert],
+        [setAlertWrapper, dismissAlert]
+    );
 
     return (
         <>
@@ -40,7 +45,7 @@ function AlertContextProvider({ children }) {
                     </Alert>
                 </Portal>
             )}
-            <AlertContext.Provider value={[setAlertWrapper, dismissAlert]}>
+            <AlertContext.Provider value={contextValue}>
                 {children}
             </AlertContext.Provider>
         </>

@@ -6,18 +6,19 @@
  */
 
 import React, { useState } from "react";
-import QRCode from "qrcode.react";
-import PropTypes from "prop-types";
 
-import { ForisURLs } from "../../utils/forisUrls";
-import { Button } from "../../bootstrap/Button";
+import PropTypes from "prop-types";
+import QRCode from "qrcode.react";
+
+import { createAndDownloadPdf, toQRCodeContent } from "./qrCodeHelpers";
+import Button from "../../bootstrap/Button";
 import {
     Modal,
     ModalBody,
     ModalFooter,
     ModalHeader,
 } from "../../bootstrap/Modal";
-import { createAndDownloadPdf, toQRCodeContent } from "./qrCodeHelpers";
+import { ForisURLs } from "../../utils/forisUrls";
 
 WiFiQRCode.propTypes = {
     SSID: PropTypes.string.isRequired,

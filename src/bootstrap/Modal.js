@@ -1,15 +1,16 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React, { useRef, useEffect } from "react";
+
 import PropTypes from "prop-types";
 
-import { Portal } from "../utils/Portal";
 import { useClickOutside } from "../utils/hooks";
+import Portal from "../utils/Portal";
 import "./Modal.css";
 
 Modal.propTypes = {

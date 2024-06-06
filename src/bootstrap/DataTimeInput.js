@@ -1,18 +1,19 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React from "react";
+
+import moment from "moment/moment";
 import PropTypes from "prop-types";
 import Datetime from "react-datetime";
-import moment from "moment/moment";
 import "react-datetime/css/react-datetime.css";
 import "./DataTimeInput.css";
 
-import { Input } from "./Input";
+import Input from "./Input";
 
 DataTimeInput.propTypes = {
     /** Field label. */
@@ -37,7 +38,7 @@ DataTimeInput.propTypes = {
 const DEFAULT_DATE_FORMAT = "YYYY-MM-DD";
 const DEFAULT_TIME_FORMAT = "HH:mm:ss";
 
-export function DataTimeInput({
+function DataTimeInput({
     value,
     onChange,
     isValidDate,
@@ -46,13 +47,13 @@ export function DataTimeInput({
     children,
     ...props
 }) {
-    function renderInput(datetimeProps) {
+    const renderInput = (datetimeProps) => {
         return (
             <Input {...props} {...datetimeProps}>
                 {children}
             </Input>
         );
-    }
+    };
 
     return (
         <Datetime
@@ -70,3 +71,5 @@ export function DataTimeInput({
         />
     );
 }
+
+export default DataTimeInput;

@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
-export function displayCard({ package_lists: packages }, cardName) {
+function displayCard({ package_lists: packages }, cardName) {
     const enabledPackagesNames = [];
     packages
         .filter((item) => item.enabled)
@@ -21,3 +21,5 @@ export function displayCard({ package_lists: packages }, cardName) {
         });
     return enabledPackagesNames.includes(cardName);
 }
+
+export default displayCard;

@@ -18,7 +18,7 @@ import mockAxios from "jest-mock-axios";
 import { mockJSONError } from "testUtils/network";
 import { mockSetAlert } from "testUtils/alertContextMock";
 
-import { RebootButton } from "../RebootButton";
+import RebootButton from "../RebootButton";
 
 describe("<RebootButton/>", () => {
     let componentContainer;

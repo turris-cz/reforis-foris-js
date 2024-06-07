@@ -9,7 +9,7 @@ import React from "react";
 
 import { render } from "customTestRender";
 
-import { Switch } from "../Switch";
+import Switch from "../Switch";
 
 describe("<Switch/>", () => {
     it("Render switch", () => {

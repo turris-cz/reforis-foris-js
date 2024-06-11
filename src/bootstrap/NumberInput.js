@@ -1,15 +1,16 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React from "react";
+
 import PropTypes from "prop-types";
 
+import Input from "./Input";
 import { useConditionalTimeout } from "../utils/hooks";
-import { Input } from "./Input";
 import "./NumberInput.css";
 
 NumberInput.propTypes = {
@@ -31,7 +32,7 @@ NumberInput.defaultProps = {
     value: 0,
 };
 
-export function NumberInput({ onChange, inlineText, value, ...props }) {
+function NumberInput({ onChange, inlineText, value, ...props }) {
     function updateValue(initialValue, difference) {
         onChange({ target: { value: initialValue + difference } });
     }
@@ -73,3 +74,5 @@ export function NumberInput({ onChange, inlineText, value, ...props }) {
         </Input>
     );
 }
+
+export default NumberInput;

@@ -14,7 +14,7 @@ import {
     render,
 } from "customTestRender";
 
-import { Select } from "../Select";
+import Select from "../Select";
 
 const TEST_CHOICES = {
     1: "one",

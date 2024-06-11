@@ -9,12 +9,12 @@ import React from "react";
 import { render, fireEvent, wait } from "customTestRender";
 
 import mockAxios from "jest-mock-axios";
-import { WebSockets } from "webSockets/WebSockets";
+import WebSockets from "webSockets/WebSockets";
 import { mockJSONError } from "testUtils/network";
 import { mockSetAlert } from "testUtils/alertContextMock";
 import { ALERT_TYPES } from "../../../bootstrap/Alert";
 
-import { ResetWiFiSettings } from "../ResetWiFiSettings";
+import ResetWiFiSettings from "../ResetWiFiSettings";
 
 describe("<ResetWiFiSettings/>", () => {
     const webSockets = new WebSockets();

@@ -9,7 +9,7 @@ import React from "react";
 
 import { render, fireEvent, getByLabelText, wait } from "customTestRender";
 
-import { NumberInput } from "../NumberInput";
+import NumberInput from "../NumberInput";
 
 describe("<NumberInput/>", () => {
     const onChangeMock = jest.fn();

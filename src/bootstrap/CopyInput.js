@@ -1,13 +1,15 @@
 /*
- * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React, { useState, useRef } from "react";
+
 import PropTypes from "prop-types";
-import { Input } from "./Input";
+
+import Input from "./Input";
 
 CopyInput.propTypes = {
     /** Field label. */
@@ -22,7 +24,7 @@ CopyInput.propTypes = {
     readOnly: PropTypes.bool,
 };
 
-export function CopyInput({ value, ...props }) {
+function CopyInput({ value, ...props }) {
     const inputTextRef = useRef();
     const [isCopied, setIsCopied] = useState(false);
 
@@ -58,3 +60,5 @@ export function CopyInput({ value, ...props }) {
         </Input>
     );
 }
+
+export default CopyInput;

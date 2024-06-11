@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -17,32 +17,32 @@ export {
 export { API_STATE } from "./api/utils";
 
 // Bootstrap
-export { Alert, ALERT_TYPES } from "./bootstrap/Alert";
-export { Button } from "./bootstrap/Button";
-export { CheckBox } from "./bootstrap/CheckBox";
-export { CopyInput } from "./bootstrap/CopyInput";
-export { DownloadButton } from "./bootstrap/DownloadButton";
-export { DataTimeInput } from "./bootstrap/DataTimeInput";
-export { EmailInput } from "./bootstrap/EmailInput";
-export { FileInput } from "./bootstrap/FileInput";
-export { Input } from "./bootstrap/Input";
-export { NumberInput } from "./bootstrap/NumberInput";
-export { PasswordInput } from "./bootstrap/PasswordInput";
-export { Radio, RadioSet } from "./bootstrap/RadioSet";
-export { Select } from "./bootstrap/Select";
-export { TextInput } from "./bootstrap/TextInput";
+export { default as Alert, ALERT_TYPES } from "./bootstrap/Alert";
+export { default as Button } from "./bootstrap/Button";
+export { default as CheckBox } from "./bootstrap/CheckBox";
+export { default as CopyInput } from "./bootstrap/CopyInput";
+export { default as DownloadButton } from "./bootstrap/DownloadButton";
+export { default as DataTimeInput } from "./bootstrap/DataTimeInput";
+export { default as EmailInput } from "./bootstrap/EmailInput";
+export { default as FileInput } from "./bootstrap/FileInput";
+export { default as Input } from "./bootstrap/Input";
+export { default as NumberInput } from "./bootstrap/NumberInput";
+export { default as PasswordInput } from "./bootstrap/PasswordInput";
+export { default as RadioSet, Radio } from "./bootstrap/RadioSet";
+export { default as Select } from "./bootstrap/Select";
+export { default as TextInput } from "./bootstrap/TextInput";
 export { formFieldsSize, buttonFormFieldsSize } from "./bootstrap/constants";
-export { Switch } from "./bootstrap/Switch";
+export { default as Switch } from "./bootstrap/Switch";
 
 export { Spinner, SpinnerElement } from "./bootstrap/Spinner";
 export { Modal, ModalBody, ModalFooter, ModalHeader } from "./bootstrap/Modal";
 
 // Common
-export { RebootButton } from "./common/RebootButton";
-export { WiFiSettings } from "./common/WiFiSettings/WiFiSettings";
-export { ResetWiFiSettings } from "./common/WiFiSettings/ResetWiFiSettings";
+export { default as RebootButton } from "./common/RebootButton";
+export { default as WiFiSettings } from "./common/WiFiSettings/WiFiSettings";
+export { default as ResetWiFiSettings } from "./common/WiFiSettings/ResetWiFiSettings";
 // Form
-export { ForisForm } from "./form/components/ForisForm";
+export { default as ForisForm } from "./form/components/ForisForm";
 export {
     SubmitButton,
     STATES as SUBMIT_BUTTON_STATES,
@@ -50,11 +50,11 @@ export {
 export { useForisModule, useForm } from "./form/hooks";
 
 // WebSockets
-export { useWSForisModule } from "./webSockets/hooks";
-export { WebSockets } from "./webSockets/WebSockets";
+export { default as useWSForisModule } from "./webSockets/hooks";
+export { default as WebSockets } from "./webSockets/WebSockets";
 
 // Utils
-export { Portal } from "./utils/Portal";
+export { default as Portal } from "./utils/Portal";
 export {
     undefinedIfEmpty,
     withoutUndefinedKeys,
@@ -68,11 +68,11 @@ export {
     withError,
     withErrorMessage,
 } from "./utils/conditionalHOCs";
-export { ErrorMessage } from "./utils/ErrorMessage";
+export { default as ErrorMessage } from "./utils/ErrorMessage";
 export { useClickOutside } from "./utils/hooks";
-export { toLocaleDateString } from "./utils/datetime";
-export { displayCard } from "./utils/displayCard";
-export { isPluginInstalled } from "./utils/isPluginInstalled";
+export { default as toLocaleDateString } from "./utils/datetime";
+export { default as displayCard } from "./utils/displayCard";
+export { default as isPluginInstalled } from "./utils/isPluginInstalled";
 
 // Foris URL
 export { ForisURLs, REFORIS_URL_PREFIX } from "./utils/forisUrls";

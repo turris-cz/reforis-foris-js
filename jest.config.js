@@ -19,6 +19,7 @@ module.exports = {
     collectCoverageFrom: ["src/**/*.{js,jsx}"],
     coverageDirectory: "coverage",
     testPathIgnorePatterns: ["/node_modules/", "/__fixtures__/", "/dist/"],
+    testEnvironment: "jsdom",
     verbose: false,
     setupFilesAfterEnv: [
         "@testing-library/react/cleanup-after-each",

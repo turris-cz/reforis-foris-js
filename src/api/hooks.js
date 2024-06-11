@@ -111,9 +111,8 @@ const useAPIPatch = createAPIHook("PATCH");
 const useAPIPut = createAPIHook("PUT");
 const useAPIDelete = createAPIHook("DELETE");
 
-export { useAPIGet, useAPIPost, useAPIPatch, useAPIPut, useAPIDelete };
-
-export function useAPIPolling(endpoint, delay = 1000, until) {
+/* eslint-disable default-param-last */
+function useAPIPolling(endpoint, delay = 1000, until) {
     // delay ms
     const [state, setState] = useState({ state: API_STATE.INIT });
     const [getResponse, get] = useAPIGet(endpoint);
@@ -133,3 +132,12 @@ export function useAPIPolling(endpoint, delay = 1000, until) {
 
     return [state];
 }
+
+export {
+    useAPIGet,
+    useAPIPost,
+    useAPIPatch,
+    useAPIPut,
+    useAPIDelete,
+    useAPIPolling,
+};

@@ -1,24 +1,24 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React, { useEffect } from "react";
+
 import PropTypes from "prop-types";
 import { Prompt } from "react-router-dom";
 
-import { ALERT_TYPES } from "../../bootstrap/Alert";
+import { STATES as SUBMIT_BUTTON_STATES, SubmitButton } from "./SubmitButton";
+import { useAPIPost } from "../../api/hooks";
 import { API_STATE } from "../../api/utils";
+import { ALERT_TYPES } from "../../bootstrap/Alert";
 import { formFieldsSize } from "../../bootstrap/constants";
 import { Spinner } from "../../bootstrap/Spinner";
 import { useAlert } from "../../context/alertContext/AlertContext";
-import { useAPIPost } from "../../api/hooks";
-
+import ErrorMessage from "../../utils/ErrorMessage";
 import { useForisModule, useForm } from "../hooks";
-import { STATES as SUBMIT_BUTTON_STATES, SubmitButton } from "./SubmitButton";
-import { ErrorMessage } from "../../utils/ErrorMessage";
 
 ForisForm.propTypes = {
     /** Optional WebSocket object. See `scr/common/WebSockets.js`.
@@ -89,7 +89,7 @@ ForisForm.defaultProps = {
  * use exposed `ReactRouterDOM` object from `react-router-dom` library which is exposed by reForis.
  * See README for more information.
  * */
-export function ForisForm({
+function ForisForm({
     ws,
     forisConfig,
     prepData,
@@ -131,16 +131,16 @@ export function ForisForm({
         return <Spinner />;
     }
 
-    function onSubmitHandler(event) {
+    const onSubmitHandler = (event) => {
         event.preventDefault();
         resetFormData();
         dismissAlert();
         const copiedFormData = JSON.parse(JSON.stringify(formState.data));
         const preparedData = prepDataToSubmit(copiedFormData);
         post({ data: preparedData });
-    }
+    };
 
-    function getSubmitButtonState() {
+    const getSubmitButtonState = () => {
         if (postState.state === API_STATE.SENDING) {
             return SUBMIT_BUTTON_STATES.SAVING;
         }
@@ -148,7 +148,7 @@ export function ForisForm({
             return SUBMIT_BUTTON_STATES.LOAD;
         }
         return SUBMIT_BUTTON_STATES.READY;
-    }
+    };
 
     const formIsDisabled =
         disabled ||
@@ -174,7 +174,7 @@ export function ForisForm({
           )
         : onSubmitHandler;
 
-    function getMessageOnLeavingPage() {
+    const getMessageOnLeavingPage = () => {
         if (
             JSON.stringify(formState.data) ===
             JSON.stringify(formState.initialData)
@@ -183,7 +183,7 @@ export function ForisForm({
         return _(
             "Changes you made may not be saved. Are you sure you want to leave?"
         );
-    }
+    };
 
     return (
         <div className={formFieldsSize}>
@@ -200,3 +200,5 @@ export function ForisForm({
         </div>
     );
 }
+
+export default ForisForm;

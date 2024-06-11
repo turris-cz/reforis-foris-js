@@ -6,11 +6,14 @@
  */
 
 import React from "react";
+
 import PropTypes from "prop-types";
 
-import { Input } from "./Input";
+import Input from "./Input";
 
-export const EmailInput = ({ ...props }) => <Input type="email" {...props} />;
+function EmailInput({ ...props }) {
+    return <Input type="email" {...props} />;
+}
 
 EmailInput.propTypes = {
     /** Field label. */
@@ -22,3 +25,5 @@ EmailInput.propTypes = {
     /** Email value. */
     value: PropTypes.string,
 };
+
+export default EmailInput;

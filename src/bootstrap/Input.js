@@ -6,11 +6,12 @@
  */
 
 import React, { forwardRef } from "react";
-import { useUID } from "react-uid";
+
 import PropTypes from "prop-types";
+import { useUID } from "react-uid";
 
 /** Base bootstrap input component. */
-export const Input = forwardRef(
+const Input = forwardRef(
     (
         {
             type,
@@ -60,6 +61,8 @@ export const Input = forwardRef(
     }
 );
 
+Input.displayName = "Input";
+
 Input.propTypes = {
     type: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
@@ -73,3 +76,5 @@ Input.propTypes = {
     labelClassName: PropTypes.string,
     groupClassName: PropTypes.string,
 };
+
+export default Input;

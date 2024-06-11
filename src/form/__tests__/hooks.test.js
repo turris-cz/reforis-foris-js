@@ -9,8 +9,8 @@ import React from "react";
 
 import { act, fireEvent, render, waitForElement } from "customTestRender";
 import mockAxios from "jest-mock-axios";
-import { WebSockets } from "webSockets/WebSockets";
-import { ForisForm } from "../components/ForisForm";
+import WebSockets from "webSockets/WebSockets";
+import ForisForm from "../components/ForisForm";
 
 // It's possible to unittest each hooks via react-hooks-testing-library.
 // But it's better and easier to test it by test components which uses this hooks.

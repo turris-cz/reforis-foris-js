@@ -10,7 +10,7 @@ import diffSnapshot from "snapshot-diff";
 import mockAxios from "jest-mock-axios";
 
 import { fireEvent, render, wait } from "customTestRender";
-import { WebSockets } from "webSockets/WebSockets";
+import WebSockets from "webSockets/WebSockets";
 import { mockJSONError } from "testUtils/network";
 
 import {
@@ -19,7 +19,7 @@ import {
     twoDevices,
     threeDevices,
 } from "./__fixtures__/wifiSettings";
-import { WiFiSettings, validator, byteCount } from "../WiFiSettings";
+import WiFiSettings, { validator, byteCount } from "../WiFiSettings";
 
 describe("<WiFiSettings/>", () => {
     let firstRender;

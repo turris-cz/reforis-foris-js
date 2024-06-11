@@ -5,7 +5,7 @@
  * See /LICENSE for more information.
  */
 
-import { toLocaleDateString } from "../datetime";
+import toLocaleDateString from "../datetime";
 
 describe("toLocaleDateString", () => {
     it("should work with different locale", () => {

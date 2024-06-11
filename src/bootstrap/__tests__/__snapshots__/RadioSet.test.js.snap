@@ -2,7 +2,7 @@
 
 exports[`<RadioSet/> Render radio set 1`] = `
 <div
-  class="form-group"
+  class="mb-3"
 >
   <label
     class="d-block"
@@ -11,61 +11,63 @@ exports[`<RadioSet/> Render radio set 1`] = `
     Radios set label
   </label>
   <div
-    class="custom-control custom-radio"
+    class="mb-2"
   >
     <input
       checked=""
-      class="custom-control-input"
+      class="form-check-input me-2"
       id="test_name-0"
       name="test_name"
       type="radio"
       value="value"
     />
     <label
-      class="custom-control-label"
+      class="form-check-label"
       for="test_name-0"
     >
       label
     </label>
   </div>
   <div
-    class="custom-control custom-radio"
+    class="mb-2"
   >
     <input
-      class="custom-control-input"
+      class="form-check-input me-2"
       id="test_name-1"
       name="test_name"
       type="radio"
       value="another value"
     />
     <label
-      class="custom-control-label"
+      class="form-check-label"
       for="test_name-1"
     >
       another label
     </label>
   </div>
   <div
-    class="custom-control custom-radio"
+    class="mb-2"
   >
     <input
-      class="custom-control-input"
+      class="form-check-input me-2"
       id="test_name-2"
       name="test_name"
       type="radio"
       value="another on value"
     />
     <label
-      class="custom-control-label"
+      class="form-check-label"
       for="test_name-2"
     >
       another one  label
     </label>
   </div>
-  <small
-    class="form-text text-muted"
+  <div
+    class="form-text"
   >
-    Some help text
-  </small>
+    <small>
+      Some help text
+    </small>
+  </div>
 </div>
 `;

@@ -1,11 +1,12 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React from "react";
+
 import PropTypes from "prop-types";
 
 export const ALERT_TYPES = Object.freeze({
@@ -35,21 +36,24 @@ Alert.defaultProps = {
     type: ALERT_TYPES.DANGER,
 };
 
-export function Alert({ type, onDismiss, children }) {
+function Alert({ type, onDismiss, children }) {
     return (
         <div
-            className={`alert ${
+            className={`alert alert-${type} ${
                 onDismiss ? "alert-dismissible" : ""
-            } alert-${type}`}
+            }`.trim()}
         >
-            {onDismiss ? (
-                <button type="button" className="close" onClick={onDismiss}>
-                    &times;
-                </button>
-            ) : (
-                false
+            {onDismiss && (
+                <button
+                    type="button"
+                    className="btn-close"
+                    onClick={onDismiss}
+                    aria-label={_("Close")}
+                />
             )}
             {children}
         </div>
     );
 }
+
+export default Alert;

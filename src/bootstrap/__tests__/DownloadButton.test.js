@@ -9,7 +9,7 @@ import React from "react";
 
 import { render } from "customTestRender";
 
-import { DownloadButton } from "../DownloadButton";
+import DownloadButton from "../DownloadButton";
 
 describe("<DownloadButton />", () => {
     it("should have download attribute", () => {

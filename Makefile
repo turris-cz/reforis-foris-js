@@ -11,6 +11,7 @@ MSGID_BUGS_ADDRESS="tech.support@turris.cz"
 
 DEV_PYTHON=python3
 VENV_NAME?=venv
+JS_DIR=js
 VENV_BIN=$(shell pwd)/$(VENV_NAME)/bin
 
 .PHONY: all

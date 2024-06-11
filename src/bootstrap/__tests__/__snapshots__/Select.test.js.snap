@@ -3,15 +3,16 @@
 exports[`<Select/> Test with snapshot. 1`] = `
 <div>
   <div
-    class="form-group"
+    class="mb-3"
   >
     <label
+      class="form-label"
       for="1"
     >
       Test label
     </label>
     <select
-      class="custom-select"
+      class="form-select"
       id="1"
     >
       <option
@@ -30,11 +31,13 @@ exports[`<Select/> Test with snapshot. 1`] = `
         three
       </option>
     </select>
-    <small
-      class="form-text text-muted"
+    <div
+      class="form-text"
     >
-      Help text
-    </small>
+      <small>
+        Help text
+      </small>
+    </div>
   </div>
 </div>
 `;

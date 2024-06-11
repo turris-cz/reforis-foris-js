@@ -6,15 +6,17 @@
  */
 
 import React from "react";
+
 import PropTypes from "prop-types";
-import { Switch } from "../../bootstrap/Switch";
-import { PasswordInput } from "../../bootstrap/PasswordInput";
-import { RadioSet } from "../../bootstrap/RadioSet";
-import { Select } from "../../bootstrap/Select";
-import { TextInput } from "../../bootstrap/TextInput";
-import WiFiQRCode from "./WiFiQRCode";
-import WifiGuestForm from "./WiFiGuestForm";
+
 import { HELP_TEXTS, HTMODES, HWMODES, ENCRYPTIONMODES } from "./constants";
+import WifiGuestForm from "./WiFiGuestForm";
+import WiFiQRCode from "./WiFiQRCode";
+import PasswordInput from "../../bootstrap/PasswordInput";
+import RadioSet from "../../bootstrap/RadioSet";
+import Select from "../../bootstrap/Select";
+import Switch from "../../bootstrap/Switch";
+import TextInput from "../../bootstrap/TextInput";
 
 WiFiForm.propTypes = {
     formData: PropTypes.shape({ devices: PropTypes.arrayOf(PropTypes.object) })
@@ -92,7 +94,7 @@ function DeviceForm({
     return (
         <>
             <Switch
-                label={<h2>{_(`Wi-Fi ${deviceID + 1}`)}</h2>}
+                label={<h2 className="mb-0">{_(`Wi-Fi ${deviceID + 1}`)}</h2>}
                 checked={formData.enabled}
                 onChange={setFormValue((value) => ({
                     devices: {
@@ -119,12 +121,10 @@ function DeviceForm({
                         }))}
                         {...props}
                     >
-                        <div className="input-group-append">
-                            <WiFiQRCode
-                                SSID={formData.SSID}
-                                password={formData.password}
-                            />
-                        </div>
+                        <WiFiQRCode
+                            SSID={formData.SSID}
+                            password={formData.password}
+                        />
                     </TextInput>
 
                     <PasswordInput
@@ -269,8 +269,8 @@ function getChannelChoices(device) {
             channelChoices[availableChannel.number.toString()] = `
                         ${availableChannel.number}
                         (${availableChannel.frequency} MHz ${
-                availableChannel.radar ? " ,DFS" : ""
-            })
+                            availableChannel.radar ? " ,DFS" : ""
+                        })
                     `;
         });
     });

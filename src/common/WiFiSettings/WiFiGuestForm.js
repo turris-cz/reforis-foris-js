@@ -1,18 +1,19 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React from "react";
+
 import PropTypes from "prop-types";
 
-import { TextInput } from "../../bootstrap/TextInput";
-import { Switch } from "../../bootstrap/Switch";
-import { PasswordInput } from "../../bootstrap/PasswordInput";
-import WiFiQRCode from "./WiFiQRCode";
 import { HELP_TEXTS } from "./constants";
+import WiFiQRCode from "./WiFiQRCode";
+import PasswordInput from "../../bootstrap/PasswordInput";
+import Switch from "../../bootstrap/Switch";
+import TextInput from "../../bootstrap/TextInput";
 
 WifiGuestForm.propTypes = {
     formData: PropTypes.shape({

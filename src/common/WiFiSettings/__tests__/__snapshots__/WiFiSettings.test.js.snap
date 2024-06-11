@@ -5,14 +5,14 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 - First value
 + Second value
 
-@@ -241,207 +241,95 @@
-              value=\\"0\\"
+@@ -243,207 +243,95 @@
+              value="0"
             >
               auto
             </option>
             <option
--             value=\\"36\\"
-+             value=\\"1\\"
+-             value="36"
++             value="1"
             >
               
 -                         36
@@ -22,8 +22,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"40\\"
-+             value=\\"2\\"
+-             value="40"
++             value="2"
             >
               
 -                         40
@@ -33,8 +33,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"44\\"
-+             value=\\"3\\"
+-             value="44"
++             value="3"
             >
               
 -                         44
@@ -44,7 +44,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"48\\"
+-             value="48"
 -           >
 -             
 -                         48
@@ -52,7 +52,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"52\\"
+-             value="52"
 -           >
 -             
 -                         52
@@ -60,7 +60,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"56\\"
+-             value="56"
 -           >
 -             
 -                         56
@@ -68,8 +68,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"60\\"
-+             value=\\"4\\"
+-             value="60"
++             value="4"
             >
               
 -                         60
@@ -79,8 +79,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"64\\"
-+             value=\\"5\\"
+-             value="64"
++             value="5"
             >
               
 -                         64
@@ -90,8 +90,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"100\\"
-+             value=\\"6\\"
+-             value="100"
++             value="6"
             >
               
 -                         100
@@ -101,8 +101,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"104\\"
-+             value=\\"7\\"
+-             value="104"
++             value="7"
             >
               
 -                         104
@@ -112,8 +112,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"108\\"
-+             value=\\"8\\"
+-             value="108"
++             value="8"
             >
               
 -                         108
@@ -123,8 +123,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"112\\"
-+             value=\\"9\\"
+-             value="112"
++             value="9"
             >
               
 -                         112
@@ -134,8 +134,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"116\\"
-+             value=\\"10\\"
+-             value="116"
++             value="10"
             >
               
 -                         116
@@ -145,8 +145,8 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
                       
             </option>
             <option
--             value=\\"120\\"
-+             value=\\"11\\"
+-             value="120"
++             value="11"
             >
               
 -                         120
@@ -154,7 +154,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"124\\"
+-             value="124"
 -           >
 -             
 -                         124
@@ -162,7 +162,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"128\\"
+-             value="128"
 -           >
 -             
 -                         128
@@ -170,7 +170,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"132\\"
+-             value="132"
 -           >
 -             
 -                         132
@@ -178,7 +178,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"136\\"
+-             value="136"
 -           >
 -             
 -                         136
@@ -186,7 +186,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"140\\"
+-             value="140"
 -           >
 -             
 -                         140
@@ -194,7 +194,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"144\\"
+-             value="144"
 -           >
 -             
 -                         144
@@ -202,7 +202,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"149\\"
+-             value="149"
 -           >
 -             
 -                         149
@@ -210,7 +210,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"153\\"
+-             value="153"
 -           >
 -             
 -                         153
@@ -218,7 +218,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"157\\"
+-             value="157"
 -           >
 -             
 -                         157
@@ -226,7 +226,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"161\\"
+-             value="161"
 -           >
 -             
 -                         161
@@ -234,7 +234,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 -                     
 -           </option>
 -           <option
--             value=\\"165\\"
+-             value="165"
 -           >
 -             
 -                         165
@@ -255,53 +255,51 @@ exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
   >
     <form>
       <div
-        class="form-group switch"
+        class="form-check form-switch mb-3 d-flex align-items-center"
       >
-        <div
-          class="custom-control custom-switch custom-control-inline switch-heading"
+        <input
+          class="form-check-input me-2"
+          id="1"
+          role="switch"
+          type="checkbox"
+        />
+        <label
+          class="form-check-label"
+          for="1"
         >
-          <input
-            class="custom-control-input"
-            id="1"
-            type="checkbox"
-          />
-          <label
-            class="custom-control-label"
-            for="1"
+          <h2
+            class="mb-0"
           >
-            <h2>
-              Wi-Fi 1
-            </h2>
-          </label>
-        </div>
+            Wi-Fi 1
+          </h2>
+        </label>
       </div>
       <hr />
       <div
-        class="form-group switch"
+        class="form-check form-switch mb-3 d-flex align-items-center"
       >
-        <div
-          class="custom-control custom-switch custom-control-inline switch-heading"
+        <input
+          class="form-check-input me-2"
+          id="2"
+          role="switch"
+          type="checkbox"
+        />
+        <label
+          class="form-check-label"
+          for="2"
         >
-          <input
-            class="custom-control-input"
-            id="2"
-            type="checkbox"
-          />
-          <label
-            class="custom-control-label"
-            for="2"
+          <h2
+            class="mb-0"
           >
-            <h2>
-              Wi-Fi 2
-            </h2>
-          </label>
-        </div>
+            Wi-Fi 2
+          </h2>
+        </label>
       </div>
       <div
-        class="text-right"
+        class="text-end"
       >
         <button
-          class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+          class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
           type="submit"
         >
           <span>
@@ -321,10 +319,10 @@ exports[`<WiFiSettings/> Snapshot both modules disabled. 1`] = `
       If a number of wireless cards doesn't match, you may try to reset the Wi-Fi settings. Note that this will remove the current Wi-Fi configuration and restore the default values.
     </p>
     <div
-      class="text-right"
+      class="text-end"
     >
       <button
-        class="btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
+        class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
         type="button"
       >
         <span>
@@ -341,107 +339,109 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 - First value
 + Second value
 
-@@ -524,10 +524,92 @@
-            >
+@@ -527,10 +527,94 @@
+            <small>
               Enables Wi-Fi for guests, which is separated from LAN network. Devices connected to this network are allowed to access the internet, but aren't allowed to access other devices and the configuration interface of the router. Parameters of the guest network can be set in the Guest network tab.
             </small>
           </div>
         </div>
 +       <div
-+         class=\\"form-group\\"
++         class="mb-3"
 +       >
 +         <label
-+           for=\\"24\\"
++           class="form-label"
++           for="12"
 +         >
 +           SSID
 +         </label>
 +         <div
-+           class=\\"input-group\\"
++           class="input-group"
 +         >
 +           <input
-+             class=\\"form-control\\"
-+             id=\\"24\\"
-+             type=\\"text\\"
-+             value=\\"TestGuestSSID\\"
++             class="form-control"
++             id="12"
++             type="text"
++             value="TestGuestSSID"
 +           />
 +           <div
-+             class=\\"input-group-append\\"
++             class="input-group-append"
 +           >
 +             <button
-+               class=\\"input-group-text\\"
-+               type=\\"button\\"
++               class="input-group-text"
++               type="button"
 +             >
 +               <img
-+                 alt=\\"QR\\"
-+                 src=\\"/reforis/static/reforis/imgs/QR_icon.svg\\"
-+                 style=\\"opacity: 0.67;\\"
-+                 width=\\"20\\"
++                 alt="QR"
++                 src="/reforis/static/reforis/imgs/QR_icon.svg"
++                 style="opacity: 0.67;"
++                 width="20"
 +               />
 +             </button>
 +           </div>
 +         </div>
-+         <small
-+           class=\\"form-text text-muted\\"
++         <div
++           class="form-text"
 +         >
-+           SSID which contains non-standard characters could cause problems on some devices.
-+         </small>
++           <small>
++             SSID which contains non-standard characters could cause problems on some devices.
++           </small>
++         </div>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class="mb-3"
 +       >
 +         <label
-+           for=\\"25\\"
++           class="form-label"
++           for="13"
 +         >
 +           Password
 +         </label>
 +         <div
-+           class=\\"input-group\\"
++           class="input-group"
 +         >
 +           <input
-+             autocomplete=\\"current-password\\"
-+             class=\\"form-control  is-invalid\\"
-+             id=\\"25\\"
-+             required=\\"\\"
-+             type=\\"password\\"
-+             value=\\"\\"
++             autocomplete="current-password"
++             class="form-control is-invalid"
++             id="13"
++             required=""
++             type="password"
++             value=""
 +           />
-+           <div
-+             class=\\"input-group-append\\"
++           <button
++             class="input-group-text"
++             type="button"
 +           >
-+             <button
-+               class=\\"input-group-text\\"
-+               type=\\"button\\"
-+             >
-+               <i
-+                 class=\\"fa fa-eye\\"
-+               />
-+             </button>
-+           </div>
++             <i
++               class="fa fa-eye"
++             />
++           </button>
 +         </div>
 +         <div
-+           class=\\"invalid-feedback\\"
++           class="invalid-feedback"
 +         >
 +           Password must contain at least 8 symbols
 +         </div>
-+         <small
-+           class=\\"form-text text-muted\\"
++         <div
++           class="form-text"
 +         >
-+           WPA2/3 pre-shared key, that is required to connect to the network.
-+         </small>
++           <small>
++             WPA2/3 pre-shared key, that is required to connect to the network.
++           </small>
++         </div>
 +       </div>
         <hr />
         <div
-          class=\\"form-group switch\\"
+          class="form-check form-switch mb-3 d-flex align-items-center"
         >
-          <div
-@@ -551,10 +633,11 @@
+          <input
+@@ -553,10 +637,11 @@
         <div
-          class=\\"text-right\\"
+          class="text-end"
         >
           <button
-            class=\\"btn btn-primary col-sm-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center\\"
-+           disabled=\\"\\"
-            type=\\"submit\\"
+            class="btn btn-primary col-12 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center"
++           disabled=""
+            type="submit"
           >
             <span>
               Save
@@ -453,232 +453,235 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 - First value
 + Second value
 
-@@ -22,10 +22,512 @@
-                Wi-Fi 1
-              </h2>
-            </label>
-          </div>
+@@ -21,10 +21,516 @@
+            >
+              Wi-Fi 1
+            </h2>
+          </label>
         </div>
 +       <div
-+         class=\\"form-group\\"
++         class="mb-3"
 +       >
 +         <label
-+           for=\\"4\\"
++           class="form-label"
++           for="3"
 +         >
 +           SSID
 +         </label>
 +         <div
-+           class=\\"input-group\\"
++           class="input-group"
 +         >
 +           <input
-+             class=\\"form-control\\"
-+             id=\\"4\\"
-+             required=\\"\\"
-+             type=\\"text\\"
-+             value=\\"TestSSID1\\"
++             class="form-control"
++             id="3"
++             required=""
++             type="text"
++             value="TestSSID1"
 +           />
-+           <div
-+             class=\\"input-group-append\\"
++           <button
++             class="input-group-text"
++             type="button"
 +           >
-+             <button
-+               class=\\"input-group-text\\"
-+               type=\\"button\\"
-+             >
-+               <img
-+                 alt=\\"QR\\"
-+                 src=\\"/reforis/static/reforis/imgs/QR_icon.svg\\"
-+                 style=\\"opacity: 0.67;\\"
-+                 width=\\"20\\"
-+               />
-+             </button>
-+           </div>
++             <img
++               alt="QR"
++               src="/reforis/static/reforis/imgs/QR_icon.svg"
++               style="opacity: 0.67;"
++               width="20"
++             />
++           </button>
 +         </div>
-+         <small
-+           class=\\"form-text text-muted\\"
++         <div
++           class="form-text"
 +         >
-+           SSID which contains non-standard characters could cause problems on some devices.
-+         </small>
++           <small>
++             SSID which contains non-standard characters could cause problems on some devices.
++           </small>
++         </div>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class="mb-3"
 +       >
 +         <label
-+           for=\\"5\\"
++           class="form-label"
++           for="4"
 +         >
 +           Password
 +         </label>
 +         <div
-+           class=\\"input-group\\"
++           class="input-group"
 +         >
 +           <input
-+             autocomplete=\\"current-password\\"
-+             class=\\"form-control\\"
-+             id=\\"5\\"
-+             required=\\"\\"
-+             type=\\"password\\"
-+             value=\\"TestPass\\"
++             autocomplete="current-password"
++             class="form-control"
++             id="4"
++             required=""
++             type="password"
++             value="TestPass"
 +           />
-+           <div
-+             class=\\"input-group-append\\"
++           <button
++             class="input-group-text"
++             type="button"
 +           >
-+             <button
-+               class=\\"input-group-text\\"
-+               type=\\"button\\"
-+             >
-+               <i
-+                 class=\\"fa fa-eye\\"
-+               />
-+             </button>
-+           </div>
++             <i
++               class="fa fa-eye"
++             />
++           </button>
 +         </div>
-+         <small
-+           class=\\"form-text text-muted\\"
++         <div
++           class="form-text"
 +         >
-+           WPA2/3 pre-shared key, that is required to connect to the network.
-+         </small>
++           <small>
++             WPA2/3 pre-shared key, that is required to connect to the network.
++           </small>
++         </div>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class="form-check form-switch mb-3 null"
 +       >
-+         <div
-+           class=\\"custom-control custom-switch\\"
++         <input
++           class="form-check-input"
++           id="5"
++           role="switch"
++           type="checkbox"
++         />
++         <label
++           class="form-check-label"
++           for="5"
 +         >
-+           <input
-+             class=\\"custom-control-input\\"
-+             id=\\"6\\"
-+             type=\\"checkbox\\"
-+           />
-+           <label
-+             class=\\"custom-control-label\\"
-+             for=\\"6\\"
-+           >
-+             Hide SSID
-+           </label>
-+           <small
-+             class=\\"form-text text-muted mt-0 mb-3\\"
-+           >
++           Hide SSID
++         </label>
++         <div
++           class="form-text"
++         >
++           <small>
 +             If set, network is not visible when scanning for available networks.
 +           </small>
 +         </div>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class="mb-3"
 +       >
 +         <label
-+           class=\\"d-block\\"
-+           for=\\"7\\"
++           class="d-block"
++           for="6"
 +         >
 +           GHz
 +         </label>
 +         <div
-+           class=\\"custom-control custom-radio custom-control-inline\\"
++           class="mb-2 form-check form-check-inline"
 +         >
 +           <input
-+             class=\\"custom-control-input\\"
-+             id=\\"hwmode-0-0\\"
-+             name=\\"hwmode-0\\"
-+             type=\\"radio\\"
-+             value=\\"11g\\"
++             class="form-check-input me-2"
++             id="hwmode-0-0"
++             name="hwmode-0"
++             type="radio"
++             value="11g"
 +           />
 +           <label
-+             class=\\"custom-control-label\\"
-+             for=\\"hwmode-0-0\\"
++             class="form-check-label"
++             for="hwmode-0-0"
 +           >
 +             2.4
 +           </label>
 +         </div>
 +         <div
-+           class=\\"custom-control custom-radio custom-control-inline\\"
++           class="mb-2 form-check form-check-inline"
 +         >
 +           <input
-+             checked=\\"\\"
-+             class=\\"custom-control-input\\"
-+             id=\\"hwmode-0-1\\"
-+             name=\\"hwmode-0\\"
-+             type=\\"radio\\"
-+             value=\\"11a\\"
++             checked=""
++             class="form-check-input me-2"
++             id="hwmode-0-1"
++             name="hwmode-0"
++             type="radio"
++             value="11a"
 +           />
 +           <label
-+             class=\\"custom-control-label\\"
-+             for=\\"hwmode-0-1\\"
++             class="form-check-label"
++             for="hwmode-0-1"
 +           >
 +             5
 +           </label>
 +         </div>
-+         <small
-+           class=\\"form-text text-muted\\"
++         <div
++           class="form-text"
 +         >
-+           The 2.4 GHz band is more widely supported by clients, but tends to have more interference. The 5 GHz band is a newer standard and may not be supported by all your devices. It usually has less interference, but the signal does not carry so well indoors.
-+         </small>
++           <small>
++             The 2.4 GHz band is more widely supported by clients, but tends to have more interference. The 5 GHz band is a newer standard and may not be supported by all your devices. It usually has less interference, but the signal does not carry so well indoors.
++           </small>
++         </div>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class="mb-3"
 +       >
 +         <label
-+           for=\\"8\\"
++           class="form-label"
++           for="7"
 +         >
 +           802.11n/ac/ax mode
 +         </label>
 +         <select
-+           class=\\"custom-select\\"
-+           id=\\"8\\"
++           class="form-select"
++           id="7"
 +         >
 +           <option
-+             value=\\"NOHT\\"
++             value="NOHT"
 +           >
 +             Disabled
 +           </option>
 +           <option
-+             value=\\"HT20\\"
++             value="HT20"
 +           >
 +             802.11n - 20 MHz wide channel
 +           </option>
 +           <option
-+             value=\\"HT40\\"
++             value="HT40"
 +           >
 +             802.11n - 40 MHz wide channel
 +           </option>
 +           <option
-+             value=\\"VHT20\\"
++             value="VHT20"
 +           >
 +             802.11ac - 20 MHz wide channel
 +           </option>
 +           <option
-+             value=\\"VHT40\\"
++             value="VHT40"
 +           >
 +             802.11ac - 40 MHz wide channel
 +           </option>
 +           <option
-+             value=\\"VHT80\\"
++             value="VHT80"
 +           >
 +             802.11ac - 80 MHz wide channel
 +           </option>
 +         </select>
-+         <small
-+           class=\\"form-text text-muted\\"
++         <div
++           class="form-text"
 +         >
-+           Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 MHz wide channels can yield higher throughput but can cause more interference in the network. If you don't know what to choose, use the default option with 20 MHz wide channel.
-+         </small>
++           <small>
++             Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 MHz wide channels can yield higher throughput but can cause more interference in the network. If you don't know what to choose, use the default option with 20 MHz wide channel.
++           </small>
++         </div>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class="mb-3"
 +       >
 +         <label
-+           for=\\"9\\"
++           class="form-label"
++           for="8"
 +         >
 +           Channel
 +         </label>
 +         <select
-+           class=\\"custom-select\\"
-+           id=\\"9\\"
++           class="form-select"
++           id="8"
 +         >
 +           <option
-+             value=\\"0\\"
++             value="0"
 +           >
 +             auto
 +           </option>
 +           <option
-+             value=\\"36\\"
++             value="36"
 +           >
 +             
 +                         36
@@ -686,7 +689,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"40\\"
++             value="40"
 +           >
 +             
 +                         40
@@ -694,7 +697,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"44\\"
++             value="44"
 +           >
 +             
 +                         44
@@ -702,7 +705,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"48\\"
++             value="48"
 +           >
 +             
 +                         48
@@ -710,7 +713,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"52\\"
++             value="52"
 +           >
 +             
 +                         52
@@ -718,7 +721,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"56\\"
++             value="56"
 +           >
 +             
 +                         56
@@ -726,7 +729,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"60\\"
++             value="60"
 +           >
 +             
 +                         60
@@ -734,7 +737,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"64\\"
++             value="64"
 +           >
 +             
 +                         64
@@ -742,7 +745,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"100\\"
++             value="100"
 +           >
 +             
 +                         100
@@ -750,7 +753,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"104\\"
++             value="104"
 +           >
 +             
 +                         104
@@ -758,7 +761,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"108\\"
++             value="108"
 +           >
 +             
 +                         108
@@ -766,7 +769,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"112\\"
++             value="112"
 +           >
 +             
 +                         112
@@ -774,7 +777,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"116\\"
++             value="116"
 +           >
 +             
 +                         116
@@ -782,7 +785,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"120\\"
++             value="120"
 +           >
 +             
 +                         120
@@ -790,7 +793,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"124\\"
++             value="124"
 +           >
 +             
 +                         124
@@ -798,7 +801,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"128\\"
++             value="128"
 +           >
 +             
 +                         128
@@ -806,7 +809,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"132\\"
++             value="132"
 +           >
 +             
 +                         132
@@ -814,7 +817,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"136\\"
++             value="136"
 +           >
 +             
 +                         136
@@ -822,7 +825,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"140\\"
++             value="140"
 +           >
 +             
 +                         140
@@ -830,7 +833,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"144\\"
++             value="144"
 +           >
 +             
 +                         144
@@ -838,7 +841,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"149\\"
++             value="149"
 +           >
 +             
 +                         149
@@ -846,7 +849,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"153\\"
++             value="153"
 +           >
 +             
 +                         153
@@ -854,7 +857,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"157\\"
++             value="157"
 +           >
 +             
 +                         157
@@ -862,7 +865,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"161\\"
++             value="161"
 +           >
 +             
 +                         161
@@ -870,7 +873,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +                     
 +           </option>
 +           <option
-+             value=\\"165\\"
++             value="165"
 +           >
 +             
 +                         165
@@ -880,90 +883,91 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +         </select>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class="mb-3"
 +       >
 +         <label
-+           for=\\"10\\"
++           class="form-label"
++           for="9"
 +         >
 +           Encryption
 +         </label>
 +         <select
-+           class=\\"custom-select\\"
-+           id=\\"10\\"
++           class="form-select"
++           id="9"
 +         >
 +           <option
-+             value=\\"WPA3\\"
++             value="WPA3"
 +           >
 +             WPA3 only
 +           </option>
 +           <option
-+             value=\\"WPA2/3\\"
++             value="WPA2/3"
 +           >
 +             WPA3 with WPA2 as fallback (default)
 +           </option>
 +           <option
-+             value=\\"WPA2\\"
++             value="WPA2"
 +           >
 +             WPA2 only
 +           </option>
 +         </select>
-+         <small
-+           class=\\"form-text text-muted\\"
++         <div
++           class="form-text"
 +         >
-+           The WPA3 standard is the new most secure encryption method that is suggested to be used with any device that supports it. The older devices without WPA3 support require older WPA2. If you experience issues with connecting older devices, try to enable WPA2.
-+         </small>
++           <small>
++             The WPA3 standard is the new most secure encryption method that is suggested to be used with any device that supports it. The older devices without WPA3 support require older WPA2. If you experience issues with connecting older devices, try to enable WPA2.
++           </small>
++         </div>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class="form-check form-switch mb-3 null"
 +       >
-+         <div
-+           class=\\"custom-control custom-switch\\"
++         <input
++           class="form-check-input"
++           id="10"
++           role="switch"
++           type="checkbox"
++         />
++         <label
++           class="form-check-label"
++           for="10"
 +         >
-+           <input
-+             class=\\"custom-control-input\\"
-+             id=\\"11\\"
-+             type=\\"checkbox\\"
-+           />
-+           <label
-+             class=\\"custom-control-label\\"
-+             for=\\"11\\"
-+           >
-+             Disable Management Frame Protection
-+           </label>
-+           <small
-+             class=\\"form-text text-muted mt-0 mb-3\\"
-+           >
++           Disable Management Frame Protection
++         </label>
++         <div
++           class="form-text"
++         >
++           <small>
 +             In case you have trouble connecting to WiFi Access Point, try disabling Management Frame Protection.
 +           </small>
 +         </div>
 +       </div>
 +       <div
-+         class=\\"form-group\\"
++         class="form-check form-switch mb-3 null"
 +       >
-+         <div
-+           class=\\"custom-control custom-switch\\"
++         <input
++           class="form-check-input"
++           id="11"
++           role="switch"
++           type="checkbox"
++         />
++         <label
++           class="form-check-label"
++           for="11"
 +         >
-+           <input
-+             class=\\"custom-control-input\\"
-+             id=\\"12\\"
-+             type=\\"checkbox\\"
-+           />
-+           <label
-+             class=\\"custom-control-label\\"
-+             for=\\"12\\"
-+           >
-+             Enable Guest Wi-Fi
-+           </label>
-+           <small
-+             class=\\"form-text text-muted mt-0 mb-3\\"
-+           >
++           Enable Guest Wi-Fi
++         </label>
++         <div
++           class="form-text"
++         >
++           <small>
 +             Enables Wi-Fi for guests, which is separated from LAN network. Devices connected to this network are allowed to access the internet, but aren't allowed to access other devices and the configuration interface of the router. Parameters of the guest network can be set in the Guest network tab.
 +           </small>
 +         </div>
 +       </div>
         <hr />
         <div
-          class=\\"form-group switch\\"
+          class="form-check form-switch mb-3 d-flex align-items-center"
         >
-          <div"
+          <input"
 `;

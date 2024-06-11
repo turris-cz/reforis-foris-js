@@ -105,8 +105,5 @@ module.exports = {
                 },
             ],
         },
-        devServer: {
-            publicPath: "/",
-        },
     },
 };

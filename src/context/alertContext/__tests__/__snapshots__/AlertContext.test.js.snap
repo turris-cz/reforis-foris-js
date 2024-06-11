@@ -6,14 +6,13 @@ exports[`AlertContext should render alert 1`] = `
     id="alert-container"
   >
     <div
-      class="alert alert-dismissible alert-danger"
+      class="alert alert-danger alert-dismissible"
     >
       <button
-        class="close"
+        aria-label="Close"
+        class="btn-close"
         type="button"
-      >
-        ×
-      </button>
+      />
       Alert content
     </div>
   </div>

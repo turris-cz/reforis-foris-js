@@ -6,11 +6,12 @@
  */
 
 import React, { forwardRef } from "react";
-import { useUID } from "react-uid";
+
 import PropTypes from "prop-types";
+import { useUID } from "react-uid";
 
 /** Base bootstrap input component. */
-export const Input = forwardRef(
+const Input = forwardRef(
     (
         {
             type,
@@ -27,18 +28,21 @@ export const Input = forwardRef(
     ) => {
         const uid = useUID();
 
-        const inputClassName = `form-control ${className || ""} ${
+        const inputClassName = `${className || ""} ${
             error ? "is-invalid" : ""
         }`.trim();
 
         return (
-            <div className="form-group">
-                <label className={labelClassName} htmlFor={uid}>
+            <div className="mb-3">
+                <label
+                    className={`form-label ${labelClassName || ""}`.trim()}
+                    htmlFor={uid}
+                >
                     {label}
                 </label>
                 <div className={`input-group ${groupClassName || ""}`.trim()}>
                     <input
-                        className={inputClassName}
+                        className={`form-control ${inputClassName}`.trim()}
                         type={type}
                         id={uid}
                         ref={ref}
@@ -46,14 +50,18 @@ export const Input = forwardRef(
                     />
                     {children}
                 </div>
-                {error ? <div className="invalid-feedback">{error}</div> : null}
-                {helpText ? (
-                    <small className="form-text text-muted">{helpText}</small>
-                ) : null}
+                {error && <div className="invalid-feedback">{error}</div>}
+                {helpText && (
+                    <div className="form-text">
+                        <small>{helpText}</small>
+                    </div>
+                )}
             </div>
         );
     }
 );
+
+Input.displayName = "Input";
 
 Input.propTypes = {
     type: PropTypes.string.isRequired,
@@ -68,3 +76,5 @@ Input.propTypes = {
     labelClassName: PropTypes.string,
     groupClassName: PropTypes.string,
 };
+
+export default Input;

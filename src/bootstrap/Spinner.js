@@ -6,6 +6,7 @@
  */
 
 import React from "react";
+
 import PropTypes from "prop-types";
 
 import "./Spinner.css";
@@ -16,7 +17,7 @@ Spinner.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
     ]),
-    /** Render component with full-screen mode (using apropriate `.css` styles) */
+    /** Render component with full-screen mode (using appropriate `.css` styles) */
     fullScreen: PropTypes.bool.isRequired,
     className: PropTypes.string,
 };

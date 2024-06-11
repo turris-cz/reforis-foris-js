@@ -1,15 +1,16 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import { useCallback, useEffect, useReducer } from "react";
+
 import update from "immutability-helper";
 
 import { useAPIGet } from "../api/hooks";
-import { useWSForisModule } from "../webSockets/hooks";
+import useWSForisModule from "../webSockets/hooks";
 
 const FORM_ACTIONS = {
     updateValue: 1,

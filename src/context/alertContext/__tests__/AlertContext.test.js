@@ -48,7 +48,7 @@ describe("AlertContext", () => {
         // Alert is present
         expect(getByText(componentContainer, "Alert content")).toBeDefined();
 
-        fireEvent.click(componentContainer.querySelector(".close"));
+        fireEvent.click(componentContainer.querySelector(".btn-close"));
         // Alert is gone
         expect(queryByText(componentContainer, "Alert content")).toBeNull();
     });

@@ -1,14 +1,15 @@
 /*
- * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React, { useState } from "react";
+
 import PropTypes from "prop-types";
 
-import { Input } from "./Input";
+import Input from "./Input";
 
 PasswordInput.propTypes = {
     /** Field label. */
@@ -25,7 +26,7 @@ PasswordInput.propTypes = {
     newPass: PropTypes.bool,
 };
 
-export function PasswordInput({ withEye, newPass, ...props }) {
+function PasswordInput({ withEye, newPass, ...props }) {
     const [isHidden, setHidden] = useState(true);
 
     return (
@@ -34,24 +35,22 @@ export function PasswordInput({ withEye, newPass, ...props }) {
             autoComplete={newPass ? "new-password" : "current-password"}
             {...props}
         >
-            {withEye ? (
-                <div className="input-group-append">
-                    <button
-                        type="button"
-                        className="input-group-text"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            setHidden((shouldBeHidden) => !shouldBeHidden);
-                        }}
-                    >
-                        <i
-                            className={`fa ${
-                                isHidden ? "fa-eye" : "fa-eye-slash"
-                            }`}
-                        />
-                    </button>
-                </div>
-            ) : null}
+            {withEye && (
+                <button
+                    type="button"
+                    className="input-group-text"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        setHidden((shouldBeHidden) => !shouldBeHidden);
+                    }}
+                >
+                    <i
+                        className={`fa ${isHidden ? "fa-eye" : "fa-eye-slash"}`}
+                    />
+                </button>
+            )}
         </Input>
     );
 }
+
+export default PasswordInput;

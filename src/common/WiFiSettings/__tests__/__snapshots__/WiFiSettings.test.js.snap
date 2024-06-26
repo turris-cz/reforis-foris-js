@@ -536,7 +536,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +         </div>
 +       </div>
 +       <div
-+         class="form-check form-switch mb-3 null"
++         class="form-check form-switch mb-3"
 +       >
 +         <input
 +           class="form-check-input"
@@ -920,7 +920,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +         </div>
 +       </div>
 +       <div
-+         class="form-check form-switch mb-3 null"
++         class="form-check form-switch mb-3"
 +       >
 +         <input
 +           class="form-check-input"
@@ -943,7 +943,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +         </div>
 +       </div>
 +       <div
-+         class="form-check form-switch mb-3 null"
++         class="form-check form-switch mb-3"
 +       >
 +         <input
 +           class="form-check-input"

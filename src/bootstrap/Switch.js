@@ -19,15 +19,16 @@ Switch.propTypes = {
     ]).isRequired,
     helpText: PropTypes.string,
     switchHeading: PropTypes.bool,
+    className: PropTypes.string,
 };
 
-function Switch({ label, helpText, switchHeading, ...props }) {
+function Switch({ label, helpText, switchHeading, className, ...props }) {
     const uid = useUID();
 
     return (
         <div
-            className={`form-check form-switch mb-3 ${
-                switchHeading ? "d-flex align-items-center" : null
+            className={`form-check form-switch ${className || "mb-3"} ${
+                switchHeading ? "d-flex align-items-center" : ""
             }`.trim()}
         >
             <input

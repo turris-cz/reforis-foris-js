@@ -2,7 +2,7 @@
 
 exports[`<Switch/> Render switch 1`] = `
 <div
-  class="form-check form-switch mb-3 null"
+  class="form-check form-switch mb-3"
 >
   <input
     checked=""
@@ -29,7 +29,7 @@ exports[`<Switch/> Render switch 1`] = `
 
 exports[`<Switch/> Render uncheked switch 1`] = `
 <div
-  class="form-check form-switch mb-3 null"
+  class="form-check form-switch mb-3"
 >
   <input
     class="form-check-input"

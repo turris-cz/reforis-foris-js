@@ -11,7 +11,7 @@ exports[`<RadioSet/> Render radio set 1`] = `
     Radios set label
   </label>
   <div
-    class="mb-2"
+    class="mb-3"
   >
     <input
       checked=""
@@ -29,7 +29,7 @@ exports[`<RadioSet/> Render radio set 1`] = `
     </label>
   </div>
   <div
-    class="mb-2"
+    class="mb-3"
   >
     <input
       class="form-check-input me-2"
@@ -46,7 +46,7 @@ exports[`<RadioSet/> Render radio set 1`] = `
     </label>
   </div>
   <div
-    class="mb-2"
+    class="mb-3"
   >
     <input
       class="form-check-input me-2"

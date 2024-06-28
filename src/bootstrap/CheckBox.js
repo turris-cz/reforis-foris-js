@@ -17,17 +17,19 @@ CheckBox.propTypes = {
     helpText: PropTypes.string,
     /** Control if checkbox is clickable */
     disabled: PropTypes.bool,
+    /** Additional class name */
+    className: PropTypes.string,
 };
 
 CheckBox.defaultProps = {
     disabled: false,
 };
 
-function CheckBox({ label, helpText, disabled, ...props }) {
+function CheckBox({ label, helpText, disabled, className, ...props }) {
     const uid = useUID();
 
     return (
-        <div className="mb-3 form-check">
+        <div className={`${className || "mb-3"} form-check`.trim()}>
             <input
                 className="form-check-input"
                 type="checkbox"

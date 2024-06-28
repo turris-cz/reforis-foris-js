@@ -83,12 +83,13 @@ Radio.propTypes = {
     id: PropTypes.string.isRequired,
     inline: PropTypes.bool,
     helpText: PropTypes.string,
+    className: PropTypes.string,
 };
 
-export function Radio({ label, id, helpText, inline, ...props }) {
+export function Radio({ label, id, helpText, inline, className, ...props }) {
     return (
         <div
-            className={`mb-2 ${inline ? "form-check form-check-inline" : ""}`.trim()}
+            className={`${className || "mb-3"} ${inline ? "form-check form-check-inline" : ""}`.trim()}
         >
             <input
                 id={id}

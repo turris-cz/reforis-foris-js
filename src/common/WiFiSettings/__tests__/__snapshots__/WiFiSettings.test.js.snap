@@ -568,7 +568,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           GHz
 +         </label>
 +         <div
-+           class="mb-2 form-check form-check-inline"
++           class="mb-3 form-check form-check-inline"
 +         >
 +           <input
 +             class="form-check-input me-2"
@@ -585,7 +585,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           </label>
 +         </div>
 +         <div
-+           class="mb-2 form-check form-check-inline"
++           class="mb-3 form-check form-check-inline"
 +         >
 +           <input
 +             checked=""

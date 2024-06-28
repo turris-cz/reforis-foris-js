@@ -8,15 +8,21 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.0.2] - 2024-06-28
+
+### Added
+
+-   Added className prop to CheckBox and Radio components
+
 ## [6.0.1] - 2024-06-26
 
 ### Added
 
--   Add className prop to Switch component
+-   Added className prop to Switch component
 
 ### Changed
 
--   Update dependencies in package.json
+-   Updated dependencies in package.json
 -   NPM audit fix
 
 ## [6.0.0] - 2024-06-11
@@ -325,7 +331,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.1...master
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.2...master
+[6.0.2]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.1...v6.0.2
 [6.0.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.0...v6.0.1
 [6.0.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v5.6.1...v6.0.0
 [5.6.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v5.6.0...v5.6.1

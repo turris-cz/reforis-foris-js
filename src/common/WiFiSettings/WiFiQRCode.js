@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -18,14 +18,11 @@ import {
     ModalFooter,
     ModalHeader,
 } from "../../bootstrap/Modal";
-import { ForisURLs } from "../../utils/forisUrls";
 
 WiFiQRCode.propTypes = {
     SSID: PropTypes.string.isRequired,
     password: PropTypes.string.isRequired,
 };
-
-const QR_ICON_PATH = `${ForisURLs.static}/imgs/QR_icon.svg`;
 
 export default function WiFiQRCode({ SSID, password }) {
     const [modal, setModal] = useState(false);
@@ -40,11 +37,10 @@ export default function WiFiQRCode({ SSID, password }) {
                     setModal(true);
                 }}
             >
-                <img
-                    width="20"
-                    src={QR_ICON_PATH}
-                    alt="QR"
-                    style={{ opacity: 0.67 }}
+                <i
+                    className="fa-solid fa-qrcode"
+                    title={_("Show QR code")}
+                    aria-label={_("Show QR code")}
                 />
             </button>
             {modal ? (

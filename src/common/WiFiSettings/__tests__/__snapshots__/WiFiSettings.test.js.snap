@@ -5,7 +5,7 @@ exports[`<WiFiSettings/> Snapshot 2.4 GHz 1`] = `
 - First value
 + Second value
 
-@@ -243,207 +243,95 @@
+@@ -242,207 +242,95 @@
               value="0"
             >
               auto
@@ -339,7 +339,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 - First value
 + Second value
 
-@@ -527,10 +527,94 @@
+@@ -526,10 +526,93 @@
             <small>
               Enables Wi-Fi for guests, which is separated from LAN network. Devices connected to this network are allowed to access the internet, but aren't allowed to access other devices and the configuration interface of the router. Parameters of the guest network can be set in the Guest network tab.
             </small>
@@ -370,11 +370,10 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +               class="input-group-text"
 +               type="button"
 +             >
-+               <img
-+                 alt="QR"
-+                 src="/reforis/static/reforis/imgs/QR_icon.svg"
-+                 style="opacity: 0.67;"
-+                 width="20"
++               <i
++                 aria-label="Show QR code"
++                 class="fa-solid fa-qrcode"
++                 title="Show QR code"
 +               />
 +             </button>
 +           </div>
@@ -434,7 +433,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
           class="form-check form-switch mb-3 d-flex align-items-center"
         >
           <input
-@@ -553,10 +637,11 @@
+@@ -552,10 +635,11 @@
         <div
           class="text-end"
         >
@@ -453,7 +452,7 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 - First value
 + Second value
 
-@@ -21,10 +21,516 @@
+@@ -21,10 +21,515 @@
             >
               Wi-Fi 1
             </h2>
@@ -482,11 +481,10 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +             class="input-group-text"
 +             type="button"
 +           >
-+             <img
-+               alt="QR"
-+               src="/reforis/static/reforis/imgs/QR_icon.svg"
-+               style="opacity: 0.67;"
-+               width="20"
++             <i
++               aria-label="Show QR code"
++               class="fa-solid fa-qrcode"
++               title="Show QR code"
 +             />
 +           </button>
 +         </div>

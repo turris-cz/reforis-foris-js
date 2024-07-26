@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.0.3] - 2024-07-26
+
+### Changed
+
+-   Updated WiFiQRCode component
+
 ## [6.0.2] - 2024-06-28
 
 ### Added
@@ -331,7 +337,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.2...master
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.3...master
+[6.0.3]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.2...v6.0.3
 [6.0.2]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.1...v6.0.2
 [6.0.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.0...v6.0.1
 [6.0.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v5.6.1...v6.0.0

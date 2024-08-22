@@ -25,7 +25,7 @@ exports[`<NumberInput/> Render number input 1`] = `
       type="button"
     >
       <i
-        class="fas fa-plus"
+        class="fa"
       />
     </button>
     <button
@@ -34,7 +34,7 @@ exports[`<NumberInput/> Render number input 1`] = `
       type="button"
     >
       <i
-        class="fas fa-minus"
+        class="fa"
       />
     </button>
   </div>

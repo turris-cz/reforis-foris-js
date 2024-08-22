@@ -7,6 +7,7 @@
 
 import React, { useState } from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 import QRCode from "qrcode.react";
 
@@ -37,10 +38,11 @@ export default function WiFiQRCode({ SSID, password }) {
                     setModal(true);
                 }}
             >
-                <i
-                    className="fa-solid fa-qrcode"
+                <FontAwesomeIcon
+                    icon="fa-solid fa-qrcode"
                     title={_("Show QR code")}
                     aria-label={_("Show QR code")}
+                    className="text-dark"
                 />
             </button>
             {modal ? (
@@ -84,7 +86,10 @@ function QRCodeModal({ shown, setShown, SSID, password }) {
                         createAndDownloadPdf(SSID, password);
                     }}
                 >
-                    <i className="fas fa-file-download me-2" />
+                    <FontAwesomeIcon
+                        icon="fa-solid fa-file-download"
+                        className="me-2"
+                    />
                     {_("Download PDF")}
                 </Button>
             </ModalFooter>

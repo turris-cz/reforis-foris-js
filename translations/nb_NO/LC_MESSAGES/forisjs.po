@@ -1,24 +1,23 @@
 # Norwegian Bokmål (Norway) translations for Foris JS.
-# Copyright (C) 2022 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 15:54+0100\n"
+"POT-Creation-Date: 2024-08-23 14:02+0200\n"
 "PO-Revision-Date: 2023-03-02 11:40+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
-"foris-js/nb_NO/>\n"
 "Language: nb_NO\n"
+"Language-Team: Norwegian Bokmål "
+"<https://hosted.weblate.org/projects/turris/foris-js/nb_NO/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -37,11 +36,15 @@ msgstr "Fikk ikke svar."
 msgid "An unknown API error occurred."
 msgstr "Ukjent API-feil."
 
-#: src/bootstrap/CopyInput.js:55
+#: src/bootstrap/Alert.js:51 src/bootstrap/Modal.js:98
+msgid "Close"
+msgstr ""
+
+#: src/bootstrap/CopyInput.js:57
 msgid "Copied!"
 msgstr "Kopiert"
 
-#: src/bootstrap/CopyInput.js:55
+#: src/bootstrap/CopyInput.js:57
 msgid "Copy"
 msgstr "Kopier"
 
@@ -70,21 +73,21 @@ msgstr "Avbryt"
 msgid "Confirm reboot"
 msgstr "Bekreft omstart"
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:38
+#: src/common/WiFiSettings/ResetWiFiSettings.js:39
 #, fuzzy
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr "Kunne ikke tilbakestille Wi-Fi-innstillinger."
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:41
+#: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
 msgstr "Wi-Fi-innstillinger satt til forvalg."
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:55
-#: src/common/WiFiSettings/ResetWiFiSettings.js:69
+#: src/common/WiFiSettings/ResetWiFiSettings.js:56
+#: src/common/WiFiSettings/ResetWiFiSettings.js:70
 msgid "Reset Wi-Fi Settings"
 msgstr "Tilbakestill Wi-Fi-innstillinger"
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:57
+#: src/common/WiFiSettings/ResetWiFiSettings.js:58
 msgid ""
 "If a number of wireless cards doesn't match, you may try to reset the Wi-"
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
@@ -94,13 +97,13 @@ msgstr ""
 "Fi-innstillingene. Merk at dette fjerner nåværende Wi-Fi-oppsett og "
 "gjenoppretter forvalgte verdier."
 
-#: src/common/WiFiSettings/WiFiForm.js:95
+#: src/common/WiFiSettings/WiFiForm.js:97
 #, fuzzy
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
+#: src/common/WiFiSettings/WiFiGuestForm.js:81
 msgid "Password"
 msgstr "Passord"
 
@@ -132,8 +135,8 @@ msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
-"I fall du har problemer med å koble til Wi-Fi-tilgangspunkt, kan du skru av "
-"håndtering av rammebeskyttelse."
+"I fall du har problemer med å koble til Wi-Fi-tilgangspunkt, kan du skru "
+"av håndtering av rammebeskyttelse."
 
 #: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
@@ -143,42 +146,48 @@ msgstr "automatisk"
 msgid "Custom"
 msgstr "Tilpasset"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:42
+#: src/common/WiFiSettings/WiFiGuestForm.js:43
 #, fuzzy
 msgid "Enable Guest Wi-Fi"
 msgstr "Skru på gjestetrådløsnett"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:71
+#: src/common/WiFiSettings/WiFiQRCode.js:43
+#: src/common/WiFiSettings/WiFiQRCode.js:44
+#, fuzzy
+msgid "Show QR code"
+msgstr "QR-kode for Wi-Fi"
+
+#: src/common/WiFiSettings/WiFiQRCode.js:70
 msgid "Wi-Fi QR Code"
 msgstr "QR-kode for Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:91
+#: src/common/WiFiSettings/WiFiQRCode.js:93
 msgid "Download PDF"
 msgstr "Last ned PDF"
 
-#: src/common/WiFiSettings/WiFiSettings.js:82
-#: src/common/WiFiSettings/WiFiSettings.js:98
+#: src/common/WiFiSettings/WiFiSettings.js:83
+#: src/common/WiFiSettings/WiFiSettings.js:99
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID kan ikke være lengre enn 32 symboler"
 
-#: src/common/WiFiSettings/WiFiSettings.js:83
-#: src/common/WiFiSettings/WiFiSettings.js:100
+#: src/common/WiFiSettings/WiFiSettings.js:84
+#: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "SSID can't be empty"
 msgstr "SSID kan ikke stå tomt."
 
-#: src/common/WiFiSettings/WiFiSettings.js:85
-#: src/common/WiFiSettings/WiFiSettings.js:102
+#: src/common/WiFiSettings/WiFiSettings.js:86
+#: src/common/WiFiSettings/WiFiSettings.js:103
 #, fuzzy
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID kan ikke være lengre enn 32 symboler"
 
-#: src/common/WiFiSettings/WiFiSettings.js:88
-#: src/common/WiFiSettings/WiFiSettings.js:105
+#: src/common/WiFiSettings/WiFiSettings.js:89
+#: src/common/WiFiSettings/WiFiSettings.js:106
 msgid "Password must contain at least 8 symbols"
 msgstr "Passordet må inneholde minst 8 tegn"
 
-#: src/common/WiFiSettings/WiFiSettings.js:90
-#: src/common/WiFiSettings/WiFiSettings.js:109
+#: src/common/WiFiSettings/WiFiSettings.js:91
+#: src/common/WiFiSettings/WiFiSettings.js:110
 #, fuzzy
 msgid "Password must not contain more than 63 symbols"
 msgstr "Passordet må inneholde minst 8 tegn"
@@ -317,20 +326,20 @@ msgstr "Innstillinger lagret"
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr "Endringer du har gjort vil ikke bli lagret. Er du sikker?"
 
-#: src/form/components/SubmitButton.js:31
+#: src/form/components/SubmitButton.js:32
 #, fuzzy
 msgid "Updating"
 msgstr "Oppdaterer"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:35
 msgid "Load settings"
 msgstr "Last inn innstillinger"
 
-#: src/form/components/SubmitButton.js:37
+#: src/form/components/SubmitButton.js:38
 msgid "Save"
 msgstr "Lagre"
 
-#: src/utils/ErrorMessage.js:16
+#: src/utils/ErrorMessage.js:17
 msgid "An error occurred while fetching data."
 msgstr "Kunne ikke hente data."
 
@@ -393,3 +402,4 @@ msgstr "Inneholder ikke en kommainndelt liste med e-postadresser."
 #~ "\n"
 #~ "gjeldende Wi-Fi-oppsett og tilbakestiller forvalgte verdier.\n"
 #~ "        "
+

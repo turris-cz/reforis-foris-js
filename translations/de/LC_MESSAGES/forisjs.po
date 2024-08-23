@@ -1,24 +1,23 @@
 # German translations for Foris JS.
-# Copyright (C) 2022 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 15:54+0100\n"
+"POT-Creation-Date: 2024-08-23 14:02+0200\n"
 "PO-Revision-Date: 2024-01-04 21:08+0000\n"
 "Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris/foris-js/"
-"de/>\n"
 "Language: de\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/foris-"
+"js/de/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -36,11 +35,15 @@ msgstr "Keine Antwort erhalten."
 msgid "An unknown API error occurred."
 msgstr "Ein unbekannter API-Fehler ist aufgetreten."
 
-#: src/bootstrap/CopyInput.js:55
+#: src/bootstrap/Alert.js:51 src/bootstrap/Modal.js:98
+msgid "Close"
+msgstr ""
+
+#: src/bootstrap/CopyInput.js:57
 msgid "Copied!"
 msgstr "Kopiert!"
 
-#: src/bootstrap/CopyInput.js:55
+#: src/bootstrap/CopyInput.js:57
 msgid "Copy"
 msgstr "Kopieren"
 
@@ -68,37 +71,37 @@ msgstr "Abbrechen"
 msgid "Confirm reboot"
 msgstr "Neustart bestätigen"
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:38
+#: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
 "Ein Fehler ist während der Zurücksetzung der WLAN-Einstellungen "
 "aufgetreten."
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:41
+#: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
 msgstr "WLAN-Einstellungen wurden auf Standard zurückgesetzt."
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:55
-#: src/common/WiFiSettings/ResetWiFiSettings.js:69
+#: src/common/WiFiSettings/ResetWiFiSettings.js:56
+#: src/common/WiFiSettings/ResetWiFiSettings.js:70
 msgid "Reset Wi-Fi Settings"
 msgstr "WLAN-Einstellungen zurücksetzen"
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:57
+#: src/common/WiFiSettings/ResetWiFiSettings.js:58
 msgid ""
 "If a number of wireless cards doesn't match, you may try to reset the Wi-"
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
-"Falls die Anzahl der WLAN-Karten nicht korrekt ist, könnte es helfen, die "
-"WLAN-Einstellungen zurückzusetzen. Beachten Sie, dass dabei die aktuelle "
-"WLAN-Konfiguration mit den Werkseinstellungen überschrieben wird."
+"Falls die Anzahl der WLAN-Karten nicht korrekt ist, könnte es helfen, die"
+" WLAN-Einstellungen zurückzusetzen. Beachten Sie, dass dabei die aktuelle"
+" WLAN-Konfiguration mit den Werkseinstellungen überschrieben wird."
 
-#: src/common/WiFiSettings/WiFiForm.js:95
+#: src/common/WiFiSettings/WiFiForm.js:97
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "WLAN ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
+#: src/common/WiFiSettings/WiFiGuestForm.js:81
 msgid "Password"
 msgstr "Passwort"
 
@@ -127,8 +130,8 @@ msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
-"Falls Sie beim Verbinden mit dem WiFi-Access-Point Probleme haben, schalten "
-"Sie testweise die Management Frame Protection ab."
+"Falls Sie beim Verbinden mit dem WiFi-Access-Point Probleme haben, "
+"schalten Sie testweise die Management Frame Protection ab."
 
 #: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
@@ -138,40 +141,46 @@ msgstr "automatisch"
 msgid "Custom"
 msgstr "Benutzerdefiniert"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:42
+#: src/common/WiFiSettings/WiFiGuestForm.js:43
 msgid "Enable Guest Wi-Fi"
 msgstr "Gast-WLAN aktivieren"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:71
+#: src/common/WiFiSettings/WiFiQRCode.js:43
+#: src/common/WiFiSettings/WiFiQRCode.js:44
+#, fuzzy
+msgid "Show QR code"
+msgstr "WLAN QR-Code"
+
+#: src/common/WiFiSettings/WiFiQRCode.js:70
 msgid "Wi-Fi QR Code"
 msgstr "WLAN QR-Code"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:91
+#: src/common/WiFiSettings/WiFiQRCode.js:93
 msgid "Download PDF"
 msgstr "PDF herunterladen"
 
-#: src/common/WiFiSettings/WiFiSettings.js:82
-#: src/common/WiFiSettings/WiFiSettings.js:98
+#: src/common/WiFiSettings/WiFiSettings.js:83
+#: src/common/WiFiSettings/WiFiSettings.js:99
 msgid "SSID can't be longer than 32 symbols"
 msgstr "Die SSID darf nicht länger als 32 Zeichen sein"
 
-#: src/common/WiFiSettings/WiFiSettings.js:83
-#: src/common/WiFiSettings/WiFiSettings.js:100
+#: src/common/WiFiSettings/WiFiSettings.js:84
+#: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "SSID can't be empty"
 msgstr "Die SSID darf nicht leer sein"
 
-#: src/common/WiFiSettings/WiFiSettings.js:85
-#: src/common/WiFiSettings/WiFiSettings.js:102
+#: src/common/WiFiSettings/WiFiSettings.js:86
+#: src/common/WiFiSettings/WiFiSettings.js:103
 msgid "SSID can't be longer than 32 bytes"
 msgstr "Die SSID darf nicht länger als 32 Bytes sein"
 
-#: src/common/WiFiSettings/WiFiSettings.js:88
-#: src/common/WiFiSettings/WiFiSettings.js:105
+#: src/common/WiFiSettings/WiFiSettings.js:89
+#: src/common/WiFiSettings/WiFiSettings.js:106
 msgid "Password must contain at least 8 symbols"
 msgstr "Das Passwort muss mindestens 8 Zeichen enthalten"
 
-#: src/common/WiFiSettings/WiFiSettings.js:90
-#: src/common/WiFiSettings/WiFiSettings.js:109
+#: src/common/WiFiSettings/WiFiSettings.js:91
+#: src/common/WiFiSettings/WiFiSettings.js:110
 msgid "Password must not contain more than 63 symbols"
 msgstr "Das Passwort darf höchstens 63 Zeichen enthalten"
 
@@ -256,11 +265,11 @@ msgid ""
 "supported by all your devices. It usually has less interference, but the "
 "signal does not carry so well indoors."
 msgstr ""
-"Das 2,4 GHz-Band wird von allen Geräten unterstützt, ist aber tendenziell "
-"stärker mit Interferenzen belastet. Das 5-GHz-Band ist ein neuerer Standard, "
-"der möglicherweise nicht von allen Ihren Geräten unterstützt wird. Es hat in "
-"der Regel weniger Interferenzen, aber das Signal trägt nicht so gut in "
-"Innenräumen."
+"Das 2,4 GHz-Band wird von allen Geräten unterstützt, ist aber tendenziell"
+" stärker mit Interferenzen belastet. Das 5-GHz-Band ist ein neuerer "
+"Standard, der möglicherweise nicht von allen Ihren Geräten unterstützt "
+"wird. Es hat in der Regel weniger Interferenzen, aber das Signal trägt "
+"nicht so gut in Innenräumen."
 
 #: src/common/WiFiSettings/constants.js:43
 msgid ""
@@ -269,10 +278,10 @@ msgid ""
 "interference in the network. If you don't know what to choose, use the "
 "default option with 20 MHz wide channel."
 msgstr ""
-"Ändern Sie diese Option, um den 802.11n/ac/ax-Betriebsmodus anzupassen. 40 "
-"MHz breite Kanäle können bei 802.11n mehr Daten transportieren, jedoch zu "
-"mehr Interferenzen im Netzwerk führen. Wenn Sie nicht wissen, was Sie wählen "
-"sollen, verwenden Sie die Voreinstellung mit 20 MHz Kanalbreite."
+"Ändern Sie diese Option, um den 802.11n/ac/ax-Betriebsmodus anzupassen. "
+"40 MHz breite Kanäle können bei 802.11n mehr Daten transportieren, jedoch"
+" zu mehr Interferenzen im Netzwerk führen. Wenn Sie nicht wissen, was Sie"
+" wählen sollen, verwenden Sie die Voreinstellung mit 20 MHz Kanalbreite."
 
 #: src/common/WiFiSettings/constants.js:46
 msgid ""
@@ -282,11 +291,11 @@ msgid ""
 "router. Parameters of the guest network can be set in the Guest network "
 "tab."
 msgstr ""
-"Ermöglicht ein Wi-Fi für Gäste, das vom LAN-Netzwerk getrennt ist. Geräte, "
-"die mit diesem Netzwerk verbunden sind, dürfen auf das Internet zugreifen, "
-"nicht jedoch auf andere Geräte oder die Konfigurationsschnittstelle des "
-"Routers. Die Parameter des Gastnetzwerks können auf der Gastnetzwerk-"
-"Registerkarte eingestellt werden."
+"Ermöglicht ein Wi-Fi für Gäste, das vom LAN-Netzwerk getrennt ist. "
+"Geräte, die mit diesem Netzwerk verbunden sind, dürfen auf das Internet "
+"zugreifen, nicht jedoch auf andere Geräte oder die "
+"Konfigurationsschnittstelle des Routers. Die Parameter des Gastnetzwerks "
+"können auf der Gastnetzwerk-Registerkarte eingestellt werden."
 
 #: src/common/WiFiSettings/constants.js:49
 msgid ""
@@ -297,9 +306,9 @@ msgid ""
 msgstr ""
 "Der WPA3-Standard ist die neue Verschlüsselungsmethode mit der besten "
 "Sicherheit. Er empfiehlt sich für jedes Gerät, das ihn unterstützt, aber "
-"ältere Geräte, bei denen das noch nicht der Fall ist, müssen auf das ältere "
-"WPA2 ausweichen. Falls Sie Probleme dabei haben, ältere Geräte mit dem WLAN "
-"zu verbinden, schalten Sie versuchsweise WPA2 ein."
+"ältere Geräte, bei denen das noch nicht der Fall ist, müssen auf das "
+"ältere WPA2 ausweichen. Falls Sie Probleme dabei haben, ältere Geräte mit"
+" dem WLAN zu verbinden, schalten Sie versuchsweise WPA2 ein."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -311,19 +320,19 @@ msgstr ""
 "Änderungen, die Sie vorgenommen haben, werden möglicherweise nicht "
 "gespeichert. Möchten Sie wirklich gehen?"
 
-#: src/form/components/SubmitButton.js:31
+#: src/form/components/SubmitButton.js:32
 msgid "Updating"
 msgstr "Aktualisiere"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:35
 msgid "Load settings"
 msgstr "Einstellungen laden"
 
-#: src/form/components/SubmitButton.js:37
+#: src/form/components/SubmitButton.js:38
 msgid "Save"
 msgstr "Speichern"
 
-#: src/utils/ErrorMessage.js:16
+#: src/utils/ErrorMessage.js:17
 msgid "An error occurred while fetching data."
 msgstr "Beim Abruf der Daten ist ein Fehler aufgetreten."
 
@@ -377,3 +386,4 @@ msgstr "Enthält keine Liste von E-Mails, die durch Kommas getrennt sind."
 #~ "current Wi-Fi configuration and restore the default values.\n"
 #~ "        "
 #~ msgstr ""
+

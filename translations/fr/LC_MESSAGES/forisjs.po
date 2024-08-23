@@ -1,24 +1,23 @@
 # French translations for Foris JS.
-# Copyright (C) 2022 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 15:54+0100\n"
+"POT-Creation-Date: 2024-08-23 14:02+0200\n"
 "PO-Revision-Date: 2024-07-27 01:09+0000\n"
 "Last-Translator: Moha684 <nahil82466@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/turris/foris-js/"
-"fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/foris-"
+"js/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -36,11 +35,15 @@ msgstr "Aucun réponse reçue."
 msgid "An unknown API error occurred."
 msgstr "Une erreur d’API inconnue s’est produite."
 
-#: src/bootstrap/CopyInput.js:55
+#: src/bootstrap/Alert.js:51 src/bootstrap/Modal.js:98
+msgid "Close"
+msgstr ""
+
+#: src/bootstrap/CopyInput.js:57
 msgid "Copied!"
 msgstr "Copié!"
 
-#: src/bootstrap/CopyInput.js:55
+#: src/bootstrap/CopyInput.js:57
 msgid "Copy"
 msgstr "Copier"
 
@@ -68,34 +71,34 @@ msgstr "Annuler"
 msgid "Confirm reboot"
 msgstr "Confirmer le redémarrage"
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:38
+#: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
 "Une erreur s'est produite lors de la réinitialisation des paramètres Wi-"
 "Fi."
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:41
+#: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
 msgstr "Les paramètres Wi-Fi sont définis par défaut."
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:55
-#: src/common/WiFiSettings/ResetWiFiSettings.js:69
+#: src/common/WiFiSettings/ResetWiFiSettings.js:56
+#: src/common/WiFiSettings/ResetWiFiSettings.js:70
 msgid "Reset Wi-Fi Settings"
 msgstr "Réinitialiser les paramètres Wi-Fi"
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:57
+#: src/common/WiFiSettings/ResetWiFiSettings.js:58
 msgid ""
 "If a number of wireless cards doesn't match, you may try to reset the Wi-"
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:95
+#: src/common/WiFiSettings/WiFiForm.js:97
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
+#: src/common/WiFiSettings/WiFiGuestForm.js:81
 msgid "Password"
 msgstr "Mot de passe"
 
@@ -136,40 +139,46 @@ msgstr "automatique"
 msgid "Custom"
 msgstr "Personnalisé"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:42
+#: src/common/WiFiSettings/WiFiGuestForm.js:43
 msgid "Enable Guest Wi-Fi"
 msgstr "Activer le mode Wi-Fi invité"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:71
+#: src/common/WiFiSettings/WiFiQRCode.js:43
+#: src/common/WiFiSettings/WiFiQRCode.js:44
+#, fuzzy
+msgid "Show QR code"
+msgstr "Code QR Wi-Fi"
+
+#: src/common/WiFiSettings/WiFiQRCode.js:70
 msgid "Wi-Fi QR Code"
 msgstr "Code QR Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:91
+#: src/common/WiFiSettings/WiFiQRCode.js:93
 msgid "Download PDF"
 msgstr "Télécharger le PDF"
 
-#: src/common/WiFiSettings/WiFiSettings.js:82
-#: src/common/WiFiSettings/WiFiSettings.js:98
+#: src/common/WiFiSettings/WiFiSettings.js:83
+#: src/common/WiFiSettings/WiFiSettings.js:99
 msgid "SSID can't be longer than 32 symbols"
 msgstr "Le SSID ne peut pas être plus long que 32 symboles"
 
-#: src/common/WiFiSettings/WiFiSettings.js:83
-#: src/common/WiFiSettings/WiFiSettings.js:100
+#: src/common/WiFiSettings/WiFiSettings.js:84
+#: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "SSID can't be empty"
 msgstr "Le SSID ne peut pas être vide"
 
-#: src/common/WiFiSettings/WiFiSettings.js:85
-#: src/common/WiFiSettings/WiFiSettings.js:102
+#: src/common/WiFiSettings/WiFiSettings.js:86
+#: src/common/WiFiSettings/WiFiSettings.js:103
 msgid "SSID can't be longer than 32 bytes"
 msgstr "Le SSID ne peut pas dépasser 32 octets"
 
-#: src/common/WiFiSettings/WiFiSettings.js:88
-#: src/common/WiFiSettings/WiFiSettings.js:105
+#: src/common/WiFiSettings/WiFiSettings.js:89
+#: src/common/WiFiSettings/WiFiSettings.js:106
 msgid "Password must contain at least 8 symbols"
 msgstr "Le mot de passe doit contenir au moins 8 symboles"
 
-#: src/common/WiFiSettings/WiFiSettings.js:90
-#: src/common/WiFiSettings/WiFiSettings.js:109
+#: src/common/WiFiSettings/WiFiSettings.js:91
+#: src/common/WiFiSettings/WiFiSettings.js:110
 #, fuzzy
 msgid "Password must not contain more than 63 symbols"
 msgstr "Le mot de passe doit contenir au moins 8 symboles"
@@ -333,19 +342,19 @@ msgstr ""
 "Il se peut que vos modifications ne soient pas enregistrées. Êtes-vous "
 "sûr de vouloir quitter ?"
 
-#: src/form/components/SubmitButton.js:31
+#: src/form/components/SubmitButton.js:32
 msgid "Updating"
 msgstr "Mise à jour en cours"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:35
 msgid "Load settings"
 msgstr "Charger les paramètres"
 
-#: src/form/components/SubmitButton.js:37
+#: src/form/components/SubmitButton.js:38
 msgid "Save"
 msgstr "Enregistrer"
 
-#: src/utils/ErrorMessage.js:16
+#: src/utils/ErrorMessage.js:17
 msgid "An error occurred while fetching data."
 msgstr "Une erreur s’est produite lors du chargement des données."
 
@@ -405,3 +414,4 @@ msgstr ""
 #~ "current Wi-Fi configuration and restore the default values.\n"
 #~ "        "
 #~ msgstr ""
+

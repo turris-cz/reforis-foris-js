@@ -8,6 +8,17 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.1.0] - 2024-08-23
+
+### Added
+
+-   Added & updated Weblate translations
+
+### Changed
+
+-   Migrated to Font Awesome v6
+-   NPM audit fix
+
 ## [6.0.3] - 2024-07-26
 
 ### Changed
@@ -337,7 +348,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.3...master
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.1.0...master
+[6.1.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.3...v6.1.0
 [6.0.3]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.2...v6.0.3
 [6.0.2]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.1...v6.0.2
 [6.0.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.0...v6.0.1

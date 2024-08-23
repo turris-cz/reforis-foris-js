@@ -7,6 +7,8 @@
 
 import React, { useState } from "react";
 
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 
 import Input from "./Input";
@@ -44,8 +46,10 @@ function PasswordInput({ withEye, newPass, ...props }) {
                         setHidden((shouldBeHidden) => !shouldBeHidden);
                     }}
                 >
-                    <i
-                        className={`fa ${isHidden ? "fa-eye" : "fa-eye-slash"}`}
+                    <FontAwesomeIcon
+                        icon={isHidden ? faEye : faEyeSlash}
+                        style={{ width: "1.25rem" }}
+                        className="text-dark"
                     />
                 </button>
             )}

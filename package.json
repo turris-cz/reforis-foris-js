@@ -1,6 +1,6 @@
 {
     "name": "foris",
-    "version": "6.0.3",
+    "version": "6.1.0",
     "description": "Foris JS library is a set of components and utils for reForis application and plugins.",
     "author": "CZ.NIC, z.s.p.o.",
     "repository": {
@@ -14,6 +14,10 @@
     "license": "GPL-3.0",
     "main": "./src/index.js",
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.6.0",
+        "@fortawesome/free-regular-svg-icons": "^6.6.0",
+        "@fortawesome/free-solid-svg-icons": "^6.6.0",
+        "@fortawesome/react-fontawesome": "^0.2.2",
         "axios": "^1.7.2",
         "immutability-helper": "^3.1.1",
         "moment": "^2.30.1",
@@ -34,7 +38,6 @@
         "@babel/plugin-transform-runtime": "^7.24.7",
         "@babel/preset-env": "^7.24.7",
         "@babel/preset-react": "^7.24.7",
-        "@fortawesome/fontawesome-free": "^6.5.2",
         "@testing-library/react": "^8.0.9",
         "babel-loader": "^8.1.0",
         "babel-polyfill": "^6.26.0",

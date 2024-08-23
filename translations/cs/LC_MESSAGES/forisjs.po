@@ -1,24 +1,23 @@
 # Czech translations for Foris JS.
-# Copyright (C) 2022 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-02 15:54+0100\n"
+"POT-Creation-Date: 2024-08-23 14:02+0200\n"
 "PO-Revision-Date: 2023-11-23 16:03+0000\n"
 "Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/cs/"
-">\n"
 "Language: cs\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-"
+"js/cs/>\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.2.1-rc\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -36,11 +35,15 @@ msgstr "Neobdržena žádná odezva."
 msgid "An unknown API error occurred."
 msgstr "Došlo k neznámé chybě v aplikačním programovém rozhraní."
 
-#: src/bootstrap/CopyInput.js:55
+#: src/bootstrap/Alert.js:51 src/bootstrap/Modal.js:98
+msgid "Close"
+msgstr ""
+
+#: src/bootstrap/CopyInput.js:57
 msgid "Copied!"
 msgstr "Zkopírováno!"
 
-#: src/bootstrap/CopyInput.js:55
+#: src/bootstrap/CopyInput.js:57
 msgid "Copy"
 msgstr "Kopírovat"
 
@@ -68,35 +71,35 @@ msgstr "Zrušit"
 msgid "Confirm reboot"
 msgstr "Potvrdit restart"
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:38
+#: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr "Při resetu nastavení Wi-Fi došlo k chybě."
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:41
+#: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
 msgstr "Nastavení Wi-Fi jsou uvedena do výchozího stavu."
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:55
-#: src/common/WiFiSettings/ResetWiFiSettings.js:69
+#: src/common/WiFiSettings/ResetWiFiSettings.js:56
+#: src/common/WiFiSettings/ResetWiFiSettings.js:70
 msgid "Reset Wi-Fi Settings"
 msgstr "Reset nastavení Wi-Fi"
 
-#: src/common/WiFiSettings/ResetWiFiSettings.js:57
+#: src/common/WiFiSettings/ResetWiFiSettings.js:58
 msgid ""
 "If a number of wireless cards doesn't match, you may try to reset the Wi-"
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
-"Pokud se počet bezdrátových karet neshoduje, můžete zkusit obnovit nastavení "
-"Wi-Fi. Je třeba upozornit, že se tím odstraní aktuální konfigurace Wi-Fi a "
-"obnoví se výchozí hodnoty."
+"Pokud se počet bezdrátových karet neshoduje, můžete zkusit obnovit "
+"nastavení Wi-Fi. Je třeba upozornit, že se tím odstraní aktuální "
+"konfigurace Wi-Fi a obnoví se výchozí hodnoty."
 
-#: src/common/WiFiSettings/WiFiForm.js:95
+#: src/common/WiFiSettings/WiFiForm.js:97
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
+#: src/common/WiFiSettings/WiFiGuestForm.js:81
 msgid "Password"
 msgstr "Heslo"
 
@@ -125,8 +128,8 @@ msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
-"Máte-li problémy při připojování k přístupovému bodu Wi-Fi, zkuste vypnout "
-"Management Frame Protection."
+"Máte-li problémy při připojování k přístupovému bodu Wi-Fi, zkuste "
+"vypnout Management Frame Protection."
 
 #: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
@@ -136,40 +139,46 @@ msgstr "automaticky"
 msgid "Custom"
 msgstr "Uživatelsky určené"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:42
+#: src/common/WiFiSettings/WiFiGuestForm.js:43
 msgid "Enable Guest Wi-Fi"
 msgstr "Zapnout Wi-Fi pro hosty"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:71
+#: src/common/WiFiSettings/WiFiQRCode.js:43
+#: src/common/WiFiSettings/WiFiQRCode.js:44
+#, fuzzy
+msgid "Show QR code"
+msgstr "Wi-Fi QR kód"
+
+#: src/common/WiFiSettings/WiFiQRCode.js:70
 msgid "Wi-Fi QR Code"
 msgstr "Wi-Fi QR kód"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:91
+#: src/common/WiFiSettings/WiFiQRCode.js:93
 msgid "Download PDF"
 msgstr "Stáhnout PDF"
 
-#: src/common/WiFiSettings/WiFiSettings.js:82
-#: src/common/WiFiSettings/WiFiSettings.js:98
+#: src/common/WiFiSettings/WiFiSettings.js:83
+#: src/common/WiFiSettings/WiFiSettings.js:99
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID nemůže být delší než 32 znaků"
 
-#: src/common/WiFiSettings/WiFiSettings.js:83
-#: src/common/WiFiSettings/WiFiSettings.js:100
+#: src/common/WiFiSettings/WiFiSettings.js:84
+#: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "SSID can't be empty"
 msgstr "SSID je třeba vyplnit"
 
-#: src/common/WiFiSettings/WiFiSettings.js:85
-#: src/common/WiFiSettings/WiFiSettings.js:102
+#: src/common/WiFiSettings/WiFiSettings.js:86
+#: src/common/WiFiSettings/WiFiSettings.js:103
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID nemůže být delší než 32 bajtů"
 
-#: src/common/WiFiSettings/WiFiSettings.js:88
-#: src/common/WiFiSettings/WiFiSettings.js:105
+#: src/common/WiFiSettings/WiFiSettings.js:89
+#: src/common/WiFiSettings/WiFiSettings.js:106
 msgid "Password must contain at least 8 symbols"
 msgstr "Je třeba, aby heslo obsahovalo alespoň 8 znaků"
 
-#: src/common/WiFiSettings/WiFiSettings.js:90
-#: src/common/WiFiSettings/WiFiSettings.js:109
+#: src/common/WiFiSettings/WiFiSettings.js:91
+#: src/common/WiFiSettings/WiFiSettings.js:110
 msgid "Password must not contain more than 63 symbols"
 msgstr "Heslo nesmí obsahovat více než 63 znaků"
 
@@ -254,10 +263,10 @@ msgid ""
 "supported by all your devices. It usually has less interference, but the "
 "signal does not carry so well indoors."
 msgstr ""
-"Pásmo 2,4 GHz je v klientských zařízeních podporováno nejčastěji, bývá ale "
-"více zarušené. Pásmo 5 GHz je novější standard a nemusí být podporováno "
-"všemi vámi používanými zařízeními. Obvykle bývá méně zarušené, signál se ale "
-"hůře šíří uvnitř budov."
+"Pásmo 2,4 GHz je v klientských zařízeních podporováno nejčastěji, bývá "
+"ale více zarušené. Pásmo 5 GHz je novější standard a nemusí být "
+"podporováno všemi vámi používanými zařízeními. Obvykle bývá méně "
+"zarušené, signál se ale hůře šíří uvnitř budov."
 
 #: src/common/WiFiSettings/constants.js:43
 msgid ""
@@ -266,9 +275,10 @@ msgid ""
 "interference in the network. If you don't know what to choose, use the "
 "default option with 20 MHz wide channel."
 msgstr ""
-"Změna tohoto parametru upraví režim fungování 802.11n/ac. 802.11n s kanály o "
-"šíři 40 MHz může pomoci k vyšší propustnosti, je ale náchylnější na rušení. "
-"Pokud nevíte co zvolit, použijte výchozí volbu s kanálem šíře 20 MHz."
+"Změna tohoto parametru upraví režim fungování 802.11n/ac. 802.11n s "
+"kanály o šíři 40 MHz může pomoci k vyšší propustnosti, je ale náchylnější"
+" na rušení. Pokud nevíte co zvolit, použijte výchozí volbu s kanálem šíře"
+" 20 MHz."
 
 #: src/common/WiFiSettings/constants.js:46
 msgid ""
@@ -278,10 +288,10 @@ msgid ""
 "router. Parameters of the guest network can be set in the Guest network "
 "tab."
 msgstr ""
-"Zapíná Wi-Fi pro hosty, která je oddělená od místní sítě (LAN). Zařízením "
-"připojeným k této síti je umožněn přístup do Internetu, ale už ne na ostatní "
-"zařízení a k rozhraní pro nastavování směrovače. Parametry sítě pro hosty je "
-"možné nastavit na panelu „Síť pro hosty“."
+"Zapíná Wi-Fi pro hosty, která je oddělená od místní sítě (LAN). Zařízením"
+" připojeným k této síti je umožněn přístup do Internetu, ale už ne na "
+"ostatní zařízení a k rozhraní pro nastavování směrovače. Parametry sítě "
+"pro hosty je možné nastavit na panelu „Síť pro hosty“."
 
 #: src/common/WiFiSettings/constants.js:49
 msgid ""
@@ -290,9 +300,9 @@ msgid ""
 "without WPA3 support require older WPA2. If you experience issues with "
 "connecting older devices, try to enable WPA2."
 msgstr ""
-"Standard WPA3 je nová nejbezpečnější metoda, již se doporučuje používat se "
-"všemi zařízeními, která ji podporují. Starší zařízení bez podpory WPA3 "
-"potřebují starší WPA2. Zaznamenáte-li problémy s připojováním starších "
+"Standard WPA3 je nová nejbezpečnější metoda, již se doporučuje používat "
+"se všemi zařízeními, která ji podporují. Starší zařízení bez podpory WPA3"
+" potřebují starší WPA2. Zaznamenáte-li problémy s připojováním starších "
 "zařízení, zkuste zapnout WPA2."
 
 #: src/form/components/ForisForm.js:121
@@ -305,19 +315,19 @@ msgstr ""
 "Změny, které byly provedeny, nebyly uloženy. Jste si jistý, že chcete "
 "opustit stránku?"
 
-#: src/form/components/SubmitButton.js:31
+#: src/form/components/SubmitButton.js:32
 msgid "Updating"
 msgstr "Aktualizuji"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:35
 msgid "Load settings"
 msgstr "Načítám nastavení"
 
-#: src/form/components/SubmitButton.js:37
+#: src/form/components/SubmitButton.js:38
 msgid "Save"
 msgstr "Uložit"
 
-#: src/utils/ErrorMessage.js:16
+#: src/utils/ErrorMessage.js:17
 msgid "An error occurred while fetching data."
 msgstr "Došlo k chybě při získávání dat."
 
@@ -378,3 +388,4 @@ msgstr "Neobsahuje seznam e-mailů oddělených čárkou."
 #~ "ale, že\n"
 #~ "se tím odstraní aktuální konfigurace a vrátí se výchozí hodnoty.\n"
 #~ "        "
+

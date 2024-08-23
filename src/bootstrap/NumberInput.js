@@ -7,6 +7,8 @@
 
 import React from "react";
 
+import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 
 import Input from "./Input";
@@ -60,7 +62,7 @@ function NumberInput({ onChange, inlineText, value, ...props }) {
                 onMouseUp={() => enableIncrease(false)}
                 aria-label="Increase"
             >
-                <i className="fas fa-plus" />
+                <FontAwesomeIcon icon={faPlus} />
             </button>
             <button
                 type="button"
@@ -69,7 +71,7 @@ function NumberInput({ onChange, inlineText, value, ...props }) {
                 onMouseUp={() => enableDecrease(false)}
                 aria-label="Decrease"
             >
-                <i className="fas fa-minus" />
+                <FontAwesomeIcon icon={faMinus} />
             </button>
         </Input>
     );

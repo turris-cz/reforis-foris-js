@@ -42,7 +42,7 @@ export default function WiFiQRCode({ SSID, password }) {
                     icon="fa-solid fa-qrcode"
                     title={_("Show QR code")}
                     aria-label={_("Show QR code")}
-                    className="text-dark"
+                    className="text-secondary"
                 />
             </button>
             {modal ? (

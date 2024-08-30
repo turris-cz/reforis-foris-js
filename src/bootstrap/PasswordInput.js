@@ -49,7 +49,7 @@ function PasswordInput({ withEye, newPass, ...props }) {
                     <FontAwesomeIcon
                         icon={isHidden ? faEye : faEyeSlash}
                         style={{ width: "1.25rem" }}
-                        className="text-dark"
+                        className="text-secondary"
                     />
                 </button>
             )}

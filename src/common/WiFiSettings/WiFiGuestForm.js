@@ -68,14 +68,11 @@ export default function WifiGuestForm({
                         }))}
                         {...props}
                     >
-                        <div className="input-group-append">
-                            <WiFiQRCode
-                                SSID={formData.SSID}
-                                password={formData.password}
-                            />
-                        </div>
+                        <WiFiQRCode
+                            SSID={formData.SSID}
+                            password={formData.password}
+                        />
                     </TextInput>
-
                     <PasswordInput
                         withEye
                         label={_("Password")}

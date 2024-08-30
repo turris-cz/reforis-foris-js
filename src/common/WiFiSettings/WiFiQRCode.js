@@ -42,7 +42,7 @@ export default function WiFiQRCode({ SSID, password }) {
                     icon="fa-solid fa-qrcode"
                     title={_("Show QR code")}
                     aria-label={_("Show QR code")}
-                    className="text-dark"
+                    className="text-secondary"
                 />
             </button>
             {modal ? (
@@ -70,17 +70,26 @@ function QRCodeModal({ shown, setShown, SSID, password }) {
             <ModalHeader setShown={setShown} title={_("Wi-Fi QR Code")} />
             <ModalBody>
                 <QRCode
+                    className="d-block mx-auto img-logo-black"
                     renderAs="svg"
                     value={toQRCodeContent(SSID, password)}
                     level="M"
                     size={350}
                     includeMargin
-                    style={{ display: "block", margin: "auto" }}
                 />
             </ModalBody>
             <ModalFooter>
                 <Button
-                    className="btn-outline-primary"
+                    className="btn-secondary"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        setShown(false);
+                    }}
+                >
+                    {_("Close")}
+                </Button>
+                <Button
+                    className="btn-primary"
                     onClick={(e) => {
                         e.preventDefault();
                         createAndDownloadPdf(SSID, password);

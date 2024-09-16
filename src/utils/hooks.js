@@ -40,3 +40,40 @@ export function useClickOutside(element, callback) {
         };
     });
 }
+
+/* Trap focus inside element. */
+export function useFocusTrap(elementRef, condition = true) {
+    useEffect(() => {
+        if (!condition) {
+            return;
+        }
+        const currentElement = elementRef.current;
+        const focusableElements = currentElement.querySelectorAll(
+            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        const handleTab = (event) => {
+            if (event.key === "Tab") {
+                if (event.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        lastElement.focus();
+                        event.preventDefault();
+                    }
+                } else if (document.activeElement === lastElement) {
+                    firstElement.focus();
+                    event.preventDefault();
+                }
+            }
+        };
+
+        currentElement.addEventListener("keydown", handleTab);
+
+        firstElement.focus();
+
+        return () => {
+            currentElement.removeEventListener("keydown", handleTab);
+        };
+    }, [elementRef, condition]);
+}

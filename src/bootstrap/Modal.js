@@ -9,7 +9,7 @@ import React, { useRef, useEffect } from "react";
 
 import PropTypes from "prop-types";
 
-import { useClickOutside } from "../utils/hooks";
+import { useClickOutside, useFocusTrap } from "../utils/hooks";
 import Portal from "../utils/Portal";
 import "./Modal.css";
 
@@ -29,10 +29,11 @@ Modal.propTypes = {
 };
 
 export function Modal({ shown, setShown, scrollable, size, children }) {
-    const dialogRef = useRef();
+    const modalRef = useRef();
     let modalSize = "modal-";
 
-    useClickOutside(dialogRef, () => setShown(false));
+    useClickOutside(modalRef, () => setShown(false));
+    useFocusTrap(modalRef, shown);
 
     useEffect(() => {
         const handleEsc = (event) => {
@@ -65,11 +66,13 @@ export function Modal({ shown, setShown, scrollable, size, children }) {
     return (
         <Portal containerId="modal-container">
             <div
+                ref={modalRef}
                 className={`modal fade ${shown ? "show" : ""}`.trim()}
                 role="dialog"
+                aria-modal="true"
+                aria-labelledby="modal-title"
             >
                 <div
-                    ref={dialogRef}
                     className={`${modalSize.trim()} modal-dialog modal-dialog-centered ${
                         scrollable ? "modal-dialog-scrollable" : ""
                     }`.trim()}
@@ -90,7 +93,7 @@ ModalHeader.propTypes = {
 export function ModalHeader({ setShown, title }) {
     return (
         <div className="modal-header">
-            <h5 className="modal-title">{title}</h5>
+            <h1 className="modal-title fs-5">{title}</h1>
             <button
                 type="button"
                 className="btn-close"

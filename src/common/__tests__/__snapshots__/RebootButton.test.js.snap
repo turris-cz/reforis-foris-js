@@ -6,6 +6,8 @@ exports[`<RebootButton/> Render modal. 1`] = `
     id="modal-container"
   >
     <div
+      aria-labelledby="modal-title"
+      aria-modal="true"
       class="modal fade show"
       role="dialog"
     >
@@ -19,11 +21,11 @@ exports[`<RebootButton/> Render modal. 1`] = `
           <div
             class="modal-header"
           >
-            <h5
-              class="modal-title"
+            <h1
+              class="modal-title fs-5"
             >
               Warning!
-            </h5>
+            </h1>
             <button
               aria-label="Close"
               class="btn-close"

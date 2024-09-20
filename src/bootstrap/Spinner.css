@@ -9,7 +9,7 @@
 .spinner-wrapper .spinner-border {
     width: 4rem;
     height: 4rem;
-    color: #00a2e2;
+    color: var(--bs-primary);
 }
 
 .spinner-fs-background {

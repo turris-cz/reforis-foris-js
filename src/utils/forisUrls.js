@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -9,8 +9,10 @@ export const REFORIS_URL_PREFIX = "/reforis";
 export const REFORIS_API_URL_PREFIX = `${REFORIS_URL_PREFIX}/api`;
 
 export const ForisURLs = {
+    // turris-auth
     login: `/login?${REFORIS_URL_PREFIX}/`,
     logout: `/logout`,
+    extendSession: `/extend-session`,
 
     static: `${REFORIS_URL_PREFIX}/static/reforis`,
     wifi: `${REFORIS_URL_PREFIX}/network-settings/wifi`,

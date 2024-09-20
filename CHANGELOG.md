@@ -8,6 +8,19 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.2.0] - 2024-09-20
+
+### Added
+
+-   Added useFocusTrap hook
+-   Added extendSession endpoint
+
+### Changed
+
+-   Refactored Spinner.css to use CSS variable for color
+-   Refactored Modal component to use useFocusTrap hook
+-   Refactored Alert component to use useFocusTrap hook
+
 ## [6.1.1] - 2024-08-30
 
 ### Added
@@ -361,7 +374,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.1.1...master
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.0...dev
+[6.2.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.1.1...v6.2.0
 [6.1.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.1.0...v6.1.1
 [6.1.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.3...v6.1.0
 [6.0.3]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.2...v6.0.3

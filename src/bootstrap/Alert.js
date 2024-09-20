@@ -5,9 +5,11 @@
  * See /LICENSE for more information.
  */
 
-import React from "react";
+import React, { useRef } from "react";
 
 import PropTypes from "prop-types";
+
+import { useFocusTrap } from "../utils/hooks";
 
 export const ALERT_TYPES = Object.freeze({
     PRIMARY: "primary",
@@ -37,11 +39,15 @@ Alert.defaultProps = {
 };
 
 function Alert({ type, onDismiss, children }) {
+    const alertRef = useRef();
+    useFocusTrap(alertRef, !!onDismiss);
     return (
         <div
+            ref={alertRef}
             className={`alert alert-${type} ${
                 onDismiss ? "alert-dismissible" : ""
             }`.trim()}
+            role="alert"
         >
             {onDismiss && (
                 <button

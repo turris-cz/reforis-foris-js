@@ -27,6 +27,13 @@ export const ForisURLs = {
     storage: `${REFORIS_URL_PREFIX}/storage`,
     sentinelAgreement: `${REFORIS_URL_PREFIX}/sentinel/agreement`,
 
+    // URLs without prefix for Overview page
+    openvpnClientSettings: "/openvpn/client-settings",
+    packageManagementPackages: "/package-management/packages",
+    packageManagementUpdateSettings: "/package-management/update-settings",
+    sentinelLicenseAgreement: "/sentinel/agreement",
+    librespeedSpeedTest: "/librespeed/speed-test",
+
     // Notifications links are used with <Link/> inside Router, thus url subdir is not required.
     overview: "/overview",
     notifications: "/overview#notifications",

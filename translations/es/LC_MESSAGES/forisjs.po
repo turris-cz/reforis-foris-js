@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-23 14:02+0200\n"
+"POT-Creation-Date: 2024-09-25 16:10+0200\n"
 "PO-Revision-Date: 2024-08-24 13:09+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/foris-js/"
-"es/>\n"
 "Language: es\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/foris-"
+"js/es/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7.1-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: src/api/utils.js:61
@@ -38,7 +37,8 @@ msgstr ""
 "Un error desconocido ha ocurrido. Compruebe la consola para mas "
 "informaciòn."
 
-#: src/bootstrap/Alert.js:51 src/bootstrap/Modal.js:98
+#: src/bootstrap/Alert.js:57 src/bootstrap/Modal.js:101
+#: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr "Cerrar"
 
@@ -102,7 +102,7 @@ msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:81
+#: src/common/WiFiSettings/WiFiGuestForm.js:78
 msgid "Password"
 msgstr "Contraseña"
 
@@ -155,7 +155,7 @@ msgstr "Mostrar el código QR"
 msgid "Wi-Fi QR Code"
 msgstr "Código QR Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:93
+#: src/common/WiFiSettings/WiFiQRCode.js:102
 msgid "Download PDF"
 msgstr "Descargar PDF"
 
@@ -446,3 +446,4 @@ msgstr "No contiene una lista de correos electrónicos separados por comas."
 #~ " default option with 20 MHz wide "
 #~ "channel."
 #~ msgstr ""
+

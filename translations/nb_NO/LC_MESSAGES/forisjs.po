@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-23 14:02+0200\n"
+"POT-Creation-Date: 2024-09-25 16:10+0200\n"
 "PO-Revision-Date: 2023-03-02 11:40+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language: nb_NO\n"
@@ -36,7 +36,8 @@ msgstr "Fikk ikke svar."
 msgid "An unknown API error occurred."
 msgstr "Ukjent API-feil."
 
-#: src/bootstrap/Alert.js:51 src/bootstrap/Modal.js:98
+#: src/bootstrap/Alert.js:57 src/bootstrap/Modal.js:101
+#: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr ""
 
@@ -103,7 +104,7 @@ msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:81
+#: src/common/WiFiSettings/WiFiGuestForm.js:78
 msgid "Password"
 msgstr "Passord"
 
@@ -161,7 +162,7 @@ msgstr "QR-kode for Wi-Fi"
 msgid "Wi-Fi QR Code"
 msgstr "QR-kode for Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:93
+#: src/common/WiFiSettings/WiFiQRCode.js:102
 msgid "Download PDF"
 msgstr "Last ned PDF"
 

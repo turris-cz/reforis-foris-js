@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-23 14:02+0200\n"
+"POT-Creation-Date: 2024-09-25 16:10+0200\n"
 "PO-Revision-Date: 2024-09-25 10:15+0000\n"
 "Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/cs/"
-">\n"
 "Language: cs\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-"
+"js/cs/>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-dev\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: src/api/utils.js:61
@@ -36,7 +35,8 @@ msgstr "Neobdržena žádná odezva."
 msgid "An unknown API error occurred."
 msgstr "Došlo k neznámé chybě v aplikačním programovém rozhraní."
 
-#: src/bootstrap/Alert.js:51 src/bootstrap/Modal.js:98
+#: src/bootstrap/Alert.js:57 src/bootstrap/Modal.js:101
+#: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr "Zavřít"
 
@@ -100,7 +100,7 @@ msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:81
+#: src/common/WiFiSettings/WiFiGuestForm.js:78
 msgid "Password"
 msgstr "Heslo"
 
@@ -153,7 +153,7 @@ msgstr "Ukázat QR kód"
 msgid "Wi-Fi QR Code"
 msgstr "Wi-Fi QR kód"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:93
+#: src/common/WiFiSettings/WiFiQRCode.js:102
 msgid "Download PDF"
 msgstr "Stáhnout PDF"
 
@@ -388,3 +388,4 @@ msgstr "Neobsahuje seznam e-mailů oddělených čárkou."
 #~ "ale, že\n"
 #~ "se tím odstraní aktuální konfigurace a vrátí se výchozí hodnoty.\n"
 #~ "        "
+

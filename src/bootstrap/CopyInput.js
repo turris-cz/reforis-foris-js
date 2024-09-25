@@ -48,15 +48,13 @@ function CopyInput({ value, ...props }) {
 
     return (
         <Input type="text" value={value} ref={inputTextRef} {...props}>
-            <div className="input-group-append">
-                <button
-                    className="btn btn-outline-secondary"
-                    type="button"
-                    onClick={handleCopyClick}
-                >
-                    <span>{isCopied ? _("Copied!") : _("Copy")}</span>
-                </button>
-            </div>
+            <button
+                className="btn btn-outline-secondary"
+                type="button"
+                onClick={handleCopyClick}
+            >
+                <span>{isCopied ? _("Copied!") : _("Copy")}</span>
+            </button>
         </Input>
     );
 }

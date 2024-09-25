@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-23 14:02+0200\n"
-"PO-Revision-Date: 2023-01-17 22:51+0000\n"
+"POT-Creation-Date: 2024-09-25 16:10+0200\n"
+"PO-Revision-Date: 2024-09-09 18:09+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language: sk\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-"
 "js/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,9 +35,10 @@ msgstr "Nenastala žiadna odozva."
 msgid "An unknown API error occurred."
 msgstr "Nastala neznáma chyba v API."
 
-#: src/bootstrap/Alert.js:51 src/bootstrap/Modal.js:98
+#: src/bootstrap/Alert.js:57 src/bootstrap/Modal.js:101
+#: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
-msgstr ""
+msgstr "Zatvoriť"
 
 #: src/bootstrap/CopyInput.js:57
 msgid "Copied!"
@@ -99,7 +100,7 @@ msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:81
+#: src/common/WiFiSettings/WiFiGuestForm.js:78
 msgid "Password"
 msgstr "Heslo"
 
@@ -145,15 +146,14 @@ msgstr "Povoliť Wi-Fi pre hostí"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:43
 #: src/common/WiFiSettings/WiFiQRCode.js:44
-#, fuzzy
 msgid "Show QR code"
-msgstr "Wi-Fi QR kód"
+msgstr "Zobraziť QR kód"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:70
 msgid "Wi-Fi QR Code"
 msgstr "Wi-Fi QR kód"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:93
+#: src/common/WiFiSettings/WiFiQRCode.js:102
 msgid "Download PDF"
 msgstr "Stiahnuť PDF"
 
@@ -184,7 +184,7 @@ msgstr "Heslo nesmie obsahovať viac ako 63 znakov"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
-msgstr "Zakázané"
+msgstr "Vypnuté"
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"

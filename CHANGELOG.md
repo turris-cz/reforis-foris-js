@@ -8,6 +8,17 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.2.1] - 2024-09-25
+
+### Added
+
+-   Added & updated Weblate translations
+
+### Changed
+
+-   Refactored CopyInput component
+-   Refactored ForisURLs to include new URLs for Overview page
+
 ## [6.2.0] - 2024-09-20
 
 ### Added
@@ -374,7 +385,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.0...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.1...dev
+[6.2.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.0...v6.2.1
 [6.2.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.1.1...v6.2.0
 [6.1.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.1.0...v6.1.1
 [6.1.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.0.3...v6.1.0

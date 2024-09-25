@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Foris JS 6.1.0\n"
+"Project-Id-Version: Foris JS 6.2.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
-"POT-Creation-Date: 2024-08-23 14:02+0200\n"
+"POT-Creation-Date: 2024-09-25 16:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,8 @@ msgstr ""
 msgid "An unknown API error occurred."
 msgstr ""
 
-#: src/bootstrap/Alert.js:51 src/bootstrap/Modal.js:98
+#: src/bootstrap/Alert.js:57 src/bootstrap/Modal.js:101
+#: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr ""
 
@@ -94,7 +95,7 @@ msgid "Wi-Fi ${deviceID + 1}"
 msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:81
+#: src/common/WiFiSettings/WiFiGuestForm.js:78
 msgid "Password"
 msgstr ""
 
@@ -145,7 +146,7 @@ msgstr ""
 msgid "Wi-Fi QR Code"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:93
+#: src/common/WiFiSettings/WiFiQRCode.js:102
 msgid "Download PDF"
 msgstr ""
 

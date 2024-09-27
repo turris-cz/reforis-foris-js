@@ -10,6 +10,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useUID } from "react-uid";
 
+import Radio from "./Radio";
+
 RadioSet.propTypes = {
     /** Name attribute of the input HTML tag. */
     name: PropTypes.string.isRequired,
@@ -69,42 +71,6 @@ function RadioSet({ name, label, choices, value, helpText, inline, ...props }) {
                     <small>{helpText}</small>
                 </div>
             )}
-        </div>
-    );
-}
-
-Radio.propTypes = {
-    label: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.element,
-        PropTypes.node,
-        PropTypes.arrayOf(PropTypes.node),
-    ]).isRequired,
-    id: PropTypes.string.isRequired,
-    inline: PropTypes.bool,
-    helpText: PropTypes.string,
-    className: PropTypes.string,
-};
-
-export function Radio({ label, id, helpText, inline, className, ...props }) {
-    return (
-        <div
-            className={`${className || "mb-3"} ${inline ? "form-check form-check-inline" : ""}`.trim()}
-        >
-            <input
-                id={id}
-                className="form-check-input me-2"
-                type="radio"
-                {...props}
-            />
-            <label className="form-check-label" htmlFor={id}>
-                {label}
-                {helpText && (
-                    <div className="form-text">
-                        <small>{helpText}</small>
-                    </div>
-                )}
-            </label>
         </div>
     );
 }

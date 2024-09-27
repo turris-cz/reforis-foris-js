@@ -65,7 +65,7 @@ module.exports = {
             components: "src/bootstrap/*.js",
             exampleMode: "expand",
             usageMode: "expand",
-            ignore: ["src/bootstrap/constants.js"],
+            ignore: ["src/bootstrap/constants.js", "src/bootstrap/Radio.js"],
             sectionDepth: 0,
         },
     ],

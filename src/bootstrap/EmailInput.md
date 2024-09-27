@@ -6,6 +6,7 @@ All additional `props` are passed to the `<input type="email">` HTML component.
 
 ```js
 import { useState } from "react";
+import Button from "./Button";
 const [email, setEmail] = useState("Wrong email");
 <form onSubmit={(e) => e.preventDefault()}>
     <EmailInput
@@ -14,6 +15,6 @@ const [email, setEmail] = useState("Wrong email");
         helpText="Read the small text!"
         onChange={(event) => setEmail(event.target.value)}
     />
-    <button type="submit">Try to submit</button>
+    <Button type="submit">Try to submit</Button>
 </form>;
 ```

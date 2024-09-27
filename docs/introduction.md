@@ -33,5 +33,4 @@ To install a specific version:
 npm install foris@version
 ```
 
-<a target="_blank" href="https://www.npmjs.com/package/foris">Check
-on<img width="100px" src="./docs/forisjs-npm.svg"></a>
+[![npm version](https://badge.fury.io/js/foris.svg)](https://badge.fury.io/js/foris)

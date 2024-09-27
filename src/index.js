@@ -28,11 +28,13 @@ export { default as FileInput } from "./bootstrap/FileInput";
 export { default as Input } from "./bootstrap/Input";
 export { default as NumberInput } from "./bootstrap/NumberInput";
 export { default as PasswordInput } from "./bootstrap/PasswordInput";
-export { default as RadioSet, Radio } from "./bootstrap/RadioSet";
+export { default as Radio } from "./bootstrap/Radio";
+export { default as RadioSet } from "./bootstrap/RadioSet";
 export { default as Select } from "./bootstrap/Select";
 export { default as TextInput } from "./bootstrap/TextInput";
 export { formFieldsSize, buttonFormFieldsSize } from "./bootstrap/constants";
 export { default as Switch } from "./bootstrap/Switch";
+export { default as ThreeDotsMenu } from "./bootstrap/ThreeDotsMenu";
 
 export { Spinner, SpinnerElement } from "./bootstrap/Spinner";
 export { Modal, ModalBody, ModalFooter, ModalHeader } from "./bootstrap/Modal";

@@ -8,6 +8,19 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.3.0] - 2024-09-27
+
+### Added
+
+-   Added ThreeDotsMenu component
+
+### Changed
+
+-   Refactored EmailInput description
+-   Refactored RadioSet & ignore Radio component
+-   Refactored npm package badge in introduction.md
+-   NPM audit fix
+
 ## [6.2.1] - 2024-09-25
 
 ### Added
@@ -385,7 +398,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.1...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.3.0...dev
+[6.3.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.1...v6.3.0
 [6.2.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.0...v6.2.1
 [6.2.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.1.1...v6.2.0
 [6.1.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.1.0...v6.1.1

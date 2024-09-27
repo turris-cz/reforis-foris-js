@@ -79,10 +79,7 @@ module.exports = {
             __dirname,
             "node_modules/bootstrap/dist/css/bootstrap.min.css"
         ),
-        path.join(
-            __dirname,
-            "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-        ),
+        path.join(__dirname, "node_modules/bootstrap/dist/js/bootstrap.min.js"),
     ],
     styleguideComponents: {
         LogoRenderer: path.join(__dirname, "docs/components/Logo"),

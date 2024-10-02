@@ -6,7 +6,7 @@ exports[`AlertContext should render alert 1`] = `
     id="alert-container"
   >
     <div
-      class="alert alert-danger alert-dismissible"
+      class="alert alert-danger alert-fade-in alert-dismissible"
       role="alert"
     >
       <button

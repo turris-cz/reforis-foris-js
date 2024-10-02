@@ -18,9 +18,9 @@ ThreeDotsMenu.propTypes = {
     children: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
 
-function ThreeDotsMenu({ children }) {
+function ThreeDotsMenu({ children, ...props }) {
     return (
-        <div className="dropdown">
+        <div className="dropdown position-static" {...props}>
             <Button
                 className="btn-sm btn-link text-body"
                 data-bs-toggle="dropdown"

@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.4.0] - 2024-10-02
+
+### Changed
+
+-   Refactored Alert component to include dismiss animation and timeout
+-   Refactored ThreeDotsMenu component to include additional props
+
 ## [6.3.0] - 2024-09-27
 
 ### Added
@@ -398,7 +405,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.3.0...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.4.0...dev
+[6.4.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.3.0...v6.4.0
 [6.3.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.1...v6.3.0
 [6.2.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.0...v6.2.1
 [6.2.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.1.1...v6.2.0

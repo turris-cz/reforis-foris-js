@@ -43,14 +43,17 @@ describe("AlertContext", () => {
         expect(componentContainer).toMatchSnapshot();
     });
 
-    it("should dismiss alert with alert button", () => {
+    it("should dismiss alert with alert button", async () => {
         fireEvent.click(getByText(componentContainer, "Set alert"));
         // Alert is present
         expect(getByText(componentContainer, "Alert content")).toBeDefined();
 
         fireEvent.click(componentContainer.querySelector(".btn-close"));
         // Alert is gone
-        expect(queryByText(componentContainer, "Alert content")).toBeNull();
+        await (() =>
+            expect(
+                queryByText(componentContainer, "Alert content")
+            ).toBeNull());
     });
 
     it("should dismiss alert with external button", () => {

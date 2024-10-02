@@ -5,7 +5,7 @@
  * See /LICENSE for more information.
  */
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 import PropTypes from "prop-types";
 
@@ -40,20 +40,36 @@ Alert.defaultProps = {
 
 function Alert({ type, onDismiss, children }) {
     const alertRef = useRef();
+    const [isVisible, setIsVisible] = useState(true);
     useFocusTrap(alertRef, !!onDismiss);
+
+    useEffect(() => {
+        if (onDismiss) {
+            const timeout = setTimeout(() => setIsVisible(false), 7000);
+            return () => clearTimeout(timeout);
+        }
+    }, [onDismiss]);
+
+    const handleAnimationEnd = () => {
+        if (!isVisible && onDismiss) {
+            onDismiss();
+        }
+    };
+
     return (
         <div
             ref={alertRef}
-            className={`alert alert-${type} ${
+            className={`alert alert-${type} ${isVisible ? "alert-fade-in" : "alert-slide-out-top"} ${
                 onDismiss ? "alert-dismissible" : ""
             }`.trim()}
             role="alert"
+            onAnimationEnd={handleAnimationEnd}
         >
             {onDismiss && (
                 <button
                     type="button"
                     className="btn-close"
-                    onClick={onDismiss}
+                    onClick={() => setIsVisible(false)}
                     aria-label={_("Close")}
                 />
             )}

@@ -43,6 +43,7 @@ export { Modal, ModalBody, ModalFooter, ModalHeader } from "./bootstrap/Modal";
 export { default as RebootButton } from "./common/RebootButton";
 export { default as WiFiSettings } from "./common/WiFiSettings/WiFiSettings";
 export { default as ResetWiFiSettings } from "./common/WiFiSettings/ResetWiFiSettings";
+export { default as RichTable } from "./common/RichTable/RichTable";
 // Form
 export { default as ForisForm } from "./form/components/ForisForm";
 export {

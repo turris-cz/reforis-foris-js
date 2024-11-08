@@ -16,6 +16,11 @@ import { Modal, ModalHeader, ModalBody, ModalFooter } from "../bootstrap/Modal";
 import { useAlert } from "../context/alertContext/AlertContext";
 import { ForisURLs } from "../utils/forisUrls";
 
+RebootButton.propTypes = {
+    /** Additional props to be passed to the button */
+    props: PropTypes.object,
+};
+
 function RebootButton(props) {
     const [triggered, setTriggered] = useState(false);
     const [modalShown, setModalShown] = useState(false);
@@ -68,7 +73,12 @@ function RebootModal({ shown, setShown, onReboot }) {
                 <p>{_("Are you sure you want to restart the router?")}</p>
             </ModalBody>
             <ModalFooter>
-                <Button onClick={() => setShown(false)}>{_("Cancel")}</Button>
+                <Button
+                    className="btn-secondary"
+                    onClick={() => setShown(false)}
+                >
+                    {_("Cancel")}
+                </Button>
                 <Button className="btn-danger" onClick={onReboot}>
                     {_("Confirm reboot")}
                 </Button>

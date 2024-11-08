@@ -14,7 +14,7 @@ import { render } from "@testing-library/react";
 import PropTypes from "prop-types";
 
 import { AlertContextMock } from "./alertContextMock";
-import { CustomizationContextMock } from "./cutomizationContextMock";
+import { CustomizationContextMock } from "./customizationContextMock";
 
 Wrapper.propTypes = {
     children: PropTypes.oneOfType([

@@ -14,6 +14,7 @@ import {
     getPaginationRowModel,
     useReactTable,
 } from "@tanstack/react-table";
+import PropTypes from "prop-types";
 
 import RichTableBody from "./RichTableBody";
 import RichTableHeader from "./RichTableHeader";
@@ -21,7 +22,20 @@ import RichTablePagination from "./RichTablePagination";
 
 const fallbackData = [];
 
-const RichTable = ({
+RichTable.propTypes = {
+    /** Columns to be displayed in the table */
+    columns: PropTypes.array.isRequired,
+    /** Data to be displayed in the table */
+    data: PropTypes.array.isRequired,
+    /** Whether to display pagination */
+    withPagination: PropTypes.bool,
+    /** Number of rows per page */
+    pageSize: PropTypes.number,
+    /** Index of the current page */
+    pageIndex: PropTypes.number,
+};
+
+function RichTable({
     columns,
     data,
     withPagination,
@@ -65,6 +79,6 @@ const RichTable = ({
             )}
         </div>
     );
-};
+}
 
 export default RichTable;

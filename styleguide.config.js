@@ -28,11 +28,11 @@ module.exports = {
             content: "docs/development.md",
         },
         {
-            name: "Components",
+            name: "Common Components",
             description: "Set of main components.",
             sections: [
                 {
-                    name: "Foris forms",
+                    name: "Foris Form",
                     components: [
                         "src/form/components/ForisForm.js",
                         "src/form/components/alerts.js",
@@ -42,25 +42,22 @@ module.exports = {
                     usageMode: "expand",
                 },
                 {
-                    name: "Alert Context",
-                    components: ["src/context/alertContext/AlertContext.js"],
+                    name: "Rich Table",
+                    components: ["src/common/RichTable/RichTable.js"],
+                    exampleMode: "expand",
+                    usageMode: "expand",
+                },
+                {
+                    name: "Reboot Button",
+                    components: ["src/common/RebootButton.js"],
                     exampleMode: "expand",
                     usageMode: "expand",
                 },
             ],
             sectionDepth: 1,
         },
-
         {
-            name: "Customization Context",
-            components: [
-                "src/context/customizationContext/CustomizationContext.js",
-            ],
-            exampleMode: "expand",
-            usageMode: "expand",
-        },
-        {
-            name: "Bootstrap components",
+            name: "Bootstrap Components",
             description: "Set of bootstrap components.",
             components: "src/bootstrap/*.js",
             exampleMode: "expand",
@@ -68,13 +65,22 @@ module.exports = {
             ignore: ["src/bootstrap/constants.js", "src/bootstrap/Radio.js"],
             sectionDepth: 0,
         },
+        {
+            name: "Contexts",
+            components: [
+                "src/context/alertContext/AlertContext.js",
+                "src/context/customizationContext/CustomizationContext.js",
+            ],
+            exampleMode: "expand",
+            usageMode: "expand",
+        },
     ],
     template: {
         favicon: "/docs/components/logo.svg",
     },
     require: [
         "babel-polyfill",
-        path.join(__dirname, "src/testUtils/mockGlobals"),
+        path.join(__dirname, "src/testUtils/mockGlobals.js"),
         path.join(
             __dirname,
             "node_modules/bootstrap/dist/css/bootstrap.min.css"

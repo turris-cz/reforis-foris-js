@@ -32,7 +32,7 @@ module.exports = {
             description: "Set of main components.",
             sections: [
                 {
-                    name: "Foris Form",
+                    name: "ForisForm",
                     components: [
                         "src/form/components/ForisForm.js",
                         "src/form/components/alerts.js",
@@ -42,14 +42,16 @@ module.exports = {
                     usageMode: "expand",
                 },
                 {
-                    name: "Rich Table",
+                    name: "RichTable",
                     components: ["src/common/RichTable/RichTable.js"],
                     exampleMode: "expand",
                     usageMode: "expand",
                 },
                 {
-                    name: "Reboot Button",
-                    components: ["src/common/RebootButton.js"],
+                    name: "ActionButtonWithModal",
+                    components: [
+                        "src/common/ActionButtonWithModal/ActionButtonWithModal.js",
+                    ],
                     exampleMode: "expand",
                     usageMode: "expand",
                 },

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-25 16:10+0200\n"
+"POT-Creation-Date: 2024-11-13 14:06+0100\n"
 "PO-Revision-Date: 2019-10-16 10:08+0000\n"
 "Last-Translator: Scott Anecito <scott.anecito@protonmail.com>\n"
 "Language: ja\n"
@@ -35,41 +35,85 @@ msgstr ""
 msgid "An unknown API error occurred."
 msgstr ""
 
-#: src/bootstrap/Alert.js:57 src/bootstrap/Modal.js:101
+#: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:101
 #: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr ""
 
-#: src/bootstrap/CopyInput.js:57
+#: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
 msgstr ""
 
-#: src/bootstrap/CopyInput.js:57
+#: src/bootstrap/CopyInput.js:56
 msgid "Copy"
 msgstr ""
 
-#: src/common/RebootButton.js:27
-msgid "Reboot request failed."
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:60
+msgid "Action successful."
 msgstr ""
 
-#: src/common/RebootButton.js:51
-msgid "Reboot"
-msgstr "再起動"
-
-#: src/common/RebootButton.js:66
-msgid "Warning!"
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:65
+msgid "Action failed."
 msgstr ""
 
-#: src/common/RebootButton.js:68
-msgid "Are you sure you want to restart the router?"
-msgstr ""
-
-#: src/common/RebootButton.js:71
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:125
 msgid "Cancel"
 msgstr ""
 
-#: src/common/RebootButton.js:73
-msgid "Confirm reboot"
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:128
+msgid "Confirm"
+msgstr ""
+
+#: src/common/RichTable/RichTableHeader.js:29
+msgid "Sort ascending"
+msgstr ""
+
+#: src/common/RichTable/RichTableHeader.js:30
+msgid "Sort descending"
+msgstr ""
+
+#: src/common/RichTable/RichTableHeader.js:31
+msgid "Clear sort"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:65
+msgid "Pagination navigation bar"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:71
+msgid "First page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:77
+msgid "Previous page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:83
+msgid "Next page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:89
+msgid "Last page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:95
+msgid "Page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:98
+msgid "of"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:106
+msgid "Rows per page:"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:109
+msgid "Select rows per page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:121
+msgid "All"
 msgstr ""
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
@@ -425,5 +469,20 @@ msgstr ""
 #~ "don't know what to choose, use the"
 #~ " default option with 20 MHz wide "
 #~ "channel."
+#~ msgstr ""
+
+#~ msgid "Reboot request failed."
+#~ msgstr ""
+
+#~ msgid "Reboot"
+#~ msgstr "再起動"
+
+#~ msgid "Warning!"
+#~ msgstr ""
+
+#~ msgid "Are you sure you want to restart the router?"
+#~ msgstr ""
+
+#~ msgid "Confirm reboot"
 #~ msgstr ""
 

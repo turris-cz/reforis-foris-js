@@ -1,6 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RebootButton/> Render modal. 1`] = `
+exports[`<ActionButtonWithModal/> Render button. 1`] = `
+<div>
+  <div
+    id="modal-container"
+  />
+  <div
+    id="alert-container"
+  />
+  <button
+    class="btn btn-primary d-inline-flex justify-content-center align-items-center"
+    type="button"
+  >
+    <span>
+      Action
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<ActionButtonWithModal/> Render modal. 1`] = `
 <div>
   <div
     id="modal-container"
@@ -35,15 +54,17 @@ exports[`<RebootButton/> Render modal. 1`] = `
           <div
             class="modal-body"
           >
-            <p>
-              Are you sure you want to restart the router?
+            <p
+              class="mb-0"
+            >
+              Are you sure you want to perform this action?
             </p>
           </div>
           <div
             class="modal-footer"
           >
             <button
-              class="btn btn-primary d-inline-flex justify-content-center align-items-center"
+              class="btn btn-secondary d-inline-flex justify-content-center align-items-center"
               type="button"
             >
               <span>
@@ -55,7 +76,7 @@ exports[`<RebootButton/> Render modal. 1`] = `
               type="button"
             >
               <span>
-                Confirm reboot
+                Confirm action
               </span>
             </button>
           </div>
@@ -63,28 +84,15 @@ exports[`<RebootButton/> Render modal. 1`] = `
       </div>
     </div>
   </div>
-  <button
-    class="btn btn-danger d-inline-flex justify-content-center align-items-center"
-    type="button"
-  >
-    <span>
-      Reboot
-    </span>
-  </button>
-</div>
-`;
-
-exports[`<RebootButton/> Render. 1`] = `
-<div>
   <div
-    id="modal-container"
+    id="alert-container"
   />
   <button
-    class="btn btn-danger d-inline-flex justify-content-center align-items-center"
+    class="btn btn-primary d-inline-flex justify-content-center align-items-center"
     type="button"
   >
     <span>
-      Reboot
+      Action
     </span>
   </button>
 </div>

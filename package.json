@@ -1,6 +1,6 @@
 {
     "name": "foris",
-    "version": "6.4.0",
+    "version": "6.5.0",
     "description": "Foris JS library is a set of components and utils for reForis application and plugins.",
     "author": "CZ.NIC, z.s.p.o.",
     "repository": {
@@ -18,6 +18,7 @@
         "@fortawesome/free-regular-svg-icons": "^6.6.0",
         "@fortawesome/free-solid-svg-icons": "^6.6.0",
         "@fortawesome/react-fontawesome": "^0.2.2",
+        "@tanstack/react-table": "^8.20.5",
         "axios": "^1.7.2",
         "immutability-helper": "^3.1.1",
         "moment": "^2.30.1",

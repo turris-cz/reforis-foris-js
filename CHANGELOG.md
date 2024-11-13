@@ -8,6 +8,20 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.5.0] - 2024-11-13
+
+### Added
+
+-   Added & updated Weblate translations
+-   Added RichTable component with pagination and sorting
+-   Added @tanstack/react-table v8.20.5 to dependencies
+
+### Changed
+
+-   Updated documentation
+-   Replaced RebootButton with ActionButtonWithModal component
+-   Fixed import path for CustomizationContextMock in customTestRender.js
+
 ## [6.4.0] - 2024-10-02
 
 ### Changed
@@ -405,7 +419,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.4.0...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.5.0...dev
+[6.5.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.4.0...v6.5.0
 [6.4.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.3.0...v6.4.0
 [6.3.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.1...v6.3.0
 [6.2.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.0...v6.2.1

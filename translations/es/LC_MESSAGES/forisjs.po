@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-25 16:10+0200\n"
+"POT-Creation-Date: 2024-11-13 14:06+0100\n"
 "PO-Revision-Date: 2024-08-24 13:09+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language: es\n"
@@ -37,42 +37,88 @@ msgstr ""
 "Un error desconocido ha ocurrido. Compruebe la consola para mas "
 "informaciòn."
 
-#: src/bootstrap/Alert.js:57 src/bootstrap/Modal.js:101
+#: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:101
 #: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr "Cerrar"
 
-#: src/bootstrap/CopyInput.js:57
+#: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
 msgstr "¡Copiado!"
 
-#: src/bootstrap/CopyInput.js:57
+#: src/bootstrap/CopyInput.js:56
 msgid "Copy"
 msgstr "Copiar"
 
-#: src/common/RebootButton.js:27
-msgid "Reboot request failed."
-msgstr "La petición de reinicio ha fallado."
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:60
+#, fuzzy
+msgid "Action successful."
+msgstr "Los ajustes se han guardado correctamente"
 
-#: src/common/RebootButton.js:51
-msgid "Reboot"
-msgstr "Reiniciar"
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:65
+msgid "Action failed."
+msgstr ""
 
-#: src/common/RebootButton.js:66
-msgid "Warning!"
-msgstr "¡Atención!"
-
-#: src/common/RebootButton.js:68
-msgid "Are you sure you want to restart the router?"
-msgstr "¿Estás seguro de que quieres reiniciar el router?"
-
-#: src/common/RebootButton.js:71
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:125
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/common/RebootButton.js:73
-msgid "Confirm reboot"
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:128
+#, fuzzy
+msgid "Confirm"
 msgstr "Confirmar reinicio"
+
+#: src/common/RichTable/RichTableHeader.js:29
+msgid "Sort ascending"
+msgstr ""
+
+#: src/common/RichTable/RichTableHeader.js:30
+msgid "Sort descending"
+msgstr ""
+
+#: src/common/RichTable/RichTableHeader.js:31
+msgid "Clear sort"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:65
+msgid "Pagination navigation bar"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:71
+msgid "First page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:77
+msgid "Previous page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:83
+msgid "Next page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:89
+msgid "Last page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:95
+msgid "Page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:98
+msgid "of"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:106
+msgid "Rows per page:"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:109
+msgid "Select rows per page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:121
+msgid "All"
+msgstr ""
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
@@ -446,4 +492,16 @@ msgstr "No contiene una lista de correos electrónicos separados por comas."
 #~ " default option with 20 MHz wide "
 #~ "channel."
 #~ msgstr ""
+
+#~ msgid "Reboot request failed."
+#~ msgstr "La petición de reinicio ha fallado."
+
+#~ msgid "Reboot"
+#~ msgstr "Reiniciar"
+
+#~ msgid "Warning!"
+#~ msgstr "¡Atención!"
+
+#~ msgid "Are you sure you want to restart the router?"
+#~ msgstr "¿Estás seguro de que quieres reiniciar el router?"
 

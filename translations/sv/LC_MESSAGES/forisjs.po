@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-09-25 16:10+0200\n"
+"POT-Creation-Date: 2024-11-13 14:06+0100\n"
 "PO-Revision-Date: 2023-09-22 21:00+0000\n"
 "Last-Translator: Kristoffer Grundström "
 "<swedishsailfishosuser@tutanota.com>\n"
@@ -36,42 +36,87 @@ msgstr "Inget svar togs emot."
 msgid "An unknown API error occurred."
 msgstr "Ett okänt API-fel inträffade."
 
-#: src/bootstrap/Alert.js:57 src/bootstrap/Modal.js:101
+#: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:101
 #: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr ""
 
-#: src/bootstrap/CopyInput.js:57
+#: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
 msgstr "Kopierades!"
 
-#: src/bootstrap/CopyInput.js:57
+#: src/bootstrap/CopyInput.js:56
 msgid "Copy"
 msgstr "Kopiera"
 
-#: src/common/RebootButton.js:27
-msgid "Reboot request failed."
-msgstr "Förfrågning för omstart misslyckades."
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:60
+msgid "Action successful."
+msgstr ""
 
-#: src/common/RebootButton.js:51
-msgid "Reboot"
-msgstr "Starta om"
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:65
+msgid "Action failed."
+msgstr ""
 
-#: src/common/RebootButton.js:66
-msgid "Warning!"
-msgstr "Varning!"
-
-#: src/common/RebootButton.js:68
-msgid "Are you sure you want to restart the router?"
-msgstr "Är du säker på att du vill starta om routern?"
-
-#: src/common/RebootButton.js:71
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:125
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/common/RebootButton.js:73
-msgid "Confirm reboot"
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:128
+#, fuzzy
+msgid "Confirm"
 msgstr "Bekräfta omstart"
+
+#: src/common/RichTable/RichTableHeader.js:29
+msgid "Sort ascending"
+msgstr ""
+
+#: src/common/RichTable/RichTableHeader.js:30
+msgid "Sort descending"
+msgstr ""
+
+#: src/common/RichTable/RichTableHeader.js:31
+msgid "Clear sort"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:65
+msgid "Pagination navigation bar"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:71
+msgid "First page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:77
+msgid "Previous page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:83
+msgid "Next page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:89
+msgid "Last page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:95
+msgid "Page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:98
+msgid "of"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:106
+msgid "Rows per page:"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:109
+msgid "Select rows per page"
+msgstr ""
+
+#: src/common/RichTable/RichTablePagination.js:121
+msgid "All"
+msgstr ""
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
@@ -440,4 +485,16 @@ msgstr ""
 #~ " default option with 20 MHz wide "
 #~ "channel."
 #~ msgstr ""
+
+#~ msgid "Reboot request failed."
+#~ msgstr "Förfrågning för omstart misslyckades."
+
+#~ msgid "Reboot"
+#~ msgstr "Starta om"
+
+#~ msgid "Warning!"
+#~ msgstr "Varning!"
+
+#~ msgid "Are you sure you want to restart the router?"
+#~ msgstr "Är du säker på att du vill starta om routern?"
 

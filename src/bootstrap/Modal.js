@@ -88,18 +88,21 @@ export function Modal({ shown, setShown, scrollable, size, children }) {
 ModalHeader.propTypes = {
     setShown: PropTypes.func.isRequired,
     title: PropTypes.string.isRequired,
+    showCloseButton: PropTypes.bool,
 };
 
-export function ModalHeader({ setShown, title }) {
+export function ModalHeader({ setShown, title, showCloseButton = true }) {
     return (
         <div className="modal-header">
             <h1 className="modal-title fs-5">{title}</h1>
-            <button
-                type="button"
-                className="btn-close"
-                onClick={() => setShown(false)}
-                aria-label={_("Close")}
-            />
+            {showCloseButton && (
+                <button
+                    type="button"
+                    className="btn-close"
+                    onClick={() => setShown(false)}
+                    aria-label={_("Close")}
+                />
+            )}
         </div>
     );
 }

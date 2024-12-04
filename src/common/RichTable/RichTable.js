@@ -64,13 +64,15 @@ function RichTable({
         },
     });
 
+    const paginationIsNeeded = tableData.length > pageSize && withPagination;
+
     return (
         <div className="table-responsive">
             <table className="table table-hover text-nowrap">
                 <RichTableHeader table={table} flexRender={flexRender} />
                 <RichTableBody table={table} flexRender={flexRender} />
             </table>
-            {withPagination && (
+            {paginationIsNeeded && (
                 <RichTablePagination
                     table={table}
                     tablePageSize={pageSize}

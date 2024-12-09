@@ -9,9 +9,10 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
-import { HELP_TEXTS } from "./constants";
+import { HELP_TEXTS, ENCRYPTIONMODES } from "./constants";
 import WiFiQRCode from "./WiFiQRCode";
 import PasswordInput from "../../bootstrap/PasswordInput";
+import Select from "../../bootstrap/Select";
 import Switch from "../../bootstrap/Switch";
 import TextInput from "../../bootstrap/TextInput";
 
@@ -21,6 +22,7 @@ WifiGuestForm.propTypes = {
         SSID: PropTypes.string.isRequired,
         password: PropTypes.string.isRequired,
         enabled: PropTypes.bool.isRequired,
+        encryption: PropTypes.string.isRequired,
     }),
     formErrors: PropTypes.shape({
         SSID: PropTypes.string,
@@ -84,6 +86,20 @@ export default function WifiGuestForm({
                             devices: {
                                 [formData.id]: {
                                     guest_wifi: { password: { $set: value } },
+                                },
+                            },
+                        }))}
+                        {...props}
+                    />
+                    <Select
+                        label={_("Encryption")}
+                        choices={ENCRYPTIONMODES}
+                        helpText={HELP_TEXTS.wpa3}
+                        value={formData.encryption}
+                        onChange={setFormValue((value) => ({
+                            devices: {
+                                [formData.id]: {
+                                    guest_wifi: { encryption: { $set: value } },
                                 },
                             },
                         }))}

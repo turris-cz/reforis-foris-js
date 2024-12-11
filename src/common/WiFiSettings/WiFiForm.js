@@ -9,7 +9,7 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
-import { HELP_TEXTS, HTMODES, HWMODES, ENCRYPTIONMODES } from "./constants";
+import { HELP_TEXTS, HTMODES, BANDS, ENCRYPTIONMODES } from "./constants";
 import WifiGuestForm from "./WiFiGuestForm";
 import WiFiQRCode from "./WiFiQRCode";
 import PasswordInput from "../../bootstrap/PasswordInput";
@@ -60,7 +60,7 @@ DeviceForm.propTypes = {
         SSID: PropTypes.string.isRequired,
         password: PropTypes.string.isRequired,
         hidden: PropTypes.bool.isRequired,
-        hwmode: PropTypes.string.isRequired,
+        band: PropTypes.string.isRequired,
         htmode: PropTypes.string.isRequired,
         channel: PropTypes.string.isRequired,
         guest_wifi: PropTypes.object.isRequired,
@@ -155,26 +155,26 @@ function DeviceForm({
                     />
 
                     <RadioSet
-                        name={`hwmode-${deviceID}`}
-                        label="GHz"
-                        choices={getHwmodeChoices(formData)}
-                        value={formData.hwmode}
-                        helpText={HELP_TEXTS.hwmode}
+                        name={`band-${deviceID}`}
+                        label={_("Band")}
+                        choices={getBandChoices(formData)}
+                        value={formData.band}
+                        helpText={HELP_TEXTS.band}
                         inline
                         onChange={setFormValue((value) => {
-                            // Get the last item in an array of available HT modes
-                            const [best2] = bnds[0].available_htmodes.slice(-1);
-                            const [best5] = bnds[1].available_htmodes.slice(-1);
+                            // Find the selected band
+                            const selectedBand = bnds.find(
+                                (band) => band.band === value
+                            );
+                            // Get the last item in the available HT modes for the selected band
+                            const bestHtmode =
+                                selectedBand.available_htmodes.slice(-1)[0];
                             return {
                                 devices: {
                                     [deviceIndex]: {
-                                        hwmode: { $set: value },
+                                        band: { $set: value },
                                         channel: { $set: "0" },
-                                        htmode: {
-                                            $set:
-                                                // Set HT mode depending on checked frequency
-                                                value === "11a" ? best5 : best2,
-                                        },
+                                        htmode: { $set: bestHtmode },
                                     },
                                 },
                             };
@@ -263,7 +263,7 @@ function getChannelChoices(device) {
     };
 
     device.available_bands.forEach((availableBand) => {
-        if (availableBand.hwmode !== device.hwmode) return;
+        if (availableBand.band !== device.band) return;
 
         availableBand.available_channels.forEach((availableChannel) => {
             channelChoices[availableChannel.number.toString()] = `
@@ -282,7 +282,7 @@ function getHtmodeChoices(device) {
     const htmodeChoices = {};
 
     device.available_bands.forEach((availableBand) => {
-        if (availableBand.hwmode !== device.hwmode) return;
+        if (availableBand.band !== device.band) return;
 
         availableBand.available_htmodes.forEach((availableHtmod) => {
             htmodeChoices[availableHtmod] = HTMODES[availableHtmod];
@@ -291,10 +291,10 @@ function getHtmodeChoices(device) {
     return htmodeChoices;
 }
 
-function getHwmodeChoices(device) {
+function getBandChoices(device) {
     return device.available_bands.map((availableBand) => ({
-        label: HWMODES[availableBand.hwmode],
-        value: availableBand.hwmode,
+        label: `${BANDS[availableBand.band]} GHz`,
+        value: availableBand.band,
     }));
 }
 

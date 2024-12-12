@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -32,7 +32,7 @@ describe("<NumberInput/>", () => {
     });
 
     it("Increase number with button", async () => {
-        const increaseButton = getByLabelText(componentContainer, "Increase");
+        const increaseButton = getByLabelText(componentContainer, /Increase/);
         fireEvent.mouseDown(increaseButton);
         await wait(() =>
             expect(onChangeMock).toHaveBeenCalledWith({ target: { value: 2 } })
@@ -40,7 +40,7 @@ describe("<NumberInput/>", () => {
     });
 
     it("Decrease number with button", async () => {
-        const decreaseButton = getByLabelText(componentContainer, "Decrease");
+        const decreaseButton = getByLabelText(componentContainer, /Decrease/);
         fireEvent.mouseDown(decreaseButton);
         await wait(() =>
             expect(onChangeMock).toHaveBeenCalledWith({ target: { value: 0 } })

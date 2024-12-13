@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-11-13 14:06+0100\n"
-"PO-Revision-Date: 2024-12-04 10:00+0000\n"
-"Last-Translator: Moha684 <nahil82466@gmail.com>\n"
+"PO-Revision-Date: 2024-12-14 10:00+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/foris-js/"
 "fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.9-rc\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: src/api/utils.js:61
@@ -84,35 +84,35 @@ msgstr ""
 
 #: src/common/RichTable/RichTablePagination.js:71
 msgid "First page"
-msgstr ""
+msgstr "Première page"
 
 #: src/common/RichTable/RichTablePagination.js:77
 msgid "Previous page"
-msgstr ""
+msgstr "Page précédente"
 
 #: src/common/RichTable/RichTablePagination.js:83
 msgid "Next page"
-msgstr ""
+msgstr "Page suivante"
 
 #: src/common/RichTable/RichTablePagination.js:89
 msgid "Last page"
-msgstr ""
+msgstr "Dernière page"
 
 #: src/common/RichTable/RichTablePagination.js:95
 msgid "Page"
-msgstr ""
+msgstr "Page"
 
 #: src/common/RichTable/RichTablePagination.js:98
 msgid "of"
-msgstr ""
+msgstr "de"
 
 #: src/common/RichTable/RichTablePagination.js:106
 msgid "Rows per page:"
-msgstr ""
+msgstr "Lignes par page :"
 
 #: src/common/RichTable/RichTablePagination.js:109
 msgid "Select rows per page"
-msgstr ""
+msgstr "Sélectionnez les lignes par page"
 
 #: src/common/RichTable/RichTablePagination.js:121
 msgid "All"

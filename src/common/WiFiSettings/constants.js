@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -20,9 +20,10 @@ export const HTMODES = {
     HE80_80: _("802.11ax - 80+80 MHz wide channel"),
     HE160: _("802.11ax - 160 MHz wide channel"),
 };
-export const HWMODES = {
-    "11g": "2.4",
-    "11a": "5",
+export const BANDS = {
+    "2g": "2.4",
+    "5g": "5",
+    "6g": "6",
 };
 export const ENCRYPTIONMODES = {
     WPA3: _("WPA3 only"),
@@ -39,7 +40,7 @@ export const HELP_TEXTS = {
     hidden: _(
         "If set, network is not visible when scanning for available networks."
     ),
-    hwmode: _(
+    band: _(
         "The 2.4 GHz band is more widely supported by clients, but tends to have more interference. The 5 GHz band is a newer standard and may not be supported by all your devices. It usually has less interference, but the signal does not carry so well indoors."
     ),
     htmode: _(

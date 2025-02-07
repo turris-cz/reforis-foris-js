@@ -77,7 +77,7 @@ describe("<WiFiSettings/>", () => {
     it("Snapshot 2.4 GHz", () => {
         fireEvent.click(getByText("Wi-Fi 1"));
         const enabledRender = asFragment();
-        fireEvent.click(getAllByText("2.4")[0]);
+        fireEvent.click(getAllByText(/2.4/)[0]);
         expect(diffSnapshot(enabledRender, asFragment())).toMatchSnapshot();
     });
 
@@ -118,7 +118,7 @@ describe("<WiFiSettings/>", () => {
                     guest_wifi: { enabled: false },
                     hidden: false,
                     htmode: "HT80",
-                    hwmode: "11a",
+                    band: "5g",
                     id: 0,
                     password: "TestPass",
                     encryption: "WPA3",
@@ -135,7 +135,7 @@ describe("<WiFiSettings/>", () => {
 
     it("Post form: 2.4 GHz", () => {
         fireEvent.click(getByText("Wi-Fi 1"));
-        fireEvent.click(getAllByText("2.4")[0]);
+        fireEvent.click(getAllByText(/2.4/)[0]);
 
         fireEvent.click(getByText("Save"));
         expect(mockAxios.post).toBeCalled();
@@ -148,7 +148,7 @@ describe("<WiFiSettings/>", () => {
                     guest_wifi: { enabled: false },
                     hidden: false,
                     htmode: "VHT80",
-                    hwmode: "11g",
+                    band: "2g",
                     id: 0,
                     password: "TestPass",
                     encryption: "WPA3",
@@ -185,7 +185,7 @@ describe("<WiFiSettings/>", () => {
                     },
                     hidden: false,
                     htmode: "HT80",
-                    hwmode: "11a",
+                    band: "5g",
                     id: 0,
                     password: "TestPass",
                     encryption: "WPA3",

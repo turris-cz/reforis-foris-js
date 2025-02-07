@@ -592,23 +592,23 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           class="d-block"
 +           for="6"
 +         >
-+           GHz
++           Band
 +         </label>
 +         <div
 +           class="mb-3 form-check form-check-inline"
 +         >
 +           <input
 +             class="form-check-input me-2"
-+             id="hwmode-0-0"
-+             name="hwmode-0"
++             id="band-0-0"
++             name="band-0"
 +             type="radio"
-+             value="11g"
++             value="2g"
 +           />
 +           <label
 +             class="form-check-label"
-+             for="hwmode-0-0"
++             for="band-0-0"
 +           >
-+             2.4
++             2.4 GHz
 +           </label>
 +         </div>
 +         <div
@@ -617,16 +617,16 @@ exports[`<WiFiSettings/> Snapshot one module enabled. 1`] = `
 +           <input
 +             checked=""
 +             class="form-check-input me-2"
-+             id="hwmode-0-1"
-+             name="hwmode-0"
++             id="band-0-1"
++             name="band-0"
 +             type="radio"
-+             value="11a"
++             value="5g"
 +           />
 +           <label
 +             class="form-check-label"
-+             for="hwmode-0-1"
++             for="band-0-1"
 +           >
-+             5
++             5 GHz
 +           </label>
 +         </div>
 +         <div

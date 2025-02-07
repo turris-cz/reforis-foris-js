@@ -339,7 +339,7 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 - First value
 + Second value
 
-@@ -524,10 +524,87 @@
+@@ -524,10 +524,124 @@
             <small>
               Enables Wi-Fi for guests, which is separated from LAN network. Devices connected to this network are allowed to access the internet, but aren't allowed to access other devices and the configuration interface of the router. Parameters of the guest network can be set in the Guest network tab.
             </small>
@@ -422,12 +422,49 @@ exports[`<WiFiSettings/> Snapshot guest network. 1`] = `
 +           </small>
 +         </div>
 +       </div>
++       <div
++         class="mb-3"
++       >
++         <label
++           class="form-label"
++           for="14"
++         >
++           Encryption
++         </label>
++         <select
++           class="form-select"
++           id="14"
++         >
++           <option
++             value="WPA3"
++           >
++             WPA3 only
++           </option>
++           <option
++             value="WPA2/3"
++           >
++             WPA3 with WPA2 as fallback (default)
++           </option>
++           <option
++             value="WPA2"
++           >
++             WPA2 only
++           </option>
++         </select>
++         <div
++           class="form-text"
++         >
++           <small>
++             The WPA3 standard is the new most secure encryption method that is suggested to be used with any device that supports it. The older devices without WPA3 support require older WPA2. If you experience issues with connecting older devices, try to enable WPA2.
++           </small>
++         </div>
++       </div>
         <hr />
         <div
           class="form-check form-switch mb-3 d-flex align-items-center"
         >
           <input
-@@ -550,10 +627,11 @@
+@@ -550,10 +664,11 @@
         <div
           class="text-end"
         >

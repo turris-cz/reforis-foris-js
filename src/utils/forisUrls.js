@@ -38,6 +38,8 @@ export const ForisURLs = {
     overview: "/overview",
     notifications: "/overview#notifications",
     notificationsSettings: "/administration/notifications-settings",
+    wifiSettings: "/network-settings/wifi",
+    lanSettings: "/network-settings/lan",
 
     approveUpdates: "/package-management/updates",
     languages: "/package-management/languages",

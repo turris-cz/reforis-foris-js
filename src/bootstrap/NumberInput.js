@@ -50,6 +50,20 @@ function NumberInput({ onChange, inlineText, value, ...props }) {
         -1
     );
 
+    function handleKeyDown(event, enableFunction) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            enableFunction(true);
+        }
+    }
+
+    function handleKeyUp(event, enableFunction) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            enableFunction(false);
+        }
+    }
+
     return (
         <Input type="number" onChange={onChange} value={value} {...props}>
             {inlineText && (
@@ -60,7 +74,15 @@ function NumberInput({ onChange, inlineText, value, ...props }) {
                 className="btn btn-outline-secondary"
                 onMouseDown={() => enableIncrease(true)}
                 onMouseUp={() => enableIncrease(false)}
-                aria-label="Increase"
+                onMouseLeave={() => enableIncrease(false)}
+                onTouchStart={() => enableIncrease(true)}
+                onTouchEnd={() => enableIncrease(false)}
+                onTouchCancel={() => enableIncrease(false)}
+                onKeyDown={(event) => handleKeyDown(event, enableIncrease)}
+                onKeyUp={(event) => handleKeyUp(event, enableIncrease)}
+                onBlur={() => enableIncrease(false)}
+                title={_("Increase value. Hint: Hold to increase faster.")}
+                aria-label={_("Increase value. Hint: Hold to increase faster.")}
             >
                 <FontAwesomeIcon icon={faPlus} />
             </button>
@@ -69,7 +91,15 @@ function NumberInput({ onChange, inlineText, value, ...props }) {
                 className="btn btn-outline-secondary"
                 onMouseDown={() => enableDecrease(true)}
                 onMouseUp={() => enableDecrease(false)}
-                aria-label="Decrease"
+                onMouseLeave={() => enableDecrease(false)}
+                onTouchStart={() => enableDecrease(true)}
+                onTouchEnd={() => enableDecrease(false)}
+                onTouchCancel={() => enableDecrease(false)}
+                onKeyDown={(event) => handleKeyDown(event, enableDecrease)}
+                onKeyUp={(event) => handleKeyUp(event, enableDecrease)}
+                onBlur={() => enableDecrease(false)}
+                title={_("Decrease value. Hint: Hold to decrease faster.")}
+                aria-label={_("Decrease value. Hint: Hold to decrease faster.")}
             >
                 <FontAwesomeIcon icon={faMinus} />
             </button>

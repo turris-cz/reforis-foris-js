@@ -8,6 +8,22 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.6.0] - 2025-02-07
+
+### Added
+
+-   Added & updated Weblate translations
+-   Added Wi-Fi and LAN settings URLs to ForisURLs
+-   Added Wi-Fi modes VHT/HE 80+80
+-   Added encryption selection to WiFiGuestForm
+-   Added optional close button to ModalHeader component
+
+### Changed
+
+-   Updated Wi-Fi API
+-   Enhanced NumberInput component with keyboard & touch accessibility
+-   Refactored pagination condition in RichTable component
+
 ## [6.5.0] - 2024-11-13
 
 ### Added
@@ -419,7 +435,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.5.0...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.0...dev
+[6.6.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.5.0...v6.6.0
 [6.5.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.4.0...v6.5.0
 [6.4.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.3.0...v6.4.0
 [6.3.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.2.1...v6.3.0

@@ -5,7 +5,12 @@
  * See /LICENSE for more information.
  */
 
-import React, { useMemo, useState } from "react";
+import React, {
+    useMemo,
+    useState,
+    useImperativeHandle,
+    forwardRef,
+} from "react";
 
 import {
     flexRender,
@@ -22,6 +27,55 @@ import RichTablePagination from "./RichTablePagination";
 
 const fallbackData = [];
 
+const RichTable = forwardRef(
+    ({ columns, data, withPagination, pageSize = 5, pageIndex = 0 }, ref) => {
+        const tableColumns = useMemo(() => columns, [columns]);
+        const [tableData, setTableData] = useState(data ?? fallbackData);
+        const [sorting, setSorting] = useState([]);
+        const [pagination, setPagination] = useState({
+            pageIndex,
+            pageSize,
+        });
+
+        useImperativeHandle(ref, () => ({
+            setTableData,
+        }));
+
+        const table = useReactTable({
+            data: tableData,
+            columns: tableColumns,
+            getCoreRowModel: getCoreRowModel(),
+            getSortedRowModel: getSortedRowModel(),
+            getPaginationRowModel: getPaginationRowModel(),
+            onPaginationChange: setPagination,
+            onSortingChange: setSorting,
+            state: {
+                sorting,
+                pagination,
+            },
+        });
+
+        const paginationIsNeeded =
+            tableData.length > pageSize && withPagination;
+
+        return (
+            <div className="table-responsive">
+                <table className="table table-hover text-nowrap">
+                    <RichTableHeader table={table} flexRender={flexRender} />
+                    <RichTableBody table={table} flexRender={flexRender} />
+                </table>
+                {paginationIsNeeded && (
+                    <RichTablePagination
+                        table={table}
+                        tablePageSize={pageSize}
+                        allRows={tableData.length}
+                    />
+                )}
+            </div>
+        );
+    }
+);
+
 RichTable.propTypes = {
     /** Columns to be displayed in the table */
     columns: PropTypes.array.isRequired,
@@ -35,52 +89,6 @@ RichTable.propTypes = {
     pageIndex: PropTypes.number,
 };
 
-function RichTable({
-    columns,
-    data,
-    withPagination,
-    pageSize = 5,
-    pageIndex = 0,
-}) {
-    const tableColumns = useMemo(() => columns, [columns]);
-    const [tableData] = useState(data ?? fallbackData);
-    const [sorting, setSorting] = useState([]);
-    const [pagination, setPagination] = useState({
-        pageIndex,
-        pageSize,
-    });
-
-    const table = useReactTable({
-        data: tableData,
-        columns: tableColumns,
-        getCoreRowModel: getCoreRowModel(),
-        getSortedRowModel: getSortedRowModel(),
-        getPaginationRowModel: getPaginationRowModel(),
-        onPaginationChange: setPagination,
-        onSortingChange: setSorting,
-        state: {
-            sorting,
-            pagination,
-        },
-    });
-
-    const paginationIsNeeded = tableData.length > pageSize && withPagination;
-
-    return (
-        <div className="table-responsive">
-            <table className="table table-hover text-nowrap">
-                <RichTableHeader table={table} flexRender={flexRender} />
-                <RichTableBody table={table} flexRender={flexRender} />
-            </table>
-            {paginationIsNeeded && (
-                <RichTablePagination
-                    table={table}
-                    tablePageSize={pageSize}
-                    allRows={tableData.length}
-                />
-            )}
-        </div>
-    );
-}
+RichTable.displayName = "RichTable";
 
 export default RichTable;

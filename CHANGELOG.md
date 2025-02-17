@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.6.1] - 2025-02-17
+
+### Changed
+
+-   Refactored RichTable component to use forwardRef
+
 ## [6.6.0] - 2025-02-07
 
 ### Added
@@ -435,7 +441,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.0...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.1...dev
+[6.6.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.0...v6.6.1
 [6.6.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.5.0...v6.6.0
 [6.5.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.4.0...v6.5.0
 [6.4.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.3.0...v6.4.0

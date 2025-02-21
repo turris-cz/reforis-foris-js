@@ -223,6 +223,7 @@ export function wifiSettingsFixture() {
                 guest_wifi: {
                     SSID: "TestGuestSSID",
                     enabled: false,
+                    encryption: "WPA2",
                     password: "",
                 },
                 hidden: false,

@@ -181,6 +181,7 @@ describe("<WiFiSettings/>", () => {
                     guest_wifi: {
                         SSID: "TestGuestSSID",
                         enabled: true,
+                        encryption: "WPA2",
                         password: "test_password",
                     },
                     hidden: false,

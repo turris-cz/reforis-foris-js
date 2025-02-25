@@ -21,10 +21,7 @@ module.exports = {
     testPathIgnorePatterns: ["/node_modules/", "/__fixtures__/", "/dist/"],
     testEnvironment: "jsdom",
     verbose: false,
-    setupFilesAfterEnv: [
-        "@testing-library/react/cleanup-after-each",
-        "<rootDir>/src/testUtils/setup",
-    ],
+    setupFilesAfterEnv: ["<rootDir>/src/testUtils/setup"],
     globals: {
         TZ: "utc",
     },

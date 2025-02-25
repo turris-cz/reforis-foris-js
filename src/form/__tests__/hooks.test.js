@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -7,7 +7,7 @@
 
 import React from "react";
 
-import { act, fireEvent, render, waitForElement } from "customTestRender";
+import { act, fireEvent, render, waitFor } from "customTestRender";
 import mockAxios from "jest-mock-axios";
 import WebSockets from "webSockets/WebSockets";
 import ForisForm from "../components/ForisForm";
@@ -59,7 +59,7 @@ describe("useForm hook.", () => {
         );
         mockAxios.mockResponse({ field: "fetchedData" });
 
-        input = await waitForElement(() => getByTestId("test-input"));
+        input = await waitFor(() => getByTestId("test-input"));
         form = container.firstChild.firstChild;
     });
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -7,7 +7,7 @@
 
 import React from "react";
 
-import { render, wait, getByText } from "customTestRender";
+import { render, waitFor, getByText } from "customTestRender";
 import mockAxios from "jest-mock-axios";
 
 import {
@@ -38,7 +38,7 @@ describe("CustomizationContext", () => {
     it("should render component without customization", async () => {
         mockAxios.mockResponse({ data: {} });
 
-        await wait(() => getByText(componentContainer, ORIGINAL));
+        await waitFor(() => getByText(componentContainer, ORIGINAL));
 
         expect(componentContainer).toMatchSnapshot();
     });
@@ -46,7 +46,7 @@ describe("CustomizationContext", () => {
     it("should render customized component", async () => {
         mockAxios.mockResponse({ data: { customization: "shield" } });
 
-        await wait(() => getByText(componentContainer, CUSTOM));
+        await waitFor(() => getByText(componentContainer, CUSTOM));
 
         expect(componentContainer).toMatchSnapshot();
     });

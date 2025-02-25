@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -9,13 +9,7 @@ import React from "react";
 
 import Button from "bootstrap/Button";
 
-import {
-    fireEvent,
-    getByText,
-    queryByText,
-    render,
-    wait,
-} from "customTestRender";
+import { fireEvent, getByText, render, waitFor } from "customTestRender";
 import mockAxios from "jest-mock-axios";
 import { mockJSONError } from "testUtils/network";
 import { mockSetAlert } from "testUtils/alertContextMock";
@@ -73,7 +67,7 @@ describe("<ActionButtonWithModal/>", () => {
         fireEvent.click(getByText(componentContainer, "Action"));
         fireEvent.click(getByText(componentContainer, "Confirm action"));
         mockJSONError();
-        await wait(() =>
+        await waitFor(() =>
             expect(mockSetAlert).toBeCalledWith("Action request failed.")
         );
     });
@@ -82,7 +76,7 @@ describe("<ActionButtonWithModal/>", () => {
         fireEvent.click(getByText(componentContainer, "Action"));
         fireEvent.click(getByText(componentContainer, "Confirm action"));
         mockAxios.mockResponse({ status: 200 });
-        await wait(() =>
+        await waitFor(() =>
             expect(mockSetAlert).toBeCalledWith(
                 "Action request succeeded.",
                 "success"

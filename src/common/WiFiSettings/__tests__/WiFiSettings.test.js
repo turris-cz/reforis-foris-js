@@ -1,15 +1,16 @@
 /*
- * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React from "react";
+
 import diffSnapshot from "snapshot-diff";
 import mockAxios from "jest-mock-axios";
 
-import { fireEvent, render, wait } from "customTestRender";
+import { fireEvent, render, waitFor } from "customTestRender";
 import WebSockets from "webSockets/WebSockets";
 import { mockJSONError } from "testUtils/network";
 
@@ -45,7 +46,7 @@ describe("<WiFiSettings/>", () => {
         getByLabelText = renderRes.getByLabelText;
         getByText = renderRes.getByText;
         mockAxios.mockResponse({ data: wifiSettingsFixture() });
-        await wait(() => renderRes.getByText("Wi-Fi 1"));
+        await waitFor(() => renderRes.getByText("Wi-Fi 1"));
         firstRender = renderRes.asFragment();
     });
 
@@ -60,7 +61,7 @@ describe("<WiFiSettings/>", () => {
         );
         const errorMessage = "An API error occurred.";
         mockJSONError(errorMessage);
-        await wait(() => {
+        await waitFor(() => {
             expect(getByText(errorMessage)).toBeTruthy();
         });
     });
@@ -181,6 +182,7 @@ describe("<WiFiSettings/>", () => {
                     guest_wifi: {
                         SSID: "TestGuestSSID",
                         enabled: true,
+                        encryption: "WPA2",
                         password: "test_password",
                     },
                     hidden: false,

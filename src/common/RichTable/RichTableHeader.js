@@ -55,6 +55,12 @@ function RichTableHeader({ table, flexRender }) {
                             ) : (
                                 <button
                                     type="button"
+                                    style={
+                                        header.column.columnDef
+                                            .headerClassName === "text-center"
+                                            ? { justifySelf: "center" }
+                                            : {}
+                                    }
                                     className={`btn btn-link text-decoration-none text-reset fw-bold p-0 d-flex align-items-center
                                                     ${
                                                         header.column.getCanSort()

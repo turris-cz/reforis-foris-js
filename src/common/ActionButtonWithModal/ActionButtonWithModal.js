@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -9,7 +9,7 @@ import React, { useState, useEffect } from "react";
 
 import PropTypes from "prop-types";
 
-import { useAPIPost } from "../../api/hooks";
+import { useAPIPost, useAPIPut } from "../../api/hooks";
 import { API_STATE } from "../../api/utils";
 import Button from "../../bootstrap/Button";
 import {
@@ -23,6 +23,8 @@ import { useAlert } from "../../context/alertContext/AlertContext";
 ActionButtonWithModal.propTypes = {
     /** Component that triggers the action. */
     actionTrigger: PropTypes.elementType.isRequired,
+    /** Method to use for the action. */
+    actionMethod: PropTypes.string,
     /** URL to send the action to. */
     actionUrl: PropTypes.string.isRequired,
     /** Title of the modal. */
@@ -41,6 +43,7 @@ ActionButtonWithModal.propTypes = {
 
 function ActionButtonWithModal({
     actionTrigger: ActionTriggerComponent,
+    actionMethod = "POST",
     actionUrl,
     modalTitle,
     modalMessage,
@@ -51,24 +54,43 @@ function ActionButtonWithModal({
 }) {
     const [triggered, setTriggered] = useState(false);
     const [modalShown, setModalShown] = useState(false);
-    const [triggerActionStatus, triggerAction] = useAPIPost(actionUrl);
+    const [triggerPostActionStatus, triggerPostAction] = useAPIPost(actionUrl);
+    const [triggerPutActionStatus, triggerPutAction] = useAPIPut(actionUrl);
 
     const [setAlert] = useAlert();
     useEffect(() => {
-        if (triggerActionStatus.state === API_STATE.SUCCESS) {
+        if (
+            triggerPostActionStatus.state === API_STATE.SUCCESS ||
+            triggerPutActionStatus.state === API_STATE.SUCCESS
+        ) {
             setAlert(
                 successMessage || _("Action successful."),
                 API_STATE.SUCCESS
             );
+            setTriggered(false);
         }
-        if (triggerActionStatus.state === API_STATE.ERROR) {
+        if (
+            triggerPostActionStatus.state === API_STATE.ERROR ||
+            triggerPutActionStatus.state === API_STATE.ERROR
+        ) {
             setAlert(errorMessage || _("Action failed."));
+            setTriggered(false);
         }
-    }, [triggerActionStatus, setAlert, successMessage, errorMessage]);
+    }, [
+        triggerPostActionStatus,
+        triggerPutActionStatus,
+        setAlert,
+        successMessage,
+        errorMessage,
+    ]);
 
     const actionHandler = () => {
         setTriggered(true);
-        triggerAction();
+        if (actionMethod === "POST") {
+            triggerPostAction();
+        } else {
+            triggerPutAction();
+        }
         setModalShown(false);
     };
 

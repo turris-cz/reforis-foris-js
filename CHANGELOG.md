@@ -8,6 +8,20 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.7.0] - 2025-03-11
+
+### Added
+
+- Added encryption property to guest WiFi settings in tests
+- Added global fuzzy search and columns visibility to RichTable
+
+### Changed
+
+- Made thead of RichTable lighter
+- Updated dependencies in package.json to latest versions
+- Enhanced ActionButtonWithModal to support dynamic methods
+- NPM audit fix
+
 ## [6.6.2] - 2025-02-20
 
 ### Changed
@@ -448,7 +462,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.2...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.0...dev
+[6.7.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.2...v6.7.0
 [6.6.2]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.1...v6.6.2
 [6.6.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.0...v6.6.1
 [6.6.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.5.0...v6.6.0

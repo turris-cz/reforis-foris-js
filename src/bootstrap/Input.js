@@ -34,12 +34,14 @@ const Input = forwardRef(
 
         return (
             <div className="mb-3">
-                <label
-                    className={`form-label ${labelClassName || ""}`.trim()}
-                    htmlFor={uid}
-                >
-                    {label}
-                </label>
+                {label && (
+                    <label
+                        className={`form-label ${labelClassName || ""}`.trim()}
+                        htmlFor={uid}
+                    >
+                        {label}
+                    </label>
+                )}
                 <div className={`input-group ${groupClassName || ""}`.trim()}>
                     <input
                         className={`form-control ${inputClassName}`.trim()}
@@ -65,7 +67,7 @@ Input.displayName = "Input";
 
 Input.propTypes = {
     type: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
+    label: PropTypes.string,
     helpText: PropTypes.string,
     error: PropTypes.string,
     className: PropTypes.string,

@@ -1,12 +1,12 @@
 /*
- * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
 import React from "react";
-import { render, fireEvent, wait } from "customTestRender";
+import { render, fireEvent, waitFor } from "customTestRender";
 
 import mockAxios from "jest-mock-axios";
 import WebSockets from "webSockets/WebSockets";
@@ -35,7 +35,7 @@ describe("<ResetWiFiSettings/>", () => {
             expect.anything()
         );
         mockAxios.mockResponse({ data: { foo: "bar" } });
-        await wait(() =>
+        await waitFor(() =>
             expect(mockSetAlert).toBeCalledWith(
                 "Wi-Fi settings are set to defaults.",
                 ALERT_TYPES.SUCCESS
@@ -46,7 +46,7 @@ describe("<ResetWiFiSettings/>", () => {
     it("should display alert on open ports - failure", async () => {
         fireEvent.click(getAllByText("Reset Wi-Fi Settings")[1]);
         mockJSONError();
-        await wait(() =>
+        await waitFor(() =>
             expect(mockSetAlert).toBeCalledWith(
                 "An error occurred during resetting Wi-Fi settings."
             )

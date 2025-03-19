@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.5.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2024-11-13 14:06+0100\n"
-"PO-Revision-Date: 2025-03-15 22:53+0000\n"
+"PO-Revision-Date: 2025-03-19 13:25+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/turris/foris-js/ta/"
 ">\n"
@@ -22,19 +22,19 @@ msgstr ""
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "அமர்வு காலாவதியானது. மீண்டும் உள்நுழைக."
 
 #: src/api/utils.js:66
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "காலக்கெடு பிழை ஏற்பட்டது."
 
 #: src/api/utils.js:69
 msgid "No response received."
-msgstr ""
+msgstr "எந்த பதிலும் கிடைக்கவில்லை."
 
 #: src/api/utils.js:79
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "அறியப்படாத பநிஇ பிழை ஏற்பட்டது."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:101
 #: src/common/WiFiSettings/WiFiQRCode.js:89
@@ -43,19 +43,19 @@ msgstr "மூடு"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
-msgstr ""
+msgstr "நகலெடுக்கப்பட்டது!"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copy"
-msgstr ""
+msgstr "நகலெடு"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:60
 msgid "Action successful."
-msgstr ""
+msgstr "நடவடிக்கை வெற்றிகரமாக."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:65
 msgid "Action failed."
-msgstr ""
+msgstr "நடவடிக்கை தோல்வியடைந்தது."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:125
 msgid "Cancel"
@@ -67,68 +67,68 @@ msgstr "உறுதிப்படுத்தவும்"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
-msgstr ""
+msgstr "ஏறும் வரிசைப்படுத்துதல்"
 
 #: src/common/RichTable/RichTableHeader.js:30
 msgid "Sort descending"
-msgstr ""
+msgstr "இறங்கு வரிசைப்படுத்துதல்"
 
 #: src/common/RichTable/RichTableHeader.js:31
 msgid "Clear sort"
-msgstr ""
+msgstr "அழி வரிசைப்படுத்துதல்"
 
 #: src/common/RichTable/RichTablePagination.js:65
 msgid "Pagination navigation bar"
-msgstr ""
+msgstr "மண்பாண்ட வழிசெலுத்தல் பட்டி"
 
 #: src/common/RichTable/RichTablePagination.js:71
 msgid "First page"
-msgstr ""
+msgstr "முதல் பக்கம்"
 
 #: src/common/RichTable/RichTablePagination.js:77
 msgid "Previous page"
-msgstr ""
+msgstr "முந்தைய பக்கம்"
 
 #: src/common/RichTable/RichTablePagination.js:83
 msgid "Next page"
-msgstr ""
+msgstr "அடுத்த பக்கம்"
 
 #: src/common/RichTable/RichTablePagination.js:89
 msgid "Last page"
-msgstr ""
+msgstr "கடைசி பக்கம்"
 
 #: src/common/RichTable/RichTablePagination.js:95
 msgid "Page"
-msgstr ""
+msgstr "பக்கம்"
 
 #: src/common/RichTable/RichTablePagination.js:98
 msgid "of"
-msgstr ""
+msgstr "of"
 
 #: src/common/RichTable/RichTablePagination.js:106
 msgid "Rows per page:"
-msgstr ""
+msgstr "ஒரு பக்கத்திற்கு வரிசைகள்:"
 
 #: src/common/RichTable/RichTablePagination.js:109
 msgid "Select rows per page"
-msgstr ""
+msgstr "ஒரு பக்கத்திற்கு வரிசைகளைத் தேர்ந்தெடுக்கவும்"
 
 #: src/common/RichTable/RichTablePagination.js:121
 msgid "All"
-msgstr ""
+msgstr "அனைத்தும்"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
-msgstr ""
+msgstr "வைஃபை அமைப்புகளை மீட்டமைக்கும் போது பிழை ஏற்பட்டது."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
-msgstr ""
+msgstr "வைஃபை அமைப்புகள் இயல்புநிலையாக அமைக்கப்பட்டுள்ளன."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:56
 #: src/common/WiFiSettings/ResetWiFiSettings.js:70
 msgid "Reset Wi-Fi Settings"
-msgstr ""
+msgstr "வைஃபை அமைப்புகளை மீட்டமைக்கவும்"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:58
 msgid ""
@@ -136,10 +136,13 @@ msgid ""
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
+"பல வயர்லெச் கார்டுகள் பொருந்தவில்லை என்றால், நீங்கள் வைஃபை அமைப்புகளை மீட்டமைக்க முயற்சி "
+"செய்யலாம். இது தற்போதைய வைஃபை உள்ளமைவை அகற்றி இயல்புநிலை மதிப்புகளை மீட்டெடுக்கும் என்பதை"
+" நினைவில் கொள்க."
 
 #: src/common/WiFiSettings/WiFiForm.js:97
 msgid "Wi-Fi ${deviceID + 1}"
-msgstr ""
+msgstr "Wi-fi $ {deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
 #: src/common/WiFiSettings/WiFiGuestForm.js:78
@@ -148,33 +151,35 @@ msgstr "கடவுச்சொல்"
 
 #: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
-msgstr ""
+msgstr "SSID ஐ மறைக்கவும்"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax mode"
-msgstr ""
+msgstr "802.11n/ac/ax பயன்முறை"
 
 #: src/common/WiFiSettings/WiFiForm.js:199
 msgid "Channel"
-msgstr ""
+msgstr "வாய்க்கால்"
 
 #: src/common/WiFiSettings/WiFiForm.js:211
 msgid "Encryption"
-msgstr ""
+msgstr "குறியாக்கம்"
 
 #: src/common/WiFiSettings/WiFiForm.js:226
 msgid "Disable Management Frame Protection"
-msgstr ""
+msgstr "மேலாண்மை பிரேம் பாதுகாப்பை முடக்கு"
 
 #: src/common/WiFiSettings/WiFiForm.js:227
 msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
+"வைஃபை அணுகல் புள்ளியுடன் இணைப்பதில் சிக்கல் இருந்தால், மேலாண்மை பிரேம் பாதுகாப்பை முடக்க "
+"முயற்சிக்கவும்."
 
 #: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
-msgstr ""
+msgstr "தானி"
 
 #: src/common/WiFiSettings/WiFiForm.js:303
 msgid "Custom"
@@ -182,45 +187,45 @@ msgstr "தனிப்பயன்"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:43
 msgid "Enable Guest Wi-Fi"
-msgstr ""
+msgstr "விருந்தினர் வைஃபை இயக்கவும்"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:43
 #: src/common/WiFiSettings/WiFiQRCode.js:44
 msgid "Show QR code"
-msgstr ""
+msgstr "QR குறியீட்டைக் காட்டு"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:70
 msgid "Wi-Fi QR Code"
-msgstr ""
+msgstr "வைஃபை கியூஆர் குறியீடு"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:102
 msgid "Download PDF"
-msgstr ""
+msgstr "PDF ஐ பதிவிறக்கவும்"
 
 #: src/common/WiFiSettings/WiFiSettings.js:83
 #: src/common/WiFiSettings/WiFiSettings.js:99
 msgid "SSID can't be longer than 32 symbols"
-msgstr ""
+msgstr "SSID 32 சின்னங்களை விட நீளமாக இருக்க முடியாது"
 
 #: src/common/WiFiSettings/WiFiSettings.js:84
 #: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "SSID can't be empty"
-msgstr ""
+msgstr "SSID காலியாக இருக்க முடியாது"
 
 #: src/common/WiFiSettings/WiFiSettings.js:86
 #: src/common/WiFiSettings/WiFiSettings.js:103
 msgid "SSID can't be longer than 32 bytes"
-msgstr ""
+msgstr "SSID 32 பைட்டுகளை விட நீளமாக இருக்க முடியாது"
 
 #: src/common/WiFiSettings/WiFiSettings.js:89
 #: src/common/WiFiSettings/WiFiSettings.js:106
 msgid "Password must contain at least 8 symbols"
-msgstr ""
+msgstr "கடவுச்சொல்லில் குறைந்தது 8 சின்னங்கள் இருக்க வேண்டும்"
 
 #: src/common/WiFiSettings/WiFiSettings.js:91
 #: src/common/WiFiSettings/WiFiSettings.js:110
 msgid "Password must not contain more than 63 symbols"
-msgstr ""
+msgstr "கடவுச்சொல்லில் 63 க்கும் மேற்பட்ட சின்னங்கள் இருக்கக்கூடாது"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
@@ -228,69 +233,71 @@ msgstr "முடக்கப்பட்டது"
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11n - 20 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:11
 msgid "802.11n - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11n - 40 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:12
 msgid "802.11ac - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11ac - 20 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:13
 msgid "802.11ac - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11ac - 40 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:14
 msgid "802.11ac - 80 MHz wide channel"
-msgstr ""
+msgstr "802.11ac - 80 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:15
 msgid "802.11ac - 160 MHz wide channel"
-msgstr ""
+msgstr "802.11ac - 160 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:16
 msgid "802.11ax - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - 20 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:17
 msgid "802.11ax - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - 40 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:18
 msgid "802.11ax - 80 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - 80 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:19
 msgid "802.11ax - 160 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - 160 மெகா எர்ட்ச் அகல சேனல்"
 
 #: src/common/WiFiSettings/constants.js:26
 msgid "WPA3 only"
-msgstr ""
+msgstr "WPA3 மட்டும்"
 
 #: src/common/WiFiSettings/constants.js:27
 msgid "WPA3 with WPA2 as fallback (default)"
-msgstr ""
+msgstr "WPA2 WPA2 உடன் குறைவடையும் (இயல்புநிலை)"
 
 #: src/common/WiFiSettings/constants.js:28
 msgid "WPA2 only"
-msgstr ""
+msgstr "WPA2 மட்டும்"
 
 #: src/common/WiFiSettings/constants.js:31
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
+"தரமற்ற எழுத்துக்களைக் கொண்ட SSID சில சாதனங்களில் சிக்கல்களை ஏற்படுத்தக்கூடும்."
 
 #: src/common/WiFiSettings/constants.js:34
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
-msgstr ""
+msgstr "WPA2/3 முன் பகிரப்பட்ட விசை, இது பிணையத்துடன் இணைக்க வேண்டும்."
 
 #: src/common/WiFiSettings/constants.js:37
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
+"அமைக்கப்பட்டால், கிடைக்கக்கூடிய நெட்வொர்க்குகளுக்கு ச்கேன் செய்யும் போது பிணையம் தெரியவில்லை."
 
 #: src/common/WiFiSettings/constants.js:40
 msgid ""
@@ -299,6 +306,10 @@ msgid ""
 "supported by all your devices. It usually has less interference, but the "
 "signal does not carry so well indoors."
 msgstr ""
+"2.4 சிகாஎர்ட்ச் இசைக்குழு வாடிக்கையாளர்களால் மிகவும் பரவலாக ஆதரிக்கப்படுகிறது, ஆனால் அதி"
+"க குறுக்கீடு உள்ளது. 5 சிகாஎர்ட்ச் இசைக்குழு ஒரு புதிய தரநிலை மற்றும் உங்கள் எல்லா "
+"சாதனங்களாலும் ஆதரிக்கப்படாமல் போகலாம். இது பொதுவாக குறைவான குறுக்கீட்டைக் கொண்டுள்ளது, "
+"ஆனால் சமிக்ஞை வீட்டிற்குள் அவ்வளவு சிறப்பாகச் செல்லாது."
 
 #: src/common/WiFiSettings/constants.js:43
 msgid ""
@@ -307,6 +318,10 @@ msgid ""
 "interference in the network. If you don't know what to choose, use the "
 "default option with 20 MHz wide channel."
 msgstr ""
+"802.11n/AC/AX செயல்பாட்டு முறை சரிசெய்ய இதை மாற்றவும். 40 மெகா எர்ட்ச் அகலமான "
+"சேனல்களைக் கொண்ட 802.11n அதிக செயல்திறனை அளிக்கும், ஆனால் பிணையத்தில் அதிக குறுக்கீட்டை "
+"ஏற்படுத்தும். எதை தேர்வு செய்வது என்று உங்களுக்குத் தெரியாவிட்டால், இயல்புநிலை விருப்பத்தை "
+"20 மெகா எர்ட்ச் அகல சேனலுடன் பயன்படுத்தவும்."
 
 #: src/common/WiFiSettings/constants.js:46
 msgid ""
@@ -316,6 +331,10 @@ msgid ""
 "router. Parameters of the guest network can be set in the Guest network "
 "tab."
 msgstr ""
+"லேன் நெட்வொர்க்கிலிருந்து பிரிக்கப்பட்ட விருந்தினர்களுக்கு வைஃபை இயக்குகிறது. இந்த "
+"நெட்வொர்க்குடன் இணைக்கப்பட்ட சாதனங்கள் இணையத்தை அணுக அனுமதிக்கப்படுகின்றன, ஆனால் பிற "
+"சாதனங்களையும் திசைவியின் உள்ளமைவு இடைமுகத்தையும் அணுக அனுமதிக்கப்படவில்லை. விருந்தினர் "
+"நெட்வொர்க்கின் அளவுருக்கள் விருந்தினர் பிணையம் தாவலில் அமைக்கப்படலாம்."
 
 #: src/common/WiFiSettings/constants.js:49
 msgid ""
@@ -324,22 +343,27 @@ msgid ""
 "without WPA3 support require older WPA2. If you experience issues with "
 "connecting older devices, try to enable WPA2."
 msgstr ""
+"WPA3 தரநிலை என்பது புதிய மிகவும் பாதுகாப்பான குறியாக்க முறையாகும், அதை ஆதரிக்கும் "
+"எந்தவொரு சாதனத்துடனும் பயன்படுத்த பரிந்துரைக்கப்படுகிறது. WPA3 உதவி இல்லாத பழைய "
+"சாதனங்களுக்கு பழைய WPA2 தேவைப்படுகிறது. பழைய சாதனங்களை இணைப்பதில் சிக்கல்களை நீங்கள் "
+"அனுபவித்தால், WPA2 ஐ இயக்க முயற்சிக்கவும்."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "அமைப்புகள் வெற்றிகரமாக சேமிக்கப்பட்டன"
 
 #: src/form/components/ForisForm.js:183
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
+"நீங்கள் செய்த மாற்றங்கள் சேமிக்கப்படாமல் போகலாம். நீங்கள் நிச்சயமாக வெளியேற விரும்புகிறீர்களா?"
 
 #: src/form/components/SubmitButton.js:32
 msgid "Updating"
-msgstr ""
+msgstr "புதுப்பித்தல்"
 
 #: src/form/components/SubmitButton.js:35
 msgid "Load settings"
-msgstr ""
+msgstr "அமைப்புகளை ஏற்றவும்"
 
 #: src/form/components/SubmitButton.js:38
 msgid "Save"
@@ -347,36 +371,36 @@ msgstr "சேமி"
 
 #: src/utils/ErrorMessage.js:17
 msgid "An error occurred while fetching data."
-msgstr ""
+msgstr "தரவைப் பெறும்போது பிழை ஏற்பட்டது."
 
 #: src/utils/validations.js:13
 msgid "This is not a valid IPv4 address."
-msgstr ""
+msgstr "இது சரியான ஐபிவி 4 முகவரி அல்ல."
 
 #: src/utils/validations.js:14
 msgid "This is not a valid IPv6 address."
-msgstr ""
+msgstr "இது சரியான ஐபிவி 6 முகவரி அல்ல."
 
 #: src/utils/validations.js:15
 msgid "This is not a valid IPv6 prefix."
-msgstr ""
+msgstr "இது சரியான ஐபிவி 6 முன்னொட்டு அல்ல."
 
 #: src/utils/validations.js:16
 msgid "This is not a valid domain name."
-msgstr ""
+msgstr "இது சரியான டொமைன் பெயர் அல்ல."
 
 #: src/utils/validations.js:17
 msgid "This is not a valid hostname."
-msgstr ""
+msgstr "இது சரியான ஓச்ட்பெயர் அல்ல."
 
 #: src/utils/validations.js:18
 msgid "This is not a valid DUID."
-msgstr ""
+msgstr "இது செல்லுபடியாகும் டியூட் அல்ல."
 
 #: src/utils/validations.js:19
 msgid "This is not a valid MAC address."
-msgstr ""
+msgstr "இது செல்லுபடியாகும் MAC முகவரி அல்ல."
 
 #: src/utils/validations.js:20
 msgid "Doesn't contain a list of emails separated by commas."
-msgstr ""
+msgstr "காற்புள்ளிகளால் பிரிக்கப்பட்ட மின்னஞ்சல்களின் பட்டியல் இல்லை."

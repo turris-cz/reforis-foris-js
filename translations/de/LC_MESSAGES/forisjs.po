@@ -1,23 +1,23 @@
 # German translations for Foris JS.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-11-13 14:06+0100\n"
+"POT-Creation-Date: 2025-04-04 15:14+0200\n"
 "PO-Revision-Date: 2024-01-04 21:08+0000\n"
 "Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris/foris-js/"
-"de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/foris-"
+"js/de/>\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -35,37 +35,60 @@ msgstr "Keine Antwort erhalten."
 msgid "An unknown API error occurred."
 msgstr "Ein unbekannter API-Fehler ist aufgetreten."
 
-#: src/bootstrap/Alert.js:57 src/bootstrap/Modal.js:101
+#: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
 #: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr "Schließen"
 
-#: src/bootstrap/CopyInput.js:56 src/bootstrap/CopyInput.js:57
+#: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
 msgstr "Kopiert!"
 
-#: src/bootstrap/CopyInput.js:56 src/bootstrap/CopyInput.js:57
+#: src/bootstrap/CopyInput.js:56
 msgid "Copy"
 msgstr "Kopieren"
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:60
+#: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
+msgid "Increase value. Hint: Hold to increase faster."
+msgstr ""
+
+#: src/bootstrap/NumberInput.js:101 src/bootstrap/NumberInput.js:102
+msgid "Decrease value. Hint: Hold to decrease faster."
+msgstr ""
+
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
 #, fuzzy
 msgid "Action successful."
 msgstr "Einstellungen erfolgreich gespeichert"
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:65
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:76
 msgid "Action failed."
 msgstr ""
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:125
-#: src/common/RebootButton.js:71
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:128
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
 #, fuzzy
 msgid "Confirm"
 msgstr "Neustart bestätigen"
+
+#: src/common/RichTable/RichTable.js:87
+msgid "Search…"
+msgstr ""
+
+#: src/common/RichTable/RichTableBody.js:50
+msgid "No results."
+msgstr ""
+
+#: src/common/RichTable/RichTableColumnsDropdown.js:27
+msgid "Columns"
+msgstr ""
+
+#: src/common/RichTable/RichTableColumnsDropdown.js:80
+msgid "Reset"
+msgstr ""
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
@@ -122,7 +145,8 @@ msgstr ""
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
-"Ein Fehler ist während der Zurücksetzung der WLAN-Einstellungen aufgetreten."
+"Ein Fehler ist während der Zurücksetzung der WLAN-Einstellungen "
+"aufgetreten."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
@@ -135,26 +159,31 @@ msgstr "WLAN-Einstellungen zurücksetzen"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:58
 msgid ""
-"If a number of wireless cards doesn't match, you may try to reset the Wi-Fi "
-"settings. Note that this will remove the current Wi-Fi configuration and "
-"restore the default values."
+"If a number of wireless cards doesn't match, you may try to reset the Wi-"
+"Fi settings. Note that this will remove the current Wi-Fi configuration "
+"and restore the default values."
 msgstr ""
-"Falls die Anzahl der WLAN-Karten nicht korrekt ist, könnte es helfen, die "
-"WLAN-Einstellungen zurückzusetzen. Beachten Sie, dass dabei die aktuelle "
-"WLAN-Konfiguration mit den Werkseinstellungen überschrieben wird."
+"Falls die Anzahl der WLAN-Karten nicht korrekt ist, könnte es helfen, die"
+" WLAN-Einstellungen zurückzusetzen. Beachten Sie, dass dabei die aktuelle"
+" WLAN-Konfiguration mit den Werkseinstellungen überschrieben wird."
 
 #: src/common/WiFiSettings/WiFiForm.js:97
+#, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "WLAN ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:78
+#: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr "Passwort"
 
 #: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
 msgstr "SSID verbergen"
+
+#: src/common/WiFiSettings/WiFiForm.js:159
+msgid "Band"
+msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax mode"
@@ -165,6 +194,7 @@ msgid "Channel"
 msgstr "Kanal"
 
 #: src/common/WiFiSettings/WiFiForm.js:211
+#: src/common/WiFiSettings/WiFiGuestForm.js:95
 msgid "Encryption"
 msgstr "Verschlüsselung"
 
@@ -177,8 +207,8 @@ msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
-"Falls Sie beim Verbinden mit dem WiFi-Access-Point Probleme haben, schalten "
-"Sie testweise die Management Frame Protection ab."
+"Falls Sie beim Verbinden mit dem WiFi-Access-Point Probleme haben, "
+"schalten Sie testweise die Management Frame Protection ab."
 
 #: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
@@ -188,7 +218,7 @@ msgstr "automatisch"
 msgid "Custom"
 msgstr "Benutzerdefiniert"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:43
+#: src/common/WiFiSettings/WiFiGuestForm.js:45
 msgid "Enable Guest Wi-Fi"
 msgstr "Gast-WLAN aktivieren"
 
@@ -255,38 +285,48 @@ msgid "802.11ac - 80 MHz wide channel"
 msgstr "802.11ac - 80 MHz breiter Kanal"
 
 #: src/common/WiFiSettings/constants.js:15
+#, fuzzy
+msgid "802.11ac - 80+80 MHz wide channel"
+msgstr "802.11ac - 80 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:16
 msgid "802.11ac - 160 MHz wide channel"
 msgstr "802.11ac - 160 MHz breiter Kanal"
 
-#: src/common/WiFiSettings/constants.js:16
+#: src/common/WiFiSettings/constants.js:17
 msgid "802.11ax - 20 MHz wide channel"
 msgstr "802.11ax - 20 MHz breiter Kanal"
 
-#: src/common/WiFiSettings/constants.js:17
+#: src/common/WiFiSettings/constants.js:18
 msgid "802.11ax - 40 MHz wide channel"
 msgstr "802.11ax - 40 MHz breiter Kanal"
 
-#: src/common/WiFiSettings/constants.js:18
+#: src/common/WiFiSettings/constants.js:19
 msgid "802.11ax - 80 MHz wide channel"
 msgstr "802.11ax - 80 MHz breiter Kanal"
 
-#: src/common/WiFiSettings/constants.js:19
+#: src/common/WiFiSettings/constants.js:20
+#, fuzzy
+msgid "802.11ax - 80+80 MHz wide channel"
+msgstr "802.11ax - 80 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:21
 msgid "802.11ax - 160 MHz wide channel"
 msgstr "802.11ax - 160 MHz breiter Kanal"
 
-#: src/common/WiFiSettings/constants.js:26
+#: src/common/WiFiSettings/constants.js:29
 msgid "WPA3 only"
 msgstr "Nur WPA3"
 
-#: src/common/WiFiSettings/constants.js:27
+#: src/common/WiFiSettings/constants.js:30
 msgid "WPA3 with WPA2 as fallback (default)"
 msgstr "WPA3 mit WPA2 als Ausweichmöglichkeit (Voreinstellung)"
 
-#: src/common/WiFiSettings/constants.js:28
+#: src/common/WiFiSettings/constants.js:31
 msgid "WPA2 only"
 msgstr "Nur WPA2"
 
-#: src/common/WiFiSettings/constants.js:31
+#: src/common/WiFiSettings/constants.js:34
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
@@ -294,67 +334,67 @@ msgstr ""
 "SSIDs, die nicht standardmäßige Zeichen enthalten, können auf manchen "
 "Geräten Probleme verursachen."
 
-#: src/common/WiFiSettings/constants.js:34
-msgid "WPA2/3 pre-shared key, that is required to connect to the network."
-msgstr ""
-"WPA2/3 Pre-Shard Key, der zum Verbinden mit dem Netzwerk notwendig ist."
-
 #: src/common/WiFiSettings/constants.js:37
+msgid "WPA2/3 pre-shared key, that is required to connect to the network."
+msgstr "WPA2/3 Pre-Shard Key, der zum Verbinden mit dem Netzwerk notwendig ist."
+
+#: src/common/WiFiSettings/constants.js:40
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 "Falls aktiviert, wird das Netzwerk nicht in der Liste der verfügbaren "
 "drahtlosen Netzwerke angezeigt."
 
-#: src/common/WiFiSettings/constants.js:40
-msgid ""
-"The 2.4 GHz band is more widely supported by clients, but tends to have more "
-"interference. The 5 GHz band is a newer standard and may not be supported by "
-"all your devices. It usually has less interference, but the signal does not "
-"carry so well indoors."
-msgstr ""
-"Das 2,4 GHz-Band wird von allen Geräten unterstützt, ist aber tendenziell "
-"stärker mit Interferenzen belastet. Das 5-GHz-Band ist ein neuerer Standard, "
-"der möglicherweise nicht von allen Ihren Geräten unterstützt wird. Es hat in "
-"der Regel weniger Interferenzen, aber das Signal trägt nicht so gut in "
-"Innenräumen."
-
 #: src/common/WiFiSettings/constants.js:43
 msgid ""
-"Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 MHz "
-"wide channels can yield higher throughput but can cause more interference in "
-"the network. If you don't know what to choose, use the default option with "
-"20 MHz wide channel."
+"The 2.4 GHz band is more widely supported by clients, but tends to have "
+"more interference. The 5 GHz band is a newer standard and may not be "
+"supported by all your devices. It usually has less interference, but the "
+"signal does not carry so well indoors."
 msgstr ""
-"Ändern Sie diese Option, um den 802.11n/ac/ax-Betriebsmodus anzupassen. 40 "
-"MHz breite Kanäle können bei 802.11n mehr Daten transportieren, jedoch zu "
-"mehr Interferenzen im Netzwerk führen. Wenn Sie nicht wissen, was Sie wählen "
-"sollen, verwenden Sie die Voreinstellung mit 20 MHz Kanalbreite."
+"Das 2,4 GHz-Band wird von allen Geräten unterstützt, ist aber tendenziell"
+" stärker mit Interferenzen belastet. Das 5-GHz-Band ist ein neuerer "
+"Standard, der möglicherweise nicht von allen Ihren Geräten unterstützt "
+"wird. Es hat in der Regel weniger Interferenzen, aber das Signal trägt "
+"nicht so gut in Innenräumen."
 
 #: src/common/WiFiSettings/constants.js:46
+msgid ""
+"Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 "
+"MHz wide channels can yield higher throughput but can cause more "
+"interference in the network. If you don't know what to choose, use the "
+"default option with 20 MHz wide channel."
+msgstr ""
+"Ändern Sie diese Option, um den 802.11n/ac/ax-Betriebsmodus anzupassen. "
+"40 MHz breite Kanäle können bei 802.11n mehr Daten transportieren, jedoch"
+" zu mehr Interferenzen im Netzwerk führen. Wenn Sie nicht wissen, was Sie"
+" wählen sollen, verwenden Sie die Voreinstellung mit 20 MHz Kanalbreite."
+
+#: src/common/WiFiSettings/constants.js:49
 msgid ""
 "Enables Wi-Fi for guests, which is separated from LAN network. Devices "
 "connected to this network are allowed to access the internet, but aren't "
 "allowed to access other devices and the configuration interface of the "
-"router. Parameters of the guest network can be set in the Guest network tab."
+"router. Parameters of the guest network can be set in the Guest network "
+"tab."
 msgstr ""
-"Ermöglicht ein Wi-Fi für Gäste, das vom LAN-Netzwerk getrennt ist. Geräte, "
-"die mit diesem Netzwerk verbunden sind, dürfen auf das Internet zugreifen, "
-"nicht jedoch auf andere Geräte oder die Konfigurationsschnittstelle des "
-"Routers. Die Parameter des Gastnetzwerks können auf der Gastnetzwerk-"
-"Registerkarte eingestellt werden."
+"Ermöglicht ein Wi-Fi für Gäste, das vom LAN-Netzwerk getrennt ist. "
+"Geräte, die mit diesem Netzwerk verbunden sind, dürfen auf das Internet "
+"zugreifen, nicht jedoch auf andere Geräte oder die "
+"Konfigurationsschnittstelle des Routers. Die Parameter des Gastnetzwerks "
+"können auf der Gastnetzwerk-Registerkarte eingestellt werden."
 
-#: src/common/WiFiSettings/constants.js:49
+#: src/common/WiFiSettings/constants.js:52
 msgid ""
-"The WPA3 standard is the new most secure encryption method that is suggested "
-"to be used with any device that supports it. The older devices without WPA3 "
-"support require older WPA2. If you experience issues with connecting older "
-"devices, try to enable WPA2."
+"The WPA3 standard is the new most secure encryption method that is "
+"suggested to be used with any device that supports it. The older devices "
+"without WPA3 support require older WPA2. If you experience issues with "
+"connecting older devices, try to enable WPA2."
 msgstr ""
 "Der WPA3-Standard ist die neue Verschlüsselungsmethode mit der besten "
 "Sicherheit. Er empfiehlt sich für jedes Gerät, das ihn unterstützt, aber "
-"ältere Geräte, bei denen das noch nicht der Fall ist, müssen auf das ältere "
-"WPA2 ausweichen. Falls Sie Probleme dabei haben, ältere Geräte mit dem WLAN "
-"zu verbinden, schalten Sie versuchsweise WPA2 ein."
+"ältere Geräte, bei denen das noch nicht der Fall ist, müssen auf das "
+"ältere WPA2 ausweichen. Falls Sie Probleme dabei haben, ältere Geräte mit"
+" dem WLAN zu verbinden, schalten Sie versuchsweise WPA2 ein."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -366,15 +406,15 @@ msgstr ""
 "Änderungen, die Sie vorgenommen haben, werden möglicherweise nicht "
 "gespeichert. Möchten Sie wirklich gehen?"
 
-#: src/form/components/SubmitButton.js:32
+#: src/form/components/SubmitButton.js:34
 msgid "Updating"
 msgstr "Aktualisiere"
 
-#: src/form/components/SubmitButton.js:35
+#: src/form/components/SubmitButton.js:37
 msgid "Load settings"
 msgstr "Einstellungen laden"
 
-#: src/form/components/SubmitButton.js:38
+#: src/form/components/SubmitButton.js:40
 msgid "Save"
 msgstr "Speichern"
 
@@ -414,25 +454,21 @@ msgstr "Dies ist keine gültige MAC-Adresse."
 msgid "Doesn't contain a list of emails separated by commas."
 msgstr "Enthält keine Liste von E-Mails, die durch Kommas getrennt sind."
 
-#: src/common/RebootButton.js:27
-msgid "Reboot request failed."
-msgstr "Neustart-Einleitung fehlgeschlagen."
-
-#: src/common/RebootButton.js:51
-msgid "Reboot"
-msgstr "Systemneustart"
-
-#: src/common/RebootButton.js:66
-msgid "Warning!"
-msgstr "Warnung!"
-
-#: src/common/RebootButton.js:68
-msgid "Are you sure you want to restart the router?"
-msgstr "Sind Sie sicher, dass Sie den Router neu starten wollen?"
-
-#: src/common/RebootButton.js:73
-msgid "Confirm reboot"
-msgstr "Neustart bestätigen"
-
 #~ msgid "Enable"
 #~ msgstr "Aktivieren"
+
+#~ msgid "Reboot request failed."
+#~ msgstr "Neustart-Einleitung fehlgeschlagen."
+
+#~ msgid "Reboot"
+#~ msgstr "Systemneustart"
+
+#~ msgid "Warning!"
+#~ msgstr "Warnung!"
+
+#~ msgid "Are you sure you want to restart the router?"
+#~ msgstr "Sind Sie sicher, dass Sie den Router neu starten wollen?"
+
+#~ msgid "Confirm reboot"
+#~ msgstr "Neustart bestätigen"
+

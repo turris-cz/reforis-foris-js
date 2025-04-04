@@ -1,13 +1,13 @@
 # Swedish translations for Foris JS.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-11-13 14:06+0100\n"
+"POT-Creation-Date: 2025-04-04 15:14+0200\n"
 "PO-Revision-Date: 2023-09-22 21:00+0000\n"
 "Last-Translator: Kristoffer Grundström "
 "<swedishsailfishosuser@tutanota.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -36,7 +36,7 @@ msgstr "Inget svar togs emot."
 msgid "An unknown API error occurred."
 msgstr "Ett okänt API-fel inträffade."
 
-#: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:101
+#: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
 #: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr ""
@@ -49,22 +49,46 @@ msgstr "Kopierades!"
 msgid "Copy"
 msgstr "Kopiera"
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:60
+#: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
+msgid "Increase value. Hint: Hold to increase faster."
+msgstr ""
+
+#: src/bootstrap/NumberInput.js:101 src/bootstrap/NumberInput.js:102
+msgid "Decrease value. Hint: Hold to decrease faster."
+msgstr ""
+
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
 msgid "Action successful."
 msgstr ""
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:65
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:76
 msgid "Action failed."
 msgstr ""
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:125
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:128
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
 #, fuzzy
 msgid "Confirm"
 msgstr "Bekräfta omstart"
+
+#: src/common/RichTable/RichTable.js:87
+msgid "Search…"
+msgstr ""
+
+#: src/common/RichTable/RichTableBody.js:50
+msgid "No results."
+msgstr ""
+
+#: src/common/RichTable/RichTableColumnsDropdown.js:27
+msgid "Columns"
+msgstr ""
+
+#: src/common/RichTable/RichTableColumnsDropdown.js:80
+msgid "Reset"
+msgstr ""
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
@@ -142,17 +166,22 @@ msgstr ""
 "nuvarande Wi-Fi-konfigurationen och återställa till standardvärdena."
 
 #: src/common/WiFiSettings/WiFiForm.js:97
+#, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:78
+#: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr "Lösenord"
 
 #: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
 msgstr "Göm SSID"
+
+#: src/common/WiFiSettings/WiFiForm.js:159
+msgid "Band"
+msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax mode"
@@ -164,6 +193,7 @@ msgid "Channel"
 msgstr "Avbryt"
 
 #: src/common/WiFiSettings/WiFiForm.js:211
+#: src/common/WiFiSettings/WiFiGuestForm.js:95
 msgid "Encryption"
 msgstr "Kryptering"
 
@@ -186,7 +216,7 @@ msgstr "auto"
 msgid "Custom"
 msgstr "auto"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:43
+#: src/common/WiFiSettings/WiFiGuestForm.js:45
 msgid "Enable Guest Wi-Fi"
 msgstr "Aktivera Wi-Fi för Gäst"
 
@@ -255,42 +285,52 @@ msgid "802.11ac - 80 MHz wide channel"
 msgstr "802.11ac - 80 MHz bred kanal"
 
 #: src/common/WiFiSettings/constants.js:15
+#, fuzzy
+msgid "802.11ac - 80+80 MHz wide channel"
+msgstr "802.11ac - 80 MHz bred kanal"
+
+#: src/common/WiFiSettings/constants.js:16
 msgid "802.11ac - 160 MHz wide channel"
 msgstr "802.11ac - 160 MHz bred kanal"
 
-#: src/common/WiFiSettings/constants.js:16
+#: src/common/WiFiSettings/constants.js:17
 #, fuzzy
 msgid "802.11ax - 20 MHz wide channel"
 msgstr "802.11ac - 20 MHz bred kanal"
 
-#: src/common/WiFiSettings/constants.js:17
+#: src/common/WiFiSettings/constants.js:18
 #, fuzzy
 msgid "802.11ax - 40 MHz wide channel"
 msgstr "802.11ac - 40 MHz bred kanal"
 
-#: src/common/WiFiSettings/constants.js:18
+#: src/common/WiFiSettings/constants.js:19
 #, fuzzy
 msgid "802.11ax - 80 MHz wide channel"
 msgstr "802.11ac - 80 MHz bred kanal"
 
-#: src/common/WiFiSettings/constants.js:19
+#: src/common/WiFiSettings/constants.js:20
+#, fuzzy
+msgid "802.11ax - 80+80 MHz wide channel"
+msgstr "802.11ac - 80 MHz bred kanal"
+
+#: src/common/WiFiSettings/constants.js:21
 #, fuzzy
 msgid "802.11ax - 160 MHz wide channel"
 msgstr "802.11ac - 160 MHz bred kanal"
 
-#: src/common/WiFiSettings/constants.js:26
+#: src/common/WiFiSettings/constants.js:29
 msgid "WPA3 only"
 msgstr "Endast WPA3"
 
-#: src/common/WiFiSettings/constants.js:27
+#: src/common/WiFiSettings/constants.js:30
 msgid "WPA3 with WPA2 as fallback (default)"
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:28
+#: src/common/WiFiSettings/constants.js:31
 msgid "WPA2 only"
 msgstr "Endast WPA2"
 
-#: src/common/WiFiSettings/constants.js:31
+#: src/common/WiFiSettings/constants.js:34
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
@@ -298,15 +338,15 @@ msgstr ""
 "SSID som innehåller icke-standardiserade tecken kan orsaka problem i en "
 "del enheter."
 
-#: src/common/WiFiSettings/constants.js:34
+#: src/common/WiFiSettings/constants.js:37
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:37
+#: src/common/WiFiSettings/constants.js:40
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:40
+#: src/common/WiFiSettings/constants.js:43
 msgid ""
 "The 2.4 GHz band is more widely supported by clients, but tends to have "
 "more interference. The 5 GHz band is a newer standard and may not be "
@@ -314,7 +354,7 @@ msgid ""
 "signal does not carry so well indoors."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:43
+#: src/common/WiFiSettings/constants.js:46
 msgid ""
 "Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 "
 "MHz wide channels can yield higher throughput but can cause more "
@@ -322,7 +362,7 @@ msgid ""
 "default option with 20 MHz wide channel."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:46
+#: src/common/WiFiSettings/constants.js:49
 msgid ""
 "Enables Wi-Fi for guests, which is separated from LAN network. Devices "
 "connected to this network are allowed to access the internet, but aren't "
@@ -331,7 +371,7 @@ msgid ""
 "tab."
 msgstr ""
 
-#: src/common/WiFiSettings/constants.js:49
+#: src/common/WiFiSettings/constants.js:52
 msgid ""
 "The WPA3 standard is the new most secure encryption method that is "
 "suggested to be used with any device that supports it. The older devices "
@@ -347,15 +387,15 @@ msgstr ""
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
 
-#: src/form/components/SubmitButton.js:32
+#: src/form/components/SubmitButton.js:34
 msgid "Updating"
 msgstr ""
 
-#: src/form/components/SubmitButton.js:35
+#: src/form/components/SubmitButton.js:37
 msgid "Load settings"
 msgstr ""
 
-#: src/form/components/SubmitButton.js:38
+#: src/form/components/SubmitButton.js:40
 msgid "Save"
 msgstr "Spara"
 

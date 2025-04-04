@@ -1,13 +1,13 @@
 # Russian translations for Foris JS.
-# Copyright (C) 2024 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-11-13 14:06+0100\n"
+"POT-Creation-Date: 2025-04-04 15:14+0200\n"
 "PO-Revision-Date: 2022-12-07 12:47+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -36,7 +36,7 @@ msgstr "Ответ не получен."
 msgid "An unknown API error occurred."
 msgstr "Неизвестная ошибка программного интерфейса приложения."
 
-#: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:101
+#: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
 #: src/common/WiFiSettings/WiFiQRCode.js:89
 msgid "Close"
 msgstr ""
@@ -49,23 +49,47 @@ msgstr "Скопировано!"
 msgid "Copy"
 msgstr "Копировать"
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:60
+#: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
+msgid "Increase value. Hint: Hold to increase faster."
+msgstr ""
+
+#: src/bootstrap/NumberInput.js:101 src/bootstrap/NumberInput.js:102
+msgid "Decrease value. Hint: Hold to decrease faster."
+msgstr ""
+
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
 #, fuzzy
 msgid "Action successful."
 msgstr "Настройки были успешно сохранены"
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:65
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:76
 msgid "Action failed."
 msgstr ""
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:125
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
 msgstr "Отмена"
 
-#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:128
+#: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
 #, fuzzy
 msgid "Confirm"
 msgstr "Подтвердите перезагрузку"
+
+#: src/common/RichTable/RichTable.js:87
+msgid "Search…"
+msgstr ""
+
+#: src/common/RichTable/RichTableBody.js:50
+msgid "No results."
+msgstr ""
+
+#: src/common/RichTable/RichTableColumnsDropdown.js:27
+msgid "Columns"
+msgstr ""
+
+#: src/common/RichTable/RichTableColumnsDropdown.js:80
+msgid "Reset"
+msgstr ""
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
@@ -143,17 +167,22 @@ msgstr ""
 "текущая конфигурация Wi-Fi и восстановлены значения по умолчанию."
 
 #: src/common/WiFiSettings/WiFiForm.js:97
+#, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:78
+#: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
 msgstr "Пароль"
 
 #: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
 msgstr "Скрыть SSID"
+
+#: src/common/WiFiSettings/WiFiForm.js:159
+msgid "Band"
+msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax mode"
@@ -164,6 +193,7 @@ msgid "Channel"
 msgstr "Канал"
 
 #: src/common/WiFiSettings/WiFiForm.js:211
+#: src/common/WiFiSettings/WiFiGuestForm.js:95
 msgid "Encryption"
 msgstr "Шифрование"
 
@@ -187,7 +217,7 @@ msgstr "авто"
 msgid "Custom"
 msgstr "Ручная настройка"
 
-#: src/common/WiFiSettings/WiFiGuestForm.js:43
+#: src/common/WiFiSettings/WiFiGuestForm.js:45
 msgid "Enable Guest Wi-Fi"
 msgstr "Включить гостевой Wi-Fi"
 
@@ -255,38 +285,48 @@ msgid "802.11ac - 80 MHz wide channel"
 msgstr "802.11ac - ширина канала 80 МГц"
 
 #: src/common/WiFiSettings/constants.js:15
+#, fuzzy
+msgid "802.11ac - 80+80 MHz wide channel"
+msgstr "802.11ac - ширина канала 80 МГц"
+
+#: src/common/WiFiSettings/constants.js:16
 msgid "802.11ac - 160 MHz wide channel"
 msgstr "802.11ac - ширина канала 160 МГц"
 
-#: src/common/WiFiSettings/constants.js:16
+#: src/common/WiFiSettings/constants.js:17
 msgid "802.11ax - 20 MHz wide channel"
 msgstr "802.11ax - ширина канала 20 МГц"
 
-#: src/common/WiFiSettings/constants.js:17
+#: src/common/WiFiSettings/constants.js:18
 msgid "802.11ax - 40 MHz wide channel"
 msgstr "802.11ax - ширина канала 40 МГц"
 
-#: src/common/WiFiSettings/constants.js:18
+#: src/common/WiFiSettings/constants.js:19
 msgid "802.11ax - 80 MHz wide channel"
 msgstr "802.11ax - ширина канала 80 МГц"
 
-#: src/common/WiFiSettings/constants.js:19
+#: src/common/WiFiSettings/constants.js:20
+#, fuzzy
+msgid "802.11ax - 80+80 MHz wide channel"
+msgstr "802.11ax - ширина канала 80 МГц"
+
+#: src/common/WiFiSettings/constants.js:21
 msgid "802.11ax - 160 MHz wide channel"
 msgstr "802.11ax - ширина канала 160 МГц"
 
-#: src/common/WiFiSettings/constants.js:26
+#: src/common/WiFiSettings/constants.js:29
 msgid "WPA3 only"
 msgstr "Только WPA3"
 
-#: src/common/WiFiSettings/constants.js:27
+#: src/common/WiFiSettings/constants.js:30
 msgid "WPA3 with WPA2 as fallback (default)"
 msgstr "WPA3 с WPA2 в качестве резервного (по умолчанию)"
 
-#: src/common/WiFiSettings/constants.js:28
+#: src/common/WiFiSettings/constants.js:31
 msgid "WPA2 only"
 msgstr "Только WPA2"
 
-#: src/common/WiFiSettings/constants.js:31
+#: src/common/WiFiSettings/constants.js:34
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
@@ -294,17 +334,17 @@ msgstr ""
 "SSID, содержащий нестандартные символы, может вызвать проблемы на "
 "некоторых устройствах."
 
-#: src/common/WiFiSettings/constants.js:34
+#: src/common/WiFiSettings/constants.js:37
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
 msgstr "Общий ключ WPA2/3, необходимый для подключения к сети."
 
-#: src/common/WiFiSettings/constants.js:37
+#: src/common/WiFiSettings/constants.js:40
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 "Если установлено, сеть не будет отображаться при сканировании доступных "
 "сетей."
 
-#: src/common/WiFiSettings/constants.js:40
+#: src/common/WiFiSettings/constants.js:43
 msgid ""
 "The 2.4 GHz band is more widely supported by clients, but tends to have "
 "more interference. The 5 GHz band is a newer standard and may not be "
@@ -316,7 +356,7 @@ msgstr ""
 "поддерживаться не всеми устройствами. В нем обычно меньше помех, но в "
 "помещении сигнал проходит не так хорошо."
 
-#: src/common/WiFiSettings/constants.js:43
+#: src/common/WiFiSettings/constants.js:46
 msgid ""
 "Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 "
 "MHz wide channels can yield higher throughput but can cause more "
@@ -328,7 +368,7 @@ msgstr ""
 "способность, но может вызывать больше помех в сети. Если вы не знаете, "
 "что выбрать, используйте опцию по умолчанию с каналом шириной 20 МГц."
 
-#: src/common/WiFiSettings/constants.js:46
+#: src/common/WiFiSettings/constants.js:49
 msgid ""
 "Enables Wi-Fi for guests, which is separated from LAN network. Devices "
 "connected to this network are allowed to access the internet, but aren't "
@@ -341,7 +381,7 @@ msgstr ""
 "доступ к другим устройствам и интерфейсу конфигурации маршрутизатора. "
 "Параметры гостевой сети можно настроить на вкладке Гостевая сеть."
 
-#: src/common/WiFiSettings/constants.js:49
+#: src/common/WiFiSettings/constants.js:52
 msgid ""
 "The WPA3 standard is the new most secure encryption method that is "
 "suggested to be used with any device that supports it. The older devices "
@@ -364,15 +404,15 @@ msgstr ""
 "В случае выхода ваши изменения будут утеряны. Вы действительно хотите "
 "покинуть эту страницу?"
 
-#: src/form/components/SubmitButton.js:32
+#: src/form/components/SubmitButton.js:34
 msgid "Updating"
 msgstr "Обновление"
 
-#: src/form/components/SubmitButton.js:35
+#: src/form/components/SubmitButton.js:37
 msgid "Load settings"
 msgstr "Загрузить настройки"
 
-#: src/form/components/SubmitButton.js:38
+#: src/form/components/SubmitButton.js:40
 msgid "Save"
 msgstr "Сохранить"
 

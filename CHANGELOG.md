@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.7.1] - 2025-04-04
+
+### Added
+
+- Added & updated Weblate translations
+
 ## [6.7.0] - 2025-03-11
 
 ### Added
@@ -462,7 +468,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.0...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.1...dev
+[6.7.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.0...v6.7.1
 [6.7.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.2...v6.7.0
 [6.6.2]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.1...v6.6.2
 [6.6.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.0...v6.6.1

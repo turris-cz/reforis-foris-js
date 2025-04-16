@@ -33,10 +33,7 @@ export default function WiFiQRCode({ SSID, password }) {
             <button
                 type="button"
                 className="input-group-text"
-                onClick={(e) => {
-                    e.preventDefault();
-                    setModal(true);
-                }}
+                onClick={() => setModal(true)}
             >
                 <FontAwesomeIcon
                     icon="fa-solid fa-qrcode"
@@ -45,14 +42,14 @@ export default function WiFiQRCode({ SSID, password }) {
                     className="text-secondary"
                 />
             </button>
-            {modal ? (
+            {modal && (
                 <QRCodeModal
                     setShown={setModal}
                     shown={modal}
                     SSID={SSID}
                     password={password}
                 />
-            ) : null}
+            )}
         </>
     );
 }
@@ -86,19 +83,13 @@ function QRCodeModal({ shown, setShown, SSID, password }) {
             <ModalFooter>
                 <Button
                     className="btn-secondary"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        setShown(false);
-                    }}
+                    onClick={() => setShown(false)}
                 >
                     {_("Close")}
                 </Button>
                 <Button
                     className="btn-primary"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        createAndDownloadPdf(SSID, password);
-                    }}
+                    onClick={() => createAndDownloadPdf(SSID, password)}
                 >
                     <FontAwesomeIcon
                         icon="fa-solid fa-file-download"

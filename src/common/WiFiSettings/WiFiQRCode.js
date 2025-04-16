@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -9,7 +9,7 @@ import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
-import QRCode from "qrcode.react";
+import { QRCodeSVG } from "qrcode.react";
 
 import { createAndDownloadPdf, toQRCodeContent } from "./qrCodeHelpers";
 import Button from "../../bootstrap/Button";
@@ -69,13 +69,12 @@ function QRCodeModal({ shown, setShown, SSID, password }) {
         <Modal setShown={setShown} shown={shown}>
             <ModalHeader setShown={setShown} title={_("Wi-Fi QR Code")} />
             <ModalBody>
-                <QRCode
+                <QRCodeSVG
                     className="d-block mx-auto img-logo-black"
-                    renderAs="svg"
                     value={toQRCodeContent(SSID, password)}
                     level="M"
                     size={350}
-                    includeMargin
+                    marginSize={0}
                 />
             </ModalBody>
             <ModalFooter>

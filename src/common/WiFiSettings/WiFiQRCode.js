@@ -75,6 +75,12 @@ function QRCodeModal({ shown, setShown, SSID, password }) {
                     level="M"
                     size={350}
                     marginSize={0}
+                    imageSettings={{
+                        src: "/reforis/static/reforis/imgs/turris.svg",
+                        height: 40,
+                        width: 40,
+                        excavate: true,
+                    }}
                 />
             </ModalBody>
             <ModalFooter>

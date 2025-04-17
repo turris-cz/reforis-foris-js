@@ -18,8 +18,11 @@ export const STATES = {
 };
 
 SubmitButton.propTypes = {
+    /** Disable button */
     disabled: PropTypes.bool,
+    /** Button state */
     state: PropTypes.oneOf(Object.keys(STATES).map((key) => STATES[key])),
+    /** Button label */
     label: PropTypes.string,
 };
 
@@ -34,7 +37,7 @@ export function SubmitButton({ disabled, state, label, ...props }) {
                 labelSubmitButton = _("Updating");
                 break;
             case STATES.LOAD:
-                labelSubmitButton = _("Load settings");
+                labelSubmitButton = _("Loading");
                 break;
             default:
                 labelSubmitButton = _("Save");

@@ -1,35 +1,37 @@
-Welcome! This is the official documentation for Foris JS.
+Welcome to the official Foris JS documentation!
 
-## What Foris JS is
+## About Foris JS
 
-Foris JS library is a set of components and utils for reForis application and
-plugins.
+Foris JS is a library containing reusable components and utilities designed
+specifically for the reForis application and its plugins.
 
-Please notice that all of these components or utils are used in reForis and
-plugins. If you want to study them by example, I recommend you to full-text
-search those repositories.
+**Note:** All components and utilities in this library are actively used in
+reForis and its plugins. To see practical examples of how they're implemented,
+we recommend searching through those repositories.
 
-# Installation
+## Getting Started
 
-## Prerequisites
+### Prerequisites
 
-Please make sure that [Node.js](https://nodejs.org/en/) is installed on your
-system.
+Before installing, ensure you have [Node.js](https://nodejs.org/en/) installed
+on your system.
 
-The current Long Term Support (LTS) release is an ideal starting point, see
-[here](https://github.com/nodejs/Release#release-schedule).
+We recommend using the current Long Term Support (LTS) version for optimal
+compatibility. Check the
+[release schedule](https://github.com/nodejs/Release#release-schedule) for
+details.
 
-## Installation
+### Installation
 
-To install the latest release:
+Install the latest version with:
 
-```plain
+```bash
 npm install foris
 ```
 
-To install a specific version:
+Or install a specific version by running:
 
-```plain
+```bash
 npm install foris@version
 ```
 

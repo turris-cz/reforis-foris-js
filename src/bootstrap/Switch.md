@@ -1,5 +1,5 @@
 Switch example:
 
-```js
+```jsx
 <Switch label="Enable Switch" helpText="Toggle that switch!" />
 ```

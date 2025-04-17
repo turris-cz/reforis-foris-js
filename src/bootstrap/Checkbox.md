@@ -4,7 +4,7 @@ using in foris forms.
 All additional `props` are passed to the `<input type="checkbox">` HTML
 component.
 
-```js
+```jsx
 import { useState } from "react";
 const [value, setValue] = useState(false);
 

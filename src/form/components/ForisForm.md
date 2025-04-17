@@ -6,26 +6,30 @@ comfort API and allows to create typical Foris module forms easily.
 
 You can pass more forms as children.
 
-```js
-<ForisForm
-    ws={ws}
-    forisConfig={{
-        endpoint: API_URLs.wan,
-        wsModule: "wan",
-    }}
-    prepData={prepData}
-    prepDataToSubmit={prepDataToSubmit}
-    validator={validator}
->
-    <WANForm />
-    <WAN6Form />
-    <MACForm />
-</ForisForm>
+```jsx static
+export default function WAN({ ws }) {
+    return (
+        <ForisForm
+            ws={ws}
+            forisConfig={{
+                endpoint: API_URLs.wan,
+                wsModule: "wan",
+            }}
+            prepData={prepData}
+            prepDataToSubmit={prepDataToSubmit}
+            validator={validator}
+        >
+            <WANForm />
+            <WAN6Form />
+            <MACForm />
+        </ForisForm>
+    );
+}
 ```
 
 ### Example of children forms `props` usage
 
-```js
+```jsx static
 export default function MACForm({
     formData,
     formErrors,
@@ -64,9 +68,9 @@ export default function MACForm({
 }
 ```
 
-The <ForisForm/> passes subsequent `props` to the child components.
+The `<ForisForm/>` passes subsequent `props` to the child components.
 
-| Prop           | Type   | Description                                                                |
+| Prop name      | Type   | Description                                                                |
 | -------------- | ------ | -------------------------------------------------------------------------- |
 | `formData`     | object | Data returned from API.                                                    |
 | `formErrors`   | object | Errors returned after validation via validator.                            |

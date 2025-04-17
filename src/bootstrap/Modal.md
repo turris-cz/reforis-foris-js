@@ -6,9 +6,9 @@ the page since modals are rendered in portals.
 Modals also have three optional sizes, which can be defined through the `size`
 prop:
 
--   small - `sm`
--   large - `lg`
--   extra-large - `xl`
+- small - `sm`
+- large - `lg`
+- extra-large - `xl`
 
 For more details please visit Bootstrap
 <a href="https://getbootstrap.com/docs/4.5/components/modal/#optional-sizes" target="_blank">
@@ -18,7 +18,7 @@ documentation</a>.
 <div id="modal-container" />
 ```
 
-```js
+```jsx
 import { ModalHeader, ModalBody, ModalFooter } from "./Modal";
 
 import { useState } from "react";

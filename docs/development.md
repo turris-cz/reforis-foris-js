@@ -1,25 +1,27 @@
-Sooner or later, you will face with situation when you want/need to make some
-changes in the library. Then the most important tool for you it's the
-[`npm link`](https://docs.npmjs.com/cli/link).
+At some point, you'll likely need to modify the library. When that happens, your
+best friend will be [`npm link`](https://docs.npmjs.com/cli/link).
 
-Please, notice that it will not work if you link the library just from the root
-of the repo. It happens due to the location of sources `./src`. You need to pack
-the library first, `make pack` and then link it from the `./dist` directory.
+**Important Note:** Simply linking from the repo root won't work because the
+source files are in `./src`. Instead, you'll need to:
 
-Yeah, it's not such a comfortable solution for development. But it can be fixed
-by writing a small script similar to making a pack but by linking every file and
-directory from `./src` to the same directory and linking then from it. Notice
-that you need to link a `package.json` and a `package-lock.json` as well.
+1. First package the library using `make pack`
+2. Then link it from the `./dist` directory
 
-So step by step:
+While this isn't the most developer-friendly workflow, you can improve it by
+creating a script that:
+
+- Symlinks all files/directories from `./src` to another location
+- Also links `package.json` and `package-lock.json`
+
+## Quick Start Guide
 
 ```bash
-make pack;
-cd dist;
-npm link;
+# Package and link the library
+make pack
+cd dist
+npm link
 
-cd $project_dir/js # Navigate to JS directory of the project where you want to link the library
+# Link to your project
+cd /path/to/your/project/js  # Navigate to your project's JS directory
 npm link foris
 ```
-
-And that's it ;)

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -9,7 +9,7 @@ import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
-import QRCode from "qrcode.react";
+import { QRCodeSVG } from "qrcode.react";
 
 import { createAndDownloadPdf, toQRCodeContent } from "./qrCodeHelpers";
 import Button from "../../bootstrap/Button";
@@ -33,10 +33,7 @@ export default function WiFiQRCode({ SSID, password }) {
             <button
                 type="button"
                 className="input-group-text"
-                onClick={(e) => {
-                    e.preventDefault();
-                    setModal(true);
-                }}
+                onClick={() => setModal(true)}
             >
                 <FontAwesomeIcon
                     icon="fa-solid fa-qrcode"
@@ -45,14 +42,14 @@ export default function WiFiQRCode({ SSID, password }) {
                     className="text-secondary"
                 />
             </button>
-            {modal ? (
+            {modal && (
                 <QRCodeModal
                     setShown={setModal}
                     shown={modal}
                     SSID={SSID}
                     password={password}
                 />
-            ) : null}
+            )}
         </>
     );
 }
@@ -69,31 +66,30 @@ function QRCodeModal({ shown, setShown, SSID, password }) {
         <Modal setShown={setShown} shown={shown}>
             <ModalHeader setShown={setShown} title={_("Wi-Fi QR Code")} />
             <ModalBody>
-                <QRCode
+                <QRCodeSVG
                     className="d-block mx-auto img-logo-black"
-                    renderAs="svg"
                     value={toQRCodeContent(SSID, password)}
                     level="M"
                     size={350}
-                    includeMargin
+                    marginSize={0}
+                    imageSettings={{
+                        src: "/reforis/static/reforis/imgs/turris.svg",
+                        height: 40,
+                        width: 40,
+                        excavate: true,
+                    }}
                 />
             </ModalBody>
             <ModalFooter>
                 <Button
                     className="btn-secondary"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        setShown(false);
-                    }}
+                    onClick={() => setShown(false)}
                 >
                     {_("Close")}
                 </Button>
                 <Button
                     className="btn-primary"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        createAndDownloadPdf(SSID, password);
-                    }}
+                    onClick={() => createAndDownloadPdf(SSID, password)}
                 >
                     <FontAwesomeIcon
                         icon="fa-solid fa-file-download"

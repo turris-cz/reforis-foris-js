@@ -5,8 +5,9 @@ All additional `props` are passed to the `<input type="number">` HTML component.
 
 Unless `helpText` is set for one of the options they are displayed inline.
 
-```js
+```jsx
 import { useState } from "react";
+
 const CHOICES = [
     { value: "one", label: "1" },
     { value: "two", label: "2" },

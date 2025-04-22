@@ -3,7 +3,7 @@ structure for using in foris forms.
 
 All additional `props` are passed to the `<input type="file">` HTML component.
 
-```js
+```jsx
 import { useState } from "react";
 
 const [files, setFiles] = useState([]);
@@ -23,7 +23,7 @@ const label = files.length === 1 ? files[0].name : "Choose file";
 
 ### FileInput with multiple files
 
-```js
+```jsx
 import { useState } from "react";
 
 const [files, setFiles] = useState([]);

@@ -1,6 +1,6 @@
 {
     "name": "foris",
-    "version": "6.7.1",
+    "version": "6.7.2",
     "description": "Foris JS library is a set of components and utils for reForis application and plugins.",
     "author": "CZ.NIC, z.s.p.o.",
     "repository": {
@@ -61,6 +61,9 @@
         "snapshot-diff": "^0.10.0",
         "style-loader": "^4.0.0",
         "webpack": "^5.98.0"
+    },
+    "overrides": {
+        "markdown-to-jsx": "^7.7.4"
     },
     "scripts": {
         "lint": "eslint src",

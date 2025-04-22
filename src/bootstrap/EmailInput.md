@@ -4,10 +4,12 @@ checking. It's only meaningful using inside `<form>`.
 
 All additional `props` are passed to the `<input type="email">` HTML component.
 
-```js
+```jsx
 import { useState } from "react";
 import Button from "./Button";
+
 const [email, setEmail] = useState("Wrong email");
+
 <form onSubmit={(e) => e.preventDefault()}>
     <EmailInput
         value={email}

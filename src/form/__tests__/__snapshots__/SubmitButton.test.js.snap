@@ -13,7 +13,7 @@ exports[`<SubmitButton/> Render load 1`] = `
       role="status"
     />
     <span>
-      Load settings
+      Loading
     </span>
   </button>
 </div>

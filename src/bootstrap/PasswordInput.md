@@ -4,7 +4,7 @@ for using in foris forms. Can be used with "eye" button, see example.
 All additional `props` are passed to the `<input type="password">` HTML
 component.
 
-```js
+```jsx
 import { useState } from "react";
 const [value, setValue] = useState("secret");
 

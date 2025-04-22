@@ -2,7 +2,7 @@ ThreeDotsMenu Bootstrap component is a dropdown menu that appears when the user
 clicks on three dots. It is used to display a list of actions that can be
 performed on a particular item.
 
-```js
+```jsx
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";

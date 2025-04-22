@@ -3,8 +3,9 @@ and structure for using in foris forms.
 
 All additional `props` are passed to the `<select>` HTML component.
 
-```js
+```jsx
 import { useState } from "react";
+
 const CHOICES = {
     apple: "Apple",
     banana: "Banana",

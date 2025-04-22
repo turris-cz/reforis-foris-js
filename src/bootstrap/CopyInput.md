@@ -4,7 +4,7 @@ be used with `readOnly` and `disabled` parameters, please see an example.
 
 All additional `props` are passed to the `<input type="text">` HTML component.
 
-```js
+```jsx
 import React, { useState } from "react";
 const [value, setValue] = useState("Text to appear in clipboard.");
 

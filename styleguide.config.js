@@ -1,10 +1,11 @@
 /*
- * Copyright (C) 2019-2022 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 const path = require("path");
+
 const pjson = require("./package.json");
 
 module.exports = {
@@ -14,6 +15,50 @@ module.exports = {
         color: {
             link: "#0075a3",
             linkHover: "#00a2e2",
+        },
+        fontFamily: {
+            base: '"Roboto", sans-serif',
+        },
+        sidebarWidth: 255,
+    },
+    template: {
+        favicon: "/docs/components/logo.svg",
+        head: {
+            links: [
+                {
+                    rel: "stylesheet",
+                    href: "https://fonts.googleapis.com/css?family=Roboto",
+                },
+            ],
+        },
+    },
+    styles: {
+        StyleGuide: {
+            logo: {
+                display: "flex",
+                alignItems: "center",
+            },
+        },
+        Logo: {
+            logo: {
+                display: "inline-flex",
+            },
+        },
+        Version: {
+            version: {
+                display: "inline-flex",
+                margin: "none",
+                marginLeft: "8px",
+                fontSize: "0.6rem",
+                fontWeight: "bold",
+                padding: "0.1rem 0.2rem",
+                color: "#fff",
+                backgroundColor: "#6c757d",
+                borderRadius: "5px",
+                textAlign: "center",
+                verticalAlign: "middle",
+                whiteSpace: "nowrap",
+            },
         },
     },
     tocMode: "collapse",
@@ -77,9 +122,6 @@ module.exports = {
             usageMode: "expand",
         },
     ],
-    template: {
-        favicon: "/docs/components/logo.svg",
-    },
     require: [
         "babel-polyfill",
         path.join(__dirname, "src/testUtils/mockGlobals.js"),

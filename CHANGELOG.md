@@ -8,6 +8,24 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.7.2] - 2025-04-22
+
+### Added
+
+- Added Turris logo to enhanced QR code display
+
+### Changed
+
+- Replaced deprecated QRCode component with QRCodeSVG
+- Refactored button click handlers to simplify event handling in WiFiQRCode
+- Re-resolved and re-locked all npm dependencies in package-lock.json
+- Overridden markdown-to-jsx version in order to solve audit issues
+- docs: Enhanced styleguide configuration with new font and layout options
+- docs: Refactored development and introduction sections
+- docs: Fixed code snippets syntax highlighting & some refactoring
+- docs: Updated SubmitButton component
+- NPM audit fix
+
 ## [6.7.1] - 2025-04-04
 
 ### Added
@@ -468,7 +486,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.1...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.2...dev
+[6.7.2]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.1...v6.7.2
 [6.7.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.0...v6.7.1
 [6.7.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.2...v6.7.0
 [6.6.2]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.1...v6.6.2

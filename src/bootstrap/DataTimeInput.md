@@ -4,7 +4,7 @@ Adopted from `react-datetime/DateTime` datatime picker component. It uses
 It requires `ForisTranslations.locale` to be defined in order to use right
 locale.
 
-```js
+```jsx
 ForisTranslations = { locale: "en" };
 
 import { useState, useEffect } from "react";

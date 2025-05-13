@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-04 15:14+0200\n"
-"PO-Revision-Date: 2025-04-16 15:01+0000\n"
-"Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
+"PO-Revision-Date: 2025-05-14 21:01+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/cs/"
 ">\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -47,7 +47,7 @@ msgstr "Zkopírováno!"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copy"
-msgstr "Kopírovat"
+msgstr "Zkopírovat"
 
 #: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
 msgid "Increase value. Hint: Hold to increase faster."
@@ -160,9 +160,9 @@ msgid ""
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
-"Pokud se počet bezdrátových karet neshoduje, můžete zkusit obnovit "
-"nastavení Wi-Fi. Je třeba upozornit, že se tím odstraní stávající "
-"nastavení Wi-Fi a obnoví se výchozí hodnoty."
+"Pokud se počet bezdrátových karet neshoduje, můžete zkusit resetovat "
+"nastavení Wi-Fi. Je třeba upozornit, že tím budou stávající nastavení Wi-Fi "
+"odstraněna a namísto nich vráceny jen výchozí hodnoty."
 
 #: src/common/WiFiSettings/WiFiForm.js:97
 #, python-brace-format

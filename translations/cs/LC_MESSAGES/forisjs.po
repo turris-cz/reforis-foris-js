@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-04 15:14+0200\n"
-"PO-Revision-Date: 2025-05-14 21:01+0000\n"
+"PO-Revision-Date: 2025-05-17 11:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/cs/"
 ">\n"
@@ -87,7 +87,7 @@ msgstr "Sloupce"
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr "Resetovat"
+msgstr "Navrátit"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"

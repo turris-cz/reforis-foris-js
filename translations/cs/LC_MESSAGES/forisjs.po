@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-04 15:14+0200\n"
-"PO-Revision-Date: 2025-05-17 11:01+0000\n"
+"PO-Revision-Date: 2025-05-18 10:50+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/cs/"
 ">\n"
@@ -226,7 +226,7 @@ msgstr "Ukázat QR kód"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:70
 msgid "Wi-Fi QR Code"
-msgstr "Wi-Fi QR kód"
+msgstr "QR kód k Wi-Fi"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:102
 msgid "Download PDF"
@@ -255,7 +255,7 @@ msgstr "Je třeba, aby heslo obsahovalo alespoň 8 znaků"
 #: src/common/WiFiSettings/WiFiSettings.js:91
 #: src/common/WiFiSettings/WiFiSettings.js:110
 msgid "Password must not contain more than 63 symbols"
-msgstr "Heslo nemůže obsahovat více než 63 znaků"
+msgstr "Heslo nemůže být delší než 63 znaků"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"

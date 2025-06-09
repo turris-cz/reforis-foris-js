@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-04 15:14+0200\n"
-"PO-Revision-Date: 2024-12-14 10:00+0000\n"
+"PO-Revision-Date: 2025-06-10 22:01+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-js/"
+"sk/>\n"
 "Language: sk\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-"
-"js/sk/>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -50,11 +51,11 @@ msgstr "Kopírovať"
 
 #: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
 msgid "Increase value. Hint: Hold to increase faster."
-msgstr ""
+msgstr "Zvýšiť hodnotu. Tip: Podržte, aby ste zvýšili rýchlejšie."
 
 #: src/bootstrap/NumberInput.js:101 src/bootstrap/NumberInput.js:102
 msgid "Decrease value. Hint: Hold to decrease faster."
-msgstr ""
+msgstr "Znížiť hodnotu. Tip: Podržte, aby ste znížili rýchlejšie."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
 msgid "Action successful."
@@ -74,19 +75,19 @@ msgstr "Potvrdiť"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
-msgstr ""
+msgstr "Hľadať…"
 
 #: src/common/RichTable/RichTableBody.js:50
 msgid "No results."
-msgstr ""
+msgstr "Žiadne výsledky."
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:27
 msgid "Columns"
-msgstr ""
+msgstr "Stĺpce"
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr ""
+msgstr "Reset"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
@@ -179,7 +180,7 @@ msgstr "Skryť SSID"
 
 #: src/common/WiFiSettings/WiFiForm.js:159
 msgid "Band"
-msgstr ""
+msgstr "Pásmo"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax mode"
@@ -281,9 +282,8 @@ msgid "802.11ac - 80 MHz wide channel"
 msgstr "802.11ac – šírka kanála 80 MHz"
 
 #: src/common/WiFiSettings/constants.js:15
-#, fuzzy
 msgid "802.11ac - 80+80 MHz wide channel"
-msgstr "802.11ac – šírka kanála 80 MHz"
+msgstr "802.11ac – šírka kanála 80+80 MHz"
 
 #: src/common/WiFiSettings/constants.js:16
 msgid "802.11ac - 160 MHz wide channel"
@@ -302,9 +302,8 @@ msgid "802.11ax - 80 MHz wide channel"
 msgstr "802.11ax – šírka kanála 80 MHz"
 
 #: src/common/WiFiSettings/constants.js:20
-#, fuzzy
 msgid "802.11ax - 80+80 MHz wide channel"
-msgstr "802.11ax – šírka kanála 80 MHz"
+msgstr "802.11ax – šírka kanála 80+80 MHz"
 
 #: src/common/WiFiSettings/constants.js:21
 msgid "802.11ax - 160 MHz wide channel"
@@ -485,4 +484,3 @@ msgstr "Neobsahuje zoznam e-mailov oddelených čiarkami."
 
 #~ msgid "Are you sure you want to restart the router?"
 #~ msgstr "Naozaj sa má router reštartovať?"
-

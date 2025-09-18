@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-04 15:14+0200\n"
-"PO-Revision-Date: 2022-12-07 12:47+0000\n"
+"POT-Creation-Date: 2025-09-18 17:24+0300\n"
+"PO-Revision-Date: 2025-04-11 04:12+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
 "Language: ru\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-"
 "js/ru/>\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,9 +37,9 @@ msgid "An unknown API error occurred."
 msgstr "Неизвестная ошибка программного интерфейса приложения."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
-#: src/common/WiFiSettings/WiFiQRCode.js:89
+#: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
-msgstr ""
+msgstr "Закрыть"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
@@ -51,97 +51,95 @@ msgstr "Копировать"
 
 #: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
 msgid "Increase value. Hint: Hold to increase faster."
-msgstr ""
+msgstr "Увеличить значение. Подсказка: удерживайте, чтобы увеличить скорости."
 
 #: src/bootstrap/NumberInput.js:101 src/bootstrap/NumberInput.js:102
 msgid "Decrease value. Hint: Hold to decrease faster."
-msgstr ""
+msgstr "Уменьшить значение. Подсказка: удерживайте, чтобы увеличить скорость."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
-#, fuzzy
 msgid "Action successful."
-msgstr "Настройки были успешно сохранены"
+msgstr "Действие успешно выполнено."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:76
 msgid "Action failed."
-msgstr ""
+msgstr "Действие не выполнено."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
 msgstr "Отмена"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
-#, fuzzy
 msgid "Confirm"
-msgstr "Подтвердите перезагрузку"
+msgstr "Подтвердить"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
-msgstr ""
+msgstr "Поиск…"
 
 #: src/common/RichTable/RichTableBody.js:50
 msgid "No results."
-msgstr ""
+msgstr "Нет результатов."
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:27
 msgid "Columns"
-msgstr ""
+msgstr "Столбцы"
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
-msgstr ""
+msgstr "Сортировать по возрастанию"
 
 #: src/common/RichTable/RichTableHeader.js:30
 msgid "Sort descending"
-msgstr ""
+msgstr "Сортировать по убыванию"
 
 #: src/common/RichTable/RichTableHeader.js:31
 msgid "Clear sort"
-msgstr ""
+msgstr "Очистить сортировку"
 
 #: src/common/RichTable/RichTablePagination.js:65
 msgid "Pagination navigation bar"
-msgstr ""
+msgstr "Панель навигации по страницам"
 
 #: src/common/RichTable/RichTablePagination.js:71
 msgid "First page"
-msgstr ""
+msgstr "Первая страница"
 
 #: src/common/RichTable/RichTablePagination.js:77
 msgid "Previous page"
-msgstr ""
+msgstr "Предыдущая страница"
 
 #: src/common/RichTable/RichTablePagination.js:83
 msgid "Next page"
-msgstr ""
+msgstr "Следующая страница"
 
 #: src/common/RichTable/RichTablePagination.js:89
 msgid "Last page"
-msgstr ""
+msgstr "Последняя страница"
 
 #: src/common/RichTable/RichTablePagination.js:95
 msgid "Page"
-msgstr ""
+msgstr "Страница"
 
 #: src/common/RichTable/RichTablePagination.js:98
 msgid "of"
-msgstr ""
+msgstr "из"
 
 #: src/common/RichTable/RichTablePagination.js:106
 msgid "Rows per page:"
-msgstr ""
+msgstr "Строк на странице:"
 
 #: src/common/RichTable/RichTablePagination.js:109
 msgid "Select rows per page"
-msgstr ""
+msgstr "Выберите строки на странице"
 
 #: src/common/RichTable/RichTablePagination.js:121
 msgid "All"
-msgstr ""
+msgstr "Все"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
@@ -182,7 +180,7 @@ msgstr "Скрыть SSID"
 
 #: src/common/WiFiSettings/WiFiForm.js:159
 msgid "Band"
-msgstr ""
+msgstr "Диапазон"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax mode"
@@ -221,17 +219,16 @@ msgstr "Ручная настройка"
 msgid "Enable Guest Wi-Fi"
 msgstr "Включить гостевой Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:43
-#: src/common/WiFiSettings/WiFiQRCode.js:44
-#, fuzzy
+#: src/common/WiFiSettings/WiFiQRCode.js:40
+#: src/common/WiFiSettings/WiFiQRCode.js:41
 msgid "Show QR code"
-msgstr "QR-код Wi-Fi"
+msgstr "Показать QR-код"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:70
+#: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
 msgstr "QR-код Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:102
+#: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
 msgstr "Скачать PDF"
 
@@ -285,9 +282,8 @@ msgid "802.11ac - 80 MHz wide channel"
 msgstr "802.11ac - ширина канала 80 МГц"
 
 #: src/common/WiFiSettings/constants.js:15
-#, fuzzy
 msgid "802.11ac - 80+80 MHz wide channel"
-msgstr "802.11ac - ширина канала 80 МГц"
+msgstr "802.11ac - канал шириной 80+80 МГц"
 
 #: src/common/WiFiSettings/constants.js:16
 msgid "802.11ac - 160 MHz wide channel"
@@ -306,9 +302,8 @@ msgid "802.11ax - 80 MHz wide channel"
 msgstr "802.11ax - ширина канала 80 МГц"
 
 #: src/common/WiFiSettings/constants.js:20
-#, fuzzy
 msgid "802.11ax - 80+80 MHz wide channel"
-msgstr "802.11ax - ширина канала 80 МГц"
+msgstr "802.11ax - канал шириной 80+80 МГц"
 
 #: src/common/WiFiSettings/constants.js:21
 msgid "802.11ax - 160 MHz wide channel"
@@ -404,15 +399,16 @@ msgstr ""
 "В случае выхода ваши изменения будут утеряны. Вы действительно хотите "
 "покинуть эту страницу?"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:37
 msgid "Updating"
 msgstr "Обновление"
 
-#: src/form/components/SubmitButton.js:37
-msgid "Load settings"
+#: src/form/components/SubmitButton.js:40
+#, fuzzy
+msgid "Loading"
 msgstr "Загрузить настройки"
 
-#: src/form/components/SubmitButton.js:40
+#: src/form/components/SubmitButton.js:43
 msgid "Save"
 msgstr "Сохранить"
 

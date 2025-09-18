@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-04 15:14+0200\n"
+"POT-Creation-Date: 2025-09-18 17:24+0300\n"
 "PO-Revision-Date: 2024-12-14 10:00+0000\n"
 "Last-Translator: ButterflyOfFire "
 "<boffire@users.noreply.hosted.weblate.org>\n"
@@ -37,7 +37,7 @@ msgid "An unknown API error occurred."
 msgstr "Une erreur d’API inconnue s’est produite."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
-#: src/common/WiFiSettings/WiFiQRCode.js:89
+#: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
 msgstr "Fermer"
 
@@ -220,17 +220,17 @@ msgstr "Personnalisé"
 msgid "Enable Guest Wi-Fi"
 msgstr "Activer le mode Wi-Fi invité"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:43
-#: src/common/WiFiSettings/WiFiQRCode.js:44
+#: src/common/WiFiSettings/WiFiQRCode.js:40
+#: src/common/WiFiSettings/WiFiQRCode.js:41
 #, fuzzy
 msgid "Show QR code"
 msgstr "Code QR Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:70
+#: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
 msgstr "Code QR Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:102
+#: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
 msgstr "Télécharger le PDF"
 
@@ -429,15 +429,16 @@ msgstr ""
 "Il se peut que vos modifications ne soient pas enregistrées. Êtes-vous "
 "sûr de vouloir quitter ?"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:37
 msgid "Updating"
 msgstr "Mise à jour en cours"
 
-#: src/form/components/SubmitButton.js:37
-msgid "Load settings"
+#: src/form/components/SubmitButton.js:40
+#, fuzzy
+msgid "Loading"
 msgstr "Charger les paramètres"
 
-#: src/form/components/SubmitButton.js:40
+#: src/form/components/SubmitButton.js:43
 msgid "Save"
 msgstr "Enregistrer"
 

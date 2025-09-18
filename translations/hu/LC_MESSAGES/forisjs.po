@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-04 15:14+0200\n"
+"POT-Creation-Date: 2025-09-18 17:24+0300\n"
 "PO-Revision-Date: 2021-01-07 01:26+0000\n"
 "Last-Translator: Zoli <boritek@gmail.com>\n"
 "Language: hu\n"
@@ -36,7 +36,7 @@ msgid "An unknown API error occurred."
 msgstr "Ismeretlen API-hiba történt."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
-#: src/common/WiFiSettings/WiFiQRCode.js:89
+#: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
 msgstr ""
 
@@ -214,16 +214,16 @@ msgstr ""
 msgid "Enable Guest Wi-Fi"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:43
-#: src/common/WiFiSettings/WiFiQRCode.js:44
+#: src/common/WiFiSettings/WiFiQRCode.js:40
+#: src/common/WiFiSettings/WiFiQRCode.js:41
 msgid "Show QR code"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:70
+#: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:102
+#: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
 msgstr ""
 
@@ -373,15 +373,16 @@ msgstr ""
 "Lehet, hogy az Ön által végrehajtott módosításokat nem menti a rendszer. "
 "Biztosan el akar menni?"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:37
 msgid "Updating"
 msgstr "Frissítés"
 
-#: src/form/components/SubmitButton.js:37
-msgid "Load settings"
+#: src/form/components/SubmitButton.js:40
+#, fuzzy
+msgid "Loading"
 msgstr "Beállítások betöltése"
 
-#: src/form/components/SubmitButton.js:40
+#: src/form/components/SubmitButton.js:43
 msgid "Save"
 msgstr "Mentés"
 

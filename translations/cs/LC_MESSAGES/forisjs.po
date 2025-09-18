@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-04 15:14+0200\n"
-"PO-Revision-Date: 2024-11-15 06:01+0000\n"
+"POT-Creation-Date: 2025-09-18 17:24+0300\n"
+"PO-Revision-Date: 2025-05-18 10:50+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language: cs\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-"
@@ -36,7 +36,7 @@ msgid "An unknown API error occurred."
 msgstr "Došlo k neznámé chybě v aplikačním programovém rozhraní."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
-#: src/common/WiFiSettings/WiFiQRCode.js:89
+#: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
 msgstr "Zavřít"
 
@@ -46,15 +46,15 @@ msgstr "Zkopírováno!"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copy"
-msgstr "Kopírovat"
+msgstr "Zkopírovat"
 
 #: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
 msgid "Increase value. Hint: Hold to increase faster."
-msgstr ""
+msgstr "Zvýšit hodnotu. Tip: Podržte k rychlejšímu zvyšování."
 
 #: src/bootstrap/NumberInput.js:101 src/bootstrap/NumberInput.js:102
 msgid "Decrease value. Hint: Hold to decrease faster."
-msgstr ""
+msgstr "Snížit hodnotu. Tip: Podržte k rychlejšímu snižování."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
 msgid "Action successful."
@@ -74,19 +74,19 @@ msgstr "Potvrdit"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
-msgstr ""
+msgstr "Hledat…"
 
 #: src/common/RichTable/RichTableBody.js:50
 msgid "No results."
-msgstr ""
+msgstr "Žádné výsledky."
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:27
 msgid "Columns"
-msgstr ""
+msgstr "Sloupce"
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr ""
+msgstr "Navrátit"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
@@ -159,9 +159,9 @@ msgid ""
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
-"Pokud se počet bezdrátových karet neshoduje, můžete zkusit obnovit "
-"nastavení Wi-Fi. Je třeba upozornit, že se tím odstraní stávající "
-"nastavení Wi-Fi a obnoví se výchozí hodnoty."
+"Pokud se počet bezdrátových karet neshoduje, můžete zkusit resetovat "
+"nastavení Wi-Fi. Je třeba upozornit, že tím budou stávající nastavení Wi-"
+"Fi odstraněna a namísto nich vráceny jen výchozí hodnoty."
 
 #: src/common/WiFiSettings/WiFiForm.js:97
 #, python-brace-format
@@ -179,7 +179,7 @@ msgstr "Skrýt SSID"
 
 #: src/common/WiFiSettings/WiFiForm.js:159
 msgid "Band"
-msgstr ""
+msgstr "Pásmo"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax mode"
@@ -218,16 +218,16 @@ msgstr "Uživatelsky určené"
 msgid "Enable Guest Wi-Fi"
 msgstr "Zapnout Wi-Fi pro hosty"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:43
-#: src/common/WiFiSettings/WiFiQRCode.js:44
+#: src/common/WiFiSettings/WiFiQRCode.js:40
+#: src/common/WiFiSettings/WiFiQRCode.js:41
 msgid "Show QR code"
 msgstr "Ukázat QR kód"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:70
+#: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
-msgstr "Wi-Fi QR kód"
+msgstr "QR kód k Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:102
+#: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
 msgstr "Stáhnout PDF"
 
@@ -254,7 +254,7 @@ msgstr "Je třeba, aby heslo obsahovalo alespoň 8 znaků"
 #: src/common/WiFiSettings/WiFiSettings.js:91
 #: src/common/WiFiSettings/WiFiSettings.js:110
 msgid "Password must not contain more than 63 symbols"
-msgstr "Heslo nemůže obsahovat více než 63 znaků"
+msgstr "Heslo nemůže být delší než 63 znaků"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
@@ -281,9 +281,8 @@ msgid "802.11ac - 80 MHz wide channel"
 msgstr "802.11ac – kanál šíře 80 MHz"
 
 #: src/common/WiFiSettings/constants.js:15
-#, fuzzy
 msgid "802.11ac - 80+80 MHz wide channel"
-msgstr "802.11ac – kanál šíře 80 MHz"
+msgstr "802.11ac – kanál šíře 80+80 MHz"
 
 #: src/common/WiFiSettings/constants.js:16
 msgid "802.11ac - 160 MHz wide channel"
@@ -302,9 +301,8 @@ msgid "802.11ax - 80 MHz wide channel"
 msgstr "802.11ax – kanál šíře 80 MHz"
 
 #: src/common/WiFiSettings/constants.js:20
-#, fuzzy
 msgid "802.11ax - 80+80 MHz wide channel"
-msgstr "802.11ax – kanál šíře 80 MHz"
+msgstr "802.11ax – kanál šíře 80+80 MHz"
 
 #: src/common/WiFiSettings/constants.js:21
 msgid "802.11ax - 160 MHz wide channel"
@@ -399,15 +397,16 @@ msgstr ""
 "Změny, které byly provedeny, nebyly uloženy. Jste si jistý, že chcete "
 "opustit stránku?"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:37
 msgid "Updating"
 msgstr "Aktualizuje se"
 
-#: src/form/components/SubmitButton.js:37
-msgid "Load settings"
+#: src/form/components/SubmitButton.js:40
+#, fuzzy
+msgid "Loading"
 msgstr "Načíst nastavení"
 
-#: src/form/components/SubmitButton.js:40
+#: src/form/components/SubmitButton.js:43
 msgid "Save"
 msgstr "Uložit"
 

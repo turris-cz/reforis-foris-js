@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Foris JS 6.7.0\n"
+"Project-Id-Version: Foris JS 6.7.2\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
-"POT-Creation-Date: 2025-04-04 15:14+0200\n"
+"POT-Creation-Date: 2025-09-18 17:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgid "An unknown API error occurred."
 msgstr ""
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
-#: src/common/WiFiSettings/WiFiQRCode.js:89
+#: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
 msgstr ""
 
@@ -211,16 +211,16 @@ msgstr ""
 msgid "Enable Guest Wi-Fi"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:43
-#: src/common/WiFiSettings/WiFiQRCode.js:44
+#: src/common/WiFiSettings/WiFiQRCode.js:40
+#: src/common/WiFiSettings/WiFiQRCode.js:41
 msgid "Show QR code"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:70
+#: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:102
+#: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
 msgstr ""
 
@@ -368,15 +368,15 @@ msgstr ""
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:37
 msgid "Updating"
 msgstr ""
 
-#: src/form/components/SubmitButton.js:37
-msgid "Load settings"
+#: src/form/components/SubmitButton.js:40
+msgid "Loading"
 msgstr ""
 
-#: src/form/components/SubmitButton.js:40
+#: src/form/components/SubmitButton.js:43
 msgid "Save"
 msgstr ""
 

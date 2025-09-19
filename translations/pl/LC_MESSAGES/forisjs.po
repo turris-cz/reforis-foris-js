@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-04 15:14+0200\n"
+"POT-Creation-Date: 2025-09-18 17:24+0300\n"
 "PO-Revision-Date: 2023-03-07 16:37+0000\n"
 "Last-Translator: Arusekk <arek_koz@o2.pl>\n"
 "Language: pl\n"
@@ -37,7 +37,7 @@ msgid "An unknown API error occurred."
 msgstr "Wystąpił nieznany błąd API."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
-#: src/common/WiFiSettings/WiFiQRCode.js:89
+#: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
 msgstr ""
 
@@ -216,16 +216,16 @@ msgstr "Własny"
 msgid "Enable Guest Wi-Fi"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:43
-#: src/common/WiFiSettings/WiFiQRCode.js:44
+#: src/common/WiFiSettings/WiFiQRCode.js:40
+#: src/common/WiFiSettings/WiFiQRCode.js:41
 msgid "Show QR code"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:70
+#: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiQRCode.js:102
+#: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
 msgstr ""
 
@@ -375,15 +375,16 @@ msgstr ""
 "Wprowadzone zmiany mogą nie zostać zapisane. Jesteś pewny, że chcesz "
 "wyjść?"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:37
 msgid "Updating"
 msgstr "Aktualizacja"
 
-#: src/form/components/SubmitButton.js:37
-msgid "Load settings"
+#: src/form/components/SubmitButton.js:40
+#, fuzzy
+msgid "Loading"
 msgstr "Wczytaj ustawienia"
 
-#: src/form/components/SubmitButton.js:40
+#: src/form/components/SubmitButton.js:43
 msgid "Save"
 msgstr "Zapisz"
 

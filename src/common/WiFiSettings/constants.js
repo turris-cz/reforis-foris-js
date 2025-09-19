@@ -19,6 +19,11 @@ export const HTMODES = {
     HE80: _("802.11ax - 80 MHz wide channel"),
     HE80_80: _("802.11ax - 80+80 MHz wide channel"),
     HE160: _("802.11ax - 160 MHz wide channel"),
+    EHT20: _("802.11be - 20 MHz wide channel"),
+    EHT40: _("802.11be - 40 MHz wide channel"),
+    EHT80: _("802.11be - 80 MHz wide channel"),
+    EHT160: _("802.11be - 160 MHz wide channel"),
+    EHT320: _("802.11be - 320 MHz wide channel"),
 };
 export const BANDS = {
     "2g": "2.4",

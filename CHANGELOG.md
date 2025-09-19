@@ -8,6 +8,18 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.8.0] - 2025-09-19
+
+### Added
+
+- Added new modes for Wi-Fi 7
+- Added & updated Weblate translations
+
+### Changed
+
+- Updated several dependencies in package.json to latest versions
+- NPM audit fix
+
 ## [6.7.2] - 2025-04-22
 
 ### Added
@@ -486,7 +498,8 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.2...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.8.0...dev
+[6.8.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.2...v6.8.0
 [6.7.2]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.1...v6.7.2
 [6.7.1]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.7.0...v6.7.1
 [6.7.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.6.2...v6.7.0

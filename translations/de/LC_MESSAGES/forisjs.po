@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-04 15:14+0200\n"
-"PO-Revision-Date: 2024-01-04 21:08+0000\n"
+"POT-Creation-Date: 2025-09-18 17:24+0300\n"
+"PO-Revision-Date: 2025-07-16 23:01+0000\n"
 "Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
 "Language: de\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/foris-"
@@ -36,7 +36,7 @@ msgid "An unknown API error occurred."
 msgstr "Ein unbekannter API-Fehler ist aufgetreten."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
-#: src/common/WiFiSettings/WiFiQRCode.js:89
+#: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
 msgstr "Schließen"
 
@@ -50,97 +50,95 @@ msgstr "Kopieren"
 
 #: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
 msgid "Increase value. Hint: Hold to increase faster."
-msgstr ""
+msgstr "Wert erhöhen. Hinweis: Halten, um den Wert schneller zu erhöhen."
 
 #: src/bootstrap/NumberInput.js:101 src/bootstrap/NumberInput.js:102
 msgid "Decrease value. Hint: Hold to decrease faster."
-msgstr ""
+msgstr "Wert senken. Hinweis: Halten, um den Wert schneller zu senken."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
-#, fuzzy
 msgid "Action successful."
-msgstr "Einstellungen erfolgreich gespeichert"
+msgstr "Aktion erfolgreich."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:76
 msgid "Action failed."
-msgstr ""
+msgstr "Aktion fehlgeschlagen."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
 msgstr "Abbrechen"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
-#, fuzzy
 msgid "Confirm"
-msgstr "Neustart bestätigen"
+msgstr "Bestätigen"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
-msgstr ""
+msgstr "Suche …"
 
 #: src/common/RichTable/RichTableBody.js:50
 msgid "No results."
-msgstr ""
+msgstr "Keine Ergebnisse."
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:27
 msgid "Columns"
-msgstr ""
+msgstr "Spalten"
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
-msgstr ""
+msgstr "Aufsteigend sortieren"
 
 #: src/common/RichTable/RichTableHeader.js:30
 msgid "Sort descending"
-msgstr ""
+msgstr "Absteigend sortieren"
 
 #: src/common/RichTable/RichTableHeader.js:31
 msgid "Clear sort"
-msgstr ""
+msgstr "Sortierung aufheben"
 
 #: src/common/RichTable/RichTablePagination.js:65
 msgid "Pagination navigation bar"
-msgstr ""
+msgstr "Paginierungs-Navigationsleiste"
 
 #: src/common/RichTable/RichTablePagination.js:71
 msgid "First page"
-msgstr ""
+msgstr "Erste Seite"
 
 #: src/common/RichTable/RichTablePagination.js:77
 msgid "Previous page"
-msgstr ""
+msgstr "Vorherige Seite"
 
 #: src/common/RichTable/RichTablePagination.js:83
 msgid "Next page"
-msgstr ""
+msgstr "Nächste Seite"
 
 #: src/common/RichTable/RichTablePagination.js:89
 msgid "Last page"
-msgstr ""
+msgstr "Letzte Seite"
 
 #: src/common/RichTable/RichTablePagination.js:95
 msgid "Page"
-msgstr ""
+msgstr "Seite"
 
 #: src/common/RichTable/RichTablePagination.js:98
 msgid "of"
-msgstr ""
+msgstr "von"
 
 #: src/common/RichTable/RichTablePagination.js:106
 msgid "Rows per page:"
-msgstr ""
+msgstr "Zeilen pro Seite:"
 
 #: src/common/RichTable/RichTablePagination.js:109
 msgid "Select rows per page"
-msgstr ""
+msgstr "Zeilen pro Seite auswählen"
 
 #: src/common/RichTable/RichTablePagination.js:121
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
@@ -183,7 +181,7 @@ msgstr "SSID verbergen"
 
 #: src/common/WiFiSettings/WiFiForm.js:159
 msgid "Band"
-msgstr ""
+msgstr "Band"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax mode"
@@ -222,16 +220,16 @@ msgstr "Benutzerdefiniert"
 msgid "Enable Guest Wi-Fi"
 msgstr "Gast-WLAN aktivieren"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:43
-#: src/common/WiFiSettings/WiFiQRCode.js:44
+#: src/common/WiFiSettings/WiFiQRCode.js:40
+#: src/common/WiFiSettings/WiFiQRCode.js:41
 msgid "Show QR code"
 msgstr "QR-Code anzeigen"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:70
+#: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
 msgstr "WLAN QR-Code"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:102
+#: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
 msgstr "PDF herunterladen"
 
@@ -285,9 +283,8 @@ msgid "802.11ac - 80 MHz wide channel"
 msgstr "802.11ac - 80 MHz breiter Kanal"
 
 #: src/common/WiFiSettings/constants.js:15
-#, fuzzy
 msgid "802.11ac - 80+80 MHz wide channel"
-msgstr "802.11ac - 80 MHz breiter Kanal"
+msgstr "802.11ac - 80+80 MHz breiter Kanal"
 
 #: src/common/WiFiSettings/constants.js:16
 msgid "802.11ac - 160 MHz wide channel"
@@ -306,9 +303,8 @@ msgid "802.11ax - 80 MHz wide channel"
 msgstr "802.11ax - 80 MHz breiter Kanal"
 
 #: src/common/WiFiSettings/constants.js:20
-#, fuzzy
 msgid "802.11ax - 80+80 MHz wide channel"
-msgstr "802.11ax - 80 MHz breiter Kanal"
+msgstr "802.11ax - 80+80 MHz breiter Kanal"
 
 #: src/common/WiFiSettings/constants.js:21
 msgid "802.11ax - 160 MHz wide channel"
@@ -406,15 +402,16 @@ msgstr ""
 "Änderungen, die Sie vorgenommen haben, werden möglicherweise nicht "
 "gespeichert. Möchten Sie wirklich gehen?"
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:37
 msgid "Updating"
 msgstr "Aktualisiere"
 
-#: src/form/components/SubmitButton.js:37
-msgid "Load settings"
+#: src/form/components/SubmitButton.js:40
+#, fuzzy
+msgid "Loading"
 msgstr "Einstellungen laden"
 
-#: src/form/components/SubmitButton.js:40
+#: src/form/components/SubmitButton.js:43
 msgid "Save"
 msgstr "Speichern"
 

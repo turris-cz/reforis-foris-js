@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-04 15:14+0200\n"
+"POT-Creation-Date: 2025-09-18 17:24+0300\n"
 "PO-Revision-Date: 2023-09-22 21:00+0000\n"
 "Last-Translator: Kristoffer Grundström "
 "<swedishsailfishosuser@tutanota.com>\n"
@@ -37,7 +37,7 @@ msgid "An unknown API error occurred."
 msgstr "Ett okänt API-fel inträffade."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
-#: src/common/WiFiSettings/WiFiQRCode.js:89
+#: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
 msgstr ""
 
@@ -220,17 +220,17 @@ msgstr "auto"
 msgid "Enable Guest Wi-Fi"
 msgstr "Aktivera Wi-Fi för Gäst"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:43
-#: src/common/WiFiSettings/WiFiQRCode.js:44
+#: src/common/WiFiSettings/WiFiQRCode.js:40
+#: src/common/WiFiSettings/WiFiQRCode.js:41
 #, fuzzy
 msgid "Show QR code"
 msgstr "QR-kod för Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:70
+#: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
 msgstr "QR-kod för Wi-Fi"
 
-#: src/common/WiFiSettings/WiFiQRCode.js:102
+#: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
 msgstr "Ladda ner PDF"
 
@@ -387,15 +387,15 @@ msgstr ""
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
 
-#: src/form/components/SubmitButton.js:34
+#: src/form/components/SubmitButton.js:37
 msgid "Updating"
 msgstr ""
 
-#: src/form/components/SubmitButton.js:37
-msgid "Load settings"
+#: src/form/components/SubmitButton.js:40
+msgid "Loading"
 msgstr ""
 
-#: src/form/components/SubmitButton.js:40
+#: src/form/components/SubmitButton.js:43
 msgid "Save"
 msgstr "Spara"
 
@@ -537,4 +537,7 @@ msgstr ""
 
 #~ msgid "Are you sure you want to restart the router?"
 #~ msgstr "Är du säker på att du vill starta om routern?"
+
+#~ msgid "Load settings"
+#~ msgstr ""
 

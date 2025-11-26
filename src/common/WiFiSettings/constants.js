@@ -46,15 +46,15 @@ export const HELP_TEXTS = {
         "If set, network is not visible when scanning for available networks."
     ),
     band: _(
-        "The 2.4 GHz band is more widely supported by clients, but tends to have more interference. The 5 GHz band is a newer standard and may not be supported by all your devices. It usually has less interference, but the signal does not carry so well indoors."
+        "The 2.4 GHz band is more widely supported by clients, but tends to have more interference. The 5 GHz band is a newer standard and may not be supported by all your devices. It usually has less interference, but the signal does not carry so well indoors. The 6 GHz band is an even newer standard and is currently supported only by a limited set of devices. As it is not widely used now, it has only very little interference."
     ),
     htmode: _(
-        "Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 MHz wide channels can yield higher throughput but can cause more interference in the network. If you don't know what to choose, use the default option with 20 MHz wide channel."
+        "Change this to adjust 802.11n/ac/ax/be mode of operation. Wider channels can yield higher throughput but can cause more interference in the network. If you don't know what to choose, use the default option."
     ),
     guest_wifi_enabled: _(
         "Enables Wi-Fi for guests, which is separated from LAN network. Devices connected to this network are allowed to access the internet, but aren't allowed to access other devices and the configuration interface of the router. Parameters of the guest network can be set in the Guest network tab."
     ),
     wpa3: _(
-        "The WPA3 standard is the new most secure encryption method that is suggested to be used with any device that supports it. The older devices without WPA3 support require older WPA2. If you experience issues with connecting older devices, try to enable WPA2."
+        "The WPA3 standard is the new most secure encryption method that is suggested to be used with any device that supports it. The older devices without WPA3 support require older WPA2. If you experience issues with connecting older devices, try to enable WPA2. The 6 GHz band supports only WPA3."
     ),
 };

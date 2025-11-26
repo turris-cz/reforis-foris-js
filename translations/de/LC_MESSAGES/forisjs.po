@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-18 17:24+0300\n"
+"POT-Creation-Date: 2025-11-26 20:12+0300\n"
 "PO-Revision-Date: 2025-07-16 23:01+0000\n"
 "Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
 "Language: de\n"
@@ -184,7 +184,8 @@ msgid "Band"
 msgstr "Band"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
-msgid "802.11n/ac/ax mode"
+#, fuzzy
+msgid "802.11n/ac/ax/be mode"
 msgstr "802.11n/ac/ax-Modus"
 
 #: src/common/WiFiSettings/WiFiForm.js:199
@@ -310,19 +311,44 @@ msgstr "802.11ax - 80+80 MHz breiter Kanal"
 msgid "802.11ax - 160 MHz wide channel"
 msgstr "802.11ax - 160 MHz breiter Kanal"
 
-#: src/common/WiFiSettings/constants.js:29
+#: src/common/WiFiSettings/constants.js:22
+#, fuzzy
+msgid "802.11be - 20 MHz wide channel"
+msgstr "802.11n - 20 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:23
+#, fuzzy
+msgid "802.11be - 40 MHz wide channel"
+msgstr "802.11n - 40 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:24
+#, fuzzy
+msgid "802.11be - 80 MHz wide channel"
+msgstr "802.11ax - 80 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:25
+#, fuzzy
+msgid "802.11be - 160 MHz wide channel"
+msgstr "802.11ax - 160 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:26
+#, fuzzy
+msgid "802.11be - 320 MHz wide channel"
+msgstr "802.11n - 20 MHz breiter Kanal"
+
+#: src/common/WiFiSettings/constants.js:34
 msgid "WPA3 only"
 msgstr "Nur WPA3"
 
-#: src/common/WiFiSettings/constants.js:30
+#: src/common/WiFiSettings/constants.js:35
 msgid "WPA3 with WPA2 as fallback (default)"
 msgstr "WPA3 mit WPA2 als Ausweichmöglichkeit (Voreinstellung)"
 
-#: src/common/WiFiSettings/constants.js:31
+#: src/common/WiFiSettings/constants.js:36
 msgid "WPA2 only"
 msgstr "Nur WPA2"
 
-#: src/common/WiFiSettings/constants.js:34
+#: src/common/WiFiSettings/constants.js:39
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
@@ -330,22 +356,25 @@ msgstr ""
 "SSIDs, die nicht standardmäßige Zeichen enthalten, können auf manchen "
 "Geräten Probleme verursachen."
 
-#: src/common/WiFiSettings/constants.js:37
+#: src/common/WiFiSettings/constants.js:42
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
 msgstr "WPA2/3 Pre-Shard Key, der zum Verbinden mit dem Netzwerk notwendig ist."
 
-#: src/common/WiFiSettings/constants.js:40
+#: src/common/WiFiSettings/constants.js:45
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 "Falls aktiviert, wird das Netzwerk nicht in der Liste der verfügbaren "
 "drahtlosen Netzwerke angezeigt."
 
-#: src/common/WiFiSettings/constants.js:43
+#: src/common/WiFiSettings/constants.js:48
+#, fuzzy
 msgid ""
 "The 2.4 GHz band is more widely supported by clients, but tends to have "
 "more interference. The 5 GHz band is a newer standard and may not be "
 "supported by all your devices. It usually has less interference, but the "
-"signal does not carry so well indoors."
+"signal does not carry so well indoors. The 6 GHz band is an even newer "
+"standard and is currently supported only by a limited set of devices. As "
+"it is not widely used now, it has only very little interference."
 msgstr ""
 "Das 2,4 GHz-Band wird von allen Geräten unterstützt, ist aber tendenziell"
 " stärker mit Interferenzen belastet. Das 5-GHz-Band ist ein neuerer "
@@ -353,19 +382,19 @@ msgstr ""
 "wird. Es hat in der Regel weniger Interferenzen, aber das Signal trägt "
 "nicht so gut in Innenräumen."
 
-#: src/common/WiFiSettings/constants.js:46
+#: src/common/WiFiSettings/constants.js:51
+#, fuzzy
 msgid ""
-"Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 "
-"MHz wide channels can yield higher throughput but can cause more "
-"interference in the network. If you don't know what to choose, use the "
-"default option with 20 MHz wide channel."
+"Change this to adjust 802.11n/ac/ax/be mode of operation. Wider channels "
+"can yield higher throughput but can cause more interference in the "
+"network. If you don't know what to choose, use the default option."
 msgstr ""
 "Ändern Sie diese Option, um den 802.11n/ac/ax-Betriebsmodus anzupassen. "
 "40 MHz breite Kanäle können bei 802.11n mehr Daten transportieren, jedoch"
 " zu mehr Interferenzen im Netzwerk führen. Wenn Sie nicht wissen, was Sie"
 " wählen sollen, verwenden Sie die Voreinstellung mit 20 MHz Kanalbreite."
 
-#: src/common/WiFiSettings/constants.js:49
+#: src/common/WiFiSettings/constants.js:54
 msgid ""
 "Enables Wi-Fi for guests, which is separated from LAN network. Devices "
 "connected to this network are allowed to access the internet, but aren't "
@@ -379,12 +408,14 @@ msgstr ""
 "Konfigurationsschnittstelle des Routers. Die Parameter des Gastnetzwerks "
 "können auf der Gastnetzwerk-Registerkarte eingestellt werden."
 
-#: src/common/WiFiSettings/constants.js:52
+#: src/common/WiFiSettings/constants.js:57
+#, fuzzy
 msgid ""
 "The WPA3 standard is the new most secure encryption method that is "
 "suggested to be used with any device that supports it. The older devices "
 "without WPA3 support require older WPA2. If you experience issues with "
-"connecting older devices, try to enable WPA2."
+"connecting older devices, try to enable WPA2. The 6 GHz band supports "
+"only WPA3."
 msgstr ""
 "Der WPA3-Standard ist die neue Verschlüsselungsmethode mit der besten "
 "Sicherheit. Er empfiehlt sich für jedes Gerät, das ihn unterstützt, aber "

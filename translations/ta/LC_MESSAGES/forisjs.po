@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foris JS 6.5.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
-"POT-Creation-Date: 2025-09-18 17:24+0300\n"
+"POT-Creation-Date: 2025-11-26 20:12+0300\n"
 "PO-Revision-Date: 2025-04-25 15:07+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language: ta\n"
@@ -182,7 +182,8 @@ msgid "Band"
 msgstr "இசைக்குழு"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
-msgid "802.11n/ac/ax mode"
+#, fuzzy
+msgid "802.11n/ac/ax/be mode"
 msgstr "802.11n/ac/ax பயன்முறை"
 
 #: src/common/WiFiSettings/WiFiForm.js:199
@@ -308,19 +309,44 @@ msgstr "802.11ax - 80+80 மெகா எர்ட்ச் அகல சேன�
 msgid "802.11ax - 160 MHz wide channel"
 msgstr "802.11ax - 160 மெகா எர்ட்ச் அகல சேனல்"
 
-#: src/common/WiFiSettings/constants.js:29
+#: src/common/WiFiSettings/constants.js:22
+#, fuzzy
+msgid "802.11be - 20 MHz wide channel"
+msgstr "802.11n - 20 மெகா எர்ட்ச் அகல சேனல்"
+
+#: src/common/WiFiSettings/constants.js:23
+#, fuzzy
+msgid "802.11be - 40 MHz wide channel"
+msgstr "802.11n - 40 மெகா எர்ட்ச் அகல சேனல்"
+
+#: src/common/WiFiSettings/constants.js:24
+#, fuzzy
+msgid "802.11be - 80 MHz wide channel"
+msgstr "802.11ax - 80 மெகா எர்ட்ச் அகல சேனல்"
+
+#: src/common/WiFiSettings/constants.js:25
+#, fuzzy
+msgid "802.11be - 160 MHz wide channel"
+msgstr "802.11ax - 160 மெகா எர்ட்ச் அகல சேனல்"
+
+#: src/common/WiFiSettings/constants.js:26
+#, fuzzy
+msgid "802.11be - 320 MHz wide channel"
+msgstr "802.11n - 20 மெகா எர்ட்ச் அகல சேனல்"
+
+#: src/common/WiFiSettings/constants.js:34
 msgid "WPA3 only"
 msgstr "WPA3 மட்டும்"
 
-#: src/common/WiFiSettings/constants.js:30
+#: src/common/WiFiSettings/constants.js:35
 msgid "WPA3 with WPA2 as fallback (default)"
 msgstr "WPA2 உடன் WPA2 குறைவடையும் (இயல்புநிலை)"
 
-#: src/common/WiFiSettings/constants.js:31
+#: src/common/WiFiSettings/constants.js:36
 msgid "WPA2 only"
 msgstr "WPA2 மட்டும்"
 
-#: src/common/WiFiSettings/constants.js:34
+#: src/common/WiFiSettings/constants.js:39
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
@@ -328,22 +354,25 @@ msgstr ""
 "தரமற்ற எழுத்துக்களைக் கொண்ட SSID சில சாதனங்களில் சிக்கல்களை "
 "ஏற்படுத்தக்கூடும்."
 
-#: src/common/WiFiSettings/constants.js:37
+#: src/common/WiFiSettings/constants.js:42
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
 msgstr "WPA2/3 முன் பகிரப்பட்ட விசை, இது பிணையத்துடன் இணைக்க வேண்டும்."
 
-#: src/common/WiFiSettings/constants.js:40
+#: src/common/WiFiSettings/constants.js:45
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
 "அமைக்கப்பட்டால், கிடைக்கக்கூடிய நெட்வொர்க்குகளுக்கு ச்கேன் செய்யும் போது "
 "பிணையம் தெரியவில்லை."
 
-#: src/common/WiFiSettings/constants.js:43
+#: src/common/WiFiSettings/constants.js:48
+#, fuzzy
 msgid ""
 "The 2.4 GHz band is more widely supported by clients, but tends to have "
 "more interference. The 5 GHz band is a newer standard and may not be "
 "supported by all your devices. It usually has less interference, but the "
-"signal does not carry so well indoors."
+"signal does not carry so well indoors. The 6 GHz band is an even newer "
+"standard and is currently supported only by a limited set of devices. As "
+"it is not widely used now, it has only very little interference."
 msgstr ""
 "2.4 சிகாஎர்ட்ச் இசைக்குழு வாடிக்கையாளர்களால் மிகவும் பரவலாக "
 "ஆதரிக்கப்படுகிறது, ஆனால் அதிக குறுக்கீடு உள்ளது. 5 சிகாஎர்ட்ச் இசைக்குழு "
@@ -351,12 +380,12 @@ msgstr ""
 "போகலாம். இது பொதுவாக குறைவான குறுக்கீட்டைக் கொண்டுள்ளது, ஆனால் சமிக்ஞை "
 "வீட்டிற்குள் அவ்வளவு சிறப்பாகச் செல்லாது."
 
-#: src/common/WiFiSettings/constants.js:46
+#: src/common/WiFiSettings/constants.js:51
+#, fuzzy
 msgid ""
-"Change this to adjust 802.11n/ac/ax mode of operation. 802.11n with 40 "
-"MHz wide channels can yield higher throughput but can cause more "
-"interference in the network. If you don't know what to choose, use the "
-"default option with 20 MHz wide channel."
+"Change this to adjust 802.11n/ac/ax/be mode of operation. Wider channels "
+"can yield higher throughput but can cause more interference in the "
+"network. If you don't know what to choose, use the default option."
 msgstr ""
 "802.11n/AC/AX செயல்பாட்டு முறை சரிசெய்ய இதை மாற்றவும். 40 மெகா எர்ட்ச் "
 "அகலமான சேனல்களைக் கொண்ட 802.11n அதிக செயல்திறனை அளிக்கும், ஆனால் "
@@ -364,7 +393,7 @@ msgstr ""
 "உங்களுக்குத் தெரியாவிட்டால், இயல்புநிலை விருப்பத்தை 20 மெகா எர்ட்ச் அகல "
 "சேனலுடன் பயன்படுத்தவும்."
 
-#: src/common/WiFiSettings/constants.js:49
+#: src/common/WiFiSettings/constants.js:54
 msgid ""
 "Enables Wi-Fi for guests, which is separated from LAN network. Devices "
 "connected to this network are allowed to access the internet, but aren't "
@@ -378,12 +407,14 @@ msgstr ""
 "இடைமுகத்தையும் அணுக அனுமதிக்கப்படவில்லை. விருந்தினர் நெட்வொர்க்கின் "
 "அளவுருக்கள் விருந்தினர் பிணையம் தாவலில் அமைக்கப்படலாம்."
 
-#: src/common/WiFiSettings/constants.js:52
+#: src/common/WiFiSettings/constants.js:57
+#, fuzzy
 msgid ""
 "The WPA3 standard is the new most secure encryption method that is "
 "suggested to be used with any device that supports it. The older devices "
 "without WPA3 support require older WPA2. If you experience issues with "
-"connecting older devices, try to enable WPA2."
+"connecting older devices, try to enable WPA2. The 6 GHz band supports "
+"only WPA3."
 msgstr ""
 "WPA3 தரநிலை என்பது புதிய மிகவும் பாதுகாப்பான குறியாக்க முறையாகும், அதை "
 "ஆதரிக்கும் எந்தவொரு சாதனத்துடனும் பயன்படுத்த பரிந்துரைக்கப்படுகிறது. WPA3"

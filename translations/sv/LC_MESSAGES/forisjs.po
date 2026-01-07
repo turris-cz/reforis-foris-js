@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-11-26 20:12+0300\n"
-"PO-Revision-Date: 2023-09-22 21:00+0000\n"
-"Last-Translator: Kristoffer Grundström "
-"<swedishsailfishosuser@tutanota.com>\n"
+"PO-Revision-Date: 2026-01-08 19:01+0000\n"
+"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/foris-js/"
+"sv/>\n"
 "Language: sv\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/foris-"
-"js/sv/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -39,7 +39,7 @@ msgstr "Ett okänt API-fel inträffade."
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
 #: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
-msgstr ""
+msgstr "Stäng"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
@@ -59,36 +59,35 @@ msgstr ""
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
 msgid "Action successful."
-msgstr ""
+msgstr "Åtgärden lyckades."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:76
 msgid "Action failed."
-msgstr ""
+msgstr "Åtgärden misslyckades."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
 msgstr "Avbryt"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
-#, fuzzy
 msgid "Confirm"
-msgstr "Bekräfta omstart"
+msgstr "Bekräfta"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
-msgstr ""
+msgstr "Sök…"
 
 #: src/common/RichTable/RichTableBody.js:50
 msgid "No results."
-msgstr ""
+msgstr "Inga resultat."
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:27
 msgid "Columns"
-msgstr ""
+msgstr "Kolumner"
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr ""
+msgstr "Återställ"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
@@ -112,27 +111,27 @@ msgstr ""
 
 #: src/common/RichTable/RichTablePagination.js:77
 msgid "Previous page"
-msgstr ""
+msgstr "Föregående sida"
 
 #: src/common/RichTable/RichTablePagination.js:83
 msgid "Next page"
-msgstr ""
+msgstr "Nästa sida"
 
 #: src/common/RichTable/RichTablePagination.js:89
 msgid "Last page"
-msgstr ""
+msgstr "Sista sidan"
 
 #: src/common/RichTable/RichTablePagination.js:95
 msgid "Page"
-msgstr ""
+msgstr "Sida"
 
 #: src/common/RichTable/RichTablePagination.js:98
 msgid "of"
-msgstr ""
+msgstr "av"
 
 #: src/common/RichTable/RichTablePagination.js:106
 msgid "Rows per page:"
-msgstr ""
+msgstr "Rader per sida:"
 
 #: src/common/RichTable/RichTablePagination.js:109
 msgid "Select rows per page"
@@ -140,7 +139,7 @@ msgstr ""
 
 #: src/common/RichTable/RichTablePagination.js:121
 msgid "All"
-msgstr ""
+msgstr "Alla"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
@@ -181,7 +180,7 @@ msgstr "Göm SSID"
 
 #: src/common/WiFiSettings/WiFiForm.js:159
 msgid "Band"
-msgstr ""
+msgstr "Band"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 #, fuzzy
@@ -189,9 +188,8 @@ msgid "802.11n/ac/ax/be mode"
 msgstr "802.11n/ac/ax-läge"
 
 #: src/common/WiFiSettings/WiFiForm.js:199
-#, fuzzy
 msgid "Channel"
-msgstr "Avbryt"
+msgstr "Kanal"
 
 #: src/common/WiFiSettings/WiFiForm.js:211
 #: src/common/WiFiSettings/WiFiGuestForm.js:95
@@ -213,9 +211,8 @@ msgid "auto"
 msgstr "auto"
 
 #: src/common/WiFiSettings/WiFiForm.js:303
-#, fuzzy
 msgid "Custom"
-msgstr "auto"
+msgstr "Anpassad"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:45
 msgid "Enable Guest Wi-Fi"
@@ -409,7 +406,7 @@ msgstr ""
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Sparningen av inställningarna lyckades"
 
 #: src/form/components/ForisForm.js:183
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
@@ -417,11 +414,11 @@ msgstr ""
 
 #: src/form/components/SubmitButton.js:37
 msgid "Updating"
-msgstr ""
+msgstr "Uppdaterar"
 
 #: src/form/components/SubmitButton.js:40
 msgid "Loading"
-msgstr ""
+msgstr "Laddar"
 
 #: src/form/components/SubmitButton.js:43
 msgid "Save"
@@ -601,4 +598,3 @@ msgstr ""
 #~ "with connecting older devices, try to"
 #~ " enable WPA2."
 #~ msgstr ""
-

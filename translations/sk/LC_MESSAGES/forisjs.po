@@ -1,23 +1,22 @@
 # Slovak translations for Foris JS.
-# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-18 17:24+0300\n"
+"POT-Creation-Date: 2026-02-17 15:41+0300\n"
 "PO-Revision-Date: 2025-12-05 19:00+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-js/"
-"sk/>\n"
 "Language: sk\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-"
+"js/sk/>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.15-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -370,10 +369,10 @@ msgid ""
 msgstr ""
 "Pásmo 2,4 GHz podporujú zariadenia najčastejšie, ale je viac zaťažené "
 "rušením. Pásmo 5 GHz je novší štandard a nemusia ho podporovať všetky "
-"zariadenia. Rušenie ho zvyčajne postihnuje menej, ale signál sa vnútri budov "
-"šíri horšie. Pásmo 6 GHz je ešte novší štandard a v súčasnosti ho podporuje "
-"len obmedzený počet zariadení. Pretože sa jeho používanie zatiaľ "
-"nerozšírilo, rušenie ho postihuje len veľmi málo."
+"zariadenia. Rušenie ho zvyčajne postihnuje menej, ale signál sa vnútri "
+"budov šíri horšie. Pásmo 6 GHz je ešte novší štandard a v súčasnosti ho "
+"podporuje len obmedzený počet zariadení. Pretože sa jeho používanie "
+"zatiaľ nerozšírilo, rušenie ho postihuje len veľmi málo."
 
 #: src/common/WiFiSettings/constants.js:51
 msgid ""
@@ -381,9 +380,10 @@ msgid ""
 "can yield higher throughput but can cause more interference in the "
 "network. If you don't know what to choose, use the default option."
 msgstr ""
-"Zmenou tejto položky sa nastavuje režim prevádzky 802.11n/ac/ax/be. Kanály s "
-"väčšou šírkou môžu dosahovať vyššiu priepustnosť, ale môžu spôsobiť väčšie "
-"rušenie v sieti. Ak neviete, čo vybrať, použite predvolenú možnosť."
+"Zmenou tejto položky sa nastavuje režim prevádzky 802.11n/ac/ax/be. "
+"Kanály s väčšou šírkou môžu dosahovať vyššiu priepustnosť, ale môžu "
+"spôsobiť väčšie rušenie v sieti. Ak neviete, čo vybrať, použite "
+"predvolenú možnosť."
 
 #: src/common/WiFiSettings/constants.js:54
 msgid ""
@@ -407,9 +407,10 @@ msgid ""
 "only WPA3."
 msgstr ""
 "Štandard WPA3 je nová, najbezpečnejšia metóda šifrovania a odporúča sa "
-"používať ju v každom zariadení, ktoré ju podporuje. Staršie zariadenia bez "
-"podpory WPA3 vyžadujú staršie WPA2. Ak sa vyskytnú problémy s pripojením "
-"starších zariadení, skúste povoliť WPA2. Pásmo 6 GHz podporuje len WPA3."
+"používať ju v každom zariadení, ktoré ju podporuje. Staršie zariadenia "
+"bez podpory WPA3 vyžadujú staršie WPA2. Ak sa vyskytnú problémy s "
+"pripojením starších zariadení, skúste povoliť WPA2. Pásmo 6 GHz podporuje"
+" len WPA3."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -507,3 +508,4 @@ msgstr "Neobsahuje zoznam e-mailov oddelených čiarkami."
 
 #~ msgid "Are you sure you want to restart the router?"
 #~ msgstr "Naozaj sa má router reštartovať?"
+

@@ -1,23 +1,22 @@
 # Czech translations for Foris JS.
-# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-18 17:24+0300\n"
+"POT-Creation-Date: 2026-02-17 15:41+0300\n"
 "PO-Revision-Date: 2026-02-10 22:09+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/"
-"cs/>\n"
 "Language: cs\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-"
+"js/cs/>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.16-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -368,12 +367,12 @@ msgid ""
 "standard and is currently supported only by a limited set of devices. As "
 "it is not widely used now, it has only very little interference."
 msgstr ""
-"Pásmo 2,4 GHz je v klientských zařízeních podporováno nejčastěji, bývá ale "
-"více zarušené. Pásmo 5 GHz je novější standard a nemusí být podporováno "
-"všemi vámi používanými zařízeními. Obvykle bývá méně zarušené, signál se ale "
-"hůře šíří uvnitř budov. Pásmo 6 GHz je ještě novější standard a v "
-"současnosti ho podporuje jen omezený počet zařízení. Protože se zatím příliš "
-"nepoužívá, je jen velmi málo postiženo rušením."
+"Pásmo 2,4 GHz je v klientských zařízeních podporováno nejčastěji, bývá "
+"ale více zarušené. Pásmo 5 GHz je novější standard a nemusí být "
+"podporováno všemi vámi používanými zařízeními. Obvykle bývá méně "
+"zarušené, signál se ale hůře šíří uvnitř budov. Pásmo 6 GHz je ještě "
+"novější standard a v současnosti ho podporuje jen omezený počet zařízení."
+" Protože se zatím příliš nepoužívá, je jen velmi málo postiženo rušením."
 
 #: src/common/WiFiSettings/constants.js:51
 msgid ""
@@ -381,9 +380,9 @@ msgid ""
 "can yield higher throughput but can cause more interference in the "
 "network. If you don't know what to choose, use the default option."
 msgstr ""
-"Změna tohoto parametru upraví režim fungování 802.11n/ac/ax/be. Širší kanály "
-"mohou dosahovat vyšší propustnosti, jsou ale náchylnější na rušení. Pokud "
-"nevíte, co zvolit, použijte výchozí nastavení."
+"Změna tohoto parametru upraví režim fungování 802.11n/ac/ax/be. Širší "
+"kanály mohou dosahovat vyšší propustnosti, jsou ale náchylnější na "
+"rušení. Pokud nevíte, co zvolit, použijte výchozí nastavení."
 
 #: src/common/WiFiSettings/constants.js:54
 msgid ""
@@ -406,10 +405,11 @@ msgid ""
 "connecting older devices, try to enable WPA2. The 6 GHz band supports "
 "only WPA3."
 msgstr ""
-"Standard WPA3 je nová nejbezpečnější metoda, kterou se doporučuje používat "
-"se všemi zařízeními, která ji podporují. Starší zařízení bez podpory WPA3 "
-"potřebují starší WPA2. Pokud zaznamenáte problémy s připojováním starších "
-"zařízení, zkuste zapnout WPA2. Pásmo 6 GHz podporuje jen WPA3."
+"Standard WPA3 je nová nejbezpečnější metoda, kterou se doporučuje "
+"používat se všemi zařízeními, která ji podporují. Starší zařízení bez "
+"podpory WPA3 potřebují starší WPA2. Pokud zaznamenáte problémy s "
+"připojováním starších zařízení, zkuste zapnout WPA2. Pásmo 6 GHz "
+"podporuje jen WPA3."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -506,3 +506,4 @@ msgstr "Neobsahuje seznam e-mailů oddělených čárkou."
 
 #~ msgid "Are you sure you want to restart the router?"
 #~ msgstr "Opravdu chcete router restartovat?"
+

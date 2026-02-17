@@ -1,23 +1,22 @@
 # Czech translations for Foris JS.
-# Copyright (C) 2025 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
+# Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-18 17:24+0300\n"
-"PO-Revision-Date: 2025-09-27 07:01+0000\n"
+"POT-Creation-Date: 2026-02-17 15:41+0300\n"
+"PO-Revision-Date: 2026-02-10 22:09+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-js/cs/"
-">\n"
 "Language: cs\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-"
+"js/cs/>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -183,9 +182,8 @@ msgid "Band"
 msgstr "Pásmo"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
-#, fuzzy
 msgid "802.11n/ac/ax/be mode"
-msgstr "Režim 802.11n/ac/ax"
+msgstr "Režim 802.11n/ac/ax/be"
 
 #: src/common/WiFiSettings/WiFiForm.js:199
 msgid "Channel"
@@ -311,29 +309,24 @@ msgid "802.11ax - 160 MHz wide channel"
 msgstr "802.11ax – kanál šíře 160 MHz"
 
 #: src/common/WiFiSettings/constants.js:22
-#, fuzzy
 msgid "802.11be - 20 MHz wide channel"
-msgstr "802.11n – kanál šíře 20 MHz"
+msgstr "802.11be – kanál šíře 20 MHz"
 
 #: src/common/WiFiSettings/constants.js:23
-#, fuzzy
 msgid "802.11be - 40 MHz wide channel"
-msgstr "802.11n – kanál šíře 40 MHz"
+msgstr "802.11be – kanál šíře 40 MHz"
 
 #: src/common/WiFiSettings/constants.js:24
-#, fuzzy
 msgid "802.11be - 80 MHz wide channel"
-msgstr "802.11ax – kanál šíře 80 MHz"
+msgstr "802.11be – kanál šíře 80 MHz"
 
 #: src/common/WiFiSettings/constants.js:25
-#, fuzzy
 msgid "802.11be - 160 MHz wide channel"
-msgstr "802.11ax – kanál šíře 160 MHz"
+msgstr "802.11be – kanál šíře 160 MHz"
 
 #: src/common/WiFiSettings/constants.js:26
-#, fuzzy
 msgid "802.11be - 320 MHz wide channel"
-msgstr "802.11n – kanál šíře 20 MHz"
+msgstr "802.11be – kanál šíře 320 MHz"
 
 #: src/common/WiFiSettings/constants.js:34
 msgid "WPA3 only"
@@ -366,7 +359,6 @@ msgstr ""
 "vyhledávat dostupné sítě."
 
 #: src/common/WiFiSettings/constants.js:48
-#, fuzzy
 msgid ""
 "The 2.4 GHz band is more widely supported by clients, but tends to have "
 "more interference. The 5 GHz band is a newer standard and may not be "
@@ -378,19 +370,19 @@ msgstr ""
 "Pásmo 2,4 GHz je v klientských zařízeních podporováno nejčastěji, bývá "
 "ale více zarušené. Pásmo 5 GHz je novější standard a nemusí být "
 "podporováno všemi vámi používanými zařízeními. Obvykle bývá méně "
-"zarušené, signál se ale hůře šíří uvnitř budov."
+"zarušené, signál se ale hůře šíří uvnitř budov. Pásmo 6 GHz je ještě "
+"novější standard a v současnosti ho podporuje jen omezený počet zařízení."
+" Protože se zatím příliš nepoužívá, je jen velmi málo postiženo rušením."
 
 #: src/common/WiFiSettings/constants.js:51
-#, fuzzy
 msgid ""
 "Change this to adjust 802.11n/ac/ax/be mode of operation. Wider channels "
 "can yield higher throughput but can cause more interference in the "
 "network. If you don't know what to choose, use the default option."
 msgstr ""
-"Změna tohoto parametru upraví režim fungování 802.11n/ac. 802.11n s "
-"kanály o šíři 40 MHz může pomoci k vyšší propustnosti, je ale náchylnější"
-" na rušení. Pokud nevíte co zvolit, použijte výchozí volbu s kanálem šíře"
-" 20 MHz."
+"Změna tohoto parametru upraví režim fungování 802.11n/ac/ax/be. Širší "
+"kanály mohou dosahovat vyšší propustnosti, jsou ale náchylnější na "
+"rušení. Pokud nevíte, co zvolit, použijte výchozí nastavení."
 
 #: src/common/WiFiSettings/constants.js:54
 msgid ""
@@ -406,7 +398,6 @@ msgstr ""
 "pro hosty je možné nastavit na panelu „Síť pro hosty“."
 
 #: src/common/WiFiSettings/constants.js:57
-#, fuzzy
 msgid ""
 "The WPA3 standard is the new most secure encryption method that is "
 "suggested to be used with any device that supports it. The older devices "
@@ -414,10 +405,11 @@ msgid ""
 "connecting older devices, try to enable WPA2. The 6 GHz band supports "
 "only WPA3."
 msgstr ""
-"Standard WPA3 je nová nejbezpečnější metoda, již se doporučuje používat "
-"se všemi zařízeními, která ji podporují. Starší zařízení bez podpory WPA3"
-" potřebují starší WPA2. Zaznamenáte-li problémy s připojováním starších "
-"zařízení, zkuste zapnout WPA2."
+"Standard WPA3 je nová nejbezpečnější metoda, kterou se doporučuje "
+"používat se všemi zařízeními, která ji podporují. Starší zařízení bez "
+"podpory WPA3 potřebují starší WPA2. Pokud zaznamenáte problémy s "
+"připojováním starších zařízení, zkuste zapnout WPA2. Pásmo 6 GHz "
+"podporuje jen WPA3."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -514,3 +506,4 @@ msgstr "Neobsahuje seznam e-mailů oddělených čárkou."
 
 #~ msgid "Are you sure you want to restart the router?"
 #~ msgstr "Opravdu chcete router restartovat?"
+

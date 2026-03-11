@@ -306,5 +306,10 @@ function getEncryptionChoices(device) {
     if (device.encryption === "custom") {
         ENCRYPTIONMODES.custom = _("Custom");
     }
+    if (device.band === "6g") {
+        return {
+            WPA3: ENCRYPTIONMODES.WPA3,
+        };
+    }
     return ENCRYPTIONMODES;
 }

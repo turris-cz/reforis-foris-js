@@ -91,6 +91,7 @@ function DeviceForm({
 }) {
     const deviceID = formData.id;
     const bnds = formData.available_bands;
+
     return (
         <>
             <Switch
@@ -220,24 +221,27 @@ function DeviceForm({
                         {...props}
                     />
 
-                    {(formData.encryption === "WPA3" ||
-                        formData.encryption === "WPA2/3") && (
-                        <Switch
-                            label={_("Disable Management Frame Protection")}
-                            helpText={_(
-                                "In case you have trouble connecting to WiFi Access Point, try disabling Management Frame Protection."
-                            )}
-                            checked={formData.ieee80211w_disabled}
-                            onChange={setFormValue((value) => ({
-                                devices: {
-                                    [deviceIndex]: {
-                                        ieee80211w_disabled: { $set: value },
+                    {formData.band !== "6g" &&
+                        (formData.encryption === "WPA3" ||
+                            formData.encryption === "WPA2/3") && (
+                            <Switch
+                                label={_("Disable Management Frame Protection")}
+                                helpText={_(
+                                    "In case you have trouble connecting to WiFi Access Point, try disabling Management Frame Protection."
+                                )}
+                                checked={formData.ieee80211w_disabled}
+                                onChange={setFormValue((value) => ({
+                                    devices: {
+                                        [deviceIndex]: {
+                                            ieee80211w_disabled: {
+                                                $set: value,
+                                            },
+                                        },
                                     },
-                                },
-                            }))}
-                            {...props}
-                        />
-                    )}
+                                }))}
+                                {...props}
+                            />
+                        )}
 
                     {hasGuestNetwork && (
                         <WifiGuestForm

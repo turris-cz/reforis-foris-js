@@ -315,6 +315,82 @@ export function wifiSettingsFixture() {
         ],
     };
 }
+
+export function wifi7SettingsFixture() {
+    return {
+        devices: [
+            {
+                SSID: "TestSSID Wi-Fi 7",
+                available_bands: [
+                    {
+                        available_channels: [
+                            {
+                                frequency: 5955,
+                                number: 1,
+                                radar: false,
+                            },
+                            {
+                                frequency: 5975,
+                                number: 5,
+                                radar: false,
+                            },
+                            {
+                                frequency: 5995,
+                                number: 9,
+                                radar: false,
+                            },
+                            {
+                                frequency: 6015,
+                                number: 13,
+                                radar: false,
+                            },
+                            {
+                                frequency: 6035,
+                                number: 17,
+                                radar: false,
+                            },
+                            {
+                                frequency: 6055,
+                                number: 21,
+                                radar: false,
+                            },
+                            {
+                                frequency: 6075,
+                                number: 25,
+                                radar: false,
+                            },
+                        ],
+                        available_htmodes: [
+                            "NOHT",
+                            "HT20",
+                            "HT40",
+                            "VHT20",
+                            "VHT40",
+                            "VHT80",
+                            "VHT160",
+                        ],
+                        band: "6g",
+                    },
+                ],
+                channel: 1,
+                enabled: false,
+                guest_wifi: {
+                    SSID: "TestGuestSSID Wi-Fi 7",
+                    enabled: false,
+                    encryption: "WPA3",
+                    password: "",
+                },
+                hidden: false,
+                htmode: "VHT160",
+                band: "6g",
+                id: 0,
+                password: "TestPass",
+                encryption: "WPA3",
+            },
+        ],
+    };
+}
+
 const oneDevice = {
     devices: [
         {

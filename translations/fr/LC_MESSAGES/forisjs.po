@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
 "PO-Revision-Date: 2026-03-22 18:09+0000\n"
-"Last-Translator: XVI <social-xvi@protonmail.com>\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/foris-js/"
 "fr/>\n"
 "Language: fr\n"
@@ -70,9 +70,8 @@ msgid "Cancel"
 msgstr "Annuler"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
-#, fuzzy
 msgid "Confirm"
-msgstr "Confirmer le redémarrage"
+msgstr "Confirmer"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"

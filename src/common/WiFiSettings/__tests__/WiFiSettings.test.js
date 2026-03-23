@@ -16,6 +16,7 @@ import { mockJSONError } from "testUtils/network";
 
 import {
     wifiSettingsFixture,
+    wifi7SettingsFixture,
     oneDevice,
     twoDevices,
     threeDevices,
@@ -242,5 +243,57 @@ describe("<WiFiSettings/>", () => {
             "longpasswordlongpasswordlongpasswordlongpasswordlongpasswordlong"
         );
         expect(getByText(longErrorFeedback)).toBeDefined();
+    });
+});
+
+describe("<WiFiSettings: 6GHz/>", () => {
+    let firstRender;
+    let getByText;
+    let getByLabelText;
+    let asFragment;
+    const endpoint = "/reforis/api/wifi";
+
+    beforeEach(async () => {
+        const webSockets = new WebSockets();
+        const renderRes = render(
+            <WiFiSettings
+                ws={webSockets}
+                endpoint={endpoint}
+                resetEndpoint="foo"
+            />
+        );
+        asFragment = renderRes.asFragment;
+        getAllByText = renderRes.getAllByText;
+        getAllByLabelText = renderRes.getAllByLabelText;
+        getByLabelText = renderRes.getByLabelText;
+        getByText = renderRes.getByText;
+        mockAxios.mockResponse({ data: wifi7SettingsFixture() });
+        await waitFor(() => renderRes.getByText("Wi-Fi 1"));
+        firstRender = renderRes.asFragment();
+    });
+
+    it("should handle error", async () => {
+        const webSockets = new WebSockets();
+        const { getByText } = render(
+            <WiFiSettings
+                ws={webSockets}
+                endpoint={endpoint}
+                resetEndpoint="foo"
+            />
+        );
+        const errorMessage = "An API error occurred.";
+        mockJSONError(errorMessage);
+        await waitFor(() => {
+            expect(getByText(errorMessage)).toBeTruthy();
+        });
+    });
+
+    it("Snapshot module disabled.", () => {
+        expect(firstRender).toMatchSnapshot();
+    });
+
+    it("Snapshot one module enabled.", () => {
+        fireEvent.click(getByText("Wi-Fi 1"));
+        expect(diffSnapshot(firstRender, asFragment())).toMatchSnapshot();
     });
 });

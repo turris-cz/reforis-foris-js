@@ -8,6 +8,15 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.11.0] - 2026-03-23
+
+### Changed
+
+- Added condition to hide MFP for 6GHz band
+- Made WPA3 only available encryption choice for 6GHz band
+- Updated several dependencies in package.json to latest versions
+- NPM audit fix
+
 ## [6.10.0] - 2026-02-17
 
 ### Added
@@ -521,7 +530,9 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.10.0...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.0...dev
+[6.11.0]:
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.10.0...v6.11.0
 [6.10.0]:
     https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.9.0...v6.10.0
 [6.9.0]: https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.8.0...v6.9.0

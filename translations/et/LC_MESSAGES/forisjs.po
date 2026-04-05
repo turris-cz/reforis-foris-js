@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.9.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-03-20 22:11+0000\n"
+"PO-Revision-Date: 2026-04-06 21:09+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/turris/foris-js/"
 "et/>\n"
@@ -169,7 +169,7 @@ msgstr ""
 #: src/common/WiFiSettings/WiFiForm.js:132
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
-msgstr ""
+msgstr "Salasõna"
 
 #: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
@@ -403,7 +403,7 @@ msgstr ""
 
 #: src/form/components/SubmitButton.js:43
 msgid "Save"
-msgstr ""
+msgstr "Salvesta"
 
 #: src/utils/ErrorMessage.js:17
 msgid "An error occurred while fetching data."

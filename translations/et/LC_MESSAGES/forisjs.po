@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.9.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-04-06 21:09+0000\n"
+"PO-Revision-Date: 2026-04-19 07:09+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/turris/foris-js/"
 "et/>\n"
@@ -17,24 +17,24 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "Sessioon on aegunud. Palun logi uuesti sisse."
 
 #: src/api/utils.js:66
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Tekkis aegumisega seotud viga."
 
 #: src/api/utils.js:69
 msgid "No response received."
-msgstr ""
+msgstr "Päringul polnud vastust."
 
 #: src/api/utils.js:79
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "Tekkis API-ga seotud tundmatu viga."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
 #: src/common/WiFiSettings/WiFiQRCode.js:88
@@ -245,12 +245,12 @@ msgstr ""
 #: src/common/WiFiSettings/WiFiSettings.js:89
 #: src/common/WiFiSettings/WiFiSettings.js:106
 msgid "Password must contain at least 8 symbols"
-msgstr ""
+msgstr "Salasõna peab olema vähemalt 8 tähemärki pikk"
 
 #: src/common/WiFiSettings/WiFiSettings.js:91
 #: src/common/WiFiSettings/WiFiSettings.js:110
 msgid "Password must not contain more than 63 symbols"
-msgstr ""
+msgstr "Salasõna ei tohiks olla pikem 63-st tähemärgist"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"

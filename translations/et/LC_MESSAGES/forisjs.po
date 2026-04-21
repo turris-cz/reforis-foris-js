@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.9.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-04-19 07:09+0000\n"
+"PO-Revision-Date: 2026-04-22 14:09+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/turris/foris-js/"
 "et/>\n"
@@ -67,11 +67,11 @@ msgstr ""
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
-msgstr ""
+msgstr "Katkesta"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
 msgid "Confirm"
-msgstr ""
+msgstr "Kinnita"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr ""
+msgstr "Lähtesta"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
@@ -208,7 +208,7 @@ msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:303
 msgid "Custom"
-msgstr ""
+msgstr "Kohandatud"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:45
 msgid "Enable Guest Wi-Fi"
@@ -254,7 +254,7 @@ msgstr "Salasõna ei tohiks olla pikem 63-st tähemärgist"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
-msgstr ""
+msgstr "Pole kasutusel"
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"

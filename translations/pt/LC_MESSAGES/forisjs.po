@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.9.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-05-04 00:09+0000\n"
+"PO-Revision-Date: 2026-05-09 20:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/foris-"
 "js/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.17.1\n"
+"X-Generator: Weblate 2026.5-dev\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -67,7 +67,7 @@ msgstr ""
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
 msgid "Confirm"
@@ -169,7 +169,7 @@ msgstr ""
 #: src/common/WiFiSettings/WiFiForm.js:132
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
-msgstr ""
+msgstr "Palavra passe"
 
 #: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
@@ -403,7 +403,7 @@ msgstr ""
 
 #: src/form/components/SubmitButton.js:43
 msgid "Save"
-msgstr ""
+msgstr "Salvar"
 
 #: src/utils/ErrorMessage.js:17
 msgid "An error occurred while fetching data."

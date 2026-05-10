@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.9.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-05-09 20:11+0000\n"
+"PO-Revision-Date: 2026-05-11 02:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/foris-"
 "js/pt/>\n"
@@ -22,19 +22,19 @@ msgstr ""
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "A sessão expirou. Por favor inicie sessão outra vez."
 
 #: src/api/utils.js:66
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Ocorreu erro de tempo limite."
 
 #: src/api/utils.js:69
 msgid "No response received."
-msgstr ""
+msgstr "Nenhuma resposta recebida."
 
 #: src/api/utils.js:79
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "Ocorreu um erro de API desconhecido."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
 #: src/common/WiFiSettings/WiFiQRCode.js:88
@@ -43,11 +43,11 @@ msgstr "Fechar"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
-msgstr ""
+msgstr "Copiado!"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
 msgid "Increase value. Hint: Hold to increase faster."
@@ -71,7 +71,7 @@ msgstr "Cancelar"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
 msgid "Confirm"
-msgstr ""
+msgstr "Confirmar"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
@@ -254,7 +254,7 @@ msgstr ""
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
-msgstr ""
+msgstr "Desativado"
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"

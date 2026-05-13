@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.9.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-05-11 02:11+0000\n"
+"PO-Revision-Date: 2026-05-14 01:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/foris-"
 "js/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.5-dev\n"
+"X-Generator: Weblate 2026.5.dev0\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -51,19 +51,19 @@ msgstr "Copiar"
 
 #: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
 msgid "Increase value. Hint: Hold to increase faster."
-msgstr ""
+msgstr "Aumentar valor. Dica: Manter para aumentar mais rápido."
 
 #: src/bootstrap/NumberInput.js:101 src/bootstrap/NumberInput.js:102
 msgid "Decrease value. Hint: Hold to decrease faster."
-msgstr ""
+msgstr "Diminuir valor. Dica: Manter para diminuir mais rápido."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
 msgid "Action successful."
-msgstr ""
+msgstr "Ação com sucesso."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:76
 msgid "Action failed."
-msgstr ""
+msgstr "Ação falhou."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
@@ -75,31 +75,31 @@ msgstr "Confirmar"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
-msgstr ""
+msgstr "Procurar…"
 
 #: src/common/RichTable/RichTableBody.js:50
 msgid "No results."
-msgstr ""
+msgstr "Nenhuns resultados."
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:27
 msgid "Columns"
-msgstr ""
+msgstr "Colunas"
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
-msgstr ""
+msgstr "Ordenar ascendente"
 
 #: src/common/RichTable/RichTableHeader.js:30
 msgid "Sort descending"
-msgstr ""
+msgstr "Ordenar descendente"
 
 #: src/common/RichTable/RichTableHeader.js:31
 msgid "Clear sort"
-msgstr ""
+msgstr "Limpar a ordenação"
 
 #: src/common/RichTable/RichTablePagination.js:65
 msgid "Pagination navigation bar"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.9.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-05-19 09:11+0000\n"
+"PO-Revision-Date: 2026-05-27 08:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/foris-"
 "js/pt/>\n"
@@ -103,56 +103,56 @@ msgstr "Limpar a ordenação"
 
 #: src/common/RichTable/RichTablePagination.js:65
 msgid "Pagination navigation bar"
-msgstr ""
+msgstr "Barra de navegação de paginação"
 
 #: src/common/RichTable/RichTablePagination.js:71
 msgid "First page"
-msgstr ""
+msgstr "Primeira página"
 
 #: src/common/RichTable/RichTablePagination.js:77
 msgid "Previous page"
-msgstr ""
+msgstr "Página anterior"
 
 #: src/common/RichTable/RichTablePagination.js:83
 msgid "Next page"
-msgstr ""
+msgstr "Página seguinte"
 
 #: src/common/RichTable/RichTablePagination.js:89
 msgid "Last page"
-msgstr ""
+msgstr "Última página"
 
 #: src/common/RichTable/RichTablePagination.js:95
 msgid "Page"
-msgstr ""
+msgstr "Página"
 
 #: src/common/RichTable/RichTablePagination.js:98
 msgid "of"
-msgstr ""
+msgstr "de"
 
 #: src/common/RichTable/RichTablePagination.js:106
 msgid "Rows per page:"
-msgstr ""
+msgstr "Linhas por página:"
 
 #: src/common/RichTable/RichTablePagination.js:109
 msgid "Select rows per page"
-msgstr ""
+msgstr "Selecionar linhas por página"
 
 #: src/common/RichTable/RichTablePagination.js:121
 msgid "All"
-msgstr ""
+msgstr "Todas"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
-msgstr ""
+msgstr "Ocorreu um erro durante o reiniciar das definições de Wi-Fi."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
-msgstr ""
+msgstr "As definições de Wi-Fi estão repostas às predefinições."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:56
 #: src/common/WiFiSettings/ResetWiFiSettings.js:70
 msgid "Reset Wi-Fi Settings"
-msgstr ""
+msgstr "Reiniciar Definições de Wi-Fi"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:58
 msgid ""
@@ -160,11 +160,14 @@ msgid ""
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
+"Se o número de placas de rede sem fios não corresponder, pode tentar "
+"reiniciar as definições de Wi-Fi. Note que isto vai remover a configuração "
+"atual de Wi-Fi e restaurar as predefinições."
 
 #: src/common/WiFiSettings/WiFiForm.js:97
 #, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
-msgstr ""
+msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
@@ -173,34 +176,36 @@ msgstr "Palavra passe"
 
 #: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
-msgstr ""
+msgstr "Esconder o SSID"
 
 #: src/common/WiFiSettings/WiFiForm.js:159
 msgid "Band"
-msgstr ""
+msgstr "Banda"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax/be mode"
-msgstr ""
+msgstr "Modo 802.11n/ac/ax/be"
 
 #: src/common/WiFiSettings/WiFiForm.js:199
 msgid "Channel"
-msgstr ""
+msgstr "Canal"
 
 #: src/common/WiFiSettings/WiFiForm.js:211
 #: src/common/WiFiSettings/WiFiGuestForm.js:95
 msgid "Encryption"
-msgstr ""
+msgstr "Encriptação"
 
 #: src/common/WiFiSettings/WiFiForm.js:226
 msgid "Disable Management Frame Protection"
-msgstr ""
+msgstr "Desativar Proteção da Estrutura de Gestão"
 
 #: src/common/WiFiSettings/WiFiForm.js:227
 msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
+"No caso de ter problemas a ligar a um ponto de acesso WiFi, tente desativar "
+"a Proteção da Estrutura de Gestão."
 
 #: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
@@ -212,45 +217,45 @@ msgstr "Personalizado"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:45
 msgid "Enable Guest Wi-Fi"
-msgstr ""
+msgstr "Ativar Wi-Fi de Convidados"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:40
 #: src/common/WiFiSettings/WiFiQRCode.js:41
 msgid "Show QR code"
-msgstr ""
+msgstr "Mostrar código QR"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
-msgstr ""
+msgstr "Código QR de Wi-Fi"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
-msgstr ""
+msgstr "Descarregar PDF"
 
 #: src/common/WiFiSettings/WiFiSettings.js:83
 #: src/common/WiFiSettings/WiFiSettings.js:99
 msgid "SSID can't be longer than 32 symbols"
-msgstr ""
+msgstr "SSID não pode ser maior que 32 símbolos"
 
 #: src/common/WiFiSettings/WiFiSettings.js:84
 #: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "SSID can't be empty"
-msgstr ""
+msgstr "SSID não pode ser vazio"
 
 #: src/common/WiFiSettings/WiFiSettings.js:86
 #: src/common/WiFiSettings/WiFiSettings.js:103
 msgid "SSID can't be longer than 32 bytes"
-msgstr ""
+msgstr "SSID não pode ser maior que 32 bytes"
 
 #: src/common/WiFiSettings/WiFiSettings.js:89
 #: src/common/WiFiSettings/WiFiSettings.js:106
 msgid "Password must contain at least 8 symbols"
-msgstr ""
+msgstr "Palavra passe tem de conter pelo menos 8 símbolos"
 
 #: src/common/WiFiSettings/WiFiSettings.js:91
 #: src/common/WiFiSettings/WiFiSettings.js:110
 msgid "Password must not contain more than 63 symbols"
-msgstr ""
+msgstr "Palavra passe não pode conter mais de 63 símbolos"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
@@ -258,97 +263,100 @@ msgstr "Desativado"
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11n - Canal amplo de 20 MHz"
 
 #: src/common/WiFiSettings/constants.js:11
 msgid "802.11n - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11n - Canal amplo de 40 MHz"
 
 #: src/common/WiFiSettings/constants.js:12
 msgid "802.11ac - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11ac - Canal amplo de 20 MHz"
 
 #: src/common/WiFiSettings/constants.js:13
 msgid "802.11ac - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11ac - Canal amplo de 40 MHz"
 
 #: src/common/WiFiSettings/constants.js:14
 msgid "802.11ac - 80 MHz wide channel"
-msgstr ""
+msgstr "802.11ac - Canal amplo de 80 MHz"
 
 #: src/common/WiFiSettings/constants.js:15
 msgid "802.11ac - 80+80 MHz wide channel"
-msgstr ""
+msgstr "802.11ac - Canal amplo de 80+80 MHz"
 
 #: src/common/WiFiSettings/constants.js:16
 msgid "802.11ac - 160 MHz wide channel"
-msgstr ""
+msgstr "802.11ac - Canal amplo de 160 MHz"
 
 #: src/common/WiFiSettings/constants.js:17
 msgid "802.11ax - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - Canal amplo de 20 MHz"
 
 #: src/common/WiFiSettings/constants.js:18
 msgid "802.11ax - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - Canal amplo de 40 MHz"
 
 #: src/common/WiFiSettings/constants.js:19
 msgid "802.11ax - 80 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - Canal amplo de 80 MHz"
 
 #: src/common/WiFiSettings/constants.js:20
 msgid "802.11ax - 80+80 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - Canal amplo de 80+80 MHz"
 
 #: src/common/WiFiSettings/constants.js:21
 msgid "802.11ax - 160 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - Canal amplo de 160 MHz"
 
 #: src/common/WiFiSettings/constants.js:22
 msgid "802.11be - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11be - Canal amplo de 20 MHz"
 
 #: src/common/WiFiSettings/constants.js:23
 msgid "802.11be - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11be - Canal amplo de 40 MHz"
 
 #: src/common/WiFiSettings/constants.js:24
 msgid "802.11be - 80 MHz wide channel"
-msgstr ""
+msgstr "802.11be - Canal amplo de 80 MHz"
 
 #: src/common/WiFiSettings/constants.js:25
 msgid "802.11be - 160 MHz wide channel"
-msgstr ""
+msgstr "802.11be - Canal amplo de 160 MHz"
 
 #: src/common/WiFiSettings/constants.js:26
 msgid "802.11be - 320 MHz wide channel"
-msgstr ""
+msgstr "802.11be - Canal amplo de 320 MHz"
 
 #: src/common/WiFiSettings/constants.js:34
 msgid "WPA3 only"
-msgstr ""
+msgstr "Apenas WPA3"
 
 #: src/common/WiFiSettings/constants.js:35
 msgid "WPA3 with WPA2 as fallback (default)"
-msgstr ""
+msgstr "WPA3 com WPA2 como recurso (predefinição)"
 
 #: src/common/WiFiSettings/constants.js:36
 msgid "WPA2 only"
-msgstr ""
+msgstr "Apenas WPA2"
 
 #: src/common/WiFiSettings/constants.js:39
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
+"Um SSID que contenha caracteres não standard pode causar problemas em alguns "
+"dispositivos."
 
 #: src/common/WiFiSettings/constants.js:42
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
-msgstr ""
+msgstr "Chave pré-partilhada WPA2/3, que é obrigatória para ligação à rede."
 
 #: src/common/WiFiSettings/constants.js:45
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
+"Se definido, a rede não é visível quando se sonda por redes disponíveis."
 
 #: src/common/WiFiSettings/constants.js:48
 msgid ""

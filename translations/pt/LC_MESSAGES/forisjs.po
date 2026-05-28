@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.9.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-05-27 08:11+0000\n"
+"PO-Revision-Date: 2026-05-28 22:01+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/foris-"
 "js/pt/>\n"
@@ -367,6 +367,12 @@ msgid ""
 "standard and is currently supported only by a limited set of devices. As "
 "it is not widely used now, it has only very little interference."
 msgstr ""
+"A banda de 2.4 GHz é mais amplamente suportada pelos clientes, mas tende a "
+"ter mais interferência. A banda de 5 GHz é um standard mais recente e pode "
+"não ser suportada por todos os seus dispositivos. Geralmente tem menos "
+"interferência. A banda de 6 GHz é um standard ainda mais recente e suportada "
+"atualmente apenas por um conjunto de dispositivos limitado. Como ainda não é "
+"amplamente usada, tem muito pouca interferência."
 
 #: src/common/WiFiSettings/constants.js:51
 msgid ""
@@ -374,6 +380,9 @@ msgid ""
 "can yield higher throughput but can cause more interference in the "
 "network. If you don't know what to choose, use the default option."
 msgstr ""
+"Mude isto para ajustar o modo de operação 802.11n/ac/ax/be. Canais mais "
+"largos podem proporcionar um maior débito mas podem causar mais "
+"interferência na rede. Se não sabe o que escolher, use a opção predefinida."
 
 #: src/common/WiFiSettings/constants.js:54
 msgid ""
@@ -383,6 +392,11 @@ msgid ""
 "router. Parameters of the guest network can be set in the Guest network "
 "tab."
 msgstr ""
+"Ativa a Wi-Fi para convidados, o que é separada da rede LAN. Os dispositivos "
+"ligados a esta rede têm permissão de aceder à internet, mas não têm "
+"permissão de aceder a outros dispositivos nem à interface de configuração do "
+"router. Os parâmetros da rede de convidados podem ser definidos no separador "
+"da Rede de Convidados."
 
 #: src/common/WiFiSettings/constants.js:57
 msgid ""
@@ -392,10 +406,15 @@ msgid ""
 "connecting older devices, try to enable WPA2. The 6 GHz band supports "
 "only WPA3."
 msgstr ""
+"O standard WPA3 é o novo método de encriptação mais seguro que é sugerido "
+"ser usado com qualquer dispositivo que o suporte. Os dispositivos antigos "
+"sem suporte a WPA3 requerem o antigo WPA2. Se está a ter problemas com a "
+"ligação de dispositivos antigos, tente ativar o WPA2. A banda de 6 GHz só "
+"suporta WPA3."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Definições guardadas com sucesso"
 
 #: src/form/components/ForisForm.js:183
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
@@ -403,11 +422,11 @@ msgstr ""
 
 #: src/form/components/SubmitButton.js:37
 msgid "Updating"
-msgstr ""
+msgstr "A atualizar"
 
 #: src/form/components/SubmitButton.js:40
 msgid "Loading"
-msgstr ""
+msgstr "A carregar"
 
 #: src/form/components/SubmitButton.js:43
 msgid "Save"

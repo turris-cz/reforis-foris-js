@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris JS 6.9.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-05-28 22:01+0000\n"
+"PO-Revision-Date: 2026-05-30 09:01+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/foris-"
 "js/pt/>\n"
@@ -419,6 +419,7 @@ msgstr "Definições guardadas com sucesso"
 #: src/form/components/ForisForm.js:183
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
+"As alterações que fez podem não estar guardadas. Tem certeza que deseja sair?"
 
 #: src/form/components/SubmitButton.js:37
 msgid "Updating"
@@ -434,36 +435,36 @@ msgstr "Salvar"
 
 #: src/utils/ErrorMessage.js:17
 msgid "An error occurred while fetching data."
-msgstr ""
+msgstr "Ocorreu um erro ao buscar dados."
 
 #: src/utils/validations.js:13
 msgid "This is not a valid IPv4 address."
-msgstr ""
+msgstr "Isto não é um endereço IPv4 válido."
 
 #: src/utils/validations.js:14
 msgid "This is not a valid IPv6 address."
-msgstr ""
+msgstr "Isto não é um endereço IPv6 válido."
 
 #: src/utils/validations.js:15
 msgid "This is not a valid IPv6 prefix."
-msgstr ""
+msgstr "Isto não é um prefixo IPv6 válido."
 
 #: src/utils/validations.js:16
 msgid "This is not a valid domain name."
-msgstr ""
+msgstr "Isto não é um nome de domínio válido."
 
 #: src/utils/validations.js:17
 msgid "This is not a valid hostname."
-msgstr ""
+msgstr "Isto não é um nome de máquina válido."
 
 #: src/utils/validations.js:18
 msgid "This is not a valid DUID."
-msgstr ""
+msgstr "Isto não é um DUID válido."
 
 #: src/utils/validations.js:19
 msgid "This is not a valid MAC address."
-msgstr ""
+msgstr "Isto não é um endereço MAC válido."
 
 #: src/utils/validations.js:20
 msgid "Doesn't contain a list of emails separated by commas."
-msgstr ""
+msgstr "Não contém uma lista de emails separados por vírgulas."

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-07-04 23:01+0000\n"
+"PO-Revision-Date: 2026-07-06 00:01+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language: sv\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/turris/foris-js/"
@@ -107,7 +107,7 @@ msgstr ""
 
 #: src/common/RichTable/RichTablePagination.js:71
 msgid "First page"
-msgstr ""
+msgstr "Första sidan"
 
 #: src/common/RichTable/RichTablePagination.js:77
 msgid "Previous page"

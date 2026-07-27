@@ -391,6 +391,64 @@ export function wifi7SettingsFixture() {
     };
 }
 
+export function multiBandSettingsFixture() {
+    return {
+        devices: [
+            {
+                SSID: "TestSSID Multi Band",
+                available_bands: [
+                    {
+                        available_channels: [
+                            {
+                                frequency: 5180,
+                                number: 36,
+                                radar: false,
+                            },
+                            {
+                                frequency: 5200,
+                                number: 40,
+                                radar: false,
+                            },
+                        ],
+                        available_htmodes: ["NOHT", "HT20", "HT40", "VHT80"],
+                        band: "5g",
+                    },
+                    {
+                        available_channels: [
+                            {
+                                frequency: 5955,
+                                number: 1,
+                                radar: false,
+                            },
+                            {
+                                frequency: 5975,
+                                number: 5,
+                                radar: false,
+                            },
+                        ],
+                        available_htmodes: ["NOHT", "HT20", "HT40", "VHT160"],
+                        band: "6g",
+                    },
+                ],
+                channel: 36,
+                enabled: true,
+                guest_wifi: {
+                    SSID: "TestGuestSSID Multi Band",
+                    enabled: false,
+                    encryption: "WPA2",
+                    password: "",
+                },
+                hidden: false,
+                htmode: "VHT80",
+                band: "5g",
+                id: 0,
+                password: "TestPass",
+                encryption: "WPA2/3",
+            },
+        ],
+    };
+}
+
 const oneDevice = {
     devices: [
         {

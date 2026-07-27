@@ -170,13 +170,18 @@ function DeviceForm({
                             // Get the last item in the available HT modes for the selected band
                             const bestHtmode =
                                 selectedBand.available_htmodes.slice(-1)[0];
+                            const deviceUpdate = {
+                                band: { $set: value },
+                                channel: { $set: "0" },
+                                htmode: { $set: bestHtmode },
+                            };
+                            // The 6 GHz band supports only WPA3
+                            if (value === "6g") {
+                                deviceUpdate.encryption = { $set: "WPA3" };
+                            }
                             return {
                                 devices: {
-                                    [deviceIndex]: {
-                                        band: { $set: value },
-                                        channel: { $set: "0" },
-                                        htmode: { $set: bestHtmode },
-                                    },
+                                    [deviceIndex]: deviceUpdate,
                                 },
                             };
                         })}

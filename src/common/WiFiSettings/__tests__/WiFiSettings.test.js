@@ -17,6 +17,7 @@ import { mockJSONError } from "testUtils/network";
 import {
     wifiSettingsFixture,
     wifi7SettingsFixture,
+    multiBandSettingsFixture,
     oneDevice,
     twoDevices,
     threeDevices,
@@ -295,5 +296,48 @@ describe("<WiFiSettings: 6GHz/>", () => {
     it("Snapshot one module enabled.", () => {
         fireEvent.click(getByText("Wi-Fi 1"));
         expect(diffSnapshot(firstRender, asFragment())).toMatchSnapshot();
+    });
+});
+
+describe("<WiFiSettings: switching to 6GHz/>", () => {
+    let getAllByText;
+    let getByText;
+    const endpoint = "/reforis/api/wifi";
+
+    beforeEach(async () => {
+        const webSockets = new WebSockets();
+        const renderRes = render(
+            <WiFiSettings
+                ws={webSockets}
+                endpoint={endpoint}
+                resetEndpoint="foo"
+            />
+        );
+        getAllByText = renderRes.getAllByText;
+        getByText = renderRes.getByText;
+        mockAxios.mockResponse({ data: multiBandSettingsFixture() });
+        await waitFor(() => renderRes.getByText("Wi-Fi 1"));
+    });
+
+    // The 6 GHz band offers WPA3 as the only encryption choice, so the form
+    // value has to follow the band, otherwise the previously selected mode
+    // (e.g. WPA2/3) is submitted while the select displays WPA3.
+    it("Post form: encryption is WPA3 after switching to 6 GHz.", () => {
+        fireEvent.click(getAllByText(/^6 GHz$/)[0]);
+        fireEvent.click(getByText("Save"));
+
+        expect(mockAxios.post).toBeCalled();
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            endpoint,
+            {
+                devices: [
+                    expect.objectContaining({
+                        band: "6g",
+                        encryption: "WPA3",
+                    }),
+                ],
+            },
+            expect.anything()
+        );
     });
 });

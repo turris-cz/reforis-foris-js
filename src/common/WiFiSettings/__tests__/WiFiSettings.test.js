@@ -302,6 +302,7 @@ describe("<WiFiSettings: 6GHz/>", () => {
 describe("<WiFiSettings: switching to 6GHz/>", () => {
     let getAllByText;
     let getByText;
+    let getAllByLabelText;
     const endpoint = "/reforis/api/wifi";
 
     beforeEach(async () => {
@@ -315,6 +316,7 @@ describe("<WiFiSettings: switching to 6GHz/>", () => {
         );
         getAllByText = renderRes.getAllByText;
         getByText = renderRes.getByText;
+        getAllByLabelText = renderRes.getAllByLabelText;
         mockAxios.mockResponse({ data: multiBandSettingsFixture() });
         await waitFor(() => renderRes.getByText("Wi-Fi 1"));
     });
@@ -339,5 +341,39 @@ describe("<WiFiSettings: switching to 6GHz/>", () => {
             },
             expect.anything()
         );
+    });
+
+    // The guest network shares the radio with the main one, so its encryption
+    // has to follow the band as well.
+    it("Post form: guest encryption is WPA3 after switching to 6 GHz.", () => {
+        fireEvent.click(getAllByText(/^6 GHz$/)[0]);
+        fireEvent.click(getByText("Save"));
+
+        expect(mockAxios.post).toBeCalled();
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            endpoint,
+            {
+                devices: [
+                    expect.objectContaining({
+                        guest_wifi: expect.objectContaining({
+                            encryption: "WPA3",
+                        }),
+                    }),
+                ],
+            },
+            expect.anything()
+        );
+    });
+
+    it("Guest encryption select offers WPA3 only on 6 GHz.", () => {
+        const guestEncryptionSelect = () =>
+            getAllByLabelText("Encryption")[1].querySelectorAll("option");
+
+        expect(guestEncryptionSelect()).toHaveLength(3);
+
+        fireEvent.click(getAllByText(/^6 GHz$/)[0]);
+
+        expect(guestEncryptionSelect()).toHaveLength(1);
+        expect(guestEncryptionSelect()[0].value).toBe("WPA3");
     });
 });

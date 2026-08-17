@@ -434,9 +434,9 @@ export function multiBandSettingsFixture() {
                 enabled: true,
                 guest_wifi: {
                     SSID: "TestGuestSSID Multi Band",
-                    enabled: false,
+                    enabled: true,
                     encryption: "WPA2",
-                    password: "",
+                    password: "TestGuestPass",
                 },
                 hidden: false,
                 htmode: "VHT80",

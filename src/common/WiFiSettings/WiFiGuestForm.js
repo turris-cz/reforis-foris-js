@@ -9,7 +9,8 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
-import { HELP_TEXTS, ENCRYPTIONMODES } from "./constants";
+import { HELP_TEXTS } from "./constants";
+import getEncryptionChoices from "./encryptionHelpers";
 import WiFiQRCode from "./WiFiQRCode";
 import PasswordInput from "../../bootstrap/PasswordInput";
 import Select from "../../bootstrap/Select";
@@ -30,6 +31,8 @@ WifiGuestForm.propTypes = {
     }),
     setFormValue: PropTypes.func.isRequired,
     deviceIndex: PropTypes.string,
+    /** Band of the device the guest network shares the radio with. */
+    band: PropTypes.string,
 };
 
 export default function WifiGuestForm({
@@ -37,6 +40,7 @@ export default function WifiGuestForm({
     formErrors,
     setFormValue,
     deviceIndex,
+    band,
     ...props
 }) {
     return (
@@ -93,7 +97,10 @@ export default function WifiGuestForm({
                     />
                     <Select
                         label={_("Encryption")}
-                        choices={ENCRYPTIONMODES}
+                        choices={getEncryptionChoices(
+                            band,
+                            formData.encryption
+                        )}
                         helpText={HELP_TEXTS.wpa3}
                         value={formData.encryption}
                         onChange={setFormValue((value) => ({

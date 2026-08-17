@@ -9,7 +9,8 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
-import { HELP_TEXTS, HTMODES, BANDS, ENCRYPTIONMODES } from "./constants";
+import { HELP_TEXTS, HTMODES, BANDS } from "./constants";
+import getEncryptionChoices from "./encryptionHelpers";
 import WifiGuestForm from "./WiFiGuestForm";
 import WiFiQRCode from "./WiFiQRCode";
 import PasswordInput from "../../bootstrap/PasswordInput";
@@ -175,9 +176,13 @@ function DeviceForm({
                                 channel: { $set: "0" },
                                 htmode: { $set: bestHtmode },
                             };
-                            // The 6 GHz band supports only WPA3
+                            // The 6 GHz band supports only WPA3, both for the
+                            // main and for the guest network
                             if (value === "6g") {
                                 deviceUpdate.encryption = { $set: "WPA3" };
+                                deviceUpdate.guest_wifi = {
+                                    encryption: { $set: "WPA3" },
+                                };
                             }
                             return {
                                 devices: {
@@ -215,7 +220,10 @@ function DeviceForm({
 
                     <Select
                         label={_("Encryption")}
-                        choices={getEncryptionChoices(formData)}
+                        choices={getEncryptionChoices(
+                            formData.band,
+                            formData.encryption
+                        )}
                         helpText={HELP_TEXTS.wpa3}
                         value={formData.encryption}
                         onChange={setFormValue((value) => ({
@@ -255,6 +263,7 @@ function DeviceForm({
                                 ...formData.guest_wifi,
                             }}
                             formErrors={formErrors.guest_wifi || {}}
+                            band={formData.band}
                             setFormValue={setFormValue}
                             {...props}
                         />
@@ -305,16 +314,4 @@ function getBandChoices(device) {
         label: `${BANDS[availableBand.band]} GHz`,
         value: availableBand.band,
     }));
-}
-
-function getEncryptionChoices(device) {
-    if (device.encryption === "custom") {
-        ENCRYPTIONMODES.custom = _("Custom");
-    }
-    if (device.band === "6g") {
-        return {
-            WPA3: ENCRYPTIONMODES.WPA3,
-        };
-    }
-    return ENCRYPTIONMODES;
 }

@@ -8,6 +8,14 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.11.2] - 2026-08-17
+
+### Changed
+
+- Fixed Guest WiFi encryption on 6ghz band
+
+## [6.11.0] - 2026-03-23
+
 ## [6.11.1] - 2026-07-27
 
 ### Changed
@@ -536,7 +544,9 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.1...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.2...dev
+[6.11.2]:
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.1...v6.11.2
 [6.11.1]:
     https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.0...v6.11.1
 [6.11.0]:

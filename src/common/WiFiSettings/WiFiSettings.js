@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (C) 2019-2026 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -9,6 +9,7 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
+import { getSupportedEncryption } from "./encryptionHelpers";
 import ResetWiFiSettings from "./ResetWiFiSettings";
 import WiFiForm from "./WiFiForm";
 import ForisForm from "../../form/components/ForisForm";
@@ -43,6 +44,20 @@ function WiFiSettings({ ws, endpoint, resetEndpoint, hasGuestNetwork }) {
 function prepData(formData) {
     formData.devices.forEach((device, idx) => {
         formData.devices[idx].channel = device.channel.toString();
+
+        // A device can be delivered by the API on a band which doesn't
+        // support its encryption (e.g. WPA2/3 on 6 GHz). Such a value is not
+        // among the choices of the select, so the select falls back to
+        // displaying its first choice while the form keeps (and submits) the
+        // unsupported one.
+        formData.devices[idx].encryption = getSupportedEncryption(
+            device.band,
+            device.encryption
+        );
+        formData.devices[idx].guest_wifi.encryption = getSupportedEncryption(
+            device.band,
+            device.guest_wifi.encryption
+        );
     });
     return formData;
 }
@@ -58,8 +73,20 @@ function prepDataToSubmit(formData) {
             return;
         }
 
-        if (!device.guest_wifi.enabled)
+        if (!device.guest_wifi.enabled) {
             formData.devices[idx].guest_wifi = { enabled: false };
+        } else {
+            formData.devices[idx].guest_wifi.encryption =
+                getSupportedEncryption(
+                    device.band,
+                    device.guest_wifi.encryption
+                );
+        }
+
+        formData.devices[idx].encryption = getSupportedEncryption(
+            device.band,
+            device.encryption
+        );
 
         if (device.encryption === "WPA2") {
             delete formData.devices[idx].ieee80211w_disabled;

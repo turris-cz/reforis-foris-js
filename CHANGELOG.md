@@ -8,6 +8,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Fixed encryption of devices delivered by the API on the 6GHz band being
+  submitted as WPA2/3 while WPA3 was displayed
+
 ## [6.11.2] - 2026-08-17
 
 ### Changed

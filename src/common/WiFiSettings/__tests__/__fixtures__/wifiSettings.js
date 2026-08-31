@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2019-2026 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -447,6 +447,24 @@ export function multiBandSettingsFixture() {
             },
         ],
     };
+}
+
+// Several devices where the last one is delivered by the API already on the
+// 6 GHz band, but with an encryption the band doesn't support.
+export function multiDevice6GHzSettingsFixture() {
+    const devices = wifiSettingsFixture().devices.map((device) => ({
+        ...device,
+        enabled: true,
+        guest_wifi: { encryption: "WPA2", ...device.guest_wifi },
+    }));
+    const last = multiBandSettingsFixture().devices[0];
+    last.id = devices.length;
+    last.band = "6g";
+    last.htmode = "VHT160";
+    last.channel = 1;
+    last.encryption = "WPA2/3";
+    last.guest_wifi.encryption = "WPA2";
+    return { devices: [...devices, last] };
 }
 
 const oneDevice = {

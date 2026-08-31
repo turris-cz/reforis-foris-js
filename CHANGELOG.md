@@ -10,6 +10,10 @@ and this project adheres to
 
 ### Changed
 
+## [6.11.3] - 2026-08-31
+
+### Changed
+
 - Fixed encryption of devices delivered by the API on the 6GHz band being
   submitted as WPA2/3 while WPA3 was displayed
 
@@ -549,7 +553,9 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.2...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.3...dev
+[6.11.3]:
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.2...v6.11.3
 [6.11.2]:
     https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.1...v6.11.2
 [6.11.1]:

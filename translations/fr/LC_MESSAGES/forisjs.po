@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
 "PO-Revision-Date: 2026-09-04 13:48+0000\n"
-"Last-Translator: Éfrit <efrit@users.noreply.hosted.weblate.org>\n"
+"Last-Translator: \"J. Lavoie\" <j.lavoie@net-c.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/foris-js/"
 "fr/>\n"
 "Language: fr\n"
@@ -144,8 +144,7 @@ msgstr "Tout"
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
-"Une erreur s'est produite lors de la réinitialisation des paramètres Wi-"
-"Fi."
+"Une erreur s'est produite lors de la réinitialisation des paramètres Wi-Fi."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
@@ -359,8 +358,8 @@ msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
-"Un SSID qui contient des caractères non standard peut causer des "
-"problèmes sur certains appareils."
+"Un SSID qui contient des caractères non standard peut causer des problèmes "
+"sur certains appareils."
 
 #: src/common/WiFiSettings/constants.js:42
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
@@ -370,8 +369,8 @@ msgstr ""
 #: src/common/WiFiSettings/constants.js:45
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
-"S'il est défini, le réseau n'est pas visible lors de la recherche de "
-"réseaux disponibles."
+"S'il est défini, le réseau n'est pas visible lors de la recherche de réseaux "
+"disponibles."
 
 #: src/common/WiFiSettings/constants.js:48
 msgid ""

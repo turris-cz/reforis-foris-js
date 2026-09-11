@@ -65,6 +65,8 @@ function prepData(formData) {
 function prepDataToSubmit(formData) {
     formData.devices.forEach((device, idx) => {
         delete device.available_bands;
+        delete device.slot;
+        delete device.bus;
 
         formData.devices[idx].channel = parseInt(device.channel);
 

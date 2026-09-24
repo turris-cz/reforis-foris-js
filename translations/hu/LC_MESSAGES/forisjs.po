@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-09-04 13:48+0000\n"
-"Last-Translator: Zoli <boritek@gmail.com>\n"
+"PO-Revision-Date: 2026-09-24 19:51+0000\n"
+"Last-Translator: Kövecses József <kovecses@gmail.com>\n"
 "Language: hu\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/turris/foris-"
 "js/hu/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
-"X-Generator: Weblate 2026.9\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -39,7 +39,7 @@ msgstr "Ismeretlen API-hiba történt."
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
 #: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
-msgstr ""
+msgstr "Bezárás"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr ""
+msgstr "Visszaállítás"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
@@ -209,7 +209,7 @@ msgstr ""
 
 #: src/common/WiFiSettings/WiFiForm.js:303
 msgid "Custom"
-msgstr ""
+msgstr "Egyéni"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:45
 msgid "Enable Guest Wi-Fi"
@@ -255,7 +255,7 @@ msgstr ""
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
-msgstr ""
+msgstr "Letiltva"
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"

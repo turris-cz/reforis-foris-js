@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-09-24 19:51+0000\n"
+"PO-Revision-Date: 2026-09-27 15:51+0000\n"
 "Last-Translator: Kövecses József <kovecses@gmail.com>\n"
 "Language: hu\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/turris/foris-"
@@ -43,19 +43,19 @@ msgstr "Bezárás"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
-msgstr ""
+msgstr "Másolva!"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copy"
-msgstr ""
+msgstr "Másolás"
 
 #: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
 msgid "Increase value. Hint: Hold to increase faster."
-msgstr ""
+msgstr "Érték növelése. Tipp: Tartsd lenyomva a gyorsabb növeléshez."
 
 #: src/bootstrap/NumberInput.js:101 src/bootstrap/NumberInput.js:102
 msgid "Decrease value. Hint: Hold to decrease faster."
-msgstr ""
+msgstr "Érték csökkentése. Tipp: Tartsd lenyomva a gyorsabb csökkentéshez."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
 #, fuzzy
@@ -64,23 +64,23 @@ msgstr "Beállítások sikeresen elmentve"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:76
 msgid "Action failed."
-msgstr ""
+msgstr "A művelet sikertelen volt."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
-msgstr ""
+msgstr "Mégsem"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
 msgid "Confirm"
-msgstr ""
+msgstr "Megerősít"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
-msgstr ""
+msgstr "Keresés…"
 
 #: src/common/RichTable/RichTableBody.js:50
 msgid "No results."
-msgstr ""
+msgstr "Nincs találat."
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:27
 msgid "Columns"
@@ -222,16 +222,16 @@ msgstr ""
 
 #: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
-msgstr ""
+msgstr "Wi-Fi QR-kód"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:98
 msgid "Download PDF"
-msgstr ""
+msgstr "PDF letöltése"
 
 #: src/common/WiFiSettings/WiFiSettings.js:83
 #: src/common/WiFiSettings/WiFiSettings.js:99
 msgid "SSID can't be longer than 32 symbols"
-msgstr ""
+msgstr "Az SSID nem lehet hosszabb 32 karakternél"
 
 #: src/common/WiFiSettings/WiFiSettings.js:84
 #: src/common/WiFiSettings/WiFiSettings.js:101
@@ -246,12 +246,12 @@ msgstr ""
 #: src/common/WiFiSettings/WiFiSettings.js:89
 #: src/common/WiFiSettings/WiFiSettings.js:106
 msgid "Password must contain at least 8 symbols"
-msgstr ""
+msgstr "A jelszónak legalább 8 karaktert kell tartalmaznia"
 
 #: src/common/WiFiSettings/WiFiSettings.js:91
 #: src/common/WiFiSettings/WiFiSettings.js:110
 msgid "Password must not contain more than 63 symbols"
-msgstr ""
+msgstr "A jelszó nem tartalmazhat 63 karakternél többet"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
@@ -259,93 +259,97 @@ msgstr "Letiltva"
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11n – 20 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:11
 msgid "802.11n - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11n – 40 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:12
 msgid "802.11ac - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11ac – 20 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:13
 msgid "802.11ac - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11ac – 40 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:14
 msgid "802.11ac - 80 MHz wide channel"
-msgstr ""
+msgstr "802.11ac – 80 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:15
 msgid "802.11ac - 80+80 MHz wide channel"
-msgstr ""
+msgstr "802.11ac – 80+80 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:16
 msgid "802.11ac - 160 MHz wide channel"
-msgstr ""
+msgstr "802.11ac – 160 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:17
 msgid "802.11ax - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - 20 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:18
 msgid "802.11ax - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - 40 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:19
 msgid "802.11ax - 80 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - 80 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:20
 msgid "802.11ax - 80+80 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - 80+80 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:21
 msgid "802.11ax - 160 MHz wide channel"
-msgstr ""
+msgstr "802.11ax - 1600 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:22
 msgid "802.11be - 20 MHz wide channel"
-msgstr ""
+msgstr "802.11be – 20 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:23
 msgid "802.11be - 40 MHz wide channel"
-msgstr ""
+msgstr "802.11be – 40 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:24
 msgid "802.11be - 80 MHz wide channel"
-msgstr ""
+msgstr "802.11be – 80 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:25
 msgid "802.11be - 160 MHz wide channel"
-msgstr ""
+msgstr "802.11be – 160 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:26
 msgid "802.11be - 320 MHz wide channel"
-msgstr ""
+msgstr "802.11be – 320 MHz széles csatorna"
 
 #: src/common/WiFiSettings/constants.js:34
 msgid "WPA3 only"
-msgstr ""
+msgstr "Kizárólag WPA3"
 
 #: src/common/WiFiSettings/constants.js:35
 msgid "WPA3 with WPA2 as fallback (default)"
-msgstr ""
+msgstr "WPA3, WPA2-vel tartalék megoldásként (alapértelmezett)"
 
 #: src/common/WiFiSettings/constants.js:36
 msgid "WPA2 only"
-msgstr ""
+msgstr "Kizárólag WPA2"
 
 #: src/common/WiFiSettings/constants.js:39
 msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
+"Az olyan SSID, amely nem szabványos karaktereket tartalmaz, problémákat "
+"okozhat egyes készülékeken."
 
 #: src/common/WiFiSettings/constants.js:42
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
 msgstr ""
+"WPA2/3 előre megosztott kulcs, amely a hálózathoz való csatlakozáshoz "
+"szükséges."
 
 #: src/common/WiFiSettings/constants.js:45
 msgid "If set, network is not visible when scanning for available networks."
@@ -388,7 +392,7 @@ msgstr ""
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
-msgstr "Beállítások sikeresen elmentve"
+msgstr "Beállítások sikeresen mentve"
 
 #: src/form/components/ForisForm.js:183
 msgid "Changes you made may not be saved. Are you sure you want to leave?"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2026-09-27 15:51+0000\n"
+"PO-Revision-Date: 2026-09-29 15:51+0000\n"
 "Last-Translator: Kövecses József <kovecses@gmail.com>\n"
 "Language: hu\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/turris/foris-"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
-msgstr "A munkamenet lejárt. Kérjük, jelentkezzen be újra."
+msgstr "A munkamenet lejárt. Kérjük jelentkezzen be újra."
 
 #: src/api/utils.js:66
 msgid "Timeout error occurred."
@@ -58,9 +58,8 @@ msgid "Decrease value. Hint: Hold to decrease faster."
 msgstr "Érték csökkentése. Tipp: Tartsd lenyomva a gyorsabb csökkentéshez."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:67
-#, fuzzy
 msgid "Action successful."
-msgstr "Beállítások sikeresen elmentve"
+msgstr "A művelet sikeresen végrehajtva."
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:76
 msgid "Action failed."
@@ -84,7 +83,7 @@ msgstr "Nincs találat."
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:27
 msgid "Columns"
-msgstr ""
+msgstr "Oszlopok"
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
@@ -92,68 +91,68 @@ msgstr "Visszaállítás"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
-msgstr ""
+msgstr "Rendezés növekvő sorrendben"
 
 #: src/common/RichTable/RichTableHeader.js:30
 msgid "Sort descending"
-msgstr ""
+msgstr "Rendezés csökkenő sorrendben"
 
 #: src/common/RichTable/RichTableHeader.js:31
 msgid "Clear sort"
-msgstr ""
+msgstr "Rendezés törlése"
 
 #: src/common/RichTable/RichTablePagination.js:65
 msgid "Pagination navigation bar"
-msgstr ""
+msgstr "Lapozósáv"
 
 #: src/common/RichTable/RichTablePagination.js:71
 msgid "First page"
-msgstr ""
+msgstr "Első oldal"
 
 #: src/common/RichTable/RichTablePagination.js:77
 msgid "Previous page"
-msgstr ""
+msgstr "Előző oldal"
 
 #: src/common/RichTable/RichTablePagination.js:83
 msgid "Next page"
-msgstr ""
+msgstr "Következő oldal"
 
 #: src/common/RichTable/RichTablePagination.js:89
 msgid "Last page"
-msgstr ""
+msgstr "Utolsó oldal"
 
 #: src/common/RichTable/RichTablePagination.js:95
 msgid "Page"
-msgstr ""
+msgstr "Oldal"
 
 #: src/common/RichTable/RichTablePagination.js:98
 msgid "of"
-msgstr ""
+msgstr "/"
 
 #: src/common/RichTable/RichTablePagination.js:106
 msgid "Rows per page:"
-msgstr ""
+msgstr "Sorok száma oldalanként:"
 
 #: src/common/RichTable/RichTablePagination.js:109
 msgid "Select rows per page"
-msgstr ""
+msgstr "Sorok számának megadása oldalanként"
 
 #: src/common/RichTable/RichTablePagination.js:121
 msgid "All"
-msgstr ""
+msgstr "Mindegyik"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
-msgstr ""
+msgstr "Hiba történt a Wi-Fi beállítások alaphelyzetbe állításakor."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
-msgstr ""
+msgstr "A Wi-Fi beállítások visszaálltak az alapértelmezettekre."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:56
 #: src/common/WiFiSettings/ResetWiFiSettings.js:70
 msgid "Reset Wi-Fi Settings"
-msgstr ""
+msgstr "Wi-Fi beállítások alaphelyzetbe állítása"
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:58
 msgid ""
@@ -161,51 +160,57 @@ msgid ""
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
+"Ha a vezeték nélküli kártyák száma nem egyezik, megpróbálhatja alaphelyzetbe "
+"állítani a Wi-Fi beállításokat. Ne feledje, hogy ez törli a jelenlegi Wi-Fi "
+"konfigurációt, és visszaállítja az alapértelmezett értékeket."
 
 #: src/common/WiFiSettings/WiFiForm.js:97
 #, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
-msgstr ""
+msgstr "Wi-Fi ${deviceID + 1}"
 
 #: src/common/WiFiSettings/WiFiForm.js:132
 #: src/common/WiFiSettings/WiFiGuestForm.js:80
 msgid "Password"
-msgstr ""
+msgstr "Jelszó"
 
 #: src/common/WiFiSettings/WiFiForm.js:146
 msgid "Hide SSID"
-msgstr ""
+msgstr "SSID elrejtése"
 
 #: src/common/WiFiSettings/WiFiForm.js:159
 msgid "Band"
-msgstr ""
+msgstr "Frekvenciasáv"
 
 #: src/common/WiFiSettings/WiFiForm.js:186
 msgid "802.11n/ac/ax/be mode"
-msgstr ""
+msgstr "802.11n/ac/ax/be mód"
 
 #: src/common/WiFiSettings/WiFiForm.js:199
 msgid "Channel"
-msgstr ""
+msgstr "Csatorna"
 
 #: src/common/WiFiSettings/WiFiForm.js:211
 #: src/common/WiFiSettings/WiFiGuestForm.js:95
 msgid "Encryption"
-msgstr ""
+msgstr "Titkosítás"
 
 #: src/common/WiFiSettings/WiFiForm.js:226
 msgid "Disable Management Frame Protection"
-msgstr ""
+msgstr "Felügyeleti keretvédelmi funkció (MFP) kikapcsolása"
 
 #: src/common/WiFiSettings/WiFiForm.js:227
 msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
+"Amennyiben problémát tapasztal a Wi-Fi hozzáférési ponthoz történő "
+"csatlakozás során, próbálja meg kikapcsolni a felügyeleti keretvédelmi "
+"funkciót (MFP)."
 
 #: src/common/WiFiSettings/WiFiForm.js:262
 msgid "auto"
-msgstr ""
+msgstr "automatikus"
 
 #: src/common/WiFiSettings/WiFiForm.js:303
 msgid "Custom"
@@ -213,12 +218,12 @@ msgstr "Egyéni"
 
 #: src/common/WiFiSettings/WiFiGuestForm.js:45
 msgid "Enable Guest Wi-Fi"
-msgstr ""
+msgstr "Vendég Wi-Fi engedélyezése"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:40
 #: src/common/WiFiSettings/WiFiQRCode.js:41
 msgid "Show QR code"
-msgstr ""
+msgstr "QR-kód megjelenítése"
 
 #: src/common/WiFiSettings/WiFiQRCode.js:67
 msgid "Wi-Fi QR Code"
@@ -236,12 +241,12 @@ msgstr "Az SSID nem lehet hosszabb 32 karakternél"
 #: src/common/WiFiSettings/WiFiSettings.js:84
 #: src/common/WiFiSettings/WiFiSettings.js:101
 msgid "SSID can't be empty"
-msgstr ""
+msgstr "Az SSID nem lehet üres”"
 
 #: src/common/WiFiSettings/WiFiSettings.js:86
 #: src/common/WiFiSettings/WiFiSettings.js:103
 msgid "SSID can't be longer than 32 bytes"
-msgstr ""
+msgstr "Az SSID nem lehet hosszabb 32 bájtnál"
 
 #: src/common/WiFiSettings/WiFiSettings.js:89
 #: src/common/WiFiSettings/WiFiSettings.js:106
@@ -354,6 +359,8 @@ msgstr ""
 #: src/common/WiFiSettings/constants.js:45
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
+"Ha be van kapcsolva, a hálózat nem lesz látható az elérhető hálózatok "
+"keresésekor."
 
 #: src/common/WiFiSettings/constants.js:48
 msgid ""
@@ -364,6 +371,12 @@ msgid ""
 "standard and is currently supported only by a limited set of devices. As "
 "it is not widely used now, it has only very little interference."
 msgstr ""
+"A 2,4 GHz-es sávot a kliensek szélesebb köre támogatja, de hajlamosabb az "
+"interferenciára. Az 5 GHz-es sáv egy újabb szabvány, és előfordulhat, hogy "
+"nem minden eszköze támogatja. Általában kevesebb interferenciával jár, de a "
+"jel nem terjed olyan jól beltéren. A 6 GHz-es sáv egy még újabb szabvány, "
+"amelyet jelenleg csak az eszközök korlátozott köre támogat. Mivel még nem "
+"elterjedt, rendkívül kevés interferenciával rendelkezik."
 
 #: src/common/WiFiSettings/constants.js:51
 msgid ""
@@ -371,6 +384,10 @@ msgid ""
 "can yield higher throughput but can cause more interference in the "
 "network. If you don't know what to choose, use the default option."
 msgstr ""
+"Módosítsa ezt a 802.11n/ac/ax/be működési mód beállításához. A szélesebb "
+"csatornák nagyobb átviteli sebességet biztosíthatnak, de nagyobb "
+"interferenciát okozhatnak a hálózatban. Ha nem tudja, mit válasszon, "
+"használja az alapértelmezett beállítást."
 
 #: src/common/WiFiSettings/constants.js:54
 msgid ""
@@ -380,6 +397,10 @@ msgid ""
 "router. Parameters of the guest network can be set in the Guest network "
 "tab."
 msgstr ""
+"Engedélyezi a vendég Wi-Fi-t, amely le van választva a helyi hálózatról (LAN)"
+". Az ehhez a hálózathoz csatlakozó eszközök elérhetik az internetet, de nem "
+"férhetnek hozzá a többi eszközhöz és az útválasztó kezelőfelületéhez. A "
+"vendéghálózat paraméterei a Vendéghálózat lapon adhatók meg."
 
 #: src/common/WiFiSettings/constants.js:57
 msgid ""
@@ -389,6 +410,11 @@ msgid ""
 "connecting older devices, try to enable WPA2. The 6 GHz band supports "
 "only WPA3."
 msgstr ""
+"A WPA3 szabvány a legújabb, legbiztonságosabb titkosítási módszer, amelynek "
+"használata minden olyan eszköznél javasolt, amely támogatja azt. A WPA3-"
+"támogatás nélküli, régebbi eszközöknek a régebbi WPA2-re van szükségük. Ha "
+"problémát tapasztal a régebbi eszközök csatlakoztatásakor, próbálja meg "
+"engedélyezni a WPA2-t. A 6 GHz-es sáv kizárólag a WPA3-at támogatja."
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -405,9 +431,8 @@ msgid "Updating"
 msgstr "Frissítés"
 
 #: src/form/components/SubmitButton.js:40
-#, fuzzy
 msgid "Loading"
-msgstr "Beállítások betöltése"
+msgstr "Betöltés"
 
 #: src/form/components/SubmitButton.js:43
 msgid "Save"
@@ -434,9 +459,8 @@ msgid "This is not a valid domain name."
 msgstr "Érvénytelen tartománynév."
 
 #: src/utils/validations.js:17
-#, fuzzy
 msgid "This is not a valid hostname."
-msgstr "Érvénytelen tartománynév."
+msgstr "Ez nem egy érvényes gépnév."
 
 #: src/utils/validations.js:18
 msgid "This is not a valid DUID."

@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-02-17 15:41+0300\n"
+"POT-Creation-Date: 2026-10-05 18:55+0300\n"
 "PO-Revision-Date: 2026-09-04 13:48+0000\n"
 "Last-Translator: Mattias Münster <mattiasmun@gmail.com>\n"
 "Language: sv\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/foris-js/"
-"sv/>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/foris-"
+"js/sv/>\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
-"X-Generator: Weblate 2026.9\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -160,61 +159,57 @@ msgid ""
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
-"Om ett antal trådlösa kort inte matchar så kan du prova att återställa Wi-Fi-"
-"inställningarna. Notera att det här kommer att ta bort den nuvarande Wi-Fi-"
-"konfigurationen och återställa till standardvärdena."
+"Om ett antal trådlösa kort inte matchar så kan du prova att återställa "
+"Wi-Fi-inställningarna. Notera att det här kommer att ta bort den "
+"nuvarande Wi-Fi-konfigurationen och återställa till standardvärdena."
 
-#: src/common/WiFiSettings/WiFiForm.js:97
+#: src/common/WiFiSettings/WiFiForm.js:101
 #, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
-#: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
+#: src/common/WiFiSettings/WiFiForm.js:136
+#: src/common/WiFiSettings/WiFiGuestForm.js:84
 msgid "Password"
 msgstr "Lösenord"
 
-#: src/common/WiFiSettings/WiFiForm.js:146
+#: src/common/WiFiSettings/WiFiForm.js:150
 msgid "Hide SSID"
 msgstr "Göm SSID"
 
-#: src/common/WiFiSettings/WiFiForm.js:159
+#: src/common/WiFiSettings/WiFiForm.js:163
 msgid "Band"
 msgstr "Band"
 
-#: src/common/WiFiSettings/WiFiForm.js:186
+#: src/common/WiFiSettings/WiFiForm.js:207
 #, fuzzy
 msgid "802.11n/ac/ax/be mode"
 msgstr "802.11n/ac/ax-läge"
 
-#: src/common/WiFiSettings/WiFiForm.js:199
+#: src/common/WiFiSettings/WiFiForm.js:220
 msgid "Channel"
 msgstr "Kanal"
 
-#: src/common/WiFiSettings/WiFiForm.js:211
-#: src/common/WiFiSettings/WiFiGuestForm.js:95
+#: src/common/WiFiSettings/WiFiForm.js:232
+#: src/common/WiFiSettings/WiFiGuestForm.js:99
 msgid "Encryption"
 msgstr "Kryptering"
 
-#: src/common/WiFiSettings/WiFiForm.js:226
+#: src/common/WiFiSettings/WiFiForm.js:251
 msgid "Disable Management Frame Protection"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:227
+#: src/common/WiFiSettings/WiFiForm.js:252
 msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:262
+#: src/common/WiFiSettings/WiFiForm.js:290
 msgid "auto"
 msgstr "auto"
 
-#: src/common/WiFiSettings/WiFiForm.js:303
-msgid "Custom"
-msgstr "Anpassad"
-
-#: src/common/WiFiSettings/WiFiGuestForm.js:45
+#: src/common/WiFiSettings/WiFiGuestForm.js:49
 msgid "Enable Guest Wi-Fi"
 msgstr "Aktivera Wi-Fi för Gäst"
 
@@ -232,28 +227,28 @@ msgstr "QR-kod för Wi-Fi"
 msgid "Download PDF"
 msgstr "Ladda ner PDF"
 
-#: src/common/WiFiSettings/WiFiSettings.js:83
-#: src/common/WiFiSettings/WiFiSettings.js:99
+#: src/common/WiFiSettings/WiFiSettings.js:112
+#: src/common/WiFiSettings/WiFiSettings.js:128
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID kan inte vara längre än 32 symboler"
 
-#: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:101
+#: src/common/WiFiSettings/WiFiSettings.js:113
+#: src/common/WiFiSettings/WiFiSettings.js:130
 msgid "SSID can't be empty"
 msgstr "SSID kan inte vara tomt"
 
-#: src/common/WiFiSettings/WiFiSettings.js:86
-#: src/common/WiFiSettings/WiFiSettings.js:103
+#: src/common/WiFiSettings/WiFiSettings.js:115
+#: src/common/WiFiSettings/WiFiSettings.js:132
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID kan inte vara längre än 32 bytes"
 
-#: src/common/WiFiSettings/WiFiSettings.js:89
-#: src/common/WiFiSettings/WiFiSettings.js:106
+#: src/common/WiFiSettings/WiFiSettings.js:118
+#: src/common/WiFiSettings/WiFiSettings.js:135
 msgid "Password must contain at least 8 symbols"
 msgstr "Lösenord måste innehålla åtminstone 8 symboler"
 
-#: src/common/WiFiSettings/WiFiSettings.js:91
-#: src/common/WiFiSettings/WiFiSettings.js:110
+#: src/common/WiFiSettings/WiFiSettings.js:120
+#: src/common/WiFiSettings/WiFiSettings.js:139
 #, fuzzy
 msgid "Password must not contain more than 63 symbols"
 msgstr "Lösenord måste innehålla åtminstone 8 symboler"
@@ -358,8 +353,8 @@ msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
-"SSID som innehåller icke-standardiserade tecken kan orsaka problem i en del "
-"enheter."
+"SSID som innehåller icke-standardiserade tecken kan orsaka problem i en "
+"del enheter."
 
 #: src/common/WiFiSettings/constants.js:42
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
@@ -403,6 +398,10 @@ msgid ""
 "connecting older devices, try to enable WPA2. The 6 GHz band supports "
 "only WPA3."
 msgstr ""
+
+#: src/common/WiFiSettings/encryptionHelpers.js:15
+msgid "Custom"
+msgstr "Anpassad"
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -598,3 +597,4 @@ msgstr ""
 #~ "with connecting older devices, try to"
 #~ " enable WPA2."
 #~ msgstr ""
+

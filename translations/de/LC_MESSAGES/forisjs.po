@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-02-17 15:41+0300\n"
+"POT-Creation-Date: 2026-10-05 18:55+0300\n"
 "PO-Revision-Date: 2026-09-04 13:47+0000\n"
 "Last-Translator: Ulrich Günther <mail@ulrich-guenther.at>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris/foris-js/"
-"de/>\n"
 "Language: de\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/foris-"
+"js/de/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -144,7 +143,8 @@ msgstr "Alle"
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
-"Ein Fehler ist während der Zurücksetzung der WLAN-Einstellungen aufgetreten."
+"Ein Fehler ist während der Zurücksetzung der WLAN-Einstellungen "
+"aufgetreten."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
@@ -161,62 +161,58 @@ msgid ""
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
-"Falls die Anzahl der WLAN-Karten nicht korrekt ist, könnte es helfen, die "
-"WLAN-Einstellungen zurückzusetzen. Beachten Sie, dass dabei die aktuelle "
-"WLAN-Konfiguration mit den Werkseinstellungen überschrieben wird."
+"Falls die Anzahl der WLAN-Karten nicht korrekt ist, könnte es helfen, die"
+" WLAN-Einstellungen zurückzusetzen. Beachten Sie, dass dabei die aktuelle"
+" WLAN-Konfiguration mit den Werkseinstellungen überschrieben wird."
 
-#: src/common/WiFiSettings/WiFiForm.js:97
+#: src/common/WiFiSettings/WiFiForm.js:101
 #, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "WLAN ${deviceID + 1}"
 
-#: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
+#: src/common/WiFiSettings/WiFiForm.js:136
+#: src/common/WiFiSettings/WiFiGuestForm.js:84
 msgid "Password"
 msgstr "Passwort"
 
-#: src/common/WiFiSettings/WiFiForm.js:146
+#: src/common/WiFiSettings/WiFiForm.js:150
 msgid "Hide SSID"
 msgstr "SSID verbergen"
 
-#: src/common/WiFiSettings/WiFiForm.js:159
+#: src/common/WiFiSettings/WiFiForm.js:163
 msgid "Band"
 msgstr "Band"
 
-#: src/common/WiFiSettings/WiFiForm.js:186
+#: src/common/WiFiSettings/WiFiForm.js:207
 msgid "802.11n/ac/ax/be mode"
 msgstr "802.11n/ac/ax/be-Modus"
 
-#: src/common/WiFiSettings/WiFiForm.js:199
+#: src/common/WiFiSettings/WiFiForm.js:220
 msgid "Channel"
 msgstr "Kanal"
 
-#: src/common/WiFiSettings/WiFiForm.js:211
-#: src/common/WiFiSettings/WiFiGuestForm.js:95
+#: src/common/WiFiSettings/WiFiForm.js:232
+#: src/common/WiFiSettings/WiFiGuestForm.js:99
 msgid "Encryption"
 msgstr "Verschlüsselung"
 
-#: src/common/WiFiSettings/WiFiForm.js:226
+#: src/common/WiFiSettings/WiFiForm.js:251
 msgid "Disable Management Frame Protection"
 msgstr "Management Frame Protection abschalten"
 
-#: src/common/WiFiSettings/WiFiForm.js:227
+#: src/common/WiFiSettings/WiFiForm.js:252
 msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
-"Falls Sie beim Verbinden mit dem WiFi-Access-Point Probleme haben, schalten "
-"Sie testweise die Management Frame Protection ab."
+"Falls Sie beim Verbinden mit dem WiFi-Access-Point Probleme haben, "
+"schalten Sie testweise die Management Frame Protection ab."
 
-#: src/common/WiFiSettings/WiFiForm.js:262
+#: src/common/WiFiSettings/WiFiForm.js:290
 msgid "auto"
 msgstr "automatisch"
 
-#: src/common/WiFiSettings/WiFiForm.js:303
-msgid "Custom"
-msgstr "Benutzerdefiniert"
-
-#: src/common/WiFiSettings/WiFiGuestForm.js:45
+#: src/common/WiFiSettings/WiFiGuestForm.js:49
 msgid "Enable Guest Wi-Fi"
 msgstr "Gast-WLAN aktivieren"
 
@@ -233,28 +229,28 @@ msgstr "WLAN QR-Code"
 msgid "Download PDF"
 msgstr "PDF herunterladen"
 
-#: src/common/WiFiSettings/WiFiSettings.js:83
-#: src/common/WiFiSettings/WiFiSettings.js:99
+#: src/common/WiFiSettings/WiFiSettings.js:112
+#: src/common/WiFiSettings/WiFiSettings.js:128
 msgid "SSID can't be longer than 32 symbols"
 msgstr "Die SSID darf nicht länger als 32 Zeichen sein"
 
-#: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:101
+#: src/common/WiFiSettings/WiFiSettings.js:113
+#: src/common/WiFiSettings/WiFiSettings.js:130
 msgid "SSID can't be empty"
 msgstr "Die SSID darf nicht leer sein"
 
-#: src/common/WiFiSettings/WiFiSettings.js:86
-#: src/common/WiFiSettings/WiFiSettings.js:103
+#: src/common/WiFiSettings/WiFiSettings.js:115
+#: src/common/WiFiSettings/WiFiSettings.js:132
 msgid "SSID can't be longer than 32 bytes"
 msgstr "Die SSID darf nicht länger als 32 Bytes sein"
 
-#: src/common/WiFiSettings/WiFiSettings.js:89
-#: src/common/WiFiSettings/WiFiSettings.js:106
+#: src/common/WiFiSettings/WiFiSettings.js:118
+#: src/common/WiFiSettings/WiFiSettings.js:135
 msgid "Password must contain at least 8 symbols"
 msgstr "Das Passwort muss mindestens 8 Zeichen enthalten"
 
-#: src/common/WiFiSettings/WiFiSettings.js:91
-#: src/common/WiFiSettings/WiFiSettings.js:110
+#: src/common/WiFiSettings/WiFiSettings.js:120
+#: src/common/WiFiSettings/WiFiSettings.js:139
 msgid "Password must not contain more than 63 symbols"
 msgstr "Das Passwort darf höchstens 63 Zeichen enthalten"
 
@@ -369,13 +365,13 @@ msgid ""
 "standard and is currently supported only by a limited set of devices. As "
 "it is not widely used now, it has only very little interference."
 msgstr ""
-"Das 2,4 GHz-Band wird von allen Geräten unterstützt, ist aber tendenziell "
-"stärker mit Interferenzen belastet. Das 5-GHz-Band ist ein neuerer Standard, "
-"der möglicherweise nicht von allen Ihren Geräten unterstützt wird. Es hat in "
-"der Regel weniger Interferenzen, aber das Signal trägt nicht so gut in "
-"Innenräumen. Mittlerweile gibt es sogar ein 6-GHz-Band, welches bisher nur "
-"von einigen weningen Geräten unterstützt wird. Wegen seiner geringen "
-"Verbreitung hat es noch sehr wenige Interferenzen."
+"Das 2,4 GHz-Band wird von allen Geräten unterstützt, ist aber tendenziell"
+" stärker mit Interferenzen belastet. Das 5-GHz-Band ist ein neuerer "
+"Standard, der möglicherweise nicht von allen Ihren Geräten unterstützt "
+"wird. Es hat in der Regel weniger Interferenzen, aber das Signal trägt "
+"nicht so gut in Innenräumen. Mittlerweile gibt es sogar ein 6-GHz-Band, "
+"welches bisher nur von einigen weningen Geräten unterstützt wird. Wegen "
+"seiner geringen Verbreitung hat es noch sehr wenige Interferenzen."
 
 #: src/common/WiFiSettings/constants.js:51
 msgid ""
@@ -383,10 +379,10 @@ msgid ""
 "can yield higher throughput but can cause more interference in the "
 "network. If you don't know what to choose, use the default option."
 msgstr ""
-"Ändern Sie diese Option, um den 802.11n/ac/ax/be-Betriebsmodus anzupassen. "
-"Breitere Kanäle können mehr Daten transportieren, jedoch zu mehr "
-"Interferenzen im Netzwerk führen. Wenn Sie nicht wissen, was Sie wählen "
-"sollen, bleiben Sie bei der Voreinstellung."
+"Ändern Sie diese Option, um den 802.11n/ac/ax/be-Betriebsmodus "
+"anzupassen. Breitere Kanäle können mehr Daten transportieren, jedoch zu "
+"mehr Interferenzen im Netzwerk führen. Wenn Sie nicht wissen, was Sie "
+"wählen sollen, bleiben Sie bei der Voreinstellung."
 
 #: src/common/WiFiSettings/constants.js:54
 msgid ""
@@ -396,11 +392,11 @@ msgid ""
 "router. Parameters of the guest network can be set in the Guest network "
 "tab."
 msgstr ""
-"Ermöglicht ein Wi-Fi für Gäste, das vom LAN-Netzwerk getrennt ist. Geräte, "
-"die mit diesem Netzwerk verbunden sind, dürfen auf das Internet zugreifen, "
-"nicht jedoch auf andere Geräte oder die Konfigurationsschnittstelle des "
-"Routers. Die Parameter des Gastnetzwerks können auf der Gastnetzwerk-"
-"Registerkarte eingestellt werden."
+"Ermöglicht ein Wi-Fi für Gäste, das vom LAN-Netzwerk getrennt ist. "
+"Geräte, die mit diesem Netzwerk verbunden sind, dürfen auf das Internet "
+"zugreifen, nicht jedoch auf andere Geräte oder die "
+"Konfigurationsschnittstelle des Routers. Die Parameter des Gastnetzwerks "
+"können auf der Gastnetzwerk-Registerkarte eingestellt werden."
 
 #: src/common/WiFiSettings/constants.js:57
 msgid ""
@@ -412,10 +408,14 @@ msgid ""
 msgstr ""
 "Der WPA3-Standard ist die neue Verschlüsselungsmethode mit der besten "
 "Sicherheit. Er empfiehlt sich für jedes Gerät, das ihn unterstützt, aber "
-"ältere Geräte, bei denen das noch nicht der Fall ist, müssen auf das ältere "
-"WPA2 ausweichen. Falls Sie Probleme dabei haben, ältere Geräte mit dem WLAN "
-"zu verbinden, schalten Sie versuchsweise WPA2 ein. Auf dem 6-GHz-Band gibt "
-"es nur WPA3."
+"ältere Geräte, bei denen das noch nicht der Fall ist, müssen auf das "
+"ältere WPA2 ausweichen. Falls Sie Probleme dabei haben, ältere Geräte mit"
+" dem WLAN zu verbinden, schalten Sie versuchsweise WPA2 ein. Auf dem 6"
+"-GHz-Band gibt es nur WPA3."
+
+#: src/common/WiFiSettings/encryptionHelpers.js:15
+msgid "Custom"
+msgstr "Benutzerdefiniert"
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -492,3 +492,4 @@ msgstr "Enthält keine Liste von E-Mails, die durch Kommas getrennt sind."
 
 #~ msgid "Confirm reboot"
 #~ msgstr "Neustart bestätigen"
+

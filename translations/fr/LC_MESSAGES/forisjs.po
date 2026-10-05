@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-02-17 15:41+0300\n"
+"POT-Creation-Date: 2026-10-05 18:55+0300\n"
 "PO-Revision-Date: 2026-09-04 13:48+0000\n"
 "Last-Translator: Florian <flo.site@zaclys.net>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/turris/foris-js/"
-"fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/foris-"
+"js/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.9\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: src/api/utils.js:61
@@ -144,7 +143,8 @@ msgstr "Tout"
 #: src/common/WiFiSettings/ResetWiFiSettings.js:39
 msgid "An error occurred during resetting Wi-Fi settings."
 msgstr ""
-"Une erreur s'est produite lors de la réinitialisation des paramètres Wi-Fi."
+"Une erreur s'est produite lors de la réinitialisation des paramètres Wi-"
+"Fi."
 
 #: src/common/WiFiSettings/ResetWiFiSettings.js:42
 msgid "Wi-Fi settings are set to defaults."
@@ -162,43 +162,43 @@ msgid ""
 "and restore the default values."
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:97
+#: src/common/WiFiSettings/WiFiForm.js:101
 #, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
-#: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
+#: src/common/WiFiSettings/WiFiForm.js:136
+#: src/common/WiFiSettings/WiFiGuestForm.js:84
 msgid "Password"
 msgstr "Mot de passe"
 
-#: src/common/WiFiSettings/WiFiForm.js:146
+#: src/common/WiFiSettings/WiFiForm.js:150
 msgid "Hide SSID"
 msgstr "Masquer le SSID"
 
-#: src/common/WiFiSettings/WiFiForm.js:159
+#: src/common/WiFiSettings/WiFiForm.js:163
 msgid "Band"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:186
+#: src/common/WiFiSettings/WiFiForm.js:207
 #, fuzzy
 msgid "802.11n/ac/ax/be mode"
 msgstr "Mode 802.11n/ac"
 
-#: src/common/WiFiSettings/WiFiForm.js:199
+#: src/common/WiFiSettings/WiFiForm.js:220
 msgid "Channel"
 msgstr "Canal"
 
-#: src/common/WiFiSettings/WiFiForm.js:211
-#: src/common/WiFiSettings/WiFiGuestForm.js:95
+#: src/common/WiFiSettings/WiFiForm.js:232
+#: src/common/WiFiSettings/WiFiGuestForm.js:99
 msgid "Encryption"
 msgstr "Chiffrement"
 
-#: src/common/WiFiSettings/WiFiForm.js:226
+#: src/common/WiFiSettings/WiFiForm.js:251
 msgid "Disable Management Frame Protection"
 msgstr "Désactiver le mode Protection du cadre de gestion"
 
-#: src/common/WiFiSettings/WiFiForm.js:227
+#: src/common/WiFiSettings/WiFiForm.js:252
 msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
@@ -206,15 +206,11 @@ msgstr ""
 "Si vous rencontrez des soucis à vous connecter à un point d'accès WiFi, "
 "merci d'essayer de désactiver le mode Protection du cadre de gestion."
 
-#: src/common/WiFiSettings/WiFiForm.js:262
+#: src/common/WiFiSettings/WiFiForm.js:290
 msgid "auto"
 msgstr "automatique"
 
-#: src/common/WiFiSettings/WiFiForm.js:303
-msgid "Custom"
-msgstr "Personnalisé"
-
-#: src/common/WiFiSettings/WiFiGuestForm.js:45
+#: src/common/WiFiSettings/WiFiGuestForm.js:49
 msgid "Enable Guest Wi-Fi"
 msgstr "Activer le mode Wi-Fi invité"
 
@@ -232,28 +228,28 @@ msgstr "Code QR Wi-Fi"
 msgid "Download PDF"
 msgstr "Télécharger le PDF"
 
-#: src/common/WiFiSettings/WiFiSettings.js:83
-#: src/common/WiFiSettings/WiFiSettings.js:99
+#: src/common/WiFiSettings/WiFiSettings.js:112
+#: src/common/WiFiSettings/WiFiSettings.js:128
 msgid "SSID can't be longer than 32 symbols"
 msgstr "Le SSID ne peut pas être plus long que 32 symboles"
 
-#: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:101
+#: src/common/WiFiSettings/WiFiSettings.js:113
+#: src/common/WiFiSettings/WiFiSettings.js:130
 msgid "SSID can't be empty"
 msgstr "Le SSID ne peut pas être vide"
 
-#: src/common/WiFiSettings/WiFiSettings.js:86
-#: src/common/WiFiSettings/WiFiSettings.js:103
+#: src/common/WiFiSettings/WiFiSettings.js:115
+#: src/common/WiFiSettings/WiFiSettings.js:132
 msgid "SSID can't be longer than 32 bytes"
 msgstr "Le SSID ne peut pas dépasser 32 octets"
 
-#: src/common/WiFiSettings/WiFiSettings.js:89
-#: src/common/WiFiSettings/WiFiSettings.js:106
+#: src/common/WiFiSettings/WiFiSettings.js:118
+#: src/common/WiFiSettings/WiFiSettings.js:135
 msgid "Password must contain at least 8 symbols"
 msgstr "Le mot de passe doit contenir au moins 8 symboles"
 
-#: src/common/WiFiSettings/WiFiSettings.js:91
-#: src/common/WiFiSettings/WiFiSettings.js:110
+#: src/common/WiFiSettings/WiFiSettings.js:120
+#: src/common/WiFiSettings/WiFiSettings.js:139
 #, fuzzy
 msgid "Password must not contain more than 63 symbols"
 msgstr "Le mot de passe doit contenir au moins 8 symboles"
@@ -358,19 +354,18 @@ msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
-"Un SSID qui contient des caractères non standard peut causer des problèmes "
-"sur certains appareils."
+"Un SSID qui contient des caractères non standard peut causer des "
+"problèmes sur certains appareils."
 
 #: src/common/WiFiSettings/constants.js:42
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
-msgstr ""
-"Clé pré-partagée WPA2/3, qui est nécessaire pour se connecter au réseau."
+msgstr "Clé pré-partagée WPA2/3, qui est nécessaire pour se connecter au réseau."
 
 #: src/common/WiFiSettings/constants.js:45
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
-"S'il est défini, le réseau n'est pas visible lors de la recherche de réseaux "
-"disponibles."
+"S'il est défini, le réseau n'est pas visible lors de la recherche de "
+"réseaux disponibles."
 
 #: src/common/WiFiSettings/constants.js:48
 msgid ""
@@ -381,13 +376,14 @@ msgid ""
 "standard and is currently supported only by a limited set of devices. As "
 "it is not widely used now, it has only very little interference."
 msgstr ""
-"La bande 2,4 GHz est plus largement prise en charge par les clients, mais a "
-"tendance à présenter plus d'interférences. La bande 5 GHz est une norme plus "
-"récente et peut ne pas être prise en charge par tous vos appareils. Elle "
-"présente généralement moins d'interférences, mais le signal mais le signal "
-"ne passe pas aussi bien à l'intérieur. La bande 6 GHz est une norme encore "
-"plus récente et n'est supportée qu'à un ensemble d'appareil limité. Parce "
-"qu'il n'est pas largement utilisé, il n'a que peu d'interférences."
+"La bande 2,4 GHz est plus largement prise en charge par les clients, mais"
+" a tendance à présenter plus d'interférences. La bande 5 GHz est une "
+"norme plus récente et peut ne pas être prise en charge par tous vos "
+"appareils. Elle présente généralement moins d'interférences, mais le "
+"signal mais le signal ne passe pas aussi bien à l'intérieur. La bande 6 "
+"GHz est une norme encore plus récente et n'est supportée qu'à un ensemble"
+" d'appareil limité. Parce qu'il n'est pas largement utilisé, il n'a que "
+"peu d'interférences."
 
 #: src/common/WiFiSettings/constants.js:51
 msgid ""
@@ -395,11 +391,11 @@ msgid ""
 "can yield higher throughput but can cause more interference in the "
 "network. If you don't know what to choose, use the default option."
 msgstr ""
-"Modifiez ce paramètre pour régler le mode de fonctionnement 802.11n/ac. Le "
-"mode 802.11n avec des canaux larges de 40 MHz permet d'obtenir un meilleur "
-"débit plus élevé, mais peut provoquer davantage d'interférences sur le "
-"réseau. Si vous ne savez pas quoi choisir, utilisez l'option par défaut "
-"l'option par défaut avec un canal large de 20 MHz."
+"Modifiez ce paramètre pour régler le mode de fonctionnement 802.11n/ac. "
+"Le mode 802.11n avec des canaux larges de 40 MHz permet d'obtenir un "
+"meilleur débit plus élevé, mais peut provoquer davantage d'interférences "
+"sur le réseau. Si vous ne savez pas quoi choisir, utilisez l'option par "
+"défaut l'option par défaut avec un canal large de 20 MHz."
 
 #: src/common/WiFiSettings/constants.js:54
 msgid ""
@@ -410,9 +406,9 @@ msgid ""
 "tab."
 msgstr ""
 "Active le Wi-Fi pour les invités, qui est séparé du réseau LAN. Les "
-"périphériques connectés à ce réseau sont autorisés à Internet, mais ne sont "
-"pas autorisés à accéder aux autres périphériques et à l'interface de "
-"configuration du routeur. Les paramètres du réseau invité peuvent être "
+"périphériques connectés à ce réseau sont autorisés à Internet, mais ne "
+"sont pas autorisés à accéder aux autres périphériques et à l'interface de"
+" configuration du routeur. Les paramètres du réseau invité peuvent être "
 "définis dans l'onglet Réseau invité."
 
 #: src/common/WiFiSettings/constants.js:57
@@ -424,11 +420,15 @@ msgid ""
 "connecting older devices, try to enable WPA2. The 6 GHz band supports "
 "only WPA3."
 msgstr ""
-"La norme WPA3 est la nouvelle méthode de chiffrement la plus sûre qu'il est "
-"suggéré d'utiliser avec tout appareil qui la prend en charge. Les appareils "
-"plus anciens qui ne prennent pas en charge la norme WPA3 nécessitent la "
-"norme WPA2. Si vous rencontrez des problèmes pour connecter des appareils "
-"plus anciens, essayez d'activer WPA2."
+"La norme WPA3 est la nouvelle méthode de chiffrement la plus sûre qu'il "
+"est suggéré d'utiliser avec tout appareil qui la prend en charge. Les "
+"appareils plus anciens qui ne prennent pas en charge la norme WPA3 "
+"nécessitent la norme WPA2. Si vous rencontrez des problèmes pour "
+"connecter des appareils plus anciens, essayez d'activer WPA2."
+
+#: src/common/WiFiSettings/encryptionHelpers.js:15
+msgid "Custom"
+msgstr "Personnalisé"
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -437,8 +437,8 @@ msgstr "Paramètres enregistrés avec succès"
 #: src/form/components/ForisForm.js:183
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
-"Il se peut que vos modifications ne soient pas enregistrées. Êtes-vous sûr "
-"de vouloir quitter ?"
+"Il se peut que vos modifications ne soient pas enregistrées. Êtes-vous "
+"sûr de vouloir quitter ?"
 
 #: src/form/components/SubmitButton.js:37
 msgid "Updating"
@@ -525,3 +525,4 @@ msgstr ""
 
 #~ msgid "Are you sure you want to restart the router?"
 #~ msgstr "Voulez-vous vraiment redémarrer le routeur ?"
+

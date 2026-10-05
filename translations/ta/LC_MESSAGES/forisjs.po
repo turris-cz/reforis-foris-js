@@ -7,18 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foris JS 6.5.0\n"
 "Report-Msgid-Bugs-To: tech.support@turris.cz\n"
-"POT-Creation-Date: 2026-02-17 15:41+0300\n"
+"POT-Creation-Date: 2026-10-05 18:55+0300\n"
 "PO-Revision-Date: 2026-09-04 13:48+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language: ta\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/turris/foris-js/"
-"ta/>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/turris/foris-"
+"js/ta/>\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
-"X-Generator: Weblate 2026.9\n"
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
@@ -160,63 +159,59 @@ msgid ""
 "Fi settings. Note that this will remove the current Wi-Fi configuration "
 "and restore the default values."
 msgstr ""
-"பல வயர்லெச் கார்டுகள் பொருந்தவில்லை என்றால், நீங்கள் வைஃபை அமைப்புகளை மீட்டமைக்க முயற்சி "
-"செய்யலாம். இது தற்போதைய வைஃபை உள்ளமைவை அகற்றி இயல்புநிலை மதிப்புகளை மீட்டெடுக்கும் என்பதை "
-"நினைவில் கொள்க."
+"பல வயர்லெச் கார்டுகள் பொருந்தவில்லை என்றால், நீங்கள் வைஃபை அமைப்புகளை "
+"மீட்டமைக்க முயற்சி செய்யலாம். இது தற்போதைய வைஃபை உள்ளமைவை அகற்றி "
+"இயல்புநிலை மதிப்புகளை மீட்டெடுக்கும் என்பதை நினைவில் கொள்க."
 
-#: src/common/WiFiSettings/WiFiForm.js:97
+#: src/common/WiFiSettings/WiFiForm.js:101
 #, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "கம்பிஇலா ${deviceID + 1}"
 
-#: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
+#: src/common/WiFiSettings/WiFiForm.js:136
+#: src/common/WiFiSettings/WiFiGuestForm.js:84
 msgid "Password"
 msgstr "கடவுச்சொல்"
 
-#: src/common/WiFiSettings/WiFiForm.js:146
+#: src/common/WiFiSettings/WiFiForm.js:150
 msgid "Hide SSID"
 msgstr "SSID ஐ மறைக்கவும்"
 
-#: src/common/WiFiSettings/WiFiForm.js:159
+#: src/common/WiFiSettings/WiFiForm.js:163
 msgid "Band"
 msgstr "இசைக்குழு"
 
-#: src/common/WiFiSettings/WiFiForm.js:186
+#: src/common/WiFiSettings/WiFiForm.js:207
 #, fuzzy
 msgid "802.11n/ac/ax/be mode"
 msgstr "802.11n/ac/ax பயன்முறை"
 
-#: src/common/WiFiSettings/WiFiForm.js:199
+#: src/common/WiFiSettings/WiFiForm.js:220
 msgid "Channel"
 msgstr "வாய்க்கால்"
 
-#: src/common/WiFiSettings/WiFiForm.js:211
-#: src/common/WiFiSettings/WiFiGuestForm.js:95
+#: src/common/WiFiSettings/WiFiForm.js:232
+#: src/common/WiFiSettings/WiFiGuestForm.js:99
 msgid "Encryption"
 msgstr "குறியாக்கம்"
 
-#: src/common/WiFiSettings/WiFiForm.js:226
+#: src/common/WiFiSettings/WiFiForm.js:251
 msgid "Disable Management Frame Protection"
 msgstr "மேலாண்மை பிரேம் பாதுகாப்பை முடக்கு"
 
-#: src/common/WiFiSettings/WiFiForm.js:227
+#: src/common/WiFiSettings/WiFiForm.js:252
 msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
 msgstr ""
-"வைஃபை அணுகல் புள்ளியுடன் இணைப்பதில் சிக்கல் இருந்தால், மேலாண்மை பிரேம் பாதுகாப்பை முடக்க "
-"முயற்சிக்கவும்."
+"வைஃபை அணுகல் புள்ளியுடன் இணைப்பதில் சிக்கல் இருந்தால், மேலாண்மை பிரேம் "
+"பாதுகாப்பை முடக்க முயற்சிக்கவும்."
 
-#: src/common/WiFiSettings/WiFiForm.js:262
+#: src/common/WiFiSettings/WiFiForm.js:290
 msgid "auto"
 msgstr "தானி"
 
-#: src/common/WiFiSettings/WiFiForm.js:303
-msgid "Custom"
-msgstr "தனிப்பயன்"
-
-#: src/common/WiFiSettings/WiFiGuestForm.js:45
+#: src/common/WiFiSettings/WiFiGuestForm.js:49
 msgid "Enable Guest Wi-Fi"
 msgstr "விருந்தினர் வைஃபை இயக்கவும்"
 
@@ -233,28 +228,28 @@ msgstr "வைஃபை கியூஆர் குறியீடு"
 msgid "Download PDF"
 msgstr "PDF ஐ பதிவிறக்கவும்"
 
-#: src/common/WiFiSettings/WiFiSettings.js:83
-#: src/common/WiFiSettings/WiFiSettings.js:99
+#: src/common/WiFiSettings/WiFiSettings.js:112
+#: src/common/WiFiSettings/WiFiSettings.js:128
 msgid "SSID can't be longer than 32 symbols"
 msgstr "SSID 32 சின்னங்களை விட நீளமாக இருக்க முடியாது"
 
-#: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:101
+#: src/common/WiFiSettings/WiFiSettings.js:113
+#: src/common/WiFiSettings/WiFiSettings.js:130
 msgid "SSID can't be empty"
 msgstr "SSID காலியாக இருக்க முடியாது"
 
-#: src/common/WiFiSettings/WiFiSettings.js:86
-#: src/common/WiFiSettings/WiFiSettings.js:103
+#: src/common/WiFiSettings/WiFiSettings.js:115
+#: src/common/WiFiSettings/WiFiSettings.js:132
 msgid "SSID can't be longer than 32 bytes"
 msgstr "SSID 32 பைட்டுகளை விட நீளமாக இருக்க முடியாது"
 
-#: src/common/WiFiSettings/WiFiSettings.js:89
-#: src/common/WiFiSettings/WiFiSettings.js:106
+#: src/common/WiFiSettings/WiFiSettings.js:118
+#: src/common/WiFiSettings/WiFiSettings.js:135
 msgid "Password must contain at least 8 symbols"
 msgstr "கடவுச்சொல்லில் குறைந்தது 8 சின்னங்கள் இருக்க வேண்டும்"
 
-#: src/common/WiFiSettings/WiFiSettings.js:91
-#: src/common/WiFiSettings/WiFiSettings.js:110
+#: src/common/WiFiSettings/WiFiSettings.js:120
+#: src/common/WiFiSettings/WiFiSettings.js:139
 msgid "Password must not contain more than 63 symbols"
 msgstr "கடவுச்சொல்லில் 63 க்கும் மேற்பட்ட சின்னங்கள் இருக்கக்கூடாது"
 
@@ -352,7 +347,8 @@ msgid ""
 "SSID which contains non-standard characters could cause problems on some "
 "devices."
 msgstr ""
-"தரமற்ற எழுத்துக்களைக் கொண்ட SSID சில சாதனங்களில் சிக்கல்களை ஏற்படுத்தக்கூடும்."
+"தரமற்ற எழுத்துக்களைக் கொண்ட SSID சில சாதனங்களில் சிக்கல்களை "
+"ஏற்படுத்தக்கூடும்."
 
 #: src/common/WiFiSettings/constants.js:42
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
@@ -361,7 +357,8 @@ msgstr "WPA2/3 முன் பகிரப்பட்ட விசை, இத�
 #: src/common/WiFiSettings/constants.js:45
 msgid "If set, network is not visible when scanning for available networks."
 msgstr ""
-"அமைக்கப்பட்டால், கிடைக்கக்கூடிய நெட்வொர்க்குகளுக்கு ச்கேன் செய்யும் போது பிணையம் தெரியவில்லை."
+"அமைக்கப்பட்டால், கிடைக்கக்கூடிய நெட்வொர்க்குகளுக்கு ச்கேன் செய்யும் போது "
+"பிணையம் தெரியவில்லை."
 
 #: src/common/WiFiSettings/constants.js:48
 #, fuzzy
@@ -373,9 +370,10 @@ msgid ""
 "standard and is currently supported only by a limited set of devices. As "
 "it is not widely used now, it has only very little interference."
 msgstr ""
-"2.4 சிகாஎர்ட்ச் இசைக்குழு வாடிக்கையாளர்களால் மிகவும் பரவலாக ஆதரிக்கப்படுகிறது, ஆனால் அதிக "
-"குறுக்கீடு உள்ளது. 5 சிகாஎர்ட்ச் இசைக்குழு ஒரு புதிய தரநிலை மற்றும் உங்கள் எல்லா சாதனங்களாலும் "
-"ஆதரிக்கப்படாமல் போகலாம். இது பொதுவாக குறைவான குறுக்கீட்டைக் கொண்டுள்ளது, ஆனால் சமிக்ஞை "
+"2.4 சிகாஎர்ட்ச் இசைக்குழு வாடிக்கையாளர்களால் மிகவும் பரவலாக "
+"ஆதரிக்கப்படுகிறது, ஆனால் அதிக குறுக்கீடு உள்ளது. 5 சிகாஎர்ட்ச் இசைக்குழு "
+"ஒரு புதிய தரநிலை மற்றும் உங்கள் எல்லா சாதனங்களாலும் ஆதரிக்கப்படாமல் "
+"போகலாம். இது பொதுவாக குறைவான குறுக்கீட்டைக் கொண்டுள்ளது, ஆனால் சமிக்ஞை "
 "வீட்டிற்குள் அவ்வளவு சிறப்பாகச் செல்லாது."
 
 #: src/common/WiFiSettings/constants.js:51
@@ -385,10 +383,11 @@ msgid ""
 "can yield higher throughput but can cause more interference in the "
 "network. If you don't know what to choose, use the default option."
 msgstr ""
-"802.11n/AC/AX செயல்பாட்டு முறை சரிசெய்ய இதை மாற்றவும். 40 மெகா எர்ட்ச் அகலமான சேனல்களைக் "
-"கொண்ட 802.11n அதிக செயல்திறனை அளிக்கும், ஆனால் பிணையத்தில் அதிக குறுக்கீட்டை ஏற்படுத்தும். "
-"எதை தேர்வு செய்வது என்று உங்களுக்குத் தெரியாவிட்டால், இயல்புநிலை விருப்பத்தை 20 மெகா எர்ட்ச் "
-"அகல சேனலுடன் பயன்படுத்தவும்."
+"802.11n/AC/AX செயல்பாட்டு முறை சரிசெய்ய இதை மாற்றவும். 40 மெகா எர்ட்ச் "
+"அகலமான சேனல்களைக் கொண்ட 802.11n அதிக செயல்திறனை அளிக்கும், ஆனால் "
+"பிணையத்தில் அதிக குறுக்கீட்டை ஏற்படுத்தும். எதை தேர்வு செய்வது என்று "
+"உங்களுக்குத் தெரியாவிட்டால், இயல்புநிலை விருப்பத்தை 20 மெகா எர்ட்ச் அகல "
+"சேனலுடன் பயன்படுத்தவும்."
 
 #: src/common/WiFiSettings/constants.js:54
 msgid ""
@@ -398,10 +397,11 @@ msgid ""
 "router. Parameters of the guest network can be set in the Guest network "
 "tab."
 msgstr ""
-"லேன் நெட்வொர்க்கிலிருந்து பிரிக்கப்பட்ட விருந்தினர்களுக்கு வைஃபை இயக்குகிறது. இந்த "
-"நெட்வொர்க்குடன் இணைக்கப்பட்ட சாதனங்கள் இணையத்தை அணுக அனுமதிக்கப்படுகின்றன, ஆனால் பிற "
-"சாதனங்களையும் திசைவியின் உள்ளமைவு இடைமுகத்தையும் அணுக அனுமதிக்கப்படவில்லை. விருந்தினர் "
-"நெட்வொர்க்கின் அளவுருக்கள் விருந்தினர் பிணையம் தாவலில் அமைக்கப்படலாம்."
+"லேன் நெட்வொர்க்கிலிருந்து பிரிக்கப்பட்ட விருந்தினர்களுக்கு வைஃபை "
+"இயக்குகிறது. இந்த நெட்வொர்க்குடன் இணைக்கப்பட்ட சாதனங்கள் இணையத்தை அணுக "
+"அனுமதிக்கப்படுகின்றன, ஆனால் பிற சாதனங்களையும் திசைவியின் உள்ளமைவு "
+"இடைமுகத்தையும் அணுக அனுமதிக்கப்படவில்லை. விருந்தினர் நெட்வொர்க்கின் "
+"அளவுருக்கள் விருந்தினர் பிணையம் தாவலில் அமைக்கப்படலாம்."
 
 #: src/common/WiFiSettings/constants.js:57
 #, fuzzy
@@ -412,10 +412,14 @@ msgid ""
 "connecting older devices, try to enable WPA2. The 6 GHz band supports "
 "only WPA3."
 msgstr ""
-"WPA3 தரநிலை என்பது புதிய மிகவும் பாதுகாப்பான குறியாக்க முறையாகும், அதை ஆதரிக்கும் "
-"எந்தவொரு சாதனத்துடனும் பயன்படுத்த பரிந்துரைக்கப்படுகிறது. WPA3 உதவி இல்லாத பழைய "
-"சாதனங்களுக்கு பழைய WPA2 தேவைப்படுகிறது. பழைய சாதனங்களை இணைப்பதில் சிக்கல்களை நீங்கள் "
-"அனுபவித்தால், WPA2 ஐ இயக்க முயற்சிக்கவும்."
+"WPA3 தரநிலை என்பது புதிய மிகவும் பாதுகாப்பான குறியாக்க முறையாகும், அதை "
+"ஆதரிக்கும் எந்தவொரு சாதனத்துடனும் பயன்படுத்த பரிந்துரைக்கப்படுகிறது. WPA3"
+" உதவி இல்லாத பழைய சாதனங்களுக்கு பழைய WPA2 தேவைப்படுகிறது. பழைய சாதனங்களை "
+"இணைப்பதில் சிக்கல்களை நீங்கள் அனுபவித்தால், WPA2 ஐ இயக்க முயற்சிக்கவும்."
+
+#: src/common/WiFiSettings/encryptionHelpers.js:15
+msgid "Custom"
+msgstr "தனிப்பயன்"
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -424,7 +428,8 @@ msgstr "அமைப்புகள் வெற்றிகரமாக சே�
 #: src/form/components/ForisForm.js:183
 msgid "Changes you made may not be saved. Are you sure you want to leave?"
 msgstr ""
-"நீங்கள் செய்த மாற்றங்கள் சேமிக்கப்படாமல் போகலாம். நீங்கள் நிச்சயமாக வெளியேற விரும்புகிறீர்களா?"
+"நீங்கள் செய்த மாற்றங்கள் சேமிக்கப்படாமல் போகலாம். நீங்கள் நிச்சயமாக "
+"வெளியேற விரும்புகிறீர்களா?"
 
 #: src/form/components/SubmitButton.js:37
 msgid "Updating"
@@ -474,3 +479,4 @@ msgstr "இது செல்லுபடியாகும் MAC முகவ
 #: src/utils/validations.js:20
 msgid "Doesn't contain a list of emails separated by commas."
 msgstr "காற்புள்ளிகளால் பிரிக்கப்பட்ட மின்னஞ்சல்களின் பட்டியல் இல்லை."
+

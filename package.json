@@ -73,5 +73,11 @@
         "test:coverage": "jest --coverage --colors",
         "docs": "npx styleguidist build ",
         "docs:watch": "styleguidist server"
+    },
+    "allowScripts": {
+        "@parcel/watcher@2.6.0": true,
+        "core-js@2.6.12": true,
+        "core-js@3.21.0": true,
+        "unrs-resolver@1.12.2": true
     }
 }

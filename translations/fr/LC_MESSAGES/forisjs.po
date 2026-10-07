@@ -7,10 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-02-17 15:41+0300\n"
-"PO-Revision-Date: 2024-12-14 10:00+0000\n"
-"Last-Translator: ButterflyOfFire "
-"<boffire@users.noreply.hosted.weblate.org>\n"
+"POT-Creation-Date: 2026-10-05 18:55+0300\n"
+"PO-Revision-Date: 2026-09-04 13:48+0000\n"
+"Last-Translator: Florian <flo.site@zaclys.net>\n"
 "Language: fr\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/foris-"
 "js/fr/>\n"
@@ -70,9 +69,8 @@ msgid "Cancel"
 msgstr "Annuler"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
-#, fuzzy
 msgid "Confirm"
-msgstr "Confirmer le redémarrage"
+msgstr "Confirmer"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
@@ -164,43 +162,43 @@ msgid ""
 "and restore the default values."
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:97
+#: src/common/WiFiSettings/WiFiForm.js:101
 #, python-brace-format
 msgid "Wi-Fi ${deviceID + 1}"
 msgstr "Wi-Fi ${deviceID + 1}"
 
-#: src/common/WiFiSettings/WiFiForm.js:132
-#: src/common/WiFiSettings/WiFiGuestForm.js:80
+#: src/common/WiFiSettings/WiFiForm.js:136
+#: src/common/WiFiSettings/WiFiGuestForm.js:84
 msgid "Password"
 msgstr "Mot de passe"
 
-#: src/common/WiFiSettings/WiFiForm.js:146
+#: src/common/WiFiSettings/WiFiForm.js:150
 msgid "Hide SSID"
 msgstr "Masquer le SSID"
 
-#: src/common/WiFiSettings/WiFiForm.js:159
+#: src/common/WiFiSettings/WiFiForm.js:163
 msgid "Band"
 msgstr ""
 
-#: src/common/WiFiSettings/WiFiForm.js:186
+#: src/common/WiFiSettings/WiFiForm.js:207
 #, fuzzy
 msgid "802.11n/ac/ax/be mode"
 msgstr "Mode 802.11n/ac"
 
-#: src/common/WiFiSettings/WiFiForm.js:199
+#: src/common/WiFiSettings/WiFiForm.js:220
 msgid "Channel"
 msgstr "Canal"
 
-#: src/common/WiFiSettings/WiFiForm.js:211
-#: src/common/WiFiSettings/WiFiGuestForm.js:95
+#: src/common/WiFiSettings/WiFiForm.js:232
+#: src/common/WiFiSettings/WiFiGuestForm.js:99
 msgid "Encryption"
 msgstr "Chiffrement"
 
-#: src/common/WiFiSettings/WiFiForm.js:226
+#: src/common/WiFiSettings/WiFiForm.js:251
 msgid "Disable Management Frame Protection"
 msgstr "Désactiver le mode Protection du cadre de gestion"
 
-#: src/common/WiFiSettings/WiFiForm.js:227
+#: src/common/WiFiSettings/WiFiForm.js:252
 msgid ""
 "In case you have trouble connecting to WiFi Access Point, try disabling "
 "Management Frame Protection."
@@ -208,15 +206,11 @@ msgstr ""
 "Si vous rencontrez des soucis à vous connecter à un point d'accès WiFi, "
 "merci d'essayer de désactiver le mode Protection du cadre de gestion."
 
-#: src/common/WiFiSettings/WiFiForm.js:262
+#: src/common/WiFiSettings/WiFiForm.js:290
 msgid "auto"
 msgstr "automatique"
 
-#: src/common/WiFiSettings/WiFiForm.js:303
-msgid "Custom"
-msgstr "Personnalisé"
-
-#: src/common/WiFiSettings/WiFiGuestForm.js:45
+#: src/common/WiFiSettings/WiFiGuestForm.js:49
 msgid "Enable Guest Wi-Fi"
 msgstr "Activer le mode Wi-Fi invité"
 
@@ -234,28 +228,28 @@ msgstr "Code QR Wi-Fi"
 msgid "Download PDF"
 msgstr "Télécharger le PDF"
 
-#: src/common/WiFiSettings/WiFiSettings.js:83
-#: src/common/WiFiSettings/WiFiSettings.js:99
+#: src/common/WiFiSettings/WiFiSettings.js:112
+#: src/common/WiFiSettings/WiFiSettings.js:128
 msgid "SSID can't be longer than 32 symbols"
 msgstr "Le SSID ne peut pas être plus long que 32 symboles"
 
-#: src/common/WiFiSettings/WiFiSettings.js:84
-#: src/common/WiFiSettings/WiFiSettings.js:101
+#: src/common/WiFiSettings/WiFiSettings.js:113
+#: src/common/WiFiSettings/WiFiSettings.js:130
 msgid "SSID can't be empty"
 msgstr "Le SSID ne peut pas être vide"
 
-#: src/common/WiFiSettings/WiFiSettings.js:86
-#: src/common/WiFiSettings/WiFiSettings.js:103
+#: src/common/WiFiSettings/WiFiSettings.js:115
+#: src/common/WiFiSettings/WiFiSettings.js:132
 msgid "SSID can't be longer than 32 bytes"
 msgstr "Le SSID ne peut pas dépasser 32 octets"
 
-#: src/common/WiFiSettings/WiFiSettings.js:89
-#: src/common/WiFiSettings/WiFiSettings.js:106
+#: src/common/WiFiSettings/WiFiSettings.js:118
+#: src/common/WiFiSettings/WiFiSettings.js:135
 msgid "Password must contain at least 8 symbols"
 msgstr "Le mot de passe doit contenir au moins 8 symboles"
 
-#: src/common/WiFiSettings/WiFiSettings.js:91
-#: src/common/WiFiSettings/WiFiSettings.js:110
+#: src/common/WiFiSettings/WiFiSettings.js:120
+#: src/common/WiFiSettings/WiFiSettings.js:139
 #, fuzzy
 msgid "Password must not contain more than 63 symbols"
 msgstr "Le mot de passe doit contenir au moins 8 symboles"
@@ -364,13 +358,8 @@ msgstr ""
 "problèmes sur certains appareils."
 
 #: src/common/WiFiSettings/constants.js:42
-#, fuzzy
 msgid "WPA2/3 pre-shared key, that is required to connect to the network."
-msgstr ""
-"\n"
-"        Clé pré-partagée WPA2, qui est nécessaire pour se connecter au "
-"réseau.\n"
-"    "
+msgstr "Clé pré-partagée WPA2/3, qui est nécessaire pour se connecter au réseau."
 
 #: src/common/WiFiSettings/constants.js:45
 msgid "If set, network is not visible when scanning for available networks."
@@ -379,7 +368,6 @@ msgstr ""
 "réseaux disponibles."
 
 #: src/common/WiFiSettings/constants.js:48
-#, fuzzy
 msgid ""
 "The 2.4 GHz band is more widely supported by clients, but tends to have "
 "more interference. The 5 GHz band is a newer standard and may not be "
@@ -388,34 +376,28 @@ msgid ""
 "standard and is currently supported only by a limited set of devices. As "
 "it is not widely used now, it has only very little interference."
 msgstr ""
-"\n"
-"        La bande 2,4 GHz est plus largement prise en charge par les "
-"clients, mais a tendance à présenter plus d'interférences. La bande 5 GHz"
-" est une norme\n"
-"        plus récente et peut ne pas être prise en charge par tous vos "
+"La bande 2,4 GHz est plus largement prise en charge par les clients, mais"
+" a tendance à présenter plus d'interférences. La bande 5 GHz est une "
+"norme plus récente et peut ne pas être prise en charge par tous vos "
 "appareils. Elle présente généralement moins d'interférences, mais le "
-"signal\n"
-"        mais le signal ne passe pas aussi bien à l'intérieur."
+"signal mais le signal ne passe pas aussi bien à l'intérieur. La bande 6 "
+"GHz est une norme encore plus récente et n'est supportée qu'à un ensemble"
+" d'appareil limité. Parce qu'il n'est pas largement utilisé, il n'a que "
+"peu d'interférences."
 
 #: src/common/WiFiSettings/constants.js:51
-#, fuzzy
 msgid ""
 "Change this to adjust 802.11n/ac/ax/be mode of operation. Wider channels "
 "can yield higher throughput but can cause more interference in the "
 "network. If you don't know what to choose, use the default option."
 msgstr ""
-"\n"
-"        Modifiez ce paramètre pour régler le mode de fonctionnement "
-"802.11n/ac. Le mode 802.11n avec des canaux larges de 40 MHz permet "
-"d'obtenir un meilleur\n"
-"        débit plus élevé, mais peut provoquer davantage d'interférences "
+"Modifiez ce paramètre pour régler le mode de fonctionnement 802.11n/ac. "
+"Le mode 802.11n avec des canaux larges de 40 MHz permet d'obtenir un "
+"meilleur débit plus élevé, mais peut provoquer davantage d'interférences "
 "sur le réseau. Si vous ne savez pas quoi choisir, utilisez l'option par "
-"défaut\n"
-"        l'option par défaut avec un canal large de 20 MHz.\n"
-"    "
+"défaut l'option par défaut avec un canal large de 20 MHz."
 
 #: src/common/WiFiSettings/constants.js:54
-#, fuzzy
 msgid ""
 "Enables Wi-Fi for guests, which is separated from LAN network. Devices "
 "connected to this network are allowed to access the internet, but aren't "
@@ -423,14 +405,11 @@ msgid ""
 "router. Parameters of the guest network can be set in the Guest network "
 "tab."
 msgstr ""
-"\n"
-"        Active le Wi-Fi pour les invités, qui est séparé du réseau LAN. "
-"Les périphériques connectés à ce réseau sont autorisés à\n"
-"        accéder à Internet, mais ne sont pas autorisés à accéder aux "
-"autres périphériques et à l'interface de configuration du routeur.\n"
-"        Les paramètres du réseau invité peuvent être définis dans "
-"l'onglet Réseau invité.\n"
-"        "
+"Active le Wi-Fi pour les invités, qui est séparé du réseau LAN. Les "
+"périphériques connectés à ce réseau sont autorisés à Internet, mais ne "
+"sont pas autorisés à accéder aux autres périphériques et à l'interface de"
+" configuration du routeur. Les paramètres du réseau invité peuvent être "
+"définis dans l'onglet Réseau invité."
 
 #: src/common/WiFiSettings/constants.js:57
 #, fuzzy
@@ -446,6 +425,10 @@ msgstr ""
 "appareils plus anciens qui ne prennent pas en charge la norme WPA3 "
 "nécessitent la norme WPA2. Si vous rencontrez des problèmes pour "
 "connecter des appareils plus anciens, essayez d'activer WPA2."
+
+#: src/common/WiFiSettings/encryptionHelpers.js:15
+msgid "Custom"
+msgstr "Personnalisé"
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"

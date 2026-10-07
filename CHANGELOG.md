@@ -8,6 +8,19 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.12.0] - 2026-10-06
+
+### Added
+
+- Added & updated Weblate translations
+- Added allowScripts configuration for specific package versions
+
+### Changed
+
+- Updated CI image to use foris-ci registry
+- Updated several dependencies to latest versions
+- NPM audit fix
+
 ### Changed
 
 ## [6.11.4] - 2026-09-18
@@ -559,7 +572,9 @@ and this project adheres to
 ## [0.0.7] - 2019-09-02
 
 [unreleased]:
-    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.4...dev
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.12.0...dev
+[6.12.0]:
+    https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.4...v6.12.0
 [6.11.4]:
     https://gitlab.nic.cz/turris/reforis/foris-js/-/compare/v6.11.3...v6.11.4
 [6.11.3]:

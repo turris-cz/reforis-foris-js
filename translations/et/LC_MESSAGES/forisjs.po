@@ -1,20 +1,20 @@
-# Romanian translations for Foris JS.
+# Estonian translations for Foris JS.
 # Copyright (C) 2026 CZ.NIC, z.s.p.o. (https://www.nic.cz/)
 # This file is distributed under the same license as the Foris JS project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Project-Id-Version: Foris JS 6.9.0\n"
+"Report-Msgid-Bugs-To: tech.support@turris.cz\n"
 "POT-Creation-Date: 2026-10-05 18:55+0300\n"
 "PO-Revision-Date: 2026-09-04 13:48+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language: ro\n"
-"Language-Team: Romanian <https://hosted.weblate.org/projects/turris"
-"/foris-js/ro/>\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 "
-"< 20)) ? 1 : 2;\n"
+"Last-Translator: Priit Jõerüüt "
+"<jrthwlate@users.noreply.hosted.weblate.org>\n"
+"Language: et\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/turris"
+"/foris-js/et/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,32 +22,32 @@ msgstr ""
 
 #: src/api/utils.js:61
 msgid "The session is expired. Please log in again."
-msgstr ""
+msgstr "Sessioon on aegunud. Palun logi uuesti sisse."
 
 #: src/api/utils.js:66
 msgid "Timeout error occurred."
-msgstr ""
+msgstr "Tekkis aegumisega seotud viga."
 
 #: src/api/utils.js:69
 msgid "No response received."
-msgstr ""
+msgstr "Päringul polnud vastust."
 
 #: src/api/utils.js:79
 msgid "An unknown API error occurred."
-msgstr ""
+msgstr "Tekkis API-ga seotud tundmatu viga."
 
 #: src/bootstrap/Alert.js:73 src/bootstrap/Modal.js:103
 #: src/common/WiFiSettings/WiFiQRCode.js:88
 msgid "Close"
-msgstr ""
+msgstr "Sulge"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copied!"
-msgstr ""
+msgstr "Kopeeritud!"
 
 #: src/bootstrap/CopyInput.js:56
 msgid "Copy"
-msgstr ""
+msgstr "Kopeeri"
 
 #: src/bootstrap/NumberInput.js:84 src/bootstrap/NumberInput.js:85
 msgid "Increase value. Hint: Hold to increase faster."
@@ -67,11 +67,11 @@ msgstr ""
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:147
 msgid "Cancel"
-msgstr ""
+msgstr "Katkesta"
 
 #: src/common/ActionButtonWithModal/ActionButtonWithModal.js:150
 msgid "Confirm"
-msgstr ""
+msgstr "Kinnita"
 
 #: src/common/RichTable/RichTable.js:87
 msgid "Search…"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: src/common/RichTable/RichTableColumnsDropdown.js:80
 msgid "Reset"
-msgstr ""
+msgstr "Lähtesta"
 
 #: src/common/RichTable/RichTableHeader.js:29
 msgid "Sort ascending"
@@ -169,7 +169,7 @@ msgstr ""
 #: src/common/WiFiSettings/WiFiForm.js:136
 #: src/common/WiFiSettings/WiFiGuestForm.js:84
 msgid "Password"
-msgstr ""
+msgstr "Salasõna"
 
 #: src/common/WiFiSettings/WiFiForm.js:150
 msgid "Hide SSID"
@@ -241,16 +241,16 @@ msgstr ""
 #: src/common/WiFiSettings/WiFiSettings.js:118
 #: src/common/WiFiSettings/WiFiSettings.js:135
 msgid "Password must contain at least 8 symbols"
-msgstr ""
+msgstr "Salasõna peab olema vähemalt 8 tähemärki pikk"
 
 #: src/common/WiFiSettings/WiFiSettings.js:120
 #: src/common/WiFiSettings/WiFiSettings.js:139
 msgid "Password must not contain more than 63 symbols"
-msgstr ""
+msgstr "Salasõna ei tohiks olla pikem 63-st tähemärgist"
 
 #: src/common/WiFiSettings/constants.js:9
 msgid "Disabled"
-msgstr ""
+msgstr "Pole kasutusel"
 
 #: src/common/WiFiSettings/constants.js:10
 msgid "802.11n - 20 MHz wide channel"
@@ -383,7 +383,7 @@ msgstr ""
 
 #: src/common/WiFiSettings/encryptionHelpers.js:15
 msgid "Custom"
-msgstr ""
+msgstr "Kohandatud"
 
 #: src/form/components/ForisForm.js:121
 msgid "Settings saved successfully"
@@ -403,7 +403,7 @@ msgstr ""
 
 #: src/form/components/SubmitButton.js:43
 msgid "Save"
-msgstr ""
+msgstr "Salvesta"
 
 #: src/utils/ErrorMessage.js:17
 msgid "An error occurred while fetching data."
@@ -440,148 +440,4 @@ msgstr ""
 #: src/utils/validations.js:20
 msgid "Doesn't contain a list of emails separated by commas."
 msgstr ""
-
-#~ msgid "An unknown error occurred. Check the console for more info."
-#~ msgstr ""
-
-#~ msgid "Reboot confirmation"
-#~ msgstr ""
-
-#~ msgid "Enable"
-#~ msgstr ""
-
-#~ msgid "Enable Guest Wifi"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "If a number of wireless cards "
-#~ "doesn't match, you may try to "
-#~ "reset the Wi-Fi settings. Note "
-#~ "that this will remove the\n"
-#~ "current Wi-Fi configuration and restore the default values.\n"
-#~ "        "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "        WPA2 pre-shared key, that "
-#~ "is required to connect to the "
-#~ "network.\n"
-#~ "    "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "        The 2.4 GHz band is more"
-#~ " widely supported by clients, but "
-#~ "tends to have more interference. The "
-#~ "5 GHz band is a\n"
-#~ "        newer standard and may not "
-#~ "be supported by all your devices. "
-#~ "It usually has less interference, but"
-#~ " the signal\n"
-#~ "        does not carry so well indoors."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "        Change this to adjust 802.11n/ac"
-#~ " mode of operation. 802.11n with 40"
-#~ " MHz wide channels can yield higher"
-#~ "\n"
-#~ "        throughput but can cause more"
-#~ " interference in the network. If you"
-#~ " don't know what to choose, use "
-#~ "the default\n"
-#~ "        option with 20 MHz wide channel.\n"
-#~ "    "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "        Enables Wi-Fi for guests, "
-#~ "which is separated from LAN network. "
-#~ "Devices connected to this network are"
-#~ " allowed to\n"
-#~ "        access the internet, but aren't"
-#~ " allowed to access other devices and"
-#~ " the configuration interface of the "
-#~ "router.\n"
-#~ "        Parameters of the guest network"
-#~ " can be set in the Guest "
-#~ "network tab.\n"
-#~ "        "
-#~ msgstr ""
-
-#~ msgid "802.11n/ac mode"
-#~ msgstr ""
-
-#~ msgid "WPA2 pre-shared key, that is required to connect to the network."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Change this to adjust 802.11n/ac mode"
-#~ " of operation. 802.11n with 40 MHz"
-#~ " wide channels can yield higher "
-#~ "throughput but can cause more "
-#~ "interference in the network. If you "
-#~ "don't know what to choose, use the"
-#~ " default option with 20 MHz wide "
-#~ "channel."
-#~ msgstr ""
-
-#~ msgid "Reboot request failed."
-#~ msgstr ""
-
-#~ msgid "Reboot"
-#~ msgstr ""
-
-#~ msgid "Warning!"
-#~ msgstr ""
-
-#~ msgid "Are you sure you want to restart the router?"
-#~ msgstr ""
-
-#~ msgid "Confirm reboot"
-#~ msgstr ""
-
-#~ msgid "Load settings"
-#~ msgstr ""
-
-#~ msgid "802.11n/ac/ax mode"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The 2.4 GHz band is more widely"
-#~ " supported by clients, but tends to"
-#~ " have more interference. The 5 GHz"
-#~ " band is a newer standard and "
-#~ "may not be supported by all your"
-#~ " devices. It usually has less "
-#~ "interference, but the signal does not"
-#~ " carry so well indoors."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Change this to adjust 802.11n/ac/ax mode"
-#~ " of operation. 802.11n with 40 MHz"
-#~ " wide channels can yield higher "
-#~ "throughput but can cause more "
-#~ "interference in the network. If you "
-#~ "don't know what to choose, use the"
-#~ " default option with 20 MHz wide "
-#~ "channel."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The WPA3 standard is the new most"
-#~ " secure encryption method that is "
-#~ "suggested to be used with any "
-#~ "device that supports it. The older "
-#~ "devices without WPA3 support require "
-#~ "older WPA2. If you experience issues "
-#~ "with connecting older devices, try to"
-#~ " enable WPA2."
-#~ msgstr ""
 

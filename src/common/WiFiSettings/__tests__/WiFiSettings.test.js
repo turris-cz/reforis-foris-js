@@ -97,8 +97,8 @@ describe("<WiFiSettings/>", () => {
         expect(mockAxios.post).toBeCalled();
         const data = {
             devices: [
-                { enabled: false, id: 0 },
-                { enabled: false, id: 1 },
+                { enabled: false, device_name: "radio0" },
+                { enabled: false, device_name: "radio1" },
             ],
         };
         expect(mockAxios.post).toHaveBeenCalledWith(
@@ -123,11 +123,11 @@ describe("<WiFiSettings/>", () => {
                     hidden: false,
                     htmode: "HT80",
                     band: "5g",
-                    id: 0,
+                    device_name: "radio0",
                     password: "TestPass",
                     encryption: "WPA3",
                 },
-                { enabled: false, id: 1 },
+                { enabled: false, device_name: "radio1" },
             ],
         };
         expect(mockAxios.post).toHaveBeenCalledWith(
@@ -153,11 +153,11 @@ describe("<WiFiSettings/>", () => {
                     hidden: false,
                     htmode: "VHT80",
                     band: "2g",
-                    id: 0,
+                    device_name: "radio0",
                     password: "TestPass",
                     encryption: "WPA3",
                 },
-                { enabled: false, id: 1 },
+                { enabled: false, device_name: "radio1" },
             ],
         };
         expect(mockAxios.post).toHaveBeenCalledWith(
@@ -191,11 +191,11 @@ describe("<WiFiSettings/>", () => {
                     hidden: false,
                     htmode: "HT80",
                     band: "5g",
-                    id: 0,
+                    device_name: "radio0",
                     password: "TestPass",
                     encryption: "WPA3",
                 },
-                { enabled: false, id: 1 },
+                { enabled: false, device_name: "radio1" },
             ],
         };
         expect(mockAxios.post).toHaveBeenCalledWith(

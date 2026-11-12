@@ -44,7 +44,7 @@ export default function WiFiForm({
 }) {
     return formData.devices.map((device, index) => (
         <DeviceForm
-            key={device.id}
+            key={device.device_name}
             formData={device}
             deviceIndex={index}
             formErrors={(formErrors || [])[index]}
@@ -58,7 +58,7 @@ export default function WiFiForm({
 
 DeviceForm.propTypes = {
     formData: PropTypes.shape({
-        id: PropTypes.number.isRequired,
+        device_name: PropTypes.string.isRequired,
         enabled: PropTypes.bool.isRequired,
         SSID: PropTypes.string.isRequired,
         password: PropTypes.string.isRequired,
@@ -92,13 +92,14 @@ function DeviceForm({
     divider,
     ...props
 }) {
-    const deviceID = formData.id;
     const bnds = formData.available_bands;
 
     return (
         <>
             <Switch
-                label={<h2 className="mb-0">{_(`Wi-Fi ${deviceID + 1}`)}</h2>}
+                label={
+                    <h2 className="mb-0">{_(`Wi-Fi ${deviceIndex + 1}`)}</h2>
+                }
                 checked={formData.enabled}
                 onChange={setFormValue((value) => ({
                     devices: {
@@ -159,7 +160,7 @@ function DeviceForm({
                     />
 
                     <RadioSet
-                        name={`band-${deviceID}`}
+                        name={`band-${deviceIndex}`}
                         label={_("Band")}
                         choices={getBandChoices(formData)}
                         value={formData.band}
@@ -268,10 +269,8 @@ function DeviceForm({
 
                     {hasGuestNetwork && (
                         <WifiGuestForm
-                            formData={{
-                                id: deviceIndex,
-                                ...formData.guest_wifi,
-                            }}
+                            formData={formData.guest_wifi}
+                            deviceIndex={deviceIndex}
                             formErrors={formErrors.guest_wifi || {}}
                             band={formData.band}
                             setFormValue={setFormValue}

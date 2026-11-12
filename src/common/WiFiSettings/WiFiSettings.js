@@ -71,7 +71,10 @@ function prepDataToSubmit(formData) {
         formData.devices[idx].channel = parseInt(device.channel);
 
         if (!device.enabled) {
-            formData.devices[idx] = { id: device.id, enabled: false };
+            formData.devices[idx] = {
+                device_name: device.device_name,
+                enabled: false,
+            };
             return;
         }
 

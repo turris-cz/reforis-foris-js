@@ -19,7 +19,6 @@ import TextInput from "../../bootstrap/TextInput";
 
 WifiGuestForm.propTypes = {
     formData: PropTypes.shape({
-        id: PropTypes.number.isRequired,
         SSID: PropTypes.string.isRequired,
         password: PropTypes.string.isRequired,
         enabled: PropTypes.bool.isRequired,
@@ -30,7 +29,8 @@ WifiGuestForm.propTypes = {
         password: PropTypes.string,
     }),
     setFormValue: PropTypes.func.isRequired,
-    deviceIndex: PropTypes.string,
+    /** Position of the device in array */
+    deviceIndex: PropTypes.number.isRequired,
     /** Band of the device the guest network shares the radio with. */
     band: PropTypes.string,
 };
@@ -51,7 +51,7 @@ export default function WifiGuestForm({
                 helpText={HELP_TEXTS.guest_wifi_enabled}
                 onChange={setFormValue((value) => ({
                     devices: {
-                        [formData.id]: {
+                        [deviceIndex]: {
                             guest_wifi: { enabled: { $set: value } },
                         },
                     },
@@ -67,7 +67,7 @@ export default function WifiGuestForm({
                         helpText={HELP_TEXTS.ssid}
                         onChange={setFormValue((value) => ({
                             devices: {
-                                [formData.id]: {
+                                [deviceIndex]: {
                                     guest_wifi: { SSID: { $set: value } },
                                 },
                             },
@@ -88,7 +88,7 @@ export default function WifiGuestForm({
                         required
                         onChange={setFormValue((value) => ({
                             devices: {
-                                [formData.id]: {
+                                [deviceIndex]: {
                                     guest_wifi: { password: { $set: value } },
                                 },
                             },
@@ -105,7 +105,7 @@ export default function WifiGuestForm({
                         value={formData.encryption}
                         onChange={setFormValue((value) => ({
                             devices: {
-                                [formData.id]: {
+                                [deviceIndex]: {
                                     guest_wifi: { encryption: { $set: value } },
                                 },
                             },
